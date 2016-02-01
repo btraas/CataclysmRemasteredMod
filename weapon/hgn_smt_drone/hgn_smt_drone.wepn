@@ -1,0 +1,17 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Normal",2000,2650,0,0,0,0,1,1,0,1,0,0,1,1,125,125,0.1,"Normal",0,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,100,"")
+setPenetration(NewWeaponType,5,1,
+{unarmoured=0.73},
+{LightArmour=1.21},
+{MediumArmour=1.06},
+{ResArmour=0.42},
+{PlanetKillerArmour=0});
+setAccuracy(NewWeaponType,1, 
+{Fighter=0.117,}, 
+{Corvette=0.295,}, 
+{munition=0.2,}, 
+{Frigate=0.5,damage=1,}, 
+{SmallCapitalShip=0.55,damage=1,}, 
+{BigCapitalShip=0.55,damage=1,}, 
+{ResourceLarge=0.55,damage=1,})
+setAngles(NewWeaponType,0,-179,179,-89,89);

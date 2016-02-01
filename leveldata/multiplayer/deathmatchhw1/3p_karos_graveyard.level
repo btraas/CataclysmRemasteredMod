@@ -1,0 +1,4092 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 11-13-2012 Time: 23:01:32
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+
+function DetermChunk()
+	addPoint("StartPos0", {-14522,
+		0,
+		8281}, {0,
+		119.481,
+		0});
+	addPoint("StartPos2", {573,
+		0,
+		-15440}, {0,
+		-0.089,
+		0});
+	addPoint("StartPos1", {13208,
+		0,
+		8101}, {0,
+		243.226,
+		0});
+	addAsteroid("Asteroid_3", {-11841,
+		854,
+		-3007}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-11378,
+		1770,
+		-3125}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {-11558,
+		1078,
+		-3201}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {-11757,
+		1428,
+		-3588}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {-3418,
+		72,
+		10471}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {-3088,
+		-240,
+		10803}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-3149,
+		-640,
+		10907}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-3637,
+		-162,
+		10965}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {3660,
+		40,
+		11249}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {3142,
+		676,
+		10754}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {3227,
+		702,
+		11132}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {3629,
+		382,
+		10860}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {11357,
+		-1624,
+		-3522}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {11780,
+		-1490,
+		-3342}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {11136,
+		-852,
+		-3256}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {11614,
+		-928,
+		-2977}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-8753,
+		-274,
+		-8913}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-8227,
+		756,
+		-8973}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {-8843,
+		198,
+		-8872}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {-8369,
+		940,
+		-8947}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {8205,
+		1478,
+		-8890}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {7936,
+		716,
+		-9153}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {7946,
+		620,
+		-8563}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {7751,
+		1668,
+		-8964}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-16299,
+		482,
+		10066}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-15706,
+		270,
+		10211}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-15765,
+		20,
+		9933}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {16611,
+		-428,
+		9199}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {16192,
+		-766,
+		9111}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {16162,
+		-660,
+		9428}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-58,
+		78,
+		-19245}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-165,
+		-460,
+		-18496}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-305,
+		564,
+		-18464}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-117,
+		936,
+		-563}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {-510,
+		-834,
+		-406}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_3", {95,
+		-444,
+		-266}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {-251,
+		-868,
+		92}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_4", {291,
+		402,
+		-125}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_5", {-272,
+		46,
+		-443}, 100, 0, 0, 0, 0);
+	addAsteroid("Asteroid_5", {438,
+		-346,
+		-446}, 100, 0, 0, 0, 0);
+    addSquadron("Defector0", "Tai_Destroyer", {-13861.715,21335.23,13420.61}, -1, {0,-225,0}, 0, 0)
+    addSquadron("JunkyardHQ0", "Junk_JunkyardOffice", {17725.155,-2264.15,-21949.585}, -1, {0,-225,0}, 0, 0)
+    addSquadron("LGun10", "Junk_AutoGunL", {13800.85,-2938.6,-8944.6}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun100", "Junk_AutoGunL", {-3791.48,3461.325,-11430.09}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun110", "Junk_AutoGunL", {-2896.39,1820.105,4524.31}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun120", "Junk_AutoGunL", {6642.335,5869.535,4285.015}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun130", "Junk_AutoGunL", {13224.015,-3131.66,8113.91}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun140", "Junk_AutoGunL", {13290.06,1886.15,7519.715}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun150", "Junk_AutoGunL", {-266.7,-2355.675,237.615}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun160", "Junk_AutoGunL", {5122.705,306.81,-5687.815}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun170", "Junk_AutoGunL", {1886.325,3895.43,-12255.495}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun180", "Junk_AutoGunL", {5411.315,-1809.71,-25538.24}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun190", "Junk_AutoGunL", {21428.575,-1072.12,-7277.83}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun20", "Junk_AutoGunL", {10070.2,-2919.665,-11083.765}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun200", "Junk_AutoGunL", {25295.865,-4812.045,-8235.605}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun210", "Junk_AutoGunL", {15540.385,-1135.365,-17844.015}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun220", "Junk_AutoGunL", {8687.98,-7714.7,-16589.755}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun230", "Junk_AutoGunL", {6145.265,-7263.41,-6324.955}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun240", "Junk_AutoGunL", {-4152.715,-6797.245,-5774.055}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun250", "Junk_AutoGunL", {5672.065,2267.93,-11923.555}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun260", "Junk_AutoGunL", {11259.78,2461.865,-17860.5}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun270", "Junk_AutoGunL", {5227.6,-1443.19,-14590.415}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun280", "Junk_AutoGunL", {-6463.065,4509.155,-3491.88}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun290", "Junk_AutoGunL", {1735.265,-5861.625,-11547.095}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun30", "Junk_AutoGunL", {-2756.95,1419.005,8962.94}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun300", "Junk_AutoGunL", {-11620.315,4450.88,2750.09}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun310", "Junk_AutoGunL", {-2261.175,3944.99,11434.675}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun320", "Junk_AutoGunL", {1027.18,4029.305,6965.91}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun40", "Junk_AutoGunL", {-6809.46,-2988.475,202.51}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun50", "Junk_AutoGunL", {-2756.95,-3909.85,9044.91}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun60", "Junk_AutoGunL", {-8990.45,4632.46,-397.075}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun70", "Junk_AutoGunL", {-6045.97,-654.22,3816.82}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun80", "Junk_AutoGunL", {-3328.325,-2489.235,2256.59}, -1, {0,-90,0}, 0, 0)
+    addSquadron("LGun90", "Junk_AutoGunL", {-7324.835,3506.615,-8395.03}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun10", "Junk_AutoGunS", {19178.565,3068.1,-14499.94}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun100", "Junk_AutoGunS", {-6932.17,847.385,-11632.18}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun110", "Junk_AutoGunS", {2798.145,-1903.265,-22893.185}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun120", "Junk_AutoGunS", {-1402.695,-1764.77,-5535.81}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun130", "Junk_AutoGunS", {-433.265,-472.22,880.88}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun140", "Junk_AutoGunS", {2798.145,-2595.705,-3135.3}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun150", "Junk_AutoGunS", {8291.57,81.76,-9413.495}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun160", "Junk_AutoGunS", {-4864.93,-5365.5,2773.575}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun170", "Junk_AutoGunS", {1644.09,5337.465,-5984.23}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun180", "Junk_AutoGunS", {4967.83,358.715,-8628.725}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun190", "Junk_AutoGunS", {7922.285,2897.72,-6228.25}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun20", "Junk_AutoGunS", {11222.225,-2919.665,-13035.19}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun200", "Junk_AutoGunS", {9491.825,1189.685,4989.425}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun210", "Junk_AutoGunS", {9999.64,-3657.465,5497.205}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun220", "Junk_AutoGunS", {15354.57,-1395.485,1896.475}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun230", "Junk_AutoGunS", {13277.215,-1395.485,4435.445}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun240", "Junk_AutoGunS", {23608.06,-1395.485,-9755.165}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun250", "Junk_AutoGunS", {7717.36,-7648.69,-14400.96}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun260", "Junk_AutoGunS", {1899.1,-7656.04,-10753.68}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun270", "Junk_AutoGunS", {8412.075,-7656.04,-7757.715}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun280", "Junk_AutoGunS", {-2396.94,-7673.365,5905.095}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun290", "Junk_AutoGunS", {-4404.365,4928.14,-1394.26}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun30", "Junk_AutoGunS", {-6198.01,-2823.905,6514.97}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun300", "Junk_AutoGunS", {9879.275,5005.35,-12435.15}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun310", "Junk_AutoGunS", {15407.105,-460.74,-22033.305}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun320", "Junk_AutoGunS", {18084.01,-2765.525,-19711.545}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun330", "Junk_AutoGunS", {15374.135,-4184.145,-21995.54}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun340", "Junk_AutoGunS", {18051.04,-4973.185,-19819.135}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun350", "Junk_AutoGunS", {13413.12,298.025,-16348.57}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun360", "Junk_AutoGunS", {18077.5,-410.865,-22152.48}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun370", "Junk_AutoGunS", {18995.69,-2960.125,-14529.06}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun380", "Junk_AutoGunS", {7526.89,985.285,-20677.335}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun390", "Junk_AutoGunS", {-1357.475,-506.625,5233.655}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun40", "Junk_AutoGunS", {-6485.36,-2864.96,808.99}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun400", "Junk_AutoGunS", {2344.79,-707.175,1195.565}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun410", "Junk_AutoGunS", {6132.035,-6667.675,-3185.14}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun420", "Junk_AutoGunS", {13600.475,3612.91,-7587.44}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun430", "Junk_AutoGunS", {204.82,-1267,-2798.145}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun440", "Junk_AutoGunS", {22984.885,-1072.12,-6072.64}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun441", "Junk_AutoGunS", {2190.93,-1177.05,-9727.025}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun450", "Junk_AutoGunS", {805.21,-1177.05,-7648.41}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun460", "Junk_AutoGunS", {-811.475,1917.755,-6262.655}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun470", "Junk_AutoGunS", {-2474.36,-1177.05,-7463.645}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun480", "Junk_AutoGunS", {435.68,1409.66,-11713.24}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun490", "Junk_AutoGunS", {6717.69,-1177.05,-10281.32}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun50", "Junk_AutoGunS", {-3350.655,-4288.865,795.655}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun500", "Junk_AutoGunS", {3992.415,-1177.05,-6031.725}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun510", "Junk_AutoGunS", {7780.08,-1177.05,-17302.39}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun520", "Junk_AutoGunS", {11798.745,-1177.05,-15639.505}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun530", "Junk_AutoGunS", {9543.1,80.29,-23096.465}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun540", "Junk_AutoGunS", {13629,-6344.625,-28668.255}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun550", "Junk_AutoGunS", {2618.105,2284.625,-18013.38}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun560", "Junk_AutoGunS", {-2236.745,2529.415,-14260.05}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun570", "Junk_AutoGunS", {652.75,-4611.285,-15565.55}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun580", "Junk_AutoGunS", {12066.145,1521.415,-19806.92}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun590", "Junk_AutoGunS", {9882.18,-957.005,-18334.61}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun60", "Junk_AutoGunS", {-2010.925,-1346.1,2245.74}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun600", "Junk_AutoGunS", {3281.215,1500.66,-15769.81}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun610", "Junk_AutoGunS", {-2584.995,-4638.41,-10517.5}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun620", "Junk_AutoGunS", {12627.545,-181.09,-26659.57}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun630", "Junk_AutoGunS", {11369.365,-6732.46,-24705.31}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun640", "Junk_AutoGunS", {24696.42,3613.47,-20793.255}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun650", "Junk_AutoGunS", {21720.16,-3004.505,-18067.42}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun70", "Junk_AutoGunS", {-3119.55,-1763.125,9923.725}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun80", "Junk_AutoGunS", {-7201.11,-1665.23,-8082.13}, -1, {0,-90,0}, 0, 0)
+    addSquadron("SGun90", "Junk_AutoGunS", {-4393.2,-4507.58,-5630.94}, -1, {0,-90,0}, 0, 0)
+    addSquadron("AdvanceSupportFrigate_Group4", "Der_SupportFrigate", {-2832.27,-3170.02,-6539.925}, -1, {0,-260.6,41.9}, 1, 0)
+    addSquadron("Carrier_Group184", "Der_Carrier", {3046.925,3215.17,-399.315}, -1, {0,-11.4,-40.4}, 1, 0)
+    addSquadron("Carrier_Group185", "Der_Carrier", {22217.79,-881.475,-7092.925}, -1, {0,33.7,-33.6}, 1, 0)
+    addSquadron("Carrier_Group2", "Der_Carrier", {12307.4,-752.815,3065.58}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Carrier_Group572", "Der_Carrier", {11462.64,-5554.255,-11711.035}, -1, {0,-94.4,-49.4}, 1, 0)
+    addSquadron("Carrier_Group631", "Der_Carrier", {-1117.025,5320.42,7423.885}, -1, {0,-141.7,-13.1}, 1, 0)
+    addSquadron("Carrier_Group694", "Der_Carrier", {12605.215,-2066.61,-14510.51}, -1, {0,-261.3,-53.4}, 1, 0)
+    addSquadron("Carrier_Group695", "Der_Carrier", {4560.395,-395.08,-4990.44}, -1, {0,-181.7,81.3}, 1, 0)
+    addSquadron("Carrier_Group696", "Der_Carrier", {10450.3,-627.235,-12021.38}, -1, {0,88.6,81.7}, 1, 0)
+    addSquadron("Carrier_Group697", "Der_Carrier", {2131.605,-559.685,-2392.6}, -1, {0,50.2,80.9}, 1, 0)
+    addSquadron("Carrier_Group698", "Der_Carrier", {15198.645,-382.585,-17276.63}, -1, {0,-177.7,72.5}, 1, 0)
+    addSquadron("Carrier_Group699", "Der_Carrier", {6693.225,-1978.795,-7481.985}, -1, {0,-89.6,-48.4}, 1, 0)
+    addSquadron("Carrier_Group700", "Der_Carrier", {8644.615,-476.49,-9829.54}, -1, {0,64.8,79.4}, 1, 0)
+    addSquadron("Carrier_Group701", "Der_Carrier", {33.355,-787.465,-194.425}, -1, {0,-197.8,88.0}, 1, 0)
+    addSquadron("Carrier_Group702", "Der_Carrier", {12649.14,-522.515,-14443.695}, -1, {0,-144.4,84.1}, 1, 0)
+    addSquadron("Carrier_Group703", "Der_Carrier", {4517.275,-1979.25,-5084.205}, -1, {0,71.9,38.4}, 1, 0)
+    addSquadron("Carrier_Group704", "Der_Carrier", {10513.405,-2081.555,-12014.485}, -1, {0,45.7,62.0}, 1, 0)
+    addSquadron("Carrier_Group705", "Der_Carrier", {2116.38,-2143.505,-2447.025}, -1, {0,-111.6,-87.2}, 1, 0)
+    addSquadron("Carrier_Group706", "Der_Carrier", {15262.485,-1902.18,-17271.94}, -1, {0,-197.8,88.0}, 1, 0)
+    addSquadron("Carrier_Group707", "Der_Carrier", {6704.775,-372.47,-7481.075}, -1, {0,55.5,80.8}, 1, 0)
+    addSquadron("Carrier_Group708", "Der_Carrier", {8685.6,-2171.19,-9848.405}, -1, {0,-175.5,87.5}, 1, 0)
+    addSquadron("Carrier_Group709", "Der_Carrier", {56.14,-2315.95,-236.53}, -1, {0,16.9,-83.8}, 1, 0)
+    addSquadron("Carrier_Group710", "Der_Carrier", {11500.335,-1914.01,-13267.87}, -1, {0,52,85.1}, 1, 0)
+    addSquadron("Carrier_Group711", "Der_Carrier", {3284.435,-398.965,-3684.24}, -1, {0,84.9,73.7}, 1, 0)
+    addSquadron("Carrier_Group712", "Der_Carrier", {9531.69,-594.72,-10981.425}, -1, {0,-155.3,80.6}, 1, 0)
+    addSquadron("Carrier_Group713", "Der_Carrier", {1216.32,-527.135,-865.97}, -1, {0,50.2,80.9}, 1, 0)
+    addSquadron("Carrier_Group714", "Der_Carrier", {13905.185,-349.125,-15803.025}, -1, {0,-177.7,72.5}, 1, 0)
+    addSquadron("Carrier_Group715", "Der_Carrier", {5683.755,-1945.335,-6270.11}, -1, {0,-139.6,-62.9}, 1, 0)
+    addSquadron("Carrier_Group716", "Der_Carrier", {7565.075,-462.14,-8637.23}, -1, {0,-141.7,83.1}, 1, 0)
+    addSquadron("Carrier_Group717", "Der_Carrier", {117.145,-785.75,-159.25}, -1, {0,-197.8,88.0}, 1, 0)
+    addSquadron("Carrier_Group718", "Der_Carrier", {11544.26,-526.4,-13201.02}, -1, {0,65.9,80.4}, 1, 0)
+    addSquadron("Carrier_Group719", "Der_Carrier", {3295.845,-1983.135,-3719.695}, -1, {0,71.9,38.4}, 1, 0)
+    addSquadron("Carrier_Group720", "Der_Carrier", {9594.83,-2049.005,-10974.53}, -1, {0,32.3,62.3}, 1, 0)
+    addSquadron("Carrier_Group721", "Der_Carrier", {1071.805,-2197.93,-1451.1}, -1, {0,-252.9,77.5}, 1, 0)
+    addSquadron("Carrier_Group722", "Der_Carrier", {13969.025,-1868.72,-15798.335}, -1, {0,-197.8,88.0}, 1, 0)
+    addSquadron("Carrier_Group723", "Der_Carrier", {5674.2,-339.01,-6310.955}, -1, {0,55.5,80.8}, 1, 0)
+    addSquadron("Carrier_Group724", "Der_Carrier", {7738.325,-2169.44,-8562.12}, -1, {0,-175.5,87.5}, 1, 0)
+    addSquadron("Carrier_Group725", "Der_Carrier", {59.675,-2140.32,-220.535}, -1, {0,-173.1,-81.0}, 1, 0)
+    addSquadron("FragmentPanel0a_Group190", "Der_FragmentPanel0a", {3056.76,-5484.605,-12825.75}, -1, {0,-187.5,24.2}, 1, 0)
+    addSquadron("FragmentPanel0a_Group247", "Der_FragmentPanel0a", {-3191.3,-3602.025,-5938.065}, -1, {0,-2,18.8}, 1, 0)
+    addSquadron("FragmentPanel0a_Group256", "Der_FragmentPanel0a", {7583.555,-6754.37,-5251.435}, -1, {0,-167.6,4.6}, 1, 0)
+    addSquadron("FragmentPanel0a_Group278", "Der_FragmentPanel0a", {4142.46,-5480.615,-24170.685}, -1, {0,13.3,40.8}, 1, 0)
+    addSquadron("FragmentPanel0a_Group279", "Der_FragmentPanel0a", {4592.315,-1872.465,-24377.85}, -1, {0,-168.9,-40.8}, 1, 0)
+    addSquadron("FragmentPanel0a_Group28", "Der_FragmentPanel0a", {17791.095,1568.245,964.425}, -1, {0,-184.8,-21.5}, 1, 0)
+    addSquadron("FragmentPanel0a_Group29", "Der_FragmentPanel0a", {18184.425,-2239.58,950.53}, -1, {0,-243.7,-10.3}, 1, 0)
+    addSquadron("FragmentPanel0a_Group292", "Der_FragmentPanel0a", {19189.835,3376.835,-14676.41}, -1, {0,-169.6,-5.0}, 1, 0)
+    addSquadron("FragmentPanel0a_Group430", "Der_FragmentPanel0a", {10377.535,159.985,-23196.705}, -1, {0,-189.4,12.4}, 1, 0)
+    addSquadron("FragmentPanel0a_Group431", "Der_FragmentPanel0a", {13548.43,-120.96,-27772.99}, -1, {0,-187.7,-22.4}, 1, 0)
+    addSquadron("FragmentPanel0a_Group447", "Der_FragmentPanel0a", {14441.315,-3676.47,-18857.125}, -1, {0,-183.6,27.7}, 1, 0)
+    addSquadron("FragmentPanel0a_Group451", "Der_FragmentPanel0a", {-7200.305,4336.85,-2590.875}, -1, {0,-192.1,16.8}, 1, 0)
+    addSquadron("FragmentPanel0a_Group48", "Der_FragmentPanel0a", {4933.88,-5026.525,-13803.895}, -1, {0,-184.7,-10.3}, 1, 0)
+    addSquadron("FragmentPanel0a_Group487", "Der_FragmentPanel0a", {-5629.61,4424.035,2377.55}, -1, {0,-96.5,57.0}, 1, 0)
+    addSquadron("FragmentPanel0a_Group488", "Der_FragmentPanel0a", {6008.8,-7525.385,-8929.305}, -1, {0,-183.6,-14.5}, 1, 0)
+    addSquadron("FragmentPanel0a_Group49", "Der_FragmentPanel0a", {10551.8,-6025.18,-8742.125}, -1, {0,-184.7,-10.3}, 1, 0)
+    addSquadron("FragmentPanel0a_Group50", "Der_FragmentPanel0a", {-1401.96,1132.355,8312.64}, -1, {0,-41.4,2.6}, 1, 0)
+    addSquadron("FragmentPanel0a_Group504", "Der_FragmentPanel0a", {4991.91,-1952.335,-8828.575}, -1, {0,-68.6,42.0}, 1, 0)
+    addSquadron("FragmentPanel0a_Group508", "Der_FragmentPanel0a", {-4756.36,2213.855,2488.885}, -1, {0,-144.5,12.8}, 1, 0)
+    addSquadron("FragmentPanel0a_Group51", "Der_FragmentPanel0a", {16124.15,-3823.89,-16316.755}, -1, {0,-186.5,-45.1}, 1, 0)
+    addSquadron("FragmentPanel0a_Group52", "Der_FragmentPanel0a", {21816.48,-1710.205,-7555.17}, -1, {0,-54.3,6.6}, 1, 0)
+    addSquadron("FragmentPanel0a_Group550", "Der_FragmentPanel0a", {14277.445,4963.735,-7740.075}, -1, {0,-114.5,27.2}, 1, 0)
+    addSquadron("FragmentPanel0a_Group6", "Der_FragmentPanel0a", {-865.025,4771.585,7618.03}, -1, {0,-138.2,-21.0}, 1, 0)
+    addSquadron("FragmentPanel0a_Group609", "Der_FragmentPanel0a", {13301.785,-72.1,7059.15}, -1, {0,-169.4,8.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group189", "Der_FragmentPanel0b", {22999.55,-4066.72,-6478.15}, -1, {0,-89.2,-25.6}, 1, 0)
+    addSquadron("FragmentPanel0b_Group209", "Der_FragmentPanel0b", {2417.1,-1765.435,-21962.815}, -1, {0,72.4,8.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group210", "Der_FragmentPanel0b", {-4082.12,-7357.63,-3232.075}, -1, {0,-8.7,29.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group229", "Der_FragmentPanel0b", {3619.63,-5376.35,-23215.71}, -1, {0,-228.2,-74.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group230", "Der_FragmentPanel0b", {1595.545,-5342.225,-21707.315}, -1, {0,-111.6,-75.9}, 1, 0)
+    addSquadron("FragmentPanel0b_Group248", "Der_FragmentPanel0b", {11971.085,-1910.44,2933.77}, -1, {0,-257.3,0.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group255", "Der_FragmentPanel0b", {10438.015,-1384.705,4973.01}, -1, {0,-19.3,27.7}, 1, 0)
+    addSquadron("FragmentPanel0b_Group270", "Der_FragmentPanel0b", {12032.16,4894.96,-10134.04}, -1, {0,-111.8,20.8}, 1, 0)
+    addSquadron("FragmentPanel0b_Group281", "Der_FragmentPanel0b", {22951.285,-1941.275,-6514.655}, -1, {0,60.5,-29.8}, 1, 0)
+    addSquadron("FragmentPanel0b_Group291", "Der_FragmentPanel0b", {-1029.35,-6003.34,-9579.15}, -1, {0,-149.4,11.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group310", "Der_FragmentPanel0b", {-4811.17,2702.7,-10970.645}, -1, {0,-234.3,17.1}, 1, 0)
+    addSquadron("FragmentPanel0b_Group318", "Der_FragmentPanel0b", {13504.75,-6076.49,-28655.445}, -1, {0,-67.6,13.5}, 1, 0)
+    addSquadron("FragmentPanel0b_Group319", "Der_FragmentPanel0b", {12695.865,-3043.915,-17875.025}, -1, {0,-123.9,-60.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group333", "Der_FragmentPanel0b", {3395.455,-2178.085,-23150.225}, -1, {0,-139.2,-24.5}, 1, 0)
+    addSquadron("FragmentPanel0b_Group342", "Der_FragmentPanel0b", {11375.805,-3464.825,-18195.03}, -1, {0,-253,-77.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group360", "Der_FragmentPanel0b", {-2087.12,1064.245,9517.305}, -1, {0,-109.1,12.9}, 1, 0)
+    addSquadron("FragmentPanel0b_Group369", "Der_FragmentPanel0b", {5352.095,-6837.005,-2214.31}, -1, {0,-211.9,-65.4}, 1, 0)
+    addSquadron("FragmentPanel0b_Group376", "Der_FragmentPanel0b", {9254,-6722.135,-7778.33}, -1, {0,-0.200000000000003,17.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group380", "Der_FragmentPanel0b", {2093.28,-7278.53,2057.37}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group387", "Der_FragmentPanel0b", {6897.52,-7337.925,-13876.03}, -1, {0,-241.5,37.4}, 1, 0)
+    addSquadron("FragmentPanel0b_Group393", "Der_FragmentPanel0b", {21980.805,-4535.895,-7609.945}, -1, {0,-113,15.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group40", "Der_FragmentPanel0b", {12837.335,-2381.12,1590.155}, -1, {0,-199.1,-33.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group404", "Der_FragmentPanel0b", {14252.035,-7476.875,-12411.665}, -1, {0,-105.7,9.7}, 1, 0)
+    addSquadron("FragmentPanel0b_Group41", "Der_FragmentPanel0b", {10534.195,1389.85,4703.86}, -1, {0,-185.8,-17.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group413", "Der_FragmentPanel0b", {6788.11,-7449.365,-5740.805}, -1, {0,-124.7,-9.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group416", "Der_FragmentPanel0b", {12453.98,-4466.875,2150.33}, -1, {0,-257.3,0.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group417", "Der_FragmentPanel0b", {-4309.235,2478.42,-11533.62}, -1, {0,-233.4,14.7}, 1, 0)
+    addSquadron("FragmentPanel0b_Group418", "Der_FragmentPanel0b", {-2916.095,-2308.46,10009.055}, -1, {0,67.7,70.7}, 1, 0)
+    addSquadron("FragmentPanel0b_Group419", "Der_FragmentPanel0b", {7202.545,4964.015,-14960.89}, -1, {0,-50.2,-0.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group42", "Der_FragmentPanel0b", {-15300.25,5060.51,6080.795}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group423", "Der_FragmentPanel0b", {616.49,-6008.135,-10942.33}, -1, {0,-123.9,-60.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group429", "Der_FragmentPanel0b", {4157.58,-1814.12,-23867.55}, -1, {0,-234.7,12.4}, 1, 0)
+    addSquadron("FragmentPanel0b_Group43", "Der_FragmentPanel0b", {-50.575,4955.545,-7796.81}, -1, {0,57.1,0.5}, 1, 0)
+    addSquadron("FragmentPanel0b_Group44", "Der_FragmentPanel0b", {-1379.56,-6210.995,-9554.055}, -1, {0,-32.5,-19.9}, 1, 0)
+    addSquadron("FragmentPanel0b_Group45", "Der_FragmentPanel0b", {-594.3,-5550.02,-8839.005}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group456", "Der_FragmentPanel0b", {6847.75,-5397.14,-13822.62}, -1, {0,-91,11.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group46", "Der_FragmentPanel0b", {23048.41,-1380.61,-8940.995}, -1, {0,-50.1,28.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group47", "Der_FragmentPanel0b", {21946.435,-3685.57,-7573.23}, -1, {0,-86.7,-16.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group478", "Der_FragmentPanel0b", {10196.62,109.69,-23633.715}, -1, {0,-4.5,-6.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group486", "Der_FragmentPanel0b", {4921.77,-1834.07,-8728.265}, -1, {0,-72.5,-35.6}, 1, 0)
+    addSquadron("FragmentPanel0b_Group513", "Der_FragmentPanel0b", {521.99,1969.17,-3136.945}, -1, {0,-51,-42.1}, 1, 0)
+    addSquadron("FragmentPanel0b_Group535", "Der_FragmentPanel0b", {-5364.415,1159.235,2551.57}, -1, {0,78.8,-50.8}, 1, 0)
+    addSquadron("FragmentPanel0b_Group549", "Der_FragmentPanel0b", {15347.43,4681.18,-9779.28}, -1, {0,-112.7,-12.5}, 1, 0)
+    addSquadron("FragmentPanel0b_Group576", "Der_FragmentPanel0b", {10616.9,-5309.15,-11058.18}, -1, {0,-62.4,24.6}, 1, 0)
+    addSquadron("FragmentPanel0b_Group595", "Der_FragmentPanel0b", {25473,3391.57,-21760.025}, -1, {0,-117.5,-51.1}, 1, 0)
+    addSquadron("FragmentPanel0b_Group597", "Der_FragmentPanel0b", {-6624.905,4703.125,-743.435}, -1, {0,-27.6,-17.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group608", "Der_FragmentPanel0b", {-5970.405,-2740.57,7126.035}, -1, {0,-45.5,-57.1}, 1, 0)
+    addSquadron("FragmentPanel0b_Group635", "Der_FragmentPanel0b", {-5987.38,-2537.325,1601.25}, -1, {0,20.7,0.8}, 1, 0)
+    addSquadron("FragmentPanel0b_Group654", "Der_FragmentPanel0b", {-4825.17,-2761.465,8124.34}, -1, {0,-165.9,-80.0}, 1, 0)
+    addSquadron("FragmentPanel0b_Group656", "Der_FragmentPanel0b", {5169.85,4054.19,-8883.42}, -1, {0,-133.4,-5.8}, 1, 0)
+    addSquadron("FragmentPanel0b_Group7", "Der_FragmentPanel0b", {3669.19,-7643.475,-12680.325}, -1, {0,-188.1,14.2}, 1, 0)
+    addSquadron("FragmentPanel0b_Group728", "Der_FragmentPanel0b", {23049.04,-4378.22,-8891.505}, -1, {0,-50.1,28.3}, 1, 0)
+    addSquadron("FragmentPanel0b_Group760", "Der_FragmentPanel0b", {-13350.015,-4346.02,8992.27}, -1, {0,-109.1,12.9}, 1, 0)
+    addSquadron("FragmentPanel0b_Group762", "Der_FragmentPanel0b", {-14178.99,-4237.66,10443.545}, -1, {0,67.7,70.7}, 1, 0)
+    addSquadron("FragmentPanel0c_Group191", "Der_FragmentPanel0c", {22370.915,-1331.54,-7137.515}, -1, {0,-196.6,8.9}, 1, 0)
+    addSquadron("FragmentPanel0c_Group192", "Der_FragmentPanel0c", {-17821.65,4364.64,8914.36}, -1, {0,-129.7,36.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group211", "Der_FragmentPanel0c", {-6168.54,-7319.235,-662.585}, -1, {0,-8.7,29.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group231", "Der_FragmentPanel0c", {7176.05,-7227.71,-4935.035}, -1, {0,-196.5,-8.0}, 1, 0)
+    addSquadron("FragmentPanel0c_Group257", "Der_FragmentPanel0c", {18862.34,-2750.405,-13598.06}, -1, {0,-229.1,68.4}, 1, 0)
+    addSquadron("FragmentPanel0c_Group293", "Der_FragmentPanel0c", {22220.59,-4694.9,-7177.17}, -1, {0,-158.9,-22.1}, 1, 0)
+    addSquadron("FragmentPanel0c_Group294", "Der_FragmentPanel0c", {-3909.465,4688.74,-6466.985}, -1, {0,-137.4,11.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group334", "Der_FragmentPanel0c", {16144.275,-380.73,-29623.72}, -1, {0,-227.8,-11.4}, 1, 0)
+    addSquadron("FragmentPanel0c_Group346", "Der_FragmentPanel0c", {13718.04,-1747.27,1060.745}, -1, {0,-182.9,-60.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group370", "Der_FragmentPanel0c", {15110.97,-743.26,5011.44}, -1, {0,61.1,-11.8}, 1, 0)
+    addSquadron("FragmentPanel0c_Group420", "Der_FragmentPanel0c", {13533.24,-4387.005,733.005}, -1, {0,-135.8,4.3}, 1, 0)
+    addSquadron("FragmentPanel0c_Group446", "Der_FragmentPanel0c", {4485.635,-5927.145,-13196.505}, -1, {0,-213.5,13.1}, 1, 0)
+    addSquadron("FragmentPanel0c_Group448", "Der_FragmentPanel0c", {7924.49,754.075,-20769.56}, -1, {0,65.6,73.8}, 1, 0)
+    addSquadron("FragmentPanel0c_Group452", "Der_FragmentPanel0c", {7017.395,909.23,-20161.645}, -1, {0,-150,32.3}, 1, 0)
+    addSquadron("FragmentPanel0c_Group477", "Der_FragmentPanel0c", {5026.07,-6291.53,-12823.265}, -1, {0,-253.8,-2.4}, 1, 0)
+    addSquadron("FragmentPanel0c_Group503", "Der_FragmentPanel0c", {-80.465,4587.625,-3011.855}, -1, {0,-107.5,68.1}, 1, 0)
+    addSquadron("FragmentPanel0c_Group505", "Der_FragmentPanel0c", {16543.135,1224.23,3413.725}, -1, {0,89,59.8}, 1, 0)
+    addSquadron("FragmentPanel0c_Group509", "Der_FragmentPanel0c", {22596.21,-1446.41,-8511.055}, -1, {0,-36.1,0.0}, 1, 0)
+    addSquadron("FragmentPanel0c_Group53", "Der_FragmentPanel0c", {13931.75,-2773.435,5785.15}, -1, {0,-202.6,4.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group534", "Der_FragmentPanel0c", {-15.365,4572.82,-2604.315}, -1, {0,-221.5,60.9}, 1, 0)
+    addSquadron("FragmentPanel0c_Group54", "Der_FragmentPanel0c", {-4817.82,4776.38,626.255}, -1, {0,-144.9,-60.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group540", "Der_FragmentPanel0c", {2743.44,4059.65,5518.135}, -1, {0,-58.1,-32.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group55", "Der_FragmentPanel0c", {-4680.76,115.99,2903.46}, -1, {0,-86,-4.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group551", "Der_FragmentPanel0c", {3149.09,3594.5,3981.425}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("FragmentPanel0c_Group56", "Der_FragmentPanel0c", {-2017.05,-7451.395,-1936.795}, -1, {0,-71.8,-17.4}, 1, 0)
+    addSquadron("FragmentPanel0c_Group57", "Der_FragmentPanel0c", {23120.755,-3506.475,-6540.905}, -1, {0,-43.9,-87.9}, 1, 0)
+    addSquadron("FragmentPanel0c_Group577", "Der_FragmentPanel0c", {14954.695,4932.795,-9042.565}, -1, {0,-268.1,-4.9}, 1, 0)
+    addSquadron("FragmentPanel0c_Group599", "Der_FragmentPanel0c", {-5679.17,-2523.255,2040.745}, -1, {0,71.1,-37.2}, 1, 0)
+    addSquadron("FragmentPanel0c_Group610", "Der_FragmentPanel0c", {11026.645,1683.29,4189.92}, -1, {0,-74,-34.7}, 1, 0)
+    addSquadron("FragmentPanel0c_Group636", "Der_FragmentPanel0c", {17571.05,-1412.04,1391.985}, -1, {0,40.4,-26.6}, 1, 0)
+    addSquadron("FragmentPanel0c_Group737", "Der_FragmentPanel0c", {22596.84,-4444.02,-8461.53}, -1, {0,-36.1,0.0}, 1, 0)
+    addSquadron("FragmentPanel0c_Group8", "Der_FragmentPanel0c", {24214.085,-4588.57,-8579.725}, -1, {0,44,0.0}, 1, 0)
+    addSquadron("FragmentPanel1_Group193", "Der_FragmentPanel1", {22970.78,-2531.76,-6496.21}, -1, {0,-88.1,-28.5}, 1, 0)
+    addSquadron("FragmentPanel1_Group212", "Der_FragmentPanel1", {-5085.57,-7486.99,3797.745}, -1, {0,-117.3,43.6}, 1, 0)
+    addSquadron("FragmentPanel1_Group232", "Der_FragmentPanel1", {1592.08,-1719.235,-21229.775}, -1, {0,-196.3,-76.2}, 1, 0)
+    addSquadron("FragmentPanel1_Group295", "Der_FragmentPanel1", {24277.155,-1678.32,-7837.515}, -1, {0,-52.6,-30.6}, 1, 0)
+    addSquadron("FragmentPanel1_Group335", "Der_FragmentPanel1", {6726.965,-6405.665,-3336.235}, -1, {0,-149.4,11.2}, 1, 0)
+    addSquadron("FragmentPanel1_Group394", "Der_FragmentPanel1", {21931.07,-2624.825,-17506.265}, -1, {0,-153.8,14.3}, 1, 0)
+    addSquadron("FragmentPanel1_Group432", "Der_FragmentPanel1", {12910.1,-3286.5,1572.76}, -1, {0,-154.4,25.8}, 1, 0)
+    addSquadron("FragmentPanel1_Group461", "Der_FragmentPanel1", {13292.335,1097.285,6639.08}, -1, {0,-221,32.3}, 1, 0)
+    addSquadron("FragmentPanel1_Group481", "Der_FragmentPanel1", {9844.66,-4249.49,-15296.295}, -1, {0,-162,32.3}, 1, 0)
+    addSquadron("FragmentPanel1_Group489", "Der_FragmentPanel1", {16249.135,1809.605,3252.725}, -1, {0,-109.4,40.7}, 1, 0)
+    addSquadron("FragmentPanel1_Group518", "Der_FragmentPanel1", {3312.26,5128.76,-4580.065}, -1, {0,29.4,24.2}, 1, 0)
+    addSquadron("FragmentPanel1_Group538", "Der_FragmentPanel1", {-4673.795,-4765.215,2765.665}, -1, {0,-62.3,24.1}, 1, 0)
+    addSquadron("FragmentPanel1_Group541", "Der_FragmentPanel1", {25458.335,2962.155,-22286.915}, -1, {0,-91.8,-45.0}, 1, 0)
+    addSquadron("FragmentPanel1_Group552", "Der_FragmentPanel1", {5449.325,-7493.815,-2457}, -1, {0,-53,-34.7}, 1, 0)
+    addSquadron("FragmentPanel1_Group553", "Der_FragmentPanel1", {18177.145,3317.09,-12237.05}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("FragmentPanel1_Group578", "Der_FragmentPanel1", {14954.205,3638.6,-8589}, -1, {0,-44.4,26.7}, 1, 0)
+    addSquadron("FragmentPanel1_Group58", "Der_FragmentPanel1", {21165.165,3099.215,-15824.515}, -1, {0,-93.1,28.0}, 1, 0)
+    addSquadron("FragmentPanel1_Group59", "Der_FragmentPanel1", {24564.33,-3773.84,-8142.12}, -1, {0,-44,-88.0}, 1, 0)
+    addSquadron("FragmentPanel1_Group60", "Der_FragmentPanel1", {-5328.96,-1680.665,2335.305}, -1, {0,-86,-4.2}, 1, 0)
+    addSquadron("FragmentPanel1_Group600", "Der_FragmentPanel1", {5133.59,1809.325,-8690.08}, -1, {0,-67.1,-61.8}, 1, 0)
+    addSquadron("FragmentPanel1_Group61", "Der_FragmentPanel1", {17684.485,298.97,1525.93}, -1, {0,-83.6,-27.4}, 1, 0)
+    addSquadron("FragmentPanel1_Group611", "Der_FragmentPanel1", {176.05,-4298.63,-2700.81}, -1, {0,-10.6,-52.1}, 1, 0)
+    addSquadron("FragmentPanel1_Group612", "Der_FragmentPanel1", {-4521.58,-2967.965,8406.3}, -1, {0,69.1,-37.2}, 1, 0)
+    addSquadron("FragmentPanel1_Group62", "Der_FragmentPanel1", {13974.905,-3899.77,-17854.375}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("FragmentPanel1_Group63", "Der_FragmentPanel1", {24541.02,-4499.95,-8138.97}, -1, {0,-44,-88.0}, 1, 0)
+    addSquadron("FragmentPanel1_Group637", "Der_FragmentPanel1", {10316.705,-865.585,4807.635}, -1, {0,-86.3,-29.9}, 1, 0)
+    addSquadron("FragmentPanel1_Group732", "Der_FragmentPanel1", {24277.785,-4675.93,-7787.99}, -1, {0,-52.6,-30.6}, 1, 0)
+    addSquadron("FragmentPanel1_Group9", "Der_FragmentPanel1", {24518.865,-2103.255,-8203.615}, -1, {0,-207.8,-59.1}, 1, 0)
+    addSquadron("FragmentPanel2_Group10", "Der_FragmentPanel2", {-152.845,-225.365,-2683.485}, -1, {0,-86.4,-21.6}, 1, 0)
+    addSquadron("FragmentPanel2_Group194", "Der_FragmentPanel2", {22971.27,-4557.84,-6473.18}, -1, {0,-148,-19.9}, 1, 0)
+    addSquadron("FragmentPanel2_Group213", "Der_FragmentPanel2", {-6098.19,-7455.35,-73.78}, -1, {0,65.3,23.6}, 1, 0)
+    addSquadron("FragmentPanel2_Group233", "Der_FragmentPanel2", {13531.455,-1572.655,6890.065}, -1, {0,73.4,-6.9}, 1, 0)
+    addSquadron("FragmentPanel2_Group258", "Der_FragmentPanel2", {-5479.075,-2973.53,7494.935}, -1, {0,-128.2,23.1}, 1, 0)
+    addSquadron("FragmentPanel2_Group296", "Der_FragmentPanel2", {-4937.1,-3542.7,-6384.84}, -1, {0,-75.1,1.9}, 1, 0)
+    addSquadron("FragmentPanel2_Group347", "Der_FragmentPanel2", {5838.35,-6802.495,-1071.63}, -1, {0,-123.9,-60.2}, 1, 0)
+    addSquadron("FragmentPanel2_Group381", "Der_FragmentPanel2", {10728.865,-7370.265,-10790.57}, -1, {0,-96.1,-19.6}, 1, 0)
+    addSquadron("FragmentPanel2_Group397", "Der_FragmentPanel2", {8496.985,4716.53,-13693.155}, -1, {0,-4.09999999999999,8.0}, 1, 0)
+    addSquadron("FragmentPanel2_Group433", "Der_FragmentPanel2", {6972.385,-5348.77,-14443.45}, -1, {0,-116,-46.2}, 1, 0)
+    addSquadron("FragmentPanel2_Group434", "Der_FragmentPanel2", {7595.98,350.63,-20584.375}, -1, {0,-99.6,-26.5}, 1, 0)
+    addSquadron("FragmentPanel2_Group466", "Der_FragmentPanel2", {-3463.495,-7453.215,4964.295}, -1, {0,-101.3,37.6}, 1, 0)
+    addSquadron("FragmentPanel2_Group490", "Der_FragmentPanel2", {-5368.58,-2009.875,2378.425}, -1, {0,-133.5,-33.5}, 1, 0)
+    addSquadron("FragmentPanel2_Group491", "Der_FragmentPanel2", {-5477.71,-5075.14,2491.3}, -1, {0,-50.4,-28.8}, 1, 0)
+    addSquadron("FragmentPanel2_Group523", "Der_FragmentPanel2", {-4801.335,-3275.3,3158.085}, -1, {0,-98.9,-46.4}, 1, 0)
+    addSquadron("FragmentPanel2_Group579", "Der_FragmentPanel2", {15003.275,4513.845,-9321.27}, -1, {0,-94.8,2.2}, 1, 0)
+    addSquadron("FragmentPanel2_Group638", "Der_FragmentPanel2", {-6255.025,4702.495,-802.34}, -1, {0,-101.1,19.4}, 1, 0)
+    addSquadron("FragmentPanel2_Group64", "Der_FragmentPanel2", {5984.93,-5427.345,-13892.445}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("FragmentPanel2_Group65", "Der_FragmentPanel2", {23761.85,-1702.435,-7176.33}, -1, {0,9,-15.2}, 1, 0)
+    addSquadron("FragmentPanel2_Group66", "Der_FragmentPanel2", {13251.595,-204.05,1762.915}, -1, {0,44.3,4.6}, 1, 0)
+    addSquadron("FragmentPanel2_Group67", "Der_FragmentPanel2", {3844.575,-6054.3,-11995.165}, -1, {0,-126.7,-59.0}, 1, 0)
+    addSquadron("FragmentPanel2_Group68", "Der_FragmentPanel2", {17651.2,-3277.225,-13008.415}, -1, {0,-80.7,-45.6}, 1, 0)
+    addSquadron("FragmentPanel2_Group69", "Der_FragmentPanel2", {4134.69,-5852.49,-1170.47}, -1, {0,-82.6,-29.2}, 1, 0)
+    addSquadron("FragmentPanel2_Group729", "Der_FragmentPanel2", {23762.48,-4700.045,-7126.805}, -1, {0,9,-15.2}, 1, 0)
+    addSquadron("FragmentPanel3_Group11", "Der_FragmentPanel3", {23566.515,-2070.215,-9233.175}, -1, {0,54.5,-39.2}, 1, 0)
+    addSquadron("FragmentPanel3_Group214", "Der_FragmentPanel3", {22849.89,-1507.52,-6540.625}, -1, {0,-188.3,-29.3}, 1, 0)
+    addSquadron("FragmentPanel3_Group234", "Der_FragmentPanel3", {6101.305,-5090.96,-13149.395}, -1, {0,-196.5,-8.0}, 1, 0)
+    addSquadron("FragmentPanel3_Group348", "Der_FragmentPanel3", {18020.975,-1177.575,1625.75}, -1, {0,-199,-54.7}, 1, 0)
+    addSquadron("FragmentPanel3_Group398", "Der_FragmentPanel3", {9183.545,-7516.53,-9555.21}, -1, {0,-163.7,-2.9}, 1, 0)
+    addSquadron("FragmentPanel3_Group421", "Der_FragmentPanel3", {14435.225,-4419.975,-276.465}, -1, {0,-138.1,3.4}, 1, 0)
+    addSquadron("FragmentPanel3_Group422", "Der_FragmentPanel3", {-2981.37,-1369.515,10118.71}, -1, {0,54.1,72.9}, 1, 0)
+    addSquadron("FragmentPanel3_Group467", "Der_FragmentPanel3", {1290.205,-5395.18,-10898.055}, -1, {0,-167.1,-33.9}, 1, 0)
+    addSquadron("FragmentPanel3_Group524", "Der_FragmentPanel3", {568.995,662.165,-3018.61}, -1, {0,-129.4,5.2}, 1, 0)
+    addSquadron("FragmentPanel3_Group542", "Der_FragmentPanel3", {3184.93,-1987.09,-22696.415}, -1, {0,-80.6,1.6}, 1, 0)
+    addSquadron("FragmentPanel3_Group585", "Der_FragmentPanel3", {14719.775,3313.835,-8853.67}, -1, {0,-69.5,21.7}, 1, 0)
+    addSquadron("FragmentPanel3_Group601", "Der_FragmentPanel3", {15701.455,-4783.73,-15364.195}, -1, {0,-76.5,-62.3}, 1, 0)
+    addSquadron("FragmentPanel3_Group644", "Der_FragmentPanel3", {-8461.215,-3072.545,-540.54}, -1, {0,21.4,-5.7}, 1, 0)
+    addSquadron("FragmentPanel3_Group70", "Der_FragmentPanel3", {23247.945,-1532.16,-6738.935}, -1, {0,47.9,28.3}, 1, 0)
+    addSquadron("FragmentPanel3_Group71", "Der_FragmentPanel3", {-4639.425,-3438.995,-5988.955}, -1, {0,-136.9,-2.2}, 1, 0)
+    addSquadron("FragmentPanel3_Group72", "Der_FragmentPanel3", {-1827.14,-6551.055,-10965.43}, -1, {0,-129.3,-57.0}, 1, 0)
+    addSquadron("FragmentPanel3_Group73", "Der_FragmentPanel3", {13236.3,1380.085,1277.99}, -1, {0,-188.4,18.7}, 1, 0)
+    addSquadron("FragmentPanel3_Group730", "Der_FragmentPanel3", {23248.61,-4529.735,-6689.41}, -1, {0,47.9,28.3}, 1, 0)
+    addSquadron("FragmentPanel3_Group74", "Der_FragmentPanel3", {13688.08,-4486.825,6364.96}, -1, {0,-86.4,-52.2}, 1, 0)
+    addSquadron("FragmentPanel3_Group75", "Der_FragmentPanel3", {10468.01,-4433.765,-17525.9}, -1, {0,-179.7,-14.0}, 1, 0)
+    addSquadron("FragmentPanel3_Group763", "Der_FragmentPanel3", {-14244.265,-5536.09,9168.18}, -1, {0,54.1,72.9}, 1, 0)
+    addSquadron("FragmentStrut_Group12", "Der_FragmentStrut", {23075.78,-3182.585,-6613.39}, -1, {0,-43.9,-87.9}, 1, 0)
+    addSquadron("FragmentStrut_Group196", "Der_FragmentStrut", {24792.425,-4746.525,-8165.29}, -1, {0,-79.6,-4.8}, 1, 0)
+    addSquadron("FragmentStrut_Group260", "Der_FragmentStrut", {-7172.305,-2596.86,-8733.76}, -1, {0,-195.9,-9.3}, 1, 0)
+    addSquadron("FragmentStrut_Group282", "Der_FragmentStrut", {6629.63,-4853.17,-14612.78}, -1, {0,-43,28.0}, 1, 0)
+    addSquadron("FragmentStrut_Group298", "Der_FragmentStrut", {-1722.735,-6305.705,-8946.14}, -1, {0,-220.7,9.9}, 1, 0)
+    addSquadron("FragmentStrut_Group336", "Der_FragmentStrut", {19274.92,2998.415,-13501.46}, -1, {0,-208.3,-65.2}, 1, 0)
+    addSquadron("FragmentStrut_Group371", "Der_FragmentStrut", {-7497.56,-3056.69,542.185}, -1, {0,-189.2,-30.5}, 1, 0)
+    addSquadron("FragmentStrut_Group395", "Der_FragmentStrut", {2534.315,-1908.515,-21787.36}, -1, {0,-149,23.3}, 1, 0)
+    addSquadron("FragmentStrut_Group462", "Der_FragmentStrut", {1805.58,4594.45,-13058.045}, -1, {0,-199,-45.2}, 1, 0)
+    addSquadron("FragmentStrut_Group519", "Der_FragmentStrut", {5062.435,732.305,-9368.17}, -1, {0,-161.9,23.2}, 1, 0)
+    addSquadron("FragmentStrut_Group543", "Der_FragmentStrut", {2816.975,3510.395,5596.745}, -1, {0,-58.1,-32.2}, 1, 0)
+    addSquadron("FragmentStrut_Group556", "Der_FragmentStrut", {19053.825,3124.345,-14242.55}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("FragmentStrut_Group557", "Der_FragmentStrut", {18014.885,3954.65,-12722.465}, -1, {0,-221.4,-57.7}, 1, 0)
+    addSquadron("FragmentStrut_Group558", "Der_FragmentStrut", {24835.16,4761.575,-21465.675}, -1, {0,30.8,-44.6}, 1, 0)
+    addSquadron("FragmentStrut_Group580", "Der_FragmentStrut", {25312.525,2897.86,-21707.42}, -1, {0,-119.8,0.1}, 1, 0)
+    addSquadron("FragmentStrut_Group602", "Der_FragmentStrut", {5228.86,2681.805,-9057.93}, -1, {0,-11.4,-55.0}, 1, 0)
+    addSquadron("FragmentStrut_Group615", "Der_FragmentStrut", {-6.44,-2409.33,-2465.085}, -1, {0,-10.6,-52.1}, 1, 0)
+    addSquadron("FragmentStrut_Group616", "Der_FragmentStrut", {15910.615,-3533.39,3789.625}, -1, {0,-39.8,-48.7}, 1, 0)
+    addSquadron("FragmentStrut_Group617", "Der_FragmentStrut", {-6991.74,2577.015,-8753.08}, -1, {0,25.2,-7.0}, 1, 0)
+    addSquadron("FragmentStrut_Group639", "Der_FragmentStrut", {-7111.93,2368.59,-8676.85}, -1, {0,-92.5,-7.5}, 1, 0)
+    addSquadron("FragmentStrut_Group85", "Der_FragmentStrut", {-1065.295,1646.68,7759.99}, -1, {0,-86.3,-1.7}, 1, 0)
+    addSquadron("FragmentStrut_Group86", "Der_FragmentStrut", {-814.275,3812.48,7665.735}, -1, {0,-89.8,-21.4}, 1, 0)
+    addSquadron("FragmentStrut_Group87", "Der_FragmentStrut", {7045.605,-5700.94,-20377.315}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("FragmentStrut_Group88", "Der_FragmentStrut", {12845.315,-2388.015,1757.21}, -1, {0,-149,0.0}, 1, 0)
+    addSquadron("FragmentStrut_Group89", "Der_FragmentStrut", {24556.84,-3226.685,-8267.35}, -1, {0,-176,-2.1}, 1, 0)
+    addSquadron("FragmentStrut_Group90", "Der_FragmentStrut", {-5177.9,-7362.32,-717.22}, -1, {0,-77,-38.3}, 1, 0)
+    addSquadron("FragmentStrut_Group91", "Der_FragmentStrut", {24710.525,-4648.77,-8144.36}, -1, {0,-230.2,-39.0}, 1, 0)
+    addSquadron("FragmentStrut_Group92", "Der_FragmentStrut", {-5832.365,4219.985,-4387.25}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("FragmentStrut_Group93", "Der_FragmentStrut", {4592.665,3533.67,-9067.905}, -1, {0,-67.3,-16.4}, 1, 0)
+    addSquadron("HeavyCorvette_Group5", "Der_HeavyCorvette", {-2594.34,-1987.65,10327.205}, -1, {0,-136.5,-47.7}, 1, 0)
+    addSquadron("HeavyCorvette_Group747", "Der_HeavyCorvette", {-2594.34,-1987.65,10327.205}, -1, {0,-136.5,-47.7}, 1, 0)
+    addSquadron("HeavyCruiser_Group0", "Der_HeavyCruiser", {-3022.25,144.69,10299.45}, -1, {0,-170.1,-24.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group180", "Der_HeavyCruiser", {14529.27,-6158.81,-29443.855}, -1, {0,-111.9,-60.2}, 1, 0)
+    addSquadron("HeavyCruiser_Group181", "Der_HeavyCruiser", {8711.85,-5053.405,-17450.335}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group182", "Der_HeavyCruiser", {13032.25,1629.985,1609.65}, -1, {0,-211.6,-6.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group206", "Der_HeavyCruiser", {13352.045,-782.74,6582.52}, -1, {0,-200.7,36.2}, 1, 0)
+    addSquadron("HeavyCruiser_Group269", "Der_HeavyCruiser", {-2929.71,-562.1,10020.85}, -1, {0,16,8.4}, 1, 0)
+    addSquadron("HeavyCruiser_Group308", "Der_HeavyCruiser", {-4726.05,4852.435,908.25}, -1, {0,-170.3,11.7}, 1, 0)
+    addSquadron("HeavyCruiser_Group353", "Der_HeavyCruiser", {14273.84,-1395.555,5786.585}, -1, {0,-86,-29.3}, 1, 0)
+    addSquadron("HeavyCruiser_Group386", "Der_HeavyCruiser", {24538.885,-1740.935,-8191.995}, -1, {0,-199.8,-22.3}, 1, 0)
+    addSquadron("HeavyCruiser_Group445", "Der_HeavyCruiser", {-9669.38,4783.66,-35.21}, -1, {0,-146.9,-41.9}, 1, 0)
+    addSquadron("HeavyCruiser_Group502", "Der_HeavyCruiser", {-5337.57,4018.385,2449.79}, -1, {0,-133.7,-2.7}, 1, 0)
+    addSquadron("HeavyCruiser_Group596", "Der_HeavyCruiser", {17278.45,4035.22,-11943.96}, -1, {0,-143,-38.5}, 1, 0)
+    addSquadron("HeavyCruiser_Group655", "Der_HeavyCruiser", {-5374.355,3667.86,2606.975}, -1, {0,-113.7,-39.3}, 1, 0)
+    addSquadron("HeavyCruiser_Group658", "Der_HeavyCruiser", {2327.57,-494.095,2945.95}, -1, {0,-43,-71.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group659", "Der_HeavyCruiser", {3470.81,-398.055,1654.31}, -1, {0,-223,55.4}, 1, 0)
+    addSquadron("HeavyCruiser_Group660", "Der_HeavyCruiser", {178.15,-2173.815,-9610.16}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group661", "Der_HeavyCruiser", {850.5,-2024.96,-10555.405}, -1, {0,78.3,-83.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group662", "Der_HeavyCruiser", {177.8,-540.96,2025.275}, -1, {0,-43,-62.3}, 1, 0)
+    addSquadron("HeavyCruiser_Group663", "Der_HeavyCruiser", {5527.41,-735.84,2074.03}, -1, {0,-26.1,-52.5}, 1, 0)
+    addSquadron("HeavyCruiser_Group664", "Der_HeavyCruiser", {7689.78,2318.225,-15136.03}, -1, {0,-49.6,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group665", "Der_HeavyCruiser", {3285.59,-714.21,4578.105}, -1, {0,-43,-78.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group666", "Der_HeavyCruiser", {-1627.43,-2329.67,-7575.26}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group667", "Der_HeavyCruiser", {8904.385,2285.15,-14142.765}, -1, {0,-47.9,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group668", "Der_HeavyCruiser", {2645.055,-516.95,-533.575}, -1, {0,-43,-79.9}, 1, 0)
+    addSquadron("HeavyCruiser_Group669", "Der_HeavyCruiser", {-797.615,-612.15,3085.705}, -1, {0,-43,-79.9}, 1, 0)
+    addSquadron("HeavyCruiser_Group670", "Der_HeavyCruiser", {1258.775,-589.12,4057.55}, -1, {0,-43,-79.9}, 1, 0)
+    addSquadron("HeavyCruiser_Group671", "Der_HeavyCruiser", {-624.925,-2352.56,-8703.695}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group672", "Der_HeavyCruiser", {9553.04,2381.645,-15906.415}, -1, {0,-47.9,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group673", "Der_HeavyCruiser", {8889.055,2342.41,-16464.315}, -1, {0,-46.5,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group674", "Der_HeavyCruiser", {6519.03,2241.505,-13814.15}, -1, {0,-46.7,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group675", "Der_HeavyCruiser", {8330.77,2327.115,-14657.37}, -1, {0,-47.8,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group676", "Der_HeavyCruiser", {10103.94,2270.625,-15406.755}, -1, {0,-48.3,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group678", "Der_HeavyCruiser", {-843.885,-363.86,218.365}, -1, {0,-43,-71.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group679", "Der_HeavyCruiser", {496.93,-307.475,-1204.945}, -1, {0,-43,64.7}, 1, 0)
+    addSquadron("HeavyCruiser_Group680", "Der_HeavyCruiser", {879.2,-2160.13,-9102.065}, -1, {0,-22.2,-82.5}, 1, 0)
+    addSquadron("HeavyCruiser_Group681", "Der_HeavyCruiser", {1679.65,-2279.48,-10117.415}, -1, {0,78.3,-83.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group682", "Der_HeavyCruiser", {4236.33,-720.615,3300.675}, -1, {0,-43.3,-62.4}, 1, 0)
+    addSquadron("HeavyCruiser_Group683", "Der_HeavyCruiser", {1364.755,-548.415,862.295}, -1, {0,-43,-64.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group684", "Der_HeavyCruiser", {7172.34,2274.16,-13288.485}, -1, {0,-49.1,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group685", "Der_HeavyCruiser", {-2820.335,-544.705,2364.705}, -1, {0,-43,-62.3}, 1, 0)
+    addSquadron("HeavyCruiser_Group686", "Der_HeavyCruiser", {-805.28,-2288.65,-6911.38}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group687", "Der_HeavyCruiser", {-1970.535,-528.885,1429.225}, -1, {0,-43,-80.2}, 1, 0)
+    addSquadron("HeavyCruiser_Group688", "Der_HeavyCruiser", {135.975,-2297.645,-8017.1}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group689", "Der_HeavyCruiser", {10545.85,2311.61,-17144.995}, -1, {0,-47.9,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group690", "Der_HeavyCruiser", {9862.615,2383.15,-17635.38}, -1, {0,-48.3,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group691", "Der_HeavyCruiser", {7578.165,2288.3,-12635.245}, -1, {0,-48.3,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group692", "Der_HeavyCruiser", {11159.435,2310.91,-16645.685}, -1, {0,-48.3,0.0}, 1, 0)
+    addSquadron("HeavyCruiser_Group726", "Der_HeavyCruiser", {2183.72,-553.385,5749.695}, -1, {0,-43,-78.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group727", "Der_HeavyCruiser", {156.905,-428.295,5229.14}, -1, {0,-43,-79.9}, 1, 0)
+    addSquadron("HeavyCruiser_Group738", "Der_HeavyCruiser", {158.515,162.47,-9680.825}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group739", "Der_HeavyCruiser", {830.9,311.325,-10626.07}, -1, {0,78.3,-83.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group740", "Der_HeavyCruiser", {-1647.03,6.615,-7645.925}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group741", "Der_HeavyCruiser", {-644.56,-16.275,-8774.36}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group742", "Der_HeavyCruiser", {859.565,176.155,-9172.73}, -1, {0,-22.2,-82.5}, 1, 0)
+    addSquadron("HeavyCruiser_Group743", "Der_HeavyCruiser", {1660.015,56.805,-10188.115}, -1, {0,78.3,-83.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group744", "Der_HeavyCruiser", {-824.88,47.635,-6982.045}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group745", "Der_HeavyCruiser", {116.375,38.64,-8087.765}, -1, {0,-59.1,-81.8}, 1, 0)
+    addSquadron("HeavyCruiser_Group746", "Der_HeavyCruiser", {-3022.25,144.69,10299.45}, -1, {0,-170.1,-24.1}, 1, 0)
+    addSquadron("HeavyCruiser_Group753", "Der_HeavyCruiser", {-14192.605,-5058.97,9906.855}, -1, {0,-227,-68.2}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group121", "Der_Junk0_GunAmmo", {290.92,-7579.425,3909.85}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group122", "Der_Junk0_GunAmmo", {-45493.14,-44293.655,-7412.825}, -1, {0,-131,-42.1}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group123", "Der_Junk0_GunAmmo", {1315.965,2779.455,-1482.845}, -1, {0,-38,-42.1}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group124", "Der_Junk0_GunAmmo", {-6076.665,2824.045,-10215.59}, -1, {0,-132,-42.1}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group125", "Der_Junk0_GunAmmo", {17847.48,-3282.265,2214.66}, -1, {0,-149,0.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group126", "Der_Junk0_GunAmmo", {-2235.38,-7166.285,7335.65}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group127", "Der_Junk0_GunAmmo", {8413.72,-437.01,-19245.485}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group128", "Der_Junk0_GunAmmo", {7025.865,-7649.74,-17516.905}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group202", "Der_Junk0_GunAmmo", {23102.1,-2141.825,-6555.745}, -1, {0,-88.1,-28.5}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group220", "Der_Junk0_GunAmmo", {-1462.3,-7680.4,565.285}, -1, {0,-8.7,29.2}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group221", "Der_Junk0_GunAmmo", {23529.66,-4333.07,-8991.01}, -1, {0,-188.3,-29.3}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group240", "Der_Junk0_GunAmmo", {-14401.135,4414.375,4743.025}, -1, {0,-184.5,-8.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group241", "Der_Junk0_GunAmmo", {23811.41,-2173.5,-9268.84}, -1, {0,-227.7,27.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group265", "Der_Junk0_GunAmmo", {-2036.44,1350.51,9649.5}, -1, {0,36.9,-29.9}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group274", "Der_Junk0_GunAmmo", {-7427.63,963.2,-8786.33}, -1, {0,-267.7,-28.2}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group285", "Der_Junk0_GunAmmo", {-4917.29,-7334.67,2527.07}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group304", "Der_Junk0_GunAmmo", {-6963.495,-7638.575,4149.25}, -1, {0,-28.2,44.3}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group314", "Der_Junk0_GunAmmo", {-2774.415,435.19,10641.785}, -1, {0,-205.7,57.1}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group321", "Der_Junk0_GunAmmo", {1467.97,4278.855,-10170.44}, -1, {0,-111.9,-60.2}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group322", "Der_Junk0_GunAmmo", {20752.655,3389.82,-15271.025}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group339", "Der_Junk0_GunAmmo", {11886.665,3230.57,-4754.12}, -1, {0,-153.9,12.6}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group344", "Der_Junk0_GunAmmo", {7516.6,-4250.12,-16369.36}, -1, {0,-9.59999999999999,-66.5}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group362", "Der_Junk0_GunAmmo", {17580.115,4100.67,-12348.245}, -1, {0,-127.7,-56.6}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group378", "Der_Junk0_GunAmmo", {20527.535,2731.575,-15237.53}, -1, {0,-21.6,-67.6}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group388", "Der_Junk0_GunAmmo", {22408.19,-1028.79,-8233.645}, -1, {0,-228.7,-14.1}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group396", "Der_Junk0_GunAmmo", {9704.345,-7846.23,-7842.485}, -1, {0,-28.2,44.3}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group405", "Der_Junk0_GunAmmo", {9736.055,-7562.03,-14594.72}, -1, {0,-105.7,9.7}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group415", "Der_Junk0_GunAmmo", {7199.115,-7644.595,-18064.025}, -1, {0,-135.9,-23.4}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group457", "Der_Junk0_GunAmmo", {3318.735,4290.93,-14814.835}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group464", "Der_Junk0_GunAmmo", {6515.53,-4429.775,-19516.35}, -1, {0,-150,32.3}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group480", "Der_Junk0_GunAmmo", {11816.945,-111.335,-25891.32}, -1, {0,-97,-83.2}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group514", "Der_Junk0_GunAmmo", {4908.855,-899.745,-8686.37}, -1, {0,-72.5,-35.6}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group521", "Der_Junk0_GunAmmo", {4822.37,-431.095,-8750.63}, -1, {0,-61.9,23.6}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group537", "Der_Junk0_GunAmmo", {4909.17,-803.005,-9148.51}, -1, {0,-174,-21.9}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group583", "Der_Junk0_GunAmmo", {12990.985,4853.45,-6828.64}, -1, {0,-44.4,26.7}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group588", "Der_Junk0_GunAmmo", {-12803.385,5008.605,4570.02}, -1, {0,-53.9,18.9}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group593", "Der_Junk0_GunAmmo", {16853.76,3100.79,-11031.51}, -1, {0,-124.9,35.1}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group642", "Der_Junk0_GunAmmo", {-5902.33,-2797.62,1645.385}, -1, {0,20.7,0.8}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group647", "Der_Junk0_GunAmmo", {4220.72,-1359.12,-8814.05}, -1, {0,-22.3,-0.7}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group652", "Der_Junk0_GunAmmo", {5171.915,-1640.485,-8416.205}, -1, {0,-85.6,30.5}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group734", "Der_Junk0_GunAmmo", {22408.82,-4026.4,-8184.155}, -1, {0,-228.7,-14.1}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group751", "Der_Junk0_GunAmmo", {-13299.335,-4059.79,9124.465}, -1, {0,36.9,-29.9}, 1, 0)
+    addSquadron("Junk0_GunAmmo_Group756", "Der_Junk0_GunAmmo", {-2774.415,435.19,10641.785}, -1, {0,-205.7,57.1}, 1, 0)
+    addSquadron("Junk0_antenna_Group100", "Der_Junk0_antenna", {3930.675,-7365.715,-242.515}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group101", "Der_Junk0_antenna", {7972.65,296.205,-20541.955}, -1, {0,-111.9,-60.2}, 1, 0)
+    addSquadron("Junk0_antenna_Group102", "Der_Junk0_antenna", {-5908.28,-3737.51,1713.845}, -1, {0,-38,-42.1}, 1, 0)
+    addSquadron("Junk0_antenna_Group103", "Der_Junk0_antenna", {3506.895,-5440.645,-9757.825}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group104", "Der_Junk0_antenna", {23251.76,-4145.085,-6531.595}, -1, {0,-178.6,-85.7}, 1, 0)
+    addSquadron("Junk0_antenna_Group105", "Der_Junk0_antenna", {11439.4,-917.875,3917.48}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group197", "Der_Junk0_antenna", {23677.675,-1243.165,-9065.805}, -1, {0,-7.7,36.2}, 1, 0)
+    addSquadron("Junk0_antenna_Group198", "Der_Junk0_antenna", {21720.86,-1463,-7751.59}, -1, {0,-1.8,-28.5}, 1, 0)
+    addSquadron("Junk0_antenna_Group216", "Der_Junk0_antenna", {24265.29,-1289.75,-8527.4}, -1, {0,-4.40000000000001,30.3}, 1, 0)
+    addSquadron("Junk0_antenna_Group236", "Der_Junk0_antenna", {3951.045,2924.04,4618.355}, -1, {0,-200.1,-7.1}, 1, 0)
+    addSquadron("Junk0_antenna_Group261", "Der_Junk0_antenna", {-2937.025,716.38,9678.69}, -1, {0,16,8.4}, 1, 0)
+    addSquadron("Junk0_antenna_Group271", "Der_Junk0_antenna", {20558.37,-4048.765,-15182.37}, -1, {0,-246.9,-0.2}, 1, 0)
+    addSquadron("Junk0_antenna_Group283", "Der_Junk0_antenna", {-3187.31,-543.62,10084.41}, -1, {0,-86.6,-1.9}, 1, 0)
+    addSquadron("Junk0_antenna_Group299", "Der_Junk0_antenna", {-6548.78,5059.18,-3379.495}, -1, {0,-165.2,-12.1}, 1, 0)
+    addSquadron("Junk0_antenna_Group300", "Der_Junk0_antenna", {25300.625,3259.83,-20762.49}, -1, {0,-132.8,13.5}, 1, 0)
+    addSquadron("Junk0_antenna_Group311", "Der_Junk0_antenna", {7454.23,-4931.85,-20480.495}, -1, {0,-188.5,-36.6}, 1, 0)
+    addSquadron("Junk0_antenna_Group320", "Der_Junk0_antenna", {7334.915,-5278.21,-15595.825}, -1, {0,-123.9,-60.2}, 1, 0)
+    addSquadron("Junk0_antenna_Group337", "Der_Junk0_antenna", {-20604.395,5168.135,10919.335}, -1, {0,-199.9,-65.4}, 1, 0)
+    addSquadron("Junk0_antenna_Group349", "Der_Junk0_antenna", {-2870.91,-2559.69,10551.24}, -1, {0,-148.6,23.9}, 1, 0)
+    addSquadron("Junk0_antenna_Group361", "Der_Junk0_antenna", {19453.98,2477.51,-13682.935}, -1, {0,-127.7,-56.6}, 1, 0)
+    addSquadron("Junk0_antenna_Group372", "Der_Junk0_antenna", {-7280.245,-710.255,-8451.345}, -1, {0,9.90000000000001,-29.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group424", "Der_Junk0_antenna", {12567.94,31.57,2363.095}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group436", "Der_Junk0_antenna", {6260.66,-4512.83,-18865.56}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group437", "Der_Junk0_antenna", {10341.03,-4697.7,-24011.085}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group449", "Der_Junk0_antenna", {8621.9,-6275.64,-21789.46}, -1, {0,-249.5,9.1}, 1, 0)
+    addSquadron("Junk0_antenna_Group453", "Der_Junk0_antenna", {14076.405,-1529.99,-28723.87}, -1, {0,-200.1,-15.6}, 1, 0)
+    addSquadron("Junk0_antenna_Group463", "Der_Junk0_antenna", {7487.585,-1586.55,-19044.795}, -1, {0,-199,-45.2}, 1, 0)
+    addSquadron("Junk0_antenna_Group473", "Der_Junk0_antenna", {11838.365,-5920.11,-26540.115}, -1, {0,-146.9,-41.9}, 1, 0)
+    addSquadron("Junk0_antenna_Group493", "Der_Junk0_antenna", {5079.795,161.21,-8470.84}, -1, {0,-72.5,-35.6}, 1, 0)
+    addSquadron("Junk0_antenna_Group494", "Der_Junk0_antenna", {-5307.96,839.055,3436.475}, -1, {0,-47.2,1.1}, 1, 0)
+    addSquadron("Junk0_antenna_Group506", "Der_Junk0_antenna", {5282.69,-3851.75,-9282.455}, -1, {0,-254.4,62.8}, 1, 0)
+    addSquadron("Junk0_antenna_Group510", "Der_Junk0_antenna", {-5298.195,-5446.875,2895.2}, -1, {0,-145.4,48.7}, 1, 0)
+    addSquadron("Junk0_antenna_Group520", "Der_Junk0_antenna", {-4245.29,-3804.29,-5136.565}, -1, {0,-66.3,-16.9}, 1, 0)
+    addSquadron("Junk0_antenna_Group530", "Der_Junk0_antenna", {5137.265,1073.45,-8902.11}, -1, {0,-133.7,-2.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group559", "Der_Junk0_antenna", {15510.04,3961.79,-8715.21}, -1, {0,-58.1,-32.2}, 1, 0)
+    addSquadron("Junk0_antenna_Group560", "Der_Junk0_antenna", {14360.465,4415.985,-8863.54}, -1, {0,-37.4,-34.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group581", "Der_Junk0_antenna", {14157.675,3743.005,-7511.735}, -1, {0,-44.4,26.7}, 1, 0)
+    addSquadron("Junk0_antenna_Group582", "Der_Junk0_antenna", {14809.55,3461.045,-9213.68}, -1, {0,-44.4,26.7}, 1, 0)
+    addSquadron("Junk0_antenna_Group618", "Der_Junk0_antenna", {-556.115,2130.87,7385.175}, -1, {0,-160.8,-44.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group619", "Der_Junk0_antenna", {-4924.675,4757.62,-5231.695}, -1, {0,-2.7,-35.7}, 1, 0)
+    addSquadron("Junk0_antenna_Group640", "Der_Junk0_antenna", {-3882.2,-2768.885,9551.15}, -1, {0,18.7,0.8}, 1, 0)
+    addSquadron("Junk0_antenna_Group641", "Der_Junk0_antenna", {-3357.83,2681.315,-12724.46}, -1, {0,-73.3,0.8}, 1, 0)
+    addSquadron("Junk0_antenna_Group750", "Der_Junk0_antenna", {-14199.92,-4693.92,9153.655}, -1, {0,16,8.4}, 1, 0)
+    addSquadron("Junk0_antenna_Group755", "Der_Junk0_antenna", {-14450.17,-5953.92,9559.34}, -1, {0,-86.6,-1.9}, 1, 0)
+    addSquadron("Junk0_antenna_Group757", "Der_Junk0_antenna", {-2870.91,-2559.69,10551.24}, -1, {0,-148.6,23.9}, 1, 0)
+    addSquadron("Junk0_antenna_Group94", "Der_Junk0_antenna", {-1031.065,-5634.265,-9825.34}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group95", "Der_Junk0_antenna", {-642.53,2760.59,7713.055}, -1, {0,-86.3,-1.7}, 1, 0)
+    addSquadron("Junk0_antenna_Group96", "Der_Junk0_antenna", {-559.51,4740.225,6705.44}, -1, {0,-86.3,-1.7}, 1, 0)
+    addSquadron("Junk0_antenna_Group97", "Der_Junk0_antenna", {16502.08,-1077.44,2805.215}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group98", "Der_Junk0_antenna", {-593.775,-7244.405,3556.42}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_antenna_Group99", "Der_Junk0_antenna", {23200.66,-3755.675,-6618.955}, -1, {0,-43.9,-87.9}, 1, 0)
+    addSquadron("Junk0_fin1_Group106", "Der_Junk0_fin1", {-4627.91,-7405.615,3312.82}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group107", "Der_Junk0_fin1", {24140.48,-3968.09,-19954.27}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group108", "Der_Junk0_fin1", {12304.32,-3811.675,2614.15}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group109", "Der_Junk0_fin1", {-742.84,-7164.185,3976.35}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group110", "Der_Junk0_fin1", {1625.89,4255.965,-12964.56}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group111", "Der_Junk0_fin1", {13172.075,-160.02,-27198.92}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group112", "Der_Junk0_fin1", {3372.565,4425.085,-14883.89}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group13", "Der_Junk0_fin1", {2055.305,2989.56,-1112.545}, -1, {0,-11.4,-40.4}, 1, 0)
+    addSquadron("Junk0_fin1_Group199", "Der_Junk0_fin1", {-1292.725,-7846.51,4846.275}, -1, {0,-1.2,29.6}, 1, 0)
+    addSquadron("Junk0_fin1_Group200", "Der_Junk0_fin1", {14277.27,-10.29,-104.93}, -1, {0,-200.7,36.2}, 1, 0)
+    addSquadron("Junk0_fin1_Group217", "Der_Junk0_fin1", {24556.98,-4357.92,-8253.56}, -1, {0,-87.2,11.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group237", "Der_Junk0_fin1", {18508.315,-4599.945,627.655}, -1, {0,-255.5,-8.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group262", "Der_Junk0_fin1", {-4760.385,-3506.125,-6770.645}, -1, {0,-210.1,35.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group263", "Der_Junk0_fin1", {316.89,-1295.385,-3442.705}, -1, {0,-6.40000000000001,20.1}, 1, 0)
+    addSquadron("Junk0_fin1_Group272", "Der_Junk0_fin1", {-2732.135,-2345.28,10352.615}, -1, {0,87.4,27.5}, 1, 0)
+    addSquadron("Junk0_fin1_Group301", "Der_Junk0_fin1", {11345.005,-1407.805,-25242.91}, -1, {0,-137.4,11.2}, 1, 0)
+    addSquadron("Junk0_fin1_Group302", "Der_Junk0_fin1", {-5020.05,-7603.26,5194.7}, -1, {0,-28.2,44.3}, 1, 0)
+    addSquadron("Junk0_fin1_Group312", "Der_Junk0_fin1", {-4903.36,-7494.095,-2618.21}, -1, {0,-142.7,52.9}, 1, 0)
+    addSquadron("Junk0_fin1_Group338", "Der_Junk0_fin1", {12268.165,-6624.695,-27077.575}, -1, {0,-199.9,-65.4}, 1, 0)
+    addSquadron("Junk0_fin1_Group355", "Der_Junk0_fin1", {-2772.385,1178.73,10163.195}, -1, {0,-64.3,28.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group373", "Der_Junk0_fin1", {-7317.415,-1063.58,-8532.09}, -1, {0,9.90000000000001,-29.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group383", "Der_Junk0_fin1", {10591.21,-7287.805,-13715.52}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_fin1_Group400", "Der_Junk0_fin1", {23221.31,-1747.13,-6997.76}, -1, {0,52.1,47.8}, 1, 0)
+    addSquadron("Junk0_fin1_Group410", "Der_Junk0_fin1", {3909.36,-2136.645,-23590.945}, -1, {0,-149,23.3}, 1, 0)
+    addSquadron("Junk0_fin1_Group735", "Der_Junk0_fin1", {23221.94,-4744.74,-6948.235}, -1, {0,52.1,47.8}, 1, 0)
+    addSquadron("Junk0_fin1_Group754", "Der_Junk0_fin1", {-13995.03,-4274.515,10787.105}, -1, {0,87.4,27.5}, 1, 0)
+    addSquadron("Junk0_fin1_Group759", "Der_Junk0_fin1", {-14035.28,-4231.535,9638.125}, -1, {0,-64.3,28.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group113", "Der_Junk0_fin2", {7481.81,-7400.365,-5859.42}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group114", "Der_Junk0_fin2", {23963.59,-4683.035,-8939.7}, -1, {0,44,0.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group115", "Der_Junk0_fin2", {5979.085,-5150.88,-13194.23}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group116", "Der_Junk0_fin2", {21822.255,-2129.505,-7679.7}, -1, {0,33,-52.6}, 1, 0)
+    addSquadron("Junk0_fin2_Group117", "Der_Junk0_fin2", {21861.91,-3302.67,-7614.355}, -1, {0,-89,-87.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group118", "Der_Junk0_fin2", {10551.275,5170.585,-11817.505}, -1, {0,58,0.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group119", "Der_Junk0_fin2", {10598.84,-5551.805,-10142.405}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group120", "Der_Junk0_fin2", {-2649.22,-6238.155,-8253.385}, -1, {0,-123.9,-60.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group14", "Der_Junk0_fin2", {24621.205,-3214.505,-8186.5}, -1, {0,-115.4,-61.4}, 1, 0)
+    addSquadron("Junk0_fin2_Group201", "Der_Junk0_fin2", {14484.4,-936.565,-247.135}, -1, {0,-200.7,36.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group218", "Der_Junk0_fin2", {24641.435,-2685.585,-8180.515}, -1, {0,-28.4,-33.1}, 1, 0)
+    addSquadron("Junk0_fin2_Group219", "Der_Junk0_fin2", {8817.13,-7313.88,-10999.975}, -1, {0,-149.9,-45.7}, 1, 0)
+    addSquadron("Junk0_fin2_Group238", "Der_Junk0_fin2", {18216.59,1376.34,1071.91}, -1, {0,-257.8,-29.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group239", "Der_Junk0_fin2", {23639.35,-3404.94,-9211.615}, -1, {0,-227.7,27.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group249", "Der_Junk0_fin2", {-2840.705,1050.525,10149.3}, -1, {0,-30,-69.9}, 1, 0)
+    addSquadron("Junk0_fin2_Group264", "Der_Junk0_fin2", {319.935,-1703.415,-3149.23}, -1, {0,-6.40000000000001,20.1}, 1, 0)
+    addSquadron("Junk0_fin2_Group273", "Der_Junk0_fin2", {-3391.71,-3002.895,9871.75}, -1, {0,-183.8,39.8}, 1, 0)
+    addSquadron("Junk0_fin2_Group284", "Der_Junk0_fin2", {8861.37,-4733.05,-15210.615}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group303", "Der_Junk0_fin2", {22115.065,-1663.025,-8074.99}, -1, {0,-62.6,-30.6}, 1, 0)
+    addSquadron("Junk0_fin2_Group313", "Der_Junk0_fin2", {9603.125,-4031.055,-17190.005}, -1, {0,-200.5,-36.6}, 1, 0)
+    addSquadron("Junk0_fin2_Group327", "Der_Junk0_fin2", {12267.255,-6241.97,-11633.615}, -1, {0,-64.9,-62.9}, 1, 0)
+    addSquadron("Junk0_fin2_Group343", "Der_Junk0_fin2", {18753.07,4275.95,-13318.48}, -1, {0,-39.9,-39.5}, 1, 0)
+    addSquadron("Junk0_fin2_Group350", "Der_Junk0_fin2", {8549.45,-5903.695,-22108.03}, -1, {0,-111.9,-60.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group356", "Der_Junk0_fin2", {19985.105,-3928.12,-14903.595}, -1, {0,-194,-40.1}, 1, 0)
+    addSquadron("Junk0_fin2_Group365", "Der_Junk0_fin2", {-4966.745,-1248.415,2462.53}, -1, {0,-102.8,-68.8}, 1, 0)
+    addSquadron("Junk0_fin2_Group377", "Der_Junk0_fin2", {-12342.785,4289.845,2951.41}, -1, {0,2.40000000000001,-66.5}, 1, 0)
+    addSquadron("Junk0_fin2_Group384", "Der_Junk0_fin2", {13862.1,-7434.035,-12221.02}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group390", "Der_Junk0_fin2", {3508.645,4788.665,-4220.58}, -1, {0,-83.9,-62.9}, 1, 0)
+    addSquadron("Junk0_fin2_Group401", "Der_Junk0_fin2", {23611.91,-4644.605,-9213.12}, -1, {0,-265.5,19.7}, 1, 0)
+    addSquadron("Junk0_fin2_Group414", "Der_Junk0_fin2", {2779.84,-7619.465,-11850.51}, -1, {0,-126.2,22.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group438", "Der_Junk0_fin2", {-7589.05,4225.795,-1928.01}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group459", "Der_Junk0_fin2", {-18390.155,5438.09,9062.095}, -1, {0,-114.3,-60.7}, 1, 0)
+    addSquadron("Junk0_fin2_Group468", "Der_Junk0_fin2", {8361.185,-6311.06,-22136.835}, -1, {0,-146.9,-41.9}, 1, 0)
+    addSquadron("Junk0_fin2_Group470", "Der_Junk0_fin2", {12058.9,-3232.39,-17830.225}, -1, {0,-205.1,-20.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group479", "Der_Junk0_fin2", {7687.575,576.17,-20776.805}, -1, {0,-97,-83.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group482", "Der_Junk0_fin2", {-12380.76,5001.01,3365.075}, -1, {0,-193.1,-20.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group495", "Der_Junk0_fin2", {145.32,2356.97,-1914.64}, -1, {0,-70.5,-34.6}, 1, 0)
+    addSquadron("Junk0_fin2_Group516", "Der_Junk0_fin2", {558.215,-4373.81,-2737.385}, -1, {0,-148.5,-27.3}, 1, 0)
+    addSquadron("Junk0_fin2_Group525", "Der_Junk0_fin2", {-5222.665,-4412.38,2786.945}, -1, {0,-98.9,-46.4}, 1, 0)
+    addSquadron("Junk0_fin2_Group527", "Der_Junk0_fin2", {-4872.805,-6226.15,2531.375}, -1, {0,-141.6,41.1}, 1, 0)
+    addSquadron("Junk0_fin2_Group536", "Der_Junk0_fin2", {16099.37,-2829.33,3038.735}, -1, {0,-71.9,-64.4}, 1, 0)
+    addSquadron("Junk0_fin2_Group539", "Der_Junk0_fin2", {-4591.755,3338.615,2695.49}, -1, {0,-141.6,41.1}, 1, 0)
+    addSquadron("Junk0_fin2_Group544", "Der_Junk0_fin2", {21458.535,2811.97,-16983.015}, -1, {0,-90.4,-44.8}, 1, 0)
+    addSquadron("Junk0_fin2_Group561", "Der_Junk0_fin2", {-58.275,3274.285,9493.645}, -1, {0,-59.2,-33.4}, 1, 0)
+    addSquadron("Junk0_fin2_Group562", "Der_Junk0_fin2", {18711.7,-4339.72,-14013.545}, -1, {0,-40.3,1.3}, 1, 0)
+    addSquadron("Junk0_fin2_Group563", "Der_Junk0_fin2", {1440.6,3612.7,7217.035}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk0_fin2_Group587", "Der_Junk0_fin2", {23389.415,2931.985,-19050.605}, -1, {0,-86.7,14.9}, 1, 0)
+    addSquadron("Junk0_fin2_Group592", "Der_Junk0_fin2", {17674.475,-3934.14,-12348.35}, -1, {0,-124.9,35.1}, 1, 0)
+    addSquadron("Junk0_fin2_Group603", "Der_Junk0_fin2", {2494.625,2792.475,-992.075}, -1, {0,79.9,-52.4}, 1, 0)
+    addSquadron("Junk0_fin2_Group620", "Der_Junk0_fin2", {15724.135,-263.06,4466.42}, -1, {0,-67.2,37.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group621", "Der_Junk0_fin2", {4878.16,4953.55,-8164.03}, -1, {0,7.2,-18.7}, 1, 0)
+    addSquadron("Junk0_fin2_Group622", "Der_Junk0_fin2", {15391.6,-2247.805,-953.295}, -1, {0,-74,-34.7}, 1, 0)
+    addSquadron("Junk0_fin2_Group646", "Der_Junk0_fin2", {-5268.13,-3686.06,2971.36}, -1, {0,-39.7,-4.2}, 1, 0)
+    addSquadron("Junk0_fin2_Group651", "Der_Junk0_fin2", {-5360.915,37.17,3044.79}, -1, {0,-86.1,30.6}, 1, 0)
+    addSquadron("Junk0_fin2_Group733", "Der_Junk0_fin2", {22115.66,-4660.635,-8025.465}, -1, {0,-62.6,-30.6}, 1, 0)
+    addSquadron("Junk0_fin2_Group749", "Der_Junk0_fin2", {-14103.6,-4359.775,9624.265}, -1, {0,-30,-69.9}, 1, 0)
+    addSquadron("Junk0_panel_Group129", "Der_Junk0_panel", {12600.315,-7306.285,-13751.395}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk0_panel_Group130", "Der_Junk0_panel", {22904.28,-1299.935,-6398.21}, -1, {0,45.5,-88.3}, 1, 0)
+    addSquadron("Junk0_panel_Group131", "Der_Junk0_panel", {-4483.5,-1497.58,2469.145}, -1, {0,-92.7,-53.0}, 1, 0)
+    addSquadron("Junk0_panel_Group132", "Der_Junk0_panel", {24726.975,-1661.065,-8236.41}, -1, {0,-130.4,-84.0}, 1, 0)
+    addSquadron("Junk0_panel_Group133", "Der_Junk0_panel", {23789.78,-3904.775,-9190.755}, -1, {0,-243.3,-79.3}, 1, 0)
+    addSquadron("Junk0_panel_Group134", "Der_Junk0_panel", {-6773.025,1215.795,-8927.415}, -1, {0,-93.8,1.6}, 1, 0)
+    addSquadron("Junk0_panel_Group15", "Der_Junk0_panel", {-2639.805,-2411.815,10364.2}, -1, {0,-86.3,-0.9}, 1, 0)
+    addSquadron("Junk0_panel_Group564", "Der_Junk0_panel", {25437.02,2882.565,-21016.1}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk0_panel_Group565", "Der_Junk0_panel", {24990.105,-3781.96,-21504.35}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk0_panel_Group623", "Der_Junk0_panel", {5326.65,4195.835,-9397.605}, -1, {0,-11.4,-55.0}, 1, 0)
+    addSquadron("Junk0_panel_Group624", "Der_Junk0_panel", {695.8,-4711.735,-3289.16}, -1, {0,-10.6,-52.1}, 1, 0)
+    addSquadron("Junk0_panel_Group748", "Der_Junk0_panel", {-13902.7,-4341.015,10798.69}, -1, {0,-86.3,-0.9}, 1, 0)
+    addSquadron("Junk0_sensors_Group135", "Der_Junk0_sensors", {-27152.615,4611.81,-97764.24}, -1, {0,-228.9,-38.9}, 1, 0)
+    addSquadron("Junk0_sensors_Group136", "Der_Junk0_sensors", {-20414.975,5419.96,10812.445}, -1, {0,-111.9,-60.2}, 1, 0)
+    addSquadron("Junk0_sensors_Group137", "Der_Junk0_sensors", {-866.88,4725.875,6817.65}, -1, {0,-86.3,-1.7}, 1, 0)
+    addSquadron("Junk0_sensors_Group138", "Der_Junk0_sensors", {3905.615,-1767.885,-23827.37}, -1, {0,-232.1,28.3}, 1, 0)
+    addSquadron("Junk0_sensors_Group139", "Der_Junk0_sensors", {9500.155,-6347.67,-23572.815}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk0_sensors_Group140", "Der_Junk0_sensors", {12673.71,1549.065,2215.85}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk0_sensors_Group16", "Der_Junk0_sensors", {-6724.865,-2785.825,-9072.7}, -1, {0,-93.8,1.6}, 1, 0)
+    addSquadron("Junk0_sensors_Group203", "Der_Junk0_sensors", {18865.175,-7019.215,1988.105}, -1, {0,-204.7,36.2}, 1, 0)
+    addSquadron("Junk0_sensors_Group222", "Der_Junk0_sensors", {22436.26,3010.525,-17123.26}, -1, {0,-194,-40.1}, 1, 0)
+    addSquadron("Junk0_sensors_Group242", "Der_Junk0_sensors", {-32309.795,20883.275,-29556.205}, -1, {0,-210.4,16.5}, 1, 0)
+    addSquadron("Junk0_sensors_Group266", "Der_Junk0_sensors", {-1205.155,1131.27,8182.09}, -1, {0,36.9,-29.9}, 1, 0)
+    addSquadron("Junk0_sensors_Group275", "Der_Junk0_sensors", {-3978.765,-2485.665,9550.52}, -1, {0,-183.8,39.8}, 1, 0)
+    addSquadron("Junk0_sensors_Group305", "Der_Junk0_sensors", {-3545.325,-3365.915,-5410.86}, -1, {0,9.8,47.9}, 1, 0)
+    addSquadron("Junk0_sensors_Group351", "Der_Junk0_sensors", {-2612.33,-2500.715,10651.69}, -1, {0,-148.6,23.9}, 1, 0)
+    addSquadron("Junk0_sensors_Group357", "Der_Junk0_sensors", {19167.96,4165.035,-13173.125}, -1, {0,-194,-40.1}, 1, 0)
+    addSquadron("Junk0_sensors_Group402", "Der_Junk0_sensors", {23509.465,-1546.475,-9279.305}, -1, {0,42.1,47.8}, 1, 0)
+    addSquadron("Junk0_sensors_Group439", "Der_Junk0_sensors", {7694.54,-1369.655,-19189.1}, -1, {0,-146.9,-41.9}, 1, 0)
+    addSquadron("Junk0_sensors_Group471", "Der_Junk0_sensors", {13026.02,-263.62,-26531.295}, -1, {0,-193.1,-20.2}, 1, 0)
+    addSquadron("Junk0_sensors_Group496", "Der_Junk0_sensors", {-7143.465,-2909.62,886.305}, -1, {0,-19.7,-85.6}, 1, 0)
+    addSquadron("Junk0_sensors_Group528", "Der_Junk0_sensors", {-5398.19,-4607.225,3057.88}, -1, {0,-141.6,41.1}, 1, 0)
+    addSquadron("Junk0_sensors_Group598", "Der_Junk0_sensors", {9030.245,-5707.52,-22729.14}, -1, {0,-121.8,-14.3}, 1, 0)
+    addSquadron("Junk0_sensors_Group657", "Der_Junk0_sensors", {25106.62,2707.04,-21275.905}, -1, {0,-78.9,-11.3}, 1, 0)
+    addSquadron("Junk0_sensors_Group736", "Der_Junk0_sensors", {23510.095,-4544.085,-9229.815}, -1, {0,42.1,47.8}, 1, 0)
+    addSquadron("Junk0_sensors_Group758", "Der_Junk0_sensors", {-13875.225,-4429.915,11086.18}, -1, {0,-148.6,23.9}, 1, 0)
+    addSquadron("Junk1_partA_Group141", "Der_Junk1_partA", {26160.05,-4004.455,-23345.63}, -1, {0,-73,2.9}, 1, 0)
+    addSquadron("Junk1_partA_Group142", "Der_Junk1_partA", {7478.485,-5961.83,-20922.545}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk1_partA_Group143", "Der_Junk1_partA", {14865.41,285.04,-475.405}, -1, {0,-149,0.0}, 1, 0)
+    addSquadron("Junk1_partA_Group144", "Der_Junk1_partA", {14348.88,-2980.145,-19023.795}, -1, {0,-123.9,-60.2}, 1, 0)
+    addSquadron("Junk1_partA_Group145", "Der_Junk1_partA", {8730.33,-7445.27,-14439.425}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk1_partA_Group146", "Der_Junk1_partA", {13523.51,-2790.13,-18952.815}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk1_partA_Group20", "Der_Junk1_partA", {123.165,-689.465,-3552.535}, -1, {0,-90,-53.0}, 1, 0)
+    addSquadron("Junk1_partA_Group223", "Der_Junk1_partA", {72.24,-7197.155,2188.165}, -1, {0,-8.7,29.2}, 1, 0)
+    addSquadron("Junk1_partA_Group243", "Der_Junk1_partA", {21991.06,-1415.785,-7693.49}, -1, {0,-203.2,72.5}, 1, 0)
+    addSquadron("Junk1_partA_Group323", "Der_Junk1_partA", {-13875.995,4654.09,5350.765}, -1, {0,-111.9,-60.2}, 1, 0)
+    addSquadron("Junk1_partA_Group352", "Der_Junk1_partA", {15254.575,-2221.625,-1232.56}, -1, {0,-182.9,-60.2}, 1, 0)
+    addSquadron("Junk1_partA_Group363", "Der_Junk1_partA", {-2936.22,-15.89,10191.58}, -1, {0,-148.6,23.9}, 1, 0)
+    addSquadron("Junk1_partA_Group406", "Der_Junk1_partA", {-4844.875,-7601.335,2366.455}, -1, {0,-105.7,9.7}, 1, 0)
+    addSquadron("Junk1_partA_Group440", "Der_Junk1_partA", {15796.025,215.565,-29630.545}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk1_partA_Group497", "Der_Junk1_partA", {4966.675,-4143.055,-9593.045}, -1, {0,-72.5,-35.6}, 1, 0)
+    addSquadron("Junk1_partA_Group594", "Der_Junk1_partA", {15525.65,3479.595,-10045.07}, -1, {0,-124.9,35.1}, 1, 0)
+    addSquadron("Junk1_partA_Group653", "Der_Junk1_partA", {22262.94,-4126.43,-16733.185}, -1, {0,-106.1,35.9}, 1, 0)
+    addSquadron("Junk1_partA_Group761", "Der_Junk1_partA", {-14199.115,-5426.155,9666.545}, -1, {0,-148.6,23.9}, 1, 0)
+    addSquadron("Junk1_partB_Group147", "Der_Junk1_partB", {13128.115,-3880.94,-17416.7}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk1_partB_Group148", "Der_Junk1_partB", {-710.605,5084.45,7247.695}, -1, {0,-89.8,-21.4}, 1, 0)
+    addSquadron("Junk1_partB_Group149", "Der_Junk1_partB", {10902.78,-2788.31,4083.1}, -1, {0,83.1,-29.7}, 1, 0)
+    addSquadron("Junk1_partB_Group150", "Der_Junk1_partB", {-1841.14,1133.055,9002.665}, -1, {0,-136.5,-47.7}, 1, 0)
+    addSquadron("Junk1_partB_Group151", "Der_Junk1_partB", {4332.51,-1886.57,-23416.365}, -1, {0,-51,-14.0}, 1, 0)
+    addSquadron("Junk1_partB_Group21", "Der_Junk1_partB", {12275.445,-3935.89,2483.53}, -1, {0,-149,0.0}, 1, 0)
+    addSquadron("Junk1_shell_Group163", "Der_Junk1_shell", {23181.935,-3502.765,-6616.89}, -1, {0,-43.9,-87.9}, 1, 0)
+    addSquadron("Junk1_shell_Group164", "Der_Junk1_shell", {-5301.66,1330.735,2233.245}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk1_shell_Group165", "Der_Junk1_shell", {-2949.31,-7662.935,1481.34}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk1_shell_Group166", "Der_Junk1_shell", {13852.615,-160.02,-27403.355}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk1_shell_Group167", "Der_Junk1_shell", {24023.09,-1406.895,-8834.7}, -1, {0,44,0.0}, 1, 0)
+    addSquadron("Junk1_shell_Group168", "Der_Junk1_shell", {11668.65,-4225.585,3396.505}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk1_shell_Group17", "Der_Junk1_shell", {21754.18,-1428.525,-7779.31}, -1, {0,-44,-88.0}, 1, 0)
+    addSquadron("Junk1_shell_Group250", "Der_Junk1_shell", {-4577.265,207.865,2877.735}, -1, {0,-104.9,43.9}, 1, 0)
+    addSquadron("Junk1_shell_Group286", "Der_Junk1_shell", {7756.875,-7200.13,-5697.44}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk1_shell_Group328", "Der_Junk1_shell", {6421.8,-4271.75,-19214.615}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk1_shell_Group391", "Der_Junk1_shell", {5051.305,-7450.38,-14872.445}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk1_shell_Group425", "Der_Junk1_shell", {11281.83,-1888.6,3734.22}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk1_shell_Group442", "Der_Junk1_shell", {7363.615,-4912.565,-20220.83}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk1_shell_Group499", "Der_Junk1_shell", {-4684.645,-3860.535,3223.185}, -1, {0,-71.9,-35.3}, 1, 0)
+    addSquadron("Junk1_shell_Group545", "Der_Junk1_shell", {26953.675,3278.695,-23219.385}, -1, {0,-58.1,-32.2}, 1, 0)
+    addSquadron("Junk1_shell_Group567", "Der_Junk1_shell", {15187.935,3388.245,-8618.785}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk1_shell_Group568", "Der_Junk1_shell", {2899.4,3560.865,6075.44}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk1_shell_Group604", "Der_Junk1_shell", {-5855.675,2545.515,-10061.205}, -1, {0,-22.9,-37.2}, 1, 0)
+    addSquadron("Junk1_shell_Group626", "Der_Junk1_shell", {-6408.045,2976.435,-9584.505}, -1, {0,-22.9,-37.2}, 1, 0)
+    addSquadron("Junk1_shell_Group627", "Der_Junk1_shell", {-5710.705,2564.765,-10217.095}, -1, {0,-22.9,-37.2}, 1, 0)
+    addSquadron("Junk1_strut_Group18", "Der_Junk1_strut", {7167.195,-6492.815,-4491.165}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk1_strut_Group186", "Der_Junk1_strut", {24563.945,-2957.71,-8200.92}, -1, {0,-1.8,-28.5}, 1, 0)
+    addSquadron("Junk1_strut_Group195", "Der_Junk1_strut", {17660.09,-4572.54,1585.115}, -1, {0,-61.1,13.2}, 1, 0)
+    addSquadron("Junk1_strut_Group215", "Der_Junk1_strut", {23767.17,-3738.805,-9240.07}, -1, {0,-227.3,-24.7}, 1, 0)
+    addSquadron("Junk1_strut_Group235", "Der_Junk1_strut", {18147.815,-904.715,1014.965}, -1, {0,-264.1,-48.6}, 1, 0)
+    addSquadron("Junk1_strut_Group259", "Der_Junk1_strut", {14732.935,-4398.415,5114.795}, -1, {0,-90.5,-1.2}, 1, 0)
+    addSquadron("Junk1_strut_Group297", "Der_Junk1_strut", {-492.555,-7474.075,-197.47}, -1, {0,57.7,-45.7}, 1, 0)
+    addSquadron("Junk1_strut_Group382", "Der_Junk1_strut", {10035.69,-7842.31,-8556.695}, -1, {0,69.2,-41.1}, 1, 0)
+    addSquadron("Junk1_strut_Group426", "Der_Junk1_strut", {12844.265,117.46,-27018.32}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk1_strut_Group435", "Der_Junk1_strut", {11686.92,183.96,-24965.01}, -1, {0,5.09999999999999,20.6}, 1, 0)
+    addSquadron("Junk1_strut_Group483", "Der_Junk1_strut", {5177.55,-2772.595,-8458.73}, -1, {0,-72.5,-35.6}, 1, 0)
+    addSquadron("Junk1_strut_Group492", "Der_Junk1_strut", {-5384.33,-4544.645,2606.065}, -1, {0,52.4,-28.4}, 1, 0)
+    addSquadron("Junk1_strut_Group554", "Der_Junk1_strut", {25067.385,3599.855,-20930.28}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk1_strut_Group555", "Der_Junk1_strut", {2035.355,3917.06,6503.21}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk1_strut_Group573", "Der_Junk1_strut", {-803.565,3526.53,9877.385}, -1, {0,-65.8,27.3}, 1, 0)
+    addSquadron("Junk1_strut_Group586", "Der_Junk1_strut", {22737.33,-2559.795,-19259.31}, -1, {0,-79.9,4.7}, 1, 0)
+    addSquadron("Junk1_strut_Group613", "Der_Junk1_strut", {4218.41,2806.405,878.71}, -1, {0,71.1,-37.2}, 1, 0)
+    addSquadron("Junk1_strut_Group614", "Der_Junk1_strut", {-7228.06,-3588.13,-8569.015}, -1, {0,2.90000000000001,-16.7}, 1, 0)
+    addSquadron("Junk1_strut_Group632", "Der_Junk1_strut", {-5075.63,-2724.155,2446.43}, -1, {0,-18.7,5.6}, 1, 0)
+    addSquadron("Junk1_strut_Group645", "Der_Junk1_strut", {-5124.28,-338.03,2831.535}, -1, {0,-55.4,-11.5}, 1, 0)
+    addSquadron("Junk1_strut_Group76", "Der_Junk1_strut", {12394.725,-7493.115,-10903.9}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk1_strut_Group77", "Der_Junk1_strut", {19028.415,-4459.385,-14596.015}, -1, {0,8.59999999999999,41.4}, 1, 0)
+    addSquadron("Junk1_strut_Group78", "Der_Junk1_strut", {23543.03,-4144.14,-9330.51}, -1, {0,-243.3,-79.3}, 1, 0)
+    addSquadron("Junk1_strut_Group79", "Der_Junk1_strut", {21870.38,-2913.4,-7749.77}, -1, {0,-96,-86.8}, 1, 0)
+    addSquadron("Junk1_strut_Group80", "Der_Junk1_strut", {12918.325,-6554.765,-27696.48}, -1, {0,4.7,-50.1}, 1, 0)
+    addSquadron("Junk1_strut_Group81", "Der_Junk1_strut", {12100.655,605.43,2698.395}, -1, {0,-170,0.0}, 1, 0)
+    addSquadron("Junk1_strut_Group82", "Der_Junk1_strut", {11310.95,1974.035,3230.885}, -1, {0,-149,0.0}, 1, 0)
+    addSquadron("Junk1_strut_Group83", "Der_Junk1_strut", {-6723.15,433.405,-8975.54}, -1, {0,-93.8,1.6}, 1, 0)
+    addSquadron("Junk1_strut_Group84", "Der_Junk1_strut", {14374.115,-1046.36,73.29}, -1, {0,-149,0.0}, 1, 0)
+    addSquadron("Junk2_panelA_Group19", "Der_Junk2_panelA", {-930.09,2970.415,7460.88}, -1, {0,-40.8,5.6}, 1, 0)
+    addSquadron("Junk2_panelB_Group152", "Der_Junk2_panelB", {-16839.48,4222.855,7970.13}, -1, {0,-205.9,-48.6}, 1, 0)
+    addSquadron("Junk2_panelB_Group153", "Der_Junk2_panelB", {11346.965,-3080.91,3902.43}, -1, {0,62.1,-48.6}, 1, 0)
+    addSquadron("Junk2_panelB_Group154", "Der_Junk2_panelB", {23964.745,-4652.725,-8940.085}, -1, {0,-83.9,-48.6}, 1, 0)
+    addSquadron("Junk2_panelB_Group155", "Der_Junk2_panelB", {3543.05,-7579.425,-1468.845}, -1, {0,-217.9,-48.6}, 1, 0)
+    addSquadron("Junk2_panelB_Group156", "Der_Junk2_panelB", {-7089.67,1823.115,-9021.845}, -1, {0,26.4,-39.3}, 1, 0)
+    addSquadron("Junk2_panelB_Group157", "Der_Junk2_panelB", {10739.575,-7407.05,-8444.8}, -1, {0,-153.7,37.2}, 1, 0)
+    addSquadron("Junk2_panelB_Group22", "Der_Junk2_panelB", {12647.18,-1983.765,2150.225}, -1, {0,83.1,-48.6}, 1, 0)
+    addSquadron("Junk2_panelB_Group441", "Der_Junk2_panelB", {10249.715,-5752.355,-23959.32}, -1, {0,-210.2,-30.5}, 1, 0)
+    addSquadron("Junk2_panelB_Group498", "Der_Junk2_panelB", {-5277.545,-4208.995,2589.615}, -1, {0,-165.5,-33.4}, 1, 0)
+    addSquadron("Junk2_panelB_Group566", "Der_Junk2_panelB", {-2397.57,3140.76,12322.03}, -1, {0,-176.8,2.1}, 1, 0)
+    addSquadron("Junk2_panelB_Group625", "Der_Junk2_panelB", {-55.86,-3601.955,-2384.025}, -1, {0,-128.7,9.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group187", "Der_Junk2_panelC", {23706.095,-1560.615,-9376.99}, -1, {0,-259.1,-53.8}, 1, 0)
+    addSquadron("Junk2_panelC_Group188", "Der_Junk2_panelC", {23723.595,-1459.255,-9008.895}, -1, {0,-7.7,36.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group207", "Der_Junk2_panelC", {5201.07,-5854.975,-24511.97}, -1, {0,-262.9,-17.5}, 1, 0)
+    addSquadron("Junk2_panelC_Group208", "Der_Junk2_panelC", {11026.54,-4409.65,-18305.91}, -1, {0,-193,-42.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group227", "Der_Junk2_panelC", {23173.395,-4667.635,-6537.615}, -1, {0,-138.7,22.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group228", "Der_Junk2_panelC", {14110.32,1885.415,5948.25}, -1, {0,-255.5,-8.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group23", "Der_Junk2_panelC", {-4567.465,-7369.915,2166.675}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group253", "Der_Junk2_panelC", {-7018.55,499.31,-8663.865}, -1, {0,-132.1,-50.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group254", "Der_Junk2_panelC", {-6094.865,-3604.58,-7452.235}, -1, {0,-214.2,29.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group280", "Der_Junk2_panelC", {-13937.35,4982.88,5689.495}, -1, {0,-122.9,-27.6}, 1, 0)
+    addSquadron("Junk2_panelC_Group289", "Der_Junk2_panelC", {-5406.695,1879.465,3479.035}, -1, {0,-102.3,-24.9}, 1, 0)
+    addSquadron("Junk2_panelC_Group290", "Der_Junk2_panelC", {-5029.255,-7389.725,3453.135}, -1, {0,-28.2,44.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group30", "Der_Junk2_panelC", {16759.155,1893.675,2589.16}, -1, {0,-164.5,4.1}, 1, 0)
+    addSquadron("Junk2_panelC_Group309", "Der_Junk2_panelC", {1095.08,2799.65,-2060.8}, -1, {0,-163.9,-12.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group31", "Der_Junk2_panelC", {6110.44,-7530.74,-16087.68}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group317", "Der_Junk2_panelC", {-6865.46,4742.29,-3060.925}, -1, {0,-111.9,-60.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group32", "Der_Junk2_panelC", {14215.95,-2593.92,-19263.44}, -1, {0,-43.7,-5.9}, 1, 0)
+    addSquadron("Junk2_panelC_Group326", "Der_Junk2_panelC", {5287.625,-7915.425,-2536.17}, -1, {0,-134.9,-27.6}, 1, 0)
+    addSquadron("Junk2_panelC_Group33", "Der_Junk2_panelC", {15483.79,1034.46,3983.14}, -1, {0,-66.6,50.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group331", "Der_Junk2_panelC", {-15821.785,5474.98,8004.5}, -1, {0,-1.7,-55.8}, 1, 0)
+    addSquadron("Junk2_panelC_Group332", "Der_Junk2_panelC", {11151.735,-6067.53,-9302.44}, -1, {0,-149.4,11.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group34", "Der_Junk2_panelC", {23007.985,-2060.905,-6693.47}, -1, {0,-223.7,-38.9}, 1, 0)
+    addSquadron("Junk2_panelC_Group35", "Der_Junk2_panelC", {1907.5,-1677.41,-20804.28}, -1, {0,-221.6,-35.4}, 1, 0)
+    addSquadron("Junk2_panelC_Group354", "Der_Junk2_panelC", {11483.325,-6048.385,-10500.175}, -1, {0,-193,-42.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group359", "Der_Junk2_panelC", {530.67,-1940.995,-2123.625}, -1, {0,-154.5,16.1}, 1, 0)
+    addSquadron("Junk2_panelC_Group36", "Der_Junk2_panelC", {7551.18,-4807.075,-15497.65}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group368", "Der_Junk2_panelC", {3865.75,-5685.4,-251.265}, -1, {0,-13.7,-55.8}, 1, 0)
+    addSquadron("Junk2_panelC_Group37", "Der_Junk2_panelC", {-1439.76,-7503.825,445.305}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group379", "Der_Junk2_panelC", {3506.055,-7582.785,-9222.885}, -1, {0,-225.1,28.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group38", "Der_Junk2_panelC", {21989.38,-2708.615,-7542.36}, -1, {0,-89,-87.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group389", "Der_Junk2_panelC", {-3947.86,-7289.03,7475.72}, -1, {0,-75.3,27.1}, 1, 0)
+    addSquadron("Junk2_panelC_Group39", "Der_Junk2_panelC", {4867.03,-5800.095,-902.195}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group392", "Der_Junk2_panelC", {11921.98,-7282.8,-10140.165}, -1, {0,-28.2,44.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group399", "Der_Junk2_panelC", {-6813.94,-7774.97,6035.575}, -1, {0,-132.9,47.8}, 1, 0)
+    addSquadron("Junk2_panelC_Group409", "Der_Junk2_panelC", {-6442.275,-7431.83,4389.07}, -1, {0,-134.2,-34.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group427", "Der_Junk2_panelC", {-4816.35,4808.335,-5231.905}, -1, {0,-52.6,-19.8}, 1, 0)
+    addSquadron("Junk2_panelC_Group428", "Der_Junk2_panelC", {12431.86,-972.965,-26665.1}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group455", "Der_Junk2_panelC", {7963.9,210.77,-21143.01}, -1, {0,-146.9,-41.9}, 1, 0)
+    addSquadron("Junk2_panelC_Group458", "Der_Junk2_panelC", {8790.67,-6344.135,-22658.93}, -1, {0,-144,-8.5}, 1, 0)
+    addSquadron("Junk2_panelC_Group460", "Der_Junk2_panelC", {-2054.36,4183.095,-8846.705}, -1, {0,-150,32.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group469", "Der_Junk2_panelC", {-12674.095,4211.375,3187.24}, -1, {0,-193.1,-20.2}, 1, 0)
+    addSquadron("Junk2_panelC_Group476", "Der_Junk2_panelC", {12760.37,-6133.26,-27463.1}, -1, {0,-49.7,-75.1}, 1, 0)
+    addSquadron("Junk2_panelC_Group484", "Der_Junk2_panelC", {5313.315,-4047.54,-9046.45}, -1, {0,-102.7,-80.7}, 1, 0)
+    addSquadron("Junk2_panelC_Group485", "Der_Junk2_panelC", {-6315.54,2637.18,-9754.465}, -1, {0,-93.4,-20.3}, 1, 0)
+    addSquadron("Junk2_panelC_Group512", "Der_Junk2_panelC", {-182.21,4009.67,-2916.76}, -1, {0,-96.8,-46.7}, 1, 0)
+    addSquadron("Junk2_panelC_Group515", "Der_Junk2_panelC", {-5407.92,-3068.695,2628.71}, -1, {0,-96.8,-13.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group517", "Der_Junk2_panelC", {-251.685,2873.85,-3194.24}, -1, {0,-63.1,25.0}, 1, 0)
+    addSquadron("Junk2_panelC_Group526", "Der_Junk2_panelC", {-4712.225,4472.755,3435.6}, -1, {0,-141.6,41.1}, 1, 0)
+    addSquadron("Junk2_panelC_Group533", "Der_Junk2_panelC", {-6390.895,2910.775,-9546.74}, -1, {0,4,-40.5}, 1, 0)
+    addSquadron("Junk2_panelC_Group547", "Der_Junk2_panelC", {12870.865,4684.365,-6587.07}, -1, {0,-78.1,1.1}, 1, 0)
+    addSquadron("Junk2_panelC_Group548", "Der_Junk2_panelC", {3823.365,-7061.635,-29.085}, -1, {0,-53,-34.7}, 1, 0)
+    addSquadron("Junk2_panelC_Group574", "Der_Junk2_panelC", {16836.54,3457.545,-10423.455}, -1, {0,-68.2,-30.7}, 1, 0)
+    addSquadron("Junk2_panelC_Group575", "Der_Junk2_panelC", {25954.845,3572.59,-22217.3}, -1, {0,-44.4,26.7}, 1, 0)
+    addSquadron("Junk2_panelC_Group591", "Der_Junk2_panelC", {24538.29,-3732.96,-21271.775}, -1, {0,-124.9,35.1}, 1, 0)
+    addSquadron("Junk2_panelC_Group606", "Der_Junk2_panelC", {-5754.77,-2881.55,1914.71}, -1, {0,5.09999999999999,-37.9}, 1, 0)
+    addSquadron("Junk2_panelC_Group607", "Der_Junk2_panelC", {10317.86,-3793.545,4715.41}, -1, {0,-74,-34.7}, 1, 0)
+    addSquadron("Junk2_panelC_Group633", "Der_Junk2_panelC", {-7206.745,-2574.81,390.53}, -1, {0,46.3,-57.4}, 1, 0)
+    addSquadron("Junk2_panelC_Group634", "Der_Junk2_panelC", {10268.44,-178.43,4865.945}, -1, {0,-86.3,-29.9}, 1, 0)
+    addSquadron("Junk2_panelC_Group650", "Der_Junk2_panelC", {13887.825,-4621.54,-13544.195}, -1, {0,-102.8,32.6}, 1, 0)
+    addSquadron("Junk2_panelD_Group158", "Der_Junk2_panelD", {852.145,-7357.385,1736.735}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk2_panelD_Group159", "Der_Junk2_panelD", {-7151.935,-120.89,-9032.1}, -1, {0,-93.8,1.6}, 1, 0)
+    addSquadron("Junk2_panelD_Group160", "Der_Junk2_panelD", {-2694.055,-7407.225,2729.965}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk2_panelD_Group161", "Der_Junk2_panelD", {-3680.39,4788.105,3088.12}, -1, {0,-110.7,1.0}, 1, 0)
+    addSquadron("Junk2_panelD_Group162", "Der_Junk2_panelD", {9514.96,-3698.24,-17119.48}, -1, {0,-80.6,-25.4}, 1, 0)
+    addSquadron("Junk2_panelD_Group224", "Der_Junk2_panelD", {-19836.915,4910.43,10314.255}, -1, {0,-181,-42.2}, 1, 0)
+    addSquadron("Junk2_panelD_Group24", "Der_Junk2_panelD", {-2969.05,-7575.4,6646.885}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk2_panelD_Group244", "Der_Junk2_panelD", {-6652.485,-3156.825,1119.86}, -1, {0,-143.1,7.7}, 1, 0)
+    addSquadron("Junk2_panelD_Group345", "Der_Junk2_panelD", {8407.35,-6707.995,-6032.845}, -1, {0,-196.5,-8.0}, 1, 0)
+    addSquadron("Junk2_panelD_Group358", "Der_Junk2_panelD", {9939.51,-6076.595,-9185.925}, -1, {0,-193.1,-40.2}, 1, 0)
+    addSquadron("Junk2_panelD_Group403", "Der_Junk2_panelD", {9956.31,-7498.925,-8714.125}, -1, {0,-132.9,47.8}, 1, 0)
+    addSquadron("Junk2_panelD_Group465", "Der_Junk2_panelD", {15731.1,-938.315,-30436.77}, -1, {0,-201.7,13.6}, 1, 0)
+    addSquadron("Junk2_panelD_Group472", "Der_Junk2_panelD", {7043.12,-5400.64,-20365.94}, -1, {0,-193.5,-18.2}, 1, 0)
+    addSquadron("Junk2_panelD_Group522", "Der_Junk2_panelD", {5118.435,-4912.32,-8629.74}, -1, {0,-100.2,68.8}, 1, 0)
+    addSquadron("Junk2_panelD_Group529", "Der_Junk2_panelD", {928.585,-4594.625,-2934.085}, -1, {0,-141.5,41.3}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group169", "Der_Junk2_shipwreck", {-5269.845,4698.085,-5392.485}, -1, {0,-83.8,10.9}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group170", "Der_Junk2_shipwreck", {15457.925,-4303.6,-15789.83}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group204", "Der_Junk2_shipwreck", {2571.87,-5234.635,-22343.02}, -1, {0,-269.6,-18.9}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group225", "Der_Junk2_shipwreck", {23786.28,-2238.355,-9301.845}, -1, {0,-188.3,-29.3}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group245", "Der_Junk2_shipwreck", {12724.74,-53.585,-26774.685}, -1, {0,-184.5,-8.0}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group25", "Der_Junk2_shipwreck", {-837.83,2862.09,7769.615}, -1, {0,-86.3,-1.7}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group267", "Der_Junk2_shipwreck", {-4538.1,-4445.175,3139.57}, -1, {0,12.6,14.9}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group276", "Der_Junk2_shipwreck", {21035.56,3330.04,-15513.925}, -1, {0,-246.9,-0.2}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group306", "Der_Junk2_shipwreck", {5069.785,-4513.355,-14938.665}, -1, {0,-149.4,11.2}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group315", "Der_Junk2_shipwreck", {5480.37,-6445.81,-3277.12}, -1, {0,-200.5,-36.6}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group324", "Der_Junk2_shipwreck", {18704.21,4171.79,-13500.34}, -1, {0,-105,-60.7}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group340", "Der_Junk2_shipwreck", {-2092.3,-6354.6,-8199.065}, -1, {0,-211.9,-65.4}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group364", "Der_Junk2_shipwreck", {23955.715,3384.395,-20083.805}, -1, {0,-127.7,-56.6}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group374", "Der_Junk2_shipwreck", {12370.82,-3412.185,2304.05}, -1, {0,89.1,-65.4}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group411", "Der_Junk2_shipwreck", {3117.87,-7309.925,-12608.75}, -1, {0,-132.2,-24.5}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group443", "Der_Junk2_shipwreck", {12578.51,164.15,-26113.01}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group450", "Der_Junk2_shipwreck", {15166.305,-5813.57,-30361.135}, -1, {0,-249.5,9.1}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group474", "Der_Junk2_shipwreck", {-17326.785,4478.705,8751.785}, -1, {0,-146.9,-41.9}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group500", "Der_Junk2_shipwreck", {850.71,-2998.31,-2699.55}, -1, {0,-70.5,-34.6}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group507", "Der_Junk2_shipwreck", {5089.98,-2427.215,-9167.13}, -1, {0,-254.4,62.8}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group531", "Der_Junk2_shipwreck", {4683.945,504.525,-9017.75}, -1, {0,-133.7,-2.0}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group589", "Der_Junk2_shipwreck", {24918.53,-3792.915,-21850.71}, -1, {0,-48.1,21.1}, 1, 0)
+    addSquadron("Junk2_shipwreck_Group648", "Der_Junk2_shipwreck", {15559.6,-5514.6,-14484.26}, -1, {0,-27.9,18.9}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group175", "Der_Junk3_boilercasing", {23260.79,-4528.965,-6543.985}, -1, {0,-66.6,-66.1}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group176", "Der_Junk3_boilercasing", {-5163.305,-5481.98,3336.375}, -1, {0,-86,-4.2}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group177", "Der_Junk3_boilercasing", {11913.055,-6384.525,-26271.56}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group178", "Der_Junk3_boilercasing", {9406.145,2774.52,-1401.82}, -1, {0,-94,3.0}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group179", "Der_Junk3_boilercasing", {4553.29,4891.355,-2866.08}, -1, {0,-108.7,1.0}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group205", "Der_Junk3_boilercasing", {24606.26,-4249.455,-8100.295}, -1, {0,-1.8,-28.5}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group252", "Der_Junk3_boilercasing", {-4155.235,-2849.28,9032.975}, -1, {0,-74.6,12.4}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group268", "Der_Junk3_boilercasing", {-2899.925,674.065,10078.355}, -1, {0,16,8.4}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group27", "Der_Junk3_boilercasing", {-7146.09,-2755.095,-8773.24}, -1, {0,-93.8,1.6}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group288", "Der_Junk3_boilercasing", {-4202.52,-3361.925,-5594.785}, -1, {0,-32.1,62.4}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group307", "Der_Junk3_boilercasing", {-10853.535,5014.59,1599.395}, -1, {0,-137.4,11.2}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group330", "Der_Junk3_boilercasing", {-2157.19,-6661.165,-8239.91}, -1, {0,-66.1,-51.6}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group341", "Der_Junk3_boilercasing", {3275.335,5044.515,-14619.64}, -1, {0,-199.9,-65.4}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group367", "Der_Junk3_boilercasing", {4030.145,-7110.32,-913.92}, -1, {0,-66.1,-51.6}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group375", "Der_Junk3_boilercasing", {507.15,-1007.755,-2300.41}, -1, {0,-200.2,-48.6}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group408", "Der_Junk3_boilercasing", {12781.23,-7520.31,-13074.81}, -1, {0,-102,-22.4}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group412", "Der_Junk3_boilercasing", {-5404.175,-7386.4,2396.66}, -1, {0,-142,23.3}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group475", "Der_Junk3_boilercasing", {6411.265,-4534.845,-19574.625}, -1, {0,-101,-52.1}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group532", "Der_Junk3_boilercasing", {4706.38,-436.485,-8641.885}, -1, {0,-141.3,-33.6}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group570", "Der_Junk3_boilercasing", {13745.2,3042.865,-6697.355}, -1, {0,-27.5,-13.0}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group584", "Der_Junk3_boilercasing", {25305.175,3000.585,-21688.555}, -1, {0,-44.4,26.7}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group629", "Der_Junk3_boilercasing", {13414.73,1909.81,6652.8}, -1, {0,-64.9,-14.3}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group643", "Der_Junk3_boilercasing", {-7379.645,2365.09,-8847.58}, -1, {0,-133.8,62.7}, 1, 0)
+    addSquadron("Junk3_BoilerCasing_Group752", "Der_Junk3_boilercasing", {-14162.82,-4736.235,9553.285}, -1, {0,16,8.4}, 1, 0)
+    addSquadron("Junk3_Boiler_Group171", "Der_Junk3_boiler", {8707.685,-7443.835,-6918.59}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group172", "Der_Junk3_boiler", {7590.765,-4502.4,-16301.425}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group173", "Der_Junk3_boiler", {22515.99,-4821.215,-7021.105}, -1, {0,44,2.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group174", "Der_Junk3_boiler", {23339.715,-1748.81,-6916.77}, -1, {0,-40.1,28.3}, 1, 0)
+    addSquadron("Junk3_Boiler_Group226", "Der_Junk3_boiler", {22638.245,-4704.805,-6957.86}, -1, {0,-5.3,31.5}, 1, 0)
+    addSquadron("Junk3_Boiler_Group246", "Der_Junk3_boiler", {14932.365,1599.955,-844.2}, -1, {0,-255.5,-8.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group251", "Der_Junk3_boiler", {9105.635,-7388.08,-8521.8}, -1, {0,-3.09999999999999,17.2}, 1, 0)
+    addSquadron("Junk3_Boiler_Group26", "Der_Junk3_boiler", {22007.615,-1370.915,-7609.525}, -1, {0,-44,0.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group277", "Der_Junk3_boiler", {1977.22,2780.68,-1473.43}, -1, {0,-181.8,39.8}, 1, 0)
+    addSquadron("Junk3_Boiler_Group287", "Der_Junk3_boiler", {10308.235,-4085.935,-18068.26}, -1, {0,-90,0.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group316", "Der_Junk3_boiler", {13318.655,-5192.495,-12717.39}, -1, {0,-200.5,-36.6}, 1, 0)
+    addSquadron("Junk3_Boiler_Group325", "Der_Junk3_boiler", {-15963.43,5055.085,6879.565}, -1, {0,-78,0.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group329", "Der_Junk3_boiler", {13000.295,-3265.325,-18016.355}, -1, {0,-64.9,-62.9}, 1, 0)
+    addSquadron("Junk3_Boiler_Group366", "Der_Junk3_boiler", {752.115,-2383.22,-2968.56}, -1, {0,-97.7,-69.2}, 1, 0)
+    addSquadron("Junk3_Boiler_Group385", "Der_Junk3_boiler", {8845.655,-7412.895,-12678.75}, -1, {0,-44,-14.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group407", "Der_Junk3_boiler", {9729.895,-7273.14,-16837.345}, -1, {0,-112.3,-16.7}, 1, 0)
+    addSquadron("Junk3_Boiler_Group444", "Der_Junk3_boiler", {19487.755,-2636.375,-15322.86}, -1, {0,-110,6.4}, 1, 0)
+    addSquadron("Junk3_Boiler_Group454", "Der_Junk3_boiler", {11999.505,98.7,-25041.765}, -1, {0,-200.1,-15.6}, 1, 0)
+    addSquadron("Junk3_Boiler_Group501", "Der_Junk3_boiler", {13743.415,-1645.385,6206.305}, -1, {0,-112.8,15.9}, 1, 0)
+    addSquadron("Junk3_Boiler_Group511", "Der_Junk3_boiler", {-6.16,5150.46,-3559.185}, -1, {0,-146.6,47.1}, 1, 0)
+    addSquadron("Junk3_Boiler_Group546", "Der_Junk3_boiler", {26730.34,4310.46,-23226.315}, -1, {0,-58.1,-32.2}, 1, 0)
+    addSquadron("Junk3_Boiler_Group569", "Der_Junk3_boiler", {22797.635,-2397.535,-18607.365}, -1, {0,-37.6,-33.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group590", "Der_Junk3_boiler", {14540.12,-4567.36,-14079.205}, -1, {0,-65.9,18.9}, 1, 0)
+    addSquadron("Junk3_Boiler_Group605", "Der_Junk3_boiler", {14059.535,-4934.3,-13468.21}, -1, {0,-15,-34.7}, 1, 0)
+    addSquadron("Junk3_Boiler_Group628", "Der_Junk3_boiler", {4423.58,4590.81,-9641.17}, -1, {0,-11.4,-55.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group649", "Der_Junk3_boiler", {761.005,-3340.54,-2776.515}, -1, {0,-22.3,2.0}, 1, 0)
+    addSquadron("Junk3_Boiler_Group731", "Der_Junk3_boiler", {23340.345,-4746.42,-6867.28}, -1, {0,-40.1,28.3}, 1, 0)
+    addSquadron("M13PanelA_Group764", "Meg_FoundryDebris_Chunk1", {62522.075,-24097.01,-26376.595}, -1, {0,-86.7,-17.8}, 1, 0)
+    addSquadron("M13PanelB_Group765", "Meg_FoundryDebris_Chunk2", {50799.14,0,-64475.775}, -1, {0,-51,0.0}, 1, 0)
+    addSquadron("M13PanelC_Group766", "Meg_FoundryDebris_Chunk3", {42332.57,26702.095,14653.59}, -1, {0,-155.9,45.4}, 1, 0)
+    addSquadron("MinelayerCorvette_Group1", "Der_MinelayerCorvette", {-5272.715,-3672.69,-5923.505}, -1, {0,-166.3,-1.2}, 1, 0)
+    addSquadron("MinelayerCorvette_Group183", "Der_MinelayerCorvette", {22137.99,-1204.525,-7573.055}, -1, {0,-87.2,12.7}, 1, 0)
+    addSquadron("MinelayerCorvette_Group571", "Der_MinelayerCorvette", {826.245,4242.21,7981.365}, -1, {0,-173,63.8}, 1, 0)
+    addSquadron("MinelayerCorvette_Group630", "Der_MinelayerCorvette", {608.58,-1086.785,-1793.75}, -1, {0,-87.8,63.2}, 1, 0)
+    addSquadron("MultiGunCorvette_Group3", "Der_MultiGunCorvette", {4831.925,2435.685,-9361.345}, -1, {0,67.5,46.0}, 1, 0)
+    addSquadron("MultiGunCorvette_Group677", "Der_MultiGunCorvette", {7595.875,-5991.265,-21163.8}, -1, {0,-4.40000000000001,-64.9}, 1, 0)
+    addSquadron("MultiGunCorvette_Group693", "Der_MultiGunCorvette", {7595.875,-5991.265,-21163.8}, -1, {0,-4.40000000000001,-64.9}, 1, 0)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-234.636054784523,867.634169701621,-2972.9601052024}, 216, {1.0, 1.0, 1.0, 0.7}, 78.1, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {183.653699330069,941.301666876165,-3523.27129961859}, 500, {1.0, 1.0, 1.0, 0.7}, 78.1, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {250.858840462871,-3093.38233751245,-3411.47216573592}, 500, {1.0, 1.0, 1.0, 0.7}, 78.1, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-360.92035171493,-1878.83173945321,-3299.7947583413}, 100, {1.0, 1.0, 1.0, 0.7}, 78.1, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-242.085611903695,-4032.04835167494,-3339.69957083534}, 100, {1.0, 1.0, 1.0, 0.7}, 78.1, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-90.2418074461162,-4904.72391781865,-3328.84408464736}, 100, {1.0, 1.0, 1.0, 0.7}, 78.1, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {322.310256502502,-2856.82029540346,-3101.42716262966}, 500, {1.0, 1.0, 1.0, 0.7}, 78.1, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {459.978205891837,1620.16316869744,-2774.25911266503}, 216, {1.0, 1.0, 1.0, 0.7}, 78.1, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud3", {-387.659965261006,3361.4171932846,-3029.65630932952}, 1400, {1.0, 1.0, 1.0, 0.7}, 78.1, 200, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud3", {-94.8474035872269,-5438.31808901038,-3636.9383053822}, 1400, {1.0, 1.0, 1.0, 0.7}, 78.1, 200, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {505.377021977061,1303.51992163223,-2519.37437350705}, 500, {1.0, 1.0, 1.0, 0.7}, 78.1, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {606.371889852281,-4570.66657234236,-3550.90658341146}, 100, {1.0, 1.0, 1.0, 0.7}, 78.1, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {-2011.64803564152,3993.66246698807,11798.1513339363}, 500, {1.0, 1.0, 1.0, 0.7}, 52.0, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-3243.89651831608,3803.73774715053,13245.4858599937}, 216, {1.0, 1.0, 1.0, 0.7}, 52.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {2288.26318427802,3827.33422847846,4682.06372334092}, 216, {1.0, 1.0, 1.0, 0.7}, 52.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {408.471129618996,3837.27916389741,8601.05561115283}, 500, {1.0, 1.0, 1.0, 0.7}, 52.0, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-129.486780644379,4165.11018179893,7860.83843593478}, 216, {1.0, 1.0, 1.0, 0.7}, 52.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-515.964582341456,3889.13758717907,9547.55594429668}, 100, {1.0, 1.0, 1.0, 0.7}, 52.0, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {2082.72177139182,4470.32683523559,5851.23050214678}, 100, {1.0, 1.0, 1.0, 0.7}, 52.0, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud3", {-1792.66490162207,4509.39782440063,10285.4897066417}, 1400, {1.0, 1.0, 1.0, 0.7}, 52.0, 200, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-3.46197032039673,4326.21347518227,8500.60201827532}, 216, {1.0, 1.0, 1.0, 0.7}, 52.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {-2342.48220893284,4008.94672531168,11828.8789045873}, 500, {1.0, 1.0, 1.0, 0.7}, 52.0, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-1155.71869095489,4522.86984616828,9305.10228402839}, 100, {1.0, 1.0, 1.0, 0.7}, 52.0, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {-1651.15308911688,4006.75638590636,11234.6520876057}, 500, {1.0, 1.0, 1.0, 0.7}, 52.0, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-7561.99529093473,4513.76383676043,-2006.31871053468}, 100, {1.0, 1.0, 1.0, 0.7}, 49.0, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-6605.19475366975,5066.57032328562,-2499.03875521774}, 100, {1.0, 1.0, 1.0, 0.7}, 49.0, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-11736.3869774694,4293.77348042177,3051.69554441523}, 100, {1.0, 1.0, 1.0, 0.7}, 49.0, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-11903.2961435156,5077.48275087662,2999.29877318094}, 216, {1.0, 1.0, 1.0, 0.7}, 49.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {-12453.9495035086,5072.46234603412,3720.76625608457}, 500, {1.0, 1.0, 1.0, 0.7}, 49.0, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {-10716.5732500563,4752.22209902891,896.054099745178}, 500, {1.0, 1.0, 1.0, 0.7}, 49.0, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-9420.90654532363,4839.67465841636,62.303970865458}, 216, {1.0, 1.0, 1.0, 0.7}, 49.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-7247.65446873937,4963.00344163141,-1997.50338787283}, 216, {1.0, 1.0, 1.0, 0.7}, 49.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {-11211.1397411807,4346.84625479513,2700.74190138435}, 500, {1.0, 1.0, 1.0, 0.7}, 49.0, 150, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud1", {-6005.24727443595,4408.78050502029,-3940.58439136292}, 216, {1.0, 1.0, 1.0, 0.7}, 49.0, 125, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud0", {-6630.99877790662,4555.46974881096,-2417.33532941602}, 100, {1.0, 1.0, 1.0, 0.7}, 49.0, 100, 1)
+    addDustCloudWithResources("CloudNameToIgnore", "DustCloud2", {-7632.40709893974,4858.426451072,-2216.62314430012}, 500, {1.0, 1.0, 1.0, 0.7}, 49.0, 150, 1)
+  addDustCloud("polySurface8", "DustCloud_NoRes3", {-213.05148,-2347.99716,-5444.38226}, {1, 1, 1, 1}, 923.1, 18462)
+  addDustCloud("polySurface8", "DustCloud_NoRes3", {968.39344,7103.68528,16018.80046}, {1, 1, 1, 1}, 923.1, 18462)
+  addDustCloud("polySurface8", "DustCloud_NoRes3", {15342.5374,8088.2022,-1112.6432}, {1, 1, 1, 1}, 923.1, 21539)
+	setWorldBoundsInner({0,
+		0,
+		0}, {50000,
+		25000,
+		50000});
+
+end
+
+
+function NonDetermChunk()
+
+	addPebble("Pebble_0", {10699,
+		-757,
+		-3413}, 0, 0, 0);
+	addPebble("Pebble_0", {1583,
+		-333,
+		-737}, 0, 0, 0);
+	addPebble("Pebble_0", {-784,
+		34,
+		3242}, 0, 0, 0);
+	addPebble("Pebble_0", {841,
+		242,
+		461}, 0, 0, 0);
+	addPebble("Pebble_0", {785,
+		123,
+		1057}, 0, 0, 0);
+	addPebble("Pebble_0", {-263,
+		-779,
+		1964}, 0, 0, 0);
+	addPebble("Pebble_0", {1434,
+		-451,
+		-3188}, 0, 0, 0);
+	addPebble("Pebble_0", {1582,
+		164,
+		7593}, 0, 0, 0);
+	addPebble("Pebble_0", {6235,
+		-219,
+		-3519}, 0, 0, 0);
+	addPebble("Pebble_0", {3889,
+		-594,
+		-3039}, 0, 0, 0);
+	addPebble("Pebble_0", {2320,
+		113,
+		9582}, 0, 0, 0);
+	addPebble("Pebble_0", {2411,
+		108,
+		9566}, 0, 0, 0);
+	addPebble("Pebble_0", {984,
+		176,
+		77}, 0, 0, 0);
+	addPebble("Pebble_0", {2217,
+		128,
+		-1536}, 0, 0, 0);
+	addPebble("Pebble_0", {1481,
+		-183,
+		-658}, 0, 0, 0);
+	addPebble("Pebble_0", {1134,
+		47,
+		253}, 0, 0, 0);
+	addPebble("Pebble_0", {3734,
+		668,
+		9831}, 0, 0, 0);
+	addPebble("Pebble_0", {3366,
+		278,
+		11080}, 0, 0, 0);
+	addPebble("Pebble_0", {7587,
+		-173,
+		-3531}, 0, 0, 0);
+	addPebble("Pebble_0", {10512,
+		-614,
+		-3678}, 0, 0, 0);
+	addPebble("Pebble_0", {632,
+		196,
+		1500}, 0, 0, 0);
+	addPebble("Pebble_0", {-65,
+		-349,
+		1381}, 0, 0, 0);
+	addPebble("Pebble_0", {3113,
+		63,
+		10294}, 0, 0, 0);
+	addPebble("Pebble_0", {3524,
+		430,
+		11396}, 0, 0, 0);
+	addPebble("Pebble_0", {5428,
+		-99,
+		-4654}, 0, 0, 0);
+	addPebble("Pebble_0", {3566,
+		-770,
+		-1292}, 0, 0, 0);
+	addPebble("Pebble_0", {11058,
+		-814,
+		-3409}, 0, 0, 0);
+	addPebble("Pebble_0", {128,
+		-263,
+		3548}, 0, 0, 0);
+	addPebble("Pebble_0", {1429,
+		-57,
+		-1077}, 0, 0, 0);
+	addPebble("Pebble_0", {1629,
+		-121,
+		-582}, 0, 0, 0);
+	addPebble("Pebble_0", {7990,
+		-149,
+		-14704}, 0, 0, 0);
+	addPebble("Pebble_0", {1806,
+		-86,
+		6977}, 0, 0, 0);
+	addPebble("Pebble_0", {5323,
+		-143,
+		-4580}, 0, 0, 0);
+	addPebble("Pebble_0", {421,
+		-821,
+		2811}, 0, 0, 0);
+	addPebble("Pebble_0", {7367,
+		-372,
+		-3599}, 0, 0, 0);
+	addPebble("Pebble_0", {6177,
+		-89,
+		-6372}, 0, 0, 0);
+	addPebble("Pebble_0", {1232,
+		43,
+		-809}, 0, 0, 0);
+	addPebble("Pebble_0", {4224,
+		-591,
+		-2986}, 0, 0, 0);
+	addPebble("Pebble_0", {2539,
+		346,
+		8163}, 0, 0, 0);
+	addPebble("Pebble_0", {3508,
+		505,
+		11555}, 0, 0, 0);
+	addPebble("Pebble_0", {708,
+		-173,
+		2294}, 0, 0, 0);
+	addPebble("Pebble_0", {2099,
+		47,
+		8984}, 0, 0, 0);
+	addPebble("Pebble_0", {8235,
+		-202,
+		-13536}, 0, 0, 0);
+	addPebble("Pebble_0", {272,
+		-485,
+		3515}, 0, 0, 0);
+	addPebble("Pebble_0", {2299,
+		213,
+		8640}, 0, 0, 0);
+	addPebble("Pebble_0", {11110,
+		-450,
+		-3499}, 0, 0, 0);
+	addPebble("Pebble_0", {470,
+		-329,
+		2792}, 0, 0, 0);
+	addPebble("Pebble_0", {-752,
+		-801,
+		1739}, 0, 0, 0);
+	addPebble("Pebble_0", {4689,
+		-657,
+		-2898}, 0, 0, 0);
+	addPebble("Pebble_0", {3329,
+		128,
+		10846}, 0, 0, 0);
+	addPebble("Pebble_0", {3205,
+		11,
+		10432}, 0, 0, 0);
+	addPebble("Pebble_0", {715,
+		108,
+		983}, 0, 0, 0);
+	addPebble("Pebble_0", {3747,
+		-601,
+		-1238}, 0, 0, 0);
+	addPebble("Pebble_0", {3417,
+		358,
+		11223}, 0, 0, 0);
+	addPebble("Pebble_0", {12306,
+		-608,
+		-3102}, 0, 0, 0);
+	addPebble("Pebble_0", {3461,
+		247,
+		11073}, 0, 0, 0);
+	addPebble("Pebble_0", {3421,
+		235,
+		10980}, 0, 0, 0);
+	addPebble("Pebble_0", {12724,
+		-691,
+		-3253}, 0, 0, 0);
+	addPebble("Pebble_0", {10953,
+		-736,
+		-3479}, 0, 0, 0);
+	addPebble("Pebble_0", {10462,
+		-527,
+		-3671}, 0, 0, 0);
+	addPebble("Pebble_0", {3298,
+		141,
+		10550}, 0, 0, 0);
+	addPebble("Pebble_0", {3183,
+		34,
+		10446}, 0, 0, 0);
+	addPebble("Pebble_0", {2559,
+		62,
+		8059}, 0, 0, 0);
+	addPebble("Pebble_0", {6205,
+		-351,
+		-4562}, 0, 0, 0);
+	addPebble("Pebble_0", {277,
+		-233,
+		2332}, 0, 0, 0);
+	addPebble("Pebble_0", {310,
+		-285,
+		2581}, 0, 0, 0);
+	addPebble("Pebble_0", {8039,
+		-177,
+		-13622}, 0, 0, 0);
+	addPebble("Pebble_0", {11003,
+		-810,
+		-3394}, 0, 0, 0);
+	addPebble("Pebble_0", {2984,
+		-392,
+		-1926}, 0, 0, 0);
+	addPebble("Pebble_0", {5137,
+		-199,
+		-4627}, 0, 0, 0);
+	addPebble("Pebble_0", {458,
+		-361,
+		2897}, 0, 0, 0);
+	addPebble("Pebble_0", {-887,
+		-618,
+		1796}, 0, 0, 0);
+	addPebble("Pebble_0", {11748,
+		-609,
+		-3045}, 0, 0, 0);
+	addPebble("Pebble_0", {9993,
+		-294,
+		-3357}, 0, 0, 0);
+	addPebble("Pebble_0", {723,
+		137,
+		1572}, 0, 0, 0);
+	addPebble("Pebble_0", {4203,
+		-607,
+		-2716}, 0, 0, 0);
+	addPebble("Pebble_0", {913,
+		335,
+		983}, 0, 0, 0);
+	addPebble("Pebble_0", {3371,
+		246,
+		11105}, 0, 0, 0);
+	addPebble("Pebble_0", {2667,
+		133,
+		9692}, 0, 0, 0);
+	addPebble("Pebble_0", {2559,
+		-322,
+		-1770}, 0, 0, 0);
+	addPebble("Pebble_0", {3629,
+		584,
+		9659}, 0, 0, 0);
+	addPebble("Pebble_0", {7879,
+		-69,
+		-3599}, 0, 0, 0);
+	addPebble("Pebble_0", {10290,
+		-507,
+		-3573}, 0, 0, 0);
+	addPebble("Pebble_0", {11690,
+		-668,
+		-3267}, 0, 0, 0);
+	addPebble("Pebble_0", {2152,
+		197,
+		9331}, 0, 0, 0);
+	addPebble("Pebble_0", {12683,
+		-771,
+		-3254}, 0, 0, 0);
+	addPebble("Pebble_0", {2668,
+		-38,
+		9826}, 0, 0, 0);
+	addPebble("Pebble_0", {9893,
+		-399,
+		-3530}, 0, 0, 0);
+	addPebble("Pebble_0", {8044,
+		-112,
+		-14641}, 0, 0, 0);
+	addPebble("Pebble_0", {-759,
+		-308,
+		2704}, 0, 0, 0);
+	addPebble("Pebble_0", {1512,
+		409,
+		-324}, 0, 0, 0);
+	addPebble("Pebble_0", {3270,
+		112,
+		10586}, 0, 0, 0);
+	addPebble("Pebble_0", {12384,
+		-622,
+		-3179}, 0, 0, 0);
+	addPebble("Pebble_0", {484,
+		-533,
+		2889}, 0, 0, 0);
+	addPebble("Pebble_0", {3950,
+		-691,
+		-2469}, 0, 0, 0);
+	addPebble("Pebble_0", {1513,
+		13,
+		7707}, 0, 0, 0);
+	addPebble("Pebble_0", {1718,
+		-397,
+		6844}, 0, 0, 0);
+	addPebble("Pebble_0", {730,
+		176,
+		927}, 0, 0, 0);
+	addPebble("Pebble_0", {6869,
+		-457,
+		-3412}, 0, 0, 0);
+	addPebble("Pebble_0", {10812,
+		-663,
+		-3588}, 0, 0, 0);
+	addPebble("Pebble_0", {1436,
+		143,
+		7434}, 0, 0, 0);
+	addPebble("Pebble_0", {900,
+		291,
+		788}, 0, 0, 0);
+	addPebble("Pebble_0", {2429,
+		-4,
+		-1573}, 0, 0, 0);
+	addPebble("Pebble_0", {374,
+		-818,
+		3247}, 0, 0, 0);
+	addPebble("Pebble_0", {675,
+		-604,
+		6111}, 0, 0, 0);
+	addPebble("Pebble_0", {2620,
+		225,
+		8078}, 0, 0, 0);
+	addPebble("Pebble_0", {6409,
+		-314,
+		-3160}, 0, 0, 0);
+	addPebble("Pebble_0", {599,
+		216,
+		1309}, 0, 0, 0);
+	addPebble("Pebble_0", {1166,
+		229,
+		133}, 0, 0, 0);
+	addPebble("Pebble_0", {3727,
+		680,
+		9814}, 0, 0, 0);
+	addPebble("Pebble_0", {12846,
+		-860,
+		-3251}, 0, 0, 0);
+	addPebble("Pebble_0", {3146,
+		117,
+		10293}, 0, 0, 0);
+	addPebble("Pebble_0", {3495,
+		382,
+		11449}, 0, 0, 0);
+	addPebble("Pebble_0", {384,
+		-760,
+		3180}, 0, 0, 0);
+	addPebble("Pebble_0", {1285,
+		296,
+		8032}, 0, 0, 0);
+	addPebble("Pebble_0", {450,
+		-495,
+		2935}, 0, 0, 0);
+	addPebble("Pebble_0", {3034,
+		19,
+		10191}, 0, 0, 0);
+	addPebble("Pebble_0", {-151,
+		-356,
+		1492}, 0, 0, 0);
+	addPebble("Pebble_0", {4379,
+		-447,
+		-3235}, 0, 0, 0);
+	addPebble("Pebble_0", {1534,
+		-535,
+		-3323}, 0, 0, 0);
+	addPebble("Pebble_0", {-8062,
+		-84,
+		-8450}, 0, 0, 0);
+	addPebble("Pebble_0", {6882,
+		934,
+		-7628}, 0, 0, 0);
+	addPebble("Pebble_0", {7635,
+		630,
+		-8515}, 0, 0, 0);
+	addPebble("Pebble_0", {-6044,
+		510,
+		-4357}, 0, 0, 0);
+	addPebble("Pebble_0", {6532,
+		329,
+		-5158}, 0, 0, 0);
+	addPebble("Pebble_0", {-6890,
+		-381,
+		-7931}, 0, 0, 0);
+	addPebble("Pebble_0", {-5147,
+		799,
+		-2212}, 0, 0, 0);
+	addPebble("Pebble_0", {-11973,
+		1055,
+		-5903}, 0, 0, 0);
+	addPebble("Pebble_0", {-7512,
+		-22,
+		-8370}, 0, 0, 0);
+	addPebble("Pebble_0", {1506,
+		455,
+		-3366}, 0, 0, 0);
+	addPebble("Pebble_0", {-8857,
+		-354,
+		-9273}, 0, 0, 0);
+	addPebble("Pebble_0", {-4811,
+		703,
+		-3617}, 0, 0, 0);
+	addPebble("Pebble_0", {7404,
+		551,
+		-8295}, 0, 0, 0);
+	addPebble("Pebble_0", {-8880,
+		-209,
+		-7960}, 0, 0, 0);
+	addPebble("Pebble_0", {5507,
+		220,
+		-4308}, 0, 0, 0);
+	addPebble("Pebble_0", {1052,
+		-180,
+		-1715}, 0, 0, 0);
+	addPebble("Pebble_0", {7208,
+		1095,
+		-7885}, 0, 0, 0);
+	addPebble("Pebble_0", {724,
+		-135,
+		-1543}, 0, 0, 0);
+	addPebble("Pebble_0", {1255,
+		10,
+		-1933}, 0, 0, 0);
+	addPebble("Pebble_0", {2277,
+		559,
+		-2091}, 0, 0, 0);
+	addPebble("Pebble_0", {6420,
+		80,
+		-4902}, 0, 0, 0);
+	addPebble("Pebble_0", {-16668,
+		315,
+		-6713}, 0, 0, 0);
+	addPebble("Pebble_0", {-380,
+		-282,
+		-1664}, 0, 0, 0);
+	addPebble("Pebble_0", {7194,
+		242,
+		-6953}, 0, 0, 0);
+	addPebble("Pebble_0", {-7986,
+		-74,
+		-8210}, 0, 0, 0);
+	addPebble("Pebble_0", {6993,
+		913,
+		-7719}, 0, 0, 0);
+	addPebble("Pebble_0", {-11806,
+		661,
+		-6008}, 0, 0, 0);
+	addPebble("Pebble_0", {1425,
+		568,
+		-3490}, 0, 0, 0);
+	addPebble("Pebble_0", {-3818,
+		537,
+		-2820}, 0, 0, 0);
+	addPebble("Pebble_0", {-8911,
+		-9,
+		-8591}, 0, 0, 0);
+	addPebble("Pebble_0", {-9477,
+		417,
+		-10345}, 0, 0, 0);
+	addPebble("Pebble_0", {-8007,
+		-417,
+		-7263}, 0, 0, 0);
+	addPebble("Pebble_0", {-8494,
+		-203,
+		-9036}, 0, 0, 0);
+	addPebble("Pebble_0", {1267,
+		-46,
+		-1664}, 0, 0, 0);
+	addPebble("Pebble_0", {-1961,
+		-408,
+		-1423}, 0, 0, 0);
+	addPebble("Pebble_0", {2131,
+		659,
+		-3453}, 0, 0, 0);
+	addPebble("Pebble_0", {7101,
+		1022,
+		-7641}, 0, 0, 0);
+	addPebble("Pebble_0", {-6880,
+		315,
+		-4402}, 0, 0, 0);
+	addPebble("Pebble_0", {2250,
+		523,
+		-2004}, 0, 0, 0);
+	addPebble("Pebble_0", {-4166,
+		274,
+		-2808}, 0, 0, 0);
+	addPebble("Pebble_0", {6884,
+		255,
+		-5955}, 0, 0, 0);
+	addPebble("Pebble_0", {7343,
+		472,
+		-7336}, 0, 0, 0);
+	addPebble("Pebble_0", {-4431,
+		974,
+		-3046}, 0, 0, 0);
+	addPebble("Pebble_0", {-9707,
+		241,
+		-10521}, 0, 0, 0);
+	addPebble("Pebble_0", {-11985,
+		863,
+		-5900}, 0, 0, 0);
+	addPebble("Pebble_0", {6714,
+		262,
+		-5618}, 0, 0, 0);
+	addPebble("Pebble_0", {1472,
+		798,
+		-3469}, 0, 0, 0);
+	addPebble("Pebble_0", {3589,
+		600,
+		-2687}, 0, 0, 0);
+	addPebble("Pebble_0", {-6992,
+		176,
+		-4997}, 0, 0, 0);
+	addPebble("Pebble_0", {-3849,
+		638,
+		-2660}, 0, 0, 0);
+	addPebble("Pebble_0", {7521,
+		408,
+		-7576}, 0, 0, 0);
+	addPebble("Pebble_0", {7460,
+		334,
+		-7112}, 0, 0, 0);
+	addPebble("Pebble_0", {4369,
+		363,
+		-3280}, 0, 0, 0);
+	addPebble("Pebble_0", {7074,
+		149,
+		-6192}, 0, 0, 0);
+	addPebble("Pebble_0", {7274,
+		179,
+		-6708}, 0, 0, 0);
+	addPebble("Pebble_0", {-7930,
+		66,
+		-7908}, 0, 0, 0);
+	addPebble("Pebble_0", {7194,
+		1114,
+		-7821}, 0, 0, 0);
+	addPebble("Pebble_0", {-5035,
+		803,
+		-3788}, 0, 0, 0);
+	addPebble("Pebble_0", {-2327,
+		-317,
+		-2120}, 0, 0, 0);
+	addPebble("Pebble_0", {7728,
+		403,
+		-8723}, 0, 0, 0);
+	addPebble("Pebble_0", {5124,
+		309,
+		-3728}, 0, 0, 0);
+	addPebble("Pebble_0", {-8919,
+		-157,
+		-8552}, 0, 0, 0);
+	addPebble("Pebble_0", {7254,
+		1231,
+		-7893}, 0, 0, 0);
+	addPebble("Pebble_0", {-9060,
+		155,
+		-10292}, 0, 0, 0);
+	addPebble("Pebble_0", {-8924,
+		-284,
+		-8234}, 0, 0, 0);
+	addPebble("Pebble_0", {-2583,
+		80,
+		-2698}, 0, 0, 0);
+	addPebble("Pebble_0", {2180,
+		207,
+		-2228}, 0, 0, 0);
+	addPebble("Pebble_0", {-16656,
+		198,
+		-4802}, 0, 0, 0);
+	addPebble("Pebble_0", {-7097,
+		-645,
+		-8222}, 0, 0, 0);
+	addPebble("Pebble_0", {8171,
+		285,
+		-13447}, 0, 0, 0);
+	addPebble("Pebble_0", {-5546,
+		467,
+		-4373}, 0, 0, 0);
+	addPebble("Pebble_0", {-9019,
+		54,
+		-8510}, 0, 0, 0);
+	addPebble("Pebble_0", {563,
+		13,
+		-1831}, 0, 0, 0);
+	addPebble("Pebble_0", {6669,
+		122,
+		-5345}, 0, 0, 0);
+	addPebble("Pebble_0", {7721,
+		480,
+		-8904}, 0, 0, 0);
+	addPebble("Pebble_0", {-8215,
+		-155,
+		-8702}, 0, 0, 0);
+	addPebble("Pebble_0", {3626,
+		672,
+		-2592}, 0, 0, 0);
+	addPebble("Pebble_0", {-12258,
+		1042,
+		-6033}, 0, 0, 0);
+	addPebble("Pebble_0", {-6934,
+		-415,
+		-8010}, 0, 0, 0);
+	addPebble("Pebble_0", {1488,
+		147,
+		-2077}, 0, 0, 0);
+	addPebble("Pebble_0", {712,
+		-58,
+		-1461}, 0, 0, 0);
+	addPebble("Pebble_0", {7992,
+		612,
+		-9644}, 0, 0, 0);
+	addPebble("Pebble_0", {3821,
+		488,
+		-2767}, 0, 0, 0);
+	addPebble("Pebble_0", {4830,
+		407,
+		-3598}, 0, 0, 0);
+	addPebble("Pebble_0", {-5884,
+		798,
+		-3949}, 0, 0, 0);
+	addPebble("Pebble_0", {7875,
+		780,
+		-9801}, 0, 0, 0);
+	addPebble("Pebble_0", {-8799,
+		-378,
+		-9274}, 0, 0, 0);
+	addPebble("Pebble_0", {-9135,
+		-130,
+		-8631}, 0, 0, 0);
+	addPebble("Pebble_0", {-3763,
+		558,
+		-1656}, 0, 0, 0);
+	addPebble("Pebble_0", {-5188,
+		1074,
+		-3787}, 0, 0, 0);
+	addPebble("Pebble_0", {472,
+		-265,
+		-1590}, 0, 0, 0);
+	addPebble("Pebble_0", {7907,
+		548,
+		-9086}, 0, 0, 0);
+	addPebble("Pebble_0", {-459,
+		-65,
+		-1657}, 0, 0, 0);
+	addPebble("Pebble_0", {7271,
+		361,
+		-7150}, 0, 0, 0);
+	addPebble("Pebble_0", {3940,
+		446,
+		-2846}, 0, 0, 0);
+	addPebble("Pebble_0", {3649,
+		542,
+		-3028}, 0, 0, 0);
+	addPebble("Pebble_0", {7369,
+		1296,
+		-7942}, 0, 0, 0);
+	addPebble("Pebble_0", {8116,
+		437,
+		-15191}, 0, 0, 0);
+	addPebble("Pebble_0", {8361,
+		861,
+		-10347}, 0, 0, 0);
+	addPebble("Pebble_0", {-7670,
+		-153,
+		-8394}, 0, 0, 0);
+	addPebble("Pebble_0", {-7948,
+		-322,
+		-7009}, 0, 0, 0);
+	addPebble("Pebble_0", {-8876,
+		-265,
+		-8279}, 0, 0, 0);
+	addPebble("Pebble_0", {6988,
+		110,
+		-6373}, 0, 0, 0);
+	addPebble("Pebble_0", {-9158,
+		627,
+		-10121}, 0, 0, 0);
+	addPebble("Pebble_0", {5088,
+		290,
+		-3690}, 0, 0, 0);
+	addPebble("Pebble_0", {-6365,
+		728,
+		-4319}, 0, 0, 0);
+	addPebble("Pebble_0", {-4948,
+		882,
+		-3177}, 0, 0, 0);
+	addPebble("Pebble_0", {-5692,
+		845,
+		-3934}, 0, 0, 0);
+	addPebble("Pebble_0", {-8077,
+		5,
+		-8290}, 0, 0, 0);
+	addPebble("Pebble_0", {-402,
+		-116,
+		-1533}, 0, 0, 0);
+	addPebble("Pebble_0", {7423,
+		533,
+		-7533}, 0, 0, 0);
+	addPebble("Pebble_0", {1264,
+		374,
+		-3276}, 0, 0, 0);
+	addPebble("Pebble_0", {5274,
+		261,
+		-3885}, 0, 0, 0);
+	addPebble("Pebble_0", {1315,
+		-14,
+		-2086}, 0, 0, 0);
+	addPebble("Pebble_0", {-9039,
+		-182,
+		-8683}, 0, 0, 0);
+	addPebble("Pebble_0", {5022,
+		180,
+		-3956}, 0, 0, 0);
+	addPebble("Pebble_0", {8008,
+		579,
+		-9875}, 0, 0, 0);
+	addPebble("Pebble_0", {-9107,
+		-159,
+		-8683}, 0, 0, 0);
+	addPebble("Pebble_0", {-9126,
+		-182,
+		-8620}, 0, 0, 0);
+	addPebble("Pebble_0", {1312,
+		216,
+		-1627}, 0, 0, 0);
+	addPebble("Pebble_0", {-2304,
+		-345,
+		1241}, 0, 0, 0);
+	addPebble("Pebble_0", {-1516,
+		806,
+		-1293}, 0, 0, 0);
+	addPebble("Pebble_0", {-5711,
+		293,
+		-3663}, 0, 0, 0);
+	addPebble("Pebble_0", {-2723,
+		-393,
+		379}, 0, 0, 0);
+	addPebble("Pebble_0", {-3944,
+		391,
+		-2634}, 0, 0, 0);
+	addPebble("Pebble_0", {-1535,
+		697,
+		-2081}, 0, 0, 0);
+	addPebble("Pebble_0", {-7614,
+		336,
+		-4012}, 0, 0, 0);
+	addPebble("Pebble_0", {-7748,
+		225,
+		-3832}, 0, 0, 0);
+	addPebble("Pebble_0", {-4229,
+		488,
+		-1722}, 0, 0, 0);
+	addPebble("Pebble_0", {-1122,
+		-274,
+		-139}, 0, 0, 0);
+	addPebble("Pebble_0", {-1786,
+		537,
+		1686}, 0, 0, 0);
+	addPebble("Pebble_0", {-11643,
+		774,
+		-6195}, 0, 0, 0);
+	addPebble("Pebble_0", {-196,
+		911,
+		2591}, 0, 0, 0);
+	addPebble("Pebble_0", {-2085,
+		-218,
+		842}, 0, 0, 0);
+	addPebble("Pebble_0", {-12477,
+		680,
+		-3159}, 0, 0, 0);
+	addPebble("Pebble_0", {-3579,
+		664,
+		-2677}, 0, 0, 0);
+	addPebble("Pebble_0", {-15631,
+		-95,
+		-17997}, 0, 0, 0);
+	addPebble("Pebble_0", {-1699,
+		15,
+		-772}, 0, 0, 0);
+	addPebble("Pebble_0", {-1960,
+		785,
+		1595}, 0, 0, 0);
+	addPebble("Pebble_0", {-2136,
+		-282,
+		744}, 0, 0, 0);
+	addPebble("Pebble_0", {-4829,
+		342,
+		-2859}, 0, 0, 0);
+	addPebble("Pebble_0", {-5484,
+		216,
+		-3127}, 0, 0, 0);
+	addPebble("Pebble_0", {-1699,
+		608,
+		2235}, 0, 0, 0);
+	addPebble("Pebble_0", {-1575,
+		-157,
+		-556}, 0, 0, 0);
+	addPebble("Pebble_0", {-5117,
+		484,
+		-2269}, 0, 0, 0);
+	addPebble("Pebble_0", {-2978,
+		-49,
+		10150}, 0, 0, 0);
+	addPebble("Pebble_0", {-11548,
+		618,
+		-3182}, 0, 0, 0);
+	addPebble("Pebble_0", {-2725,
+		40,
+		9885}, 0, 0, 0);
+	addPebble("Pebble_0", {-730,
+		-264,
+		894}, 0, 0, 0);
+	addPebble("Pebble_0", {-1765,
+		421,
+		2024}, 0, 0, 0);
+	addPebble("Pebble_0", {-8183,
+		244,
+		-3900}, 0, 0, 0);
+	addPebble("Pebble_0", {-11935,
+		684,
+		-3188}, 0, 0, 0);
+	addPebble("Pebble_0", {-1501,
+		-64,
+		-440}, 0, 0, 0);
+	addPebble("Pebble_0", {-281,
+		940,
+		2128}, 0, 0, 0);
+	addPebble("Pebble_0", {-768,
+		-34,
+		1977}, 0, 0, 0);
+	addPebble("Pebble_0", {-5258,
+		214,
+		-3544}, 0, 0, 0);
+	addPebble("Pebble_0", {-209,
+		495,
+		2706}, 0, 0, 0);
+	addPebble("Pebble_0", {-1062,
+		-161,
+		280}, 0, 0, 0);
+	addPebble("Pebble_0", {-1684,
+		465,
+		1997}, 0, 0, 0);
+	addPebble("Pebble_0", {-1779,
+		500,
+		2579}, 0, 0, 0);
+	addPebble("Pebble_0", {-2293,
+		-148,
+		9175}, 0, 0, 0);
+	addPebble("Pebble_0", {-540,
+		1043,
+		3315}, 0, 0, 0);
+	addPebble("Pebble_0", {-3267,
+		-40,
+		10543}, 0, 0, 0);
+	addPebble("Pebble_0", {-623,
+		294,
+		1769}, 0, 0, 0);
+	addPebble("Pebble_0", {-4144,
+		481,
+		-3104}, 0, 0, 0);
+	addPebble("Pebble_0", {-3891,
+		445,
+		-1531}, 0, 0, 0);
+	addPebble("Pebble_0", {-9014,
+		288,
+		-3979}, 0, 0, 0);
+	addPebble("Pebble_0", {-8076,
+		-13,
+		-3920}, 0, 0, 0);
+	addPebble("Pebble_0", {-6082,
+		468,
+		-3558}, 0, 0, 0);
+	addPebble("Pebble_0", {-2258,
+		-78,
+		-702}, 0, 0, 0);
+	addPebble("Pebble_0", {-7904,
+		177,
+		-4089}, 0, 0, 0);
+	addPebble("Pebble_0", {-7116,
+		261,
+		-3799}, 0, 0, 0);
+	addPebble("Pebble_0", {-2175,
+		-65,
+		-867}, 0, 0, 0);
+	addPebble("Pebble_0", {-11679,
+		831,
+		-6183}, 0, 0, 0);
+	addPebble("Pebble_0", {-1326,
+		-260,
+		-227}, 0, 0, 0);
+	addPebble("Pebble_0", {-223,
+		1061,
+		2003}, 0, 0, 0);
+	addPebble("Pebble_0", {-6520,
+		249,
+		-3708}, 0, 0, 0);
+	addPebble("Pebble_0", {-1672,
+		-148,
+		-822}, 0, 0, 0);
+	addPebble("Pebble_0", {-2257,
+		166,
+		-2236}, 0, 0, 0);
+	addPebble("Pebble_0", {-10911,
+		556,
+		-3291}, 0, 0, 0);
+	addPebble("Pebble_0", {-4654,
+		340,
+		-3039}, 0, 0, 0);
+	addPebble("Pebble_0", {-576,
+		805,
+		2280}, 0, 0, 0);
+	addPebble("Pebble_0", {-1971,
+		194,
+		2515}, 0, 0, 0);
+	addPebble("Pebble_0", {-8479,
+		105,
+		-3947}, 0, 0, 0);
+	addPebble("Pebble_0", {-10376,
+		489,
+		-3469}, 0, 0, 0);
+	addPebble("Pebble_0", {-2552,
+		346,
+		-2406}, 0, 0, 0);
+	addPebble("Pebble_0", {-6596,
+		302,
+		-3723}, 0, 0, 0);
+	addPebble("Pebble_0", {-596,
+		1153,
+		3004}, 0, 0, 0);
+	addPebble("Pebble_0", {-2784,
+		-218,
+		1685}, 0, 0, 0);
+	addPebble("Pebble_0", {-11714,
+		843,
+		-6265}, 0, 0, 0);
+	addPebble("Pebble_0", {-2619,
+		-321,
+		184}, 0, 0, 0);
+	addPebble("Pebble_0", {-9541,
+		442,
+		-3768}, 0, 0, 0);
+	addPebble("Pebble_0", {-185,
+		137,
+		3428}, 0, 0, 0);
+	addPebble("Pebble_0", {-2375,
+		-114,
+		-603}, 0, 0, 0);
+	addPebble("Pebble_0", {-1905,
+		310,
+		2242}, 0, 0, 0);
+	addPebble("Pebble_0", {-9509,
+		355,
+		-3850}, 0, 0, 0);
+	addPebble("Pebble_0", {-11563,
+		817,
+		-6224}, 0, 0, 0);
+	addPebble("Pebble_0", {-9607,
+		418,
+		-3876}, 0, 0, 0);
+	addPebble("Pebble_0", {-6643,
+		190,
+		-3811}, 0, 0, 0);
+	addPebble("Pebble_0", {-2355,
+		245,
+		-2192}, 0, 0, 0);
+	addPebble("Pebble_0", {-2639,
+		-237,
+		1670}, 0, 0, 0);
+	addPebble("Pebble_0", {-6049,
+		452,
+		-3533}, 0, 0, 0);
+	addPebble("Pebble_0", {-3801,
+		542,
+		-1396}, 0, 0, 0);
+	addPebble("Pebble_0", {-1348,
+		-13,
+		-189}, 0, 0, 0);
+	addPebble("Pebble_0", {-1344,
+		-56,
+		-377}, 0, 0, 0);
+	addPebble("Pebble_0", {-12428,
+		1261,
+		-6436}, 0, 0, 0);
+	addPebble("Pebble_0", {-3066,
+		-82,
+		10326}, 0, 0, 0);
+	addPebble("Pebble_0", {-333,
+		312,
+		2591}, 0, 0, 0);
+	addPebble("Pebble_0", {-1820,
+		-16,
+		-1193}, 0, 0, 0);
+	addPebble("Pebble_0", {-3791,
+		434,
+		-1585}, 0, 0, 0);
+	addPebble("Pebble_0", {-9931,
+		314,
+		-3731}, 0, 0, 0);
+	addPebble("Pebble_0", {-2103,
+		-15,
+		-1024}, 0, 0, 0);
+	addPebble("Pebble_0", {-8358,
+		276,
+		-3974}, 0, 0, 0);
+	addPebble("Pebble_0", {-446,
+		387,
+		2119}, 0, 0, 0);
+	addPebble("Pebble_0", {-1270,
+		-143,
+		-321}, 0, 0, 0);
+	addPebble("Pebble_0", {-6180,
+		265,
+		-3836}, 0, 0, 0);
+	addPebble("Pebble_0", {-1975,
+		-73,
+		-1296}, 0, 0, 0);
+	addPebble("Pebble_0", {-5897,
+		421,
+		-3458}, 0, 0, 0);
+	addPebble("Pebble_0", {-308,
+		883,
+		2428}, 0, 0, 0);
+	addPebble("Pebble_0", {-3256,
+		-144,
+		10690}, 0, 0, 0);
+	addPebble("Pebble_0", {-2787,
+		25,
+		9983}, 0, 0, 0);
+	addPebble("Pebble_0", {-2172,
+		-99,
+		9162}, 0, 0, 0);
+	addPebble("Pebble_0", {-9081,
+		354,
+		-3880}, 0, 0, 0);
+	addPebble("Pebble_0", {-1330,
+		-159,
+		-253}, 0, 0, 0);
+	addPebble("Pebble_0", {-2668,
+		-387,
+		495}, 0, 0, 0);
+	addPebble("Pebble_0", {-929,
+		271,
+		3582}, 0, 0, 0);
+	addPebble("Pebble_0", {-9056,
+		379,
+		-3940}, 0, 0, 0);
+	addPebble("Pebble_0", {-2041,
+		607,
+		1169}, 0, 0, 0);
+	addPebble("Pebble_0", {-2580,
+		-115,
+		9717}, 0, 0, 0);
+	addPebble("Pebble_0", {191,
+		404,
+		3182}, 0, 0, 0);
+	addPebble("Pebble_0", {-1301,
+		-303,
+		-160}, 0, 0, 0);
+	addPebble("Pebble_0", {-2587,
+		280,
+		-2228}, 0, 0, 0);
+	addPebble("Pebble_0", {-5262,
+		310,
+		-2934}, 0, 0, 0);
+	addPebble("Pebble_0", {-3984,
+		789,
+		-2823}, 0, 0, 0);
+	addPebble("Pebble_0", {-6823,
+		396,
+		-3956}, 0, 0, 0);
+	addPebble("Pebble_0", {-2293,
+		-264,
+		1186}, 0, 0, 0);
+	addPebble("Pebble_0", {-7757,
+		35,
+		-3930}, 0, 0, 0);
+	addPebble("Pebble_0", {-225,
+		345,
+		3516}, 0, 0, 0);
+	addPebble("Pebble_0", {-702,
+		291,
+		1914}, 0, 0, 0);
+	addPebble("Pebble_0", {-2835,
+		-249,
+		1785}, 0, 0, 0);
+	addPebble("Pebble_1", {-2571,
+		-32,
+		9683}, 0, 0, 0);
+	addPebble("Pebble_1", {-1563,
+		842,
+		-2140}, 0, 0, 0);
+	addPebble("Pebble_1", {-3788,
+		391,
+		-1619}, 0, 0, 0);
+	addPebble("Pebble_1", {-2058,
+		622,
+		1926}, 0, 0, 0);
+	addPebble("Pebble_1", {-768,
+		-109,
+		1709}, 0, 0, 0);
+	addPebble("Pebble_1", {-6205,
+		413,
+		-3859}, 0, 0, 0);
+	addPebble("Pebble_1", {-8579,
+		241,
+		-3853}, 0, 0, 0);
+	addPebble("Pebble_1", {-2675,
+		-79,
+		9727}, 0, 0, 0);
+	addPebble("Pebble_1", {-2343,
+		-254,
+		-459}, 0, 0, 0);
+	addPebble("Pebble_1", {-14646,
+		-623,
+		-16383}, 0, 0, 0);
+	addPebble("Pebble_1", {-11243,
+		674,
+		-3236}, 0, 0, 0);
+	addPebble("Pebble_1", {-869,
+		-169,
+		229}, 0, 0, 0);
+	addPebble("Pebble_1", {-3222,
+		-70,
+		10525}, 0, 0, 0);
+	addPebble("Pebble_1", {-132,
+		964,
+		2154}, 0, 0, 0);
+	addPebble("Pebble_1", {-2074,
+		-244,
+		-921}, 0, 0, 0);
+	addPebble("Pebble_1", {-4877,
+		530,
+		-2989}, 0, 0, 0);
+	addPebble("Pebble_1", {-900,
+		131,
+		2928}, 0, 0, 0);
+	addPebble("Pebble_1", {-736,
+		707,
+		3136}, 0, 0, 0);
+	addPebble("Pebble_1", {-11332,
+		601,
+		-3333}, 0, 0, 0);
+	addPebble("Pebble_1", {-1751,
+		-125,
+		-968}, 0, 0, 0);
+	addPebble("Pebble_1", {-10619,
+		539,
+		-3462}, 0, 0, 0);
+	addPebble("Pebble_1", {-10226,
+		405,
+		-3726}, 0, 0, 0);
+	addPebble("Pebble_1", {-1964,
+		351,
+		2060}, 0, 0, 0);
+	addPebble("Pebble_1", {-13543,
+		912,
+		-7931}, 0, 0, 0);
+	addPebble("Pebble_1", {-9791,
+		291,
+		-3837}, 0, 0, 0);
+	addPebble("Pebble_1", {-646,
+		48,
+		1637}, 0, 0, 0);
+	addPebble("Pebble_1", {-2120,
+		-23,
+		-1362}, 0, 0, 0);
+	addPebble("Pebble_1", {-6804,
+		278,
+		-3888}, 0, 0, 0);
+	addPebble("Pebble_1", {-1810,
+		102,
+		2466}, 0, 0, 0);
+	addPebble("Pebble_1", {-5852,
+		458,
+		-3649}, 0, 0, 0);
+	addPebble("Pebble_1", {-8818,
+		49,
+		-3915}, 0, 0, 0);
+	addPebble("Pebble_1", {-12601,
+		736,
+		-3175}, 0, 0, 0);
+	addPebble("Pebble_1", {-850,
+		30,
+		2900}, 0, 0, 0);
+	addPebble("Pebble_1", {-4479,
+		646,
+		-2911}, 0, 0, 0);
+	addPebble("Pebble_1", {-1759,
+		59,
+		-1354}, 0, 0, 0);
+	addPebble("Pebble_1", {-10,
+		545,
+		1844}, 0, 0, 0);
+	addPebble("Pebble_1", {-9581,
+		306,
+		-3887}, 0, 0, 0);
+	addPebble("Pebble_1", {-470,
+		216,
+		2543}, 0, 0, 0);
+	addPebble("Pebble_1", {-2423,
+		299,
+		-2205}, 0, 0, 0);
+	addPebble("Pebble_1", {-10804,
+		554,
+		-3345}, 0, 0, 0);
+	addPebble("Pebble_1", {-11524,
+		818,
+		-6180}, 0, 0, 0);
+	addPebble("Pebble_1", {-5651,
+		164,
+		-3683}, 0, 0, 0);
+	addPebble("Pebble_1", {-1847,
+		88,
+		2526}, 0, 0, 0);
+	addPebble("Pebble_1", {-11823,
+		303,
+		-5925}, 0, 0, 0);
+	addPebble("Pebble_1", {-3301,
+		-87,
+		10727}, 0, 0, 0);
+	addPebble("Pebble_1", {-10332,
+		522,
+		-3551}, 0, 0, 0);
+	addPebble("Pebble_1", {-8723,
+		295,
+		-4127}, 0, 0, 0);
+	addPebble("Pebble_1", {-12306,
+		86,
+		-5916}, 0, 0, 0);
+	addPebble("Pebble_1", {-11801,
+		852,
+		-6204}, 0, 0, 0);
+	addPebble("Pebble_1", {-8164,
+		81,
+		-3949}, 0, 0, 0);
+	addPebble("Pebble_1", {7,
+		730,
+		3247}, 0, 0, 0);
+	addPebble("Pebble_1", {-3316,
+		-80,
+		10610}, 0, 0, 0);
+	addPebble("Pebble_1", {-1991,
+		123,
+		-1109}, 0, 0, 0);
+	addPebble("Pebble_1", {-12608,
+		733,
+		-3125}, 0, 0, 0);
+	addPebble("Pebble_1", {-11317,
+		561,
+		-3224}, 0, 0, 0);
+	addPebble("Pebble_1", {-2387,
+		-388,
+		-529}, 0, 0, 0);
+	addPebble("Pebble_1", {-7044,
+		436,
+		-3885}, 0, 0, 0);
+	addPebble("Pebble_1", {-2363,
+		-307,
+		965}, 0, 0, 0);
+	addPebble("Pebble_1", {-4271,
+		716,
+		-1630}, 0, 0, 0);
+	addPebble("Pebble_1", {-2341,
+		-265,
+		1019}, 0, 0, 0);
+	addPebble("Pebble_1", {-8710,
+		-248,
+		-9148}, 0, 0, 0);
+	addPebble("Pebble_1", {-12262,
+		863,
+		-6087}, 0, 0, 0);
+	addPebble("Pebble_1", {-7156,
+		-586,
+		-8152}, 0, 0, 0);
+	addPebble("Pebble_1", {7670,
+		672,
+		-8579}, 0, 0, 0);
+	addPebble("Pebble_1", {-2237,
+		-157,
+		-1406}, 0, 0, 0);
+	addPebble("Pebble_1", {-4490,
+		890,
+		-2998}, 0, 0, 0);
+	addPebble("Pebble_1", {7289,
+		291,
+		-6793}, 0, 0, 0);
+	addPebble("Pebble_1", {1529,
+		865,
+		-3444}, 0, 0, 0);
+	addPebble("Pebble_1", {-9762,
+		-499,
+		-10700}, 0, 0, 0);
+	addPebble("Pebble_1", {7736,
+		529,
+		-9056}, 0, 0, 0);
+	addPebble("Pebble_1", {-18163,
+		371,
+		-4896}, 0, 0, 0);
+	addPebble("Pebble_1", {8304,
+		693,
+		-9944}, 0, 0, 0);
+	addPebble("Pebble_1", {3548,
+		576,
+		-2899}, 0, 0, 0);
+	addPebble("Pebble_1", {7346,
+		511,
+		-7612}, 0, 0, 0);
+	addPebble("Pebble_1", {823,
+		42,
+		-1731}, 0, 0, 0);
+	addPebble("Pebble_1", {-12310,
+		953,
+		-5962}, 0, 0, 0);
+	addPebble("Pebble_1", {7370,
+		1296,
+		-7943}, 0, 0, 0);
+	addPebble("Pebble_1", {-8623,
+		-251,
+		-9072}, 0, 0, 0);
+	addPebble("Pebble_1", {5180,
+		563,
+		-3969}, 0, 0, 0);
+	addPebble("Pebble_1", {1233,
+		261,
+		-1634}, 0, 0, 0);
+	addPebble("Pebble_1", {-3911,
+		746,
+		-2580}, 0, 0, 0);
+	addPebble("Pebble_1", {-8179,
+		-191,
+		-7011}, 0, 0, 0);
+	addPebble("Pebble_1", {1011,
+		236,
+		-1751}, 0, 0, 0);
+	addPebble("Pebble_1", {-2768,
+		200,
+		-3077}, 0, 0, 0);
+	addPebble("Pebble_1", {7401,
+		311,
+		-7321}, 0, 0, 0);
+	addPebble("Pebble_1", {8144,
+		799,
+		-9815}, 0, 0, 0);
+	addPebble("Pebble_1", {-8153,
+		-313,
+		-7119}, 0, 0, 0);
+	addPebble("Pebble_1", {5363,
+		128,
+		-6013}, 0, 0, 0);
+	addPebble("Pebble_1", {6477,
+		350,
+		-4945}, 0, 0, 0);
+	addPebble("Pebble_1", {2155,
+		669,
+		-3437}, 0, 0, 0);
+	addPebble("Pebble_1", {-4881,
+		570,
+		-3187}, 0, 0, 0);
+	addPebble("Pebble_1", {-11931,
+		935,
+		-5934}, 0, 0, 0);
+	addPebble("Pebble_1", {-9522,
+		-298,
+		-10915}, 0, 0, 0);
+	addPebble("Pebble_1", {-11771,
+		624,
+		-5847}, 0, 0, 0);
+	addPebble("Pebble_1", {-8192,
+		-122,
+		-8565}, 0, 0, 0);
+	addPebble("Pebble_1", {-16155,
+		-35,
+		-4706}, 0, 0, 0);
+	addPebble("Pebble_1", {125,
+		-302,
+		-1630}, 0, 0, 0);
+	addPebble("Pebble_1", {-1634,
+		-70,
+		-1321}, 0, 0, 0);
+	addPebble("Pebble_1", {7939,
+		811,
+		-9226}, 0, 0, 0);
+	addPebble("Pebble_1", {8349,
+		606,
+		-9989}, 0, 0, 0);
+	addPebble("Pebble_1", {-7746,
+		-94,
+		-8353}, 0, 0, 0);
+	addPebble("Pebble_1", {978,
+		298,
+		-2985}, 0, 0, 0);
+	addPebble("Pebble_1", {4642,
+		238,
+		-3528}, 0, 0, 0);
+	addPebble("Pebble_1", {1722,
+		349,
+		-1645}, 0, 0, 0);
+	addPebble("Pebble_1", {-9695,
+		-82,
+		-10778}, 0, 0, 0);
+	addPebble("Pebble_1", {1426,
+		205,
+		-1897}, 0, 0, 0);
+	addPebble("Pebble_1", {-12263,
+		964,
+		-6068}, 0, 0, 0);
+	addPebble("Pebble_1", {1067,
+		410,
+		-3195}, 0, 0, 0);
+	addPebble("Pebble_1", {-5734,
+		932,
+		-4127}, 0, 0, 0);
+	addPebble("Pebble_1", {4154,
+		254,
+		-3251}, 0, 0, 0);
+	addPebble("Pebble_1", {8499,
+		727,
+		-10175}, 0, 0, 0);
+	addPebble("Pebble_1", {4446,
+		328,
+		-3475}, 0, 0, 0);
+	addPebble("Pebble_1", {-9592,
+		-375,
+		-10422}, 0, 0, 0);
+	addPebble("Pebble_1", {6365,
+		190,
+		-5341}, 0, 0, 0);
+	addPebble("Pebble_1", {1799,
+		81,
+		-1742}, 0, 0, 0);
+	addPebble("Pebble_1", {-4663,
+		582,
+		-3064}, 0, 0, 0);
+	addPebble("Pebble_1", {7220,
+		1193,
+		-7838}, 0, 0, 0);
+	addPebble("Pebble_1", {8224,
+		736,
+		-9654}, 0, 0, 0);
+	addPebble("Pebble_1", {7910,
+		643,
+		-8909}, 0, 0, 0);
+	addPebble("Pebble_1", {-8777,
+		-117,
+		-8040}, 0, 0, 0);
+	addPebble("Pebble_1", {1343,
+		278,
+		-114}, 0, 0, 0);
+	addPebble("Pebble_1", {-813,
+		-247,
+		2793}, 0, 0, 0);
+	addPebble("Pebble_1", {-251,
+		-758,
+		1818}, 0, 0, 0);
+	addPebble("Pebble_1", {7742,
+		-332,
+		-3972}, 0, 0, 0);
+	addPebble("Pebble_1", {13048,
+		-871,
+		-3317}, 0, 0, 0);
+	addPebble("Pebble_1", {3931,
+		-387,
+		-2881}, 0, 0, 0);
+	addPebble("Pebble_1", {6832,
+		-458,
+		-3394}, 0, 0, 0);
+	addPebble("Pebble_1", {3683,
+		698,
+		9846}, 0, 0, 0);
+	addPebble("Pebble_1", {13118,
+		-813,
+		-3160}, 0, 0, 0);
+	addPebble("Pebble_1", {580,
+		230,
+		1361}, 0, 0, 0);
+	addPebble("Pebble_1", {7831,
+		-97,
+		-3698}, 0, 0, 0);
+	addPebble("Pebble_1", {754,
+		173,
+		980}, 0, 0, 0);
+	addPebble("Pebble_1", {12662,
+		-771,
+		-3056}, 0, 0, 0);
+	addPebble("Pebble_1", {3314,
+		-631,
+		-2476}, 0, 0, 0);
+	addPebble("Pebble_1", {2424,
+		193,
+		8797}, 0, 0, 0);
+	addPebble("Pebble_1", {438,
+		-895,
+		3016}, 0, 0, 0);
+	addPebble("Pebble_1", {3515,
+		-581,
+		-2852}, 0, 0, 0);
+	addPebble("Pebble_1", {3715,
+		-363,
+		-2728}, 0, 0, 0);
+	addPebble("Pebble_1", {12862,
+		-816,
+		-3173}, 0, 0, 0);
+	addPebble("Pebble_1", {5052,
+		-162,
+		-3205}, 0, 0, 0);
+	addPebble("Pebble_1", {219,
+		-855,
+		2587}, 0, 0, 0);
+	addPebble("Pebble_1", {7853,
+		-175,
+		-4600}, 0, 0, 0);
+	addPebble("Pebble_1", {890,
+		133,
+		238}, 0, 0, 0);
+	addPebble("Pebble_1", {2671,
+		10,
+		9850}, 0, 0, 0);
+	addPebble("Pebble_1", {2486,
+		-294,
+		-1845}, 0, 0, 0);
+	addPebble("Pebble_1", {1778,
+		-20,
+		-882}, 0, 0, 0);
+	addPebble("Pebble_1", {11559,
+		-442,
+		-3111}, 0, 0, 0);
+	addPebble("Pebble_1", {1963,
+		-218,
+		-813}, 0, 0, 0);
+	addPebble("Pebble_1", {8415,
+		-259,
+		-13522}, 0, 0, 0);
+	addPebble("Pebble_1", {3342,
+		109,
+		10809}, 0, 0, 0);
+	addPebble("Pebble_1", {2263,
+		-115,
+		-1412}, 0, 0, 0);
+	addPebble("Pebble_1", {11407,
+		-488,
+		-3055}, 0, 0, 0);
+	addPebble("Pebble_1", {2277,
+		74,
+		-1667}, 0, 0, 0);
+	addPebble("Pebble_1", {3637,
+		-587,
+		-2487}, 0, 0, 0);
+	addPebble("Pebble_1", {3948,
+		-573,
+		-1398}, 0, 0, 0);
+	addPebble("Pebble_1", {7983,
+		-338,
+		-14728}, 0, 0, 0);
+	addPebble("Pebble_1", {256,
+		-738,
+		2502}, 0, 0, 0);
+	addPebble("Pebble_1", {-76,
+		-294,
+		3401}, 0, 0, 0);
+	addPebble("Pebble_1", {2504,
+		299,
+		8214}, 0, 0, 0);
+	addPebble("Pebble_1", {10112,
+		-449,
+		-3815}, 0, 0, 0);
+	addPebble("Pebble_1", {2951,
+		-503,
+		-2232}, 0, 0, 0);
+	addPebble("Pebble_1", {4893,
+		-135,
+		-3155}, 0, 0, 0);
+	addPebble("Pebble_1", {584,
+		39,
+		2006}, 0, 0, 0);
+	addPebble("Pebble_1", {12493,
+		-716,
+		-3169}, 0, 0, 0);
+	addPebble("Pebble_1", {5300,
+		-342,
+		-3055}, 0, 0, 0);
+	addPebble("Pebble_1", {2339,
+		276,
+		8771}, 0, 0, 0);
+	addPebble("Pebble_1", {2194,
+		381,
+		8488}, 0, 0, 0);
+	addPebble("Pebble_1", {2408,
+		159,
+		8670}, 0, 0, 0);
+	addPebble("Pebble_1", {12855,
+		-716,
+		-3146}, 0, 0, 0);
+	addPebble("Pebble_1", {4788,
+		-356,
+		-2941}, 0, 0, 0);
+	addPebble("Pebble_1", {3800,
+		-549,
+		-2724}, 0, 0, 0);
+	addPebble("Pebble_1", {2594,
+		15,
+		9799}, 0, 0, 0);
+	addPebble("Pebble_1", {3105,
+		10,
+		10180}, 0, 0, 0);
+	addPebble("Pebble_1", {3215,
+		67,
+		10444}, 0, 0, 0);
+	addPebble("Pebble_1", {7906,
+		-244,
+		-3938}, 0, 0, 0);
+	addPebble("Pebble_1", {1451,
+		-504,
+		-3409}, 0, 0, 0);
+	addPebble("Pebble_1", {13553,
+		-1123,
+		-3268}, 0, 0, 0);
+	addPebble("Pebble_1", {490,
+		-763,
+		3462}, 0, 0, 0);
+	addPebble("Pebble_1", {745,
+		340,
+		488}, 0, 0, 0);
+	addPebble("Pebble_1", {2590,
+		55,
+		9571}, 0, 0, 0);
+	addPebble("Pebble_2", {5178,
+		-194,
+		-5156}, 0, 0, 0);
+	addPebble("Pebble_2", {13352,
+		-1063,
+		-3310}, 0, 0, 0);
+	addPebble("Pebble_2", {776,
+		220,
+		1284}, 0, 0, 0);
+	addPebble("Pebble_2", {2432,
+		-228,
+		-1636}, 0, 0, 0);
+	addPebble("Pebble_2", {3639,
+		-828,
+		-2415}, 0, 0, 0);
+	addPebble("Pebble_2", {10304,
+		-615,
+		-3572}, 0, 0, 0);
+	addPebble("Pebble_2", {53,
+		-480,
+		3342}, 0, 0, 0);
+	addPebble("Pebble_2", {3345,
+		226,
+		10879}, 0, 0, 0);
+	addPebble("Pebble_2", {1793,
+		370,
+		-847}, 0, 0, 0);
+	addPebble("Pebble_2", {5293,
+		-211,
+		-4629}, 0, 0, 0);
+	addPebble("Pebble_2", {-148,
+		-596,
+		1464}, 0, 0, 0);
+	addPebble("Pebble_2", {439,
+		-861,
+		2763}, 0, 0, 0);
+	addPebble("Pebble_2", {12515,
+		-680,
+		-3222}, 0, 0, 0);
+	addPebble("Pebble_2", {1633,
+		372,
+		-754}, 0, 0, 0);
+	addPebble("Pebble_2", {2428,
+		159,
+		8085}, 0, 0, 0);
+	addPebble("Pebble_2", {765,
+		135,
+		987}, 0, 0, 0);
+	addPebble("Pebble_2", {635,
+		-153,
+		6829}, 0, 0, 0);
+	addPebble("Pebble_2", {816,
+		223,
+		1063}, 0, 0, 0);
+	addPebble("Pebble_2", {11087,
+		-640,
+		-3417}, 0, 0, 0);
+	addPebble("Pebble_2", {253,
+		-781,
+		2652}, 0, 0, 0);
+	addPebble("Pebble_2", {6314,
+		-149,
+		-6713}, 0, 0, 0);
+	addPebble("Pebble_2", {1448,
+		-369,
+		-3268}, 0, 0, 0);
+	addPebble("Pebble_2", {2409,
+		-339,
+		-1790}, 0, 0, 0);
+	addPebble("Pebble_2", {5437,
+		-115,
+		-4644}, 0, 0, 0);
+	addPebble("Pebble_2", {6434,
+		-88,
+		-6751}, 0, 0, 0);
+	addPebble("Pebble_2", {2001,
+		133,
+		8696}, 0, 0, 0);
+	addPebble("Pebble_2", {2586,
+		288,
+		8185}, 0, 0, 0);
+	addPebble("Pebble_2", {298,
+		-892,
+		2833}, 0, 0, 0);
+	addPebble("Pebble_2", {2252,
+		237,
+		8172}, 0, 0, 0);
+	addPebble("Pebble_2", {7799,
+		-450,
+		-4050}, 0, 0, 0);
+	addPebble("Pebble_2", {6100,
+		-438,
+		-6447}, 0, 0, 0);
+	addPebble("Pebble_2", {855,
+		251,
+		1215}, 0, 0, 0);
+	addPebble("Pebble_2", {5009,
+		-211,
+		-5217}, 0, 0, 0);
+	addPebble("Pebble_2", {4754,
+		-186,
+		-4836}, 0, 0, 0);
+	addPebble("Pebble_2", {-931,
+		-216,
+		2430}, 0, 0, 0);
+	addPebble("Pebble_2", {7332,
+		176,
+		-6930}, 0, 0, 0);
+	addPebble("Pebble_2", {-8087,
+		-290,
+		-7463}, 0, 0, 0);
+	addPebble("Pebble_2", {-4948,
+		851,
+		-2072}, 0, 0, 0);
+	addPebble("Pebble_2", {1310,
+		339,
+		-1776}, 0, 0, 0);
+	addPebble("Pebble_2", {8436,
+		719,
+		-10329}, 0, 0, 0);
+	addPebble("Pebble_2", {-6294,
+		623,
+		-4450}, 0, 0, 0);
+	addPebble("Pebble_2", {-8538,
+		-184,
+		-6849}, 0, 0, 0);
+	addPebble("Pebble_2", {-2843,
+		482,
+		-3090}, 0, 0, 0);
+	addPebble("Pebble_2", {-16226,
+		-181,
+		-4770}, 0, 0, 0);
+	addPebble("Pebble_2", {-693,
+		82,
+		-1295}, 0, 0, 0);
+	addPebble("Pebble_2", {-6371,
+		701,
+		-4413}, 0, 0, 0);
+	addPebble("Pebble_2", {-8186,
+		-41,
+		-8566}, 0, 0, 0);
+	addPebble("Pebble_2", {-3369,
+		252,
+		-2571}, 0, 0, 0);
+	addPebble("Pebble_2", {909,
+		414,
+		-2699}, 0, 0, 0);
+	addPebble("Pebble_2", {8197,
+		366,
+		-13686}, 0, 0, 0);
+	addPebble("Pebble_2", {-8099,
+		-221,
+		-8385}, 0, 0, 0);
+	addPebble("Pebble_2", {3490,
+		596,
+		-2930}, 0, 0, 0);
+	addPebble("Pebble_2", {-16580,
+		343,
+		-4834}, 0, 0, 0);
+	addPebble("Pebble_2", {338,
+		69,
+		-1541}, 0, 0, 0);
+	addPebble("Pebble_2", {-8208,
+		-173,
+		-7757}, 0, 0, 0);
+	addPebble("Pebble_2", {-8554,
+		-165,
+		-9017}, 0, 0, 0);
+	addPebble("Pebble_2", {6830,
+		198,
+		-5600}, 0, 0, 0);
+	addPebble("Pebble_2", {4941,
+		190,
+		-3518}, 0, 0, 0);
+	addPebble("Pebble_2", {-12171,
+		995,
+		-5964}, 0, 0, 0);
+	addPebble("Pebble_2", {-7824,
+		-322,
+		-7768}, 0, 0, 0);
+	addPebble("Pebble_2", {-2148,
+		-221,
+		-2196}, 0, 0, 0);
+	addPebble("Pebble_2", {2407,
+		337,
+		-2089}, 0, 0, 0);
+	addPebble("Pebble_2", {1692,
+		180,
+		-1868}, 0, 0, 0);
+	addPebble("Pebble_2", {7252,
+		1138,
+		-7794}, 0, 0, 0);
+	addPebble("Pebble_2", {-8176,
+		-180,
+		-8117}, 0, 0, 0);
+	addPebble("Pebble_2", {3643,
+		557,
+		-3034}, 0, 0, 0);
+	addPebble("Pebble_2", {1239,
+		604,
+		-3254}, 0, 0, 0);
+	addPebble("Pebble_2", {7946,
+		359,
+		-13587}, 0, 0, 0);
+	addPebble("Pebble_2", {1422,
+		225,
+		-1554}, 0, 0, 0);
+	addPebble("Pebble_2", {-4411,
+		352,
+		-2858}, 0, 0, 0);
+	addPebble("Pebble_2", {-90,
+		937,
+		1548}, 0, 0, 0);
+	addPebble("Pebble_2", {-2518,
+		-44,
+		9503}, 0, 0, 0);
+	addPebble("Pebble_2", {-15952,
+		521,
+		-4914}, 0, 0, 0);
+	addPebble("Pebble_2", {-11272,
+		525,
+		-3279}, 0, 0, 0);
+	addPebble("Pebble_2", {-13617,
+		880,
+		-7935}, 0, 0, 0);
+	addPebble("Pebble_2", {-947,
+		-415,
+		499}, 0, 0, 0);
+	addPebble("Pebble_2", {-13721,
+		947,
+		-7946}, 0, 0, 0);
+	addPebble("Pebble_2", {-11373,
+		585,
+		-3168}, 0, 0, 0);
+	addPebble("Pebble_2", {-579,
+		858,
+		1722}, 0, 0, 0);
+	addPebble("Pebble_2", {-12762,
+		447,
+		-6005}, 0, 0, 0);
+	addPebble("Pebble_2", {-233,
+		931,
+		2556}, 0, 0, 0);
+	addPebble("Pebble_2", {-992,
+		-331,
+		708}, 0, 0, 0);
+	addPebble("Pebble_2", {-1835,
+		932,
+		1830}, 0, 0, 0);
+	addPebble("Pebble_2", {-2271,
+		-27,
+		-732}, 0, 0, 0);
+	addPebble("Pebble_2", {-2213,
+		10,
+		-1497}, 0, 0, 0);
+	addPebble("Pebble_2", {-3013,
+		-110,
+		10105}, 0, 0, 0);
+	addPebble("Pebble_2", {-2216,
+		-268,
+		-525}, 0, 0, 0);
+	addPebble("Pebble_2", {-13628,
+		889,
+		-7900}, 0, 0, 0);
+	addPebble("Pebble_2", {-11053,
+		492,
+		-3342}, 0, 0, 0);
+	addPebble("Pebble_2", {-1770,
+		-66,
+		-870}, 0, 0, 0);
+	addPebble("Pebble_2", {-1644,
+		524,
+		1904}, 0, 0, 0);
+	addPebble("Pebble_2", {-2790,
+		-135,
+		1620}, 0, 0, 0);
+	addPebble("Pebble_2", {-5386,
+		226,
+		-3606}, 0, 0, 0);
+	addPebble("Pebble_2", {-11400,
+		568,
+		-3291}, 0, 0, 0);
+	addPebble("Pebble_2", {-813,
+		-80,
+		1444}, 0, 0, 0);
+	addPebble("Pebble_2", {-980,
+		-218,
+		91}, 0, 0, 0);
+	addPebble("Pebble_2", {-991,
+		-214,
+		-6}, 0, 0, 0);
+	addPebble("Pebble_2", {-576,
+		-168,
+		1655}, 0, 0, 0);
+	addPebble("Pebble_2", {-3753,
+		398,
+		-1414}, 0, 0, 0);
+	addPebble("Pebble_2", {-13653,
+		931,
+		-7942}, 0, 0, 0);
+	addPebble("Pebble_2", {-14559,
+		-530,
+		-16582}, 0, 0, 0);
+	addPebble("Pebble_2", {-2035,
+		-3,
+		-1036}, 0, 0, 0);
+	addPebble("Pebble_2", {-2861,
+		-83,
+		1821}, 0, 0, 0);
+	addPebble("Pebble_2", {-752,
+		-297,
+		1093}, 0, 0, 0);
+	addPebble("Pebble_2", {-92,
+		389,
+		3087}, 0, 0, 0);
+	addPebble("Pebble_0", {-1310,
+		509,
+		-18302}, 0, 0, 0);
+	addPebble("Pebble_0", {2104,
+		-160,
+		-18834}, 0, 0, 0);
+	addPebble("Pebble_0", {-181,
+		146,
+		-20672}, 0, 0, 0);
+	addPebble("Pebble_0", {-771,
+		264,
+		-20405}, 0, 0, 0);
+	addPebble("Pebble_0", {-1054,
+		560,
+		-18403}, 0, 0, 0);
+	addPebble("Pebble_0", {-1341,
+		70,
+		-18012}, 0, 0, 0);
+	addPebble("Pebble_0", {-3018,
+		159,
+		-19565}, 0, 0, 0);
+	addPebble("Pebble_0", {4040,
+		252,
+		-17966}, 0, 0, 0);
+	addPebble("Pebble_0", {-1489,
+		195,
+		-20053}, 0, 0, 0);
+	addPebble("Pebble_0", {-1058,
+		401,
+		-18999}, 0, 0, 0);
+	addPebble("Pebble_0", {50,
+		82,
+		-18810}, 0, 0, 0);
+	addPebble("Pebble_0", {4890,
+		367,
+		-17909}, 0, 0, 0);
+	addPebble("Pebble_0", {-515,
+		123,
+		-20788}, 0, 0, 0);
+	addPebble("Pebble_0", {7267,
+		-361,
+		-16293}, 0, 0, 0);
+	addPebble("Pebble_0", {-1330,
+		256,
+		-20071}, 0, 0, 0);
+	addPebble("Pebble_0", {6035,
+		147,
+		-17288}, 0, 0, 0);
+	addPebble("Pebble_0", {-2265,
+		500,
+		-18554}, 0, 0, 0);
+	addPebble("Pebble_0", {-1106,
+		496,
+		-18905}, 0, 0, 0);
+	addPebble("Pebble_0", {4758,
+		372,
+		-18005}, 0, 0, 0);
+	addPebble("Pebble_0", {-1093,
+		134,
+		-20161}, 0, 0, 0);
+	addPebble("Pebble_0", {4618,
+		311,
+		-17970}, 0, 0, 0);
+	addPebble("Pebble_0", {2452,
+		2,
+		-18889}, 0, 0, 0);
+	addPebble("Pebble_0", {5161,
+		264,
+		-17913}, 0, 0, 0);
+	addPebble("Pebble_0", {-2536,
+		352,
+		-18431}, 0, 0, 0);
+	addPebble("Pebble_0", {4543,
+		324,
+		-17947}, 0, 0, 0);
+	addPebble("Pebble_0", {-822,
+		388,
+		-19162}, 0, 0, 0);
+	addPebble("Pebble_0", {-760,
+		80,
+		-20623}, 0, 0, 0);
+	addPebble("Pebble_0", {2111,
+		142,
+		-18792}, 0, 0, 0);
+	addPebble("Pebble_0", {-1281,
+		495,
+		-18570}, 0, 0, 0);
+	addPebble("Pebble_0", {-551,
+		169,
+		-19004}, 0, 0, 0);
+	addPebble("Pebble_0", {-1396,
+		152,
+		-17987}, 0, 0, 0);
+	addPebble("Pebble_0", {4389,
+		196,
+		-18115}, 0, 0, 0);
+	addPebble("Pebble_0", {2171,
+		59,
+		-18935}, 0, 0, 0);
+	addPebble("Pebble_0", {1716,
+		-84,
+		-18138}, 0, 0, 0);
+	addPebble("Pebble_0", {219,
+		295,
+		-18731}, 0, 0, 0);
+	addPebble("Pebble_0", {7450,
+		-467,
+		-16221}, 0, 0, 0);
+	addPebble("Pebble_0", {1527,
+		127,
+		-18804}, 0, 0, 0);
+	addPebble("Pebble_0", {2298,
+		2,
+		-18681}, 0, 0, 0);
+	addPebble("Pebble_0", {1901,
+		-151,
+		-18866}, 0, 0, 0);
+	addPebble("Pebble_0", {-896,
+		1,
+		-18225}, 0, 0, 0);
+	addPebble("Pebble_0", {6,
+		95,
+		-20701}, 0, 0, 0);
+	addPebble("Pebble_0", {-1749,
+		479,
+		-18791}, 0, 0, 0);
+	addPebble("Pebble_0", {783,
+		-76,
+		-18738}, 0, 0, 0);
+	addPebble("Pebble_0", {1852,
+		-119,
+		-19004}, 0, 0, 0);
+	addPebble("Pebble_0", {-1011,
+		330,
+		-19100}, 0, 0, 0);
+	addPebble("Pebble_0", {1799,
+		-26,
+		-18807}, 0, 0, 0);
+	addPebble("Pebble_0", {-539,
+		104,
+		-20762}, 0, 0, 0);
+	addPebble("Pebble_0", {1151,
+		125,
+		-18681}, 0, 0, 0);
+	addPebble("Pebble_0", {2121,
+		-93,
+		-18820}, 0, 0, 0);
+	addPebble("Pebble_0", {67,
+		338,
+		-18759}, 0, 0, 0);
+	addPebble("Pebble_0", {-398,
+		35,
+		-20792}, 0, 0, 0);
+	addPebble("Pebble_0", {-614,
+		444,
+		-18864}, 0, 0, 0);
+	addPebble("Pebble_0", {3288,
+		83,
+		-18390}, 0, 0, 0);
+	addPebble("Pebble_0", {-951,
+		414,
+		-18981}, 0, 0, 0);
+	addPebble("Pebble_0", {2025,
+		-161,
+		-17801}, 0, 0, 0);
+	addPebble("Pebble_0", {2926,
+		-48,
+		-18300}, 0, 0, 0);
+	addPebble("Pebble_0", {-1029,
+		44,
+		-20568}, 0, 0, 0);
+	addPebble("Pebble_0", {114,
+		143,
+		-20876}, 0, 0, 0);
+	addPebble("Pebble_0", {711,
+		61,
+		-18631}, 0, 0, 0);
+	addPebble("Pebble_0", {-554,
+		345,
+		-19063}, 0, 0, 0);
+	addPebble("Pebble_0", {6028,
+		156,
+		-17305}, 0, 0, 0);
+	addPebble("Pebble_0", {1555,
+		6,
+		-18724}, 0, 0, 0);
+	addPebble("Pebble_0", {2941,
+		114,
+		-18269}, 0, 0, 0);
+	addPebble("Pebble_0", {449,
+		297,
+		-20715}, 0, 0, 0);
+	addPebble("Pebble_0", {23,
+		150,
+		-20816}, 0, 0, 0);
+	addPebble("Pebble_0", {540,
+		154,
+		-18836}, 0, 0, 0);
+	addPebble("Pebble_0", {-370,
+		7,
+		-20655}, 0, 0, 0);
+	addPebble("Pebble_0", {-1998,
+		608,
+		-18702}, 0, 0, 0);
+	addPebble("Pebble_0", {-55,
+		148,
+		-20842}, 0, 0, 0);
+	addPebble("Pebble_0", {2240,
+		57,
+		-18638}, 0, 0, 0);
+	addPebble("Pebble_0", {-2864,
+		126,
+		-19550}, 0, 0, 0);
+	addPebble("Pebble_0", {-1363,
+		613,
+		-18296}, 0, 0, 0);
+	addPebble("Pebble_0", {2477,
+		104,
+		-18787}, 0, 0, 0);
+	addPebble("Pebble_0", {-832,
+		54,
+		-18228}, 0, 0, 0);
+	addPebble("Pebble_0", {3004,
+		-47,
+		-18458}, 0, 0, 0);
+	addPebble("Pebble_0", {1302,
+		65,
+		-18962}, 0, 0, 0);
+	addPebble("Pebble_0", {-1315,
+		128,
+		-17998}, 0, 0, 0);
+	addPebble("Pebble_0", {5818,
+		117,
+		-17508}, 0, 0, 0);
+	addPebble("Pebble_0", {2184,
+		144,
+		-18810}, 0, 0, 0);
+	addPebble("Pebble_0", {-572,
+		223,
+		-19065}, 0, 0, 0);
+	addPebble("Pebble_0", {-1051,
+		186,
+		-20146}, 0, 0, 0);
+	addPebble("Pebble_0", {-784,
+		3,
+		-20655}, 0, 0, 0);
+	addPebble("Pebble_0", {2702,
+		-123,
+		-18533}, 0, 0, 0);
+	addPebble("Pebble_0", {-555,
+		31,
+		-20633}, 0, 0, 0);
+	addPebble("Pebble_0", {-2519,
+		466,
+		-18346}, 0, 0, 0);
+	addPebble("Pebble_0", {4564,
+		244,
+		-18046}, 0, 0, 0);
+	addPebble("Pebble_0", {617,
+		147,
+		-18642}, 0, 0, 0);
+	addPebble("Pebble_0", {1417,
+		-39,
+		-18754}, 0, 0, 0);
+	addPebble("Pebble_0", {-2737,
+		397,
+		-18273}, 0, 0, 0);
+	addPebble("Pebble_0", {2567,
+		-107,
+		-18649}, 0, 0, 0);
+	addPebble("Pebble_0", {-18625,
+		54,
+		7864}, 0, 0, 0);
+	addPebble("Pebble_0", {-15583,
+		268,
+		10805}, 0, 0, 0);
+	addPebble("Pebble_0", {-16795,
+		-9,
+		8447}, 0, 0, 0);
+	addPebble("Pebble_0", {-19337,
+		254,
+		8821}, 0, 0, 0);
+	addPebble("Pebble_0", {-19260,
+		194,
+		9314}, 0, 0, 0);
+	addPebble("Pebble_0", {-12512,
+		189,
+		12343}, 0, 0, 0);
+	addPebble("Pebble_0", {-12035,
+		99,
+		10054}, 0, 0, 0);
+	addPebble("Pebble_0", {-13703,
+		235,
+		11502}, 0, 0, 0);
+	addPebble("Pebble_0", {-19210,
+		182,
+		9479}, 0, 0, 0);
+	addPebble("Pebble_0", {-9389,
+		123,
+		12341}, 0, 0, 0);
+	addPebble("Pebble_0", {-12938,
+		188,
+		12127}, 0, 0, 0);
+	addPebble("Pebble_0", {-19327,
+		269,
+		8922}, 0, 0, 0);
+	addPebble("Pebble_0", {-18581,
+		70,
+		7757}, 0, 0, 0);
+	addPebble("Pebble_0", {-15887,
+		200,
+		10530}, 0, 0, 0);
+	addPebble("Pebble_0", {-10931,
+		272,
+		12365}, 0, 0, 0);
+	addPebble("Pebble_0", {-16268,
+		36,
+		9596}, 0, 0, 0);
+	addPebble("Pebble_0", {-16324,
+		202,
+		9474}, 0, 0, 0);
+	addPebble("Pebble_0", {-19091,
+		195,
+		9715}, 0, 0, 0);
+	addPebble("Pebble_0", {-18576,
+		1,
+		7834}, 0, 0, 0);
+	addPebble("Pebble_0", {-19022,
+		180,
+		9827}, 0, 0, 0);
+	addPebble("Pebble_0", {-16778,
+		9,
+		8128}, 0, 0, 0);
+	addPebble("Pebble_0", {-17085,
+		4,
+		8086}, 0, 0, 0);
+	addPebble("Pebble_0", {-10141,
+		165,
+		12245}, 0, 0, 0);
+	addPebble("Pebble_0", {-19014,
+		178,
+		9834}, 0, 0, 0);
+	addPebble("Pebble_0", {-10099,
+		137,
+		12198}, 0, 0, 0);
+	addPebble("Pebble_0", {-19206,
+		-221,
+		7692}, 0, 0, 0);
+	addPebble("Pebble_0", {-13962,
+		167,
+		11238}, 0, 0, 0);
+	addPebble("Pebble_0", {-15926,
+		532,
+		10167}, 0, 0, 0);
+	addPebble("Pebble_0", {-12309,
+		134,
+		12742}, 0, 0, 0);
+	addPebble("Pebble_0", {-19095,
+		174,
+		9588}, 0, 0, 0);
+	addPebble("Pebble_0", {-16781,
+		-98,
+		8410}, 0, 0, 0);
+	addPebble("Pebble_0", {-19079,
+		104,
+		9876}, 0, 0, 0);
+	addPebble("Pebble_0", {-19305,
+		314,
+		9065}, 0, 0, 0);
+	addPebble("Pebble_0", {-16122,
+		-14,
+		9256}, 0, 0, 0);
+	addPebble("Pebble_0", {-18564,
+		233,
+		8545}, 0, 0, 0);
+	addPebble("Pebble_0", {-16405,
+		-84,
+		8595}, 0, 0, 0);
+	addPebble("Pebble_0", {-12328,
+		21,
+		12389}, 0, 0, 0);
+	addPebble("Pebble_0", {-15024,
+		300,
+		11043}, 0, 0, 0);
+	addPebble("Pebble_0", {-16200,
+		105,
+		9448}, 0, 0, 0);
+	addPebble("Pebble_0", {-15060,
+		462,
+		10911}, 0, 0, 0);
+	addPebble("Pebble_0", {-14362,
+		212,
+		11153}, 0, 0, 0);
+	addPebble("Pebble_0", {-20219,
+		112,
+		10313}, 0, 0, 0);
+	addPebble("Pebble_0", {-19282,
+		314,
+		9097}, 0, 0, 0);
+	addPebble("Pebble_0", {-19210,
+		165,
+		9224}, 0, 0, 0);
+	addPebble("Pebble_0", {-17328,
+		32,
+		7315}, 0, 0, 0);
+	addPebble("Pebble_0", {-19133,
+		163,
+		9487}, 0, 0, 0);
+	addPebble("Pebble_0", {-12307,
+		-74,
+		11587}, 0, 0, 0);
+	addPebble("Pebble_0", {-12318,
+		-47,
+		12740}, 0, 0, 0);
+	addPebble("Pebble_0", {-12348,
+		116,
+		10183}, 0, 0, 0);
+	addPebble("Pebble_0", {-9668,
+		125,
+		12312}, 0, 0, 0);
+	addPebble("Pebble_0", {-19029,
+		152,
+		9744}, 0, 0, 0);
+	addPebble("Pebble_0", {-11307,
+		55,
+		13262}, 0, 0, 0);
+	addPebble("Pebble_0", {-18990,
+		-99,
+		10910}, 0, 0, 0);
+	addPebble("Pebble_0", {-16180,
+		218,
+		9546}, 0, 0, 0);
+	addPebble("Pebble_0", {-19147,
+		208,
+		9348}, 0, 0, 0);
+	addPebble("Pebble_0", {-12090,
+		-11,
+		12672}, 0, 0, 0);
+	addPebble("Pebble_0", {-10088,
+		95,
+		12326}, 0, 0, 0);
+	addPebble("Pebble_0", {-19462,
+		276,
+		8253}, 0, 0, 0);
+	addPebble("Pebble_0", {-14440,
+		236,
+		11113}, 0, 0, 0);
+	addPebble("Pebble_0", {-16086,
+		286,
+		9359}, 0, 0, 0);
+	addPebble("Pebble_0", {-18589,
+		66,
+		7698}, 0, 0, 0);
+	addPebble("Pebble_0", {-13980,
+		244,
+		11252}, 0, 0, 0);
+	addPebble("Pebble_0", {-16004,
+		297,
+		10588}, 0, 0, 0);
+	addPebble("Pebble_0", {-19330,
+		347,
+		8650}, 0, 0, 0);
+	addPebble("Pebble_0", {-19071,
+		100,
+		9791}, 0, 0, 0);
+	addPebble("Pebble_0", {-9944,
+		136,
+		12246}, 0, 0, 0);
+	addPebble("Pebble_0", {-19040,
+		73,
+		10652}, 0, 0, 0);
+	addPebble("Pebble_0", {-11760,
+		105,
+		12960}, 0, 0, 0);
+	addPebble("Pebble_0", {-18589,
+		8,
+		7592}, 0, 0, 0);
+	addPebble("Pebble_0", {-13111,
+		21,
+		11836}, 0, 0, 0);
+	addPebble("Pebble_0", {-16683,
+		-120,
+		8338}, 0, 0, 0);
+	addPebble("Pebble_0", {-10009,
+		80,
+		12293}, 0, 0, 0);
+	addPebble("Pebble_0", {-20091,
+		14,
+		10449}, 0, 0, 0);
+	addPebble("Pebble_0", {-16804,
+		-3,
+		8086}, 0, 0, 0);
+	addPebble("Pebble_0", {-17452,
+		-22,
+		7288}, 0, 0, 0);
+	addPebble("Pebble_0", {-18968,
+		14,
+		10958}, 0, 0, 0);
+	addPebble("Pebble_0", {-19017,
+		32,
+		9930}, 0, 0, 0);
+	addPebble("Pebble_0", {-16992,
+		-71,
+		8200}, 0, 0, 0);
+	addPebble("Pebble_0", {-16356,
+		132,
+		9103}, 0, 0, 0);
+	addPebble("Pebble_0", {-12557,
+		187,
+		10259}, 0, 0, 0);
+	addPebble("Pebble_0", {-16889,
+		160,
+		8206}, 0, 0, 0);
+	addPebble("Pebble_0", {-13378,
+		384,
+		11598}, 0, 0, 0);
+	addPebble("Pebble_0", {-12450,
+		241,
+		10101}, 0, 0, 0);
+	addPebble("Pebble_0", {-15020,
+		356,
+		10976}, 0, 0, 0);
+	addPebble("Pebble_0", {-11952,
+		101,
+		12814}, 0, 0, 0);
+	addPebble("Pebble_0", {-16367,
+		161,
+		9325}, 0, 0, 0);
+	addPebble("Pebble_0", {-19408,
+		258,
+		8725}, 0, 0, 0);
+	addPebble("Pebble_0", {-19155,
+		-385,
+		7418}, 0, 0, 0);
+	addPebble("Pebble_0", {-19145,
+		177,
+		9700}, 0, 0, 0);
+	addPebble("Pebble_0", {-16622,
+		159,
+		8592}, 0, 0, 0);
+	addPebble("Pebble_0", {13338,
+		-59,
+		13879}, 0, 0, 0);
+	addPebble("Pebble_0", {19172,
+		-227,
+		4649}, 0, 0, 0);
+	addPebble("Pebble_0", {15179,
+		-240,
+		7950}, 0, 0, 0);
+	addPebble("Pebble_0", {15140,
+		-202,
+		7922}, 0, 0, 0);
+	addPebble("Pebble_0", {18537,
+		-321,
+		3411}, 0, 0, 0);
+	addPebble("Pebble_0", {16246,
+		-364,
+		9468}, 0, 0, 0);
+	addPebble("Pebble_0", {13111,
+		-44,
+		12079}, 0, 0, 0);
+	addPebble("Pebble_0", {16480,
+		-422,
+		9161}, 0, 0, 0);
+	addPebble("Pebble_0", {14965,
+		-474,
+		9740}, 0, 0, 0);
+	addPebble("Pebble_0", {16908,
+		-62,
+		7879}, 0, 0, 0);
+	addPebble("Pebble_0", {12897,
+		-60,
+		12389}, 0, 0, 0);
+	addPebble("Pebble_0", {17660,
+		-92,
+		6113}, 0, 0, 0);
+	addPebble("Pebble_0", {14522,
+		7,
+		11800}, 0, 0, 0);
+	addPebble("Pebble_0", {17211,
+		-40,
+		7943}, 0, 0, 0);
+	addPebble("Pebble_0", {18230,
+		-357,
+		4920}, 0, 0, 0);
+	addPebble("Pebble_0", {18059,
+		81,
+		6752}, 0, 0, 0);
+	addPebble("Pebble_0", {15866,
+		-510,
+		10983}, 0, 0, 0);
+	addPebble("Pebble_0", {14545,
+		-85,
+		11735}, 0, 0, 0);
+	addPebble("Pebble_0", {14653,
+		-293,
+		10969}, 0, 0, 0);
+	addPebble("Pebble_0", {15892,
+		-408,
+		10734}, 0, 0, 0);
+	addPebble("Pebble_0", {15561,
+		-410,
+		10029}, 0, 0, 0);
+	addPebble("Pebble_0", {13460,
+		-92,
+		13853}, 0, 0, 0);
+	addPebble("Pebble_0", {16352,
+		-109,
+		8931}, 0, 0, 0);
+	addPebble("Pebble_0", {17859,
+		-146,
+		5368}, 0, 0, 0);
+	addPebble("Pebble_0", {17349,
+		-216,
+		5531}, 0, 0, 0);
+	addPebble("Pebble_0", {15166,
+		-232,
+		7822}, 0, 0, 0);
+	addPebble("Pebble_0", {18380,
+		207,
+		1718}, 0, 0, 0);
+	addPebble("Pebble_0", {18804,
+		-205,
+		2943}, 0, 0, 0);
+	addPebble("Pebble_0", {17914,
+		-61,
+		7432}, 0, 0, 0);
+	addPebble("Pebble_0", {17518,
+		106,
+		6894}, 0, 0, 0);
+	addPebble("Pebble_0", {17701,
+		73,
+		6594}, 0, 0, 0);
+	addPebble("Pebble_0", {18151,
+		40,
+		6787}, 0, 0, 0);
+	addPebble("Pebble_0", {14775,
+		-139,
+		7923}, 0, 0, 0);
+	addPebble("Pebble_0", {14096,
+		-185,
+		7807}, 0, 0, 0);
+	addPebble("Pebble_0", {13156,
+		-64,
+		12249}, 0, 0, 0);
+	addPebble("Pebble_0", {17417,
+		109,
+		7118}, 0, 0, 0);
+	addPebble("Pebble_0", {13294,
+		-83,
+		11878}, 0, 0, 0);
+	addPebble("Pebble_0", {15211,
+		-306,
+		9749}, 0, 0, 0);
+	addPebble("Pebble_0", {13072,
+		-147,
+		14057}, 0, 0, 0);
+	addPebble("Pebble_0", {14646,
+		-63,
+		7945}, 0, 0, 0);
+	addPebble("Pebble_0", {17329,
+		-156,
+		5753}, 0, 0, 0);
+	addPebble("Pebble_0", {17795,
+		0,
+		7836}, 0, 0, 0);
+	addPebble("Pebble_0", {14325,
+		-413,
+		10998}, 0, 0, 0);
+	addPebble("Pebble_0", {19205,
+		353,
+		1984}, 0, 0, 0);
+	addPebble("Pebble_0", {16479,
+		-77,
+		8649}, 0, 0, 0);
+	addPebble("Pebble_0", {13313,
+		26,
+		12060}, 0, 0, 0);
+	addPebble("Pebble_0", {16031,
+		-508,
+		9894}, 0, 0, 0);
+	addPebble("Pebble_0", {13322,
+		-16,
+		11888}, 0, 0, 0);
+	addPebble("Pebble_0", {16098,
+		-501,
+		10020}, 0, 0, 0);
+	addPebble("Pebble_0", {17483,
+		-53,
+		7065}, 0, 0, 0);
+	addPebble("Pebble_0", {12931,
+		-5,
+		12408}, 0, 0, 0);
+	addPebble("Pebble_0", {15774,
+		-424,
+		10760}, 0, 0, 0);
+	addPebble("Pebble_0", {18186,
+		-277,
+		5024}, 0, 0, 0);
+	addPebble("Pebble_0", {18253,
+		246,
+		1536}, 0, 0, 0);
+	addPebble("Pebble_0", {16238,
+		-378,
+		9853}, 0, 0, 0);
+	addPebble("Pebble_0", {19417,
+		74,
+		2920}, 0, 0, 0);
+	addPebble("Pebble_0", {12467,
+		-255,
+		12877}, 0, 0, 0);
+	addPebble("Pebble_0", {17599,
+		-59,
+		6219}, 0, 0, 0);
+	addPebble("Pebble_0", {15213,
+		-241,
+		7940}, 0, 0, 0);
+	addPebble("Pebble_0", {15341,
+		-257,
+		7912}, 0, 0, 0);
+	addPebble("Pebble_0", {18185,
+		-214,
+		4893}, 0, 0, 0);
+	addPebble("Pebble_0", {12994,
+		12,
+		12286}, 0, 0, 0);
+	addPebble("Pebble_0", {13988,
+		-195,
+		11246}, 0, 0, 0);
+	addPebble("Pebble_0", {15749,
+		-478,
+		10956}, 0, 0, 0);
+	addPebble("Pebble_0", {17837,
+		-54,
+		7990}, 0, 0, 0);
+	addPebble("Pebble_0", {18273,
+		-322,
+		5040}, 0, 0, 0);
+	addPebble("Pebble_0", {16062,
+		-452,
+		9785}, 0, 0, 0);
+	addPebble("Pebble_0", {19391,
+		-27,
+		2912}, 0, 0, 0);
+	addPebble("Pebble_0", {14426,
+		-294,
+		11036}, 0, 0, 0);
+	addPebble("Pebble_0", {17889,
+		-126,
+		7813}, 0, 0, 0);
+	addPebble("Pebble_0", {15217,
+		-211,
+		7827}, 0, 0, 0);
+	addPebble("Pebble_0", {16232,
+		-424,
+		9344}, 0, 0, 0);
+	addPebble("Pebble_0", {17777,
+		-73,
+		8210}, 0, 0, 0);
+	addPebble("Pebble_0", {14011,
+		-79,
+		8913}, 0, 0, 0);
+	addPebble("Pebble_0", {18386,
+		178,
+		1957}, 0, 0, 0);
+	addPebble("Pebble_0", {14340,
+		-363,
+		11023}, 0, 0, 0);
+	addPebble("Pebble_0", {14724,
+		-376,
+		10026}, 0, 0, 0);
+	addPebble("Pebble_0", {17132,
+		-62,
+		7642}, 0, 0, 0);
+	addPebble("Pebble_0", {14060,
+		-223,
+		11171}, 0, 0, 0);
+	addPebble("Pebble_0", {18222,
+		286,
+		1494}, 0, 0, 0);
+	addPebble("Pebble_0", {14084,
+		-120,
+		7843}, 0, 0, 0);
+	addPebble("Pebble_0", {13446,
+		-7,
+		13859}, 0, 0, 0);
+	addPebble("Pebble_0", {12942,
+		17,
+		12271}, 0, 0, 0);
+	addPebble("Pebble_0", {16096,
+		-528,
+		10029}, 0, 0, 0);
+	addPebble("Pebble_0", {13062,
+		-32,
+		12082}, 0, 0, 0);
+	addPebble("Pebble_0", {16119,
+		-365,
+		9460}, 0, 0, 0);
+	addPebble("Pebble_0", {12822,
+		25,
+		12365}, 0, 0, 0);
+	addPebble("Pebble_0", {18643,
+		-252,
+		5739}, 0, 0, 0);
+	addPebble("Pebble_0", {17099,
+		-121,
+		7863}, 0, 0, 0);
+	addPebble("Pebble_0", {15078,
+		-199,
+		7961}, 0, 0, 0);
+	addPebble("Pebble_1", {-1206,
+		289,
+		-18506}, 0, 0, 0);
+	addPebble("Pebble_1", {1841,
+		-67,
+		-19009}, 0, 0, 0);
+	addPebble("Pebble_1", {-924,
+		572,
+		-19044}, 0, 0, 0);
+	addPebble("Pebble_1", {248,
+		219,
+		-18778}, 0, 0, 0);
+	addPebble("Pebble_1", {-1719,
+		340,
+		-18774}, 0, 0, 0);
+	addPebble("Pebble_1", {1753,
+		-84,
+		-18815}, 0, 0, 0);
+	addPebble("Pebble_1", {5855,
+		196,
+		-17403}, 0, 0, 0);
+	addPebble("Pebble_1", {-2424,
+		338,
+		-18378}, 0, 0, 0);
+	addPebble("Pebble_1", {257,
+		203,
+		-18645}, 0, 0, 0);
+	addPebble("Pebble_1", {-2409,
+		263,
+		-18422}, 0, 0, 0);
+	addPebble("Pebble_1", {2277,
+		160,
+		-18757}, 0, 0, 0);
+	addPebble("Pebble_1", {1776,
+		-144,
+		-18853}, 0, 0, 0);
+	addPebble("Pebble_1", {-883,
+		211,
+		-20424}, 0, 0, 0);
+	addPebble("Pebble_1", {1693,
+		76,
+		-18995}, 0, 0, 0);
+	addPebble("Pebble_1", {-1513,
+		193,
+		-20015}, 0, 0, 0);
+	addPebble("Pebble_1", {-145,
+		19,
+		-20732}, 0, 0, 0);
+	addPebble("Pebble_1", {2155,
+		-229,
+		-17676}, 0, 0, 0);
+	addPebble("Pebble_1", {3139,
+		159,
+		-18307}, 0, 0, 0);
+	addPebble("Pebble_1", {3596,
+		10,
+		-18170}, 0, 0, 0);
+	addPebble("Pebble_1", {3313,
+		183,
+		-18150}, 0, 0, 0);
+	addPebble("Pebble_1", {-3104,
+		190,
+		-19437}, 0, 0, 0);
+	addPebble("Pebble_1", {-1111,
+		25,
+		-18215}, 0, 0, 0);
+	addPebble("Pebble_1", {1447,
+		-8,
+		-18281}, 0, 0, 0);
+	addPebble("Pebble_1", {2914,
+		128,
+		-18376}, 0, 0, 0);
+	addPebble("Pebble_1", {-1153,
+		161,
+		-20094}, 0, 0, 0);
+	addPebble("Pebble_1", {1922,
+		145,
+		-18977}, 0, 0, 0);
+	addPebble("Pebble_1", {-2169,
+		439,
+		-18507}, 0, 0, 0);
+	addPebble("Pebble_1", {-3992,
+		183,
+		-18746}, 0, 0, 0);
+	addPebble("Pebble_1", {-636,
+		25,
+		-18262}, 0, 0, 0);
+	addPebble("Pebble_1", {3593,
+		73,
+		-18114}, 0, 0, 0);
+	addPebble("Pebble_1", {-19136,
+		156,
+		9349}, 0, 0, 0);
+	addPebble("Pebble_1", {-12628,
+		268,
+		10120}, 0, 0, 0);
+	addPebble("Pebble_1", {-19185,
+		200,
+		9542}, 0, 0, 0);
+	addPebble("Pebble_1", {-15926,
+		280,
+		9799}, 0, 0, 0);
+	addPebble("Pebble_1", {-18638,
+		64,
+		7984}, 0, 0, 0);
+	addPebble("Pebble_1", {-15359,
+		651,
+		11126}, 0, 0, 0);
+	addPebble("Pebble_1", {-15736,
+		270,
+		10730}, 0, 0, 0);
+	addPebble("Pebble_1", {-15975,
+		249,
+		9633}, 0, 0, 0);
+	addPebble("Pebble_1", {-17412,
+		56,
+		7459}, 0, 0, 0);
+	addPebble("Pebble_1", {-11464,
+		44,
+		12321}, 0, 0, 0);
+	addPebble("Pebble_1", {-15320,
+		439,
+		11163}, 0, 0, 0);
+	addPebble("Pebble_1", {-11075,
+		102,
+		11893}, 0, 0, 0);
+	addPebble("Pebble_1", {-10153,
+		102,
+		12268}, 0, 0, 0);
+	addPebble("Pebble_1", {-12487,
+		191,
+		12438}, 0, 0, 0);
+	addPebble("Pebble_1", {-16625,
+		182,
+		8388}, 0, 0, 0);
+	addPebble("Pebble_1", {-15897,
+		391,
+		9919}, 0, 0, 0);
+	addPebble("Pebble_1", {-14891,
+		510,
+		11925}, 0, 0, 0);
+	addPebble("Pebble_1", {-12524,
+		221,
+		10203}, 0, 0, 0);
+	addPebble("Pebble_1", {-16907,
+		-30,
+		8285}, 0, 0, 0);
+	addPebble("Pebble_1", {-13771,
+		208,
+		11541}, 0, 0, 0);
+	addPebble("Pebble_1", {-18541,
+		218,
+		8173}, 0, 0, 0);
+	addPebble("Pebble_1", {-15991,
+		508,
+		10092}, 0, 0, 0);
+	addPebble("Pebble_1", {-11708,
+		190,
+		13068}, 0, 0, 0);
+	addPebble("Pebble_1", {-12327,
+		133,
+		10106}, 0, 0, 0);
+	addPebble("Pebble_1", {-15896,
+		296,
+		10730}, 0, 0, 0);
+	addPebble("Pebble_1", {-12485,
+		236,
+		10121}, 0, 0, 0);
+	addPebble("Pebble_1", {-16330,
+		19,
+		8649}, 0, 0, 0);
+	addPebble("Pebble_1", {-12214,
+		-58,
+		12528}, 0, 0, 0);
+	addPebble("Pebble_1", {-11083,
+		282,
+		12342}, 0, 0, 0);
+	addPebble("Pebble_1", {-17544,
+		272,
+		9125}, 0, 0, 0);
+	addPebble("Pebble_1", {14819,
+		-101,
+		11419}, 0, 0, 0);
+	addPebble("Pebble_1", {16949,
+		-93,
+		7881}, 0, 0, 0);
+	addPebble("Pebble_1", {19414,
+		-48,
+		3092}, 0, 0, 0);
+	addPebble("Pebble_1", {14762,
+		-425,
+		10668}, 0, 0, 0);
+	addPebble("Pebble_1", {14991,
+		-117,
+		7983}, 0, 0, 0);
+	addPebble("Pebble_1", {18275,
+		-335,
+		4763}, 0, 0, 0);
+	addPebble("Pebble_1", {14795,
+		-277,
+		11411}, 0, 0, 0);
+	addPebble("Pebble_1", {17116,
+		105,
+		7756}, 0, 0, 0);
+	addPebble("Pebble_1", {14505,
+		-118,
+		11568}, 0, 0, 0);
+	addPebble("Pebble_1", {18695,
+		-262,
+		2934}, 0, 0, 0);
+	addPebble("Pebble_1", {19152,
+		398,
+		1922}, 0, 0, 0);
+	addPebble("Pebble_1", {18291,
+		300,
+		1577}, 0, 0, 0);
+	addPebble("Pebble_1", {16964,
+		89,
+		7890}, 0, 0, 0);
+	addPebble("Pebble_1", {17074,
+		-140,
+		7860}, 0, 0, 0);
+	addPebble("Pebble_1", {12805,
+		17,
+		12425}, 0, 0, 0);
+	addPebble("Pebble_1", {13273,
+		-16,
+		13926}, 0, 0, 0);
+	addPebble("Pebble_1", {16274,
+		-534,
+		9554}, 0, 0, 0);
+	addPebble("Pebble_1", {17829,
+		23,
+		8206}, 0, 0, 0);
+	addPebble("Pebble_1", {16017,
+		-584,
+		9948}, 0, 0, 0);
+	addPebble("Pebble_1", {14293,
+		-132,
+		7830}, 0, 0, 0);
+	addPebble("Pebble_1", {14963,
+		-359,
+		9776}, 0, 0, 0);
+	addPebble("Pebble_1", {17846,
+		-206,
+		5388}, 0, 0, 0);
+	addPebble("Pebble_1", {16366,
+		-207,
+		9566}, 0, 0, 0);
+	addPebble("Pebble_1", {19435,
+		25,
+		3090}, 0, 0, 0);
+	addPebble("Pebble_1", {17688,
+		-81,
+		6199}, 0, 0, 0);
+	fogSetActive(1);
+	fogSetStart(800);
+	fogSetEnd(18000);
+	fogSetColour(0.244, 0.147, 0.074, 1);
+	fogSetType("linear");
+	fogSetDensity(0.48);
+	setGlareIntensity(0);
+	setLevelShadowColour(0, 0, 0, 1);
+	loadBackground("ez13");
+	setSensorsManagerCameraDistances(10000, 45000);
+	setDefaultMusic("data:sound/music/ambient/A11_mission13");
+
+end
+
+levelDesc="Karos' Graveyard";
+maxPlayers=3;
+player={};
+player[0]={id=0,
+name="TestName",
+resources=0,
+raceID=1,
+startPos=1};
+player[1]={id=1,
+name="",
+resources=0,
+raceID=2,
+startPos=1};
+player[2]={id=2,
+name="",
+resources=0,
+raceID=1,
+startPos=1};
+

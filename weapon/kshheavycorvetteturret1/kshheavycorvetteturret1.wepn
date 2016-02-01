@@ -1,0 +1,16 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Missile", "SmallEnergyCannon", "Special Attack", 800, 1400, 0, 0, 0, 0, 1, 1, 1, 5, 0, 0, 1, 0, 60, 60, 0.1, "Normal", 1, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 225, 225, "");
+setPenetration(NewWeaponType, 5, 1, {Unarmoured=0.1}, {SubSystemArmour=0.5}, {MediumArmour = 1}, {HeavyArmour = 1}, {MoverArmour=1}, {LightArmour=0.25}, {PlanetKillerArmour = 0})
+setAccuracy(NewWeaponType, 1, {Fighter = 1}, {Corvette = 1}, {munition = 0.2}, {Frigate = 1, damage = 1}, {SmallCapitalShip = 1, damage = 1}, {BigCapitalShip = 1, damage = 1}, {ResourceLarge = 0.6, damage = 1})
+setAngles(NewWeaponType, 0, -180, 180, -5, 89)
+setMiscValues(NewWeaponType, 1.5, 0.5)
+addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")
+

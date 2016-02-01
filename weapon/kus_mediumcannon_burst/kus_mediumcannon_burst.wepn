@@ -1,0 +1,9 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 08-16-2012 Time: 14:01:07
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+StartWeaponConfig(NewWeaponType, "Fixed", "SphereBurst", "ArtilleryBurst", "Normal", 0, 0, 60, 2, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 1, 0, 0);
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 50, 50, "");
+setPenetration(NewWeaponType, 7, 1, {PlanetKillerArmour=0});
+

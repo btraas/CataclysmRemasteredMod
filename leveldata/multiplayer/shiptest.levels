@@ -1,0 +1,54 @@
+
+--Local_Desc - Description of this package
+--Package_Sym - Shared name for packages with the same catagory
+--Package_Desc - Description - may move to a 'package' desc file...
+
+Root = "DATA:\\LevelData\\Multiplayer\\newduel"
+
+ExtFilter = "std"
+
+--Tags - Set single tags for all levels...
+Tags = "std"
+
+--TagSets - Set groups of tags for all levels (defined in Scripts/Tags/*.tags) - makes bulk editing faster...
+--TagSets = "hw1"
+
+LevelList = {
+	{
+		Tags = "2p",
+		Name = "Hiigara_TS",
+		Desc = "Hiigara Training Space",
+		MaxPlayers = 2,
+	},
+	{
+		Tags = "2p",
+		Name = "HiigaraExile_TS",
+		Desc = "Hiigara Far Out",
+		MaxPlayers = 2,
+	},
+	{
+		Tags = "2p",
+		Name = "Kharak_TS",
+		Desc = "Hiigara Training Space",
+		MaxPlayers = 2,
+	},
+	{
+		Tags = "2p",
+		Name = "KharakHFN_TS",
+		Desc = "Kharak Half-orbit Night Side",
+		MaxPlayers = 2,
+	},
+	{
+		Tags = "2p",
+		Name = "KharakHFO_TS",
+		Desc = "Kharak Low Orbit",
+		MaxPlayers = 2,
+	},
+	{
+		Tags = "2p",
+		Name = "KharakLO_TS",
+		Desc = "Kharak Low Orbit Training Space",
+		MaxPlayers = 2,
+	},
+
+}

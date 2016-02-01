@@ -1,0 +1,72 @@
+
+
+// title of the MOD that appears on the Steam Workshop (limited to 128 characters)
+Title: Cataclysm Remastered 1.3.0
+// 1.3
+
+// tags must be individual words separated by spaces.
+Tags: homeworld ship space cataclysm somtaaw kuun-lan kuun lan kiith somtaaw HWC HomeworldRM HWRM
+
+// gametype is the type of game this MOD is designed for and can be any of: "HW1Classic", "HW2Classic", or "HomeworldRM" (without the double quotes) separated by spaces
+GameType: HomeworldRM
+
+// modtype is the type of mod for the game and can be any one of: "MOD", "Locale", "Badges", or "Cursors"
+ModType: MOD
+
+// bigfilename is the file name you want to use for your .big file (this should be a single word with no spaces).
+BigFilename: cataclysm.big
+
+// WorkshopID is the Steam Workshop item number assigned to this item when you first create it.
+// This should be 0 by default before you create your Workshop item and the Workshop Tool will
+// set it to the Workshop Item number.  DO NOT modify this number once you have created a Workshop
+// item.  It will be used to update the workshop item when you make changes to your MOD later on.  
+WorkshopID: 416844570
+
+//477426048 // TEST ?
+
+// 416844570 // Main mod ?
+
+// description that will appear on the Steam Workshop for this item
+Description:
+
+Welcome to Cataclysm Remastered! 
+
+This mod is an in-progress community effort to bring HW Cataclysm into the new Remastered engine and the HWRM collection. 
+
+Currently includes multiplayer / player vs CPU as Somtaaw, Beast or any vanilla race. Campaign levels coming soon! 
+
+Add [code]-mpbeta[/code] in the command-line parameters in the mod page to enable multiplayer.
+
+No Build Limits: http://steamcommunity.com/sharedfiles/filedetails/?id=472548772 
+No Unit Caps: http://steamcommunity.com/sharedfiles/filedetails/?id=485998120 
+Alternate Hypserspace Effect (by HarbingerDawn): http://steamcommunity.com/sharedfiles/filedetails/?id=469364176 
+
+
+Most ship models are ported from the HWU HW2 mod, but some are modified HWRM models, or ported directly from Cataclysm. 
+Weapons & FX are a mix of HWU & HWRM. 
+Music / sounds are a direct port from Cataclysm. 
+
+Thanks to LeviathansWrath, HWU team, and 23-Down for your help. 
+
+v1.2.2: Initial AI testing, bug fixes.
+
+v1.2.1a: a real fix for archive, missing races, and large mod size.
+
+v1.2.1: 
+-Removed unused media & other files 
+-Hopefully a fix for Archive & missing races bug
+-New game modes (All Races, HW1/Cata, HW2/Cata, & Cataclysm Remastered (Somtaaw/Beast only))
+-UI (main menu) tweaks.
+
+v1.2: Rebuilt with the new mod format with help from LeviathansWrath.
+
+
+Please note that AI is not working yet, so CPU somtaaw/beast players will be pretty brain-dead. Also note that these ships are for the most part the original textures from the HWC disc. I don't plan on attempting to remodel any ships anytime soon, at least until the HWRM mod tools are out. 
+
+Known bugs: 
+-No Beast sounds yet
+-No salvage points on capital ships. 
+-Various balance issues 
+-Kuun-lan top modules can be built even if top ore hold is built 
+-Worker repairs / harvests only at close distances (Thanks to HW2/HWRM engine...) 
+-Somtaaw/Beast AI may be buggy / cause crashes. Please post error logs if you experience any issues.

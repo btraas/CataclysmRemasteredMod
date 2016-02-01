@@ -1,0 +1,7 @@
+StartWeaponConfig(NewWeaponType, "Fixed", "Missile", "ksh_smallmissile", "Special Attack", 400, 2000, 0, 0, 0, 0, 1, 0, 0, 500, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 900, 900, "")
+setPenetration(NewWeaponType, 5, 1, 
+{PlanetKillerArmour = 0,})
+setAccuracy(NewWeaponType, 1)
+setAngles(NewWeaponType, 180, 0, 0, 0, 0)
+setMiscValues(NewWeaponType, 0, 0)

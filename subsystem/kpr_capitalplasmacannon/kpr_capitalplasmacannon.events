@@ -1,0 +1,67 @@
+-- LuaDC version 0.9.19
+-- 5/23/2004 7:30:57 PM
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+effects = 
+{ 
+    animations = 
+    { 
+        animation1 = 
+        { 
+            name = "Weapon_DreadTurret", 
+            length = 1, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, 
+        animation2 = 
+        { 
+            name = "Damage", 
+            length = 1, 
+            loop = 1, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, 
+        animation3 = 
+        { 
+            name = "Dmg1", 
+            length = 1, 
+            loop = 1, 
+            parent = "damage", 
+            minimum = 0.9, 
+            maximum = 1, 
+            markers = 
+                { "", }, }, }, 
+    events = 
+    { 
+        event1 = 
+            { 
+                { "anim", "Weapon_DreadTurret", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_DreadTurret_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital_dread", }, 
+                { "sound", "WEAPON/MEGASHIP/FIRE/DWEAPON_MOVER_KINETIC_AUTOGUN_SHELL", }, 
+                { "fx_scale", "3", }, 
+            }, 
+        event2 = 
+            { 
+                { "anim", "Weapon_DreadTurret", }, 
+                { "animtime", "0.2", }, 
+                { "marker", "Weapon_DreadTurretSlave_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital_dread", }, 
+                { "sound", "WEAPON/MEGASHIP/FIRE/DWEAPON_MOVER_KINETIC_AUTOGUN_SHELL", }, 
+                { "fx_scale", "3", }, 
+            }, 
+        event3 = 
+            { 
+                { "anim", "Dmg1", }, 
+                { "animtime", "-1", }, 
+                { "marker", "Root", }, 
+                { "fx", "dmg_damage_subsystem_spray", }, 
+                { "fx_scale", "entity", }, 
+            }, }, }

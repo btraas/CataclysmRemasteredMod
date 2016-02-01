@@ -1,0 +1,56 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 08-07-2012 Time: 11:48:33
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+fps=35;
+startFrame=0;
+loopCount=5;
+layout={16,
+	1};
+textureLayout={{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	0,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	1,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	2,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	3,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	4,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	5,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	6,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	7,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	8,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	9,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	10,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	11,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	12,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	13,
+	0},
+	{"data:/ART/FX/Ion_beam/ION_WARP_TP_RED.tga",
+	14,
+	0}};
+

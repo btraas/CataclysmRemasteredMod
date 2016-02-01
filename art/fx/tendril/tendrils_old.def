@@ -1,0 +1,27 @@
++res_tendril_base1
+&res_tendril_beam1
+-mindist = 100
+-minscale = 1
+-maxdist = 1000
+-maxscale = 20
+
++res_tendril_base2
+&res_tendril_beam1
+-mindist = 500
+-minscale = 1
+-maxdist = 2000
+-maxscale = 20
+
++res_tendril_base3
+&res_tendril_beam1
+-mindist = 500
+-minscale = 1
+-maxdist = 2000
+-maxscale = 20
+
++res_tendril_base4
+&res_tendril_beam1
+-mindist = 1200
+-minscale = 1
+-maxdist = 4000
+-maxscale = 20

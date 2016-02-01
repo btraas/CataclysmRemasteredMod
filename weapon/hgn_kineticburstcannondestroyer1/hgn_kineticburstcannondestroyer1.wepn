@@ -1,0 +1,13 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 11-05-2013 Time: 12:13:15
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Missile", "LargeEnergyCannon", "Special Attack", 3500, 4500, 0, 0, 0, 0, 1, 1, 1, 8, 0, 0, 1, 1, 40, 25, 0.1, "Normal", 1, 0, 0);
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 1200, 1200, "");
+setPenetration(NewWeaponType, 50, 1, {Unarmoured=0.025}, {LightArmour=0.1}, {MoverArmour=0.25}, {PlanetKillerArmour=0}, {SubSystemArmour=0.3});
+setAccuracy(NewWeaponType, 1, {Fighter=0.05}, {Corvette=0.1}, {munition=0.1});
+setAngles(NewWeaponType, 0, -120, 120, -2.5, 60);
+setMiscValues(NewWeaponType, 2.5, 0.5);
+addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
+

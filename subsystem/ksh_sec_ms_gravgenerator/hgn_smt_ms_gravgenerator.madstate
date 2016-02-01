@@ -1,0 +1,6 @@
+-- From Hgn_Resource Collector - modified by chris80502
+
+HGN_SMT_MS_GRAVGENERATOR_Normal_OnSet = function(subsystem)
+    startAnim(ship, "GravWellRotate")
+    setLoopCount(ship, "GravWellRotate", 1000000)
+end

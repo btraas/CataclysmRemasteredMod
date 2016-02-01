@@ -1,0 +1,42 @@
+-- LuaDC version 0.9.19
+-- 11/06/2004 16.41.17
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "Kinetic_Small", "Normal", 2500, 2205, 0, 0, 0, 0, 1, 1, 1, 1.6, 0, 0, 1, 1, 90, 90, 0.1, "Normal", 1, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 26, 26, "")
+AddWeaponResult(NewWeaponType, "Hit", "SpawnWeaponFire", "Target", 0, 0, "Hgn_BurstCannonBurst")
+AddWeaponResult(NewWeaponType, "Miss", "SpawnWeaponFire", "Target", 0, 0, "Hgn_BurstCannonBurst")
+setPenetration(NewWeaponType, 5, 1, 
+{ 
+    PlanetKillerArmour = 0, 
+}, 
+{ 
+    ResArmour = 0.25, })
+setAccuracy(NewWeaponType, 1, 
+{ 
+    Fighter = 0.25, 
+}, 
+{ 
+    Corvette = 0.6, 
+}, 
+{ 
+    munition = 0.15, 
+},
+{ 
+    Frigate = 0, 
+}, 
+{ 
+    SmallCapitalShip = 0, 
+}, 
+{ 
+    BigCapitalShip = 0,     
+}, 
+{ 
+    ResourceLarge = 0,     
+},
+{ 
+    SubSystem = 0, })    
+setAngles(NewWeaponType, 0, -180, 180, -10, 60)
+setMiscValues(NewWeaponType, 1.5, 0.5)
+addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

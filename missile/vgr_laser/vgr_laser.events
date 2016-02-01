@@ -1,0 +1,89 @@
+effects = 
+{
+	animations = 
+	{
+		animation1 = 
+		{
+			name = "MissileTrail",
+			length = 1,
+			loop = 1,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation2 = 
+		{
+			name = "Death",
+			length = 1,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+	},
+	events = 
+	{
+		event1 = 
+		{
+			{
+				"anim",
+				"MissileTrail",
+			},
+			{
+				"animtime",
+				"-1",
+			},
+			{
+				"marker",
+				"root",
+			},
+			{
+				"fx",
+				"vgr_wave_beam_combo",
+			},
+			{
+				"sound",
+				"WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_ION_CANNON_BEAM_HIT",
+			},
+			{
+				"fx_scale",
+				"1",
+			},
+		},
+		event2 = 
+		{
+			{
+				"anim",
+				"",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"Root",
+			},
+			{
+				"fx",
+				"",
+			},
+			{
+				"sound",
+				"",
+			},
+			{
+				"fx_transform",
+				"None",
+			},
+		},
+	},
+}

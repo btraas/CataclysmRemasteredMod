@@ -1,0 +1,24 @@
+--===========================================================================
+--  Purpose : Lua definition file for Homeworld Ship.
+--            Contains loading information and flight dynamics information (among other things?)
+--
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--===========================================================================
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Medium","Normal",2620,5486,0,0,0,0,1,1,1,1.8,0,0,1,0,360,360,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,137.5,"");
+setPenetration(NewWeaponType,5,1,
+{unarmoured=1},
+{LightArmour=1},
+{PlanetKillerArmour=0},
+{ResArmour=0.8});
+setAccuracy(NewWeaponType,1,
+{Fighter=0.06},
+{Corvette=0.12},
+{munition=0.1},
+{Frigate=0.8,damage=1},
+{SmallCapitalShip=1,damage=1},
+{BigCapitalShip=1,damage=1},
+{ResourceLarge=1,damage=1});
+setAngles(NewWeaponType,0,-25,25,-25,25);
+setMiscValues(NewWeaponType, 5, 0.9);
+addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON_SMALL");

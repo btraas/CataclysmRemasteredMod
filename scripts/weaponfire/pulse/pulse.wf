@@ -1,0 +1,15 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 03-27-2009 Time: 06:44:15
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+hitfx="dmg_pulsar_laser_hit";
+bulletfx="pulse_laser_combo";
+nopenetratefx="dmg_pulsar_laser_hit";
+deathtype="deathBeam";
+scartype="Kinetic_Small/Kinetic_Small";
+hit_sfx="WEAPON/CORVETTE/IMPACT/HWEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT";
+nopenetrate_sfx="WEAPON/CORVETTE/IMPACT/HWEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT";
+hit_clamp={1,
+	1};
+

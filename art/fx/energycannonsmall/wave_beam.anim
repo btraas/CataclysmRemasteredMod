@@ -1,0 +1,10 @@
+-- LuaDC version 0.9.19
+-- 5/23/2004 11:11:19 PM
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+fps = 30
+startFrame = 0
+loopCount = 20
+texture = 
+    { "data:/ART/FX/energycannon/wave_glow_00000.tga", "data:/ART/FX/energycannon/wave_glow_00001.tga", "data:/ART/FX/energycannon/wave_glow_00002.tga", "data:/ART/FX/energycannon/wave_glow_00003.tga", "data:/ART/FX/energycannon/wave_glow_00004.tga", "data:/ART/FX/energycannon/wave_glow_00005.tga", "data:/ART/FX/energycannon/wave_glow_00006.tga", "data:/ART/FX/energycannon/wave_glow_00007.tga", "data:/ART/FX/energycannon/wave_glow_00008.tga", "data:/ART/FX/energycannon/wave_glow_00009.tga", "data:/ART/FX/energycannon/wave_glow_00010.tga", "data:/ART/FX/energycannon/wave_glow_00011.tga", "data:/ART/FX/energycannon/wave_glow_00012.tga", "data:/ART/FX/energycannon/wave_glow_00013.tga", "data:/ART/FX/energycannon/wave_glow_00014.tga", }

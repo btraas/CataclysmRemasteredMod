@@ -1,0 +1,72 @@
+dofilepath("data:scripts/levelinfo.lua")
+
+--------------------------------------------------------------------------------
+-- Converted using HW2 Map Converter v1.0.0 by Mikali
+
+Description =
+{
+}
+
+LevelName = [[Dummy Level Info]]
+NumberOfPlayers = 2
+
+SensorsZoom = {50000, 400000,}
+UniverseSize = {415000, 165000, 165000, }
+
+LevelBackground = "ez09"
+LevelMusic = "-1"
+
+RUsRatio = 3/4
+
+PebRatio = 4/5
+
+PlayerRaces =
+{"r1","r1",}
+
+StartPoints =
+{
+	-- [XCoo, YCoo, ZCoo, ZAng]
+	{200000.0, 0.0, 0.0, 0.0,},
+	{-200000.0, 0.0, 0.0, 180.0,},
+}
+
+StartShips =
+{
+	-- [Amnt, Name, Type, XCoo, YCoo, ZCoo, Plyr, 0, ZAng, Race, Form]
+	{1, "", "mothership", {-200000.0, 0.0, 0.0,}, 1, {0, 0, 180.0,}, 0, 0, "r1", "null_formation",},
+	{1, "", "mothership", {200000.0, 0.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1", "null_formation",},
+}
+
+Squadrons =
+{
+}
+
+Derelicts =
+{
+}
+
+Crystals =
+{
+}
+
+Distributions =
+{
+}
+
+Resources =
+{
+}
+
+levelDesc = LevelName
+maxPlayers = NumberOfPlayers
+player = {}
+
+for k = 1, maxPlayers do
+	player[k] = {id = k - 1, name = "Vaygr", resources = 1500, raceID = 2, startPos = 1,}
+end
+
+function DetermChunk()
+end
+
+function NonDetermChunk()
+end

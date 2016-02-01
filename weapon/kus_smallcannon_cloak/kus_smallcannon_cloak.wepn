@@ -1,0 +1,26 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Rapid","Normal",1220,1768,0,0,0,0,1,1,1,0.33,2.5,1,1,1,360,360,1,"Normal",1,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",60,60,"") --firetime "0.33" was 0.16
+setPenetration(NewWeaponType,7,1,{
+  ResArmour = 1,
+},{
+  PlanetKillerArmour = 0,
+},{
+  SubSystemArmour = 1,
+})
+setAccuracy(NewWeaponType,1,{
+  Scout = 0.05,
+},{
+  Fighter = 0.08,
+},{
+  Corvette = 0.6,
+},{
+  Frigate = 1,
+},{
+  SmallCapitalShip = 1,
+},{
+  BigCapitalShip = 1,
+},{
+  ResourceLarge = 1,
+})
+setAngles(NewWeaponType,0,-5.5,5.5,-5.5,5.5) --HW1 gimble max angle: 11
+setMiscValues(NewWeaponType,0,0.17)

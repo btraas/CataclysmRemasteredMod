@@ -1,0 +1,38 @@
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","dread_bomb2","Normal",1850,3000,0,0,0,0,1,1,0,8,0,0,0,0,260,140,0.1,"Normal",0,0,0)
+
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",400,400,"")
+
+setAngles(NewWeaponType,30,0,0,0,0)
+
+setMiscValues(NewWeaponType,0,0)
+
+setPenetration(NewWeaponType,8,1,
+{Unarmoured=1,},
+{LightArmour=1,},
+{MediumArmour=1.5,},
+{HeavyArmour=1.25,},
+{SubSystemArmour=2.5,},
+{TurretArmour=0.45,},
+{ResArmour=0.2,},
+{MoverArmour=1,},
+{PlanetKillerArmour=0,},
+{MineArmour=1,},
+{ChunkArmour=1,})
+
+setAccuracy(NewWeaponType,1,
+{Fighter=0.1,},
+{Corvette=0.4, damage=1,},
+{Frigate=0.8, damage=1,},
+{Utility=1,},
+{munition=0.1,},
+{SmallCapitalShip=0.6, damage=1,},
+{BigCapitalShip=0.6, damage=1,},
+{Mothership=1,},
+{Emplacement=1,},
+{UnAttackable=1,},
+{SubSystem=1,},
+{Resource=1,},
+{ResourceLarge=0.6, damage=1,},
+{Capturer=1,},
+{Chimera=1,})
+

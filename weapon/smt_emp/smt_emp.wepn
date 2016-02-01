@@ -1,0 +1,3 @@
+StartWeaponConfig(NewWeaponType, "Fixed", "SphereBurst", "EMP", "Normal", 0, 0, 500, 2, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 1, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "Disable", "Target", 35, 35, "")
+setPenetration(NewWeaponType, 5, 1)

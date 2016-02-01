@@ -1,0 +1,12 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 10-18-2012 Time: 13:37:22
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+StartWeaponConfig(NewWeaponType, "Fixed", "Mine", "Kus_Mineforced", "Dropped", 0, 1828, 0, 0, 0, 2, 1, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0);
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 2812.5, 2812.5, "")
+setPenetration(NewWeaponType, 5, 1, {PlanetKillerArmour=0}, {MineArmour=0});
+setAccuracy(NewWeaponType, 1, {Scout=0}, {Fighter=0}, {Corvette=0}, {munition=0});
+setAngles(NewWeaponType, 180, 0, 0, 0, 0);
+setMiscValues(NewWeaponType, 0, 3);
+

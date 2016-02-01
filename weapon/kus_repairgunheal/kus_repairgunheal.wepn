@@ -1,0 +1,6 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","HealBeam","Normal",0,550,0,5,0,0,1,1,1,5,5,1,1,0,32,32,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",-9,-9,"");
+setPenetration(NewWeaponType,5,1,{PlanetKillerArmour=0},{ResArmour=0.8});
+setAccuracy(NewWeaponType,1);
+setAngles(NewWeaponType,0,-60,60,-45,45);
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");

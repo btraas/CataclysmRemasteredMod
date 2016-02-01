@@ -1,0 +1,107 @@
+--=============================================================================
+--    Name    : hgn_smt_worker.madStates
+--    Purpose : Animation state data.
+--
+--Created 300403 by cgladstone
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+
+
+
+
+HGN_SMT_WORKER_Launched_OnSet = function(ship)
+    -- not already doing the open?
+    if(isAnimRunning(ship, "Open") == 0) then
+        startTime = 0
+        if(isAnimRunning(ship, "Close") ~= 0) then
+            startTime = getAnimLength(ship, "Close") - getTime(ship, "Close")
+            stopAnim(ship, "Close")
+        end
+        startAnim(ship, "Open")
+        setTime(ship,"Open",startTime)
+        setPauseTime(ship, "Open", 1000)
+    end
+end
+
+HGN_SMT_WORKER_Docked_OnSet = function(ship)
+    -- not already doing the close
+    if(isAnimRunning(ship, "Close") == 0) then
+        startTime = 0
+        if(isAnimRunning(ship, "Open") ~= 0) then
+            startTime = getAnimLength(ship, "Open") - getTime(ship, "Open")
+            stopAnim(ship, "Open")
+        end
+        startAnim(ship, "Close")
+        setTime(ship,"Close",startTime)
+        setPauseTime(ship, "Close", 1000)
+    end
+end
+
+-- RESOURCE COLLECITON ---------------------------------------------------------
+HGN_SMT_WORKER_ResourceStart_OnSet = function(ship)
+    -- unset the state, the C++ will have set it but we want to delay till the anim is finished
+    setState(ship, "ResourceStart", 0)
+    endEffect(ship, "Resourcing")
+end
+
+HGN_SMT_WORKER_ResourceStart_OnPause = function(ship)
+    -- the open animation has finished, now we can set the state to resource start
+    setState(ship, "ResourceStart", 1)
+end
+
+HGN_SMT_WORKER_ResourceDo_OnSet = function(ship)
+    -- stop the open animation (that's the one that should have played to get us here, and may still be playing)
+    stopAnim(ship, "retract")
+	startAnim(ship, "extend")
+	startEffect(ship, "Resourcing")
+    setState(ship, "ResourceDo", 1)
+end
+
+HGN_SMT_WORKER_ResourceEnd_OnSet = function(ship)
+    -- stop the open and work animations, they may be running
+	stopAnim(ship, "extend")
+	startAnim(ship, "retract")
+    endEffect(ship, "Resourcing")
+    setState(ship, "ResourceEnd", 1)
+end
+
+-- REPAIRING -------------------------------------------------------------------
+HGN_SMT_WORKER_RepairStart_OnSet = function(ship)
+    -- unset the state, the C++ will have set it but we want to delay till the anim is finished
+    setState(ship, "RepairStart", 0)
+    endEffect(ship, "Repairing")
+end
+
+HGN_SMT_WORKER_RepairStart_OnPause = function(ship)
+    -- the open animation has finished, now we can set the state to repair start
+    setState(ship, "RepairStart", 1)
+end
+
+HGN_SMT_WORKER_RepairDo_OnSet = function(ship)
+    -- stop the open animation (that's the one that should have played to get us here, and may still be playing)
+    stopAnim(ship, "retract")
+	startAnim(ship, "extend")
+	startEffect(ship, "Repairing")
+    setState(ship, "RepairDo", 1)
+end
+
+HGN_SMT_WORKER_RepairEnd_OnSet = function(ship)
+    -- stop the open and work animations, they may be running
+	stopAnim(ship, "extend")
+	startAnim(ship, "retract")
+    endEffect(ship, "Repairing")
+    setState(ship, "RepairEnd", 1)
+end
+
+-- CAPTURING ----------------------------------------------------------------------
+HGN_SMT_WORKER_CaptureActive_OnSet = function(ship)
+	setState(ship, "CaptureActive", 0)
+	stopAnim(ship, "retract")
+	startAnim(ship, "extend")
+end
+
+HGN_SMT_WORKER_CaptureInActive_OnSet = function(ship)
+	setState(ship, "CaptureActive", 1)
+	stopAnim(ship, "extend")
+	startAnim(ship, "retract")
+end

@@ -1,0 +1,9 @@
+--===========================================================================
+--  Purpose : Lua definition file for Homeworld Ship.
+--            Contains loading information and flight dynamics information (among other things?)
+--
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--===========================================================================
+StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","Hgn_Minesweep","Normal",0,0,200,2,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,100,"");
+setPenetration(NewWeaponType,5,1,{LightArmour=0},{MediumArmour=0.4},{HeavyArmour=0.4},{ResArmour=0.15},{TurretArmour=0.3},{PlanetKillerArmour=0});

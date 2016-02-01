@@ -1,0 +1,17 @@
+--===========================================================================
+--  Purpose : Lua definition file for Homeworld Resource.
+--            Contains basic resource members.
+--
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--===========================================================================
+NewResourceType = StartPebbleConfig()
+NewResourceType.meshRenderLimit=900
+NewResourceType.dotRenderLimit=30000
+NewResourceType.pixelSize=2.0
+--NewResourceType.pixelColour={0.65, 0.58, 0.46, 1.0}
+--NewResourceType.pixelColour={0.69411, 0.545, 0.41176, 1.0}
+NewResourceType.pixelColour={0.69411, 0.545, 0.41176, 1.0}
+NewResourceType.SMFadeDistance = 150000
+NewResourceType.SMFadeMinAlpha = 0.1
+NewResourceType.SMPixelSize = 3.0
+

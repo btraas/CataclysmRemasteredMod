@@ -1,0 +1,11 @@
+--===========================================================================
+--  Purpose : Lua definition file for Homeworld Ship.
+--            Contains loading information and flight dynamics information (among other things?)
+--
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--===========================================================================
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Plasma_Bomb","Normal",2500,1200,0,0,0,0,1,1,0,0.1,1.2,0.5,0,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",40,40,"");
+setPenetration(NewWeaponType,5,1,{MediumArmour=1.25},{HeavyArmour=1.25},{MoverArmour=0.085},{PlanetKillerArmour=0});
+setAccuracy(NewWeaponType,1,{Fighter=0.025},{Corvette=0.05},{BigCapitalShip=0.6,damage=1},{SmallCapitalShip=0.5,damage=1},{Frigate=0.15,damage=1},{SubSystem=0.05,damage=1});
+setAngles(NewWeaponType,15,0,0,0,0);

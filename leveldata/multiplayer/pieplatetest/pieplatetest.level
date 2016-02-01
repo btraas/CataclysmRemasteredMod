@@ -1,0 +1,76 @@
+--  Converted from Homeworld1 level c:\Dev\Hickory\main\Homeworld1\Development\Data\MultiPlayer\Curtain4\Curtain4.level
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+
+function DetermChunk()
+	addNebulaWithResources("NebulaGroup0", "Nebula0", {0,0,    0,}, 200, {37.000000, 17.000000, 48.000000, 163.000000}, 0, 1000, 0)
+	addNebulaWithResources("NebulaGroup0", "Nebula0", {0,0,10000,}, 200, {37.000000, 17.000000, 48.000000, 163.000000}, 0, 1000, 0)
+	addNebulaWithResources("NebulaGroup0", "Nebula0", {0,0,11000,}, 200, {37.000000, 17.000000, 48.000000, 163.000000}, 0, 1000, 0)
+	addTendrils({0,0,   0,}, {0,0,10000,}, {0,0,11000,})
+	addCamera("pieplatetest", {0,0,0,}, {0, 32768,0,})
+	addPoint("StartPos0", {-3276, 0, -3276}, {0,0,0})
+	addPoint("StartPos1", { 3276, 0,  3276}, {0,0,0})
+	setWorldBoundsInner({0,0,0}, {10000, 10000, 10000,})
+	setWorldBoundsOuter({0,0,0}, {20000, 20000, 20000,})
+--	addAsteroid("Asteroid_4", {0,0,    0,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 1000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 2000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 3000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 4000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 5000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 6000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 7000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 8000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0, 9000,}, 100, 0, 0, 0, 0)
+--	addAsteroid("Asteroid_4", {0,0,10000,}, 100, 0, 0, 0, 0)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0,    0,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 1000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 2000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 3000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 4000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 5000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 6000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 7000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 8000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0, 9000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+--	addDustCloudWithResources("CloudNameToIgnore", "dustcloud0", {0,0,10000,}, 100, {1.0, 1.0, 1.0, 0.7}, 0.0, 1000, 1)
+	addCloud("polySurface1", "cloud_text_1", {0,0, 1000,}, {1, 1, 1, 1}, 0, 1000)
+	addCloud("polySurface1", "cloud_text_2", {0,0, 2000,}, {1, 1, 1, 1}, 0, 1000)
+	addCloud("polySurface1", "cloud_text_3", {0,0, 3000,}, {1, 1, 1, 1}, 0, 1000)
+	addCloud("polySurface1", "cloud_text_4", {0,0, 4000,}, {1, 1, 1, 1}, 0, 1000)
+	addCloud("polySurface1", "cloud_text_5", {0,0, 5000,}, {1, 1, 1, 1}, 0, 1000)
+	addCloud("polySurface1", "cloud_text_6", {0,0, 6000,}, {1, 1, 1, 1}, 0, 1000)
+	addCloud("polySurface1", "cloud_text_7", {0,0, 7000,}, {1, 1, 1, 1}, 0, 1000)
+	addCloud("polySurface1", "cloud_text_8", {0,0, 8000,}, {1, 1, 1, 1}, 0, 1000)
+end
+
+function NonDetermChunk()
+    fogSetActive(0)
+    setGlareIntensity(0.000000)
+    setLevelShadowColour(0.000000, 0.000000, 0.000000, 1.0)
+--    loadBackground("black")
+    loadBackground("ez06")
+    setSensorsManagerCameraDistances(14000,42000)
+    setDefaultMusic("Data:sound/music/AMBIENT/A04_MISSION5")
+    setBattleMusic("Data:sound/music/BATTLE/B01_TuranicRaidersLong")
+    
+end -- end of nondeterm function
+
+levelDesc = "Pie Plate Test";
+
+maxPlayers = 2;
+player = {};
+player[0] = {
+    id = 0,
+    name = "",
+    resources = 750,
+    raceID = 1,
+    startPos = 1,
+}
+
+player[1] = {
+    id = 1,
+    name = "",
+    resources = 750,
+    raceID = 2,
+    startPos = 1,
+}

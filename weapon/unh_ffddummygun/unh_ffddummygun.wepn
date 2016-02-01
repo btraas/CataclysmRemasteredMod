@@ -1,0 +1,50 @@
+StartWeaponConfig(NewWeaponType,
+	"Gimble",		--Mount type: Gimble, AnimatedTurret, or Fixed
+	"InstantHit",   --Weapon type: IntantHit, Bullet, Mine, Missile, or SphereBurst
+	"nothing",      --Weapon effect name
+	"Normal",       --Activation type: Normal, Special Attack, Normal Only, or Dropped.
+	0,              --Projectile velocity(probably m/s)
+	4200,           --Maximum range that the weapon will fire at, does not nessicairly equpate to maximum bullet travel range
+	0,              --Blast radius, only affects SphereBurst weapons
+	3.2,            --Projectile lifetime, karos says affects beams only
+	0,              --Delay before firing and beam appearing with beam weapons
+	0,              --Missile fire direction, 0=forward, 1=left, 2=up
+	20,             --MaxEffectsSpawned, seems to exist to make sure a beam doesn't spawn too many hit effects
+	0,              --1 leads target, anything else fires stupidly
+	1,              --1 checks for freindlies in the way, anything else fires stupidly
+	6,              --Delay between shots in a burst, in seconds
+	0,              --Duration of a burst, in seconds
+	0,              --Delay between bursts, in seconds.
+	1,              --1 picks bandbox targets when it can't hit main target
+	1,              --1 picks targets of opertuniy when it can't hit main target, karos says this is slow
+	20,             --Horiztonal tracking speed(probably degrees/second)
+	20,             --Vertical tracking speed(probably degrees/second)
+	0,              --Makes the gun track faster or slower when it's on target.
+	"Normal",       --Normal, Enhanced, or Bypass, Karos says this doesn't do anything.
+	1,              --1 tracks targets outside range, anything else deson't
+	0,              --1 waits for .mad junk to finish before firing, anything else doesn't
+	2000)           --Beams punch through targets with less than this much health  
+	
+AddWeaponResult(NewWeaponType,
+	"Hit",			--Condition: Hit or Miss. Self evident.
+	"DamageHealth", --Effect: DamageHealth, Disable, Push, or SpawnWeaponfire
+	                --DamageHealth damages health, Disable does EMP damage, push moves the target, SpawnWeaponFire calls another weapon at the target point.
+	"Target",       --Target: either Target or Self. Self evident as well
+	0,              --Lower bound of the random range of effect
+	0,              --Upper bound of the random range of effect
+	"")             --Effect to be spawned in the case of SpawnWeaponFire                                                                                   
+setPenetration(NewWeaponType,50,1,{
+  PlanetKillerArmour = 0,
+})
+setAccuracy(NewWeaponType,1,
+	{FT_Tiny = .04,},	--Family name, chance out of 1 of hitting that family. Don't know what the damage entries mean.
+	{FT_Small = 0.04,},
+	{FT_Medium = 0.04,},
+	{FT_Large = 0.04,},
+	{CT_Small = 0.1,},
+	{CT_Medium = 0.1,},
+	{CT_Large = 0.1,}
+)
+setAngles(NewWeaponType,180,0,0,0,0)
+
+

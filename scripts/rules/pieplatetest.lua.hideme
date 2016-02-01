@@ -1,0 +1,205 @@
+GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
+GameRulesName = "HWCM Thumbnail Maker"
+Description = "For taking screenshots of levels."
+
+Directories =
+{
+--	Levels = "data:LevelData\\Multiplayer\\homeworldclassic\\,data:LevelData\\Multiplayer\\pieplatetest\\,data:LevelData\\Multiplayer\\DeathMatch\\,data:LevelData\\Multiplayer\\DeathMatchHW1\\,data:LevelData\\Multiplayer\\DeathMatchHW2\\",
+--	ProfileLevels = "profiles:Levels\\homeworldclassic\\,profiles:Levels\\pieplatetest\\,profiles:Levels\\Deathmatch\\,profiles:Levels\\DeathmatchHW1\\,profiles:Levels\\DeathmatchHW2\\, ",
+--	BuildAndResearch = "data:LevelData\\Multiplayer\\DeathMatch\\BuildAndResearch\\",
+	Levels = "data:LevelData\\Multiplayer\\pieplatetest\\",
+	ProfileLevels = "profiles:Levels\\pieplatetest\\",
+	BuildAndResearch = "data:LevelData\\Multiplayer\\DeathMatch\\BuildAndResearch\\",
+}
+
+GameSetupOptions =
+{
+    {
+        name = "resources",
+        locName = "$3240",
+        tooltip = "$3239",
+        default = 1,
+        visible = 1,
+        choices =
+        {
+            "$3241", "0.5",
+            "$3242", "1.0",
+            "$3243", "2.0",
+        },
+    },
+    {
+        name = "unitcaps",
+        locName = "$3214",
+        tooltip = "$3234",
+        default = 1,
+        visible = 1,
+        choices =
+        {
+            "$3215", "Small",
+            "$3216", "Normal",
+            "$3217", "Large",
+			"$4801", "Huge",	--to localize
+        },
+    },
+    {
+        name = "resstart",
+        locName = "$3205",
+        tooltip = "$3232",
+        default = 0,
+        visible = 1,
+        choices =
+        {
+            "$3206", "1000",
+            "$3207", "3000",
+            "$3208", "10000",
+            "$3209", "0",
+        },
+    },
+    {
+        name = "lockteams",
+        locName = "$3220",
+        tooltip = "$3235",
+        default = 0,
+        visible = 1,
+        choices =
+        {
+            "$3221", "yes",
+            "$3222", "no",
+        },
+    },
+    {
+        name = "startlocation",
+        locName = "$3225",
+        tooltip = "$3237",
+        default = 0,
+        visible = 1,
+        choices =
+        {
+            "$3226", "random",
+            "$3227", "fixed",
+        },
+    },
+}
+
+dofilepath("data:scripts/SCAR/SCAR_Util.lua")
+dofilepath("data:scripts/scar/restrict.lua")
+dofilepath("data:leveldata/multiplayer/pieplatetest/ATIdisplay.lua")
+dofilepath("data:leveldata/multiplayer/pieplatetest/file_marker.lua")
+
+THB_level_race_table = {"","","","","","","","",}
+THB_level_race_text = [[]]
+THB_level_file = [[]]
+THB_level_name = [[]]
+
+function OnInit()
+	Rule_Add("pieplatetest")
+    MPRestrict()
+end
+
+function pieplatetest()
+	Event_Start("pausegame")
+	Camera_UseCameraPoint("pieplatetest")
+	THB_level_file = this_list[this_number][1]
+	THB_level_name = this_list[this_number][2]
+	THB_level_race_table = this_list[this_number][3]
+	for i = 1, 8 do
+		local this_race = THB_level_race_table[i]
+		if (this_race == "r1") then
+			this_race = "Kus"
+		elseif (this_race == "r2") then
+			this_race = "Tai"
+		elseif (this_race == "race_sect") then
+			this_race = "Som"
+		end
+		if (i == 1) then
+			THB_level_race_text = this_race
+		elseif (this_race ~= "") then
+			THB_level_race_text = THB_level_race_text .. " - " .. this_race
+		end
+	end
+	-- write file here
+	this_number = this_number + 1
+	local WriteString = "this_number = " .. this_number .. "\n"
+	local WriteFile = "E:\\SteamLibrary\\steamapps\\common\\Homeworld\\HomeworldRM\\DataHWClassicMapsThumbnails\\leveldata\\multiplayer\\pieplatetest\\file_marker.lua"
+	local WriteHandle = writeto(WriteFile)
+	write(WriteString)
+	closefile(WriteHandle)
+
+	Rule_Add("ATI_init")
+	Rule_Remove("pieplatetest")
+end
+
+Events = {}
+Events.pausegame =
+{
+	{
+		HW2_Pause(1),
+	},
+	{
+		HW2_Letterbox(1),
+	},
+}
+
+this_list =
+{
+{"HW1_Another Chance4.level", [[Another Chance (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_BATTLESTAR II2.level", [[BATTLESTAR II(2-6)]],{"r1","r1","","","","","","",},},
+{"HW1_BATTLESTAR II3.level", [[BATLLESTAR II(2-6)]],{"r1","r1","r1","","","","","",},},
+{"HW1_BATTLESTAR II4.level", [[BATTLESTAR II(2-6)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_BATTLESTAR II5.level", [[BATTLESTAR II(2-6)]],{"r1","r1","r1","r1","r1","","","",},},
+{"HW1_BATTLESTAR II6.level", [[BATTLESTAR II(2-6)]],{"r1","r1","r1","r1","r1","r1","","",},},
+{"HW1_BiB4.level", [[BiB (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Blockage(ms)2.level", [[Blockage(ms) (2-4)]],{"r1","r1","","","","","","",},},
+{"HW1_Blockage(ms)3.level", [[Blockage(ms) (2-4)]],{"r1","r1","r1","","","","","",},},
+{"HW1_Blockage(ms)4.level", [[Blockage(ms) (2-4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Chime4.level", [[Chimes (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Coliseum2.level", [[Coliseum of the Ancients]],{"r1","r2","","","","","","",},},
+{"HW1_Conflict2.level", [[Conflict of Interest (2)]],{"r1","r1","","","","","","",},},
+{"HW1_ControlPirates4.level", [[Control Pirates (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_DeathFromAbove II4.level", [[Death From Above II (4or6)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_DeathFromAbove II6.level", [[Death From Above II (4or6)]],{"r1","r1","r1","r1","r1","r1","","",},},
+{"HW1_Flower Power4.level", [[Flower Power (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Forbidden Zone4.level", [[Forbidden Zone (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Helix2.level", [[Broken Helix (2)]],{"r1","r1","","","","","","",},},
+{"HW1_Hill B][LLy Land6.level", [[Hill BLLy Land (6)]],{"r1","r1","r1","r1","r1","r1","","",},},
+{"HW1_Iam's Way2.level", [[Iam's Way (2,4,6)]],{"r1","r1","","","","","","",},},
+{"HW1_Iam's Way4.level", [[Iam's Way (2,4,6)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Iam's Way6.level", [[Iam's Way (2,4,6)]],{"r1","r1","r1","r1","r1","r1","","",},},
+{"HW1_InTheDark2.level", [[BLINDLY IN THE DARK (2-4)]],{"r2","r1","","","","","","",},},
+{"HW1_InTheDark3.level", [[BLINDLY IN THE DARK (2-4)]],{"r2","r1","r1","","","","","",},},
+{"HW1_InTheDark4.level", [[BLINDLY IN THE DARK (2-4)]],{"r2","r1","r1","r1","","","","",},},
+{"HW1_Mystic Map4.level", [[Mystic Map(4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_NebulaCore2.level", [[Nebula Core (2-8)]],{"r1","r2","","","","","","",},},
+{"HW1_NebulaCore3.level", [[Nebula Core (2-8)]],{"r1","r2","r2","","","","","",},},
+{"HW1_NebulaCore4.level", [[Nebula Core (2-8)]],{"r1","r2","r2","r1","","","","",},},
+{"HW1_NebulaCore5.level", [[Nebula Core (2-8)]],{"r1","r2","r2","r1","r2","","","",},},
+{"HW1_NebulaCore6.level", [[Nebula Core (2-8)]],{"r1","r2","r2","r1","r2","r1","","",},},
+{"HW1_NebulaCore7.level", [[Nebula Core (2-8)]],{"r1","r2","r2","r1","r2","r1","r2","",},},
+{"HW1_NebulaCore8.level", [[Nebula Core (2-8)]],{"r1","r2","r2","r1","r2","r1","r2","r1",},},
+{"HW1_nis_testing2.level", [[For testing NIS's 2-2]],{"r1","r2","","","","","","",},},
+{"HW1_Peace And Power4.level", [[Peace And Power (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_PeaceMakers6.level", [[PeaceMakers (3 v 3)]],{"r1","r1","r1","r1","r1","r1","","",},},
+{"HW1_Powerline2.level", [[Powerlines (2-6)]],{"r1","r1","","","","","","",},},
+{"HW1_Powerline3.level", [[Powerlines (2-6)]],{"r1","r1","r1","","","","","",},},
+{"HW1_Powerline4.level", [[Powerlines (2-6)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Powerline5.level", [[Powerlines (2-6)]],{"r1","r1","r1","r1","r1","","","",},},
+{"HW1_Powerline6.level", [[Powerlines (2-6)]],{"r1","r1","r1","r1","r1","r1","","",},},
+{"HW1_Spiral3.level", [[Spiral B (2-4)]],{"r1","r2","r2","","","","","",},},
+{"HW1_Spiral4.level", [[Spiral B (2-4)]],{"r1","r2","r2","r1","","","","",},},
+{"HW1_Sub II2.level", [[Subjugate Your Friends II 2-4]],{"r1","r1","","","","","","",},},
+{"HW1_Sub II3.level", [[Subjugate Your Friends II 2-4]],{"r1","r1","r1","","","","","",},},
+{"HW1_Sub II4.level", [[Subjugate Your Friends II 2-4]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_TwinTowers2.level", [[TwinTowers2]],{"r1","r1","","","","","","",},},
+{"HW1_TwinTowers3.level", [[TwinTowers2]],{"r1","r1","r1","","","","","",},},
+{"HW1_TwinTowers4.level", [[TwinTowers2]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Twister4.level", [[Twister (2on2)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_Warburtons4.level", [[Warburtons (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_X Marks The Spot4.level", [[X Marks The Spot (4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_YellowBattles6.level", [[Yellow Battles (3v3, 4v4)]],{"r1","r1","r1","r1","r1","r1","","",},},
+{"HW1_YellowBattles8.level", [[Yellow Battles (3v3, 4v4)]],{"r1","r1","r1","r1","r1","r1","r1","r1",},},
+{"HW1_YoungStars2.level", [[Young Stars (2-4)]],{"r1","r1","","","","","","",},},
+{"HW1_YoungStars3.level", [[Young Stars (2-4)]],{"r1","r1","r1","","","","","",},},
+{"HW1_YoungStars4.level", [[Young Stars (2-4)]],{"r1","r1","r1","r1","","","","",},},
+{"HW1_YoungStars5.level", [[Young Stars (2-6)]],{"r1","r1","r1","r1","r1","","","",},},
+{"HW1_YoungStars6.level", [[Young Stars (2-6)]],{"r1","r1","r1","r1","r1","r1","","",},},
+}

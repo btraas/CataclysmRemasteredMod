@@ -1,0 +1,50 @@
+StartWeaponConfig(NewWeaponType, -- <sWeaponName>
+"Gimble", -- <sWeaponType>
+"Bullet", -- <sWeaponFireType>
+"Dread_Bomb", -- <sWeaponFireName>
+"Normal Only", -- <sActivation>
+1850, -- <fWeaponFireSpeed>
+3500, -- <fWeaponFireRange>
+0, -- <fWeaponFireRadius>
+0, -- <fWeaponFireLifetime>
+0, -- <fWeaponFireMisc1>
+0, -- <iWeaponFireAxis>
+1, -- <iMaxEffectsSpawned>
+1, -- <iUseVelocityPred>
+1, -- <iCheckLineOfFire>
+6, -- <fFireTime> -- hope I understood how it works.
+0, -- <fBurstFireTime>
+0, -- <fBurstWaitTime>
+0, -- <iShootAtSecondaries>
+0, -- <iShootAtSurroundings>
+40, -- <fMaxAzimuthSpeed>
+40, -- <fMaxDeclinationSpeed>
+0.1, -- <fSpeedMultiplierWhenPointingAtTarget>
+"Normal", -- <sWeaponShieldPenetration>
+1, -- <iTrackTargetsOutsideRange>
+0, -- <fWaitUntillCodeRedState>
+0) -- <iInstantHitThreshold>
+
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 500, 500, "")
+
+setPenetration(NewWeaponType, 7, 1, {ResArmour = 1,}, {PlanetKillerArmour = 0,}, {SubSystemArmour = 2.5,}, 
+{TurretArmour = 0.45,})
+
+setAccuracy(NewWeaponType,1,{
+  Scout = 0.04,
+},{
+  Fighter = 0.08,
+},{
+  Corvette = 0.3,
+},{
+  Frigate = 1,
+},{
+  SmallCapitalShip = 1,
+},{
+  BigCapitalShip = 1,
+},{
+  ResourceLarge = 1,
+})
+
+setAngles(NewWeaponType, 10, 0, 0, 0, 0)
+setMiscValues(NewWeaponType, 0, 0)

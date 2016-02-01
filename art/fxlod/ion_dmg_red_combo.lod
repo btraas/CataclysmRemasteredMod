@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "ion_dmg_red_combo",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "ion_dmg_red_combo_lod",
+		distance = 80000,
+	},	
+}

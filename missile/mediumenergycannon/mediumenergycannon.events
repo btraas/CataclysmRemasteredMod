@@ -1,0 +1,97 @@
+-- Pretty-Printed using HW2 Pretty-Printer 1.1 by Mikail.						
+-- LuaDC version 0.9.19
+-- 5/23/2004 7:16:27 PM
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+
+effects =
+{
+	animations =
+	{
+		animation1 =
+		{
+			name = "MissileTrail",
+			length = 5,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers =
+			{
+				"",
+			},
+		},
+		animation2 =
+		{
+			name = "Death",
+			length = 0,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers =
+			{
+				"",
+			},
+		},
+	},
+	events =
+	{
+		event1 =
+		{
+			{
+				"anim",
+				"MissileTrail",
+			},
+			{
+				"animtime",
+				"-1",
+			},
+			{
+				"marker",
+				"EngineNozzle1",
+			},
+			{
+				"fx",
+				"energy_cannon_bolt_3d",
+			},
+			{
+				"sound",
+				"SPECIAL/SPECIAL_ABILITIES_MISSLE_STEAM",
+			},
+			{
+				"fx_scale",
+				"2.8",
+			},
+		},
+		event2 =
+		{
+			{
+				"anim",
+				"Death",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"Root",
+			},
+			{
+				"fx",
+				"",
+			},
+			{
+				"sound",
+				"SPECIAL/SPECIAL_ABILITIES_MISSLE_STEAM",
+			},
+			{
+				"fx_scale",
+				"5",
+			},
+		},
+	},
+}
+
