@@ -1,0 +1,8 @@
+23-Down: hi yes you can.. I'm sorry that I wont be able to assist you at the moment. I'm involved in own projects and also very low on time (late shifts etc.) I usually spend like 3 hours per day in front of the computer, not much time.
+
+Anyway what you need is an older version of winamp version 2.95+ a plugin called: In_Aif.exe which you install into your winamp plugins folder
+23-Down: there you just open the aifr files and play the files with the plugin enabled they will then get converted into wav. format.
+23-Down: forget what I just said that plugin just allowed the older winamp to play the files.. 
+in any newer winamp version you will need relic aifrx decoder 0.5a that's the actual conversion plugin. I run it in winamp version 5.65. 
+I believe the reason why I had the older winamp installed is that the plugin to actually listen to the aifr sounds only worked in the older version. 
+Also the older winamp loads up a lot faster than the newer versions did.
