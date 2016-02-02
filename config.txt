@@ -48,25 +48,11 @@ Music / sounds are a direct port from Cataclysm.
 
 Thanks to LeviathansWrath, HWU team, and 23-Down for your help. 
 
-v1.2.2: Initial AI testing, bug fixes.
-
-v1.2.1a: a real fix for archive, missing races, and large mod size.
-
-v1.2.1: 
--Removed unused media & other files 
--Hopefully a fix for Archive & missing races bug
--New game modes (All Races, HW1/Cata, HW2/Cata, & Cataclysm Remastered (Somtaaw/Beast only))
--UI (main menu) tweaks.
-
-v1.2: Rebuilt with the new mod format with help from LeviathansWrath.
-
-
-Please note that AI is not working yet, so CPU somtaaw/beast players will be pretty brain-dead. Also note that these ships are for the most part the original textures from the HWC disc. I don't plan on attempting to remodel any ships anytime soon, at least until the HWRM mod tools are out. 
+v1.3: Rebuilt from the ground up designed for compatibility with the upcoming campaign mod.
 
 Known bugs: 
 -No Beast sounds yet
 -No salvage points on capital ships. 
 -Various balance issues 
 -Kuun-lan top modules can be built even if top ore hold is built 
--Worker repairs / harvests only at close distances (Thanks to HW2/HWRM engine...) 
--Somtaaw/Beast AI may be buggy / cause crashes. Please post error logs if you experience any issues.
+-Worker repairs / harvests only at close distances (Thanks to HW2/HWRM engine...) \

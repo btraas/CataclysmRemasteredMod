@@ -3,7 +3,7 @@ PersistantData = {
   },
   Squadrons = {
     {
-      type = "Hgn_smt_Faal_Corum",
+      type = "Hgn_smt_ms",
       subsystems = {
       },
       shiphold = {

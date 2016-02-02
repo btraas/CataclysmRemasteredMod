@@ -25,6 +25,366 @@
 --~ 	playSpeech( "COMMAND_MoveCancelled" )
 --~ end
 
+
+-- Somtaaw - number of sounds per command per ship
+
+
+shipFiles = {}
+					
+shipFiles["shared"] = {}
+--------------------------------------------------------
+shipFiles["shared"]["sameas"] = "" 							-- Ship_Name to load if this is not unique		
+shipFiles["shared"]["folder"] = "shipsounds/shared/"		-- Folder to load ship sounds from
+
+-- The # of sounds for this command. If 0 or not set, loads from shared folder. 
+-- These are ignored if 'sameas' (above) isn't blank
+shipFiles["shared"]["COMMAND_MOVE"] = 2						-- 								-- Working
+shipFiles["shared"]["COMMAND_WAYPOINT"] = 1					-- 								-- Working 
+shipFiles["shared"]["COMMAND_MOVETOSOB"] = 1				-- Move to specific group 		-- not tested
+shipFiles["shared"]["COMMAND_CANCELLED"] = 1	--nw		-- 								-- Not working
+shipFiles["shared"]["COMMAND_ATTACK_CANCELLED"] = 1			-- 								-- Working
+shipFiles["shared"]["COMMAND_MOVE_CANCELLED"] = 1			-- 								-- Working
+shipFiles["shared"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container				-- working
+shipFiles["shared"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 1	-- Asteroid harvest				-- working
+shipFiles["shared"]["COMMAND_CAPTURE"] = 1					-- Marine/infiltrate/worker 	-- working
+shipFiles["shared"]["COMMAND_ATTACK"] = 1					-- 								-- Working
+shipFiles["shared"]["COMMAND_HS"] = 1						-- Entering hyperspace 			-- working
+shipFiles["shared"]["COMMAND_HS_INHIBITOR_DETECTED"] = 1 	-- interrupted by inhibitor 	-- not tested
+shipFiles["shared"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted					-- not tested
+shipFiles["shared"]["COMMAND_HS_GATE"] = 1 					-- entering HS gate				-- not tested
+shipFiles["shared"]["COMMAND_HS_INSUFFICIENT"] = 1 			-- Not enough cash				-- not tested
+shipFiles["shared"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is		-- working
+shipFiles["shared"]["COMMAND_MOVEATTACK"] = 1				--								-- working
+shipFiles["shared"]["COMMAND_LAUNCH"] = 1					-- Per launching ship			-- working
+shipFiles["shared"]["COMMAND_GUARD"] = 1					--								-- working
+shipFiles["shared"]["COMMAND_DOCK"] = 1						--								-- working
+--shipFiles["shared"]["COMMAND_PARADE"] = 1					--			REMOVED			
+shipFiles["shared"]["COMMAND_RETIRE"] = 1					--								-- working
+shipFiles["shared"]["COMMAND_AGGRESSIVE"] = 1				--								-- working							
+shipFiles["shared"]["COMMAND_DEFENSIVE"] = 1				--								-- not tested
+shipFiles["shared"]["COMMAND_PASSIVE"] = 1					--								-- working
+shipFiles["shared"]["COMMAND_RANGESHORT"] = 1				-- Don't know what these are  	-- not tested
+shipFiles["shared"]["COMMAND_RANGEMED"] = 1					--								-- not tested
+shipFiles["shared"]["COMMAND_RANGELONG"] = 1				--								-- not tested
+shipFiles["shared"]["COMMAND_RANGEFORCE"] = 1				--								-- not tested
+shipFiles["shared"]["COMMAND_REPAIR"] = 1					--								-- not working
+shipFiles["shared"]["COMMAND_SELECTED"] = 2					--								-- working
+
+--NEW: Apr 18,2015
+shipFiles["shared"]["COMMAND_BUILD"] = 1					-- by parent ship				-- working
+shipFiles["shared"]["COMMAND_BUILD_PAUSED"] = 1												-- not tested
+shipFiles["shared"]["COMMAND_FOLLOWING"] = 1												-- not tested
+shipFiles["shared"]["COMMAND_STRIKEGROUP_FORM_RESPONSE"] = 1								-- not tested
+shipFiles["shared"]["COMMAND_STRIKEGROUP_FORMATIONSET"] = 1									-- not tested
+shipFiles["shared"]["COMMAND_STRIKEGROUP_DISBAND"] = 1										-- not tested
+shipFiles["shared"]["COMMAND_DEFENSEFIELDON"] = 1											-- not tested
+shipFiles["shared"]["COMMAND_DEFENSEFIELDOFF"] = 1											-- not tested
+shipFiles["shared"]["COMMAND_DEFENCEFIELDOUTOFPOWER"] = 1									-- not tested
+shipFiles["shared"]["COMMAND_HS_EXIT"] = 1													-- not working
+shipFiles["shared"]["COMMAND_HS_GATEFORMED"] = 1											-- not tested
+shipFiles["shared"]["COMMAND_ATTACK_FRIENDLY"] = 1			-- not tested
+
+-- The following sound files will be loaded, but not specific to a certain ship (leave in the KuunLan folder)
+--"COMMAND_AllianceRequested_1"
+--"COMMAND_AllianceFormed_1"
+--"COMMAND_AllianceBroken_1"
+--"COMMAND_RUs_Transferred"
+--"COMMAND_Ships_Transferred"
+--"COMMAND_SelectGroup" (add 01, 02 -> 10 to the end for that group number)
+--"COMMAND_GROUP_Assigned_" (add 01, 02 -> 10 to the end for that group number)
+--"STATUS_HotkeyGroup_Added_0"..groupNumber.."_2" or "STATUS_HotkeyGroup_Added_20_2" for group 10 for some reason...
+							
+							
+							
+							
+shipFiles["Hgn_Smt_ms"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_ms"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_ms"]["folder"] = ""
+shipFiles["Hgn_Smt_ms"]["COMMAND_MOVE"] = 1						
+shipFiles["Hgn_Smt_ms"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_ms"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_ms"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_ms"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_ms"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_ms"]["COMMAND_ATTACK"] = 4
+shipFiles["Hgn_Smt_ms"]["COMMAND_HS"] = 4
+shipFiles["Hgn_Smt_ms"]["COMMAND_HSexit"] = 4
+shipFiles["Hgn_Smt_ms"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_ms"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_ms"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_ms"]["COMMAND_SELECTED"] = 5
+shipFiles["Hgn_Smt_ms"]["COMMAND_BUILD"] = 1
+shipFiles["Hgn_Smt_ms"]["COMMAND_BUILD_CANCELLED"] = 1
+
+shipFiles["Hgn_smt_ms"] = {};
+shipFiles["Hgn_smt_ms"]["sameas"] = "Hgn_Smt_ms";				-- catch-all for startingfleets
+
+
+shipFiles["Hgn_Smt_Carrier"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Carrier"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_Carrier"]["folder"] = "shipsounds/hgn_smt_carrier/"
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVE"] = 4
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_ATTACK"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_LAUNCH"] = 1
+shipFiles["Hgn_Smt_Carrier"]["COMMAND_SELECTED"] = 1
+
+shipFiles["Hgn_smt_carrier"] = {};
+shipFiles["Hgn_smt_carrier"]["sameas"] = "Hgn_Smt_Carrier";
+
+
+shipFiles["Hgn_Smt_Clee_San"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Clee_San"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_Clee_San"]["folder"] = "shipsounds/hgn_smt_Clee_San/"
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_MOVE"] = 1
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_Clee_San"]["COMMAND_SELECTED"] = 1
+
+shipFiles["Hgn_Smt_Processor"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Processor"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_Processor"]["folder"] = "shipsounds/hgn_smt_Processor/"
+shipFiles["Hgn_Smt_Processor"]["COMMAND_MOVE"] = 3
+shipFiles["Hgn_Smt_Processor"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_Processor"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_Processor"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Processor"]["COMMAND_MOVE_CANCELLED"] = 3
+shipFiles["Hgn_Smt_Processor"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_Processor"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_Processor"]["COMMAND_SELECTED"] = 2
+
+
+shipFiles["Hgn_Smt_Worker"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Worker"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_Worker"]["folder"] = "shipsounds/hgn_smt_Worker/"
+shipFiles["Hgn_Smt_Worker"]["COMMAND_MOVE"] = 3
+shipFiles["Hgn_Smt_Worker"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_Worker"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_Worker"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Worker"]["COMMAND_MOVE_CANCELLED"] = 2
+shipFiles["Hgn_Smt_Worker"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_Worker"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_Worker"]["COMMAND_SELECTED"] = 2
+shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container
+shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 5	-- Asteroid harvest
+shipFiles["Hgn_Smt_Worker"]["COMMAND_CAPTURE"] = 3					-- Marine/infiltrate/worker
+shipFiles["Hgn_Smt_Worker"]["COMMAND_REPAIR"] = 1
+shipFiles["Hgn_Smt_Worker"]["COMMAND_DOCK"] = 2
+
+shipFiles["Hgn_smt_worker"] = {};
+shipFiles["Hgn_smt_worker"]["sameas"] = "Hgn_Smt_Worker";
+
+
+shipFiles["Hgn_Smt_Seraph"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Seraph"]["sameas"] = "Hgn_Smt_dreadnought"						-- Either shared, another ship name, or blank
+
+
+shipFiles["Hgn_Smt_dreadnought"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_dreadnought"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_dreadnought"]["folder"] = "shipsounds/hgn_smt_dreadnought/"
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVE"] = 4
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_ATTACK"] = 3
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_SELECTED"] = 1
+
+
+shipFiles["Hgn_Smt_destroyer"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_destroyer"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_destroyer"]["folder"] = "shipsounds/hgn_smt_destroyer/"
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVE"] = 5
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVE_CANCELLED"] = 3
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_ATTACK"] = 4
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_destroyer"]["COMMAND_SELECTED"] = 3
+
+
+shipFiles["Hgn_Smt_multibeamfrigate"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_multibeamfrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_multibeamfrigate"]["folder"] = "shipsounds/hgn_smt_multibeamfrigate/"
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVE"] = 2
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_ATTACK"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_SELECTED"] = 2
+shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_DOCK"] = 3
+
+
+shipFiles["Hgn_Smt_RammingFrigate"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_RammingFrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_RammingFrigate"]["folder"] = "shipsounds/hgn_smt_rammingfrigate/"
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVE"] = 3
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_ATTACK"] = 2
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_SELECTED"] = 4
+shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_DOCK"] = 3
+
+
+shipFiles["Hgn_Smt_hivefrigate"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_hivefrigate"]["sameas"] = ""	
+shipFiles["Hgn_Smt_hivefrigate"]["folder"] = "shipsounds/hgn_smt_hivefrigate/"
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVE"] = 2
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_ATTACK"] = 3
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_SELECTED"] = 3
+shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_DOCK"] = 1
+
+
+shipFiles["Hgn_Smt_ACVE"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_ACVE"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+
+
+shipFiles["Hgn_Smt_ACV"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_ACV"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+
+
+shipFiles["Hgn_Smt_SuperAcolyte"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_SuperAcolyte"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+
+
+shipFiles["Hgn_Smt_AcolyteE"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_AcolyteE"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+
+
+shipFiles["Hgn_Smt_Acolyte"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Acolyte"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_Acolyte"]["folder"] = "shipsounds/hgn_smt_Acolyte/"
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVE"] = 2
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_ATTACK"] = 3
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_SELECTED"] = 2
+shipFiles["Hgn_Smt_Acolyte"]["COMMAND_DOCK"] = 3
+
+
+shipFiles["Hgn_Smt_Sentinel"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Sentinel"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_Sentinel"]["folder"] = "shipsounds/hgn_smt_Sentinel/"
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVE"] = 2
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_ATTACK"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_SELECTED"] = 2
+shipFiles["Hgn_Smt_Sentinel"]["COMMAND_DOCK"] = 1
+
+
+shipFiles["Hgn_Smt_Mimic"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_Mimic"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_Mimic"]["folder"] = "shipsounds/hgn_smt_Mimic/"
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVE"] = 3
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_ATTACK"] = 2
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_SELECTED"] = 4
+shipFiles["Hgn_Smt_Mimic"]["COMMAND_DOCK"] = 2
+
+shipFiles["Hgn_Smt_scout"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Hgn_Smt_scout"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Hgn_Smt_scout"]["folder"] = "shipsounds/hgn_smt_scout/"
+shipFiles["Hgn_Smt_scout"]["COMMAND_MOVE"] = 3
+shipFiles["Hgn_Smt_scout"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Hgn_Smt_scout"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Hgn_Smt_scout"]["COMMAND_CANCELLED"] = 1
+shipFiles["Hgn_Smt_scout"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Hgn_Smt_scout"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Hgn_Smt_scout"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Hgn_Smt_scout"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Hgn_Smt_scout"]["COMMAND_ATTACK"] = 3
+shipFiles["Hgn_Smt_scout"]["COMMAND_HS"] = 1
+shipFiles["Hgn_Smt_scout"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Hgn_Smt_scout"]["COMMAND_SELECTED"] = 2
+shipFiles["Hgn_Smt_scout"]["COMMAND_DOCK"] = 2
+
+
 --DefensefieldStatus types
 DEF_on = 0
 DEF_off = 1
@@ -51,7 +411,6 @@ NumFighterPilots = 3
 NumInfiltratorPilots = 2
 NumMarinePilots = 2
 NumSupportPilots = 3
-NumSalCapPilots = 3
 
 -- Text for Actor folder names
 NameAllPilot = "All_"
@@ -63,7 +422,8 @@ NameSupportPilot = "Support_"
 NameFleetCommand = "Fleet"
 NameMakaan = "Makaan"
 NameEmperor = "Emperor"
-NameSalCap = "SalCap_"
+NameKuunLan = "KuunLan"
+NameBeast = "Beast"
 
 -- timeout values for speech events
 Frequency_Command = 0.5
@@ -76,15 +436,58 @@ function raceHelper()
 		return NameMakaan
 	elseif (currentRace == Taiidan) then
 		return NameEmperor
+	elseif (currentRace == Somtaaw) then
+		return NameKuunLan
+	elseif (currentRace == Beast) then
+		return NameBeast
 	else
 		return NameFleetCommand
 	end
 end
 
 -- Race IDs
+--Hiigaran = 11
 Hiigaran = 1
 Vaygr = 2
 Taiidan = 6
+Somtaaw = 11 --used to be 10, now 11?
+Beast = 10 -- used to be 12, now 10?
+
+function playSomtaawCommand(cmd, shipname, targetname)
+print("******** COMMAND: "..cmd.." RACE: "..currentRace.." SHIP: "..shipname)
+	if(currentRace ~= Somtaaw and currentRace ~= Beast) then
+		return 0
+	end
+
+	
+	ship = shipname
+	if(shipFiles[shipname]) then		
+		if(shipFiles[shipname][cmd] and shipFiles[shipname][cmd] > 0) then -- If command is set for this ship
+			shipname = shipname
+		else
+			if(shipFiles[shipname]['sameas'] and shipFiles[shipname]['sameas'] ~= '') then -- If sameas is set
+				shipname = shipFiles[shipname]['sameas']
+			end
+		end
+	else
+		shipname = 'shared'
+	end
+	if(shipFiles[shipname][cmd] and shipFiles[shipname][cmd] > 0) then	-- If ship or sameas has command set
+		shipname = shipname
+	else
+		shipname = 'shared'
+	end
+	
+	path = shipFiles[shipname]['folder'] .. cmd
+	files = shipFiles[shipname][cmd]
+		
+	rand = random(1, files)
+	COMMAND = path .. "_" .. rand
+	print('playing speech: '..raceHelper() .. "/" .. COMMAND..' for ship: '..ship)
+    playSpeechActor(COMMAND, raceHelper(), 0, Frequency_Command )
+	return 1
+end
+
 
 function getType(shipnm)
 
@@ -182,6 +585,10 @@ function CommandWayPointMoveGiven(shipname, targetname)
 	shiptype = getType(shipname)
 	genericShipName = strsub(shipname,5)
 	
+	local cmd = "COMMAND_WAYPOINT"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
 	if (genericShipName=="ProximitySensor" or genericShipName=="SensorArray") then
 		playSpeechActor("Command_Probe_Selected", NameAllPilot, 1, Frequency_Command )
 		return
@@ -214,7 +621,22 @@ function CommandCancelOrder(shipname, prevOrders)
 	shiptype = getType(shipname)
 	genericShipName = strsub(shipname,5)
 
-		if (prevOrders == AttackOrder) then
+	local cmd
+	
+	if(prevOrders == MoveOrder) then
+		cmd = "COMMAND_MOVE_CANCELLED"
+	elseif(prevOrders == AttackOrder) then
+		cmd = "COMMAND_ATTACK_CANCELLED"
+	else
+		cmd = "COMMAND_CANCELLED"
+	end
+	
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+	
+	if (prevOrders == AttackOrder) then
+		
 
 		if (shiptype == Flagship and genericShipName~="Dreadnaught" ) then	
 			playSpeechActor("COMMAND_Attack_Cancelled_1", raceHelper(), 0, Frequency_Command )
@@ -238,6 +660,22 @@ end
 
 function CommandDefenseFieldChanged(shipname, defenseType)
 
+	local cmd
+
+	if (defenseType == DEF_on) then
+		cmd = "COMMAND_DEFENSEFIELDON"
+	elseif (defenseType == DEF_off) then
+		cmd = "COMMAND_DEFENSEFIELDOFF"
+	elseif (defenseType == DEF_out) then
+		cmd = "COMMAND_DEFENCEFIELDOUTOFPOWER"
+	else
+		cmd = ""
+	end
+	
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+
 	if (defenseType == DEF_on) then
 		playSpeechActor( "COMMAND_DEFENSEFIELDON", NameCapPilot,  NumCapPilots, Frequency_Command )
 	elseif (defenseType == DEF_off) then
@@ -254,7 +692,18 @@ end
 function CommandResourceGiven(shipname, targetname)
 	--if (targetname == "Container") then
 	-- string library not available in luaconfig, so can't use strfind, strlower, strsub
-
+		
+	local cmd
+	if(targetname == "StaticContainer") then
+		cmd = "COMMAND_RESOURCESALVAGE"
+	else
+		cmd = "COMMAND_RESOURCECOLLECTORHARVEST"
+	end
+	
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+	
 	if (targetname == "StaticContainer") then
 		playSpeechActor( "COMMAND_ResourceSalvage", NameSupportPilot, NumSupportPilots, Frequency_Command )
 	else
@@ -288,7 +737,11 @@ end
 
 -- capture command issued to a ship with the given name
 function CommandCaptureGiven(shipname, targetname)
-	if (shipname=="Hgn_MarineFrigate") then
+	ship = shipname 
+	local cmd = "COMMAND_CAPTURE"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	elseif (shipname=="Hgn_MarineFrigate") then
 		playSpeechActor( "COMMAND_MarineFrigate_Capture", NameMarinePilot, NumMarinePilots, Frequency_Command )
 	else
 		playSpeechActor( "COMMAND_INFILTRATORFRIGATE_CAPTURE", NameInfiltratorPilot, NumInfiltratorPilots, Frequency_Command )
@@ -298,6 +751,14 @@ end
 function CommandAttackGiven(shipname, targetname, attackType)
 
 	print("******** COMMAND ATTACK: shipname, targetname, attackType = "..shipname..","..targetname..","..attackType)
+	
+	local cmd = "COMMAND_ATTACK"
+	if (attackType == 1) then
+		cmd = "COMMAND_ATTACK_FRIENDLY"
+	end
+	if(playSomtaawCommand(cmd, shipname, targetname)) then
+		return
+	end
 	
 	-- if special_attack given
 	if (attackType == 3) then
@@ -380,7 +841,28 @@ function CommandHyperspaceGiven(shipname,code)
 
 	print("** CommandHyperspaceGiven: shipname = "..shipname.." code = "..code)
 	genericShipName = strsub(shipname,5)
-
+	
+	local cmd = ""
+	if(code == HYP_Entering) then
+		cmd = "COMMAND_HS"
+	elseif(code == HYP_EnteringGate) then
+		cmd = "COMMAND_HS_GATE"
+	elseif(code == HYP_Exiting) then
+		cmd = "COMMAND_HS_EXIT"
+	elseif(code == HYP_Interrupted) then
+		cmd = "COMMAND_HS_INTERRUPTED"
+	elseif(code == HYP_GateFormed) then
+		cmd = "COMMAND_HS_GATEFORMED"
+	elseif(code == HYP_EnteredInhibitorVolume) then
+		cmd = "COMMAND_HS_INHIBITOR_DETECTED"
+	elseif(code == HYP_NotEnoughCash) then
+		cmd = "COMMAND_HS_INSUFFICIENT"
+	end
+	
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+	
 	--special case for intteruption (same priority)
 	if (code == HYP_Interrupted) then
 		if (genericShipName=="MotherShip") then
@@ -409,6 +891,7 @@ function CommandHyperspaceGiven(shipname,code)
 
 	shipType = getType(shipname)
 	
+	
 	if (shipType == Flagship) then
 		playSpeechActor("COMMAND_HS", raceHelper(), 0 , Frequency_Command)
 		return
@@ -424,6 +907,10 @@ end
 
 function CommandCombatMan(shipname, targetname)
 
+	if(playSomtaawCommand("COMMAND_COMBATMAN", shipname)) then
+		return
+	end
+
 	shipType = getType(shipname)	
 	genericShipName = strsub(shipname,5)
 
@@ -432,6 +919,7 @@ function CommandCombatMan(shipname, targetname)
 		return
 	end		
 
+	
 	
 	if (shipType==Capital) then
 		playSpeechActor("COMMAND_CAP_COMBATMAN", NameCapPilot, NumCapPilots, Frequency_Command )
@@ -445,6 +933,11 @@ function CommandMoveAttackGiven(shipname, targetname)
 
 	shiptype = getType(shipname)
 	genericShipName = strsub(shipname,5)
+	
+	local cmd = "COMMAND_MOVEATTACK"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
 
 	if (shiptype == Flagship and genericShipName~="Dreadnaught" ) then
 		playSpeechActor("COMMAND_MoveAttack_1", raceHelper(), 0, Frequency_Command )
@@ -460,6 +953,12 @@ function CommandMoveAttackGiven(shipname, targetname)
 end
 
 function CommandLaunchGiven(shipname, targetname)
+	
+	local cmd = "COMMAND_LAUNCH"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+
 
 	if (shipname =="Hgn_Probe") then
 		--playSpeechActor( "COMMAND_ProbeLaunched",raceHelper(), 0)
@@ -482,6 +981,13 @@ function CommandGuardGiven(shipname, targetname)
 	shiptype = getType(shipname)
 	genericShipName = strsub(shipname,5)
 
+	ship = strsub(shipname, 9) -- Get ship name starting at 9th character 
+		
+	local cmd = "COMMAND_GUARD"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+	
 	if (shiptype == Flagship and genericShipName~="Dreadnaught" ) then		
 		playSpeechActor("COMMAND_Guard_1", raceHelper(), 0, Frequency_Command )
 		return
@@ -505,9 +1011,16 @@ function CommandMoveGiven(shipnm, targetnm)
 
 	--print("** CommandMoveGiven: shipnm="..shipnm)
 
+	
 	shiptype = getType(shipnm)
 	genericShipName = strsub(shipnm,5)
 
+	local cmd = "COMMAND_MOVE"
+	if(playSomtaawCommand(cmd, shipnm)) then
+		return
+	end
+	
+	
 	if (shiptype == Flagship and genericShipName~="Dreadnaught" ) then		
 		playSpeechActor("COMMAND_MOVE_1", raceHelper(), 0, Frequency_Command )
 		return
@@ -548,9 +1061,22 @@ function CommandStrikeGroupFormed(shipnm, code)
 			playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command )
 			return
 		end
-	
+	else
+		shipnm = ''
 	end
-
+	
+	local cmd = ""
+	if (code==1) then
+		cmd = "COMMAND_STRIKEGROUP_FORM_RESPONSE"
+	elseif(code == 2) then
+		cmd = "COMMAND_STRIKEGROUP_FORMATIONSET"
+	elseif (code == 3) then
+		cmd = "COMMAND_STRIKEGROUP_DISBAND"
+	end
+	if(playSomtaawCommand(cmd, shipnm)) then
+		return
+	end
+	
 	if (code==1) then
 		playSpeechActor( "COMMAND_STRIKEGROUP_FORM_RESPONSE", NameAllPilot, NumAllPilots, Frequency_Command )
 	elseif(code == 2) then
@@ -563,7 +1089,12 @@ end
 function CommandDockGiven(shipname, targetname)
 	shipType = getType(shipname)
 	
-	--eliminate race
+	local cmd = "COMMAND_DOCK"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+	
+	--eliminate race -- well that's genocide! :)
 	genericShipName = strsub(targetname,5)
 	
 --~ 	-- this can get WAY too annoying (happens constantly, latch=dock in code), so disable
@@ -602,6 +1133,11 @@ end
 
 function CommandParadeGiven(shipname, targetname)
 
+	local cmd = "COMMAND_FOLLOWING"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+
 	if (shipname=="STRIKE") then
 		-- can't find in new speech
 		playSpeech("STATUS_StrikeCraftNowFollowing")
@@ -618,6 +1154,12 @@ function CommandRetireGiven(shipname, targetname)
 
 	local shipType = getType(shipname)
 
+	local cmd = "COMMAND_RETIRE"
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+	
+	
 	if (shipType==Capital ) then
 		playSpeechActor("COMMAND_CapitalShipRetire", NameCapPilot, NumCapPilots, Frequency_Command )
 	elseif (shipType==Frigate) then
@@ -655,6 +1197,20 @@ DefensiveTactics = 1
 PassiveTactics = 2
 
 function CommandTacticsChanged(shipname, newSetting)
+
+	local cmd = ""
+	if(newSetting == AggressiveTactics) then
+		cmd = "COMMAND_AGGRESSIVE"
+	elseif(newSetting == DefensiveTactics) then
+		cmd = "COMMAND_DEFENSIVE"
+	elseif(newSetting == PassiveTactics) then
+		cmd = "COMMAND_PASSIVE"
+	end
+
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+
 	if(newSetting == AggressiveTactics) then
 		playSpeechActor( "COMMAND_SetTacticsAggressive", NameAllPilot, NumAllPilots, Frequency_Command )
 	elseif(newSetting == DefensiveTactics) then
@@ -669,6 +1225,20 @@ MediumRange = 1
 LongRange = 2
 
 function CommandEngagementRangeChanged(shipname, newSetting)
+	
+	local cmd = ''
+	if(newSetting == CloseRange) then
+		cmd = "COMMAND_RANGESHORT"
+	elseif(newSetting == MediumRange) then
+		cmd = "COMMAND_RANGEMED"
+	elseif(newSetting == LongRange) then
+		cmd = "COMMAND_RANGELONG"
+	end
+
+	if(playSomtaawCommand(cmd, shipname)) then
+		return
+	end
+	
 	if(newSetting == CloseRange) then
 		playSpeechActor( "COMMAND_SetRangeShort", NameAllPilot, NumAllPilots, Frequency_Command )
 	elseif(newSetting == MediumRange) then
@@ -680,6 +1250,9 @@ end
 
 function CommandEngagementRangeForceChanged(shipname, force)
 	if(force == 1) then
+		if(playSomtaawCommand("COMMAND_RANGEFORCE", shipname)) then
+			return
+		end
 		playSpeechActor( "COMMAND_SetRangeForce" , NameAllPilot, NumAllPilots, Frequency_Command )
 	end
 end
@@ -731,6 +1304,12 @@ function CommandShipsSelected(shipname)
 
 	--print("**** CommandShipsSelected = "..shipname)
 
+	
+	if(playSomtaawCommand("COMMAND_SELECTED", shipname)) then
+		return
+	end
+	
+
 	genericShipName = strsub(shipname,5)
 	
 	if (strfind (strupper(shipname), "PROBE") ~= nil or genericShipName=="ProximitySensor" or genericShipName=="SensorArray" or genericShipName=="CryoTray"or genericShipName=="CryoTray_M03") then
@@ -746,12 +1325,16 @@ function CommandShipsSelected(shipname)
 	--NOTE TODO: for selecting mothership, play shipname (SHIPNAME_Pride_1 or SHIPNAME_Mothership_1)
 	shiptype = getType(shipname)
 	
+	-- Somtaaw functionality
 	
-	if (shiptype == Flagship and shipname~="Hgn_Dreadnaught" and shipname~="Vgr_Dreadnaught") then
-		playSpeechActor("COMMAND_SELECTED_1", raceHelper(), 0, Frequency_Command )
-		return
+	
+	if (shiptype == Flagship and shipname~="Hgn_Dreadnaught" and shipname~="Vgr_Dreadnaught" and shipname~="Dreadnaught") then
+       
+        COMMAND = "COMMAND_SELECTED_1"
+		print('playing speech: '..COMMAND..' for ship: '..shipname)
+        playSpeechActor(COMMAND, raceHelper(), 0, Frequency_Command )
+        return
 	end
-
 	familyName = getFamily(shipname)
 	
 	if(familyName == "FRIGATE" or familyName == "CAPITAL" or familyName == "SUPERCAP") then
@@ -759,7 +1342,6 @@ function CommandShipsSelected(shipname)
 	else
 		playSpeechActor("COMMAND_Selected", NameFighterPilot, NumFighterPilots, Frequency_Command )
 	end
-	
 end
 
 -- construction map
@@ -931,6 +1513,36 @@ stdCMap["Tai_CloakGenerator"] = "STATUS_CloakGeneratorConstructed"
 stdCMap["Tai_GravWellGenerator"] = "STATUS_GravWellGeneratorConstructed"
 stdCMap["Tai_SensorArray"] = "STATUS_SensorsArrayConstructed"
 
+--Somtaaw
+--sscMap["Hgn_Smt_ms"].Ksh_Sec_C_Module_CloakGenerator = "status_inhibitorprobearrived_1"
+
+
+--STATUS_SensorsArrayConstructedFromShipyard_1
+--STATUS_AdvancedCapitalShipFacilityConstructedFromShipyard_1
+--STATUS_SensorsArrayConstructedFromBattlecruiser_1
+stdCMap = {}
+stdCMap["Hgn_Smt_scout"] = "STATUS_ScoutConstructed_1"
+stdCMap["Hgn_Smt_Acolyte"] = "STATUS_InterceptorConstructed_1"
+stdCMap["Hgn_Smt_SuperAcolyte"] = "STATUS_BomberConstructed_1"
+stdCMap["Hgn_Smt_Mimic"] = "STATUS_BomberConstructed_1"
+stdCMap["Hgn_Smt_Sentinel"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["Hgn_Smt_ACV"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["Hgn_Smt_ACVE"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["Hgn_Smt_RammingFrigate"] = "STATUS_AssaultFrigateConstructed_1"
+stdCMap["Hgn_Smt_multibeamfrigate"] = "STATUS_AssaultFrigateConstructed_1"
+stdCMap["Hgn_Smt_hivefrigate"] = "STATUS_AssaultFrigateConstructed_1"
+
+stdCMap["Hgn_Smt_destroyer"] = "STATUS_DestroyerConstructed_1"
+stdCMap["Hgn_Smt_Carrier"] = "STATUS_CarrierConstructed_1"
+stdCMap["Hgn_Smt_dreadnought"] = "STATUS_BattlecruiserConstructed_1"
+stdCMap["Hgn_Smt_Seraph"] = "STATUS_BattlecruiserConstructed_2"
+
+stdCMap["Hgn_Smt_Worker"] = "STATUS_ResourceCollectorConstructed_1"
+stdCMap["Hgn_Smt_Processor"] = "STATUS_ResourceControllerConstructed_1"
+stdCMap["Hgn_Smt_Clee_San"] = "STATUS_ProbeConstructed_1"
+
+
+
 BUILD_Std = 1
 BUILD_Subsystem = 2
 
@@ -994,6 +1606,11 @@ function CommandConstructionStarted(buildingShip, builtItem)
 	--	return
 	--end
 	
+	local cmd = "COMMAND_BUILD"
+	if(playSomtaawCommand(cmd, buildingShip, builtItem)) then
+		return
+	end
+	
 	genericbuildingShipName = strsub(buildingShip,5)
 	
 	if (genericbuildingShipName=="MotherShip") then
@@ -1007,6 +1624,9 @@ end
 
 function CommandPaused(temp)
 	--print("*** build paused")
+	if(playSomtaawCommand("COMMAND_BUILD_PAUSED", "")) then
+		return
+	end
 	playSpeechActor("COMMAND_Build_Paused", raceHelper(), 0, Frequency_Command)
 end
 
