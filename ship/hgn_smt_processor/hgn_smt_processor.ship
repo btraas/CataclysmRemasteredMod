@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Chieftain Mk.3 Ore Processor";
 NewShipType["sobDescription"]="$1535";
-NewShipType["maxhealth"]=48000;
+NewShipType["maxhealth"]=40000;
 NewShipType["regentime"]=850;
 NewShipType["minRegenTime"]=850;
 NewShipType["sideArmourDamage"]=1;

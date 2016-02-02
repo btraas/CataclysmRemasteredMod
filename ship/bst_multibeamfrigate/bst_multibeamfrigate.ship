@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Dervish Multibeam Frigate"
 NewShipType.sobDescription = "Anti Strike Craft Frigate"
-NewShipType.maxhealth = 22000
+NewShipType.maxhealth = 50000
 NewShipType.regentime = 1200
 NewShipType.minRegenTime = 1200
 NewShipType.sideArmourDamage = 1.2

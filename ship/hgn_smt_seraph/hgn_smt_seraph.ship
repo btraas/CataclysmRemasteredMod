@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Seraph"
 NewShipType.sobDescription = "Adv Dreadnaught"
-NewShipType["maxhealth"]=310000;
+NewShipType.maxhealth = 450000
 NewShipType["regentime"]=2000;
 NewShipType["minRegenTime"]=2000;
 NewShipType.sideArmourDamage = 1.2

@@ -1,0 +1,171 @@
+﻿newmtl nose_turret_bases
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd nose_turret_bases_EXPORT[1]_DIFF.dds
+
+newmtl flap_tops
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd flap_tops_EXPORT[1]_DIFF.dds
+
+newmtl flap_bots
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd flap_bots_EXPORT[1]_DIFF.dds
+
+newmtl chin_top
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd chin_top_EXPORT[1]_DIFF.dds
+
+newmtl bridge_tops
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd bridge_tops_EXPORT[1]_DIFF.dds
+
+newmtl bridge_sides
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd bridge_sides_EXPORT[1]_DIFF.dds
+
+newmtl engine_port
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd engine_port_EXPORT[1]_DIFX.dds
+
+newmtl shoulder_tops
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd shoulder_tops_EXPORT[1]_DIFF.dds
+
+newmtl shoulder_back
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd shoulder_back_EXPORT[1]_DIFF.dds
+
+newmtl ear_fronts
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd ear_fronts_EXPORT[1]_DIFF.dds
+
+newmtl turretbase
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd turretbase_EXPORT[1]_DIFF.dds
+
+newmtl bridge_front
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd bridge_front_EXPORT[1]_DIFF.dds
+
+newmtl shoulder_sides
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd shoulder_sides_EXPORT[1]_DIFF.dds
+
+newmtl nose_front
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd nose_front_EXPORT[1]_DIFF.dds
+
+newmtl ear_tips
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd ear_tips_EXPORT[1]_DIFF.dds
+
+newmtl page0
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd page0_EXPORT[1]_DIFF.dds
+
+newmtl top
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd top_EXPORT[1]_DIFF.dds
+
+newmtl head_bot
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd head_bot_EXPORT[1]_DIFF.dds
+
+newmtl body_bottom
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd body_bottom_EXPORT[1]_DIFF.dds
+

@@ -6,24 +6,24 @@
 --Copyright Relic Entertainment, Inc.  All rights reserved.
 --=============================================================================*/
 
-HGN_BST_WORKER_ResourceStart_OnSet = function(ship)
+BST_WORKER_ResourceStart_OnSet = function(ship)
     -- unset the state, the C++ will have set it but we want to delay till the anim is finished
     setState(ship, "ResourceStart", 0)
     endEffect(ship, "Resourcing")
 end
 
-HGN_BST_WORKER_ResourceStart_OnPause = function(ship)
+BST_WORKER_ResourceStart_OnPause = function(ship)
     -- the open animation has finished, now we can set the state to resource start
     setState(ship, "ResourceStart", 1)
 end
 
-HGN_BST_WORKER_ResourceDo_OnSet = function(ship)
+BST_WORKER_ResourceDo_OnSet = function(ship)
     -- stop the open animation (that's the one that should have played to get us here, and may still be playing)
     startEffect(ship, "Resourcing")
     setState(ship, "ResourceDo", 1)
 end
 
-HGN_BST_WORKER_ResourceEnd_OnSet = function(ship)
+BST_WORKER_ResourceEnd_OnSet = function(ship)
     -- stop the open and work animations, they may be running
     endEffect(ship, "Resourcing")
     setState(ship, "ResourceEnd", 1)

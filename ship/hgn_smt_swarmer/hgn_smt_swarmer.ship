@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Swarmer";
 NewShipType["sobDescription"]="$1501";
-NewShipType["maxhealth"]=90;
+NewShipType["maxhealth"]=250;
 NewShipType["regentime"]=0;
 NewShipType["minRegenTime"]=0;
 NewShipType["sideArmourDamage"]=1;
@@ -145,7 +145,7 @@ addAbility(NewShipType, "SpecialAttack", 0, "EMP");
 addAbility(NewShipType, "RetireAbility", 1, 0);
 addCustomCode(NewShipType,"data:Ship/hgn_smt_swarmer/hgn_smt_swarmer.lua","","","Update_Drone0","","hgn_smt_swarmer",60)
 LoadModel(NewShipType, 1);
-StartShipWeaponConfig(NewShipType, "HW Cata Drones", "Weapon_Autogun", "Weapon_Autogun");
+--StartShipWeaponConfig(NewShipType, "HW Cata Drones", "Weapon_Autogun", "Weapon_Autogun");
 --StartShipWeaponConfig(NewShipType, "Hgn_SmallEMP", "Weapon_Autogun", "Fire");
 NewShipType["sobDieTime"]=0.1;
 NewShipType["sobSpecialDieTime"]=2;

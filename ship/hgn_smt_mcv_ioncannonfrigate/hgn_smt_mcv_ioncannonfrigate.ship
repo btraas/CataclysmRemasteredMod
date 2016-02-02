@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="MCV (Ion Cannon Frigate)"
 NewShipType.sobDescription="Espionage Suicide Bomber"
-NewShipType.maxhealth=17000
+NewShipType.maxhealth=2500
 NewShipType.regentime=1500
 NewShipType.minRegenTime=300
 NewShipType.sideArmourDamage=1.2

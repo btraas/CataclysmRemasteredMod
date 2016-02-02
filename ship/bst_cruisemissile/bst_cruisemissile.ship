@@ -6,7 +6,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Cruise Missile"
 NewShipType.sobDescription = "Infects Enemy Parts"
-NewShipType.maxhealth = 2600
+NewShipType.maxhealth = 5000
 NewShipType["regentime"] = 300
 NewShipType["minRegenTime"] = 220
 NewShipType.sideArmourDamage = 1

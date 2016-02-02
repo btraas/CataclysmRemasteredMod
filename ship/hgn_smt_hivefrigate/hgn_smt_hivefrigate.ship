@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="Hive Frigate"
 NewShipType.sobDescription="$10031"
-NewShipType.maxhealth=24000
+NewShipType.maxhealth=50000
 NewShipType.regentime=1200
 NewShipType.minRegenTime=300
 NewShipType.sideArmourDamage=1.25

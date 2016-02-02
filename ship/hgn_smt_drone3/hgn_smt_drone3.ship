@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Swarmer";
 NewShipType["sobDescription"]="$1501";
-NewShipType["maxhealth"]=60;
+NewShipType["maxhealth"]=250;
 NewShipType["regentime"]=0;
 NewShipType["minRegenTime"]=0;
 NewShipType["sideArmourDamage"]=1;

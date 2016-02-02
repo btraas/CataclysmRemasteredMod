@@ -1,28 +1,28 @@
-	-- Cold Fusion LUA Decompiler v1.0.0
+-- Cold Fusion LUA Decompiler v1.0.0
 -- By 4E534B
 -- Date: 11-04-2007 Time: 10:07:39
 -- On error(s), send source (compiled) file to 4E534B@gmail.com
 
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Acolyte";
-NewShipType["sobDescription"]="$1503";
-NewShipType["maxhealth"]=160;
-NewShipType["regentime"]=0;
-NewShipType["minRegenTime"]=0;
+NewShipType["sobDescription"]="$1500";
+NewShipType["maxhealth"]=250;
+NewShipType["regentime"] = 300
+NewShipType["minRegenTime"] = 220
 NewShipType["sideArmourDamage"]=1;
 NewShipType["rearArmourDamage"]=1;
 NewShipType["isTransferable"]=1;
 NewShipType["useEngagementRanges"]=0;
 NewShipType["unitCapsNumber"]=3;
-NewShipType["SquadronSize"]=1;
+NewShipType["SquadronSize"]=5;
 NewShipType["formationSpacing"]=40;
 NewShipType["passiveFormation"]="Broad";
 NewShipType["defensiveFormation"]="Delta";
 NewShipType["aggressiveFormation"]="Claw";
 NewShipType["mass"]=10;
 NewShipType["collisionMultiplier"]=3;
-NewShipType["thrusterMaxSpeed"]=325;
-NewShipType["mainEngineMaxSpeed"]=325;
+NewShipType["thrusterMaxSpeed"]=310;
+NewShipType["mainEngineMaxSpeed"]=310;
 NewShipType["rotationMaxSpeed"]=105;
 NewShipType["thrusterAccelTime"]=2;
 NewShipType["thrusterBrakeTime"]=1;
@@ -73,7 +73,7 @@ NewShipType["DisplayFamily"]="Fighter";
 NewShipType["AutoFormationFamily"]="Fighter";
 NewShipType["CollisionFamily"]="Small";
 NewShipType["ArmourFamily"]="Unarmoured";
-NewShipType["UnitCapsFamily"]="Fighter_hw1";
+NewShipType["UnitCapsFamily"]="Fighter";
 NewShipType["fighterValue"]=8;
 NewShipType["corvetteValue"]=0;
 NewShipType["frigateValue"]=0;
@@ -82,8 +82,8 @@ NewShipType["antiFighterValue"]=8;
 NewShipType["antiCorvetteValue"]=0;
 NewShipType["antiFrigateValue"]=0;
 NewShipType["totalValue"]=8;
-NewShipType["buildCost"]=75;
-NewShipType["buildTime"]=6;
+NewShipType["buildCost"]=600;
+NewShipType["buildTime"]=35;
 NewShipType["buildPriorityOrder"]=20;
 NewShipType["retaliationRange"]=5500;
 NewShipType["retaliationDistanceFromGoal"]=160;
@@ -160,4 +160,4 @@ setEngineTrail(NewShipType, 0, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 6)
 setEngineTrail(NewShipType, 1, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 6)
 setEngineTrail(NewShipType, 2, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 4)
 setEngineBurn(NewShipType, 7, 0.5, 1, 15, 0, 0.7, 0.1, 20);
-loadShipPatchList(NewShipType, "data:sound/sfx/ship/Hiigaran/Fighter/", 0, "HScoutEng", "");
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Hiigaran/Fighter/HScoutEng","",1,"beastfighteramb","")

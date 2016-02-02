@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Acolyte";
 NewShipType["sobDescription"]="$1503";
-NewShipType["maxhealth"]=160;
+NewShipType["maxhealth"]=250;
 NewShipType["regentime"]=0;
 NewShipType["minRegenTime"]=0;
 NewShipType["sideArmourDamage"]=1;

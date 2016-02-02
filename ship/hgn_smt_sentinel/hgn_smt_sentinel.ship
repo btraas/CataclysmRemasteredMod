@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Sentinel";
 NewShipType["sobDescription"]="$1501";
-NewShipType["maxhealth"]=2000;
+NewShipType["maxhealth"]=250;
 NewShipType["regentime"]=0;
 NewShipType["minRegenTime"]=0;
 NewShipType["sideArmourDamage"]=1;

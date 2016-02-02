@@ -7,7 +7,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10072"
 NewShipType.sobDescription="$10073"
-NewShipType.maxhealth=12400
+NewShipType.maxhealth=50000
 NewShipType.regentime=2000
 NewShipType.minRegenTime=300
 NewShipType.sideArmourDamage=1.2
@@ -115,6 +115,8 @@ NewShipType.visibleInSecondary=1
 NewShipType.minLOD=0.25
 NewShipType.goblinsStartFade=1540
 NewShipType.goblinsOff=1540
+NewShipType["upLOD"]=7000;
+NewShipType["downLOD"]=7515;
 NewShipType.minimumZoomFactor=0.6
 NewShipType.selectionLimit=150000
 NewShipType.preciseATILimit=0

@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Leech";
 NewShipType["sobDescription"]="Infiltration  microship";
-NewShipType["maxhealth"]=750;
+NewShipType["maxhealth"]=250;
 NewShipType["regentime"]=0;
 NewShipType["minRegenTime"]=0;
 NewShipType["sideArmourDamage"]=2;

@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Deacon Destroyer"
 NewShipType.sobDescription = "Capital Ship: Anti Frigate"
-NewShipType.maxhealth = 80000
+NewShipType.maxhealth = 150000
 NewShipType.regentime = 1400
 NewShipType.minRegenTime = 1400
 NewShipType.sideArmourDamage = 1

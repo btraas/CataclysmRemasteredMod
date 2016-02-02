@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="Mimic (Multi-gun Corvette)"
 NewShipType.sobDescription="Espionage Suicide Bomber"
-NewShipType.maxhealth=150 
+NewShipType.maxhealth=250 
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage=0.95

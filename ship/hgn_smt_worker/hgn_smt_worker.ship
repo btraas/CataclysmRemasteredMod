@@ -135,8 +135,8 @@ addAbility(NewShipType,"GuardCommand",1,3000,500)
 addAbility(NewShipType, "Harvest", 1, 600, 15, 1500);
 addAbility(NewShipType, "HyperSpaceCommand", 0, 1, 200, 400, 0, 3);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3)
-addAbility(NewShipType, "RepairCommand", 0, 500, 20, {SuperCap = "20",}, 
-{Flagship = "20",})
+addAbility(NewShipType, "RepairCommand", 0, 500, 100, {SuperCap = "100",}, 
+{Flagship = "100",})
 addAbility(NewShipType,"RetireAbility",1,0)
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");

@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="Shaman Carrier"
 NewShipType.sobDescription="$10041"
-NewShipType.maxhealth=120000
+NewShipType.maxhealth=225000
 NewShipType.regentime=3000
 NewShipType.minRegenTime=600
 NewShipType.sideArmourDamage=1.1
@@ -136,15 +136,21 @@ NewShipType.launchTimeBetweenTwoFormations=1
 NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
-addAbility(NewShipType,"ShipHold",1,60,50,"rallypoint","Fighter,Corvette,Utility",100,
-{Fighter="6"},
-{Corvette="40"});
+addAbility(NewShipType, "ShipHold", 1, 90, 10, "rallypoint", "Fighter, Corvette, Frigate, Utility,", 300, 
+{ 
+    Fighter = "150", 
+}, 
+{ 
+    Corvette = "300", 
+},
+{ 
+    Frigate = "6000"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,1.1,400,1100,0,4);
+addAbility(NewShipType,"HyperSpaceCommand",0,1.1,400,1100,0,4);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Corvette, Frigate,  SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
-addAbility(NewShipType,"CanBuildShips",1,"Fighter_Smt, Corvette_Smt, Frigate_Smt, Utility_Smt, Probe_smt","Fighter, Corvette, Frigate, Utility");
+addAbility(NewShipType,"CanBuildShips",1,"Fighter_Smt, Corvette_Smt, Frigate_Smt, Utility_Smt, SubSystem_Smt, Shipyard_Smt, Probe_smt","Fighter, Corvette, Frigate, SubSystemModule, Capital, Utility");
 addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
@@ -160,6 +166,11 @@ StartShipWeaponConfig(NewShipType, "smt_c_kineticburstcannonE", "Weapon_TopRight
 StartShipWeaponConfig(NewShipType, "smt_c_kineticburstcannonE", "Weapon_BotLeft", "Weapon_TurretRearRightTopE");
 StartShipWeaponConfig(NewShipType, "smt_c_kineticburstcannonE", "Weapon_BotRight", "Weapon_TurretRearLeftBotE");
 addShield(NewShipType,"EMP",10000,20);
+StartShipHardPointConfig(NewShipType,"Production 1","HardpointProduction1","System","Production","Destroyable","","Ksh_Sec_C_Production_Fighter","","","","","","","")
+StartShipHardPointConfig(NewShipType,"Production 2","HardpointProduction2","System","Production","Destroyable","","Ksh_Sec_C_Production_Corvette","","","","","","","")
+StartShipHardPointConfig(NewShipType,"Production 3","Hardpoint_Production3","System","Production","Destroyable","","Ksh_Sec_C_Production_Frigate","","","","","","","")
+StartShipHardPointConfig(NewShipType, "Generic 1", "Hardpoint_Generic1", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_Hyperspace", "ksh_sec_c_module_gravgenerator", "", "", "", "", "", "");
+StartShipHardPointConfig(NewShipType, "Generic 2", "Hardpoint_Generic2", "System", "Generic", "Destroyable", "", "", "Ksh_Sec_C_Module_Hyperspace", "ksh_sec_c_module_gravgenerator", "", "", "", "", "");
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Ksh_Sec_C_Engine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Ksh_Sec_C_Innate_Resource","","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);

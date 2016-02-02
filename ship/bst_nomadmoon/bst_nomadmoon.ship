@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Nomad Moon";
 NewShipType["sobDescription"]="Sentry Base";
-NewShipType["maxhealth"]=200000;
+NewShipType["maxhealth"]=450000;
 NewShipType["regentime"]=2000;
 NewShipType["minRegenTime"]=2000;
 NewShipType["sideArmourDamage"]=1;

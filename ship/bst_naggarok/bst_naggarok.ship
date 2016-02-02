@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Naggarok"
 NewShipType.sobDescription = "Origin of the Beast"
-NewShipType.maxhealth = 280000
+NewShipType.maxhealth = 450000
 NewShipType.regentime = 2000
 NewShipType.minRegenTime = 2000
 NewShipType.sideArmourDamage = 1.2

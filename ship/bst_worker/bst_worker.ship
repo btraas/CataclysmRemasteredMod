@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Worker"
 NewShipType.sobDescription = "$1533"
-NewShipType.maxhealth = 6000
+NewShipType.maxhealth = 4000
 NewShipType.regentime = 200
 NewShipType.minRegenTime = 200
 NewShipType.sideArmourDamage = 1
@@ -52,7 +52,7 @@ NewShipType.swayRotateFactor = 0
 NewShipType.dustCloudDamageTime = 160
 NewShipType.nebulaDamageTime = 35
 NewShipType.MinimalFamilyToFindPathAround = "SuperCap"
-NewShipType.BuildFamily = "Resource_Bst"
+NewShipType.BuildFamily = "Utility_Bst"
 NewShipType.AttackFamily = "Resource"
 NewShipType.DockFamily = "Utility"
 NewShipType.AvoidanceFamily = "Utility"
@@ -70,8 +70,8 @@ NewShipType.antiFighterValue = 0
 NewShipType.antiCorvetteValue = 0
 NewShipType.antiFrigateValue = 0
 NewShipType.totalValue = 0
-NewShipType.buildCost = 400
-NewShipType.buildTime = 30
+NewShipType.buildCost = 500
+NewShipType.buildTime = 25
 NewShipType.buildPriorityOrder = 10
 NewShipType.retaliationRange = 4800
 NewShipType.retaliationDistanceFromGoal = 160
@@ -128,10 +128,11 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "delta"
 addAbility(NewShipType,"ParadeCommand",1)
 addAbility(NewShipType,"WaypointMove")
+--addAbility(NewShipType,"SalCapCommand",1,500,0,0);
+addAbility(NewShipType,"CaptureCommand",0,40);
 addAbility(NewShipType,"SalvageCommand",1)
 addAbility(NewShipType,"GuardCommand",1,3000,500)
-addAbility(NewShipType, "HyperSpaceCommand", 0, 1, 200, 400, 0, 3);
-addAbility(NewShipType, "Harvest", 1, 200, 12, 300);
+addAbility(NewShipType, "Harvest", 1, 600, 15, 1500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3)
 addAbility(NewShipType, "RepairCommand", 0, 500, 100, {SuperCap = "100",}, 
 {Flagship = "100",})

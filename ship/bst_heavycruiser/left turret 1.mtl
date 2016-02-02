@@ -1,0 +1,36 @@
+﻿newmtl guntop
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd gun_top_EXPORT[1]_DIFF.dds
+
+newmtl gunsides
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd gun_sides_EXPORT[1]_DIFF.dds
+
+newmtl gunback
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd gun_back_EXPORT[1]_DIFF.dds
+
+newmtl gunfront
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd gun_front_EXPORT[1]_DIFF.dds
+

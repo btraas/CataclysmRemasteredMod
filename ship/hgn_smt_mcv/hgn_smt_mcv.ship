@@ -1,7 +1,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Martyr MCV";
 NewShipType["sobDescription"]="Linked Mimics form a Mimic Composite Vehicle";
-NewShipType["maxhealth"]=1900;
+NewShipType["maxhealth"]=2500;
 NewShipType["regentime"]=0;
 NewShipType["minRegenTime"]=0;
 NewShipType["sideArmourDamage"]=1;

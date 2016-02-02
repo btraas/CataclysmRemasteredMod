@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Research Ship"
 NewShipType.sobDescription = "Mobile Research Facility"
-NewShipType.maxhealth = 40000
+NewShipType.maxhealth = 32000
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1

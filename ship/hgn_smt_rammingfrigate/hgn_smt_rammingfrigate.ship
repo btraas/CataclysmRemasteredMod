@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Minion Ramming Frigate";
 NewShipType["sobDescription"]="Rams enemy vessels out of battle.";
-NewShipType["maxhealth"]=130000;
+NewShipType["maxhealth"]=50000;
 NewShipType["regentime"]=1200;
 NewShipType["minRegenTime"]=1200;
 NewShipType["sideArmourDamage"]=4.2;
