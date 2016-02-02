@@ -451,11 +451,11 @@ T_Text_TitleBar = {
 	------- Button Graphics -------
 	MENU_BUTTON_GRAPHIC_SMALL = {
              
-		size = {0, 0},
-        texture = "DATA:UI\\NewUI\\Examples\\Textures\\ui_4kbuttons.dds",
-        uvRect = { 1/32, 1/32, 16/32, 16/32 },
-        patch_X = { 7, -1, 7, 0 },
-        patch_Y = { 7, -1, 7, 0 },
+		size = {92, 30},
+        texture = "DATA:UI\\NewUI\\styles\\cataclysm_button_small.tga",
+      --  uvRect = { 1/32, 1/32, 16/32, 16/32 },
+      --  patch_X = { 7, -1, 7, 0 },
+      --  patch_Y = { 7, -1, 7, 0 },
         patch_ResScale = RES_SCALE,
 			
 		Surface = STD_BUTTON_SURFACE,

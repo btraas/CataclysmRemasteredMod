@@ -47,7 +47,7 @@ shipFiles["shared"]["COMMAND_MOVE_CANCELLED"] = 1			-- 								-- Working
 shipFiles["shared"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container				-- working
 shipFiles["shared"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 1	-- Asteroid harvest				-- working
 shipFiles["shared"]["COMMAND_CAPTURE"] = 1					-- Marine/infiltrate/worker 	-- working
-shipFiles["shared"]["COMMAND_ATTACK"] = 1					-- 								-- Working
+shipFiles["shared"]["COMMAND_ATTACK"] = 4					-- 								-- Working
 shipFiles["shared"]["COMMAND_HS"] = 1						-- Entering hyperspace 			-- working
 shipFiles["shared"]["COMMAND_HS_INHIBITOR_DETECTED"] = 1 	-- interrupted by inhibitor 	-- not tested
 shipFiles["shared"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted					-- not tested
@@ -83,6 +83,9 @@ shipFiles["shared"]["COMMAND_DEFENCEFIELDOUTOFPOWER"] = 1									-- not tested
 shipFiles["shared"]["COMMAND_HS_EXIT"] = 1													-- not working
 shipFiles["shared"]["COMMAND_HS_GATEFORMED"] = 1											-- not tested
 shipFiles["shared"]["COMMAND_ATTACK_FRIENDLY"] = 1			-- not tested
+
+--NEW: FEB 2016
+shipFiles["shared"]["COMMAND_CONSTRUCTION_COMPLETED"] = 1
 
 -- The following sound files will be loaded, but not specific to a certain ship (leave in the KuunLan folder)
 --"COMMAND_AllianceRequested_1"
@@ -183,7 +186,7 @@ shipFiles["Hgn_Smt_Worker"]["COMMAND_HS"] = 1
 shipFiles["Hgn_Smt_Worker"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
 shipFiles["Hgn_Smt_Worker"]["COMMAND_SELECTED"] = 2
 shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container
-shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 5	-- Asteroid harvest
+shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 3	-- Asteroid harvest
 shipFiles["Hgn_Smt_Worker"]["COMMAND_CAPTURE"] = 3					-- Marine/infiltrate/worker
 shipFiles["Hgn_Smt_Worker"]["COMMAND_REPAIR"] = 1
 shipFiles["Hgn_Smt_Worker"]["COMMAND_DOCK"] = 2
@@ -1551,6 +1554,10 @@ function CommandConstructionComplete(buildingShip, builtItem, buildType)
 	print("*****---- CommandConstructionComplete : buildingShip="..buildingShip..", builtItem="..builtItem..", buildType="..buildType)
 		
 	if (buildingShip==nil or builtItem==nil) then
+		return
+	end
+	
+	if(playSomtaawCommand("COMMAND_CONSTRUCTION_COMPLETED", buildingShip)) then
 		return
 	end
 	
