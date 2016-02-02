@@ -48,7 +48,10 @@ Music / sounds are a direct port from Cataclysm.
 
 Thanks to LeviathansWrath, HWU team, and 23-Down for your help. 
 
-v1.3: Rebuilt from the ground up designed for compatibility with the upcoming campaign mod.
+v1.3: 
+Rebuilt from the ground up designed for compatibility with the upcoming campaign mod.
+Minor fixes for Somtaaw starting ships command & status sounds
+
 
 Known bugs: 
 -No Beast sounds yet
