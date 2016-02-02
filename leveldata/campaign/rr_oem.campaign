@@ -1,0 +1,44 @@
+-- localized display name for the UI
+displayName = "Beast War"
+
+-- 2 = Extra
+contentType = 2
+contentName = "rr_oem"
+contentOrdered = 0
+contentChooseText = "$4062"
+contentThumbName = "Cataclysm Campaign - Beast War "
+contentThumbDesc = "The war for Homeworld is over now. But the galaxy remains a dangerous place..."
+contentSort = 0.5	-- Default is 1.0, so 0.5 will appear _before_ others.
+contentRules = "SinglePlayer"	-- A DEFAULT that actually reads from SinglePlayerOptions.lua
+
+ExtFilter = "campaign_cata,campaign_beastwar"
+
+Mission = { }   -- create a mission structure
+
+-- Mission 1 
+Mission[1] = {
+    postload        = function () end,
+
+    directory       = "Mission01cata",
+    level           = "Mission01cata.level",
+    postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A01.lua", 1, 0) else postLevelComplete() end end,
+--~     postlevel	= function () postLevelComplete() end,
+    displayName     = "01 - Hiigara (unfinished)",
+    description     = "Kiith Somtaaw must help the Veer-Rak in defending Hiigara, but it won't be easy...",
+	--usepersist = "player:Campaign//HOMEWORLDCLASSIC//persist5.lua",
+	usedefaultpersist = 1,
+}
+
+-- Mission 2 
+Mission[2] = {
+    postload        = function () end,
+
+    directory       = "Mission01cata",
+    level           = "Mission01cata.level",
+    postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A01.lua", 1, 0) else postLevelComplete() end end,
+--~     postlevel	= function () postLevelComplete() end,
+    displayName     = "02 - Hiigara (dup for testing)",
+    description     = "Kiith Somtaaw must help the Veer-Rak in defending Hiigara, but it won't be easy...",
+	--usepersist = "player:Campaign//HOMEWORLDCLASSIC//persist5.lua",
+	usedefaultpersist = 1,
+}
