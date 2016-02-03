@@ -3,7 +3,7 @@ displayName = "Beast War"
 
 -- 2 = Extra
 contentType = 2 -- was 2
-contentName = "rr_oem"
+contentName = "beastwar"
 contentOrdered = 1 -- was 0
 contentChooseText = "$3492"
 contentThumbName = "Cataclysm Campaign - Beast War"

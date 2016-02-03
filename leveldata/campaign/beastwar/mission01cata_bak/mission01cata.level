@@ -1618,7 +1618,7 @@ maxPlayers = 4;
 player = {};
 player[0] = { -- Kiith Somtaaw
 	id = 0,
-	name = "",
+	name = "Kiith Somtaaw",
 	resources = 0,
 	raceID = 11, -- 11 = Somtaaw
 	startPos = 0
@@ -1626,7 +1626,7 @@ player[0] = { -- Kiith Somtaaw
 
 player[1] = { -- Kiith Nabaal
 	id = 1,
-	name = "",
+	name = "Kiith Nabaal",
 	resources = 50000,
 	raceID = 1, -- 1 = Hiigaran
 	startPos = 0
@@ -1634,7 +1634,7 @@ player[1] = { -- Kiith Nabaal
 
 player[2] = { -- Hiigaran Defense Fleet
 	id = 2,
-	name = "",
+	name = "Hiigaran Defense Fleet",
 	resources = 0,
 	raceID = 1, -- 1 = Hiigaran
 	startPos = 0
@@ -1642,7 +1642,7 @@ player[2] = { -- Hiigaran Defense Fleet
 
 player[3] = { -- Taiidani Imperial Fleet
 	id = 3,
-	name = "",
+	name = "Taiidani Imperial Fleet",
 	resources = 50000,
 	raceID = 6, -- Taiidan 
 	startPos = 0
