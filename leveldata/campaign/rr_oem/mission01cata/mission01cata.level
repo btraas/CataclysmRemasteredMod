@@ -302,7 +302,7 @@ function DetermChunk()
 	setWorldBoundsInner({0.00, 0.00, 0.00}, {30724.50, 30724.50, 30724.50})
 
 	createSOBGroup("Mothership")
-	addToSOBGroup("Hgn_MotherShip","Mothership")
+	addToSOBGroup("Hgn_Smt_ms","Mothership")
 
 	
 
@@ -1616,35 +1616,35 @@ maxPlayers = 4;
 
 --PlayerInfo: info on each possible player in this level
 player = {};
-player[0] = {
+player[0] = { -- Kiith Somtaaw
 	id = 0,
 	name = "",
 	resources = 0,
-	raceID = 1,
+	raceID = 11, -- 11 = Somtaaw
 	startPos = 0
 }
 
-player[1] = {
+player[1] = { -- Kiith Nabaal
 	id = 1,
 	name = "",
 	resources = 50000,
-	raceID = 1,
+	raceID = 1, -- 1 = Hiigaran
 	startPos = 0
 }
 
-player[2] = {
+player[2] = { -- Hiigaran Defense Fleet
 	id = 2,
 	name = "",
 	resources = 0,
-	raceID = 1,
+	raceID = 1, -- 1 = Hiigaran
 	startPos = 0
 }
 
-player[3] = {
+player[3] = { -- Taiidani Imperial Fleet
 	id = 3,
 	name = "",
 	resources = 50000,
-	raceID = 2,
+	raceID = 6, -- Taiidan 
 	startPos = 0
 }
 
