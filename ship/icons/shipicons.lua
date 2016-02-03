@@ -5,296 +5,9 @@ Default = {
 		stretchOnDraw = 1,
 	},
 }
-Hgn_AssaultCorvette = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 0, 0, 512, 256},
-		stretchOnDraw = 1,
-	},
-}
-Hgn_AssaultCorvetteElite = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 0, 0, 512, 256},
-		stretchOnDraw = 1,
-	},
-}
 
-bst_fieldfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beastdfgfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-Bst_scout={LargeIcon={texture="DATA:\\Ship\\Icons\\beastrecon.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-Hgn_AssaultFrigate = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 512, 0, 1024, 256},
-		stretchOnDraw = 1,
-	},
-}
-Hgn_AttackBomber = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 1024, 0, 1536, 256},
-		stretchOnDraw = 1,
-	},
-}
-Bst_HeavyCruiser={LargeIcon={texture="DATA:\\Ship\\Icons\\beasttaiidanheavycruiser.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-Hgn_AttackBomberElite = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 1024, 0, 1536, 256},
-		stretchOnDraw = 1,
-	},
-}
 
-Hgn_BadgedCruiser = Hgn_BattleCruiser
 
-Hgn_BattleCruiser = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 1536, 0, 2048, 256},
-		stretchOnDraw = 1,
-	},
-}
-hgn_ram_thief={LargeIcon = {
-		--pixelUVCoords = 1,
-		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc_ships.dds",
-		textureUV = { 1536, 1792, 2048, 2048},
-		stretchOnDraw = 1,
-	},
-}
-Hgn_Carrier = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 0, 256, 512, 512},
-		stretchOnDraw = 1,
-	},
-}
-Hgn_DefenseFieldFrigate = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 512, 256, 1024, 512},
-		stretchOnDraw = 1,
-	},
-}
-Hgn_ram_MissileCorvette={LargeIcon = {
-		--pixelUVCoords = 1,
-		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc_ships.dds",
-		textureUV = { 512, 1792, 1024, 2048},
-		stretchOnDraw = 1,
-	},
-}
-hgn_ram_researchship={LargeIcon={texture="DATA:\\Ship\\Icons\\turanicresearchship.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
---ram--
-hgn_ram_defencefighter={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_defencefighter.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_heavycruiser={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_heavycruiser.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_Scout={LargeIcon={texture="DATA:\\Ship\\Icons\\ramscout.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_bomber={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_bomber.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_heavycorvette={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_heavycorvette.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_minelayercorvette={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_minelayercorvette.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_repaircorvette={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_repaircorvette.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_SupportFrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_supportfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_DFF={LargeIcon={texture="DATA:\\Ship\\Icons\\Hgn_ram_DFF.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_missiledestroyer={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_missiledestroyer.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_proximitysensor={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_proximitysensor.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_standarddestroyer={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_standarddestroyer.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_standardfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_standardfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_Interceptor={LargeIcon = {
-		--pixelUVCoords = 1,
-		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc_ships.dds",
-		textureUV = { 1024, 1536, 1536, 1792},
-		stretchOnDraw = 1,
-	},
-}
-
-Hgn_Ram_LightCorvette={LargeIcon={texture="DATA:\\Ship\\Icons\\TuranicGeneralCorvette.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_DFF={LargeIcon={texture="DATA:\\Ship\\Icons\\Hgn_ram_DFF.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_ionarrayfrigate={LargeIcon = {
-		--pixelUVCoords = 1,
-		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc_ships.dds",
-		textureUV = { 1536, 1536, 2048, 1792},
-		stretchOnDraw = 1,
-	},
-}
-
-Hgn_Ram_gravwellgenerator={LargeIcon={texture="DATA:\\Ship\\Icons\\ramgravwellgenerator.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_SensorArray={LargeIcon={texture="DATA:\\Ship\\Icons\\turanicsensorarray.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_Probe={LargeIcon={texture="DATA:\\Ship\\Icons\\ramprobe.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_ResourceCollector={LargeIcon={texture="DATA:\\Ship\\Icons\\ramresourcecollector.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-hgn_ram_resourcecontroller={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_ram_resourcecontroller.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_Mothership={LargeIcon={texture="DATA:\\Ship\\Icons\\rammothership.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_Outpost={LargeIcon={texture="DATA:\\Ship\\Icons\\TuranicOutpost.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Hgn_Ram_Carrier={LargeIcon = {
-		--pixelUVCoords = 1,
-		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc_ships.dds",
-		textureUV = { 1024, 1792, 1536, 2048},
-		stretchOnDraw = 1,
-	},
-}
-Hgn_Destroyer = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 1024, 256, 1536, 512},
-		stretchOnDraw = 1,
-	},
-}
-Hgn_Dreadnaught = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
-		textureUV = { 1536, 256, 2048, 512},
-		stretchOnDraw = 1,
-	},
-}
 Hgn_Smt_RammingFrigate={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
@@ -434,14 +147,6 @@ Hgn_Smt_MS={
 	},
 };
 
-Hgn_Smt_Faal_corum={
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
-		textureUV = { 1536, 768, 2048, 1024},
-		stretchOnDraw = 1,
-	},
-};
-
 Hgn_Smt_Worker={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
@@ -465,7 +170,78 @@ Hgn_Smt_multibeamfrigate={
 		stretchOnDraw = 1,
 	},
 }
-Kpr_Dreadnaught = {
+
+
+
+
+
+Hgn_AssaultCorvette = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 0, 0, 512, 256},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_AssaultCorvetteElite = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 0, 0, 512, 256},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_AssaultFrigate = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 512, 0, 1024, 256},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_AttackBomber = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 1024, 0, 1536, 256},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_AttackBomberElite = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 1024, 0, 1536, 256},
+		stretchOnDraw = 1,
+	},
+}
+
+Hgn_BadgedCruiser = Hgn_BattleCruiser
+
+Hgn_BattleCruiser = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 1536, 0, 2048, 256},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_Carrier = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 0, 256, 512, 512},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_DefenseFieldFrigate = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 512, 256, 1024, 512},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_Destroyer = {
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
+		textureUV = { 1024, 256, 1536, 512},
+		stretchOnDraw = 1,
+	},
+}
+Hgn_Dreadnaught = {
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HW2_icon_Hgn_ships.dds",
 		textureUV = { 1536, 256, 2048, 512},
@@ -625,7 +401,7 @@ Hgn_TorpedoFrigateElite = {
 Kpr_AttackDroid = {
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HW2_icon_misc_ships.dds",
-		textureUV = { 0, 0, 512, 256},
+		textureUV = { 1024, 0, 1536, 256},
 		stretchOnDraw = 1,
 	},
 }
@@ -637,13 +413,6 @@ Kpr_Destroyer = {
 	},
 }
 Kpr_Mover = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_misc_ships.dds",
-		textureUV = { 1024, 0, 1536, 256},
-		stretchOnDraw = 1,
-	},
-}
-Kpr_Mover_Nsp = {
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HW2_icon_misc_ships.dds",
 		textureUV = { 1024, 0, 1536, 256},
@@ -682,319 +451,6 @@ Meg_BalcoraGate = {
 		stretchOnDraw = 1,
 	},
 }
-
-Kpr_BalcoraGate = {
-	LargeIcon = {
-		texture = "DATA:\\Ship\\Icons\\HW2_icon_misc_ships.dds",
-		textureUV = { 512, 256, 1024, 512},
-		stretchOnDraw = 1,
-	},
-}
-kpr_capital_mothership={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_kpr_capital_mothership.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Kpr_Capital_Reaver = 
-{ 
-    LargeIcon = 
-    { 
-        texture = "DATA:\\Ship\\Icons\\reaver.tga", 
-        textureUV_TL = 
-            { 0, 0, }, 
-        textureUV_WH = 
-            { 304, 94, }, 
-        stretchOnDraw = 1, }, }
-
-
-
-kpr_capital_sleeper = 
-{ 
-    LargeIcon = 
-    { 
-        texture = "DATA:\\Ship\\Icons\\sleeper.tga", 
-        textureUV_TL = 
-            { 0, 0, }, 
-        textureUV_WH = 
-            { 304, 94, }, 
-        stretchOnDraw = 1, }, }
-
-
-kpr_fighter_stalker={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_kpr_fighter_stalker.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-kpr_deciever={LargeIcon={texture="DATA:\\Ship\\Icons\\deciever.tga",
-        textureUV_TL = 
-            { 0, 0, }, 
-        textureUV_WH = 
-            { 304, 94, }, 
-        stretchOnDraw = 1, }, }
-
-kpr_seeker={LargeIcon={texture="DATA:\\Ship\\Icons\\seeker.tga",
-        textureUV_TL = 
-            { 0, 0, }, 
-        textureUV_WH = 
-            { 304, 94, }, 
-        stretchOnDraw = 1, }, }
-
-kpr_frigate_guardian={LargeIcon={texture="DATA:\\Ship\\Icons\\guardian.tga",
-textureUV_TL = 
-            { 0, 0, }, 
-        textureUV_WH = 
-            { 304, 94, }, 
-        stretchOnDraw = 1, }, }
-
-kpr_frigate_sentinel={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_kpr_frigate_sentinel.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-kpr_utility_observer={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_kpr_utility_observer.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-kpr_utility_processor={LargeIcon={texture="DATA:\\Ship\\Icons\\hgn_kpr_utility_processor.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-kpr_utility_reclaimer={LargeIcon={texture="DATA:\\Ship\\Icons\\icon_ships.mres",
-textureUV_TL={800,
-	0},
-textureUV_WH={100,
-	64},
-stretchOnDraw=1}};
-
-Bst_multibeamfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beastmultibeamfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_HiveFrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beastsomtaawhivefrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_bst_fieldfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beastdfgfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_IonCannonfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beasttaiidanionfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Ksh_IonCannonfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beastkushanionfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Tdn_Advancesupportfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beasttaiidanadvancesupportfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Tdn_Standardfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beasttaiidanassaultfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-bst_ionarrayfrigate={LargeIcon={texture="DATA:\\Ship\\Icons\\beastturanicionfrigate.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_fighter={LargeIcon={texture="DATA:\\Ship\\Icons\\beastturanicinterceptor.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Worker={LargeIcon={texture="DATA:\\Ship\\Icons\\beastworker.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Recon={LargeIcon={texture="DATA:\\Ship\\Icons\\beastrecon.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Acolyte={LargeIcon={texture="DATA:\\Ship\\Icons\\beastacolyte.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_ACV={LargeIcon={texture="DATA:\\Ship\\Icons\\beastacv.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Acolytee={LargeIcon={texture="DATA:\\Ship\\Icons\\beastacolyte.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_ACVe={LargeIcon={texture="DATA:\\Ship\\Icons\\beastacv.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_CruiseMissile={LargeIcon={texture="DATA:\\Ship\\Icons\\beastcruisemissile.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_MissileCorvette={LargeIcon={texture="DATA:\\Ship\\Icons\\beastmissilecorvette.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_HeavyCorvette={LargeIcon={texture="DATA:\\Ship\\Icons\\beastkushanheavycorvette.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_MultiGunCorvette={LargeIcon={texture="DATA:\\Ship\\Icons\\beasttaiidanmultiguncorvette.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_CloakedFighter={LargeIcon={texture="DATA:\\Ship\\Icons\\beastkushancloakedfighter.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_AttackBomber={LargeIcon={texture="DATA:\\Ship\\Icons\\beasttaiidanattackbomber.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Ksh_Carrier={LargeIcon={texture="DATA:\\Ship\\Icons\\beastkushancarrier.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Naggarok={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnaggarok.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Processor={LargeIcon={texture="DATA:\\Ship\\Icons\\beastprocessor.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Mothership={LargeIcon={texture="DATA:\\Ship\\Icons\\beastmothership.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Carrier={LargeIcon={texture="DATA:\\Ship\\Icons\\beasttaiidancarrier.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_MissileDestroyer={LargeIcon={texture="DATA:\\Ship\\Icons\\beastkushanmissiledestroyer.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_Smt_Destroyer={LargeIcon={texture="DATA:\\Ship\\Icons\\beastsomtaawdestroyer.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-Bst_NomadMoon={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnomadmoon.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-bst_prt_mothership={LargeIcon={texture="DATA:\\Ship\\Icons\\BeastShipyard.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
-bst_ksh_heavycruiser={LargeIcon={texture="DATA:\\Ship\\Icons\\BeastKushanHeavyCruiser.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
-
 
 Meg_ProgenitorPowerModule = {
 	LargeIcon = {
@@ -1357,14 +813,14 @@ Vgr_LanceFighter = {
 Vgr_LaserCorvette = {
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HW2_icon_Vgr_ships.dds",
-		textureUV = { 1024, 768, 1536, 1024},
+		textureUV = { 1536, 768, 2048, 1024},
 		stretchOnDraw = 1,
 	},
 }
 Vgr_MinelayerCorvette = {
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HW2_icon_Vgr_ships.dds",
-		textureUV = { 1536, 768, 2048, 1024},
+		textureUV = { 1024, 768, 1536, 1024},
 		stretchOnDraw = 1,
 	},
 }
@@ -1823,19 +1279,6 @@ kus_supportfrigate = {
 
 
 --
-kus_scout5 = kus_scout
-kus_interceptor5 = kus_interceptor
-kus_attackbomber5 = kus_attackbomber
-kus_lightcorvette3 = kus_lightcorvette
-kus_heavycorvette3 = kus_heavycorvette
-kus_multiguncorvette3 = kus_multiguncorvette
-kus_hw2supportfrigate = kus_supportfrigate
-kus_hw2assaultfrigate = kus_assaultfrigate
-kus_hw2ioncannonfrigate = kus_ioncannonfrigate
-kus_hw2dronefrigate = kus_dronefrigate
-kus_hw2destroyer = kus_destroyer
-kus_hw2missiledestroyer = kus_missiledestroyer
-kus_hw2heavycruiser = kus_heavycruiser
 kus_researchship_1 = kus_researchship
 kus_researchship_2 = kus_researchship
 kus_researchship_3 = kus_researchship
@@ -2299,18 +1742,6 @@ tai_fieldgeneratorsegment8 = {
 }
 
 --
-tai_scout5 = tai_scout
-tai_interceptor5 = tai_interceptor
-tai_attackbomber5 = tai_attackbomber
-tai_lightcorvette3 = tai_lightcorvette
-tai_heavycorvette3 = tai_heavycorvette
-tai_multiguncorvette3 = tai_multiguncorvette
-tai_hw2supportfrigate = tai_supportfrigate
-tai_hw2assaultfrigate = tai_assaultfrigate
-tai_hw2ioncannonfrigate = tai_ioncannonfrigate
-tai_hw2destroyer = tai_destroyer
-tai_hw2missiledestroyer = tai_missiledestroyer
-tai_hw2heavycruiser = tai_heavycruiser
 tai_researchship_1 = tai_researchship
 tai_researchship_2 = tai_researchship
 tai_researchship_3 = tai_researchship
@@ -2419,7 +1850,7 @@ der_lightcorvette = {
 	},
 }
 
-der_minelayercorvette = {
+Der_MinelayerCorvette = {
 	LargeIcon = {
 		--pixelUVCoords = 1,
 		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc_ships.dds",
@@ -2428,16 +1859,7 @@ der_minelayercorvette = {
 	},
 }
 
-der_multiguncorvette = {
-	LargeIcon = {
-		--pixelUVCoords = 1,
-		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc1_ships.dds",
-		textureUV = { 1536, 512, 2048, 768},
-		stretchOnDraw = 1,
-	},
-}
-
-Junk_HyperSpaceGate = {
+Der_MultiGunCorvette = {
 	LargeIcon = {
 		--pixelUVCoords = 1,
 		texture = "DATA:\\Ship\\Icons\\HW1_icon_misc_ships.dds",
@@ -2657,32 +2079,88 @@ tur_standardcorvette = {
 
 
 --common
-emp_lightcorvette = der_lightcorvette
-emp_MultiGunCorvette = der_multiguncorvette
-emp_carrier = der_carrier
-kad_ambassador = kad_swarmer
-kad_utilityswarmer = kad_advancedswarmer
-kad_hw2p2mothership = kad_p2mothership
-kad_hw2multibeamfrigate = kad_multibeamfrigate
-tur_scout = tur_fighter
-tur_fighter5 = tur_fighter
-tur_minercorvette = tur_standardcorvette
-tur_hw2ionarrayfrigate = tur_ionarrayfrigate
-tur_hw2p1mothership = tur_p1mothership
-tur_carrier = tur_p1mothership
-tur_hw2carrier = tur_p1mothership
-tur_platforml = junk_autogunl
-tur_platforms = junk_autoguns
-tur_hw2platforml = junk_autogunl
-tur_hw2platforms = junk_autoguns
-kus_autogunl = junk_autogunl
-kus_autoguns = junk_autoguns
 special_splitter = Default
 special_unittestmap = Default
 
 
 
 
+
+Bst_multibeamfrigate = Hgn_Smt_multibeamfrigate;
+
+Bst_HiveFrigate=Hgn_Smt_HiveFrigate;
+
+Bst_fieldfrigate=tai_fieldfrigate;
+
+Bst_IonCannonfrigate=tai_ioncannonfrigate;
+
+Bst_Ionarrayfrigate=tur_ionarrayfrigate;
+
+Bst_Interceptor=tai_interceptor;
+
+Bst_Fighter=tur_fighter;
+
+Bst_Worker=Hgn_Smt_Worker;
+
+Bst_Scout=Hgn_Smt_Scout;
+
+Bst_Acolyte=Hgn_Smt_Acolyte;
+
+Bst_ACV=Hgn_Smt_ACV;
+
+Bst_Acolytee=Bst_Acolyte;
+
+Bst_ACVe=Bst_ACV;
+
+Bst_CruiseMissile={
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
+		textureUV = { 1024, 0, 1536, 256},
+		stretchOnDraw = 1,
+	},
+};
+
+Bst_MissileCorvette=tur_missilecorvette;
+
+Bst_HeavyCorvette=kus_heavycorvette;
+
+Bst_MultiGunCorvette=tai_multiguncorvette;
+
+Bst_CloakedFighter=kus_cloakedfighter;
+
+Bst_AttackBomber=tai_attackbomber;
+
+Bst_Clee_San=Hgn_Smt_clee_san;
+
+Bst_HeavyCruiser=tai_heavycruiser;
+
+Bst_Naggarok={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnaggarok.tga",
+textureUV_TL={0,
+	0},
+textureUV_WH={192,
+	95},
+stretchOnDraw=1}};
+
+Bst_Processor=Hgn_Smt_Processor;
+
+Bst_Mothership={
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
+		textureUV = { 1024, 1024, 1536, 1280},
+		stretchOnDraw = 1,
+	},
+};
+
+Bst_Carrier=tai_carrier;
+
+Bst_Smt_Destroyer=Hgn_Smt_Destroyer;
+
+Bst_NomadMoon={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnomadmoon.tga",
+textureUV_TL={0,
+	0},
+textureUV_WH={192,
+	95},
+stretchOnDraw=1}};
 
 
 
@@ -3127,52 +2605,6 @@ Vgr_Des_Engine					= Icon_Subsystem_Engine
 Vgr_C_Innate_Resource				= Icon_Subsystem_Resource
 Vgr_MS_Innate_Resource				= Icon_Subsystem_Resource
 Vgr_SY_Innate_Resource                          = Icon_Subsystem_Resource
-----------------------------------------
---keeper--
-----------------------------------------
-kpr_a_capital=Icon_Subsystem_CapShip;
-kpr_balcora_capital=Icon_Subsystem_CapShip;
-smt_ms_production_capship=Icon_Subsystem_CapShip;
-smt_ms_production_capship1=Icon_Subsystem_CapShip;
-kpr_ms_hyperspace=Icon_Subsystem_Hyperspace;
-kpr_ms_s_cloak=Icon_Subsystem_DetectCloaked;
-kpr_ms_s_array=Icon_Subsystem_AdvancedArray;
-kpr_ms_s_hyper=Icon_Subsystem_DetectHyperspace;
-kpr_c_s_cloak=Icon_Subsystem_DetectCloaked;
-kpr_c_s_array=Icon_Subsystem_AdvancedArray;
-kpr_c_s_hyper=Icon_Subsystem_DetectHyperspace;
-kpr_ms_fire=Icon_Subsystem_FireControl;
-kpr_ms_hyperspace_in=Icon_Subsystem_HyperspaceInhibitor;
-kpr_ms_research_adv=Icon_Subsystem_ResearchAdvanced;
-kpr_ms_research=Icon_Subsystem_Research;
-kpr_c_research_adv=Icon_Subsystem_ResearchAdvanced;
-kpr_c_research=Icon_Subsystem_Research;
-ksh_sec_ms_module_advancedresearch=Icon_Subsystem_Research;
-ksh_sec_ms_module_armorresearch=Icon_Subsystem_Research;
-ksh_sec_ms_module_weaponsresearch=Icon_Subsystem_Research;
-ksh_sec_ms_module_research=Icon_Subsystem_Research;
-kpr_c_frigate=Icon_Subsystem_Frigate;
-kpr_ms_corvette=Icon_Subsystem_Corvette;
-kpr_ms_fighter=Icon_Subsystem_Fighter;
-kpr_ms_frigate=Icon_Subsystem_Frigate;
-
-kpr_c_hyperspace=Icon_Subsystem_Hyperspace;
-kpr_c_fire=Icon_Subsystem_FireControl;
-kpr_c_hyperspace_in=Icon_Subsystem_HyperspaceInhibitor;
-kpr_c_corvette=Icon_Subsystem_Corvette;
-kpr_c_fighter=Icon_Subsystem_Fighter;
-
-kpr_a_hyperspace=Icon_Subsystem_Hyperspace;
-kpr_a_fire=Icon_Subsystem_FireControl;
-kpr_a_hyperspace_in=Icon_Subsystem_HyperspaceInhibitor;
-kpr_a_corvette=Icon_Subsystem_Corvette;
-kpr_a_fighter=Icon_Subsystem_Fighter;
-kpr_a_frigate=Icon_Subsystem_Frigate;
-kpr_a_research_adv=Icon_Subsystem_ResearchAdvanced;
-kpr_a_research=Icon_Subsystem_Research;
-kpr_a_s_cloak=Icon_Subsystem_DetectCloaked;
-kpr_a_s_array=Icon_Subsystem_AdvancedArray;
-kpr_a_s_hyper=Icon_Subsystem_DetectHyperspace;
 
 -- other
 HGN_SHIPYARD_SPG			= Hgn_Shipyard
@@ -3180,8 +2612,6 @@ HGN_BATTLECRUISERENGINE 		= Icon_Subsystem_Engine
 HGN_BATTLECRUISERIONBEAMTURRET 		= Icon_Subsystem_IonTurret
 VGR_BATTLECRUISERENGINE 		= Icon_Subsystem_Engine
 VGR_HEAVYFUSIONMISSILELAUNCHERBC 	= Icon_Subsystem_TorpedoLauncher
-KSH_SEC_MS_GRAVGENERATOR		= Icon_Subsystem_HyperspaceInhibitor
-KSH_SEC_MS_GRAVGENERATOR1		= Icon_Subsystem_HyperspaceInhibitor
 VGR_HYPERSPACEINHIBITOR			= Icon_Subsystem_HyperspaceInhibitor
 MEG_ASTEROID_NOSUBS			= Meg_Asteroid
 MEG_ASTEROIDMP				= Meg_Asteroid
@@ -3191,30 +2621,28 @@ KPR_DESTROYERM10			= Kpr_Destroyer
 Meg_BalcoraGatePowerGen                 = Meg_ProgenitorPowerTrigger
 Meg_Gehenna_1				= Meg_Gehenna
 Meg_Gehenna_2				= Meg_Gehenna
-Meg_Gehenna_3			= Meg_Gehenna
-Meg_Gehenna_4			= Meg_Gehenna
-Meg_Gehenna_5			= Meg_Gehenna
-Meg_Gehenna_6			= Meg_Gehenna
-Meg_Gehenna_7			= Meg_Gehenna
-Hgn_drone_frigate		= Hgn_Torpedofrigate
-Hgn_drone_frigate_2		= Hgn_Assaultfrigate
-Hgn_drone_frigate_3		= Hgn_Marinefrigate
-Kpr_Mover_Capture		= Kpr_Mover_Capture
-Meg_Bentus_Ruined		= Meg_Bentus_Ruin_1
+Meg_Gehenna_3				= Meg_Gehenna
+Meg_Gehenna_4				= Meg_Gehenna
+Meg_Gehenna_5				= Meg_Gehenna
+Meg_Gehenna_6				= Meg_Gehenna
+Meg_Gehenna_7				= Meg_Gehenna
+Hgn_drone_frigate			= Hgn_Torpedofrigate
+Hgn_drone_frigate_2			= Hgn_Assaultfrigate
+Hgn_drone_frigate_3			= Hgn_Marinefrigate
+Kpr_Mover_Capture			= Kpr_Mover_Capture
+Meg_Bentus_Ruined			= Meg_Bentus_Ruin_1
 KUS_DestroyerEngine 		= Icon_Subsystem_Engine
-KUS_MissileDestroyerEngine 	= Icon_Subsystem_Engine
+KUS_MissileDestroyerEngine 		= Icon_Subsystem_Engine
 KUS_HeavyCruiserEngine 		= Icon_Subsystem_Engine
 KUS_CarrierEngine 		= Icon_Subsystem_Engine
-KUS_CarrierResource		= Icon_Subsystem_Resource
+KUS_CarrierResource				= Icon_Subsystem_Resource
 KUS_MothershipEngine 		= Icon_Subsystem_Engine
-KUS_MothershipResource		= Icon_Subsystem_Resource
+KUS_MothershipResource				= Icon_Subsystem_Resource
 TAI_DestroyerEngine 		= Icon_Subsystem_Engine
-TAI_MissileDestroyerEngine 	= Icon_Subsystem_Engine
+TAI_MissileDestroyerEngine 		= Icon_Subsystem_Engine
 TAI_HeavyCruiserEngine 		= Icon_Subsystem_Engine
 TAI_CarrierEngine 		= Icon_Subsystem_Engine
-TAI_CarrierResource		= Icon_Subsystem_Resource
-KSH_SEC_MS_INNATE_RESOURCE	= Icon_Subsystem_Resource
-KSH_SEC_MS_INNATE_RESOURCE1	= Icon_Subsystem_Resource
+TAI_CarrierResource				= Icon_Subsystem_Resource
 TAI_MothershipEngine 		= Icon_Subsystem_Engine
-TAI_MothershipResource		= Icon_Subsystem_Resource
+TAI_MothershipResource				= Icon_Subsystem_Resource
 HW1_FighterTank 		= Icon_Subsystem_Engine
