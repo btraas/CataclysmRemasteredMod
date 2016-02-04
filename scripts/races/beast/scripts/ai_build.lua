@@ -4,7 +4,7 @@ aitrace("LOADING BEAST BUILD INFO")
 		kRefinery  = BST_PROCESSOR
 		kScout = BST_SCOUT
 		kInterceptor = BST_FIGHTER
-		kShipYard = BST_PRT_MOTHERSHIP
+	--	kShipYard = BST_PRT_MOTHERSHIP
 		kMissileDestroyer = BST_MISSILEDESTROYER
 		kBomber = BST_ATTACKBOMBER
 		kCarrier = BST_CARRIER		
@@ -92,13 +92,13 @@ function DetermineSpecialDemand_Beast()
 		end
 		ShipDemandSet( BST_CLEE_SAN, 10)	
 		end
-	local numShipyards = NumSquadrons( kShipYard ) + NumSquadronsQ( kShipYard )
-	if (numShipyards == 0 and UnderAttackThreat() < -75) then
-		local bcDemand = ShipDemandGet( kBattleCruiser )
-		if (bcDemand >= 0.5) then
-			ShipDemandAdd( kShipYard, bcDemand-0.5 )
-		end
-	end
+	--local numShipyards = NumSquadrons( kShipYard ) + NumSquadronsQ( kShipYard )
+	--if (numShipyards == 0 and UnderAttackThreat() < -75) then
+	--	local bcDemand = ShipDemandGet( kBattleCruiser )
+	--	if (bcDemand >= 0.5) then
+	--		ShipDemandAdd( kShipYard, bcDemand-0.5 )
+	--	end
+	--end
 
 function DetermineBuilderClassDemand_Beast()
 	local numBuilders = numQueueOfClass( eBuilder )

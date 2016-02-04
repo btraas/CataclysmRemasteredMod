@@ -96,8 +96,76 @@ shipFiles["shared"]["COMMAND_CONSTRUCTION_COMPLETED"] = 1
 --"COMMAND_SelectGroup" (add 01, 02 -> 10 to the end for that group number)
 --"COMMAND_GROUP_Assigned_" (add 01, 02 -> 10 to the end for that group number)
 --"STATUS_HotkeyGroup_Added_0"..groupNumber.."_2" or "STATUS_HotkeyGroup_Added_20_2" for group 10 for some reason...
-							
-							
+				
+
+--  ~~ BEAST SHARED SOUNDS ~~
+				
+shipFiles["bshared"] = {}
+--------------------------------------------------------
+shipFiles["bshared"]["sameas"] = "" 							-- Ship_Name to load if this is not unique		
+shipFiles["bshared"]["folder"] = "shipsounds/bshared/"		-- Folder to load ship sounds from
+
+-- The # of sounds for this command. If 0 or not set, loads from bshared folder. 
+-- These are ignored if 'sameas' (above) isn't blank
+shipFiles["bshared"]["COMMAND_MOVE"] = 2						-- 								-- Working
+shipFiles["bshared"]["COMMAND_WAYPOINT"] = 1					-- 								-- Working 
+shipFiles["bshared"]["COMMAND_MOVETOSOB"] = 1				-- Move to specific group 		-- not tested
+shipFiles["bshared"]["COMMAND_CANCELLED"] = 0	--nw		-- 								-- Not working
+shipFiles["bshared"]["COMMAND_ATTACK_CANCELLED"] = 0			-- 								-- Working
+shipFiles["bshared"]["COMMAND_MOVE_CANCELLED"] = 1			-- 								-- Working
+shipFiles["bshared"]["COMMAND_RESOURCESALVAGE"] = 0			-- Debris/container				-- working
+shipFiles["bshared"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 0	-- Asteroid harvest				-- working
+shipFiles["bshared"]["COMMAND_CAPTURE"] = 0					-- Marine/infiltrate/worker 	-- working
+shipFiles["bshared"]["COMMAND_ATTACK"] = 3					-- 								-- Working
+shipFiles["bshared"]["COMMAND_HS"] = 0						-- Entering hyperspace 			-- working
+shipFiles["bshared"]["COMMAND_HS_INHIBITOR_DETECTED"] = 0 	-- interrupted by inhibitor 	-- not tested
+shipFiles["bshared"]["COMMAND_HS_INTERRUPTED"] = 0 			-- Interrupted					-- not tested
+shipFiles["bshared"]["COMMAND_HS_GATE"] = 0 					-- entering HS gate				-- not tested
+shipFiles["bshared"]["COMMAND_HS_INSUFFICIENT"] = 0 			-- Not enough cash				-- not tested
+shipFiles["bshared"]["COMMAND_COMBATMAN"] = 0				-- Not sure what this is		-- working
+shipFiles["bshared"]["COMMAND_MOVEATTACK"] = 1				--								-- working
+shipFiles["bshared"]["COMMAND_LAUNCH"] = 0					-- Per launching ship			-- working
+shipFiles["bshared"]["COMMAND_GUARD"] = 0					--								-- working
+shipFiles["bshared"]["COMMAND_DOCK"] = 2						--								-- working
+--shipFiles["bshared"]["COMMAND_PARADE"] = 1					--			REMOVED			
+shipFiles["bshared"]["COMMAND_RETIRE"] = 0					--								-- working
+shipFiles["bshared"]["COMMAND_AGGRESSIVE"] = 0				--								-- working							
+shipFiles["bshared"]["COMMAND_DEFENSIVE"] = 0				--								-- not tested
+shipFiles["bshared"]["COMMAND_PASSIVE"] = 0					--								-- working
+shipFiles["bshared"]["COMMAND_RANGESHORT"] = 0				-- Don't know what these are  	-- not tested
+shipFiles["bshared"]["COMMAND_RANGEMED"] = 0					--								-- not tested
+shipFiles["bshared"]["COMMAND_RANGELONG"] = 0				--								-- not tested
+shipFiles["bshared"]["COMMAND_RANGEFORCE"] = 0				--								-- not tested
+shipFiles["bshared"]["COMMAND_REPAIR"] = 0					--								-- not working
+shipFiles["bshared"]["COMMAND_SELECTED"] = 2					--								-- working
+
+--NEW: Apr 18,2015
+shipFiles["bshared"]["COMMAND_BUILD"] = 0					-- by parent ship				-- working
+shipFiles["bshared"]["COMMAND_BUILD_PAUSED"] = 0												-- not tested
+shipFiles["bshared"]["COMMAND_FOLLOWING"] = 0												-- not tested
+shipFiles["bshared"]["COMMAND_STRIKEGROUP_FORM_RESPONSE"] = 0								-- not tested
+shipFiles["bshared"]["COMMAND_STRIKEGROUP_FORMATIONSET"] = 0									-- not tested
+shipFiles["bshared"]["COMMAND_STRIKEGROUP_DISBAND"] = 0										-- not tested
+shipFiles["bshared"]["COMMAND_DEFENSEFIELDON"] = 0											-- not tested
+shipFiles["bshared"]["COMMAND_DEFENSEFIELDOFF"] = 0											-- not tested
+shipFiles["bshared"]["COMMAND_DEFENCEFIELDOUTOFPOWER"] = 0									-- not tested
+shipFiles["bshared"]["COMMAND_HS_EXIT"] = 0													-- not working
+shipFiles["bshared"]["COMMAND_HS_GATEFORMED"] = 0											-- not tested
+shipFiles["bshared"]["COMMAND_ATTACK_FRIENDLY"] = 0			-- not tested
+
+--NEW: FEB 2016
+shipFiles["bshared"]["COMMAND_CONSTRUCTION_COMPLETED"] = 0
+
+-- The following sound files will be loaded, but not specific to a certain ship (leave in the KuunLan folder)
+--"COMMAND_AllianceRequested_1"
+--"COMMAND_AllianceFormed_1"
+--"COMMAND_AllianceBroken_1"
+--"COMMAND_RUs_Transferred"
+--"COMMAND_Ships_Transferred"
+--"COMMAND_SelectGroup" (add 01, 02 -> 10 to the end for that group number)
+--"COMMAND_GROUP_Assigned_" (add 01, 02 -> 10 to the end for that group number)
+--"STATUS_HotkeyGroup_Added_0"..groupNumber.."_2" or "STATUS_HotkeyGroup_Added_20_2" for group 10 for some reason...
+														
 							
 							
 shipFiles["Hgn_Smt_ms"] = {}
@@ -381,11 +449,158 @@ shipFiles["Hgn_Smt_scout"]["COMMAND_MOVE_CANCELLED"] = 1
 shipFiles["Hgn_Smt_scout"]["COMMAND_ATTACK_CANCELLED"] = 1
 shipFiles["Hgn_Smt_scout"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
 shipFiles["Hgn_Smt_scout"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_scout"]["COMMAND_ATTACK"] = 3
+shipFiles["Hgn_Smt_scout"]["COMMAND_ATTACK"] = 4
 shipFiles["Hgn_Smt_scout"]["COMMAND_HS"] = 1
 shipFiles["Hgn_Smt_scout"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
 shipFiles["Hgn_Smt_scout"]["COMMAND_SELECTED"] = 2
 shipFiles["Hgn_Smt_scout"]["COMMAND_DOCK"] = 2
+
+
+shipFiles["Bst_scout"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_scout"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_scout"]["folder"] = "shipsounds/bst_scout/"
+shipFiles["Bst_scout"]["COMMAND_MOVE"] = 2
+shipFiles["Bst_scout"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_scout"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_scout"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Bst_scout"]["COMMAND_ATTACK"] = 1
+shipFiles["Bst_scout"]["COMMAND_SELECTED"] = 3
+
+
+shipFiles["Bst_acolyte"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_acolyte"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_acolyte"]["folder"] = "shipsounds/bst_acolyte/"
+shipFiles["Bst_acolyte"]["COMMAND_MOVE"] = 3
+shipFiles["Bst_acolyte"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_acolyte"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_acolyte"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Bst_acolyte"]["COMMAND_ATTACK"] = 2
+shipFiles["Bst_acolyte"]["COMMAND_CANCELLED"] = 1
+shipFiles["Bst_acolyte"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Bst_acolyte"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Bst_acolyte"]["COMMAND_SELECTED"] = 2
+
+
+shipFiles["Bst_fighter"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_fighter"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_fighter"]["folder"] = "shipsounds/bst_fighter/"
+shipFiles["Bst_fighter"]["COMMAND_MOVE"] = 2
+shipFiles["Bst_fighter"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_fighter"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_fighter"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Bst_fighter"]["COMMAND_ATTACK"] = 3
+shipFiles["Bst_fighter"]["COMMAND_CANCELLED"] = 1
+shipFiles["Bst_fighter"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Bst_fighter"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Bst_fighter"]["COMMAND_SELECTED"] = 2
+
+
+shipFiles["Bst_mothership"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_mothership"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_mothership"]["folder"] = "shipsounds/bst_mothership/"
+shipFiles["Bst_mothership"]["COMMAND_MOVE"] = 3
+shipFiles["Bst_mothership"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_mothership"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_mothership"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Bst_mothership"]["COMMAND_ATTACK"] = 2
+shipFiles["Bst_mothership"]["COMMAND_CANCELLED"] = 1
+shipFiles["Bst_mothership"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Bst_mothership"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Bst_mothership"]["COMMAND_SELECTED"] = 2
+
+shipFiles["Bst_MotherShip"] = {}
+shipFiles["Bst_MotherShip"]["sameas"] = "Bst_mothership"
+
+shipFiles["bst_mothership"] = {}
+shipFiles["bst_mothership"]["sameas"] = "Bst_mothership"
+
+
+shipFiles["Bst_multibeamfrigate"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_multibeamfrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_multibeamfrigate"]["folder"] = "shipsounds/bst_multibeamfrigate/"
+shipFiles["Bst_multibeamfrigate"]["COMMAND_MOVE"] = 1
+shipFiles["Bst_multibeamfrigate"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_multibeamfrigate"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_multibeamfrigate"]["COMMAND_MOVEATTACK"] = 0
+shipFiles["Bst_multibeamfrigate"]["COMMAND_ATTACK"] = 0
+shipFiles["Bst_multibeamfrigate"]["COMMAND_CANCELLED"] = 0
+shipFiles["Bst_multibeamfrigate"]["COMMAND_MOVE_CANCELLED"] = 0
+shipFiles["Bst_multibeamfrigate"]["COMMAND_ATTACK_CANCELLED"] = 0
+shipFiles["Bst_multibeamfrigate"]["COMMAND_SELECTED"] = 2
+
+
+shipFiles["Bst_processor"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_processor"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_processor"]["folder"] = "shipsounds/bst_processor/"
+shipFiles["Bst_processor"]["COMMAND_MOVE"] = 1
+shipFiles["Bst_processor"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_processor"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_processor"]["COMMAND_MOVEATTACK"] = 0
+shipFiles["Bst_processor"]["COMMAND_ATTACK"] = 0
+shipFiles["Bst_processor"]["COMMAND_CANCELLED"] = 0
+shipFiles["Bst_processor"]["COMMAND_MOVE_CANCELLED"] = 0
+shipFiles["Bst_processor"]["COMMAND_ATTACK_CANCELLED"] = 0
+shipFiles["Bst_processor"]["COMMAND_SELECTED"] = 2
+
+
+shipFiles["Bst_smt_hivefrigate"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_smt_hivefrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_smt_hivefrigate"]["folder"] = "shipsounds/bst_smt_hivefrigate/"
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_MOVE"] = 1
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_ATTACK"] = 2
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_CANCELLED"] = 0
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_MOVE_CANCELLED"] = 0
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_ATTACK_CANCELLED"] = 0
+shipFiles["Bst_smt_hivefrigate"]["COMMAND_SELECTED"] = 2
+
+
+shipFiles["Bst_tdn_carrier"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_tdn_carrier"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_tdn_carrier"]["folder"] = "shipsounds/bst_tdn_carrier/"
+shipFiles["Bst_tdn_carrier"]["COMMAND_MOVE"] = 3
+shipFiles["Bst_tdn_carrier"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_tdn_carrier"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_tdn_carrier"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Bst_tdn_carrier"]["COMMAND_ATTACK"] = 1
+shipFiles["Bst_tdn_carrier"]["COMMAND_CANCELLED"] = 0
+shipFiles["Bst_tdn_carrier"]["COMMAND_MOVE_CANCELLED"] = 0
+shipFiles["Bst_tdn_carrier"]["COMMAND_ATTACK_CANCELLED"] = 0
+shipFiles["Bst_tdn_carrier"]["COMMAND_SELECTED"] = 2
+
+shipFiles["Bst_carrier"] = {}
+shipFiles["Bst_carrier"]["sameas"] = "Bst_tdn_carrier";
+
+shipFiles["bst_carrier"] = {}
+shipFiles["bst_carrier"]["sameas"] = "Bst_tdn_carrier";
+
+
+shipFiles["Bst_worker"] = {}
+-----------------------------------------------------		-- Specifics for this ship are here.
+shipFiles["Bst_worker"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Bst_worker"]["folder"] = "shipsounds/bst_worker/"
+shipFiles["Bst_worker"]["COMMAND_DOCK"] = 1
+shipFiles["Bst_worker"]["COMMAND_MOVE"] = 3
+shipFiles["Bst_worker"]["COMMAND_WAYPOINT"] = 1
+shipFiles["Bst_worker"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Bst_worker"]["COMMAND_CANCELLED"] = 1
+shipFiles["Bst_worker"]["COMMAND_MOVE_CANCELLED"] = 1
+shipFiles["Bst_worker"]["COMMAND_SELECTED"] = 3
+shipFiles["Bst_worker"]["COMMAND_RESOURCESALVAGE"] = 1
+shipFiles["Bst_worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 1
+
+shipFiles["bst_worker"] = {}
+shipFiles["bst_worker"]["sameas"] = "Bst_worker";
 
 
 --DefensefieldStatus types
@@ -457,12 +672,16 @@ Somtaaw = 11 --used to be 10, now 11?
 Beast = 10 -- used to be 12, now 10?
 
 function playSomtaawCommand(cmd, shipname, targetname)
+sharedship = 'shared'
+
 print("******** COMMAND: "..cmd.." RACE: "..currentRace.." SHIP: "..shipname)
 	if(currentRace ~= Somtaaw and currentRace ~= Beast) then
 		return 0
 	end
+	if(currentRace == Beast) then
+		sharedship = 'bshared'
+	end
 
-	
 	ship = shipname
 	if(shipFiles[shipname]) then		
 		if(shipFiles[shipname][cmd] and shipFiles[shipname][cmd] > 0) then -- If command is set for this ship
@@ -473,12 +692,12 @@ print("******** COMMAND: "..cmd.." RACE: "..currentRace.." SHIP: "..shipname)
 			end
 		end
 	else
-		shipname = 'shared'
+		shipname = sharedship
 	end
 	if(shipFiles[shipname][cmd] and shipFiles[shipname][cmd] > 0) then	-- If ship or sameas has command set
 		shipname = shipname
 	else
-		shipname = 'shared'
+		shipname = sharedship
 	end
 	
 	path = shipFiles[shipname]['folder'] .. cmd
@@ -490,6 +709,7 @@ print("******** COMMAND: "..cmd.." RACE: "..currentRace.." SHIP: "..shipname)
     playSpeechActor(COMMAND, raceHelper(), 0, Frequency_Command )
 	return 1
 end
+
 
 
 function getType(shipnm)

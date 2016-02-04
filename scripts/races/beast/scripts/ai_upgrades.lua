@@ -283,8 +283,8 @@ function DoResearchTechDemand_Beast()
 	ResearchDemandSet( BSTSUPERCAPITALSHIPDRIVE, 4 )
 	ResearchDemandSet( BSTCORVETTECHASSIS, 6 )
 	ResearchDemandSet( BSTCAPITALSHIPCHASSIS, 5 )	
-	ResearchDemandSet( BSTSHIPYARDBUILDSPEEDUPGRADE1, 6 )
-	ResearchDemandSet( BSTSHIPYARDBUILDSPEEDUPGRADE2, 6 )
+	--ResearchDemandSet( BSTSHIPYARDBUILDSPEEDUPGRADE1, 6 )
+	--ResearchDemandSet( BSTSHIPYARDBUILDSPEEDUPGRADE2, 6 )
 
 	if (Util_CheckResearch(BSTPLASMABOMBLAUNCHER)) then
 		local demand = ShipDemandGet(BST_ATTACKBOMBER)
@@ -298,13 +298,13 @@ function DoResearchTechDemand_Beast()
 			ResearchDemandSet( BSTFIGHTERCHASSIS, demand )
 		end
 	end
-	local numShipyards = NumSquadrons(kShipYard) + NumSquadronsQ(kShipYard)
-	if (numShipyards > 0 and Util_CheckResearch(BSTHEAVYGUNS)) then
-		local battleCruiserDemand = ShipDemandGet( BST_HEAVYCRUISER )
-		if (battleCruiserDemand > 0) then
-			ResearchDemandSet( BSTHEAVYGUNS, battleCruiserDemand )
-		end
-	end
+	--local numShipyards = NumSquadrons(kShipYard) + NumSquadronsQ(kShipYard)
+	--if (numShipyards > 0 and Util_CheckResearch(BSTHEAVYGUNS)) then
+	--	local battleCruiserDemand = ShipDemandGet( BST_HEAVYCRUISER )
+	--	if (battleCruiserDemand > 0) then
+	--		ResearchDemandSet( BSTHEAVYGUNS, battleCruiserDemand )
+	--	end
+	--end
 	if (Util_CheckResearch(BSTHEAVYCORVETTEUPGRADE)) then
 		local demand = ShipDemandGet(BST_HEAVYCORVETTE)
 		if (demand > 0) then

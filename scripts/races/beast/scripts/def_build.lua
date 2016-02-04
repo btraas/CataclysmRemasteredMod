@@ -295,24 +295,24 @@ build =
 		DisplayedName = "Turanic Ion Frigate",
 		Description = "<b>Description:</b> Subverted FireLance class ion frigate with one single forward-facing ion beam. A lethal weapon against capital ships.  \n\n<b>Strong Vs:</b> Frigates, Capital ships \n\n<b>Weak Vs:</b> Bombers, Destroyers & Battlecruisers \n\n<b>Prerequisites:</b> Capital Ship Chassis & Ion Cannon technology",
 	},
-	{
-		Type=Ship,
-		ThingToBuild="Bst_NomadMoon",
-		RequiredResearch="BSTNomadControl",
-		RequiredShipSubSystems="",
-		DisplayPriority=110,
-		DisplayedName="Nomad Moon",
-		Description="<b>Description:</b> Subverted Republic Taiidan Battle Station armed with powerful rapid fire ion beams.  \n\n<b>Strong Vs:</b> None \n\n<b>Prerequisites:</b> Nomad Control Research"
-	},
-	{
-		Type=Ship,
-		ThingToBuild="bst_prt_mothership",
-		RequiredResearch="BSThyperspaceTech",
-		RequiredShipSubSystems="",
-		DisplayPriority=111,
-		DisplayedName="Shipyard",
-		Description="<b>Description:</b> Subverted Turanic Mothership that serves as a shipyard for the beast team and can build all ships in the beast fleet.  \n\n<b>Strong Vs:</b> None \n\n<b>Prerequisites:</b> Capital Ship Drive & HyperSpace Tech"
-	},
+--	{
+--		Type=Ship,
+--		ThingToBuild="Bst_NomadMoon",
+--		RequiredResearch="BSTNomadControl",
+--		RequiredShipSubSystems="",
+--		DisplayPriority=110,
+--		DisplayedName="Nomad Moon",
+--		Description="<b>Description:</b> Subverted Republic Taiidan Battle Station armed with powerful rapid fire ion beams.  \n\n<b>Strong Vs:</b> None \n\n<b>Prerequisites:</b> Nomad Control Research"
+--	},
+--	{
+--		Type=Ship,
+--		ThingToBuild="bst_prt_mothership",
+--		RequiredResearch="BSThyperspaceTech",
+--		RequiredShipSubSystems="",
+--		DisplayPriority=111,
+--		DisplayedName="Shipyard",
+--		Description="<b>Description:</b> Subverted Turanic Mothership that serves as a shipyard for the beast team and can build all ships in the beast fleet.  \n\n<b>Strong Vs:</b> None \n\n<b>Prerequisites:</b> Capital Ship Drive & HyperSpace Tech"
+--	},
 	{
 		Type = Ship,
 		ThingToBuild = "Bst_Carrier",
