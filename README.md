@@ -14,6 +14,7 @@ Alternatively, the latest published version (.big file) can be found here: https
 4. Create second mod with new main menu layout - replace TRAINING with SINGLE PLAYER BETA
 5. Replace Hiigaran / Vaygr player setup with Somtaaw / Beast
 6. ~~Ensure badges are included~~
+7. Hotfix for last map Access Violation bug?
 
 **TODO singleplayer before 1.3 release:**
 
