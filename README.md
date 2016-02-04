@@ -8,12 +8,12 @@ Alternatively, the latest published version (.big file) can be found here: https
 
 **TODO before 1.3 release:**
 
-1. Restore Beast icons
+~~1. Restore Beast icons~~
 2. Update all buttons in game and out (to respond to hover and fix widths)
-3. Implement preliminary Beast speech
+~~3. Implement preliminary Beast speech~~
 4. Create second mod with new main menu layout - replace TRAINING with SINGLE PLAYER BETA
 5. Replace Hiigaran / Vaygr player setup with Somtaaw / Beast
-6. Ensure badges are included
+~~6. Ensure badges are included~~
 
 **TODO singleplayer before 1.3 release:**
 
