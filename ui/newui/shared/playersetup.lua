@@ -116,6 +116,29 @@ PlayerSetup = {
 							ignored = 1,				
 							--toggleButton = 1,
 							buttonStyle = "RM_TaskbarHD_MenuButtonStyle",
+							name = "somtaawPresetButton",
+										
+							helpTip = "$1100",
+							helpTipTextLabel = "commandsHelpTip",							
+
+							Layout = {
+								--pos_XY = { x = 256, y = 128, xr = "px", yr = "px" },
+								size_WH = { w = 128.0, h = 64.0, wr = "px", hr = "px" },
+								lockAspect = 2,
+								pivot_XY = {0.0, 0.0},
+							},
+
+							BackgroundGraphic = {
+								texture = "DATA:UI\\NewUI\\PlayerSetup\\preset_somtaaw.tga",
+								textureUV = { 0, 0, 256, 128 },
+								--color = { 0, 0, 0, 200 },
+							},
+						},
+						{
+							type = "ButtonHD",
+							ignored = 1,				
+							--toggleButton = 1,
+							buttonStyle = "RM_TaskbarHD_MenuButtonStyle",
 							name = "hiigaranPresetButton",
 										
 							helpTip = "$1100",
@@ -290,6 +313,80 @@ PlayerSetup = {
 					},
 					helpTipTextLabel = "helpTip",
 					helpTip = "$2793",
+				},
+				
+				-- Somtaaw ship preview
+				{
+					type = "Frame",
+					--position = {6, 71},
+					size = {500, 250},
+					name = "sshippreview",
+					visible = 0,
+					helpTipTextLabel = "helpTip",
+					helpTip = "$2793",
+					;
+					{
+						type = "Frame",
+						--position = {24, 42},
+						size = {500, 250},
+						BackgroundGraphic = {
+							size = {500, 250},
+							texture = "DATA:UI\\NewUI\\PlayerSetup\\sship_base.tga",
+							uvRect = { 0, 1, 1, 0 },
+							--textureUV = { 0, 0, 438, 116 },
+						},
+						giveParentMouseInput = 1,
+						;
+						{
+							type = "Frame",
+							--position = {0, 0},
+							size = {500, 250},
+							name = "sshipteamcolor",
+							BackgroundGraphic = {
+								size = {500, 250},
+								texture = "DATA:UI\\NewUI\\PlayerSetup\\sship_teamcolor.tga",
+								uvRect = { 0, 1, 1, 0 },
+								--textureUV = { 0, 0, 438, 116 },
+								color = { 118, 174, 207, 255 },
+							},
+							giveParentMouseInput = 1,
+							;
+							{
+								type = "Frame",
+								--position = {0, 0},
+								size = {500, 250},
+								name = "sshipstripecolor",
+								BackgroundGraphic = {
+									size = {500, 250},
+									texture = "DATA:UI\\NewUI\\PlayerSetup\\sship_stripecolor.tga",
+									--textureUV = { 0, 0, 438, 116 },
+									uvRect = { 0, 1, 1, 0 },
+								},
+								giveParentMouseInput = 1,
+							},
+							{
+								type = "Frame",
+								name = "vgr_emblem",
+								--position = {116, 14},
+								size = { 26, 26},
+								BackgroundGraphic = {
+									texture = "DATA:Badges/c-white.tga",
+									uvRect = {0.0,1.0,1.0,0.0},
+									color = { 255, 255, 255, 255},
+								},
+								giveParentMouseInput = 1,
+							},
+						},
+					},
+					--{
+					--	type = "Frame",
+					--	size = {500, 250},
+					--	BackgroundGraphic = {
+					--		texture = "DATA:UI\\NewUI\\PlayerSetup\\vlabeltext.tga",
+					--		textureUV = { 0, 0, 486, 216 },
+					--	},
+					--	giveParentMouseInput = 1,
+					--},
 				},
 				----------Hiigaran
 				{
@@ -661,6 +758,17 @@ PlayerSetup = {
 								backgroundColor = {0,0,0,255},
 								width = 242,
 								;
+								-- Somtaaw
+								{
+									type = "TextListBoxItem",
+									buttonStyle = "FEListBoxItemButtonStyle",
+									resizeToListBox = 1,
+									Text = {
+										textStyle = "FEListBoxItemTextStyle",
+										text = "Somtaaw",
+									},	
+									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
+								},
 								-- Hiigaran
 								{
 									type = "TextListBoxItem",
@@ -670,7 +778,7 @@ PlayerSetup = {
 										textStyle = "FEListBoxItemTextStyle",
 										text = "$1100",
 									},
-									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
+									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
 								},
 								-- Vaygr
 								{
@@ -681,7 +789,7 @@ PlayerSetup = {
 										textStyle = "FEListBoxItemTextStyle",
 										text = "$1101",
 									},	
-									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
+									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
 								},
 								--Kushan
 								{
@@ -692,7 +800,7 @@ PlayerSetup = {
 										textStyle = "FEListBoxItemTextStyle",
 										text = "$1104",
 									},	
-									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
+									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
 								},
 								--Taiidan
 								{
@@ -703,7 +811,7 @@ PlayerSetup = {
 										textStyle = "FEListBoxItemTextStyle",
 										text = "$1105",
 									},	
-									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 1);";
+									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 1);";
 								},
 							},
 							helpTipTextLabel = "helpTip",
