@@ -8,6 +8,8 @@
 -- code hookup in subtitle.h
 
 
+
+
 ----------------------------------------------------------------------
 --addTheme(themeNumber, {colour}, fadeIn, fadeOut [, playerColour, bitmapBaseName, numBitmaps])
 
@@ -59,10 +61,10 @@ addTheme(24, {255,255,255}, 0.1, 0.1, 1,"HW1_KharSelim#.tga",1)
 
 addTheme(25, {255,255,255}, 0.1, 0.1, 1,"dreadnaught#.tga",1)  -- Dreadnaught icon
 
--- Generic open actor slots for modders
-addTheme(26, {255,255,255}, 0.1, 0.1, 0,"",0)
-addTheme(27, {255,255,255}, 0.1, 0.1, 0,"",0)
-addTheme(28, {200,160,255}, 0.1, 0.1, 0, "",0)
+-- Somtaaw
+addTheme(26, {255,255,255}, 0.1, 0.1, 0,"TacticalOfficer#.tga",1)
+addTheme(27, {255,255,255}, 0.1, 0.1, 0,"KuunLan#.tga",1)
+addTheme(28, {200,160,255}, 0.1, 0.1, 0, "Kiith_Nabaal#.tga",1)
 addTheme(29, {200,160,255}, 0.1, 0.1, 0, "",0)
 addTheme(30, {255,255,255}, 0.1, 0.1, 0, "",0)
 addTheme(31, {255,255,255}, 0.1, 0.1, 0, "",0)

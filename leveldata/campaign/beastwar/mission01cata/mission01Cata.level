@@ -7,7 +7,7 @@
 --=============================================================================
 
 function DetermChunk()
-	addSquadron("Hgn_smt_ms", "Hgn_smt_ms",	{0, 0, -2517},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("KuunLan", "Hgn_smt_ms",	{0, 0, -2517},	0, {0.000, 180.000, 0.000},0,0)
 	
 	addSquadron("Worker1", "Hgn_smt_worker", {-1000, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
 	addSquadron("Worker2", "Hgn_smt_worker", {-1150, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
@@ -193,7 +193,7 @@ function DetermChunk()
 	addSquadron("5prox8", "Kus_proximitysensor", {-15000, -10000, 19066},	2, {0.000, 180.000, 0.000},0,0)
 	addSquadron("5prox9", "Kus_proximitysensor", {-10000, -10000, 19058},	2, {0.000, 180.000, 0.000},0,0)
 	addSquadron("5prox10", "Kus_proximitysensor", {-5000, -10000, 19054},	2, {0.000, 180.000, 0.000},0,0)
-	addSquadron("5prox11", "Kus_proximitysensor", {0, -15000, 19052},	2, {0.000, 180.000, 0.000},0,0)
+	addSquadron("5prox11", "Kus_proximitysensor", {0, -10000, 19052},	2, {0.000, 180.000, 0.000},0,0)
 	addSquadron("5prox12", "Kus_proximitysensor", {5000, -10000, 19054},	2, {0.000, 180.000, 0.000},0,0)
 	addSquadron("5prox13", "Kus_proximitysensor", {10000, -10000, 19058},	2, {0.000, 180.000, 0.000},0,0)
 	addSquadron("5prox14", "Kus_proximitysensor", {15000, -10000, 19066},	2, {0.000, 180.000, 0.000},0,0)
@@ -302,7 +302,7 @@ function DetermChunk()
 	setWorldBoundsInner({0.00, 0.00, 0.00}, {30724.50, 30724.50, 30724.50})
 
 	createSOBGroup("Mothership")
-	addToSOBGroup("Hgn_MotherShip","Mothership")
+	addToSOBGroup("KuunLan","Mothership")
 
 	
 
@@ -1620,7 +1620,7 @@ player[0] = {
 	id = 0,
 	name = "",
 	resources = 0,
-	raceID = 1,
+	raceID = 11,
 	startPos = 0
 }
 
@@ -1628,7 +1628,7 @@ player[1] = {
 	id = 1,
 	name = "",
 	resources = 50000,
-	raceID = 1,
+	raceID = 5,
 	startPos = 0
 }
 
@@ -1636,7 +1636,7 @@ player[2] = {
 	id = 2,
 	name = "",
 	resources = 0,
-	raceID = 1,
+	raceID = 5,
 	startPos = 0
 }
 
@@ -1644,7 +1644,7 @@ player[3] = {
 	id = 3,
 	name = "",
 	resources = 50000,
-	raceID = 2,
+	raceID = 6,
 	startPos = 0
 }
 

@@ -649,7 +649,6 @@ Frequency_Status = 2.0
 Frequency_Chatter = 5.0
 
 function raceHelper()
-	
 	if (currentRace == Vaygr) then
 		return NameMakaan
 	elseif (currentRace == Taiidan) then
@@ -663,6 +662,8 @@ function raceHelper()
 	end
 end
 
+currentRace = 11;
+
 -- Race IDs
 --Hiigaran = 11
 Hiigaran = 1
@@ -674,6 +675,14 @@ Beast = 10 -- used to be 12, now 10?
 function playSomtaawCommand(cmd, shipname, targetname)
 sharedship = 'shared'
 
+-- Hackhack fix for campaign
+if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
+	currentRace = Somtaaw
+end
+if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
+	currentRace = Beast
+end
+	
 print("******** COMMAND: "..cmd.." RACE: "..currentRace.." SHIP: "..shipname)
 	if(currentRace ~= Somtaaw and currentRace ~= Beast) then
 		return 0

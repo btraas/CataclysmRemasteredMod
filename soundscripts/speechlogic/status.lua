@@ -307,7 +307,16 @@ statusFiles["STRIKE"]["STATUS_UNDERATTACK"] = 1
 statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
 
 function playSomtaawStatus(status, shipname, targetname)
-	if(currentRace ~= Somtaaw) then
+
+-- Hackhack fix for campaign
+if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
+	currentRace = Somtaaw
+end
+if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
+	currentRace = Beast
+end
+
+	if(currentRace ~= Somtaaw and currentRace ~= Beast) then
 		return
 	end
 	if(status) then

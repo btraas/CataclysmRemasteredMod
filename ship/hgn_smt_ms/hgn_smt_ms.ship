@@ -1,7 +1,7 @@
 -- Cold Fusion LUA Decompiler v1.0.0
 -- By 4E534B
 -- Date: 10-13-1998 Time: 09:11:40
--- On error(s), send source (compiled) file to 4E534B@gmail.com
+-- On error(s), send source (compiled) file to 4E534B@gmail.com weapons crew target taht ship
 
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Kuun-Lan Command Ship";
@@ -20,17 +20,17 @@ NewShipType["SquadronSize"]=1;
 NewShipType["passiveFormation"]="Spear";
 NewShipType["defensiveFormation"]="x";
 NewShipType["aggressiveFormation"]="Claw";
-NewShipType["mass"]=2000;
+NewShipType["mass"]=200; --2000
 NewShipType["collisionMultiplier"]=1;
-NewShipType["thrusterMaxSpeed"]=55;
-NewShipType["mainEngineMaxSpeed"]=55;
-NewShipType["rotationMaxSpeed"]=8;
-NewShipType["thrusterAccelTime"]=6;
-NewShipType["thrusterBrakeTime"]=2;
-NewShipType["mainEngineAccelTime"]=6;
-NewShipType["mainEngineBrakeTime"]=2;
-NewShipType["rotationAccelTime"]=0.5;
-NewShipType["rotationBrakeTime"]=0.3;
+NewShipType["thrusterMaxSpeed"]=555; --55
+NewShipType["mainEngineMaxSpeed"]=555; --55
+NewShipType["rotationMaxSpeed"]=80; --8
+NewShipType["thrusterAccelTime"]=66; --6
+NewShipType["thrusterBrakeTime"]=22; --2
+NewShipType["mainEngineAccelTime"]=66;
+NewShipType["mainEngineBrakeTime"]=22;
+NewShipType["rotationAccelTime"]=5; --.5
+NewShipType["rotationBrakeTime"]=3; --.3
 NewShipType["thrusterUsage"]=1;
 NewShipType["accelerationAngle"]=30;
 NewShipType["mirrorAngle"]=0;

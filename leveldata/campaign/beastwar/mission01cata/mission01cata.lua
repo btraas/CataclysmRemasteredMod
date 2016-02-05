@@ -1,10 +1,17 @@
 --  SCAR SCRIPT  ------------------------------------------------------------------------------
---  Name: M01_Tanis
---  Purpose:  Mission 1 Mission Script
+--  Name: Mission01cata.lua
+--  Purpose:  Cata Mission 1 Mission Script
 ----------------------------------------------------------------------------------------------------
 -- import library files
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
+
+SOUND_PATH = "data:sound/speech/missions/mission01cata/"
+Actor_TacticalOfficer = 26
+Actor_KuunLan = 27
+Actor_Kiith_Nabaal = 28
+
+firelancefrigs = "Defend the Frigates"
 
 
 nbl_int_buffer = 0
@@ -29,6 +36,11 @@ function Rule_PlaySaveGameLocationCard()
 	Rule_Remove ("Rule_PlaySaveGameLocationCard")
 end
 
+function playSpeech(file)
+	print("playing file: "..SOUND_PATH..file)
+	Sound_SpeechPlay(SOUND_PATH..file)
+end
+
 -- this function must be here - this is the mission start point
 function OnInit()
 	SPRestrict()
@@ -40,14 +52,14 @@ end
 
 function Rule_Init()
 	Rule_Remove( "Rule_Init" )
-	Rule_PlayerLose()
+	--Rule_PlayerLose()
 	-- set the sound directory
-	Sound_SpeechSubtitlePath("speech:missions/m_01/")
+	Sound_SpeechSubtitlePath("speech:missions/mission01cata/")
 	
 	-- haha I wish... currentRace = 11;
 	
 	-- set the names of the players
-	Player_SetPlayerName(0,"Kiith Somtaaw")
+	--Player_SetPlayerName(0,"Kiith Somtaaw")
 	Player_SetPlayerName(1,"Kiith Nabaal")
 	Player_SetPlayerName(2,"Hiigaran Defense Fleet")
 	Player_SetPlayerName(3,"Taiidani Imperial Fleet")
@@ -99,7 +111,7 @@ function Rule_Init()
 	
 	--Event_Start( "intelevent_intro" )	
 	
-	Sound_MusicPlay("Data:sound/music/Cbattle_02")
+	Sound_MusicPlay("Data:sound/music/battle/Cbattle_02")
 --	Player_GrantResearchOption(0, "SMTFighterDrive") 
 	
 	
@@ -119,32 +131,24 @@ function Rule_Init()
 	--g_NISState = NISGetPlayingHandle("nis/NIS01A")
 	--NISDisableInterface(1) -- this disables the interface when the NIS is done playing, it needs to be re-enabled by scar
 	
+--	print("hw1 Fleet command: "..HW1_FleetCommand)
 	playEvent()
 	
 	Rule_Remove( "Rule_Init" )	
 	
-	Rule_Add( "Rule_PlayerWins" )
-	Rule_Add( "Rule_PlayerLose" )	
+	--Rule_Add( "Rule_PlayerWins" )
+	--Rule_Add( "Rule_PlayerLose" )	
 	
-	--Player_UnrestrictBuildOption( 0, 'Hgn_smt_acolyte' )
-	--Player_UnrestrictBuildOption( 0, 'Hgn_Smt_worker' )
-
-	--Player_UnrestrictBuildOption( 0, "Hgn_MS_Module_Research" ) --Hgn_MS_Module_Research
-	--Player_UnrestrictBuildOption( 0, "Hgn_smt_Scout" ) --Hgn_Scout
-	--Player_UnrestrictBuildOption( 0, "Hgn_ResourceCollector" ) --Hgn_ResourceCollector
-	--Player_UnrestrictBuildOption( 0, "Hgn_Probe" ) --Hgn_Probe
-	 -----RESEARCH DATA-----
---~ 	Player_UnrestrictResearchOption( 0, "MothershipHealthUpgrade1" ) --MothershipHealthUpgrade1
---~ 	Player_UnrestrictResearchOption( 0, "MothershipMAXSPEEDUpgrade1" ) --MothershipMAXSPEEDUpgrade1
---~ 	Player_UnrestrictResearchOption( 0, "InterceptorMAXSPEEDUpgrade1" ) --InterceptorMAXSPEEDUpgrade1
---~ 	Player_UnrestrictResearchOption( 0, "AttackBomberMAXSPEEDUpgrade1" ) --AttackBomberMAXSPEEDUpgrade1
---~ 	Player_UnrestrictResearchOption( 0, "ResourceCollectorHealthUpgrade1" ) --ResourceCollectorHealthUpgrade1
+	Player_UnrestrictBuildOption( 0, 'Hgn_smt_acolyte' )
+	Player_UnrestrictBuildOption( 0, 'Hgn_Smt_worker' )
 	
+	Camera_SetLetterboxStateNoUI(0,0)	
 end
 
 function playEvent()
-	--Event_Start( "intelevent_mothershipjumps" )
-	Event_Start( "intelevent_intro" )
+	Event_Start( "intelevent_mothershipjumps" )
+	--Event_Start( "intelevent_intro" )
+	--Event_Start( "start" )
 end
 function Rule_ReplaceNblInt()
 	if( SobGroup_Count(Player_GetShipsByType (1, "Kus_interceptor")) < nbl_int_buffer ) then
@@ -271,176 +275,102 @@ Events = {} -- the name of this table must always be Events - this is what the g
 
 -- this is the intro intelevent
 
-Events.intelevent_intro = 
+Events.start = 
 {
-
 	{
-		HW2_Wait( 2 ),
-	},
-	{
-		--{ "Camera_AllowControl(0)",""},
-		{ "Universe_AllowPlayerOrders( 0 )", "" },
-		{ "Universe_EnableSkip(1)", "" },
-		{ "Sound_EnterIntelEvent()","" },
-		{ "Sound_SetMuteActor('Fleet')", ""},
-		{ "Sensors_EnableCameraZoom( 0 )", "" },
-		{ "Sensors_Toggle( 0 )", "" },
-		{ "SobGroup_DeSelectAll()",""},
-		HW2_Wait( 1 ),
-		HW2_Letterbox( 1 ),
-	},
-}
-Events.intelevent_test =
-{	
-	{				
-		HW2_SubTitleEvent( Actor_FleetIntel, "$40530", 8 ),
-	},	
-	{
-		HW2_SubTitleEvent( Actor_FleetIntel, "$40531", 8 ),
-	},
-	{
-		HW2_Wait( 2 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40532", 3 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40533", 3 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40534", 5 ),
-	},
-	{
-		HW2_Wait( 2 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_Talorn, "$40535", 2 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_Talorn, "$40536", 3 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40537", 5 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40540", 5 ),
-	},
-	{
-		HW2_Wait( 2 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_Talorn, "$40541", 4 ),
-	},
-	{
-		HW2_Wait( 2 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_FleetIntel, "$40542", 4 ),
-	},
-	{
-		HW2_SubTitleEvent( Actor_FleetIntel, "$40543", 4 ),
-	},
-	{
-		{ "Camera_AllowControl(1)",""},
 		{ "Universe_AllowPlayerOrders( 1 )", "" },
+		{ "Sound_EnableAllSpeech(1)","" },
 		{ "Universe_EnableSkip(0)", "" },
+		{"EventPlaying = 0",""},
 		{ "Sound_ExitIntelEvent()","" },
-		{ "Sound_SetMuteActor('')", ""},
-		{ "Sensors_EnableCameraZoom( 1 )", "" },
-		{ "Sensors_Toggle( 0 )", "" },
 	}
-	
 }
 
 Events.intelevent_mothershipjumps  =
 {
 	{
-		{ "Camera_AllowControl(0)",""},
-		{ "Universe_AllowPlayerOrders( 0 )", "" },
-		{ "Universe_EnableSkip(1)", "" },
+		HW2_SubTitleEvent( Actor_KuunLan, "$1", 1),
+		HW2_SubTitleEvent( Actor_KuunLan, "Auto-launch set", 1),
+	},
+	{
 		{ "Sound_EnterIntelEvent()","" },
-		{ "Sound_SetMuteActor('Fleet')", ""},
-		{ "SobGroup_SetAutoLaunch('Mothership', ShipHoldStayDockedAlways)",""},		
-		{ "SobGroup_SetTactics('Player_Ships0', PassiveTactics)", "" },
-		{ "Sensors_EnableCameraZoom( 0 )", "" },
-		{ "Sensors_Toggle( 0 )", "" },
-		--{ "SetTOSettings( TO_NoATIAtAll )","" },
-		{ "SobGroup_DeSelectAll()",""},
-		HW2_Wait( 1 ),
+		
 		HW2_Letterbox( 1 ),
-	},
-	{				
-		HW2_SubTitleEvent( Actor_TacticalOfficer, "Tactical Officer Online. Full power to sensors, analyzing combat data now.", 8 ),
-		
-	},	
-	{
-		HW2_Wait( 1 ),
-	},
-	{			
-		{ "Camera_Interpolate( 'here', 'camera_mothershipHyperspace', 3)",""},
-		HW2_SubTitleEvent( Actor_FleetIntel, "$40631", 7 ),
-		{ "SobGroup_DockSobGroup( 'Player_Ships0', 'Mothership')","" },		
-	},
-	{
-		HW2_Wait( 10 ),
-	},
-	{
-		HW2_Wait( 12 ),
-		{ "g_vaygrexithyperspace = 1",""},
-		{ "Player_InstantlyGatherAllResources( 0 )", "" },
-	},
-	{						
-		{ "Camera_Interpolate( 'here', 'camera_focusOnVaygrAttacking', 3)",""},
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40632", 7 ),
-	},	
-	{
-		HW2_Wait( 8 ),
-	},
-	{
-		{ "Camera_Interpolate( 'here', 'camera_focusOnVaygrAttacking2', 0)",""},
-		HW2_Wait( 5 ),
-	},
-	{
-		--{ "SobGroup_TakeDamage( 'Tanis_Structure_1',1)",""},
 		HW2_Wait( 1 ),
 	},
 	{				
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40633", 7 ),
-	},
-	{
-		HW2_Wait( 1 ),
-	},
-	{		
-		HW2_SubTitleEvent( Actor_FleetCommand, "$40634", 7 ),
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "$2", 1),
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "Tactical Officer Online. Full power to sensors, analyzing combat data now.", 6 ), --tactical officer online
+		{ "Universe_EnableSkip(1)", "" },
+		{"Camera_UsePanning(1)",""},
 		
-		{ "Camera_Interpolate( 'here', 'camera_MSActuallyEntersHS', 0)",""},
-		{ "SobGroup_EnterHyperSpaceOffMap( 'Player_Ships0' )", "" },
-		HW2_Wait( 6 ),
 	},
 	{
-		{ "FX_StartEvent( 'Tanis', 'Pyro' )",""},
-		HW2_Wait( 3 ),
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "Command, we need to find out where we can do the most good.", 4 ),
 	},
 	{
-		{ "SobGroup_TakeDamage( 'Tanis_Structure_2',1)",""},
+		HW2_SubTitleEvent( Actor_KuunLan, "$3", 15 ), --understood tactical
+		HW2_SubTitleEvent( Actor_KuunLan, "Understood, tactical. Attention carrier Veer-Rak!", 3 ),
+	},
+	{
+		HW2_SubTitleEvent( Actor_KuunLan, "This is Kiith Somtaaw mining vessel Kuun-Lan.", 3 ),
+	},
+	{
+		HW2_SubTitleEvent( Actor_KuunLan, "We have arrived in sector 112 and request targeting data.", 4 ),
+	},	
+	{
+		HW2_Wait( 4 ),
+	},
+	{
+		HW2_SubTitleEvent( Actor_Kiith_Nabaal, "$4", 5 ), --Good to have you...
+		HW2_SubTitleEvent( Actor_Kiith_Nabaal, "Good to have you, Kuun-Lan.", 2 ),
+	},
+	{
+		HW2_SubTitleEvent( Actor_Kiith_Nabaal, "We've got a strike fleet needing cover in sector 109. Can you assist?", 5 ),
+	},
+	{
 		HW2_Wait( 1 ),
 	},
 	{
-		{ "Universe_Fade( 1, 2 )","" },
-		HW2_Wait( 3 ),
+		HW2_SubTitleEvent( Actor_KuunLan, "$5", 5 ), -- we'll send everything
+		HW2_SubTitleEvent( Actor_KuunLan, "We'll send everything we've got. But be advised, we are a mining vessel.", 3 ),
 	},
 	{
-		HW2_LocationCardEvent( "$40523", 4 ),
+		HW2_SubTitleEvent( Actor_KuunLan, "It would be best if we do not have to move directly into the main battle.", 5 ), -- we'll send everything
 	},
 	{
-		HW2_Wait( 2 ),
+		HW2_Wait( 1 ),
 	},
 	{
-		--{ "Sound_ExitIntelEvent()","" },
-		--{ "Universe_EnableSkip( 0 )", "" },
+		{ "Sensors_Toggle( 1 )",""},
+		HW2_Wait( 1 )
+	},
+	{
+		{"ping_firelacnefrigates_id  = HW2_PingCreateWithLabel( firelancefrigs, 'firelanceIons')",""},
+		--{"Ping_AddDescription(ping_shipyardcapture_id, 1, '$41416')",""},
+		HW2_SubTitleEvent( Actor_Kiith_Nabaal, "$6", 6 ),
+		HW2_SubTitleEvent( Actor_Kiith_Nabaal, "A strike wing of Firelance frigates are under attack from Taiidani Bombers at this position.", 6),
+	},
+	{
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "$7", 8 ),
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "Without fighter support, the frigates will be destroyed and that flank will collapse.", 5 ),
+	},
+	{
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "Send out a squad of acolyte fighters ASAP to assist the frigates.", 3 ),
+	},
+	{
+		HW2_Wait( 1 ),
+	},
+	
+	
+	{
+		{ "Sound_ExitIntelEvent()","" },
+		HW2_Letterbox( 0 ),
+		{ "Sensors_Toggle( 0 )",""},
+		{ "Universe_EnableSkip( 0 )", "" },
 		{ "Camera_AllowControl(1)",""},
 		--{ "ClearTOSettings()",""},
-		{ "setMissionComplete( 1 )","" },		
+	--	{ "setMissionComplete( 1 )","" },		
 	},
 }
 

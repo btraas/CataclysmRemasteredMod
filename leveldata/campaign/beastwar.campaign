@@ -17,7 +17,8 @@ Mission = { }   -- create a mission structure
 
 -- Mission 1 
 Mission[1] = {
-    postload        = function () playAnimatic("data:animatics/CataAnimatic01.lua", 1, 0); end,
+	--postload		= function () playAnimaticNis("data:animatics/CataAnimatic01.lua", "nis/NIS01A");  end,
+    postload        = function () playAnimatic("data:animatics/CataAnimatic01.lua", 0, 0) end,
 
     directory       = "Mission01cata",
     level           = "Mission01cata.level",
