@@ -191,6 +191,9 @@ shipFiles["Hgn_Smt_ms"]["COMMAND_BUILD_CANCELLED"] = 1
 shipFiles["Hgn_smt_ms"] = {};
 shipFiles["Hgn_smt_ms"]["sameas"] = "Hgn_Smt_ms";				-- catch-all for startingfleets
 
+shipFiles["Hgn_smt_ms_sp"] = {};
+shipFiles["Hgn_smt_ms_sp"]["sameas"] = "Hgn_Smt_ms";	
+
 
 shipFiles["Hgn_Smt_Carrier"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.

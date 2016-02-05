@@ -4,8 +4,8 @@
 -- On error(s), send source (compiled) file to 4E534B@gmail.com
 
 NewSubSystemType=StartSubSystemConfig();
-NewSubSystemType["displayedName"]="$2034";
-NewSubSystemType["sobDescription"]="$2035";
+NewSubSystemType["displayedName"]="";--"$2034";
+NewSubSystemType["sobDescription"]="";--"$2035";
 NewSubSystemType["tacticalIcon"]="hexagon";
 NewSubSystemType["tacticalIconMinSize"]=0.0035;
 NewSubSystemType["tacticalIconMinFadeSize"]=0.0045;
@@ -23,7 +23,7 @@ NewSubSystemType["meshRenderLimit"]=0.004;
 NewSubSystemType["minimumZoomFactor"]=0.68;
 NewSubSystemType["selectionLimit"]=5000;
 NewSubSystemType["preciseATILimit"]=5000;
-NewSubSystemType["selectionPriority"]=37.5;
+NewSubSystemType["selectionPriority"]=0;
 NewSubSystemType["type"]="System";
 NewSubSystemType["typeString"]="HyperspaceInhibitor";
 NewSubSystemType["collateralDamage"]=100;
@@ -34,11 +34,11 @@ NewSubSystemType["timeToBuild"]=60;
 NewSubSystemType["isResearch"]=0;
 NewSubSystemType["visible"]=1;
 LoadHODFile(NewSubSystemType, 1);
-NewSubSystemType["BuildFamily"]="SubSystem_Smt";
+--NewSubSystemType["BuildFamily"]="SubSystem_Smt";
 NewSubSystemType["AttackFamily"]="SubSystem";
 NewSubSystemType["DockFamily"]="CantDock";
 NewSubSystemType["DisplayFamily"]="SubSystemModule";
 NewSubSystemType["ArmourFamily"]="Unarmoured";
-AddSubSystemAbility(NewSubSystemType, "HyperspaceInhibitor", 1, "ThisShipOnly", 0);
+--AddSubSystemAbility(NewSubSystemType, "HyperspaceInhibitor", 1, "ThisShipOnly", 0);
 loadShipPatchList(NewSubSystemType, "data:sound/sfx/ship/Hiigaran/Subsystems/", 1, "HASubsystemHyperspaceInhibitAmb");
 

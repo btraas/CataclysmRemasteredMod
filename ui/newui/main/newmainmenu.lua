@@ -153,7 +153,11 @@ NewMainMenu = {
 					type = "Frame",
 					size = {200, 4},
 				},	
-				MPButton(),
+				NewMenuButton("btnMultiplayer",		"MULTIPLAYER",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	"UI_ShowScreen('BetaPopupScreen', eTransition);"),
+				{
+					type = "Frame",
+					size = {200, 4},
+				},
 				NewMenuButton("btnProfile",		"PROFILE",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	[[UI_SetNextScreen("UserProfile", "NewMainMenu");UI_SetPreviousScreen("UserProfile", "NewMainMenu");UI_ShowScreen("UserProfile", eTransition);]]),
 				{
 					type = "Frame",

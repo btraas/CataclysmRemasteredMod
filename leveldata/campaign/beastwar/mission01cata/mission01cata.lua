@@ -91,6 +91,8 @@ function Rule_Init()
 	SobGroup_SetMadState(Player_GetShipsByType(2, "kus_proximitysensor"), "open")
 	SobGroup_SetAsDeployed(Player_GetShipsByType(2, "kus_proximitysensor"))
 	
+	SobGroup_SetMadState(Player_GetShipsByType(0, "Hgn_smt_ms_sp"), "open")
+	
 	SobGroup_Attack(3, "firelanceAttackers", "firelanceIons")
 	
 	nbl_int_buffer = SobGroup_Count(Player_GetShipsByType(1, "Kus_interceptor"))

@@ -1,0 +1,36 @@
+﻿newmtl SWKcap
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd SWKcap_EXPORT[1]_DIFF.dds
+
+newmtl SMO_mothership_ribs
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd SMO_mothership_ribs_EXPORT[1]_DIFF.dds
+
+newmtl SMO_dock_sides_2
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd SMO_dock_sides_2_EXPORT[1]_DIFF.dds
+
+newmtl SMOsuprt
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd SMOsuprt_EXPORT[1]_DIFF.dds
+

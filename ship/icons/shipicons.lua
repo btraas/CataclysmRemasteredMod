@@ -147,6 +147,14 @@ Hgn_Smt_MS={
 	},
 };
 
+Hgn_Smt_MS_SP={
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
+		textureUV = { 1536, 768, 2048, 1024},
+		stretchOnDraw = 1,
+	},
+};
+
 Hgn_Smt_Worker={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",

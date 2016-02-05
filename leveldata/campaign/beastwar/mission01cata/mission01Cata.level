@@ -7,7 +7,7 @@
 --=============================================================================
 
 function DetermChunk()
-	addSquadron("KuunLan", "Hgn_smt_ms",	{0, 0, -2517},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("KuunLan", "Hgn_smt_ms_sp",	{0, 0, -2517},	0, {0.000, 180.000, 0.000},0,0)
 	
 	addSquadron("Worker1", "Hgn_smt_worker", {-1000, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
 	addSquadron("Worker2", "Hgn_smt_worker", {-1150, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)

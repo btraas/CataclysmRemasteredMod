@@ -1,0 +1,13 @@
+--=============================================================================
+--    Name    : Hgn_ResourceCollector.madStates
+--    Purpose : Animation state data.
+--
+--Created 250403 by cgladstone
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+
+-- TRY TO HAVE THIS RUN ALL THE TIME ---------------------------------------------------------
+
+HGN_SMT_MS_SP_Open_Onset = function(ship)
+	startAnim(ship, "Animation1")
+end
