@@ -138,16 +138,16 @@ NewMainMenu = {
 					type = "Frame",
 					size = {200, 20},
 				},		
---	NO ROOM!	NewMenuButton("btnTutorial",		"TRAINING",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
---				{
---					type = "Frame",
---					size = {200, 4},
---				},	
-				NewMenuButton("btnExtra",			"SINGLE PLAYER (INCOMPLETE)",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
+				NewMenuButton("btnTutorial",		"TRAINING",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
 				{
 					type = "Frame",
 					size = {200, 4},
-				},
+				},	
+--				NewMenuButton("btnExtra",			"SINGLE PLAYER (INCOMPLETE)",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
+--				{
+--					type = "Frame",
+--					size = {200, 4},
+--				},
 				NewMenuButton("btnPlayerVsCPU",		"SKIRMISH VS CPU",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
 				{
 					type = "Frame",
