@@ -665,7 +665,7 @@ function raceHelper()
 	end
 end
 
-currentRace = 11;
+--currentRace = 11;
 
 -- Race IDs
 --Hiigaran = 11

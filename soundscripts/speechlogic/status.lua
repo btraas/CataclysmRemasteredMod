@@ -44,7 +44,7 @@ Frequency_Chatter = 5.0
 
 function ChatterMisc(shipnm,parm2,code)
 
-	--print("******* ChatterMisc! shipnm="..shipnm..", parm2="..parm2..", code="..code)
+	print("******* ChatterMisc! shipnm="..shipnm..", parm2="..parm2..", code="..code)
 
 	shiptype = getType(shipnm)
 	
@@ -73,7 +73,7 @@ end
 
 function ChatterMiscHighPriority(shipnm,parm2,code)
 
-	--print("******* ChatterMiscHighPriority - shipnm="..shipnm..", parm2="..parm2..", code="..code)
+	print("******* ChatterMiscHighPriority - shipnm="..shipnm..", parm2="..parm2..", code="..code)
 
 	shiptype = getType(shipnm)
 	
