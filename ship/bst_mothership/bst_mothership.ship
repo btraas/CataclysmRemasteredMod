@@ -6,7 +6,11 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Command Ship"
 NewShipType.sobDescription = "Beast Mothership"
-NewShipType.maxhealth = 810000
+--if (getGameRubric(NewShipType) == GR_MULTIPLAYER or getGameRubric(NewShipType) == GR_SINGLEPLAYER_SKIRMISH) then
+	NewShipType.maxhealth = 150000
+--else
+--	NewShipType.maxhealth = 500000 --810000
+--end
 NewShipType["regentime"]=2000;
 NewShipType["minRegenTime"]=2000;
 NewShipType.sideArmourDamage = 1

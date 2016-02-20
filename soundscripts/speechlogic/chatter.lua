@@ -191,6 +191,7 @@ NameSupportPilot = "Support_"
 NameFleetCommand = "Fleet"
 NameMakaan = "Makaan"
 NameKuunLan = "KuunLan"
+NameBeast = "Beast"
 
 ChatterEvents = 
 {

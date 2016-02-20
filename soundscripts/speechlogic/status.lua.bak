@@ -263,7 +263,7 @@ statusFiles["shared"]["STATUS_ARRIVED"] = 0		-- HW2 used this for probes
 -- CR CSF -- statusFiles["shared"]["STATUS_RETALIATE_AGGRESSIVE"] = 1
 -- CR CSF -- statusFiles["shared"]["STATUS_RETALIATE_DEFENSIVE"] = 1
 -- CR CSF -- statusFiles["shared"]["STATUS_RETALIATE_PASSIVE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
+statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
 -- CR CSF -- statusFiles["shared"]["STATUS_UNDERATTACK_NEEDOREDERS"] = 1
 -- CR CSF -- statusFiles["shared"]["STATUS_ATTACKCOMPLETE"] = 1
 -- CR CSF -- statusFiles["shared"]["STATUS_STARTEDREPAIRS"] = 1
@@ -301,10 +301,10 @@ statusFiles["shared"]["STATUS_ARRIVED"] = 0		-- HW2 used this for probes
 
 
 
--- Need HGN_SMT otherwise we don't know what race?
-statusFiles["HGN_SMT_STRIKE"] = {} -- STRIKE GROUPS
-statusFiles["HGN_SMT_STRIKE"]["folder"] = "shipsounds/strike/"
-statusFiles["HGN_SMT_STRIKE"]["STATUS_UNDERATTACK"] = 0
+
+statusFiles["STRIKE"] = {} -- STRIKE GROUPS
+statusFiles["STRIKE"]["folder"] = "shipsounds/strike/"
+statusFiles["STRIKE"]["STATUS_UNDERATTACK"] = 1
 -- CR CSF -- statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
 
 function playSomtaawStatus(status, shipname, targetname)

@@ -56,13 +56,13 @@ shipFiles["shared"]["COMMAND_ATTACK"] = 4					-- 								-- Working
 -- CR CSF -- shipFiles["shared"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is		-- working
 shipFiles["shared"]["COMMAND_MOVEATTACK"] = 1				--								-- working
 -- CR CSF -- shipFiles["shared"]["COMMAND_LAUNCH"] = 1					-- Per launching ship			-- working
--- CR CSF -- shipFiles["shared"]["COMMAND_GUARD"] = 1
-shipFiles["shared"]["COMMAND_DOCK"] = 3
---shipFiles["shared"]["COMMAND_PARADE"] = 1					
--- CR CSF -- shipFiles["shared"]["COMMAND_RETIRE"] = 1		
-shipFiles["shared"]["COMMAND_AGGRESSIVE"] = 2		
--- CR CSF -- shipFiles["shared"]["COMMAND_DEFENSIVE"] = 1
-shipFiles["shared"]["COMMAND_PASSIVE"] = 3
+-- CR CSF -- shipFiles["shared"]["COMMAND_GUARD"] = 1					--								-- working
+shipFiles["shared"]["COMMAND_DOCK"] = 1						--								-- working
+--shipFiles["shared"]["COMMAND_PARADE"] = 1					--			REMOVED			
+-- CR CSF -- shipFiles["shared"]["COMMAND_RETIRE"] = 1					--								-- working
+shipFiles["shared"]["COMMAND_AGGRESSIVE"] = 1				--								-- working							
+-- CR CSF -- shipFiles["shared"]["COMMAND_DEFENSIVE"] = 1				--								-- not tested
+shipFiles["shared"]["COMMAND_PASSIVE"] = 1					--								-- working
 -- CR CSF -- shipFiles["shared"]["COMMAND_RANGESHORT"] = 1				-- Don't know what these are  	-- not tested
 -- CR CSF -- shipFiles["shared"]["COMMAND_RANGEMED"] = 1					--								-- not tested
 -- CR CSF -- shipFiles["shared"]["COMMAND_RANGELONG"] = 1				--								-- not tested
@@ -107,7 +107,7 @@ shipFiles["bshared"]["folder"] = "shipsounds/bshared/"		-- Folder to load ship s
 
 -- The # of sounds for this command. If 0 or not set, loads from bshared folder. 
 -- These are ignored if 'sameas' (above) isn't blank
-shipFiles["bshared"]["COMMAND_MOVE"] = 3
+shipFiles["bshared"]["COMMAND_MOVE"] = 2						-- 								-- Working
 shipFiles["bshared"]["COMMAND_WAYPOINT"] = 1					-- 								-- Working 
 shipFiles["bshared"]["COMMAND_MOVETOSOB"] = 1				-- Move to specific group 		-- not tested
 shipFiles["bshared"]["COMMAND_CANCELLED"] = 0	--nw		-- 								-- Not working
@@ -178,7 +178,7 @@ shipFiles["Hgn_Smt_ms"]["COMMAND_WAYPOINT"] = 1
 shipFiles["Hgn_Smt_ms"]["COMMAND_CANCELLED"] = 1
 shipFiles["Hgn_Smt_ms"]["COMMAND_ATTACK_CANCELLED"] = 1
 shipFiles["Hgn_Smt_ms"]["COMMAND_MOVE_CANCELLED"] = 1
---shipFiles["Hgn_Smt_ms"]["COMMAND_ATTACK"] = 4
+shipFiles["Hgn_Smt_ms"]["COMMAND_ATTACK"] = 4
 shipFiles["Hgn_Smt_ms"]["COMMAND_HS"] = 4
 shipFiles["Hgn_Smt_ms"]["COMMAND_HSexit"] = 2
 -- CR CSF -- shipFiles["Hgn_Smt_ms"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
@@ -259,7 +259,7 @@ shipFiles["Hgn_Smt_Worker"]["COMMAND_SELECTED"] = 2
 -- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container
 shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 3	-- Asteroid harvest
 shipFiles["Hgn_Smt_Worker"]["COMMAND_CAPTURE"] = 3					-- Marine/infiltrate/worker
-shipFiles["Hgn_Smt_Worker"]["COMMAND_REPAIR"] = 3
+shipFiles["Hgn_Smt_Worker"]["COMMAND_REPAIR"] = 1
 shipFiles["Hgn_Smt_Worker"]["COMMAND_DOCK"] = 2
 
 shipFiles["Hgn_smt_worker"] = {};
@@ -279,14 +279,14 @@ shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVE"] = 4
 -- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_WAYPOINT"] = 1
 -- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVETOSOB"] = 1
 -- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVE_CANCELLED"] = 2
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVE_CANCELLED"] = 1
 -- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_ATTACK_CANCELLED"] = 1
 -- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
 shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVEATTACK"] = 1
 shipFiles["Hgn_Smt_dreadnought"]["COMMAND_ATTACK"] = 3
 -- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_HS"] = 1
 -- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_dreadnought"]["COMMAND_SELECTED"] = 4
+shipFiles["Hgn_Smt_dreadnought"]["COMMAND_SELECTED"] = 1
 
 
 shipFiles["Hgn_Smt_destroyer"] = {}

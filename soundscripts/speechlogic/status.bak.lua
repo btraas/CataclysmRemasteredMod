@@ -251,48 +251,48 @@ statusFiles = {}
 
 statusFiles["shared"] = {}
 statusFiles["shared"]["folder"] = "shipsounds/shared/" 
--- CR CSF -- statusFiles["shared"]["STATUS_UNDERATTACK"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_CAPTURE_SUCCESS"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_CAPTURE_CAPFULL"] = 1
+statusFiles["shared"]["STATUS_UNDERATTACK"] = 1
+statusFiles["shared"]["STATUS_CAPTURE_SUCCESS"] = 1
+statusFiles["shared"]["STATUS_CAPTURE_CAPFULL"] = 1
 statusFiles["shared"]["STATUS_CAPTURE_50PERCENT"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_CAPTURE_BEGIN"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_ENEMYCAPTURE_BEGIN"] = 1
+statusFiles["shared"]["STATUS_CAPTURE_BEGIN"] = 1
+statusFiles["shared"]["STATUS_ENEMYCAPTURE_BEGIN"] = 1
 statusFiles["shared"]["STATUS_ARRIVED"] = 0		-- HW2 used this for probes
--- CR CSF -- statusFiles["shared"]["STATUS_ENEMY_HS_EMERGING"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_ENEMY_SPOTTED"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RETALIATE_AGGRESSIVE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RETALIATE_DEFENSIVE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RETALIATE_PASSIVE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_UNDERATTACK_NEEDOREDERS"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_ATTACKCOMPLETE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_STARTEDREPAIRS"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_COMPLETEDREPAIRS"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_DESTROYED"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_DOCKED"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_LIGHTDAMAGE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_HEAVYDAMAGE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_DAMAGED"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_CRITICALDAMAGE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RESOURCES_EXHAUSTED_MOVINGON"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RESOURCES_EXHAUSTED_IDLE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RESOURCES_ENEMIES_DETECTED"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RESOURCES_IDLE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RESOURCES_TOOMANYCOLLECTORS"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_RESOURCES_NOMORERUS"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_BATTLE_ADVANTAGE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_BATTLE_WINNING"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_BATTLE_POSITIVE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_BATTLE_FAIR"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_BATTLE_NEGATIVE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_BATTLE_LOSING"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_BATTLE_DISADVANTAGE"] = 1
--- CR CSF -- statusFiles["shared"]["STATUS_HS_EXIT"] = 1
+statusFiles["shared"]["STATUS_ENEMY_HS_EMERGING"] = 1
+statusFiles["shared"]["STATUS_ENEMY_SPOTTED"] = 1
+statusFiles["shared"]["STATUS_RETALIATE_AGGRESSIVE"] = 1
+statusFiles["shared"]["STATUS_RETALIATE_DEFENSIVE"] = 1
+statusFiles["shared"]["STATUS_RETALIATE_PASSIVE"] = 1
+statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
+statusFiles["shared"]["STATUS_UNDERATTACK_NEEDOREDERS"] = 1
+statusFiles["shared"]["STATUS_ATTACKCOMPLETE"] = 1
+statusFiles["shared"]["STATUS_STARTEDREPAIRS"] = 1
+statusFiles["shared"]["STATUS_COMPLETEDREPAIRS"] = 1
+statusFiles["shared"]["STATUS_DESTROYED"] = 1
+statusFiles["shared"]["STATUS_DOCKED"] = 1
+statusFiles["shared"]["STATUS_LIGHTDAMAGE"] = 1
+statusFiles["shared"]["STATUS_HEAVYDAMAGE"] = 1
+statusFiles["shared"]["STATUS_DAMAGED"] = 1
+statusFiles["shared"]["STATUS_CRITICALDAMAGE"] = 1
+statusFiles["shared"]["STATUS_RESOURCES_EXHAUSTED_MOVINGON"] = 1
+statusFiles["shared"]["STATUS_RESOURCES_EXHAUSTED_IDLE"] = 1
+statusFiles["shared"]["STATUS_RESOURCES_ENEMIES_DETECTED"] = 1
+statusFiles["shared"]["STATUS_RESOURCES_IDLE"] = 1
+statusFiles["shared"]["STATUS_RESOURCES_TOOMANYCOLLECTORS"] = 1
+statusFiles["shared"]["STATUS_RESOURCES_NOMORERUS"] = 1
+statusFiles["shared"]["STATUS_BATTLE_ADVANTAGE"] = 1
+statusFiles["shared"]["STATUS_BATTLE_WINNING"] = 1
+statusFiles["shared"]["STATUS_BATTLE_POSITIVE"] = 1
+statusFiles["shared"]["STATUS_BATTLE_FAIR"] = 1
+statusFiles["shared"]["STATUS_BATTLE_NEGATIVE"] = 1
+statusFiles["shared"]["STATUS_BATTLE_LOSING"] = 1
+statusFiles["shared"]["STATUS_BATTLE_DISADVANTAGE"] = 1
+statusFiles["shared"]["STATUS_HS_EXIT"] = 1
 
--- CR CSF -- statusFiles["shared"]["CHATTER_HITFROMBEHIND"] = 1
--- CR CSF -- statusFiles["shared"]["CHATTER_HITFROMTOPBOTTOM"] = 1
--- CR CSF -- statusFiles["shared"]["CHATTER_ONEMANSTANDING"] = 1
--- CR CSF -- statusFiles["shared"]["CHATTER_FIGHERCHASED"] = 1
+statusFiles["shared"]["CHATTER_HITFROMBEHIND"] = 1
+statusFiles["shared"]["CHATTER_HITFROMTOPBOTTOM"] = 1
+statusFiles["shared"]["CHATTER_ONEMANSTANDING"] = 1
+statusFiles["shared"]["CHATTER_FIGHERCHASED"] = 1
 
 -- group status & command in their appropriate KuunLan subfolders.
 -- didn't include target family captured (ie enemy destroyer captured)
@@ -301,11 +301,11 @@ statusFiles["shared"]["STATUS_ARRIVED"] = 0		-- HW2 used this for probes
 
 
 
--- Need HGN_SMT otherwise we don't know what race?
-statusFiles["HGN_SMT_STRIKE"] = {} -- STRIKE GROUPS
-statusFiles["HGN_SMT_STRIKE"]["folder"] = "shipsounds/strike/"
-statusFiles["HGN_SMT_STRIKE"]["STATUS_UNDERATTACK"] = 0
--- CR CSF -- statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
+
+statusFiles["STRIKE"] = {} -- STRIKE GROUPS
+statusFiles["STRIKE"]["folder"] = "shipsounds/strike/"
+statusFiles["STRIKE"]["STATUS_UNDERATTACK"] = 1
+statusFiles["shared"]["STATUS_INMINEFIELD"] = 1
 
 function playSomtaawStatus(status, shipname, targetname)
 
