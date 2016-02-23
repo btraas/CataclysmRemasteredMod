@@ -5,6 +5,7 @@
 -- import library files
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
+--dofilepath("data:scripts/ThoughtDump.lua")
 
 SOUND_PATH = "data:sound/speech/missions/mission01cata/"
 Actor_TacticalOfficer = 26
@@ -108,7 +109,7 @@ function Rule_Init()
 	Rule_Add("Rule_ReplaceTaiIon")
 	
 	
-	HW2_SetResearchLevel( 1 )
+	--HW2_SetResearchLevel( 1 )
 	Player_SetRU(0, 2000)
 	
 	--Event_Start( "intelevent_intro" )	
@@ -144,6 +145,9 @@ function Rule_Init()
 	Player_UnrestrictBuildOption( 0, 'Hgn_smt_acolyte' )
 	Player_UnrestrictBuildOption( 0, 'Hgn_Smt_worker' )
 	
+	Player_GrantResearchOption(0, "SMTFighterDrive" )
+	Player_GrantResearchOption(0, "SMTCapitalShipDrive" )
+	
 	Camera_SetLetterboxStateNoUI(0,0)	
 end
 
@@ -152,6 +156,9 @@ function playEvent()
 	--Event_Start( "intelevent_intro" )
 	--Event_Start( "start" )
 end
+
+-- {{{ Rules to keep Hiigaran / Taiidan main battle going
+
 function Rule_ReplaceNblInt()
 	if( SobGroup_Count(Player_GetShipsByType (1, "Kus_interceptor")) < nbl_int_buffer ) then
 		Rule_Remove("Rule_ReplaceNblInt")
@@ -230,6 +237,8 @@ function Rule_checkbuilt_TaiIon()
 		Rule_Add("Rule_ReplaceTaiIon")
 	end
 end
+
+-- }}} 
 
 -- if all objectives are complete.
 function Rule_PlayerWins()

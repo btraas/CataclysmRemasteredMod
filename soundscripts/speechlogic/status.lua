@@ -310,13 +310,13 @@ statusFiles["HGN_SMT_STRIKE"]["STATUS_UNDERATTACK"] = 0
 function playSomtaawStatus(status, shipname, targetname)
 
 -- Hackhack fix for campaign
-if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
-	currentRace = Somtaaw
-end
-if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
-	currentRace = Beast
-end
-
+--if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
+--	currentRace = Somtaaw
+--end
+--if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
+--	currentRace = Beast
+--end
+--
 	if(currentRace ~= Somtaaw) then -- removed beast for now...
 		return
 	end

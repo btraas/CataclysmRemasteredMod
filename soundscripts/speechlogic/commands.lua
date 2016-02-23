@@ -257,7 +257,7 @@ shipFiles["Hgn_Smt_Worker"]["COMMAND_MOVE_CANCELLED"] = 2
 -- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
 shipFiles["Hgn_Smt_Worker"]["COMMAND_SELECTED"] = 2
 -- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container
-shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 3	-- Asteroid harvest
+shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 4
 shipFiles["Hgn_Smt_Worker"]["COMMAND_CAPTURE"] = 3					-- Marine/infiltrate/worker
 shipFiles["Hgn_Smt_Worker"]["COMMAND_REPAIR"] = 3
 shipFiles["Hgn_Smt_Worker"]["COMMAND_DOCK"] = 2
@@ -680,12 +680,12 @@ function playSomtaawCommand(cmd, shipname, targetname)
 sharedship = 'shared'
 
 -- Hackhack fix for campaign
-if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
-	currentRace = Somtaaw
-end
-if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
-	currentRace = Beast
-end
+--if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
+--	currentRace = Somtaaw
+--end
+--if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
+--	currentRace = Beast
+--end
 	
 print("******** COMMAND: "..cmd.." RACE: "..currentRace.." SHIP: "..shipname)
 	if(currentRace ~= Somtaaw and currentRace ~= Beast) then

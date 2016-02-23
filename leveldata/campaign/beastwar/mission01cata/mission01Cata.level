@@ -8,7 +8,7 @@
 
 function DetermChunk()
 	addSquadron("KuunLan", "Hgn_smt_ms_sp",	{0, 0, -2517},	0, {0.000, 180.000, 0.000},0,0)
-	
+
 	addSquadron("Worker1", "Hgn_smt_worker", {-1000, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
 	addSquadron("Worker2", "Hgn_smt_worker", {-1150, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
 	
@@ -303,6 +303,7 @@ function DetermChunk()
 
 	createSOBGroup("Mothership")
 	addToSOBGroup("KuunLan","Mothership")
+
 
 	
 
@@ -1612,15 +1613,15 @@ end -- end of nondeterm function
 
 
 --HeaderInfo: max number of players allowed on this level
-maxPlayers = 4;
+maxPlayers = 4
 
 --PlayerInfo: info on each possible player in this level
 player = {};
 player[0] = {
 	id = 0,
-	name = "",
+	name = "Somtaaw",
 	resources = 0,
-	raceID = 11,
+	raceName = "Somtaaw",
 	startPos = 0
 }
 
@@ -1628,7 +1629,7 @@ player[1] = {
 	id = 1,
 	name = "",
 	resources = 50000,
-	raceID = 5,
+	raceName = "Kushan",
 	startPos = 0
 }
 
@@ -1636,7 +1637,7 @@ player[2] = {
 	id = 2,
 	name = "",
 	resources = 0,
-	raceID = 5,
+	raceName = "Kushan",
 	startPos = 0
 }
 
@@ -1644,7 +1645,7 @@ player[3] = {
 	id = 3,
 	name = "",
 	resources = 50000,
-	raceID = 6,
+	raceName = "Taiidan",
 	startPos = 0
 }
 
