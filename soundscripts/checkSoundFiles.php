@@ -8,26 +8,38 @@
 		WARNING! This will only work for declarations in the format: (shipFiles|statusFiles)["shipname"]["FILENAME_BEFORE_NUM"] = num
 		This will not check syntax, only check that the given files exist.
 	
-		1.1: Option --repair added... Will backup & attempt to comment out erroneous lines.
+		1.1: Option --repair added... Will backup & attempt to comment out erroneous lines
+		1.2: Option --fixlua added... Will create lua files for any audio file that doens't have one already.
 	*/
 
-	$VERSION = 1.1;
+	$VERSION = 1.2;
 
 	$ERROR = "\033[31mERROR\033[0m";
 	$WARNING = "\033[33mWARNING\033[0m";
 
 	$FILE_COMMANDS = './speechlogic/commands.lua';
 	$FILE_STATUS = './speechlogic/status.lua';
+
+	$FILE_EXAMPLELUA = './example.lua';
 	
 	$filenames = array( 'shipFiles' => $FILE_COMMANDS, 'statusFiles' => $FILE_STATUS );
 
+	$FOLDER_MASTER = '../sound/speech';
 	$FOLDER_BST = '../sound/speech/allships/Beast';
 	$FOLDER_SMT = '../sound/speech/allships/KuunLan';
+
 	
 	$SMT_PREFIX = 'hgn_smt';
 	$BST_PREFIX = 'bst';
 
-	$FIX = (strtolower(@$argv[1]) == '--repair') ? true : false;
+	$fixLua = false;
+	switch(strtolower(@$argv[1]))
+	{
+		case '--fixlua' : $FIX = false; $fixLua = true; break;
+		case '--repair' : $FIX = true; break;
+		default			: $FIX = false;
+	}
+
 	$validateFix = ($FIX ? "Validating and Repairing" : "Validating");
 
 	$errorLines = array();
@@ -145,6 +157,8 @@ function displayStats($stats) // {{{
 	{
 		global $speechTypes, $speechLines, $errorLines, $warningLines, $filenames, $FOLDER_SMT, $FOLDER_BST, $SMT_PREFIX, $BST_PREFIX;
 		$stats = array( 'ships'=>0, 'uniqueShips'=>0, 'problemShips'=>array(), 'warningShips'=>array(), 'numSoundsSet'=>0);
+		
+		global $fixLua, $FILE_EXAMPLELUA;
 
 	
 		foreach($speechTypes AS $speechTypeName => $ships) // eg 'shipFiles'
@@ -188,6 +202,28 @@ function displayStats($stats) // {{{
 							$errorLines[$this_filepath][$this_line] = array(	'msg' => "Missing file: $filepath",
 																				'ship' => $shipName	);
 						}
+
+						// Check to find lua file that doesn't exist
+						$luapath = $folder.$speech."_"."$i.lua";
+						//echo "checking for $luapath... ";
+						if(!file_exists($luapath))
+						{
+							//echo "Lua file not found!";
+							$stats['errorShips'][$shipName]['msg'] = "Missing LUA file: $luapath";
+							if($fixLua) 
+							{
+								echo "\n Attempting to generate LUA file in $luapath... ";
+								if(copy($FILE_EXAMPLELUA, $luapath)) echo "success!\n";
+								else echo "fail!\n";
+							}
+						}
+						else
+						{
+						//	echo "exists!\n";
+						}
+						//echo "\n";
+
+
 					}
 
 					// Check to find secondary speech files that aren't used

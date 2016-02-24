@@ -15,7 +15,9 @@
 -- left
 paradeSlot("Hgn_Smt_Scout",		{-960, -560, 1100},	{0,0,1}, {-1,0,0},	245);
 paradeSlot("Hgn_Smt_Acolyte",		{-960, -480, 800},	{0,0,1}, {-1,0,0},	245);
+paradeSlot("Hgn_Smt_AcolyteE",		{-960, -480, 800},	{0,0,1}, {-1,0,0},	245);
 paradeSlot("Hgn_Smt_ACV",		{-960, -360, 500},	{0,0,1}, {-1,0,0},	245);
+paradeSlot("Hgn_Smt_ACVE",		{-960, -360, 500},	{0,0,1}, {-1,0,0},	245);
 paradeSlot("Hgn_Smt_SuperAcolyte",		{-960, -240, 200},	{0,0,1}, {-1,0,0},	245);
 paradeSlot("Hgn_Smt_Sentinel",		{-960, -120, -100},	{0,0,1}, {-1,0,0},	245);
 paradeSlot("Hgn_Smt_Leech",		{-960, 0, -400},	{0,0,1}, {-1,0,0},	245);

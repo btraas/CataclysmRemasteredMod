@@ -326,160 +326,130 @@ function HW2_SetResearchLevel( missionID )
 						{ "Hgn_Smt_scout", 0 },
 						{ "Hgn_Smt_AcolyteE", 0 },
 		
-		
-						{ "Hgn_C_Production_Fighter", 1 },
-						{ "Hgn_MS_Production_Fighter", 1 },
-						{ "Hgn_C_Production_Corvette", 2 },
-						{ "Hgn_MS_Production_Corvette", 2 },
-						{ "Hgn_C_Production_Frigate", 3 },
-						{ "Hgn_MS_Production_Frigate", 3 },
-						{ "Hgn_MS_Production_CapShip", 3 },
-						{ "Hgn_SY_Production_CapShip", 3 },
-						{ "Hgn_C_Module_PlatformControl", 3 },
-						{ "Hgn_MS_Module_PlatformControl", 3 },
-						{ "Hgn_C_Module_Research", 1 },
-						{ "Hgn_MS_Module_Research", 1 },
-						{ "Hgn_C_Module_ResearchAdvanced", 3 },
-						{ "Hgn_MS_Module_ResearchAdvanced", 3 },
+						{ "Hgn_Smt_mimic", 3 },
+						{ "Hgn_Smt_leech", 3 },
+						{ "Hgn_Smt_sentinel", 3 },
+						
+						{ "Hgn_Smt_ACVE", 1 },
+						{ "Hgn_Smt_MCV", 3 },
+						{ "Hgn_Smt_multibeamfrigate", 4 },
+						
+						{ "Hgn_Smt_hivefrigate", 4 },
+						{ "Hgn_Smt_destroyer", 5 },
+						{ "Hgn_Smt_carrier", 5 },
+						
+						{ "Hgn_Smt_dreadnought", 6 },
+						{ "Hgn_Smt_Clee_San", 20 },
+						{ "Hgn_Smt_SuperAcolyte", 5 },
+						
+						{ "Ksh_Sec_MS_Module_AdvancedResearch", 3 },
+						{ "Ksh_Sec_MS_Module_ArmorResearch", 3 },
+						{ "Ksh_Sec_MS_Module_WeaponsResearch", 3 },
+						{ "Ksh_Sec_MS_Module_Hyperspace", 3 },
+						{ "ksh_sec_ms_gravgenerator", 31 },
+						{ "ksh_sec_ms_gravgenerator1", 31 },
+						{ "Ksh_Sec_MS_Module_CloakGenerator", 31 },
+						{ "Ksh_Sec_MS_Module_PlatformControl", 31 },
+						{ "Ksh_Sec_Ms_Module_FireControl", 31 },
+						{ "Smt_MS_Production_CapShip", 31 },
+						{ "Smt_MS_Production_CapShip1", 31 },
+						{ "Ksh_Sec_MS_Production_Micro", 31 },
+						{ "Ksh_sec_ms_Production_Frigate", 31 },
+						{ "Ksh_Sec_MS_Production_Corvette", 31 },
+						{ "Ksh_Sec_MS_Production_Fighter", 31 },
+						{ "Ksh_Sec_MS_BigGun", 14 },
+						{ "ksh_sec_ms_lowerdecks", 4 },
+						{ "ksh_sec_ms_orecanisterhuge", 31 },
+						{ "ksh_sec_ms_orecanisterlarge", 31 },
+						{ "ksh_sec_dreadnought_cannon", 31 },
+					
+						
+						{ "Ksh_Sec_C_Module_Research", 3 },
+						{ "Ksh_Sec_C_Module_AdvancedResearch", 4 },
+						{ "Ksh_Sec_C_Module_Hyperspace", 7 },
+						{ "Ksh_Sec_C_Module_GravGenerator", 20 },
+						{ "Ksh_Sec_C_Module_CloakGenerator", 20 },
+						{ "Ksh_Sec_C_Module_PlatformControl", 5 },
+						{ "Ksh_Sec_C_Module_FireControl", 6 },
+						{ "Ksh_Sec_C_Production_Fighter", 21 },
+						{ "Ksh_Sec_C_Production_Corvette", 21 },
+						{ "Ksh_Sec_C_Production_Frigate", 21 },
+						{ "Ksh_Sec_MS_Module_Research", 21 },
+						
 						
 				}
 
                 -- research
                 local researchList = {
-						{ "GraviticAttractionMines", 4 },
-						{ "PlatformIonWeapons", 4 },
-						{ "DestroyerTech", 7 },
-						{ "BattlecruiserIonWeapons", 11 },
-						{ "ECMProbe", 6 },
-						{ "DamageMoverTech", 6 },
-						{ "RadiationDefenseField", 11 },
-						{ "RepairAbility", 3 },
-						{ "ScoutPingAbility", 5 },
-						{ "ImprovedTorpedo", 5 },
-						{ "AttackBomberImprovedBombs", 3 },
-						{ "ScoutEMPAbility", 6 },
-						{ "DefenseFieldFrigateShield", 6 },
+						{ "SMTPlasmaBombLauncher", 4 },
+						{ "SMTCorvetteDrive", 1 },
+						{ "SMTMimic", 3 },
+						{ "SMTPhasedTelemetry", 11 },
+						{ "FighterHealthUpgrade1", 6 },
+						{ "FighterHealthUpgrade2", 6 },
+						{ "SMTACVEMP", 11 },
+						{ "SMThyperspaceTech", 3 },
+						{ "SMTIonCannons", 5 },
+						{ "SMTDroneTechnology", 5 },
+						{ "SmtMothershipSensorRangeUpgrade1", 20 },
+						{ "SMTMothershipSensorRangeUpgrade2", 20 },
+						{ "SMTMothershipSecondarySensorRangeUpgrade1", 20 },
+						{ "SMTMothershipSecondarySensorRangeUpgrade2", 20 },
+
+						{ "SMTCarrierSensorRangeUpgrade1", 20 },
+						{ "SMTCarrierSensorRangeUpgrade2", 20 },
+						{ "SMTCarrierSecondarySensorRangeUpgrade1", 20 },
+						{ "SMTCarrierSecondarySensorRangeUpgrade2", 20 },
+						{ "SMTReconAdvancedSensors", 20 },
+						{ "SmtReconSensorRangeUpgrade1", 20 },
+						{ "SMTReconSensorRangeUpgrade2", 20 },
+						{ "SMTReconSecondarySensorRangeUpgrade1", 20 },
+						{ "SMTReconSecondarySensorRangeUpgrade2", 20 },
+						{ "SMTReconCloakSensorRangeUpgrade1", 20 },
+						{ "SMTReconCloakSensorRangeUpgrade2", 20 },
+						{ "SMTReconVisualDetectionRangeUpgrade1", 20 },
+						{ "SMTReconVisualDetectionRangeUpgrade2", 20 },
 						
-								
+						{ "SMTSuperCapitalShipDrive", 10 },
+						{ "SMTGuidedMissiles", 10 },
+						{ "SmtEnergyCannonTechnology", 10 },
+						{ "SmtEnergyCannonTechnology1", 20 },
+						{ "SmtEnergyCannonTechnology7", 20 },
+						{ "SmtEnergyCannonTechnology2", 20 },
+						{ "SmtEnergyCannonTechnology3", 20 },
+						{ "SmtEnergyCannonTechnology4", 20 },
+						{ "SmtEnergyCannonTechnology5", 20 },
+						{ "SmtEnergyCannonTechnology6", 20 },
+						{ "SmtAdvFighterDrive", 20 }, --38	
+						
+						{ "SmtArmorlevel1", 10 },
+						{ "SmtAdvCorvetteDrive", 10 },
+						{ "SmtArmorLevel2", 10 },
+						{ "SmtAdvFrigateDrive", 20 },
+						{ "SMTArmorLevel3", 20 },
+						{ "SmtAdvDestroyerDrive", 20 },
+						{ "SmtScoutPingAbility", 20 },
+						{ "SMTAttackBomberImprovedBombs", 20 },
+						{ "SMTScoutEMPAbility", 20 },
+						{ "SmtRepairAbility", 20 },
+						{ "SmtCaptureAbility", 20 }, --49	
+						
+						{ "UtilityHealthUpgrade1", 10 },
+						{ "UtilityHealthUpgrade2", 10 },
+						{ "SMTMothershipBUILDSPEEDUpgrade1", 10 },
+						{ "SMTMothershipBUILDSPEEDUpgrade2", 20 },
+						{ "SMTCarrierBUILDSPEEDUpgrade1", 20 },
+						{ "SMTCarrierBUILDSPEEDUpgrade2", 20 },
+						{ "SMTShipyardBUILDSPEEDUpgrade1", 20 },
+						{ "SMTShipyardBUILDSPEEDUpgrade2", 20 },
+						{ "SMTSiegeTechResearch", 15 }, --58	
 		
---~ 						{ "GraviticAttractionMines", 4 },
---~ 						{ "PlatformIonWeapons", 4 },
---~ 						{ "DestroyerTech", 7 },
---~ 						{ "BattlecruiserIonWeapons", 11 },
---~ 						
---~ 						-- ABILITY UPGRADES
---~ 						{ "RepairAbility", 3 },
---~ 						{ "ScoutPingAbility", 5 },
---~ 						{ "ECMProbe", 6 },
---~ 						{ "ImprovedTorpedo", 5 },
---~ 						{ "AttackBomberImprovedBombs", 5 },
---~ 						{ "ScoutEMPAbility", 5 },
---~ 						{ "DefenseFieldFrigateShield", 6 },
---~ 						
---~ 						-- MOTHERSHIP UPGRADES
---~ 						{ "MothershipHealthUpgrade1", 5 },
---~ 						{ "MothershipHealthUpgrade2", 10 },
---~ 						{ "MothershipMAXSPEEDUpgrade1", 5 },
---~ 						{ "MothershipMAXSPEEDUpgrade2", 10 },
---~ 						{ "MothershipBUILDSPEEDUpgrade1", 7 },
---~ 						
---~ 						-- CARRIER UPGRADES
---~ 						{ "CarrierHealthUpgrade1", 6 },
---~ 						{ "CarrierHealthUpgrade2", 11 },
---~ 						{ "CarrierMAXSPEEDUpgrade1", 6 },
---~ 						{ "CarrierMAXSPEEDUpgrade2", 11 },
---~ 						{ "CarrierBUILDSPEEDUpgrade1", 7 },
---~ 						
---~ 						-- FIGHTER UPGRADES
---~ 						{ "InterceptorMAXSPEEDUpgrade1", 3 },
---~ 						{ "InterceptorMAXSPEEDUpgrade2", 7 },
---~ 						--{ "InterceptorHealthUpgrade1", 3 },
---~ 						--{ "InterceptorHealthUpgrade2", 7 },
---~ 						--{ "AttackBomberHealthUpgrade1", 3 },
---~ 						--{ "AttackBomberHealthUpgrade2", 7 },
---~ 						{ "AttackBomberMAXSPEEDUpgrade1", 3 },
---~ 						{ "AttackBomberMAXSPEEDUpgrade2", 7 },
---~ 						
---~ 						{ "AssaultCorvetteHealthUpgrade1", 4 },
---~ 						{ "AssaultCorvetteHealthUpgrade2", 8 },
---~ 						{ "AssaultCorvetteMAXSPEEDUpgrade1", 4 },
---~ 						{ "AssaultCorvetteMAXSPEEDUpgrade2", 8 },
---~ 						
---~ 						{ "PulsarCorvetteHealthUpgrade1", 4 },
---~ 						{ "PulsarCorvetteHealthUpgrade2", 8 },
---~ 						{ "PulsarCorvetteMAXSPEEDUpgrade1", 4 },
---~ 						{ "PulsarCorvetteMAXSPEEDUpgrade2", 8 },
---~ 						-- FRIGATE UPGRADES
---~ 						{ "TorpedoFrigateHealthUpgrade1", 5 },
---~ 						{ "TorpedoFrigateHealthUpgrade2", 10 },
---~ 						{ "TorpedoFrigateMAXSPEEDUpgrade1", 5 },
---~ 						{ "TorpedoFrigateMAXSPEEDUpgrade2", 10 },
---~ 						
---~ 						{ "IonCannonFrigateHealthUpgrade1", 6 },
---~ 						{ "IonCannonFrigateHealthUpgrade2", 11 },
---~ 						{ "IonCannonFrigateMAXSPEEDUpgrade1", 6 },
---~ 						{ "IonCannonFrigateMAXSPEEDUpgrade2", 11 },
---~ 						
---~ 						{ "AssaultFrigateHealthUpgrade1", 5 },
---~ 						{ "AssaultFrigateHealthUpgrade2", 10 },
---~ 						{ "AssaultFrigateMAXSPEEDUpgrade1", 5 },
---~ 						{ "AssaultFrigateMAXSPEEDUpgrade2", 10 },
---~ 						
---~ 						-- CAPITAL SHIP UPGRADES
---~ 						{ "BattlecruiserHealthUpgrade1", 12 },
---~ 						{ "BattlecruiserHealthUpgrade2", 14 },
---~ 						{ "BattlecruiserMAXSPEEDUpgrade1", 11 },
---~ 						{ "BattlecruiserMAXSPEEDUpgrade2", 14 },
---~ 						
---~ 						-- PLATFORM UPGRADES
---~ 						{ "GunTurretHealthUpgrade1", 4 },
---~ 						{ "GunTurretHealthUpgrade2", 9 },
---~ 						{ "IonTurretHealthUpgrade1", 4 },
---~ 						{ "IonTurretHealthUpgrade2", 9 },
---~ 						
---~ 						--- UTILITY UPGRADES
---~ 						{ "ResourceCollectorHealthUpgrade1", 4 },
---~ 						{ "ResourceCollectorHealthUpgrade2", 10 },
---~ 						{ "ResourceControllerHealthUpgrade1", 4 },
---~ 						{ "ResourceControllerHealthUpgrade2", 10 },
---~ 						
---~ 						-- HYPERSPACE RESEARCH
---~ 						{ "HyperspaceCostUpgrade1", 15 },
---~ 						{ "HyperspaceCostUpgrade2", 15 },
---~ 						--{ "HyperspaceTransitTimeUpgrade1", 15 },
---~ 						--{ "HyperspaceTransitTimeUpgrade2", 15 },
---~ 						{ "HyperspaceRecoveryTimeUpgrade1", 15 },
---~ 						{ "HyperspaceRecoveryTimeUpgrade2", 15 },
+
 		} -- end of research list, stupid lua limited to 64
 		
 		local researchList2 = {
 		
- 						{"SensDisProbe", 2 },
-						{ "InstaAdvancedFrigateTech", 2 },
-						
-						{ "ShipyardHealthUpgrade1", 9 },
-						{ "ShipyardHealthUpgrade2", 11 },
-						{ "ShipyardMAXSPEEDUpgrade1", 9 },
-						{ "ShipyardMAXSPEEDUpgrade2", 11 },
-						{ "ShipyardBUILDSPEEDUpgrade1", 11 },
-						
-						
-						{ "HyperspaceCostUpgrade1", 20 },
-						{ "HyperspaceCostUpgrade2", 20 },
---~ 						{ "HyperspaceRecoveryTimeUpgrade1", 20 },
---~ 						{ "HyperspaceRecoveryTimeUpgrade2", 20 },
-						
-						-- SHIPYARD UPGRADES
---~    						{ "ShipyardHealthUpgrade1", 10 },
---~    						{ "ShipyardHealthUpgrade2", 13 },
---~    						{ "ShipyardMAXSPEEDUpgrade1", 10 },
---~   						{ "ShipyardMAXSPEEDUpgrade2", 13 },
---~  						
---~  						-- TEMP FOR SP GAME				
---~  						{ "SensorsBackToNormal1", 2 },
---~  						{ "SensorsBackToNormal2", 2 },
---~  						{ "SensorsBackToNormal3", 2 },	
---~  						{ "DamageMoverTech", 6 },
+ 						
 						
 		}		
 

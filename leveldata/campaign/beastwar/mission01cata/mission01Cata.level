@@ -94,6 +94,21 @@ function DetermChunk()
 	addToSOBGroup("tai_bomber10","firelanceAttackers")
 	addToSOBGroup("tai_bomber11","firelanceAttackers")
 	
+	
+	addSquadron("tai_incoming1", "tai_interceptor", {15100, 0, -26413.438}, 3, {0.000, 0.000, 0.000},0,0)
+	addSquadron("tai_incoming2", "tai_interceptor", {15120, 0, -26413.438}, 3, {0.000, 0.000, 0.000},0,0)
+	addSquadron("tai_incoming3", "tai_interceptor", {15140, 0, -26413.438}, 3, {0.000, 0.000, 0.000},0,0)
+	addSquadron("tai_incoming4", "tai_interceptor", {15150, 0, -26413.438}, 3, {0.000, 0.000, 0.000},0,0)
+	addSquadron("tai_incoming5", "tai_interceptor", {15160, 0, -26413.438}, 3, {0.000, 0.000, 0.000},0,0)
+	
+	createSOBGroup("incoming_fighters")
+	addToSOBGroup("tai_incoming1", "incoming_fighters")
+	addToSOBGroup("tai_incoming2", "incoming_fighters")
+	addToSOBGroup("tai_incoming3", "incoming_fighters")
+	addToSOBGroup("tai_incoming4", "incoming_fighters")
+	addToSOBGroup("tai_incoming5", "incoming_fighters")
+	
+	
 	addSquadron("int1", "Kus_interceptor", {-30000, 2000, 21048},  2, {0.000, 90.000, 0.000},0,0)
 	addSquadron("int2", "Kus_interceptor", {-30000, 2000, 21248},  2, {0.000, 90.000, 0.000},0,0)
 	addSquadron("int3", "Kus_interceptor", {-30000, 2000, 21448},  2, {0.000, 90.000, 0.000},0,0)

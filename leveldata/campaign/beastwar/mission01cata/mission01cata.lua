@@ -14,6 +14,7 @@ Actor_Kiith_Nabaal = 28
 
 firelancefrigs = "Defend the Frigates"
 
+pointer_incomingFighters_id = null;
 
 nbl_int_buffer = 0
 nbl_int_tmp = null
@@ -37,14 +38,9 @@ function Rule_PlaySaveGameLocationCard()
 	Rule_Remove ("Rule_PlaySaveGameLocationCard")
 end
 
-function playSpeech(file)
-	print("playing file: "..SOUND_PATH..file)
-	Sound_SpeechPlay(SOUND_PATH..file)
-end
-
 -- this function must be here - this is the mission start point
 function OnInit()
-	SPRestrict()
+	--SPRestrict()
 	print("oninit issued" )	
 	Rule_Add("Rule_Init")
 end
@@ -142,13 +138,17 @@ function Rule_Init()
 	--Rule_Add( "Rule_PlayerWins" )
 	--Rule_Add( "Rule_PlayerLose" )	
 	
-	Player_UnrestrictBuildOption( 0, 'Hgn_smt_acolyte' )
-	Player_UnrestrictBuildOption( 0, 'Hgn_Smt_worker' )
+	HW2_SetResearchLevel( 1 )
 	
+	-- Defaults given in SP campaign
 	Player_GrantResearchOption(0, "SMTFighterDrive" )
 	Player_GrantResearchOption(0, "SMTCapitalShipDrive" )
 	
 	Camera_SetLetterboxStateNoUI(0,0)	
+
+	Rule_Add( "Rule_HasBuiltAcolytes" )
+	Rule_Add( "Rule_BombersDestroyed" )
+
 end
 
 function playEvent()
@@ -240,6 +240,25 @@ end
 
 -- }}} 
 
+function Rule_HasBuiltAcolytes()
+	if ( SobGroup_Count( Player_GetShipsByType(0, "Hgn_Smt_AcolyteE" ) ) >= 1 ) then
+		Rule_Remove("Rule_HasBuiltAcolytes")
+
+
+		SobGroup_Attack(3, "incoming_fighters", "Mothership")
+
+		Event_Start( "incoming_fighters" )
+	end
+end
+
+function Rule_BombersDestroyed()
+	if ( SobGroup_Empty( "firelanceAttackers" ) == 1) then
+		Rule_Remove("Rule_BombersDestroyed")
+		
+		Event_Start( "bombers_destroyed" )
+	end
+end
+
 -- if all objectives are complete.
 function Rule_PlayerWins()
 	--if ( Objective_GetState( obj_prim_beginharvesting_id ) == OS_Complete ) and
@@ -286,7 +305,7 @@ Events = {} -- the name of this table must always be Events - this is what the g
 
 -- this is the intro intelevent
 
-Events.start = 
+Events.start = -- {{{
 {
 	{
 		{ "Universe_AllowPlayerOrders( 1 )", "" },
@@ -295,9 +314,9 @@ Events.start =
 		{"EventPlaying = 0",""},
 		{ "Sound_ExitIntelEvent()","" },
 	}
-}
+} -- }}}
 
-Events.intelevent_mothershipjumps  =
+Events.intelevent_mothershipjumps  = -- {{{
 {
 	{
 		HW2_SubTitleEvent( Actor_KuunLan, "$1", 1),
@@ -383,7 +402,87 @@ Events.intelevent_mothershipjumps  =
 		--{ "ClearTOSettings()",""},
 	--	{ "setMissionComplete( 1 )","" },		
 	},
-}
+} -- }}}
+
+Events.incoming_fighters =  -- {{{
+{
+	{
+		HW2_Wait( 15 ),
+	},
+	{
+		{ "Sound_EnterIntelEvent()","" },
+		{ "Camera_FocusSave()", "" },
+		
+		HW2_Letterbox( 1 ),
+		HW2_Wait( 2 ),
+	},
+	{
+		{"Sensors_Toggle( 1 )","" },
+		{"pointer_incomingFighters_id = HW2_CreateEventPointerSobGroup('incoming_fighters')",""},
+		{ "Camera_FocusSobGroup( 'incoming_fighters', 1, 1300, 1 )", "" },
+	},
+	{
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "$8", 7 ), -- we've picked up a squad of taiidan fighters
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "We've picked up a flight of Taiidan fighters incoming from the main battle.", 4 ),
+		HW2_Wait( 4 ),
+	},
+	{
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "They're probably investigating our hyperspace signature.", 3 ),
+		HW2_Wait( 2 ),
+	},
+	{
+		{"EventPointer_Remove(pointer_incomingFighters_id)", ""},
+		{"Sensors_Toggle( 0 )", ""},
+	--	{ "Camera_FocusSobGroupWithBuffer('incoming_fighters', 100, 100, 2 )", "" },
+		HW2_Wait( 3 ),
+	},
+	{
+		HW2_Letterbox( 0 ),
+		{"Sound_ExitIntelEvent()", ""},
+		{"Camera_FocusRestore()", ""},
+	},
+} -- }}}
+
+Events.bombers_destroyed = -- {{{
+{
+	{
+		HW2_Wait( 4 ),
+	},
+	{
+		HW2_Letterbox( 1 ),
+		{ "Sound_EnterIntelEvent()","" },
+		HW2_Wait( 2 ),
+	},
+	{
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "$9", 7 ), -- we've done it.
+		HW2_SubTitleEvent( Actor_TacticalOfficer, "We've done it. By taking pressure off of Kiith Nabaal's flank force we've helped hold the line.", 6 ),
+	},
+	{
+		HW2_Wait( 3 ),
+	},
+	{								-- add sobgroup ping later
+		{"Sensors_Toggle( 1 )",""},
+--        HW2_SubTitleEvent( Actor_Kiith_Nabaal, "$10", 8 ), -- Attention Kuun Lan
+        HW2_SubTitleEvent( Actor_Kiith_Nabaal, "Attention Kuun-Lan. The first Imperialist attack wiped out our sensor grid.", 4 ),
+		HW2_Wait( 4 ),
+    },
+    {
+        HW2_SubTitleEvent( Actor_Kiith_Nabaal, "We need you to scout enemy positions with your Recon ships.", 3 ),
+		HW2_Wait( 3 ),
+    },
+	{
+		HW2_SubTitleEvent( Actor_Kiith_Nabaal, "We are planning a counterattack.", 2 ),
+        HW2_Wait( 2 ),
+	},
+	{
+		{ "Sound_ExitIntelEvent()","" },
+        HW2_Letterbox( 0 ),
+        { "Sensors_Toggle( 0 )",""},
+
+	},
+
+
+} -- }}}
 
 Events.vaygrexithyperspace =
 {

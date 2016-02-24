@@ -666,7 +666,7 @@ function raceHelper()
 	end
 end
 
-currentRace = 11;
+--currentRace = 11;
 
 -- Race IDs
 --Hiigaran = 11
@@ -680,12 +680,12 @@ function playSomtaawCommand(cmd, shipname, targetname)
 sharedship = 'shared'
 
 -- Hackhack fix for campaign
---if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
---	currentRace = Somtaaw
---end
---if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
---	currentRace = Beast
---end
+if (strfind (shipname, "Smt_") ~= nil or strfind (shipname, "smt_") ~= nil) then
+	currentRace = Somtaaw
+end
+if (strfind (shipname, "bst_") ~= nil or strfind (shipname, "Bst_") ~= nil) then	
+	currentRace = Beast
+end
 	
 print("******** COMMAND: "..cmd.." RACE: "..currentRace.." SHIP: "..shipname)
 	if(currentRace ~= Somtaaw and currentRace ~= Beast) then
