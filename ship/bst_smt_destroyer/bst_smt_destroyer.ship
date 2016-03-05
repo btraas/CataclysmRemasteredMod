@@ -138,11 +138,11 @@ NewShipType.launchFormation = "delta"
 addAbility(NewShipType,"ParadeCommand",1)
 addAbility(NewShipType,"WaypointMove")
 addAbility(NewShipType,"HyperSpaceCommand",0,2,400,800,0,3)
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter","Frontal",{
-  Fighter = "MoveToTargetAndShoot",
-},{
-  Corvette = "MoveToTargetAndShoot",
-},{
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter","Frontal",
+{Fighter = "frontal_vs_fighter"},
+{Corvette = "frontal_vs_fighter"},
+{Utility = "frontal_vs_fighter"},
+{
   SubSystem = "frontalVsSubSystem",
 })
 addAbility(NewShipType,"GuardCommand",1,3000,800)
