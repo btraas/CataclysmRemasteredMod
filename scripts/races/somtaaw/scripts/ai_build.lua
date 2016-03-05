@@ -3,7 +3,7 @@ aitrace("LOADING Somtaaw BUILD INFO")
 		kCollector = HGN_SMT_WORKER
 		kRefinery  = HGN_SMT_PROCESSOR
 		kScout = HGN_SMT_SCOUT
-		kInterceptor = HGN_SMT_ACOLYTEE
+		kInterceptor = HGN_SMT_ACOLYTE
 		kShipYard = HGN_SMT_MS
 		kBomber = HGN_SMT_SUPERACOLYTE
 		kCarrier = HGN_SMT_CARRIER		

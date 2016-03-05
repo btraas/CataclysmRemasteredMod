@@ -5,6 +5,72 @@
 --
 effects = 
 { 
+	effect1 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0" },
+			{ "marker", "lightning1" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	effect2 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.1" },
+			{ "marker", "lightning2" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	effect3 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.3" },
+			{ "marker", "lightning3" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	effect4 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.4" },
+			{ "marker", "lightning4" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	effect5 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.5" },
+			{ "marker", "lightning5" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	effect6 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.7" },
+			{ "marker", "lightning6" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	effect7 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.9" },
+			{ "marker", "lightning7" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+
+	effect8 = 
+		{
+			{ "anim", "lightning1" },
+			{ "animtime", "0" },
+			{ "marker", "lightning7" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+		
     animations = 
     { 
         animation1 = 
@@ -206,7 +272,33 @@ effects =
             minimum = 0, 
             maximum = 0, 
             markers = 
-                { "", }, }, }, 
+                { "", }, 
+		}, 
+		
+		animation21 = 
+        { 
+            name = "lightning", 
+            length = 1, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, 
+		}, 
+		animation22 = 
+        { 
+            name = "lightning1", 
+            length = 1, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, 
+		}, 
+		
+	}, 
     events = 
     { 
         event1 = 
@@ -214,7 +306,7 @@ effects =
                 { "anim", "death1", }, 
                 { "animtime", "0", }, 
                 { "marker", "root", }, 
-                { "fx", "death_generic", }, 
+                { "fx", "lightning_beast", }, 
                 { "sound", "Explosion/Large/ETG_Explode_Large_Plasma", }, 
                 { "fx_scale", "entity", }, 
             }, 
@@ -223,7 +315,7 @@ effects =
                 { "anim", "death", }, 
                 { "animtime", "0", }, 
                 { "marker", "marker25", }, 
-                { "fx", "dmg_capital_explosion_large_hull_flare_mothership", }, 
+                { "fx", "lightning_beast", }, 
                 { "sound", "Explosion/Small/ETG_Explode_Small_Plasma", }, 
                 { "fx_scale", "5", }, 
             }, 
@@ -232,7 +324,7 @@ effects =
                 { "anim", "death", }, 
                 { "animtime", "0.2", }, 
                 { "marker", "marker2", }, 
-                { "fx", "dmg_capital_explosion_large", }, 
+                { "fx", "lightning_beast", }, 
                 { "sound", "Explosion/Small/ETG_Explode_Small_Plasma", }, 
                 { "fx_scale", "7", }, 
             }, 
@@ -241,7 +333,7 @@ effects =
                 { "anim", "death", }, 
                 { "animtime", "0.21", }, 
                 { "marker", "marker3", }, 
-                { "fx", "dmg_capital_explosion_large_hull_flare_mothership", }, 
+                { "fx", "lightning_beast", }, 
                 { "sound", "Explosion/Medium/ETG_Explode_Medium_Firey", }, 
                 { "fx_scale", "11", }, 
             }, 
@@ -250,7 +342,7 @@ effects =
                 { "anim", "death", }, 
                 { "animtime", "0.23", }, 
                 { "marker", "marker4", }, 
-                { "fx", "dmg_capital_explosion_large", }, 
+                { "fx", "lightning_beast", }, 
                 { "sound", "Explosion/Medium/ETG_Explode_Medium_Firey", }, 
                 { "fx_scale", "9", }, 
             }, 
@@ -259,7 +351,7 @@ effects =
                 { "anim", "death", }, 
                 { "animtime", "0.24", }, 
                 { "marker", "marker5", }, 
-                { "fx", "dmg_capital_explosion_large_hull_flare_mothership", }, 
+                { "fx", "lightning_beast", }, 
                 { "sound", "Explosion/Large/ETG_Explode_Large_Firey", }, 
                 { "fx_scale", "5", }, 
             }, 
@@ -268,7 +360,7 @@ effects =
                 { "anim", "death", }, 
                 { "animtime", "0.25", }, 
                 { "marker", "marker6", }, 
-                { "fx", "dmg_capital_explosion_large", }, 
+                { "fx", "lightning_beast", }, 
                 { "sound", "Explosion/Small/ETG_Explode_Small_Plasma", }, 
                 { "fx_scale", "8", }, 
             }, 
@@ -895,4 +987,61 @@ effects =
                 { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY", }, 
                 { "fx_scale", "28", }, 
                 { "fx_nlips", "on", }, 
-            }, }, }
+            }, 
+		event77 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0" },
+			{ "marker", "lightning1" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	event78 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.1" },
+			{ "marker", "lightning2" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	event79 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.2" },
+			{ "marker", "lightning3" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	event80 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.4" },
+			{ "marker", "lightning4" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	event81 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.5" },
+			{ "marker", "lightning5" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	event82 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.7" },
+			{ "marker", "lightning6" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+	event83 = 
+		{
+			{ "anim", "lightning" },
+			{ "animtime", "0.9" },
+			{ "marker", "lightning7" },
+			{ "fx", "lightning_beast" },
+			{ "fx_scale", "5" },
+		},
+}, }

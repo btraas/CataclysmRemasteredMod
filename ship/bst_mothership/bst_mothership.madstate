@@ -1,0 +1,4 @@
+BST_MOTHERSHIP_Launched_OnSet = function(ship)
+		startEffect(ship, "lightning1")
+
+end

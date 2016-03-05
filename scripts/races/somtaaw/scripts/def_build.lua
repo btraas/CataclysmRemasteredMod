@@ -64,7 +64,7 @@ build =
 --	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_AcolyteE",
+		ThingToBuild = "Hgn_Smt_Acolyte",
 		RequiredResearch = "SMTFighterDrive",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 5,
@@ -125,7 +125,7 @@ build =
 --	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_ACVE",
+		ThingToBuild = "Hgn_Smt_ACV",
 		RequiredResearch = "SMTCorvetteDrive",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 21,

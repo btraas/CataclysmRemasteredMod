@@ -14,6 +14,7 @@
 
 -- left
 paradeSlot("Bst_Recon",		{-1500, -560, 1600},	 {0,0,1}, {-1,0,0},      245);
+paradeSlot("Bst_Scout",		{-1500, -560, 1600},	 {0,0,1}, {-1,0,0},      245);
 paradeSlot("Bst_Acolyte",		{-1400, -480, 1400},	 {0,0,1}, {-1,0,0},      245);
 paradeSlot("Bst_ACV",			{-1300, -400, 1200},	 {0,0,1}, {-1,0,0},      245);
 paradeSlot("Bst_Interceptor",		{-1200, -320, 1000},	 {0,0,1}, {-1,0,0},      245);
@@ -42,6 +43,7 @@ paradeSlot("bst_ioncannonfrigate",	{1720, 1600, -2000},		{0,0,1}, {1,0,0},      
 -- up
 
 paradeSlot("Bst_Processor",		{-960, -400, -1000},		{0,0,1}, {-1,0,0},     800);
+paradeSlot("Bst_Clee_San",		{-960, -400, -1000},		{0,0,1}, {-1,0,0},     800);
 
 -- REQUIRED "misc" slot
-paradeSlot("misc",                      {5208, 0, -4878},         {0,0,1}, {-1,0,0},      0);                -- grows right
+paradeSlot("misc",                      {2208, 0, -2878},         {0,0,1}, {-1,0,0},      0);                -- grows right

@@ -2100,6 +2100,10 @@ Bst_HiveFrigate=Hgn_Smt_HiveFrigate;
 
 Bst_fieldfrigate=tai_fieldfrigate;
 
+Bst_Tdn_standardfrigate=tai_assaultfrigate;
+
+Bst_Tdn_advancesupportfrigate=tai_supportfrigate;
+
 Bst_IonCannonfrigate=tai_ioncannonfrigate;
 
 Bst_Ionarrayfrigate=tur_ionarrayfrigate;
@@ -2139,6 +2143,8 @@ Bst_CloakedFighter=kus_cloakedfighter;
 Bst_AttackBomber=tai_attackbomber;
 
 Bst_Clee_San=Hgn_Smt_clee_san;
+
+Bst_missiledestroyer=kus_missiledestroyer;
 
 Bst_HeavyCruiser=tai_heavycruiser;
 

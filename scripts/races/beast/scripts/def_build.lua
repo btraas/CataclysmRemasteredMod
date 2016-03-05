@@ -247,7 +247,7 @@ build =
 		RequiredResearch = "BstDefenseFieldFrigateShield",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 54,
-		DisplayedName = "Defense Field Generator Frigate",
+		DisplayedName = "Field Frigate",
 		Description = "<b>Description:</b> Subverted Tiifal provides a defense field to cover a small fleet, based on the defense-fighters technology. The ship itself is unarmed.  \n\n<b>Strong Vs:</b> None \n\n<b>Weak Vs:</b> Most \n\n<b>Prerequisites:</b> Capital Ship Chassis & Defense Field technology",
 	},
 	{
@@ -346,7 +346,7 @@ build =
 		RequiredResearch = "BstGuidedMissiles",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 118,
-		DisplayedName = "Kushan Missile Destroyer",
+		DisplayedName = "Missile Destroyer",
 		Description = "<b>Description:</b> Subverted Kushan Missile Destroyer equipped with rapid fire missiles also has missile volley ability for use against Frigates and up. \n\n<b>Strong Vs:</b> Most \n\n<b>Weak Vs:</b> Battlecruisers & Attack Bombers \n\n<b>Prerequisites:</b> SuperCapitalShipDrive & Guided Missiles",	
 	},
 	{		

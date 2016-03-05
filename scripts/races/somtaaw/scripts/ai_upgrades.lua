@@ -140,7 +140,7 @@ function DoUpgradeDemand_Somtaaw()
 	end
 	local numCorvette = numActiveOfClass( s_playerIndex, eCorvette )
 	if (numCorvette > 1) then
-		local numAssaultCorvette = NumSquadrons( HGN_SMT_ACVE )
+		local numAssaultCorvette = NumSquadrons( HGN_SMT_ACV )
 		if (numAssaultCorvette>2) then
 			inc_upgrade_demand( rt_corvette.assault, numAssaultCorvette*1.25 )
 		end

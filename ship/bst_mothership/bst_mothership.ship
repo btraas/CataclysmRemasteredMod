@@ -142,7 +142,7 @@ addAbility(NewShipType, "ParadeCommand", 1);
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType,"GuardCommand",1,3000,500)
 addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1, "Fighter, Corvette, Frigate, SmallCapitalShip, BigCapitalShip, Utility", "JustShoot")
-addAbility(NewShipType, "CanBuildShips", 1, "Fighter_Bst, Corvette_Bst, Frigate_Bst, SuperCap_Bst, Utility_Bst, Platform_Bst, Shipyard_Bst, Probe_Bst, SubSystem_Bst, SubSystem_Hgn, SubSystemLarge_Bst", "Utility, Fighter, Corvette, Frigate, Platform, Capital, SubSystemModule")
+addAbility(NewShipType, "CanBuildShips", 1, "Fighter_Bst, Corvette_Bst, Frigate_Bst, SuperCap_Bst, Battlecruiser_Bst, Utility_Bst, Platform_Bst, Shipyard_Bst, Probe_Bst, SubSystem_Bst, SubSystem_Hgn, SubSystemLarge_Bst", "Utility, Fighter, Corvette, Frigate, Platform, Capital, SubSystemModule")
 --addAbility(NewShipType, "CanBeRepaired")
 addAbility(NewShipType, "CloakAbility", 0, 2, 2000, 4000, 3, 100, 1, 1000)
 addAbility(NewShipType, "RetireAbility", 1, 0)
