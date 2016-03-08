@@ -135,10 +135,10 @@ addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,200,700,0,4);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Fighter, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility","Frontal",
-{Fighter="MoveToTargetAndShoot"},
-{Corvette="MoveToTargetAndShoot"},
-{Munition="MoveToTargetAndShoot"},
-{SubSystem="FrontalVsSubSystem"});
+{Fighter = "frontal_vs_fighter"},
+{Corvette = "frontal_vs_fighter"},
+{Utility = "frontal_vs_fighter"},
+{SubSystem = "frontalVsSubSystem",});
 --addAbility(NewShipType,"CanBuildShips",1,"Mover_Kus,Command","Utility")
 addAbility(NewShipType,"GuardCommand",1,3000,600);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);

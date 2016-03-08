@@ -8,7 +8,7 @@ aitrace("LOADING BEAST BUILD INFO")
 		kMissileDestroyer = BST_MISSILEDESTROYER
 		kBomber = BST_ATTACKBOMBER
 		kCarrier = BST_CARRIER		
-		kDestroyer = BST_SMT_DESTROYER
+	--	kDestroyer = BST_SMT_DESTROYER
 		kBattleCruiser = BST_HEAVYCRUISER
 		
 		
@@ -73,7 +73,7 @@ function DetermineSpecialDemand_Beast()
 		end
 	end	
  	if ( (GetNumCollecting() > 9 or GetRU() > 1500) and s_militaryPop > 8 and UnderAttackThreat() < -75) then
-		ShipDemandAdd( kDestroyer, 0.25 )	
+	--	ShipDemandAdd( kDestroyer, 0.25 )	
 		ShipDemandAdd( kMissileDestroyer, 0.65 )	
 		 if (IsResearchDone( BSTHEAVYGUNS ) == 1) then
 				ShipDemandAdd( kBattleCruiser, 0.6 )
