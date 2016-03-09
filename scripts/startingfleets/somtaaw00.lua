@@ -142,24 +142,14 @@ PersistantData = {
       number = 1,
     },
 	{
-      type = "Bst_interceptor",
+      type = "Hgn_Smt_swarmer",
       subsystems = {
       },
       shiphold = {
       },
       name = "",
       size = 1,
-      number = 1,
-    },
-    {
-      type = "Hgn_Smt_Carrier",
-      subsystems = {
-      },
-      shiphold = {
-      },
-      name = "",
-      size = 1,
-      number = 1, 
+      number = 20,
     },
 	{
       type = "Hgn_Smt_Hivefrigate",
@@ -169,7 +159,7 @@ PersistantData = {
       },
       name = "",
       size = 1,
-      number = 1, 
+      number = 5, 
     },
   },
 	Research = {

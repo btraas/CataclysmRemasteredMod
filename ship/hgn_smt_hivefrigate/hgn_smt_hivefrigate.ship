@@ -146,8 +146,8 @@ addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
-addAbility(NewShipType,"CustomCommand",1,"Drones",1,0,1000,200,0.25,2,0,"data:Ship/hgn_smt_hiveFrigate/hgn_smt_hiveFrigate.lua","Start_DroneFrigate","Do_DroneFrigate","Finish_DroneFrigate","hgn_smt_hiveFrigate",1.15,2,1)
-addCustomCode(NewShipType,"data:Ship/hgn_smt_hiveFrigate/hgn_smt_hiveFrigate.lua","","Create_DroneFrigate","Update_DroneFrigate","Destroy_DroneFrigate","hgn_smt_hiveFrigate",1.15)
+addAbility(NewShipType,"CustomCommand",1,"DronesCata",1,0,1000,200,0.25,2,0,"data:Ship/Smt_DroneFrigate/Smt_DroneFrigate.lua","Start_DroneCata","Do_DroneCata","Finish_DroneCata","Smt_DroneFrigate",1.15,2,1)
+addCustomCode(NewShipType,"data:Ship/Smt_DroneFrigate/Smt_DroneFrigate.lua","","Create_DroneCata","Update_DroneCata","Destroy_DroneCata","Smt_DroneFrigate",1.15)
 LoadModel(NewShipType,1);
 
 StartShipWeaponConfig(NewShipType, "unh_ffdDummyGun", "Weapon_BigGun", "Weapon_BigGun");

@@ -138,9 +138,8 @@ addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3)
 addAbility(NewShipType, "RepairCommand", 0, 500, 100, {SuperCap = "100",}, 
 {Flagship = "100",})
 addAbility(NewShipType,"RetireAbility",1,0)
-addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
-
+addAbility(NewShipType,"CanBeRepaired","RepCap")
+addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap")
 LoadModel(NewShipType,1)
 addShield(NewShipType,"EMP",75,20)
 NewShipType.battleScarMaxTriBase = 30

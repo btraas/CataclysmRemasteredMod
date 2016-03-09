@@ -21,8 +21,8 @@ NewShipType["defensiveFormation"]="Delta";
 NewShipType["aggressiveFormation"]="Delta";
 NewShipType["mass"]=10;
 NewShipType["collisionMultiplier"]=3;
-NewShipType["thrusterMaxSpeed"]=1100;
-NewShipType["mainEngineMaxSpeed"]=1100;
+NewShipType["thrusterMaxSpeed"]=800;
+NewShipType["mainEngineMaxSpeed"]=800;
 NewShipType["rotationMaxSpeed"]=105;
 NewShipType["thrusterAccelTime"]=1.5;
 NewShipType["thrusterBrakeTime"]=0.75;
@@ -57,14 +57,14 @@ NewShipType["swayBobbingFactor"]=0.05;
 NewShipType["swayRotateFactor"]=0.1;
 NewShipType["dustCloudDamageTime"]=100;
 NewShipType["nebulaDamageTime"]=20;
-NewShipType["MinimalFamilyToFindPathAround"]="SuperCap";
-NewShipType["mirrorAboveManeuver"]="ImmelMann_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy";
-NewShipType["mirrorBelowManeuver"]="Split_S_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, Split_S_speedy, Split_S_speedy, Split_S_speedy";
-NewShipType["specialTurnLeftManeuver"]="NinetyDegLeftTurn, None, None";
-NewShipType["specialTurnRightManeuver"]="NinetyDegRightTurn, None, None";
+NewShipType.MinimalFamilyToFindPathAround="SuperCap"
+NewShipType.mirrorAboveManeuver="OneEightyDegRightTurn, OneEightyDegLeftTurn, ImmelMann_speedy"
+NewShipType.mirrorBelowManeuver="OneEightyDegRightTurn, OneEightyDegLeftTurn, ImmelMann_speedy"
+NewShipType.specialTurnLeftManeuver="NinetyDegLeftTurn, None, None"
+NewShipType.specialTurnRightManeuver="NinetyDegRightTurn, None, None"
 NewShipType["BuildFamily"]="DroneShip_smt";
 NewShipType["AttackFamily"]="Fighter";
-NewShipType["DockFamily"]="Drone";
+NewShipType["DockFamily"]="drone1";
 NewShipType["AvoidanceFamily"]="Strikecraft";
 NewShipType["DisplayFamily"]="Fighter";
 NewShipType["AutoFormationFamily"]="Fighter";
@@ -119,8 +119,8 @@ NewShipType["downLOD"]=515;
 NewShipType["downLOD"]=765;
 NewShipType["downLOD"]=2515;
 NewShipType["minimumZoomFactor"]=0.68;
-NewShipType["selectionLimit"]=1;
-NewShipType["preciseATILimit"]=0;
+NewShipType.selectionLimit=150000
+NewShipType.preciseATILimit=0
 NewShipType["selectionPriority"]=75;
 NewShipType["militaryUnit"]=1;
 addAbility(NewShipType, "MoveCommand", 1, 0);
@@ -138,21 +138,27 @@ NewShipType["launchNrOfShipsInDockFormation"]=1;
 NewShipType["launchFormation"]="dockline";
 addAbility(NewShipType, "ParadeCommand", 1);
 addAbility(NewShipType, "WaypointMove");
-addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.2, "Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter", "circlestrafe")
+addAbility(NewShipType,"CanAttack",1,5,1,0,0.35,1,"Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_Interceptor_vs_Frigate",
+{Fighter="Flyby_Interceptor_vs_Fighter"},
+{SubSystem="TopAttack_Interceptor_vs_Subsystem"},
+{SmallCapitalShip="Flyby_Interceptor_vs_CapShip"},
+{BigCapitalShip="Flyby_Interceptor_vs_CapShip"},
+{Mothership="Flyby_Interceptor_vs_Mothership"},
+{ResourceLarge="Flyby_Interceptor_vs_ResourceLarge"});
 addAbility(NewShipType, "GuardCommand", 1, 3000, 1);
 addAbility(NewShipType, "SensorPing", 0, 1, 10, 2.5);
 addAbility(NewShipType, "SpecialAttack", 0, "EMP");
 addAbility(NewShipType, "RetireAbility", 1, 0);
 addCustomCode(NewShipType,"data:Ship/hgn_smt_Drone0/hgn_smt_Drone0.lua","","","Update_Drone0","","hgn_smt_Drone0",60)
-LoadSharedModel(NewShipType, "hgn_smt_Drone0");
-StartShipWeaponConfig(NewShipType, "HW Cata Drones", "Weapon_Autogun", "Weapon_Autogun");
+LoadSharedModel(NewShipType, "hgn_smt_swarmer");
+StartShipWeaponConfig(NewShipType, "ksh_kineticautogun_swarmer", "Weapon_Autogun", "Weapon_Autogun");
 --StartShipWeaponConfig(NewShipType, "Hgn_SmallEMP", "Weapon_Autogun", "Fire");
 NewShipType["sobDieTime"]=0.1;
 NewShipType["sobSpecialDieTime"]=2;
 NewShipType["specialDeathSpeed"]=40;
 NewShipType["chanceOfSpecialDeath"]=0.25;
 NewShipType["deadSobFadeTime"]=1;
-setEngineTrail(NewShipType, 0, 3, "trail_ribbon.tga", 0.2, 0.5, 0.025, 8);
-setEngineBurn(NewShipType, 15, 0.5, 1, 15, 0, 0.7, 0.1, 25);
+--setEngineTrail(NewShipType, 0, 3, "trail_ribbon.tga", 0.1, 0.5, 0.025, 8);
+setEngineBurn(NewShipType, 60, 0.3, 0.3, 3, 0.5, 7, 0.03, 15);
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/Hiigaran/Fighter/", 0, "HScoutEng", "");
 
