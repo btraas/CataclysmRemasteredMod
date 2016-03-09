@@ -79,7 +79,7 @@ NewShipType.antiCorvetteValue = 5
 NewShipType.antiFrigateValue = 60
 NewShipType.totalValue = 110
 NewShipType.buildCost = 4000
-NewShipType.buildTime = 180
+NewShipType.buildTime = 1 --80
 NewShipType.buildPriorityOrder = 40
 NewShipType.retaliationRange = 6500
 NewShipType.retaliationDistanceFromGoal = 160
@@ -167,8 +167,8 @@ StartShipWeaponConfig(NewShipType,"ksh_dreadnoughtkineticburstcannon1","Weapon_F
 StartShipWeaponConfig(NewShipType,"ksh_dreadnoughtkineticburstcannon1","Weapon_FrontRightTurret","Weapon_FrontRightTurret1")
 StartShipWeaponConfig(NewShipType,"ksh_dreadnoughtkineticburstcannon1","Weapon_BotLeftTurret","Weapon_BotLeftTurret1")
 StartShipWeaponConfig(NewShipType,"ksh_dreadnoughtkineticburstcannon1","Weapon_BotRightTurret","Weapon_BotRightTurret1")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserIon","Hardpoint_IonBeam1","Weapon_Gun6");
-StartShipWeaponConfig(NewShipType,"Tai_CruiserIon","Hardpoint_IonBeam2","Weapon_Gun7");
+StartShipWeaponConfig(NewShipType,"Tai_CruiserIon","Hardpoint_IonBeam1","Weapon_Gun6")
+StartShipWeaponConfig(NewShipType,"Tai_CruiserIon","Hardpoint_IonBeam2","Weapon_Gun7")
 --StartShipHardPointConfig(NewShipType, "Weapon IonBeam 1", "Hardpoint_IonBeam1", "Weapon", "Innate", "Damageable", "Ksh_Sec_Dreadnought_IonBeamTurret", "", "", "", "", "", "", "", "");
 --StartShipHardPointConfig(NewShipType, "Weapon IonBeam 2", "Hardpoint_IonBeam2", "Weapon", "Innate", "Damageable", "Ksh_Sec_Dreadnought_IonBeamTurret", "", "", "", "", "", "", "", "");
 addShield(NewShipType,"EMP",10000,20)

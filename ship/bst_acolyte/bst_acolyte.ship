@@ -6,7 +6,7 @@
 NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Acolyte";
 NewShipType["sobDescription"]="$1503";
-NewShipType["maxhealth"]=250;
+NewShipType["maxhealth"]=300;
 NewShipType["regentime"]=0;
 NewShipType["minRegenTime"]=0;
 NewShipType["sideArmourDamage"]=1;
@@ -21,9 +21,9 @@ NewShipType["defensiveFormation"]="Delta";
 NewShipType["aggressiveFormation"]="Claw";
 NewShipType["mass"]=10;
 NewShipType["collisionMultiplier"]=3;
-NewShipType["thrusterMaxSpeed"]=325;
-NewShipType["mainEngineMaxSpeed"]=325;
-NewShipType["rotationMaxSpeed"]=105;
+NewShipType["thrusterMaxSpeed"]=275;
+NewShipType["mainEngineMaxSpeed"]=275;
+NewShipType["rotationMaxSpeed"]=95;
 NewShipType["thrusterAccelTime"]=2;
 NewShipType["thrusterBrakeTime"]=1;
 NewShipType["mainEngineAccelTime"]=2;
@@ -156,8 +156,8 @@ NewShipType["sobSpecialDieTime"]=2;
 NewShipType["specialDeathSpeed"]=40;
 NewShipType["chanceOfSpecialDeath"]=0.25;
 NewShipType["deadSobFadeTime"]=0;
-setEngineTrail(NewShipType, 0, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 6)
-setEngineTrail(NewShipType, 1, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 6)
+--setEngineTrail(NewShipType, 0, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 6)
+--setEngineTrail(NewShipType, 1, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 6)
 setEngineTrail(NewShipType, 2, 2, "trail_ribbon.tga", 0.1, 0.5, 0.025, 4)
 setEngineBurn(NewShipType, 7, 0.5, 1, 15, 0, 0.7, 0.1, 20);
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/Hiigaran/Fighter/", 0, "HScoutEng", "");
