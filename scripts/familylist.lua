@@ -195,6 +195,9 @@ buildFamily =
 		name = "SubSystemLarge_Smt",
 	},
 	{
+		name = "DroneShip_Smt",
+	},
+	{
 		name = "Micro_Smt",
 	},
 	{
@@ -1044,6 +1047,12 @@ unitcapsFamily =
 		numParam = 120,
 		stringParam = "This should not be displayed",
 	},	
+	{
+		name = "Hw1/CataDrones",
+		numParam = 130,
+		stringParam = "This should not be displayed",
+	}
+	
 }
 
 -- numParam -> display priority -> order undefined if priority not unique

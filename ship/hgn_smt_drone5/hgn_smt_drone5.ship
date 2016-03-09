@@ -64,7 +64,7 @@ NewShipType.specialTurnLeftManeuver="NinetyDegLeftTurn, None, None"
 NewShipType.specialTurnRightManeuver="NinetyDegRightTurn, None, None"
 NewShipType["BuildFamily"]="DroneShip_smt";
 NewShipType["AttackFamily"]="Fighter";
-NewShipType["DockFamily"]="drone1";
+NewShipType["DockFamily"]="drone";
 NewShipType["AvoidanceFamily"]="Strikecraft";
 NewShipType["DisplayFamily"]="Fighter";
 NewShipType["AutoFormationFamily"]="Fighter";
@@ -149,7 +149,7 @@ addAbility(NewShipType, "GuardCommand", 1, 3000, 1);
 addAbility(NewShipType, "SensorPing", 0, 1, 10, 2.5);
 addAbility(NewShipType, "SpecialAttack", 0, "EMP");
 addAbility(NewShipType, "RetireAbility", 1, 0);
-addCustomCode(NewShipType,"data:Ship/hgn_smt_Drone0/hgn_smt_Drone0.lua","","","Update_Drone0","","hgn_smt_Drone0",60)
+--addCustomCode(NewShipType,"data:Ship/hgn_smt_Drone0/hgn_smt_Drone0.lua","","","Update_Drone0","","hgn_smt_Drone0",60)
 LoadSharedModel(NewShipType, "hgn_smt_swarmer");
 StartShipWeaponConfig(NewShipType, "ksh_kineticautogun_swarmer", "Weapon_Autogun", "Weapon_Autogun");
 --StartShipWeaponConfig(NewShipType, "Hgn_SmallEMP", "Weapon_Autogun", "Fire");

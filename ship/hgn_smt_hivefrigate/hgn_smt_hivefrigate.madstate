@@ -35,6 +35,9 @@ end
 
 HGN_SMT_HIVEFRIGATE_DockPathOpen_OnSet = function(ship)
 --    setState(ship, "DockPathOpen", 0)
+
+	print("************* HIVEFRIGATE - DOCKPATH OPEN *************")
+
     if(isAnimRunning(ship,"Open") == 0) then
         startTime = 0
         -- close already running? need to offset in to the open animation

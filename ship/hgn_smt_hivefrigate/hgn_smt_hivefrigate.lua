@@ -114,7 +114,7 @@ function Update_DroneCata(CustomGroup, playerIndex, shipID)
 			SobGroup_IsDoingAbility("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Dock) == 0 then
 				SobGroup_ParadeSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup, 0)
 			end
-			if SobGroup_GetDistanceToSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 950 then
+			if SobGroup_GetDistanceToSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 5950 then
 				SobGroup_TakeDamage("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), 1)
 			elseif SobGroup_GetDistanceToSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 275 then
 				SobGroup_AbilityActivate("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 0)
