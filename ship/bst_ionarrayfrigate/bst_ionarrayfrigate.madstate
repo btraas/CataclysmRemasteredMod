@@ -1,4 +1,4 @@
-TUR_IONARRAYFRIGATE_Open_OnSet = function(ship)
+BST_IONARRAYFRIGATE_Open_OnSet = function(ship)
 	setState(ship, "Open", 0)
 	if(isAnimRunning(ship,"Array_Open") == 0) then
 		startTime = 0
@@ -13,11 +13,11 @@ TUR_IONARRAYFRIGATE_Open_OnSet = function(ship)
 	end
 end
 
-TUR_IONARRAYFRIGATE_Open_OnPause = function(ship)
+BST_IONARRAYFRIGATE_Open_OnPause = function(ship)
 	setState(ship, "Open", 1)
 end
 
-TUR_IONARRAYFRIGATE_Closed_OnSet = function(ship)	
+BST_IONARRAYFRIGATE_Closed_OnSet = function(ship)	
 	setState(ship, "Closed", 0)
 	if(isAnimRunning(ship,"Array_Close") == 0) then
 		startTime = 0
@@ -32,11 +32,11 @@ TUR_IONARRAYFRIGATE_Closed_OnSet = function(ship)
 	end	
 end
 
-TUR_IONARRAYFRIGATE_Closed_OnPause = function(ship)
+BST_IONARRAYFRIGATE_Closed_OnPause = function(ship)
 	setState(ship, "Closed", 1)
 end
 
-TUR_IONARRAYFRIGATE_Launched_OnSet = function(ship)
+BST_IONARRAYFRIGATE_Launched_OnSet = function(ship)
 	setState(ship, "Launched", 0)
 	if(isAnimRunning(ship,"Array_Open") == 0) then
 		startTime = 0
@@ -51,13 +51,13 @@ TUR_IONARRAYFRIGATE_Launched_OnSet = function(ship)
 	end
 end
 
-TUR_IONARRAYFRIGATE_Launched_OnPause = function(ship)
+BST_IONARRAYFRIGATE_Launched_OnPause = function(ship)
 	setState(ship, "Launched", 1)
     setState(ship, "Open", 1)
     setState(ship, "Closed", 0)
 end
 
-TUR_IONARRAYFRIGATE_Docked_OnSet = function(ship)	
+BST_IONARRAYFRIGATE_Docked_OnSet = function(ship)	
 	setState(ship, "Docked", 0)
 	if(isAnimRunning(ship,"Array_Close") == 0) then
 		startTime = 0
@@ -72,7 +72,7 @@ TUR_IONARRAYFRIGATE_Docked_OnSet = function(ship)
 	end	
 end
 
-TUR_IONARRAYFRIGATE_Docked_OnPause = function(ship)
+BST_IONARRAYFRIGATE_Docked_OnPause = function(ship)
 	setState(ship, "Docked", 1)
     setState(ship, "Closed", 1)
     setState(ship, "Open", 0)

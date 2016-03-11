@@ -15,7 +15,7 @@ NewShipType.isTransferable=0
 NewShipType.useEngagementRanges=1
 NewShipType.unitCapsNumber=1
 NewShipType.addedUnitCaps=101
-NewShipType.paradeData="tai_mothership_parade"
+NewShipType.paradeData="bst_mothership_parade"
 NewShipType.SquadronSize=1
 NewShipType.passiveFormation="Spear"
 NewShipType.defensiveFormation="x"
@@ -155,25 +155,13 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType, 1);
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun", "Weapon_gun");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun1", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun2", "Weapon_gun2");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun3", "Weapon_gun3");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun4", "Weapon_gun4");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun5", "Weapon_gun6");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun6", "Weapon_gun6");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower", "Weapon_gun7", "Weapon_gun7");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun1", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun2", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun3", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun4", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun5", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun6", "Weapon_gun1");
-StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGunSide_halfpower1", "Weapon_gun7", "Weapon_gun1");
-StartShipHardPointConfig(NewShipType,"Generic 1","Hardpoint_Hyperspace","System","Generic","Destroyable","","Vgr_C_Module_FireControl","","","","","","","")
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_Gun0","Weapon_Gun0");
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_Gun1","Weapon_Gun1");
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_Gun2","Weapon_Gun2");
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_Gun3","Weapon_Gun3");
+--StartShipHardPointConfig(NewShipType,"Generic 1","Hardpoint_Hyperspace","System","Generic","Destroyable","","Vgr_C_Module_FireControl","","","","","","","")
 --StartShipHardPointConfig(NewShipType,"Generic 2","Hardpoint_Hyperspace2","System","Generic","Destroyable","","Hgn_C_Module_HyperspaceInhibitor","","","","","","")
---StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Tdn_C_Engine","","","","","","","","")
+StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Tai_CarrierEngine","","","","","","","","")
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Bst_Tdn_C_Innate_Resource","","","","","","","","")
 
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);

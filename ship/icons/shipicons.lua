@@ -99,6 +99,14 @@ Hgn_Smt_SuperAcolyte={
 	},
 };
 
+Hgn_Smt_MCV={
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
+		textureUV = { 0, 1280, 512, 1536},
+		stretchOnDraw = 1,
+	},
+};
+
 Hgn_Smt_Swarmer={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
@@ -154,6 +162,17 @@ Hgn_Smt_MS_SP={
 		stretchOnDraw = 1,
 	},
 };
+
+Hgn_Smt_Leech={
+	LargeIcon = {
+		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
+		textureUV = { 1536, 1024, 2048, 1280},
+		stretchOnDraw = 1,
+	},
+};
+
+
+
 
 Hgn_Smt_Worker={
 	LargeIcon = {
