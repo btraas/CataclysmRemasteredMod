@@ -224,7 +224,7 @@ DisplayedName = "ADVIon Cannons",
 DisplayPriority = 5,
 Description = "Unlocks Ion Cannon Frigates",
 TargetType = ship,
-TargetName = "bst_ioncannonfrigate",
+TargetName = "bst_ionarrayfrigate",
 Icon = Icon_Tech,
 ShortDisplayedName = "ADVIon Cannons"},
 

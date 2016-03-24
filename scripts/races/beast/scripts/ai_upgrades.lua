@@ -247,7 +247,7 @@ function DoUpgradeDemand_Beast()
 	end
 	local numFrigate = numActiveOfClass( s_playerIndex, eFrigate )
 	if (numFrigate > 2) then
-		local numIonFrigate = NumSquadrons( BST_IONCANNONFRIGATE )
+		local numIonFrigate = NumSquadrons( BST_IONARRAYFRIGATE )
 		if (numIonFrigate>2) then
 			inc_upgrade_demand( rt_frigate.ioncannon, numIonFrigate*1.5 )
 		end
@@ -324,7 +324,7 @@ function DoResearchTechDemand_Beast()
 		end
 	end
 	if (Util_CheckResearch(BSTIONCANNONS)) then
-		local demand = ShipDemandGet(BST_IONCANNONFRIGATE) + ShipDemandGet(BST_IONARRAYFRIGATE)
+		local demand = ShipDemandGet(BST_IONARRAYFRIGATE)
 		if (demand > 0) then
 			ResearchDemandSet( BSTIONCANNONS, demand )
 		end
