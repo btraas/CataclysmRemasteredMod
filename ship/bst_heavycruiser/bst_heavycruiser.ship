@@ -148,22 +148,24 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun1","Weapon_LeftGun1","Weapon_TurretTopRight")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun2","Weapon_LeftGun2","Weapon_TurretTopLeft")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun1","Weapon_LeftGun3","Weapon_TurretRightSide")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun2","Weapon_RightGun1","Weapon_TurretLeftSide")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun3","Weapon_RightGun2","Weapon_TurretRightBot")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun3","Weapon_RightGun3","Weapon_TurretLeftBot")
-StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonLeftSide1","Weapon_LeftGun1","Weapon_TurretTopRight1")
-StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonRightSide1","Weapon_LeftGun2","Weapon_TurretTopLeft1")
-StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon1","Weapon_LeftGun3","Weapon_TurretRightSide1")
-StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonRightSide1","Weapon_RightGun1","Weapon_TurretLeftSide1")
-StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonLeftSide1","Weapon_RightGun2","Weapon_TurretRightBot1")
-StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon1","Weapon_RightGun3","Weapon_TurretLeftBot1")
-StartShipHardPointConfig(NewShipType, "Weapon IonBeam 1", "Hardpoint_IonBeam1", "Weapon", "Innate", "Damageable", "bst_tdn_heavycruiser_ionbeamturret", "", "", "", "", "", "", "", "");
-StartShipHardPointConfig(NewShipType, "Weapon IonBeam 2", "Hardpoint_IonBeam2", "Weapon", "Innate", "Damageable", "bst_tdn_heavycruiser_ionbeamturret", "", "", "", "", "", "", "", "");
+StartShipWeaponConfig(NewShipType,"Tai_CruiserGun1","Weapon_Gun0","Weapon_TurretTopRight")
+StartShipWeaponConfig(NewShipType,"Tai_CruiserGun2","Weapon_Gun1","Weapon_TurretTopLeft")
+StartShipWeaponConfig(NewShipType,"Tai_CruiserGun1","Weapon_Gun2","Weapon_TurretRightSide")
+StartShipWeaponConfig(NewShipType,"Tai_CruiserGun2","Weapon_Gun3","Weapon_TurretLeftSide")
+StartShipWeaponConfig(NewShipType,"Tai_CruiserGun3","Weapon_Gun4","Weapon_TurretRightBot")
+StartShipWeaponConfig(NewShipType,"Tai_CruiserGun3","Weapon_Gun5","Weapon_TurretLeftBot")
+StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonLeftSide1","Weapon_Gun0","Weapon_TurretTopRight1")
+StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonRightSide1","Weapon_Gun1","Weapon_TurretTopLeft1")
+StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon1","Weapon_Gun2","Weapon_TurretRightSide1")
+StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonRightSide1","Weapon_Gun3","Weapon_TurretLeftSide1")
+StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonLeftSide1","Weapon_Gun4","Weapon_TurretRightBot1")
+StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon1","Weapon_Gun5","Weapon_TurretLeftBot1")
+--StartShipHardPointConfig(NewShipType, "Weapon IonBeam 1", "Hardpoint_IonBeam1", "Weapon", "Innate", "Damageable", "bst_tdn_heavycruiser_ionbeamturret", "", "", "", "", "", "", "", "");
+--StartShipHardPointConfig(NewShipType, "Weapon IonBeam 2", "Hardpoint_IonBeam2", "Weapon", "Innate", "Damageable", "bst_tdn_heavycruiser_ionbeamturret", "", "", "", "", "", "", "", "");
+StartShipWeaponConfig(NewShipType,"Kus_CruiserIon","Weapon_Turret_Ion1","Weapon_Gun6");
+StartShipWeaponConfig(NewShipType,"Kus_CruiserIon","Weapon_Turret_Ion2","Weapon_Gun7");
 addShield(NewShipType,"EMP",10000,20)
-StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Tdn_HeavyCruiserEngine","","","","","","","","")
+StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Tai_HeavyCruiserEngine","","","","","","","","");
 
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.19,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);
@@ -201,7 +203,7 @@ setEngineGlow(NewShipType,1,1,1.02,20,450,150,1.5,{
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Hiigaran/Carrier/Engines/HDestroyerEng","",1,"BeastHCAmb","")
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","SalvagePoint3","SalvagePoint4","SalvagePoint5","SalvagePoint6");	
 loadLatchPointList(NewShipType,"CapCap","CapturePoint1","CapturePoint2","CapturePoint3");
-loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4","RepairPoint5","RepairPoint6");														 
+loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4","RepairPoint5","RepairPoint6");													 
 NewShipType.minFalloffDamageDist=0
 NewShipType.maxFalloffDamageDist=1000
 NewShipType.maxFalloffDamage=1000

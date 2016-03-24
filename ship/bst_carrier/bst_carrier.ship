@@ -190,6 +190,9 @@ setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, {1,
 	0,
 	0.25});
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/", 0, "Carrier", "", 1, "BeastCapitalAmb", "", 3,"")
+loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","SalvagePoint3","SalvagePoint4","SalvagePoint5","SalvagePoint6");	
+loadLatchPointList(NewShipType,"CapCap","CapturePoint1","CapturePoint2","CapturePoint3","CapturePoint4");
+loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4","RepairPoint5","RepairPoint6");		
 setConcurrentBuildLimit(NewShipType,0,2);
 NewShipType.minFalloffDamageDist=0
 NewShipType.maxFalloffDamageDist=950

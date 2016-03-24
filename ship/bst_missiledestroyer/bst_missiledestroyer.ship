@@ -151,12 +151,23 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType, "SpecialAttack", 1, "MissileVolley");
 
 LoadModel(NewShipType,1)
-StartShipWeaponConfig(NewShipType, "tai_desmissile", "Weapon_Torpedo", "Weapon_Torpedo");
-StartShipWeaponConfig(NewShipType, "tai_desmissile", "Weapon_Torpedo2", "Weapon_Torpedo2");
-StartShipWeaponConfig(NewShipType, "MissileVolley", "Weapon_Torpedo", "Weapon_Torpedo");
-StartShipWeaponConfig(NewShipType, "MissileVolley", "Weapon_Torpedo2", "Weapon_Torpedo2");
+--StartShipWeaponConfig(NewShipType, "tai_desmissile", "Weapon_Torpedo", "Weapon_Torpedo");
+--StartShipWeaponConfig(NewShipType, "tai_desmissile", "Weapon_Torpedo2", "Weapon_Torpedo2");
+--StartShipWeaponConfig(NewShipType, "MissileVolley", "Weapon_Torpedo", "Weapon_Torpedo");
+--StartShipWeaponConfig(NewShipType, "MissileVolley", "Weapon_Torpedo2", "Weapon_Torpedo2");
+
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncher","Weapon_Gun0","Weapon_Torpedo");
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncher","Weapon_Gun1","Weapon_Torpedo2");
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncher","Weapon_Gun2","Weapon_Torpedo");
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncher","Weapon_Gun3","Weapon_Torpedo2");
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV0","Weapon_Torpedo");
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV1","Weapon_Torpedo2");
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV2","Weapon_Torpedo");
+StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV3","Weapon_Torpedo2");
+
+
 addShield(NewShipType, "EMP", 1000, 20)
-StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","ksh_Des_Engine","","","","","","","","")
+StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Kus_MissileDestroyerEngine","","","","","","","","");
 NewShipType.battleScarMaxTriBase = 150
 NewShipType.battleScarMaxTriInc = 200
 NewShipType.sobDieTime = 3.5
@@ -173,6 +184,9 @@ setEngineGlow(NewShipType,1,1,1.02,20,300,50,1.5,{
   0.25,
 })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/", 0, "Carrier", "", 1, "BeastCapitalAmb", "", 3,"") 
+loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","SalvagePoint3","SalvagePoint4");		
+loadLatchPointList(NewShipType,"CapCap","CapturePoint1","CapturePoint2");	
+loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4");	
 NewShipType.minFalloffDamageDist=0
 NewShipType.maxFalloffDamageDist=600
 NewShipType.maxFalloffDamage=600
