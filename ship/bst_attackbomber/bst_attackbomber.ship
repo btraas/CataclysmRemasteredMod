@@ -144,8 +144,8 @@ addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0); 
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_L","Weapon_Gun0");
-StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_R","Weapon_Gun1");
+StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_Gun0","Weapon_Gun0");
+StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_Gun1","Weapon_Gun1");
 addShield(NewShipType,"EMP",75,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
