@@ -251,10 +251,6 @@ function DoUpgradeDemand_Beast()
 		if (numIonFrigate>2) then
 			inc_upgrade_demand( rt_frigate.ioncannon, numIonFrigate*1.5 )
 		end
-		local numAssaultFrigate = NumSquadrons( BST_TDN_STANDARDFRIGATE )
-		if (numAssaultFrigate>2) then
-			inc_upgrade_demand( rt_frigate.assault, numAssaultFrigate*1.5 )
-		end
 		local numDffFrigate = NumSquadrons( BST_FIELDFRIGATE )
 		if (numDffFrigate>2) then
 			inc_upgrade_demand( rt_frigate.dff, numDffFrigate*1.5 )
