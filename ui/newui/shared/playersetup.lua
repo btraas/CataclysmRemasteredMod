@@ -111,12 +111,13 @@ PlayerSetup = {
 						},		
 						arrangeSep = {	x=PANEL_SPACING_HORIZ/2, y=0, xr="scr", yr="scr",},	
 						;
+						
 						{
 							type = "ButtonHD",
 							ignored = 1,				
 							--toggleButton = 1,
 							buttonStyle = "RM_TaskbarHD_MenuButtonStyle",
-							name = "somtaawPresetButton",
+							name = "hiigaranPresetButton",
 										
 							helpTip = "$1100",
 							helpTipTextLabel = "commandsHelpTip",							
@@ -139,29 +140,6 @@ PlayerSetup = {
 							ignored = 1,				
 							--toggleButton = 1,
 							buttonStyle = "RM_TaskbarHD_MenuButtonStyle",
-							name = "hiigaranPresetButton",
-										
-							helpTip = "$1100",
-							helpTipTextLabel = "commandsHelpTip",							
-
-							Layout = {
-								--pos_XY = { x = 256, y = 128, xr = "px", yr = "px" },
-								size_WH = { w = 128.0, h = 64.0, wr = "px", hr = "px" },
-								lockAspect = 2,
-								pivot_XY = {0.0, 0.0},
-							},
-
-							BackgroundGraphic = {
-								texture = "DATA:UI\\NewUI\\PlayerSetup\\preset_hiigaran.tga",
-								textureUV = { 0, 0, 256, 128 },
-								--color = { 0, 0, 0, 200 },
-							},
-						},
-						{
-							type = "ButtonHD",
-							ignored = 1,				
-							--toggleButton = 1,
-							buttonStyle = "RM_TaskbarHD_MenuButtonStyle",
 							name = "vaygrPresetButton",
 										
 							helpTip = "$1101",
@@ -175,7 +153,7 @@ PlayerSetup = {
 							},
 
 							BackgroundGraphic = {
-								texture = "DATA:UI\\NewUI\\PlayerSetup\\preset_vaygr.tga",
+								texture = "DATA:UI\\NewUI\\PlayerSetup\\preset_beast.tga",
 								textureUV = { 0, 0, 256, 128 },
 								--color = { 0, 0, 0, 200 },
 							},
@@ -315,13 +293,16 @@ PlayerSetup = {
 					helpTip = "$2793",
 				},
 				
+				
+				----------Hiigaran -- now SOMTAAW
 				-- Somtaaw ship preview
 				{
 					type = "Frame",
 					--position = {6, 71},
 					size = {500, 250},
-					name = "sshippreview",
-					visible = 0,
+					name = "shippreview",
+					eventOpaque = 0,
+					visible = 1,
 					helpTipTextLabel = "helpTip",
 					helpTip = "$2793",
 					;
@@ -341,7 +322,7 @@ PlayerSetup = {
 							type = "Frame",
 							--position = {0, 0},
 							size = {500, 250},
-							name = "sshipteamcolor",
+							name = "shipteamcolor",
 							BackgroundGraphic = {
 								size = {500, 250},
 								texture = "DATA:UI\\NewUI\\PlayerSetup\\sship_teamcolor.tga",
@@ -355,7 +336,7 @@ PlayerSetup = {
 								type = "Frame",
 								--position = {0, 0},
 								size = {500, 250},
-								name = "sshipstripecolor",
+								name = "shipstripecolor",
 								BackgroundGraphic = {
 									size = {500, 250},
 									texture = "DATA:UI\\NewUI\\PlayerSetup\\sship_stripecolor.tga",
@@ -366,7 +347,7 @@ PlayerSetup = {
 							},
 							{
 								type = "Frame",
-								name = "vgr_emblem",
+								name = "smt_emblem",
 								--position = {116, 14},
 								size = { 26, 26},
 								BackgroundGraphic = {
@@ -388,108 +369,6 @@ PlayerSetup = {
 					--	giveParentMouseInput = 1,
 					--},
 				},
-				----------Hiigaran
-				{
-					type = "Frame",				
-					size = {500, 250},
-					name = "shippreview",
-					eventOpaque = 0,
-					visible = 1,
-					helpTipTextLabel = "helpTip",
-					helpTip = "$2793",
-					;
-
-					{
-						type = "Frame",				
-						size = {500, 250},
-						name = "grid",
-						visible = 1,
-						BackgroundGraphic = {
-							texture = "DATA:UI\\NewUI\\PlayerSetup\\ship_shadow.tga",
-							textureUV = { 0, 0, 2048, 1024 },
-							--color = { 0, 0, 0, 200 },
-						},
-						helpTipTextLabel = "helpTip",
-						helpTip = "$2793",
-					},
-
-
-					{
-						type = "Frame",
-						--position = {93, 5},
-						size = {500, 250},
-						BackgroundGraphic = {
-							size = {500, 250},
-							texture = "DATA:UI\\NewUI\\PlayerSetup\\ship_base.tga",
-							uvRect = { 0, 1, 1, 0 },
-							--textureUV = { 0, 0, 300, 190 },
-						},
-						giveParentMouseInput = 1,
-						;
-						{
-							type = "Frame",
-							--position = {0, 0},
-							size = {500, 250},
-							name = "shipteamcolor",
-							BackgroundGraphic = {
-								size = {500, 250},
-								texture = "DATA:UI\\NewUI\\PlayerSetup\\ship_teamcolor.tga",
-								uvRect = { 0, 1, 1, 0 },
-								--textureUV = { 0, 0, 300, 190 },
-								color = { 118, 174, 207, 255 },
-							},
-							giveParentMouseInput = 1,
-							;
-							{
-								type = "Frame",
-								--position = {0, 0},
-								size = {500, 250},
-								name = "shipstripecolor",
-								BackgroundGraphic = {
-									size = {500, 250},
-									texture = "DATA:UI\\NewUI\\PlayerSetup\\ship_stripecolor.tga",
-									--textureUV = { 0, 0, 300, 190 },
-									uvRect = { 0, 1, 1, 0 },
-								},
-								giveParentMouseInput = 1,
-							},
-						},
-						{
-							type = "Frame",
-							name = "hgn_emblem1",
-							--position = {46, 21},
-							size = { 26, 26},
-							BackgroundGraphic = {
-								texture = "DATA:Badges/Hiigaran.tga",
-								uvRect = {0.0,1.0,1.0,0.0},
-								color = { 240, 240, 240, 255},
-							},
-							giveParentMouseInput = 1,
-						},
-						---{
-						--	type = "Frame",
-						--	name = "hgn_emblem2",
-						--	--position = {46, 142},
-						--	size = { 26, 26},
-						--	BackgroundGraphic = {
-						--		texture = "DATA:Badges/Hiigaran.tga",
-						--		uvRect = {0.0,0.0,1.0,1.0},
-						--		color = { 200, 200, 200, 255},
-						--	},
-						--	giveParentMouseInput = 1,
-						--},
-					},
-
-					--{
-					--	type = "Frame",
-					--	size = {500, 250},
-					--	BackgroundGraphic = {
-					--		texture = "DATA:UI\\NewUI\\PlayerSetup\\labeltext.tga",
-					--		textureUV = { 0, 0, 486, 216 },
-					--	},
-					--	giveParentMouseInput = 1,
-					--},
-				},
 				{
 					type = "Frame",
 					--position = {6, 71},
@@ -505,7 +384,7 @@ PlayerSetup = {
 						size = {500, 250},
 						BackgroundGraphic = {
 							size = {500, 250},
-							texture = "DATA:UI\\NewUI\\PlayerSetup\\vship_base.tga",
+							texture = "DATA:UI\\NewUI\\PlayerSetup\\bship_base.tga",
 							uvRect = { 0, 1, 1, 0 },
 							--textureUV = { 0, 0, 438, 116 },
 						},
@@ -518,7 +397,7 @@ PlayerSetup = {
 							name = "vshipteamcolor",
 							BackgroundGraphic = {
 								size = {500, 250},
-								texture = "DATA:UI\\NewUI\\PlayerSetup\\vship_teamcolor.tga",
+								texture = "DATA:UI\\NewUI\\PlayerSetup\\bship_teamcolor.tga",
 								uvRect = { 0, 1, 1, 0 },
 								--textureUV = { 0, 0, 438, 116 },
 								color = { 118, 174, 207, 255 },
@@ -532,7 +411,7 @@ PlayerSetup = {
 								name = "vshipstripecolor",
 								BackgroundGraphic = {
 									size = {500, 250},
-									texture = "DATA:UI\\NewUI\\PlayerSetup\\vship_stripecolor.tga",
+									texture = "DATA:UI\\NewUI\\PlayerSetup\\bship_stripecolor.tga",
 									--textureUV = { 0, 0, 438, 116 },
 									uvRect = { 0, 1, 1, 0 },
 								},
@@ -540,11 +419,11 @@ PlayerSetup = {
 							},
 							{
 								type = "Frame",
-								name = "vgr_emblem",
+								name = "bst_emblem",
 								--position = {116, 14},
 								size = { 26, 26},
 								BackgroundGraphic = {
-									texture = "DATA:Badges/Hiigaran.tga",
+									texture = "DATA:Badges/beast_red.tga",
 									uvRect = {0.0,1.0,1.0,0.0},
 									color = { 255, 255, 255, 255},
 								},
@@ -706,6 +585,7 @@ PlayerSetup = {
 					--	giveParentMouseInput = 1,
 					--},
 				},
+				
 				-- Grid that goes on top of ships
 				{
 					type = "Frame",				
@@ -767,27 +647,27 @@ PlayerSetup = {
 										textStyle = "FEListBoxItemTextStyle",
 										text = "Somtaaw",
 									},	
-									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
-								},
-								-- Hiigaran
-								{
-									type = "TextListBoxItem",
-									buttonStyle = "FEListBoxItemButtonStyle",
-									resizeToListBox = 1,
-									Text = {
-										textStyle = "FEListBoxItemTextStyle",
-										text = "$1100",
-									},
 									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
 								},
-								-- Vaygr
+								-- Hiigaran
+							--	{
+							--		type = "TextListBoxItem",
+							--		buttonStyle = "FEListBoxItemButtonStyle",
+							--		resizeToListBox = 1,
+							--		Text = {
+							--			textStyle = "FEListBoxItemTextStyle",
+							--			text = "$1100",
+							--		},
+							--		onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
+							--	},
+								-- Vaygr -- now beast
 								{
 									type = "TextListBoxItem",
 									buttonStyle = "FEListBoxItemButtonStyle",
 									resizeToListBox = 1,
 									Text = {
 										textStyle = "FEListBoxItemTextStyle",
-										text = "$1101",
+										text = "Beast",
 									},	
 									onMouseClicked = "UI_SetElementVisible(\"PlayerSetup\", \"sshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"shippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"vshippreview\", 1); UI_SetElementVisible(\"PlayerSetup\", \"kshippreview\", 0); UI_SetElementVisible(\"PlayerSetup\", \"tshippreview\", 0);";
 								},
