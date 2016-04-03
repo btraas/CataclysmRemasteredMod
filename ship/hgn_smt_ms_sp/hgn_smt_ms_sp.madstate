@@ -8,6 +8,7 @@
 
 -- TRY TO HAVE THIS RUN ALL THE TIME ---------------------------------------------------------
 
-HGN_SMT_MS_SP_Open_Onset = function(ship)
-	startAnim(ship, "Animation1")
+HGN_SMT_MS_SP_Normal_OnSet = function(ship)
+    startAnim(ship, "rotate")
+    setLoopCount(ship, "rotate", 100000)   --infinite looping
 end

@@ -85,10 +85,10 @@ function Rule_Init()
 	CPU_Enable( 2, 0 )
 	CPU_Enable( 3, 0 )
 
-	SobGroup_SetMadState(Player_GetShipsByType(2, "kus_proximitysensor"), "open")
+	--startAnim(Player_GetShipsByType(2, "kus_proximitysensor"), "open")
 	SobGroup_SetAsDeployed(Player_GetShipsByType(2, "kus_proximitysensor"))
 	
-	SobGroup_SetMadState(Player_GetShipsByType(0, "Hgn_smt_ms_sp"), "open")
+	--startAnim(Player_GetShipsByType(0, "Hgn_smt_ms_sp"), "open")
 	
 	SobGroup_Attack(3, "firelanceAttackers", "firelanceIons")
 	

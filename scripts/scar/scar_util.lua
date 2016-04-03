@@ -324,13 +324,13 @@ function HW2_SetResearchLevel( missionID )
 		
 						{ "Hgn_Smt_Worker", 0 },
 						{ "Hgn_Smt_scout", 0 },
-						{ "Hgn_Smt_AcolyteE", 0 },
+						{ "Hgn_Smt_Acolyte", 0 },
 		
 						{ "Hgn_Smt_mimic", 3 },
 						{ "Hgn_Smt_leech", 3 },
 						{ "Hgn_Smt_sentinel", 3 },
 						
-						{ "Hgn_Smt_ACVE", 1 },
+						{ "Hgn_Smt_ACV", 1 },
 						{ "Hgn_Smt_MCV", 3 },
 						{ "Hgn_Smt_multibeamfrigate", 4 },
 						
