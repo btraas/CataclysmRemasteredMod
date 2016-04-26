@@ -1,5 +1,0 @@
-StartWeaponConfig(NewWeaponType,"Fixed","InstantHit","HealBeam","Normal",0,750,0,5,0,0,1,1,0,5,5,1,1,0,0,0,0.1,"Normal",0,0,0);
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",-9,-9,"");
-setPenetration(NewWeaponType,5,1,{PlanetKillerArmour=0},{ResArmour=0.8});
-setAccuracy(NewWeaponType,1);
-setAngles(NewWeaponType,60,0,0,0,0);

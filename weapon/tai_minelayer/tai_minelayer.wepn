@@ -1,8 +1,0 @@
-StartWeaponConfig(NewWeaponType, "Fixed", "Mine", "Tai_Mineforced", "Dropped", 0, 1828, 0, 0, 0, 2, 1, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0);
-AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 5625, 5625, "")
-setPenetration(NewWeaponType, 5, 1, {PlanetKillerArmour=0}, {MineArmour=0});
-setAccuracy(NewWeaponType, 1, {Scout=0}, {Fighter=0}, {Corvette=0}, {munition=0});
-setAngles(NewWeaponType, 180, 0, 0, 0, 0);
-setMiscValues(NewWeaponType, 0, 3);
-
---Original weapon range was 457 for some odd reason making it far worst than its Kushan counterpart.

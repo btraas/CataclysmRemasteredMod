@@ -1,4 +1,0 @@
-StartWeaponConfig(NewWeaponType, "Fixed", "SphereBurst", "Vgr_SmallMissile", "Normal", 0, 0, 32, 2, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 1, 0, 0)
-AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 280, 280, "")
-setPenetration(NewWeaponType, 5, 0.1, {unarmoured = 0.11}, {lightarmour = 0.5}, {PlanetKillerArmour = 0})
-setAngles(NewWeaponType, 180, 0, 0, 0, 0)

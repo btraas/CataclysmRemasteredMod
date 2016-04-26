@@ -1,8 +1,0 @@
-StartWeaponConfig(NewWeaponType,"Fixed","Missile","Tai_Missile","Normal",381,8000,0,0,0,0,1,0,0,2,0,0,1,1,0,0,1,"Normal",0,0,0)
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",240,240,"")
-setPenetration(NewWeaponType,5,1,{
-  PlanetKillerArmour = 0,
-})
-setAccuracy(NewWeaponType,1, {Scout=0.25}, {Fighter=0.5}, {Corvette=1}, {munition=0.5})
-setAngles(NewWeaponType,180,0,0,0,0)
-setMiscValues(NewWeaponType,0,0.2)
