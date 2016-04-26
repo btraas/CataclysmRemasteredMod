@@ -1,0 +1,45 @@
+SMT_SUPERACOLYTE_CodeRed_OnSet = function(ship)
+
+	 -- not already doing the Open?
+    if(isAnimRunning(ship, "Open") == 0) then
+        startTime = 0
+        if(isAnimRunning(ship, "Close") ~= 0) then
+            startTime = getAnimLength(ship, "Close") - getTime(ship, "Close")
+            stopAnim(ship, "Close")
+        end
+        startAnim(ship, "Open")
+        setTime(ship,"Open",startTime)
+        setPauseTime(ship, "Open", 1000)
+    end
+	
+end
+
+SMT_SUPERACOLYTE_CodeGreen_OnSet = function(ship)
+	-- already closing?
+    if(isAnimRunning(ship,"Close") == 0) then
+        startTime = 0
+        -- Open already running? need to offset in to the Close animation
+        if(isAnimRunning(ship,"Open") ~= 0) then
+            startTime = getAnimLength(ship, "Open") - getTime(ship, "Open")
+            stopAnim(ship, "Open")
+        end
+        startAnim(ship, "Close")
+        setTime(ship,"Close",startTime)
+        setPauseTime(ship, "Close", 3)
+	end
+end
+
+SMT_SUPERACOLYTE_Docked_OnSet = function(ship)
+	-- already closing?
+    if(isAnimRunning(ship,"Close") == 0) then
+        startTime = 0
+        -- Open already running? need to offset in to the Close animation
+        if(isAnimRunning(ship,"Open") ~= 0) then
+            startTime = getAnimLength(ship, "Open") - getTime(ship, "Open")
+            stopAnim(ship, "Open")
+        end
+        startAnim(ship, "Close")
+        setTime(ship,"Close",startTime)
+        setPauseTime(ship, "Close", 3)
+    end
+end

@@ -140,18 +140,18 @@ function DoUpgradeDemand_Somtaaw()
 	end
 	local numCorvette = numActiveOfClass( s_playerIndex, eCorvette )
 	if (numCorvette > 1) then
-		local numAssaultCorvette = NumSquadrons( HGN_SMT_ACV )
+		local numAssaultCorvette = NumSquadrons( SMT_ACV )
 		if (numAssaultCorvette>2) then
 			inc_upgrade_demand( rt_corvette.assault, numAssaultCorvette*1.25 )
 		end
 	end
 	local numFrigate = numActiveOfClass( s_playerIndex, eFrigate )
 	if (numFrigate > 2) then
-		local numTorpedoFrigate = NumSquadrons( HGN_SMT_RAMMINGFRIGATE )
+		local numTorpedoFrigate = NumSquadrons( SMT_RAMMINGFRIGATE )
 		if (numTorpedoFrigate>2) then
 			inc_upgrade_demand( rt_frigate.torpedo, numTorpedoFrigate*1.5 )
 		end
-		local numIonFrigate = NumSquadrons( HGN_SMT_MULTIBEAMFRIGATE )
+		local numIonFrigate = NumSquadrons( SMT_MULTIBEAMFRIGATE )
 		if (numIonFrigate>2) then
 			inc_upgrade_demand( rt_frigate.ioncannon, numIonFrigate*1.5 )
 	end
@@ -170,38 +170,38 @@ function DoResearchTechDemand_Somtaaw()
 	ResearchDemandSet( SMTSUPERCAPITALSHIPDRIVE, 4 )
 	
 	if (Util_CheckResearch(SMTPLASMABOMBLAUNCHER)) then
-		local demand = ShipDemandGet(HGN_SMT_SUPERACOLYTE)
+		local demand = ShipDemandGet(SMT_SUPERACOLYTE)
 		if (demand > 0) then
 			ResearchDemandSet( SMTPLASMABOMBLAUNCHER, demand )
 		end
 	end
 	if (Util_CheckResearch(SMTIONCANNONS)) then
-		local demand = ShipDemandGet(HGN_SMT_MULTIBEAMFRIGATE)
+		local demand = ShipDemandGet(SMT_MULTIBEAMFRIGATE)
 		if (demand > 0) then
 			ResearchDemandSet( SMTIONCANNONS, demand )
 		end
 	end
 	if (Util_CheckResearch(SMTGUIDEDMISSILES)) then
-		local demand = ShipDemandGet(HGN_SMT_DESTROYER)
+		local demand = ShipDemandGet(SMT_DESTROYER)
 		if (demand > 0) then
 			ResearchDemandSet( SMTGUIDEDMISSILES, demand )
 		end
 	end
 	if (Util_CheckResearch(SMTSUPERCAPITALSHIPDRIVE)) then
-		local demand = ShipDemandGet(HGN_SMT_CARRIER)
+		local demand = ShipDemandGet(SMT_CARRIER)
 		if (demand > 0) then
 			ResearchDemandSet( SMTSUPERCAPITALSHIPDRIVE, demand )
 		end
 	end
 	local numShipyards = NumSquadrons(kShipYard) + NumSquadronsQ(kShipYard)
 	if (numShipyards > 0 and Util_CheckResearch(SMTENERGYCANNONTECHNOLOGY)) then
-		local battleCruiserDemand = ShipDemandGet( HGN_SMT_DREADNOUGHT )
+		local battleCruiserDemand = ShipDemandGet( SMT_DREADNOUGHT )
 		if (battleCruiserDemand > 0) then
 			ResearchDemandSet( SMTENERGYCANNONTECHNOLOGY, battleCruiserDemand )
 		end
 	end
 	if (Util_CheckResearch(SMTHYPERSPACETECH)) then
-			local demand = ShipDemandGet(HGN_SMT_MS)
+			local demand = ShipDemandGet(SMT_MS)
 			if (demand > 0) then
 				ResearchDemandSet( SMTHYPERSPACETECH, demand+0.5 )
 		end

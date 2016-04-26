@@ -1,7 +1,7 @@
 Path_Name = "Somtaaw"
 Symbolic_Name = "Somtaaw"
 Display_Name = "Somtaaw"
-Prefix = "HGN_SMT_"
+Prefix = "SMT_"
 
 --ExtFilter = "race_dm,race_random"
 --Tags = "race_dm,race_random"

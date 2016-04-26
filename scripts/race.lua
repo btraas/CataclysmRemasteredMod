@@ -55,13 +55,13 @@ races =
     --pirate races to go here...
 	
 	--HWC MP races 10
-	{"Somtaaw", "Somtaaw [NO CPU]", "hyperspace_gate", "etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN", 9.5, Playable, 1, "HGN_SMT_"},
+	{"Somtaaw", "Somtaaw", "hyperspace_gate", "etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN", 9.5, Playable, 1, "SMT_"},
 	
 	--Hiigaran MP 11
 	{"HiigaranMP", "$1100", "hyperspace_gate", "etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN", 9.5, Playable, 1, "HGN_"},
 
 	--Beast 12
-	{"Beast", "Beast [NO CPU]", "hyperspace_gate", "etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN", 9.5, Playable, 1, "BST_"},
+	{"Beast", "Beast", "hyperspace_gate", "etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN", 9.5, Playable, 1, "BST_"},
 	
 	{"Random",  "$3226", "", "", 0, Playable,1,""},
 

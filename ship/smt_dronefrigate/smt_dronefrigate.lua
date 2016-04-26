@@ -11,20 +11,20 @@ function Do_DroneCata(CustomGroup, playerIndex, shipID)
 	SobGroup_Clear("dronefrigate_temp2")		
 	SobGroup_GetSobGroupBeingCapturedGroup(CustomGroup, "dronefrigate_temp2")		
 	for k = 0,5,1 do
-		SobGroup_CreateIfNotExist("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k))		
+		SobGroup_CreateIfNotExist("Smt_drone" .. tostring(shipID) .. tostring(k))		
 		SobGroup_Clear("dronefrigate_temp")
 		SobGroup_Clear("dronefrigate_temp1")
 		SobGroup_GetSobGroupDockedWithGroup(CustomGroup, "dronefrigate_temp")
-		SobGroup_FillShipsByType("dronefrigate_temp1", "dronefrigate_temp", "Hgn_Smt_drone"..k)
-		SobGroup_SobGroupAdd("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), "dronefrigate_temp1")
-		if SobGroup_Count("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 and
+		SobGroup_FillShipsByType("dronefrigate_temp1", "dronefrigate_temp", "Smt_drone"..k)
+		SobGroup_SobGroupAdd("Smt_drone" .. tostring(shipID) .. tostring(k), "dronefrigate_temp1")
+		if SobGroup_Count("Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 and
 			SobGroup_IsDoingAbility(CustomGroup, AB_Hyperspace) == 0 and				
 			SobGroup_IsDoingAbility(CustomGroup, AB_HyperspaceViaGate) == 0 and
 			SobGroup_AreAllInRealSpace(CustomGroup) == 1 and
 			SobGroup_IsDoingAbility(CustomGroup, AB_Dock) == 0 and				
 			SobGroup_IsDoingAbility(CustomGroup, AB_Retire) == 0 and
 			SobGroup_Count("dronefrigate_temp2") == 0 then
-			SobGroup_CreateShip(CustomGroup, "Hgn_Smt_drone"..k)								
+			SobGroup_CreateShip(CustomGroup, "Smt_drone"..k)								
 			if k == 0 or k == 4 or k == 8 or k == 12 then
 				FX_StartEvent(CustomGroup, "dronelaunch1")
 			elseif k == 1 or k == 5 or k == 9 or k == 13 then
@@ -36,15 +36,15 @@ function Do_DroneCata(CustomGroup, playerIndex, shipID)
 			end
 			break
 		else
-			--SobGroup_SwitchOwner("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), playerIndex)
-			if SobGroup_IsDockedSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) == 1 and
+			--SobGroup_SwitchOwner("Smt_drone" .. tostring(shipID) .. tostring(k), playerIndex)
+			if SobGroup_IsDockedSobGroup("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) == 1 and
 			SobGroup_IsDoingAbility(CustomGroup, AB_Hyperspace) == 0 and
 			SobGroup_IsDoingAbility(CustomGroup, AB_HyperspaceViaGate) == 0 and
 			SobGroup_AreAllInRealSpace(CustomGroup) == 1 and
 			SobGroup_IsDoingAbility(CustomGroup, AB_Dock) == 0 and				
 			SobGroup_IsDoingAbility(CustomGroup, AB_Retire) == 0 and
 			SobGroup_Count("dronefrigate_temp2") == 0 then
-				SobGroup_Launch("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
+				SobGroup_Launch("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
 				if k == 0 or k == 4 or k == 8 or k == 12 then
 					FX_StartEvent(CustomGroup, "dronelaunch1")
 				elseif k == 1 or k == 5 or k == 9 or k == 13 then
@@ -65,10 +65,10 @@ function Finish_DroneCata(CustomGroup, playerIndex, shipID)
 	local r = random(1,6)
 	FX_StartEvent(CustomGroup, "droneretract_sfx"..r)
 	for k = 0,13,1 do
-		if SobGroup_Empty("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 then
-			SobGroup_AbilityActivate("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 0)
-			SobGroup_AbilityActivate("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 0)
-			SobGroup_DockSobGroupAndStayDocked("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
+		if SobGroup_Empty("Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 then
+			SobGroup_AbilityActivate("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 0)
+			SobGroup_AbilityActivate("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 0)
+			SobGroup_DockSobGroupAndStayDocked("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
 		end	
 	end	
 end
@@ -81,7 +81,7 @@ function Create_DroneCata(CustomGroup, playerIndex, shipID)
 	SobGroup_CreateIfNotExist("dronefrigate_temp1")
 	SobGroup_CreateIfNotExist("dronefrigate_temp2")
 	for k = 0,13,1 do
-		SobGroup_CreateIfNotExist("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k))		
+		SobGroup_CreateIfNotExist("Smt_drone" .. tostring(shipID) .. tostring(k))		
 	end
 end
 
@@ -108,20 +108,20 @@ function Update_DroneCata(CustomGroup, playerIndex, shipID)
 		end
 	end
 	for k = 0,13,1 do
-		if SobGroup_Empty("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 then
-			if SobGroup_IsDockedSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) == 0 and
-			SobGroup_IsDoingAbility("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Parade) == 0 and
-			SobGroup_IsDoingAbility("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Dock) == 0 then
-				SobGroup_ParadeSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup, 0)
+		if SobGroup_Empty("Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 then
+			if SobGroup_IsDockedSobGroup("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) == 0 and
+			SobGroup_IsDoingAbility("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Parade) == 0 and
+			SobGroup_IsDoingAbility("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Dock) == 0 then
+				SobGroup_ParadeSobGroup("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup, 0)
 			end
-			if SobGroup_GetDistanceToSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 950 then
-				SobGroup_TakeDamage("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), 1)
-			elseif SobGroup_GetDistanceToSobGroup("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 275 then
-				SobGroup_AbilityActivate("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 0)
-				SobGroup_AbilityActivate("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 0)
+			if SobGroup_GetDistanceToSobGroup("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 950 then
+				SobGroup_TakeDamage("Smt_drone" .. tostring(shipID) .. tostring(k), 1)
+			elseif SobGroup_GetDistanceToSobGroup("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 275 then
+				SobGroup_AbilityActivate("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 0)
+				SobGroup_AbilityActivate("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 0)
 			else
-				SobGroup_AbilityActivate("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 1)
-				SobGroup_AbilityActivate("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 1)
+				SobGroup_AbilityActivate("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 1)
+				SobGroup_AbilityActivate("Smt_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 1)
 			end			
 			if SobGroup_IsDoingAbility(CustomGroup, AB_Hyperspace) == 1 or
 			SobGroup_IsDoingAbility(CustomGroup, AB_HyperspaceViaGate) == 1 or
@@ -129,9 +129,9 @@ function Update_DroneCata(CustomGroup, playerIndex, shipID)
 			SobGroup_IsDoingAbility(CustomGroup, AB_Dock) == 1 or			
 			SobGroup_IsDoingAbility(CustomGroup, AB_Retire) == 1 or
 			SobGroup_Count("dronefrigate_temp2") > 0 or
-			SobGroup_OwnedBy("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k)) ~= playerIndex then					
-				SobGroup_TakeDamage("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), 1)
-				--SobGroup_DockSobGroupInstant("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
+			SobGroup_OwnedBy("Smt_drone" .. tostring(shipID) .. tostring(k)) ~= playerIndex then					
+				SobGroup_TakeDamage("Smt_drone" .. tostring(shipID) .. tostring(k), 1)
+				--SobGroup_DockSobGroupInstant("Smt_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
 			end
 		end	
 	end	
@@ -139,8 +139,8 @@ end
 
 function Destroy_DroneCata(CustomGroup, playerIndex, shipID)	
 	for k = 0,13,1 do
-		if SobGroup_Empty("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 then
-			SobGroup_TakeDamage("Hgn_Smt_drone" .. tostring(shipID) .. tostring(k), 1)
+		if SobGroup_Empty("Smt_drone" .. tostring(shipID) .. tostring(k)) == 0 then
+			SobGroup_TakeDamage("Smt_drone" .. tostring(shipID) .. tostring(k), 1)
 		end	
 	end
 end

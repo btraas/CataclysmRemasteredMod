@@ -88,7 +88,7 @@ function Rule_Init()
 	--startAnim(Player_GetShipsByType(2, "kus_proximitysensor"), "open")
 	SobGroup_SetAsDeployed(Player_GetShipsByType(2, "kus_proximitysensor"))
 	
-	--startAnim(Player_GetShipsByType(0, "Hgn_smt_ms_sp"), "open")
+	--startAnim(Player_GetShipsByType(0, "smt_ms_sp"), "open")
 	
 	SobGroup_Attack(3, "firelanceAttackers", "firelanceIons")
 	
@@ -241,7 +241,7 @@ end
 -- }}} 
 
 function Rule_HasBuiltAcolytes()
-	if ( SobGroup_Count( Player_GetShipsByType(0, "Hgn_Smt_AcolyteE" ) ) >= 1 ) then
+	if ( SobGroup_Count( Player_GetShipsByType(0, "smt_AcolyteE" ) ) >= 1 ) then
 		Rule_Remove("Rule_HasBuiltAcolytes")
 
 

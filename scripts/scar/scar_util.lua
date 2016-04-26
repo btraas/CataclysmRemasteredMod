@@ -322,25 +322,25 @@ function HW2_SetResearchLevel( missionID )
 		-- note that "level" means that it will not be available in that level.  eg, level 1 means its abailable in level 2.  confusing, no?
 		local buildList = {
 		
-						{ "Hgn_Smt_Worker", 0 },
-						{ "Hgn_Smt_scout", 0 },
-						{ "Hgn_Smt_Acolyte", 0 },
+						{ "Smt_Worker", 0 },
+						{ "Smt_scout", 0 },
+						{ "Smt_Acolyte", 0 },
 		
-						{ "Hgn_Smt_mimic", 3 },
-						{ "Hgn_Smt_leech", 3 },
-						{ "Hgn_Smt_sentinel", 3 },
+						{ "Smt_mimic", 3 },
+						{ "Smt_leech", 3 },
+						{ "Smt_sentinel", 3 },
 						
-						{ "Hgn_Smt_ACV", 1 },
-						{ "Hgn_Smt_MCV", 3 },
-						{ "Hgn_Smt_multibeamfrigate", 4 },
+						{ "Smt_ACV", 1 },
+						{ "Smt_MCV", 3 },
+						{ "Smt_multibeamfrigate", 4 },
 						
-						{ "Hgn_Smt_hivefrigate", 4 },
-						{ "Hgn_Smt_destroyer", 5 },
-						{ "Hgn_Smt_carrier", 5 },
+						{ "Smt_hivefrigate", 4 },
+						{ "Smt_destroyer", 5 },
+						{ "Smt_carrier", 5 },
 						
-						{ "Hgn_Smt_dreadnought", 6 },
-						{ "Hgn_Smt_Clee_San", 20 },
-						{ "Hgn_Smt_SuperAcolyte", 5 },
+						{ "Smt_dreadnought", 6 },
+						{ "Smt_Clee_San", 20 },
+						{ "Smt_SuperAcolyte", 5 },
 						
 						{ "Ksh_Sec_MS_Module_AdvancedResearch", 3 },
 						{ "Ksh_Sec_MS_Module_ArmorResearch", 3 },

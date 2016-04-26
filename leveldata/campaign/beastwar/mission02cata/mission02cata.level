@@ -7,14 +7,14 @@
 --=============================================================================
 
 function DetermChunk()
-	addSquadron("Hgn_smt_ms", "Hgn_smt_ms",	{0, 0, -2517},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("smt_ms", "smt_ms",	{0, 0, -2517},	0, {0.000, 180.000, 0.000},0,0)
 	
-	addSquadron("Worker1", "Hgn_smt_worker", {-1000, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
-	addSquadron("Worker2", "Hgn_smt_worker", {-1150, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Worker1", "smt_worker", {-1000, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Worker2", "smt_worker", {-1150, 0, -2017},	0, {0.000, 180.000, 0.000},0,0)
 	
-	addSquadron("Scout1", "Hgn_smt_scout", {-1000, -200, -3017},	0, {0.000, 180.000, 0.000},0,0)
-	addSquadron("Scout2", "Hgn_smt_scout", {-1100, -200, -3017},	0, {0.000, 180.000, 0.000},0,0)
-	addSquadron("Scout3", "Hgn_smt_scout", {-1200, -200, -3017},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Scout1", "smt_scout", {-1000, -200, -3017},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Scout2", "smt_scout", {-1100, -200, -3017},	0, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Scout3", "smt_scout", {-1200, -200, -3017},	0, {0.000, 180.000, 0.000},0,0)
 
 	addSquadron("nabaal_carrier", "Kus_carrier", {2000, -0.000, -26413.438},  1, {0.000, 100.000, 0.000},0,0)
 	addSquadron("hgn_ion1", "Kus_ioncannonfrigate_tank", {7800, 200.000, -28213.438},  1, {10.000, 140.000, 0.000},0,0)

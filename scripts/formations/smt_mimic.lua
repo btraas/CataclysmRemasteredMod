@@ -3,23 +3,23 @@
 -- LuaDC by Age2uN
 -- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
 --
-paradeSlot("hgn_smt_mimic_attackbomber", 
+paradeSlot("smt_mimic_attackbomber", 
     { 0, 0, 0,} , 
     { 0, 0, 1, }, 
     { -1, 0, 0, }, 0)
-paradeSlot("hgn_smt_mimic_interceptor", 
+paradeSlot("smt_mimic_interceptor", 
     { 0, 0, 0,} , 
     { 0, 0, 1,} , 
     { -1, 0, 0, }, 0)
-paradeSlot("hgn_smt_mimic_multiguncorvette", 
+paradeSlot("smt_mimic_multiguncorvette", 
     { 0, 0, 0,} , 
     { 0, 0, 1,} , 
     { -1, 0, 0, }, 0)
-paradeSlot("hgn_smt_mimic", 
+paradeSlot("smt_mimic", 
     { -927, 133, -939,} , 
     { 0, 0, 1,} , 
     { -1, 0, 0, }, 0)
-paradeSlot("hgn_smt_mcv", 
+paradeSlot("smt_mcv", 
     { 0, 0, 0,} , 
     { 0, 0, 1,} , 
     { -1, 0, 0, }, 0)

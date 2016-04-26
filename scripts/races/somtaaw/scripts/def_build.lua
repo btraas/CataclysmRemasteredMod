@@ -19,7 +19,7 @@ build =
 	{
 
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_Clee_San",
+		ThingToBuild = "smt_Clee_San",
 		RequiredResearch = "",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 11,
@@ -28,7 +28,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_Worker",
+		ThingToBuild = "smt_Worker",
 		RequiredResearch = "",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 12,
@@ -37,7 +37,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_Processor",
+		ThingToBuild = "smt_Processor",
 		RequiredResearch = "",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 13,
@@ -46,7 +46,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_scout",
+		ThingToBuild = "smt_scout",
 		RequiredResearch = "",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 2,
@@ -55,7 +55,7 @@ build =
 	},
 --	{
 --		Type = Ship,
---		ThingToBuild = "Hgn_Smt_Acolyte",
+--		ThingToBuild = "smt_Acolyte",
 --		RequiredResearch = "SMTFighterDrive",
 --		RequiredShipSubSystems = "",
 --		DisplayPriority = 4,
@@ -64,7 +64,7 @@ build =
 --	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_Acolyte",
+		ThingToBuild = "smt_Acolyte",
 		RequiredResearch = "SMTFighterDrive",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 5,
@@ -73,7 +73,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_SuperAcolyte",
+		ThingToBuild = "smt_SuperAcolyte",
 		RequiredResearch = "smtPlasmaBombLauncher",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 13,
@@ -82,7 +82,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_mimic",
+		ThingToBuild = "smt_mimic",
 		RequiredResearch = "SMTFighterDrive & SMTMimic",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 6,
@@ -90,7 +90,7 @@ build =
 		Description = "<b>Description:</b>  \n\n<b>Strong Vs:</b> ADD \n\n<b>Weak Vs:</b> ADD \n\n<b>Prerequisites:</b> Fighter Production",	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_mcv",
+		ThingToBuild = "smt_mcv",
 		RequiredResearch = "SMTFighterDrive & SMTCorvetteDrive & SMTMimic",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 7,
@@ -98,7 +98,7 @@ build =
 		Description = "<b>Description:</b>  \n\n<b>Strong Vs:</b> ADD \n\n<b>Weak Vs:</b> ADD \n\n<b>Prerequisites:</b> Fighter Production",	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_leech",
+		ThingToBuild = "smt_leech",
 		RequiredResearch = "SMTFighterDrive & SMTPhasedTelemetry",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 7,
@@ -107,7 +107,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_Sentinel",
+		ThingToBuild = "smt_Sentinel",
 		RequiredResearch = "SMTFighterDrive & SMTDroneTechnology",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 10,
@@ -116,7 +116,7 @@ build =
 	},
 --	{
 --		Type = Ship,
---		ThingToBuild = "Hgn_Smt_ACV",
+--		ThingToBuild = "smt_ACV",
 --		RequiredResearch = "SMTCorvetteDrive",
 --		RequiredShipSubSystems = "",
 --		DisplayPriority = 20,
@@ -125,7 +125,7 @@ build =
 --	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_ACV",
+		ThingToBuild = "smt_ACV",
 		RequiredResearch = "SMTCorvetteDrive",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 21,
@@ -134,7 +134,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_multibeamfrigate",
+		ThingToBuild = "smt_multibeamfrigate",
 		RequiredResearch = "SMTCapitalShipDrive & SMTIonCannons",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 70,
@@ -143,7 +143,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_RammingFrigate",
+		ThingToBuild = "smt_RammingFrigate",
 		RequiredResearch = "SMTCapitalShipDrive",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 71,
@@ -152,7 +152,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_hivefrigate",
+		ThingToBuild = "smt_hivefrigate",
 		RequiredResearch = "SMTCapitalShipDrive & SMTDroneTechnology",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 72,
@@ -161,7 +161,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_Carrier",
+		ThingToBuild = "smt_Carrier",
 		RequiredResearch = "SMTSuperCapitalShipDrive",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 116,
@@ -170,7 +170,7 @@ build =
 	},
 --	{
 --		Type = Ship,
---		ThingToBuild = "Hgn_Smt_MS",
+--		ThingToBuild = "smt_MS",
 --		RequiredResearch = "SMThyperspaceTech",
 --		RequiredShipSubSystems = "",
 --		DisplayPriority = 117,
@@ -179,7 +179,7 @@ build =
 --	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_destroyer",
+		ThingToBuild = "smt_destroyer",
 		RequiredResearch = "SMTSuperCapitalShipDrive & SMTIonCannons & SMTGuidedMissiles",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 120,
@@ -188,7 +188,7 @@ build =
 	},
 	{
 		Type = Ship,
-		ThingToBuild = "Hgn_Smt_dreadnought",
+		ThingToBuild = "smt_dreadnought",
 		RequiredResearch = "SmtEnergyCannonTechnology",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 123,

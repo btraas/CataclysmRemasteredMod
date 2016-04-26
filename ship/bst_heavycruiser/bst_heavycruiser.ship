@@ -15,8 +15,8 @@ NewShipType.defensiveFormation="x"
 NewShipType.aggressiveFormation="Claw"
 NewShipType.mass=1000
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=90
-NewShipType.mainEngineMaxSpeed=90
+NewShipType.thrusterMaxSpeed=69
+NewShipType.mainEngineMaxSpeed=69
 NewShipType.rotationMaxSpeed=6
 NewShipType.thrusterAccelTime=6
 NewShipType.thrusterBrakeTime=2
@@ -148,22 +148,20 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun1","Weapon_Gun0","Weapon_TurretTopRight")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun2","Weapon_Gun1","Weapon_TurretTopLeft")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun1","Weapon_Gun2","Weapon_TurretRightSide")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun2","Weapon_Gun3","Weapon_TurretLeftSide")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun3","Weapon_Gun4","Weapon_TurretRightBot")
-StartShipWeaponConfig(NewShipType,"Tai_CruiserGun3","Weapon_Gun5","Weapon_TurretLeftBot")
+StartShipWeaponConfig(NewShipType,"Bst_CruiserGun1","Weapon_Gun0","Weapon_TurretTopRight")
+StartShipWeaponConfig(NewShipType,"Bst_CruiserGun2","Weapon_Gun1","Weapon_TurretTopLeft")
+StartShipWeaponConfig(NewShipType,"Bst_CruiserGun1","Weapon_Gun2","Weapon_TurretRightSide")
+StartShipWeaponConfig(NewShipType,"Bst_CruiserGun2","Weapon_Gun3","Weapon_TurretLeftSide")
+StartShipWeaponConfig(NewShipType,"Bst_CruiserGun3","Weapon_Gun4","Weapon_TurretRightBot")
+StartShipWeaponConfig(NewShipType,"Bst_CruiserGun3","Weapon_Gun5","Weapon_TurretLeftBot")
 StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonLeftSide1","Weapon_Gun0","Weapon_TurretTopRight1")
 StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonRightSide1","Weapon_Gun1","Weapon_TurretTopLeft1")
 StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon1","Weapon_Gun2","Weapon_TurretRightSide1")
 StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonRightSide1","Weapon_Gun3","Weapon_TurretLeftSide1")
 StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonLeftSide1","Weapon_Gun4","Weapon_TurretRightBot1")
 StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon1","Weapon_Gun5","Weapon_TurretLeftBot1")
---StartShipHardPointConfig(NewShipType, "Weapon IonBeam 1", "Hardpoint_IonBeam1", "Weapon", "Innate", "Damageable", "bst_tdn_heavycruiser_ionbeamturret", "", "", "", "", "", "", "", "");
---StartShipHardPointConfig(NewShipType, "Weapon IonBeam 2", "Hardpoint_IonBeam2", "Weapon", "Innate", "Damageable", "bst_tdn_heavycruiser_ionbeamturret", "", "", "", "", "", "", "", "");
-StartShipWeaponConfig(NewShipType,"Kus_CruiserIon","Weapon_Turret_Ion1","Weapon_Gun6");
-StartShipWeaponConfig(NewShipType,"Kus_CruiserIon","Weapon_Turret_Ion2","Weapon_Gun7");
+StartShipWeaponConfig(NewShipType,"Bst_CruiserIon","Weapon_Turret_Ion1","Weapon_Gun6");
+StartShipWeaponConfig(NewShipType,"Bst_CruiserIon","Weapon_Turret_Ion2","Weapon_Gun7");
 addShield(NewShipType,"EMP",10000,20)
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Tai_HeavyCruiserEngine","","","","","","","","");
 

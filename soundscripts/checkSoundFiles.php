@@ -29,7 +29,7 @@
 	$FOLDER_SMT = '../sound/speech/allships/KuunLan';
 
 	
-	$SMT_PREFIX = 'hgn_smt';
+	$SMT_PREFIX = 'smt';
 	$BST_PREFIX = 'bst';
 
 	$fixLua = false;
@@ -164,7 +164,7 @@ function displayStats($stats) // {{{
 		foreach($speechTypes AS $speechTypeName => $ships) // eg 'shipFiles'
 		{
 			$this_filepath = $filenames[$speechTypeName];
-			foreach($ships AS $shipName => $ship) // eg 'hgn_smt_ms'
+			foreach($ships AS $shipName => $ship) // eg 'smt_ms'
 			{
 				$stats['ships']++;
 				if(!empty($ship['sameas'])) continue; // skip ships that just link to other ships

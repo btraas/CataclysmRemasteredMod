@@ -3,7 +3,7 @@ PersistantData = {
   },
   Squadrons = {
     {
-      type = "Hgn_smt_ms",
+      type = "smt_ms",
       subsystems = {
       },
       shiphold = {
@@ -12,7 +12,7 @@ PersistantData = {
       size = 1,
     },
     {
-      type = "Hgn_smt_carrier",
+      type = "smt_carrier",
       subsystems = {
       },
       shiphold = {
@@ -21,7 +21,7 @@ PersistantData = {
       size = 1,
     },
     {
-      type = "Hgn_smt_worker",
+      type = "smt_worker",
       subsystems = {
       },
       shiphold = {

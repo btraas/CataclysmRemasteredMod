@@ -8,7 +8,7 @@ Default = {
 
 
 
-Hgn_Smt_RammingFrigate={
+Smt_RammingFrigate={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1024, 512, 1536, 768},
@@ -16,7 +16,7 @@ Hgn_Smt_RammingFrigate={
 	},
 };
 
-Hgn_Smt_HiveFrigate={
+Smt_HiveFrigate={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1536, 256, 2048, 512},
@@ -24,7 +24,7 @@ Hgn_Smt_HiveFrigate={
 	},
 };
 
-Hgn_Smt_Dreadnought={
+Smt_Dreadnought={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1024, 256, 1536, 512},
@@ -32,7 +32,7 @@ Hgn_Smt_Dreadnought={
 	},
 };
 
-hgn_smt_seraph = 
+Smt_seraph = 
 { 
     LargeIcon = 
     { 
@@ -43,7 +43,7 @@ hgn_smt_seraph =
             { 304, 94, }, 
         stretchOnDraw = 1, }, }
 		
-Hgn_Smt_Acolyte={
+Smt_Acolyte={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 0, 0, 512, 256},
@@ -51,7 +51,7 @@ Hgn_Smt_Acolyte={
 	},
 };
 
-Hgn_Smt_Acolytee={
+Smt_Acolytee={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 0, 0, 512, 256},
@@ -59,7 +59,7 @@ Hgn_Smt_Acolytee={
 	},
 };
 
-Hgn_Smt_Sentinel={
+Smt_Sentinel={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1024, 768, 1536, 1024},
@@ -67,7 +67,7 @@ Hgn_Smt_Sentinel={
 	},
 };
 
-Hgn_Smt_Mimic={
+Smt_Mimic={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 0, 512, 512, 768},
@@ -75,7 +75,7 @@ Hgn_Smt_Mimic={
 	},
 };
 
-Hgn_Smt_ACV={
+Smt_ACV={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 512, 0, 1024, 256},
@@ -83,7 +83,7 @@ Hgn_Smt_ACV={
 	},
 };
 
-Hgn_Smt_ACVe={
+Smt_ACVe={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 512, 0, 1024, 256},
@@ -91,7 +91,7 @@ Hgn_Smt_ACVe={
 	},
 };
 
-Hgn_Smt_SuperAcolyte={
+Smt_SuperAcolyte={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 0, 1024, 512, 1280},
@@ -99,7 +99,7 @@ Hgn_Smt_SuperAcolyte={
 	},
 };
 
-Hgn_Smt_MCV={
+Smt_MCV={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 0, 1280, 512, 1536},
@@ -107,7 +107,7 @@ Hgn_Smt_MCV={
 	},
 };
 
-Hgn_Smt_Swarmer={
+Smt_Swarmer={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 512, 1024, 1024, 1280},
@@ -115,7 +115,7 @@ Hgn_Smt_Swarmer={
 	},
 };
 
-Hgn_Smt_Carrier={
+Smt_Carrier={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1536, 0, 2048, 256},
@@ -123,7 +123,7 @@ Hgn_Smt_Carrier={
 	},
 };
 
-Hgn_Smt_Scout={
+Smt_Scout={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 512, 768, 1024, 1024},
@@ -131,7 +131,7 @@ Hgn_Smt_Scout={
 	},
 };
 
-Hgn_Smt_Processor={
+Smt_Processor={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1536, 512, 2048, 768},
@@ -139,7 +139,7 @@ Hgn_Smt_Processor={
 	},
 };
 
-Hgn_Smt_Destroyer={
+Smt_Destroyer={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 512, 256, 1024, 512},
@@ -147,7 +147,7 @@ Hgn_Smt_Destroyer={
 	},
 };
 
-Hgn_Smt_MS={
+Smt_MS={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1536, 768, 2048, 1024},
@@ -155,7 +155,7 @@ Hgn_Smt_MS={
 	},
 };
 
-Hgn_Smt_MS_SP={
+Smt_MS_SP={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1536, 768, 2048, 1024},
@@ -163,7 +163,7 @@ Hgn_Smt_MS_SP={
 	},
 };
 
-Hgn_Smt_Leech={
+Smt_Leech={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 1536, 1024, 2048, 1280},
@@ -174,7 +174,7 @@ Hgn_Smt_Leech={
 
 
 
-Hgn_Smt_Worker={
+Smt_Worker={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 0, 768, 512, 1024},
@@ -182,7 +182,7 @@ Hgn_Smt_Worker={
 	},
 };
 
-Hgn_Smt_clee_san={
+Smt_clee_san={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 0, 256, 512, 512},
@@ -190,7 +190,7 @@ Hgn_Smt_clee_san={
 	},
 };
 
-Hgn_Smt_multibeamfrigate={
+Smt_multibeamfrigate={
 	LargeIcon = {
 		texture = "DATA:\\Ship\\Icons\\HWC_icon_smt_ships.dds",
 		textureUV = { 512, 512, 1024, 768},
@@ -2113,9 +2113,9 @@ special_unittestmap = Default
 
 
 
-Bst_multibeamfrigate = Hgn_Smt_multibeamfrigate;
+Bst_multibeamfrigate = Smt_multibeamfrigate;
 
-Bst_HiveFrigate=Hgn_Smt_HiveFrigate;
+Bst_HiveFrigate=Smt_HiveFrigate;
 
 Bst_fieldfrigate=tai_fieldfrigate;
 
@@ -2131,13 +2131,13 @@ Bst_Interceptor=tai_interceptor;
 
 Bst_Fighter=tur_fighter;
 
-Bst_Worker=Hgn_Smt_Worker;
+Bst_Worker=Smt_Worker;
 
-Bst_Scout=Hgn_Smt_Scout;
+Bst_Scout=Smt_Scout;
 
-Bst_Acolyte=Hgn_Smt_Acolyte;
+Bst_Acolyte=Smt_Acolyte;
 
-Bst_ACV=Hgn_Smt_ACV;
+Bst_ACV=Smt_ACV;
 
 Bst_Acolytee=Bst_Acolyte;
 
@@ -2161,7 +2161,7 @@ Bst_CloakedFighter=kus_cloakedfighter;
 
 Bst_AttackBomber=tai_attackbomber;
 
-Bst_Clee_San=Hgn_Smt_clee_san;
+Bst_Clee_San=Smt_clee_san;
 
 Bst_missiledestroyer=kus_missiledestroyer;
 
@@ -2174,7 +2174,7 @@ textureUV_WH={192,
 	95},
 stretchOnDraw=1}};
 
-Bst_Processor=Hgn_Smt_Processor;
+Bst_Processor=Smt_Processor;
 
 Bst_Mothership={
 	LargeIcon = {
@@ -2186,7 +2186,7 @@ Bst_Mothership={
 
 Bst_Carrier=tai_carrier;
 
-Bst_Smt_Destroyer=Hgn_Smt_Destroyer;
+Bst_Smt_Destroyer=Smt_Destroyer;
 
 Bst_NomadMoon={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnomadmoon.tga",
 textureUV_TL={0,

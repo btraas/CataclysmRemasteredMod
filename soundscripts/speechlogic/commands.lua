@@ -168,295 +168,295 @@ shipFiles["bshared"]["COMMAND_CONSTRUCTION_COMPLETED"] = 0
 														
 							
 							
-shipFiles["Hgn_Smt_ms"] = {}
+shipFiles["Smt_ms"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_ms"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_ms"]["folder"] = ""
-shipFiles["Hgn_Smt_ms"]["COMMAND_MOVE"] = 1						
-shipFiles["Hgn_Smt_ms"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_ms"]["COMMAND_MOVETOSOB"] = 1
-shipFiles["Hgn_Smt_ms"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_ms"]["COMMAND_ATTACK_CANCELLED"] = 1
-shipFiles["Hgn_Smt_ms"]["COMMAND_MOVE_CANCELLED"] = 1
---shipFiles["Hgn_Smt_ms"]["COMMAND_ATTACK"] = 4
-shipFiles["Hgn_Smt_ms"]["COMMAND_HS"] = 4
-shipFiles["Hgn_Smt_ms"]["COMMAND_HSexit"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_ms"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_ms"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
-shipFiles["Hgn_Smt_ms"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_ms"]["COMMAND_SELECTED"] = 5
-shipFiles["Hgn_Smt_ms"]["COMMAND_BUILD"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_ms"]["COMMAND_BUILD_CANCELLED"] = 1
+shipFiles["Smt_ms"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_ms"]["folder"] = ""
+shipFiles["Smt_ms"]["COMMAND_MOVE"] = 1						
+shipFiles["Smt_ms"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_ms"]["COMMAND_MOVETOSOB"] = 1
+shipFiles["Smt_ms"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_ms"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Smt_ms"]["COMMAND_MOVE_CANCELLED"] = 1
+--shipFiles["Smt_ms"]["COMMAND_ATTACK"] = 4
+shipFiles["Smt_ms"]["COMMAND_HS"] = 4
+shipFiles["Smt_ms"]["COMMAND_HSexit"] = 2
+-- CR CSF -- shipFiles["Smt_ms"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_ms"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Smt_ms"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_ms"]["COMMAND_SELECTED"] = 5
+shipFiles["Smt_ms"]["COMMAND_BUILD"] = 1
+-- CR CSF -- shipFiles["Smt_ms"]["COMMAND_BUILD_CANCELLED"] = 1
 
-shipFiles["Hgn_smt_ms"] = {};
-shipFiles["Hgn_smt_ms"]["sameas"] = "Hgn_Smt_ms";				-- catch-all for startingfleets
+shipFiles["smt_ms"] = {};
+shipFiles["smt_ms"]["sameas"] = "Smt_ms";				-- catch-all for startingfleets
 
-shipFiles["Hgn_smt_ms_sp"] = {};
-shipFiles["Hgn_smt_ms_sp"]["sameas"] = "Hgn_Smt_ms";	
+shipFiles["smt_ms_sp"] = {};
+shipFiles["smt_ms_sp"]["sameas"] = "Smt_ms";	
 
 
-shipFiles["Hgn_Smt_Carrier"] = {}
+shipFiles["Smt_Carrier"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Carrier"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_Carrier"]["folder"] = "shipsounds/hgn_smt_carrier/"
-shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVE"] = 4
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_ATTACK_CANCELLED"] = 1
-shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_ATTACK"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_MOVEATTACK"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Carrier"]["COMMAND_LAUNCH"] = 1
-shipFiles["Hgn_Smt_Carrier"]["COMMAND_SELECTED"] = 1
+shipFiles["Smt_Carrier"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_Carrier"]["folder"] = "shipsounds/smt_carrier/"
+shipFiles["Smt_Carrier"]["COMMAND_MOVE"] = 4
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_ATTACK_CANCELLED"] = 1
+shipFiles["Smt_Carrier"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_ATTACK"] = 1
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_MOVEATTACK"] = 1
+-- CR CSF -- shipFiles["Smt_Carrier"]["COMMAND_LAUNCH"] = 1
+shipFiles["Smt_Carrier"]["COMMAND_SELECTED"] = 1
 
-shipFiles["Hgn_smt_carrier"] = {};
-shipFiles["Hgn_smt_carrier"]["sameas"] = "Hgn_Smt_Carrier";
+shipFiles["smt_carrier"] = {};
+shipFiles["smt_carrier"]["sameas"] = "Smt_Carrier";
 
 
-shipFiles["Hgn_Smt_Clee_San"] = {}
+shipFiles["Smt_Clee_San"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Clee_San"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_Clee_San"]["folder"] = "shipsounds/hgn_smt_Clee_San/"
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_MOVE"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
--- CR CSF -- shipFiles["Hgn_Smt_Clee_San"]["COMMAND_SELECTED"] = 1
+shipFiles["Smt_Clee_San"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_Clee_San"]["folder"] = "shipsounds/smt_Clee_San/"
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_MOVE"] = 1
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+-- CR CSF -- shipFiles["Smt_Clee_San"]["COMMAND_SELECTED"] = 1
 
-shipFiles["Hgn_Smt_Processor"] = {}
+shipFiles["Smt_Processor"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Processor"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_Processor"]["folder"] = "shipsounds/hgn_smt_Processor/"
-shipFiles["Hgn_Smt_Processor"]["COMMAND_MOVE"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_Processor"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Processor"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Processor"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_Processor"]["COMMAND_MOVE_CANCELLED"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_Processor"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Processor"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_Processor"]["COMMAND_SELECTED"] = 2
+shipFiles["Smt_Processor"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_Processor"]["folder"] = "shipsounds/smt_Processor/"
+shipFiles["Smt_Processor"]["COMMAND_MOVE"] = 3
+-- CR CSF -- shipFiles["Smt_Processor"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_Processor"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_Processor"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_Processor"]["COMMAND_MOVE_CANCELLED"] = 3
+-- CR CSF -- shipFiles["Smt_Processor"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_Processor"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_Processor"]["COMMAND_SELECTED"] = 2
 
 
-shipFiles["Hgn_Smt_Worker"] = {}
+shipFiles["Smt_Worker"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Worker"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_Worker"]["folder"] = "shipsounds/hgn_smt_Worker/"
-shipFiles["Hgn_Smt_Worker"]["COMMAND_MOVE"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_Worker"]["COMMAND_MOVE_CANCELLED"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_Worker"]["COMMAND_SELECTED"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container
-shipFiles["Hgn_Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 4
-shipFiles["Hgn_Smt_Worker"]["COMMAND_CAPTURE"] = 3					-- Marine/infiltrate/worker
-shipFiles["Hgn_Smt_Worker"]["COMMAND_REPAIR"] = 3
-shipFiles["Hgn_Smt_Worker"]["COMMAND_DOCK"] = 2
+shipFiles["Smt_Worker"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_Worker"]["folder"] = "shipsounds/smt_Worker/"
+shipFiles["Smt_Worker"]["COMMAND_MOVE"] = 3
+-- CR CSF -- shipFiles["Smt_Worker"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_Worker"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_Worker"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_Worker"]["COMMAND_MOVE_CANCELLED"] = 2
+-- CR CSF -- shipFiles["Smt_Worker"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_Worker"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_Worker"]["COMMAND_SELECTED"] = 2
+-- CR CSF -- shipFiles["Smt_Worker"]["COMMAND_RESOURCESALVAGE"] = 1			-- Debris/container
+shipFiles["Smt_Worker"]["COMMAND_RESOURCECOLLECTORHARVEST"] = 4
+shipFiles["Smt_Worker"]["COMMAND_CAPTURE"] = 3					-- Marine/infiltrate/worker
+shipFiles["Smt_Worker"]["COMMAND_REPAIR"] = 3
+shipFiles["Smt_Worker"]["COMMAND_DOCK"] = 2
 
-shipFiles["Hgn_smt_worker"] = {};
-shipFiles["Hgn_smt_worker"]["sameas"] = "Hgn_Smt_Worker";
+shipFiles["smt_worker"] = {};
+shipFiles["smt_worker"]["sameas"] = "Smt_Worker";
 
 
-shipFiles["Hgn_Smt_Seraph"] = {}
+shipFiles["Smt_Seraph"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Seraph"]["sameas"] = "Hgn_Smt_dreadnought"						-- Either shared, another ship name, or blank
+shipFiles["Smt_Seraph"]["sameas"] = "Smt_dreadnought"						-- Either shared, another ship name, or blank
 
 
-shipFiles["Hgn_Smt_dreadnought"] = {}
+shipFiles["Smt_dreadnought"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_dreadnought"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_dreadnought"]["folder"] = "shipsounds/hgn_smt_dreadnought/"
-shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVE"] = 4
--- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVE_CANCELLED"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
-shipFiles["Hgn_Smt_dreadnought"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_dreadnought"]["COMMAND_ATTACK"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_dreadnought"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_dreadnought"]["COMMAND_SELECTED"] = 4
+shipFiles["Smt_dreadnought"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_dreadnought"]["folder"] = "shipsounds/smt_dreadnought/"
+shipFiles["Smt_dreadnought"]["COMMAND_MOVE"] = 4
+-- CR CSF -- shipFiles["Smt_dreadnought"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_dreadnought"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_dreadnought"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_dreadnought"]["COMMAND_MOVE_CANCELLED"] = 2
+-- CR CSF -- shipFiles["Smt_dreadnought"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_dreadnought"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Smt_dreadnought"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_dreadnought"]["COMMAND_ATTACK"] = 3
+-- CR CSF -- shipFiles["Smt_dreadnought"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_dreadnought"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_dreadnought"]["COMMAND_SELECTED"] = 4
 
 
-shipFiles["Hgn_Smt_destroyer"] = {}
+shipFiles["Smt_destroyer"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_destroyer"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_destroyer"]["folder"] = "shipsounds/hgn_smt_destroyer/"
-shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVE"] = 5
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVE_CANCELLED"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_destroyer"]["COMMAND_ATTACK"] = 4
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_destroyer"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_destroyer"]["COMMAND_SELECTED"] = 3
+shipFiles["Smt_destroyer"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_destroyer"]["folder"] = "shipsounds/smt_destroyer/"
+shipFiles["Smt_destroyer"]["COMMAND_MOVE"] = 5
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_destroyer"]["COMMAND_MOVE_CANCELLED"] = 3
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_destroyer"]["COMMAND_ATTACK"] = 4
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_destroyer"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_destroyer"]["COMMAND_SELECTED"] = 3
 
 
-shipFiles["Hgn_Smt_multibeamfrigate"] = {}
+shipFiles["Smt_multibeamfrigate"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_multibeamfrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_multibeamfrigate"]["folder"] = "shipsounds/hgn_smt_multibeamfrigate/"
-shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVE"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_ATTACK"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_SELECTED"] = 2
-shipFiles["Hgn_Smt_multibeamfrigate"]["COMMAND_DOCK"] = 0
+shipFiles["Smt_multibeamfrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_multibeamfrigate"]["folder"] = "shipsounds/smt_multibeamfrigate/"
+shipFiles["Smt_multibeamfrigate"]["COMMAND_MOVE"] = 2
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_multibeamfrigate"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_multibeamfrigate"]["COMMAND_ATTACK"] = 1
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_multibeamfrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_multibeamfrigate"]["COMMAND_SELECTED"] = 2
+shipFiles["Smt_multibeamfrigate"]["COMMAND_DOCK"] = 0
 
 
-shipFiles["Hgn_Smt_RammingFrigate"] = {}
+shipFiles["Smt_RammingFrigate"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_RammingFrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_RammingFrigate"]["folder"] = "shipsounds/hgn_smt_rammingfrigate/"
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVE"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_ATTACK"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_SELECTED"] = 4
-shipFiles["Hgn_Smt_RammingFrigate"]["COMMAND_DOCK"] = 3
+shipFiles["Smt_RammingFrigate"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_RammingFrigate"]["folder"] = "shipsounds/smt_rammingfrigate/"
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_MOVE"] = 1
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_RammingFrigate"]["COMMAND_ATTACK"] = 2
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_RammingFrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_RammingFrigate"]["COMMAND_SELECTED"] = 4
+shipFiles["Smt_RammingFrigate"]["COMMAND_DOCK"] = 3
 
 
-shipFiles["Hgn_Smt_hivefrigate"] = {}
+shipFiles["Smt_hivefrigate"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_hivefrigate"]["sameas"] = ""	
-shipFiles["Hgn_Smt_hivefrigate"]["folder"] = "shipsounds/hgn_smt_hivefrigate/"
-shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVE"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_ATTACK"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_SELECTED"] = 3
-shipFiles["Hgn_Smt_hivefrigate"]["COMMAND_DOCK"] = 1
+shipFiles["Smt_hivefrigate"]["sameas"] = ""	
+shipFiles["Smt_hivefrigate"]["folder"] = "shipsounds/smt_hivefrigate/"
+shipFiles["Smt_hivefrigate"]["COMMAND_MOVE"] = 2
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_hivefrigate"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_hivefrigate"]["COMMAND_ATTACK"] = 3
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_hivefrigate"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_hivefrigate"]["COMMAND_SELECTED"] = 3
+shipFiles["Smt_hivefrigate"]["COMMAND_DOCK"] = 1
 
 
-shipFiles["Hgn_Smt_ACVE"] = {}
+shipFiles["Smt_ACVE"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_ACVE"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+shipFiles["Smt_ACVE"]["sameas"] = "Smt_Acolyte"						-- Either shared, another ship name, or blank
 
 
-shipFiles["Hgn_Smt_ACV"] = {}
+shipFiles["Smt_ACV"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_ACV"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+shipFiles["Smt_ACV"]["sameas"] = "Smt_Acolyte"						-- Either shared, another ship name, or blank
 
 
-shipFiles["Hgn_Smt_SuperAcolyte"] = {}
+shipFiles["Smt_SuperAcolyte"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_SuperAcolyte"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+shipFiles["Smt_SuperAcolyte"]["sameas"] = "Smt_Acolyte"						-- Either shared, another ship name, or blank
 
 
-shipFiles["Hgn_Smt_AcolyteE"] = {}
+shipFiles["Smt_AcolyteE"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_AcolyteE"]["sameas"] = "Hgn_Smt_Acolyte"						-- Either shared, another ship name, or blank
+shipFiles["Smt_AcolyteE"]["sameas"] = "Smt_Acolyte"						-- Either shared, another ship name, or blank
 
 
-shipFiles["Hgn_Smt_Acolyte"] = {}
+shipFiles["Smt_Acolyte"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Acolyte"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_Acolyte"]["folder"] = "shipsounds/hgn_smt_Acolyte/"
-shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVE"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_Acolyte"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Acolyte"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Acolyte"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Acolyte"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
-shipFiles["Hgn_Smt_Acolyte"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_Acolyte"]["COMMAND_ATTACK"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_Acolyte"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Acolyte"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_Acolyte"]["COMMAND_SELECTED"] = 2
-shipFiles["Hgn_Smt_Acolyte"]["COMMAND_DOCK"] = 3
+shipFiles["Smt_Acolyte"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_Acolyte"]["folder"] = "shipsounds/smt_Acolyte/"
+shipFiles["Smt_Acolyte"]["COMMAND_MOVE"] = 2
+-- CR CSF -- shipFiles["Smt_Acolyte"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_Acolyte"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_Acolyte"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_Acolyte"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Acolyte"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Acolyte"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+shipFiles["Smt_Acolyte"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_Acolyte"]["COMMAND_ATTACK"] = 3
+-- CR CSF -- shipFiles["Smt_Acolyte"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_Acolyte"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_Acolyte"]["COMMAND_SELECTED"] = 2
+shipFiles["Smt_Acolyte"]["COMMAND_DOCK"] = 3
 
 
-shipFiles["Hgn_Smt_Sentinel"] = {}
+shipFiles["Smt_Sentinel"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Sentinel"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_Sentinel"]["folder"] = "shipsounds/hgn_smt_Sentinel/"
-shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVE"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_Sentinel"]["COMMAND_ATTACK"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Sentinel"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_Sentinel"]["COMMAND_SELECTED"] = 2
-shipFiles["Hgn_Smt_Sentinel"]["COMMAND_DOCK"] = 1
+shipFiles["Smt_Sentinel"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_Sentinel"]["folder"] = "shipsounds/smt_Sentinel/"
+shipFiles["Smt_Sentinel"]["COMMAND_MOVE"] = 2
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_Sentinel"]["COMMAND_ATTACK"] = 1
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_Sentinel"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_Sentinel"]["COMMAND_SELECTED"] = 2
+shipFiles["Smt_Sentinel"]["COMMAND_DOCK"] = 1
 
 
-shipFiles["Hgn_Smt_Mimic"] = {}
+shipFiles["Smt_Mimic"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_Mimic"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_Mimic"]["folder"] = "shipsounds/hgn_smt_Mimic/"
-shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVE"] = 3
-shipFiles["Hgn_Smt_Mimic"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Mimic"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Mimic"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Mimic"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_Mimic"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_Mimic"]["COMMAND_ATTACK"] = 2
--- CR CSF -- shipFiles["Hgn_Smt_Mimic"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_Mimic"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_Mimic"]["COMMAND_SELECTED"] = 4
-shipFiles["Hgn_Smt_Mimic"]["COMMAND_DOCK"] = 2
+shipFiles["Smt_Mimic"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_Mimic"]["folder"] = "shipsounds/smt_Mimic/"
+shipFiles["Smt_Mimic"]["COMMAND_MOVE"] = 3
+shipFiles["Smt_Mimic"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_Mimic"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_Mimic"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_Mimic"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Mimic"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_Mimic"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_Mimic"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_Mimic"]["COMMAND_ATTACK"] = 2
+-- CR CSF -- shipFiles["Smt_Mimic"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_Mimic"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_Mimic"]["COMMAND_SELECTED"] = 4
+shipFiles["Smt_Mimic"]["COMMAND_DOCK"] = 2
 
-shipFiles["Hgn_Smt_scout"] = {}
+shipFiles["Smt_scout"] = {}
 -----------------------------------------------------		-- Specifics for this ship are here.
-shipFiles["Hgn_Smt_scout"]["sameas"] = ""						-- Either shared, another ship name, or blank
-shipFiles["Hgn_Smt_scout"]["folder"] = "shipsounds/hgn_smt_scout/"
-shipFiles["Hgn_Smt_scout"]["COMMAND_MOVE"] = 3
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_WAYPOINT"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_MOVETOSOB"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_CANCELLED"] = 1
-shipFiles["Hgn_Smt_scout"]["COMMAND_MOVE_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_ATTACK_CANCELLED"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_MOVEATTACK"] = 1
-shipFiles["Hgn_Smt_scout"]["COMMAND_ATTACK"] = 4
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_HS"] = 1
--- CR CSF -- shipFiles["Hgn_Smt_scout"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
-shipFiles["Hgn_Smt_scout"]["COMMAND_SELECTED"] = 2
-shipFiles["Hgn_Smt_scout"]["COMMAND_DOCK"] = 2
+shipFiles["Smt_scout"]["sameas"] = ""						-- Either shared, another ship name, or blank
+shipFiles["Smt_scout"]["folder"] = "shipsounds/smt_scout/"
+shipFiles["Smt_scout"]["COMMAND_MOVE"] = 3
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_WAYPOINT"] = 1
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_MOVETOSOB"] = 1
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_CANCELLED"] = 1
+shipFiles["Smt_scout"]["COMMAND_MOVE_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_ATTACK_CANCELLED"] = 1
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_COMBATMAN"] = 1				-- Not sure what this is
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_MOVEATTACK"] = 1
+shipFiles["Smt_scout"]["COMMAND_ATTACK"] = 4
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_HS"] = 1
+-- CR CSF -- shipFiles["Smt_scout"]["COMMAND_HS_INTERRUPTED"] = 1 			-- Interrupted
+shipFiles["Smt_scout"]["COMMAND_SELECTED"] = 2
+shipFiles["Smt_scout"]["COMMAND_DOCK"] = 2
 
 
 shipFiles["Bst_scout"] = {}
@@ -1750,32 +1750,32 @@ stdCMap["Tai_GravWellGenerator"] = "STATUS_GravWellGeneratorConstructed"
 stdCMap["Tai_SensorArray"] = "STATUS_SensorsArrayConstructed"
 
 --Somtaaw
---sscMap["Hgn_Smt_ms"].Ksh_Sec_C_Module_CloakGenerator = "status_inhibitorprobearrived_1"
+--sscMap["Smt_ms"].Ksh_Sec_C_Module_CloakGenerator = "status_inhibitorprobearrived_1"
 
 
 --STATUS_SensorsArrayConstructedFromShipyard_1
 --STATUS_AdvancedCapitalShipFacilityConstructedFromShipyard_1
 --STATUS_SensorsArrayConstructedFromBattlecruiser_1
 stdCMap = {}
-stdCMap["Hgn_Smt_scout"] = "STATUS_ScoutConstructed_1"
-stdCMap["Hgn_Smt_Acolyte"] = "STATUS_InterceptorConstructed_1"
-stdCMap["Hgn_Smt_SuperAcolyte"] = "STATUS_BomberConstructed_1"
-stdCMap["Hgn_Smt_Mimic"] = "STATUS_BomberConstructed_1"
-stdCMap["Hgn_Smt_Sentinel"] = "STATUS_AssaultCorvetteConstructed_1"
-stdCMap["Hgn_Smt_ACV"] = "STATUS_AssaultCorvetteConstructed_1"
-stdCMap["Hgn_Smt_ACVE"] = "STATUS_AssaultCorvetteConstructed_1"
-stdCMap["Hgn_Smt_RammingFrigate"] = "STATUS_AssaultFrigateConstructed_1"
-stdCMap["Hgn_Smt_multibeamfrigate"] = "STATUS_AssaultFrigateConstructed_1"
-stdCMap["Hgn_Smt_hivefrigate"] = "STATUS_AssaultFrigateConstructed_1"
+stdCMap["Smt_scout"] = "STATUS_ScoutConstructed_1"
+stdCMap["Smt_Acolyte"] = "STATUS_InterceptorConstructed_1"
+stdCMap["Smt_SuperAcolyte"] = "STATUS_BomberConstructed_1"
+stdCMap["Smt_Mimic"] = "STATUS_BomberConstructed_1"
+stdCMap["Smt_Sentinel"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["Smt_ACV"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["Smt_ACVE"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["Smt_RammingFrigate"] = "STATUS_AssaultFrigateConstructed_1"
+stdCMap["Smt_multibeamfrigate"] = "STATUS_AssaultFrigateConstructed_1"
+stdCMap["Smt_hivefrigate"] = "STATUS_AssaultFrigateConstructed_1"
 
-stdCMap["Hgn_Smt_destroyer"] = "STATUS_DestroyerConstructed_1"
-stdCMap["Hgn_Smt_Carrier"] = "STATUS_CarrierConstructed_1"
-stdCMap["Hgn_Smt_dreadnought"] = "STATUS_BattlecruiserConstructed_1"
-stdCMap["Hgn_Smt_Seraph"] = "STATUS_BattlecruiserConstructed_2"
+stdCMap["Smt_destroyer"] = "STATUS_DestroyerConstructed_1"
+stdCMap["Smt_Carrier"] = "STATUS_CarrierConstructed_1"
+stdCMap["Smt_dreadnought"] = "STATUS_BattlecruiserConstructed_1"
+stdCMap["Smt_Seraph"] = "STATUS_BattlecruiserConstructed_2"
 
-stdCMap["Hgn_Smt_Worker"] = "STATUS_ResourceCollectorConstructed_1"
-stdCMap["Hgn_Smt_Processor"] = "STATUS_ResourceControllerConstructed_1"
-stdCMap["Hgn_Smt_Clee_San"] = "STATUS_ProbeConstructed_1"
+stdCMap["Smt_Worker"] = "STATUS_ResourceCollectorConstructed_1"
+stdCMap["Smt_Processor"] = "STATUS_ResourceControllerConstructed_1"
+stdCMap["Smt_Clee_San"] = "STATUS_ProbeConstructed_1"
 
 
 

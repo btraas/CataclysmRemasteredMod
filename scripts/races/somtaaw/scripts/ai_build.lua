@@ -1,14 +1,14 @@
 aitrace("LOADING Somtaaw BUILD INFO")
 
-		kCollector = HGN_SMT_WORKER
-		kRefinery  = HGN_SMT_PROCESSOR
-		kScout = HGN_SMT_SCOUT
-		kInterceptor = HGN_SMT_ACOLYTE
-		kShipYard = HGN_SMT_MS
-		kBomber = HGN_SMT_SUPERACOLYTE
-		kCarrier = HGN_SMT_CARRIER		
-		kDestroyer = HGN_SMT_DESTROYER
-		kBattleCruiser = HGN_SMT_DREADNOUGHT
+		kCollector = SMT_WORKER
+		kRefinery  = SMT_PROCESSOR
+		kScout = SMT_SCOUT
+		kInterceptor = SMT_ACOLYTE
+		kShipYard = SMT_MS
+		kBomber = SMT_SUPERACOLYTE
+		kCarrier = SMT_CARRIER		
+		kDestroyer = SMT_DESTROYER
+		kBattleCruiser = SMT_DREADNOUGHT
 		
 		
 
@@ -88,7 +88,7 @@ function DetermineSpecialDemand_Somtaaw()
 		end		
 		ShipDemandAddByClass( eSubSystemAttackers, ssKillaDemand )		
 		end
-		ShipDemandSet( HGN_SMT_CLEE_SAN, 10)	
+		ShipDemandSet( SMT_CLEE_SAN, 10)	
 		end
 	local numShipyards = NumSquadrons( kShipYard ) + NumSquadronsQ( kShipYard )
 	if (numShipyards == 0 and UnderAttackThreat() < -75) then

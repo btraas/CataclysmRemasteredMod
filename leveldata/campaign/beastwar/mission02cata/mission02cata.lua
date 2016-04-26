@@ -126,11 +126,11 @@ function Rule_Init()
 	Rule_Add( "Rule_PlayerWins" )
 	Rule_Add( "Rule_PlayerLose" )	
 	
-	--Player_UnrestrictBuildOption( 0, 'Hgn_smt_acolyte' )
-	--Player_UnrestrictBuildOption( 0, 'Hgn_Smt_worker' )
+	--Player_UnrestrictBuildOption( 0, 'smt_acolyte' )
+	--Player_UnrestrictBuildOption( 0, 'smt_worker' )
 
 	--Player_UnrestrictBuildOption( 0, "Hgn_MS_Module_Research" ) --Hgn_MS_Module_Research
-	--Player_UnrestrictBuildOption( 0, "Hgn_smt_Scout" ) --Hgn_Scout
+	--Player_UnrestrictBuildOption( 0, "smt_Scout" ) --Hgn_Scout
 	--Player_UnrestrictBuildOption( 0, "Hgn_ResourceCollector" ) --Hgn_ResourceCollector
 	--Player_UnrestrictBuildOption( 0, "Hgn_Probe" ) --Hgn_Probe
 	 -----RESEARCH DATA-----

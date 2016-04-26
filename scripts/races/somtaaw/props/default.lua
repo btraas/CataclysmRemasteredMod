@@ -40,7 +40,7 @@ String_Properties = {
 	path_crate_locate = [[data:scripts/races/Somtaaw/scripts/crate_locate.lua]],
 	path_crate_ships = [[data:scripts/races/Somtaaw/scripts/crate_ships.lua]],
 	
-	def_type_mothership = "Hgn_smt_ms",
-	def_type_carrier = "Hgn_smt_carrier",
-	def_type_scout = "hgn_smt_scout",
+	def_type_mothership = "smt_ms",
+	def_type_carrier = "smt_carrier",
+	def_type_scout = "smt_scout",
 }

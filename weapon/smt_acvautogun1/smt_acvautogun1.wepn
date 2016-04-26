@@ -1,5 +1,5 @@
-StartWeaponConfig(NewWeaponType, "Gimble", "Missile", "SmallEnergyCannon", "Special Attack", 1200, 1600, 0, 0, 0, 0, 1, 1, 0, 1, 1, 4, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0);
-AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 180, 180, "");
+StartWeaponConfig(NewWeaponType, "Gimble", "Missile", "SmallEnergyCannon", "Special Attack", 5200, 1600, 0, 0, 0, 0, 1, 1, 0, 1, 1, 4, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0);
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 81, 81, "");
 setPenetration(NewWeaponType,5,0,
 {Unarmoured=1},
 {LightArmour=0.5},

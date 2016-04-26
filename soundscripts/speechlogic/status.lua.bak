@@ -55,7 +55,7 @@ function ChatterMisc(shipnm,parm2,code)
 		if(playSomtaawStatus("STATUS_MISSILEINCOMING", shipnm)) then
 			return
 		end
-		if (parm2=="Hgn_TorpedoFrigate" or parm2=="Hgn_TorpedoFrigateElite" or parm2=="Hgn_Destroyer" or parm2=="Hgn_Smt_destroyer" or parm2=="Hgn_Smt_dreadnought") then
+		if (parm2=="Hgn_TorpedoFrigate" or parm2=="Hgn_TorpedoFrigateElite" or parm2=="Hgn_Destroyer" or parm2=="Smt_destroyer" or parm2=="Smt_dreadnought") then
 			playSpeechActor("STATUS_CapitalShipTorpedoHit_Report",NameCapPilot,NumCapPilots, Frequency_Status)
 		end
 	elseif(code==CD_DefenseFieldFound) then
@@ -85,8 +85,8 @@ function ChatterMiscHighPriority(shipnm,parm2,code)
 		end
 		if (shipnm=="Hgn_MarineFrigate") then
 			playSpeechActor("STATUS_MARINEFRIGATE_SUCCESS_CAPFULL",NameMarinePilot,NumMarinePilots, Frequency_Command)
-	--	elseif (shipnm=="Hgn_Smt_Worker") then
-	--		playSpeechActor("shipsounds/Hgn_Smt_Worker/STATUS_CAPTURE_CAPFULL_1", raceHelper(), 0, Frequency_Command )
+	--	elseif (shipnm=="Smt_Worker") then
+	--		playSpeechActor("shipsounds/Smt_Worker/STATUS_CAPTURE_CAPFULL_1", raceHelper(), 0, Frequency_Command )
  		else
 			playSpeechActor("STATUS_INFILTRATORFRIGATE_SUCCESS_CAPFULL",NameInfiltratorPilot,NumInfiltratorPilots, Frequency_Command)
 		end
@@ -187,25 +187,25 @@ attackMap["Vgr_Destroyer"] = {"STATUS_V_Destroyer_Under_Attack",  NameCapPilot,N
 attackMap["Vgr_Battlecruiser"] = {"STATUS_V_Battlecruiser_Attack",  NameCapPilot,NumCapPilots}
 attackMap["Vgr_ShipYard"] = {"STATUS_V_Shipyard_Under_Attack", NameSupportPilot,NumSupportPilots}
 
-attackMap["hgn_smt_acolyte"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_acolytee"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_acv"] = {"STATUS_Corvette_Under_Attack", NameSupportPilot,NumSupportPilots}
-attackMap["hgn_smt_acve"] = {"STATUS_Corvette_Under_Attack",  NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_dreadnought"] = {"STATUS_Battlecruiser_Attack",  NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_destroyer"] = {"STATUS_Destroyer_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_carrier"] = {"STATUS_Carrier_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_clee_san"] = {"STATUS_Research_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_hivefrigate"] = {"STATUS_Frigate_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_mimic"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_multibeamfrigate"] = {"STATUS_Frigate_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_processor"] = {"STATUS_Processor_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_rammingfrigate"] = {"STATUS_Frigate_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_scaffold"] = {"STATUS_Shipyard_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_scout"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_sentinel"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_seraph"] = {"STATUS_Battlecruiser_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_superacolyte"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
-attackMap["hgn_smt_Worker"] = {"STATUS_Worker_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_acolyte"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_acolytee"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_acv"] = {"STATUS_Corvette_Under_Attack", NameSupportPilot,NumSupportPilots}
+attackMap["smt_acve"] = {"STATUS_Corvette_Under_Attack",  NameCapPilot,NumCapPilots}
+attackMap["smt_dreadnought"] = {"STATUS_Battlecruiser_Attack",  NameCapPilot,NumCapPilots}
+attackMap["smt_destroyer"] = {"STATUS_Destroyer_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_carrier"] = {"STATUS_Carrier_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_clee_san"] = {"STATUS_Research_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_hivefrigate"] = {"STATUS_Frigate_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_mimic"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_multibeamfrigate"] = {"STATUS_Frigate_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_processor"] = {"STATUS_Processor_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_rammingfrigate"] = {"STATUS_Frigate_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_scaffold"] = {"STATUS_Shipyard_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_scout"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_sentinel"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_seraph"] = {"STATUS_Battlecruiser_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_superacolyte"] = {"STATUS_Fighter_Under_Attack", NameCapPilot,NumCapPilots}
+attackMap["smt_Worker"] = {"STATUS_Worker_Under_Attack", NameCapPilot,NumCapPilots}
 
 
 attackMapFC = {}
@@ -222,30 +222,30 @@ attackMapMak["Vgr_Battlecruiser"] = "STATUS_BattlecruiserUnderAttack_1"
 attackMapMak["Vgr_Shipyard"] = "STATUS_ShipyardUnderAttack_1"
 
 attackMapKuun = {}
-attackMapKuun["Hgn_Smt_destroyer"] = "STATUS_Destoyer_Under_Attack_1"
-attackMapKuun["Hgn_Smt_Carrier"] = "STATUS_Carrier_Under_Attack_1"
-attackMapKuun["Hgn_smt_carrier"] = "STATUS_Carrier_Under_Attack_1"
-attackMapKuun["Hgn_Smt_dreadnought"] = "STATUS_Battlecruiser_Under_Attack_1"
-attackMapKuun["Hgn_Smt_ms"] = "STATUS_Mothership_Under_Attack_1"
-attackMapKuun["Hgn_smt_ms"] = "STATUS_Mothership_Under_Attack_1"
-attackMapKuun["Hgn_smt_ms_sp"] = "STATUS_Mothership_Under_Attack_1"
-attackMapKuun["Hgn_Smt_Seraph"] = "STATUS_Battlecruiser_Under_Attack_1"
-attackMapKuun["Hgn_Smt_hivefrigate"] = "STATUS_frigate_under_attack_1"
-attackMapKuun["Hgn_Smt_RammingFrigate"] = "STATUS_frigate_under_attack_1"
-attackMapKuun["Hgn_Smt_multibeamfrigate"] = "STATUS_frigate_under_attack_1"
-attackMapKuun["Hgn_Smt_ACV"] = "STATUS_corvette_under_attack_1"
-attackMapKuun["Hgn_Smt_ACVE"] = "STATUS_corvette_under_attack_1"
-attackMapKuun["Hgn_Smt_Mimic"] = "STATUS_fighter_under_attack_1"
-attackMapKuun["Hgn_Smt_SuperAcolyte"] = "STATUS_fighter_under_attack_1"
-attackMapKuun["Hgn_Smt_AcolyteE"] = "STATUS_fighter_under_attack_1"
-attackMapKuun["Hgn_Smt_Acolyte"] = "STATUS_fighter_under_attack_1"
-attackMapKuun["Hgn_Smt_scout"] = "STATUS_fighter_under_attack_1"
-attackMapKuun["Hgn_Smt_SuperAcolyte"] = "STATUS_fighter_under_attack_1"
-attackMapKuun["Hgn_Smt_Processor"] = "STATUS_processor_under_attack_1"
-attackMapKuun["Hgn_Smt_Worker"] = "STATUS_Worker_under_attack_1"
-attackMapKuun["Hgn_smt_worker"] = "STATUS_Worker_under_attack_1"
-attackMapKuun["Hgn_Smt_Clee_San"] = "STATUS_research_under_attack_1"
-attackMapKuun["Hgn_Smt_SuperAcolyte"] = "STATUS_fighter_under_attack_1"
+attackMapKuun["Smt_destroyer"] = "STATUS_Destoyer_Under_Attack_1"
+attackMapKuun["Smt_Carrier"] = "STATUS_Carrier_Under_Attack_1"
+attackMapKuun["smt_carrier"] = "STATUS_Carrier_Under_Attack_1"
+attackMapKuun["Smt_dreadnought"] = "STATUS_Battlecruiser_Under_Attack_1"
+attackMapKuun["Smt_ms"] = "STATUS_Mothership_Under_Attack_1"
+attackMapKuun["smt_ms"] = "STATUS_Mothership_Under_Attack_1"
+attackMapKuun["smt_ms_sp"] = "STATUS_Mothership_Under_Attack_1"
+attackMapKuun["Smt_Seraph"] = "STATUS_Battlecruiser_Under_Attack_1"
+attackMapKuun["Smt_hivefrigate"] = "STATUS_frigate_under_attack_1"
+attackMapKuun["Smt_RammingFrigate"] = "STATUS_frigate_under_attack_1"
+attackMapKuun["Smt_multibeamfrigate"] = "STATUS_frigate_under_attack_1"
+attackMapKuun["Smt_ACV"] = "STATUS_corvette_under_attack_1"
+attackMapKuun["Smt_ACVE"] = "STATUS_corvette_under_attack_1"
+attackMapKuun["Smt_Mimic"] = "STATUS_fighter_under_attack_1"
+attackMapKuun["Smt_SuperAcolyte"] = "STATUS_fighter_under_attack_1"
+attackMapKuun["Smt_AcolyteE"] = "STATUS_fighter_under_attack_1"
+attackMapKuun["Smt_Acolyte"] = "STATUS_fighter_under_attack_1"
+attackMapKuun["Smt_scout"] = "STATUS_fighter_under_attack_1"
+attackMapKuun["Smt_SuperAcolyte"] = "STATUS_fighter_under_attack_1"
+attackMapKuun["Smt_Processor"] = "STATUS_processor_under_attack_1"
+attackMapKuun["Smt_Worker"] = "STATUS_Worker_under_attack_1"
+attackMapKuun["smt_worker"] = "STATUS_Worker_under_attack_1"
+attackMapKuun["Smt_Clee_San"] = "STATUS_research_under_attack_1"
+attackMapKuun["Smt_SuperAcolyte"] = "STATUS_fighter_under_attack_1"
 
 statusFiles = {}
 

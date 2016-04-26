@@ -7,7 +7,7 @@ NewShipType = StartShipConfig()
 NewShipType.displayedName = "Command Ship"
 NewShipType.sobDescription = "Beast Mothership"
 --if (getGameRubric(NewShipType) == GR_MULTIPLAYER or getGameRubric(NewShipType) == GR_SINGLEPLAYER_SKIRMISH) then
-	NewShipType.maxhealth = 150000
+	NewShipType.maxhealth = 30000
 --else
 --	NewShipType.maxhealth = 500000 --810000
 --end
@@ -26,8 +26,8 @@ NewShipType.defensiveFormation = "broad"
 NewShipType.aggressiveFormation = "delta"
 NewShipType.mass = 2000
 NewShipType.collisionMultiplier = 1
-NewShipType["thrusterMaxSpeed"]=50;
-NewShipType["mainEngineMaxSpeed"]=50;
+NewShipType["thrusterMaxSpeed"]=40;
+NewShipType["mainEngineMaxSpeed"]=40;
 NewShipType.rotationMaxSpeed = 5
 NewShipType.thrusterAccelTime = 8
 NewShipType.thrusterBrakeTime = 2
