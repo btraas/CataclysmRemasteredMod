@@ -3,8 +3,8 @@ Pushd "%~dp0"
 
 move .git ..\
 
-copy config-CRMOD.txt config.txt
+copy config-RC.txt config.txt
 
-php setSinglePlayer.php off
+php setSinglePlayer.php on
 
 "C:\Program Files (x86)\Steam\steamapps\common\Homeworld\GBXTools\WorkshopTool\WorkshopTool.exe"

@@ -7,7 +7,7 @@ NewShipType = StartShipConfig()
 NewShipType.displayedName = "Command Ship"
 NewShipType.sobDescription = "Beast Mothership"
 --if (getGameRubric(NewShipType) == GR_MULTIPLAYER or getGameRubric(NewShipType) == GR_SINGLEPLAYER_SKIRMISH) then
-	NewShipType.maxhealth = 30000
+	NewShipType.maxhealth = 300000
 --else
 --	NewShipType.maxhealth = 500000 --810000
 --end

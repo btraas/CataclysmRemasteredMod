@@ -1,7 +1,7 @@
-StartWeaponConfig(NewWeaponType, "Fixed", "Missile", "ksh_smallmissile", "Special Attack", 400, 2000, 0, 0, 0, 0, 1, 0, 0, 500, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0)
+StartWeaponConfig(NewWeaponType, "Fixed", "Missile", "ksh_smallmissile", "Special Attack", 400, 2000, 0, 0, 0, 0, 1, 0, 0, 150, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0)
 AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 900, 900, "")
 setPenetration(NewWeaponType, 5, 1, 
 {PlanetKillerArmour = 0,})
-setAccuracy(NewWeaponType, 1)
+setAccuracy(NewWeaponType, 1, {Fighter = 0,}, {Corvette = 0,}, {munition = 0,}, {Frigate = 1,}, {SmallCapitalShip = 1,}, {BigCapitalShip = 1,}, {ResourceLarge = 1,})
 setAngles(NewWeaponType, 180, 0, 0, 0, 0)
 setMiscValues(NewWeaponType, 0, 0)

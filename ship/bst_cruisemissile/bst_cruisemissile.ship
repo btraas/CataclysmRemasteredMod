@@ -5,8 +5,8 @@
 --
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Cruise Missile"
-NewShipType.sobDescription = "Infects Enemy Parts"
-NewShipType.maxhealth = 5000
+NewShipType.sobDescription = "Damages Enemy Parts"
+NewShipType.maxhealth = 500
 NewShipType["regentime"] = 300
 NewShipType["minRegenTime"] = 220
 NewShipType.sideArmourDamage = 1
@@ -19,10 +19,10 @@ NewShipType.formationSpacing = 40
 NewShipType.passiveFormation = "broad"
 NewShipType.defensiveFormation = "2x2_wall"
 NewShipType.aggressiveFormation = "charging_wall"
-NewShipType.mass = 15
+NewShipType.mass = 1015
 NewShipType.collisionMultiplier = 1
-NewShipType.thrusterMaxSpeed = 280
-NewShipType.mainEngineMaxSpeed = 280
+NewShipType.thrusterMaxSpeed = 1080
+NewShipType.mainEngineMaxSpeed = 1080
 NewShipType.rotationMaxSpeed = 150
 NewShipType.thrusterAccelTime = 2
 NewShipType.thrusterBrakeTime = 1
@@ -76,9 +76,9 @@ NewShipType.neutralValue = 0
 NewShipType.antiFighterValue = 0
 NewShipType.antiCorvetteValue = 0
 NewShipType.antiFrigateValue = 10
-NewShipType.totalValue = 10
-NewShipType.buildCost = 625
-NewShipType.buildTime = 30
+NewShipType.totalValue = 3
+NewShipType.buildCost = 50
+NewShipType.buildTime = 5
 NewShipType.buildPriorityOrder = 10
 NewShipType.retaliationRange = 5500
 NewShipType.retaliationDistanceFromGoal = 160
@@ -135,7 +135,7 @@ NewShipType["launchTimeBeforeStart"]=0.5;
 NewShipType["launchNrOfShipsInDockFormation"]=1;
 NewShipType["launchFormation"]="dockline";
 addAbility(NewShipType, "ParadeCommand", 1);
-addAbility(NewShipType, "CaptureCommand", 1, 35);
+--addAbility(NewShipType, "CaptureCommand", 1, 35);
 addAbility(NewShipType, "WaypointMove");
 --addAbility(NewShipType, "CanAttack", 1, 3, 1, 0, 0.35, 1, "Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip", "FlyRound_Corvette_vs_Frigate", {Fighter="FlyRound_Corvette_vs_Fighter"}, {Mothership="flyround_Corvette_vs_Mothership"}, {SmallCapitalShip="FlyRound_Corvette_vs_CapShip"}, {BigCapitalShip="FlyRound_Corvette_vs_CapShip"}, {SubSystem="FrontalVsSubSystem_Corvette"}, {Corvette="FlyBy_Corvette_vs_Corvette"});
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500);

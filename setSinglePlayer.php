@@ -19,7 +19,7 @@
 
 
 
-	echo "CRMod SetSinglePlayer - Brayden Traas".PHP_EOL.PHP_EOL;
+	echo "CRMod SetSinglePlayer v$VERSION - Brayden Traas".PHP_EOL.PHP_EOL;
 	echo "Setting Single player ".($ON ? "on":"off")."...".PHP_EOL;
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".PHP_EOL.PHP_EOL;
 
@@ -28,6 +28,8 @@
 	
 	if(copy($FILE_SRC, $FILE_MASTER) == false) echo "$ERROR: Unable to set singleplayer ".($ON ? "on":"off");
 	else echo "Success. Single player ".($ON ? "on":"off");
+	
+	echo PHP_EOL.PHP_EOL;
 
 
 

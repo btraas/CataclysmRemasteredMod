@@ -7,7 +7,7 @@ NewShipType=StartShipConfig();
 NewShipType["displayedName"]="Kuun-Lan Command Ship";
 NewShipType["sobDescription"]="Mothership Class Production Ship";
 --if (getGameRubric(NewShipType) == GR_MULTIPLAYER or getGameRubric(NewShipType) == GR_SINGLEPLAYER_SKIRMISH) then
-	NewShipType["maxhealth"]=28000;--810000;
+	NewShipType["maxhealth"]=280000;--810000;
 --else
 --	NewShipType["maxhealth"]=500000;
 --end
@@ -152,7 +152,7 @@ addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"BigCapitalShip, SmallCapita
   SubSystem = "FrontalVsSubSystem",
 })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 1000);
-addAbility(NewShipType, "CanBuildShips", 1, "Fighter_Smt, Corvette_Smt, Frigate_Smt, Battlecruiser_Smt, Utility_Smt, SuperCap_Smt, SubSystem_Smt, SubSystemLarge_Smt, Shipyard_Smt, Probe_Smt", "Utility, Fighter, Corvette, Frigate, Capital, SubSystemModule");
+addAbility(NewShipType, "CanBuildShips", 1, "Fighter_Smt, Corvette_Smt, Frigate_Smt, Battlecruiser_Smt, Utility_Smt, Resource_Smt, SuperCap_Smt, SubSystem_Smt, SubSystemLarge_Smt, Shipyard_Smt, Probe_Smt", "Utility, Fighter, Corvette, Frigate, Capital, SubSystemModule");
 addAbility(NewShipType, "CanBeCaptured", 300, 0.5);
 addAbility(NewShipType, "CanBeRepaired");
 addAbility(NewShipType, "CloakAbility", 0, 2, 2000, 4000, 3, 100, 1, 1000);
@@ -178,7 +178,7 @@ addShield(NewShipType, "EMP", 10000, 20);
 --StartShipHardPointConfig(NewShipType, "Production 2", "HardpointProduction2", "System", "Production", "Destroyable", "Ksh_Sec_ms_Production_Fighter", "Ksh_Sec_ms_Production_Fighter", "", "", "", "", "", "", "");
 --StartShipHardPointConfig(NewShipType, "Production 3", "HardpointProduction3", "System", "Production", "Destroyable", "Ksh_Sec_ms_Production_Corvette", "Ksh_Sec_ms_Production_Corvette", "", "", "", "", "", "", "");
 --StartShipHardPointConfig(NewShipType, "Production 4", "HardpointProduction4", "System", "Production", "Destroyable", "Ksh_Sec_ms_Production_Frigate", "Ksh_Sec_ms_Production_Frigate", "", "", "", "", "", "", "");
-StartShipHardPointConfig(NewShipType, "Production 6", "HardpointProduction6", "System", "Production", "Destroyable", "", "Smt_ms_Production_Capship", "", "", "", "", "", "", "");
+--StartShipHardPointConfig(NewShipType, "Production 6", "HardpointProduction6", "System", "Production", "Destroyable", "Smt_ms_Production_Capship", "Smt_ms_Production_Capship", "", "", "", "", "", "", "");
 StartShipHardPointConfig(NewShipType, "Generic 1", "Hardpoint_Generic1", "System", "Generic", "Destroyable", "", "Ksh_Sec_Ms_Module_Research", "", "", "", "", "", "", "");
 StartShipHardPointConfig(NewShipType, "Generic 2", "Hardpoint_Generic2", "System", "Generic", "Destroyable", "", "Ksh_Sec_Ms_Module_Research", "Ksh_Sec_Ms_Module_AdvancedResearch", "Ksh_Sec_Ms_Module_ArmorResearch", "Ksh_Sec_Ms_Module_WeaponsResearch", "", "", "", "");
 StartShipHardPointConfig(NewShipType, "Generic 3", "Hardpoint_Generic3", "System", "Generic", "Destroyable", "", "Ksh_Sec_Ms_Module_Research", "Ksh_Sec_Ms_Module_AdvancedResearch", "Ksh_Sec_Ms_Module_ArmorResearch", "Ksh_Sec_Ms_Module_WeaponsResearch", "", "", "", "");

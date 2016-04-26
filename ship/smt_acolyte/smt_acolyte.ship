@@ -82,7 +82,7 @@ NewShipType["antiFighterValue"]=8;
 NewShipType["antiCorvetteValue"]=0;
 NewShipType["antiFrigateValue"]=0;
 NewShipType["totalValue"]=8;
-NewShipType["buildCost"]=150;
+NewShipType["buildCost"]=120;
 NewShipType["buildTime"]=12;
 NewShipType["buildPriorityOrder"]=20;
 NewShipType["retaliationRange"]=5500;
@@ -150,6 +150,7 @@ StartShipWeaponConfig(NewShipType, "Ksh_KineticAutoGun", "Weapon_FrontGun", "Fir
 StartShipWeaponConfig(NewShipType, "Ksh_KineticAutoGun", "Weapon_FrontBotGun", "Fire2");
 StartShipWeaponConfig(NewShipType, "Ksh_KineticAutoGun1", "Weapon_FrontGun", "Weapon_FrontBotGun");
 StartShipWeaponConfig(NewShipType, "Ksh_KineticAutoGun1", "Weapon_FrontBotGun", "Weapon_FrontBotGun");
+StartShipWeaponConfig(NewShipType, "Ksh_Sec_AcolyteMissile", "Weapon_Missile", "Missile");
 addShield(NewShipType, "EMP", 75, 20);
 NewShipType["sobDieTime"]=0.1;
 NewShipType["sobSpecialDieTime"]=2;
