@@ -1,0 +1,11 @@
+hitfx = "plasma_hit_spray_dread"
+bulletfx = "vgr_hugeplasma_combo_projectile"
+nopenetratefx = "plasma_hit_spray_dread"
+deathtype = "deathplasma"
+scartype = "Plasma_Bomb/Plasma_Bomb"
+firefx = "vgr_hugeplasma_combo"
+fire_sfx = "WEAPON/SOMTAAW/FIRE/SiegeCannon"
+hit_sfx = "WEAPON/CORVETTE/IMPACT/WEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+nopenetrate_sfx = "WEAPON/CORVETTE/IMPACT/WEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+hit_clamp = 
+    { 1, 1, }

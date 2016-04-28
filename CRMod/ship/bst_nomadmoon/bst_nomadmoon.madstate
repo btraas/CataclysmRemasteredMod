@@ -1,0 +1,6 @@
+-- From Hgn_Resource Collector - modified by chris80502
+
+HGN_BST_NOMADMOON_Normal_OnSet = function(ship)
+    startAnim(ship, "GravWellRotate")
+    setLoopCount(ship, "GravWellRotate", 1000000)
+end

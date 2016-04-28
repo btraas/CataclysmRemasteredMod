@@ -1,0 +1,131 @@
+filerange 40500 40998
+rangestart 40500 40998
+
+// Subtitles
+40500	Begin Harvesting. Collect 700 RU's.
+40501	Build a Resource Collector and order it to start collecting resources.
+40502	Build a Fighter Facility
+40503	Build a Squadron of Interceptors.
+40504	Research Plasma Bomb technology
+40505	Build a Squadron of Bombers.
+40506	Defeat Vaygr forces at Chimera.
+40507	Use the Interceptors to destroy the target drones.
+40508	Eliminate Vaygr Frigate at Station Xanhus using Strike groups
+40509	Eliminate the Vaygr Hyperspace Gates and the Vaygr Fighters.
+40510	Protect the Mothership
+40511	Enter Hyperspace.
+40520	TANIS BASE - GREAT WASTELANDS
+40521	Estimated Time to Vaygr Reinforcements:  %1MINUTES%:%2SECONDS%
+40522	MISSION FAILED
+40523	MISSION SUCCESSFUL
+40530	Tactical Officer Online. Full power to sensors, analyzing combat data now.
+40531	Command, we need to find out where we can do the most good.
+40532	Understood, tactical. Attention carrier Veer-Rak!
+40533	This is Kiith Somtaaw mining vessel Kuun-Lan.
+40534	We have arrived in sector 112 and request targeting data.
+40535	Good to have you, Kuun-Lan.
+40536	We've got a strike fleet needing cover in sector 109. Can you assist?
+40537	We'll send everything we've got. But be advised, we are a mining vessel.
+40540	It would be best if we do not have to move directly into the main battle.
+40541	A strike wing of Firelance frigates are under attack from Taiidani Bombers at this position.
+40542	Without fighter support, the frigates will be destroyed and that flank will collapse.
+40543	Send out a squad of acolyte fighters ASAP to assist the frigates.
+40550	Fighter Facility Subsystem complete.
+40551	Engineering is online and ready for fighter production.
+40552	To test basic combat capabilities, construct an Interceptor Squadron.
+40560	Gate destroyed.
+40561	Destroy all the remaining hyperspace gates.
+40570	Stand by to begin combat trials.
+40571	Perimeter Station Chimera will assist by providing target drones.
+40572	The drones are located here.
+40573	Use the Interceptors to destroy the Target Drones.
+40580	Tanis is under attack!
+40581	All forces to combat alert. This is not a test.
+40582	Interceptors have been launched from Chimera. The enemy must be eliminated.
+40583	Order all Interceptors to destroy the Vaygr bombers.
+40590	Multiple enemy reinforcements detected.
+40612	Begin construction of Attack Bombers immediately.
+40613	Bombers will be required to defend the Mothership.
+40591	*** AXED *** Estimated time before contact, 3 minutes.
+40592	*** AXED *** We must begin research of Plasma Bomb technology immediately.
+40600	Priority alert!
+40601	The Vaygr are using Hyperspace Gates.
+40602	If they are not destroyed, the enemy will deploy reinforcements through them.
+40603	These gates must be destroyed.
+40620	We need more bombers to destroy the Vaygr Gates.
+40621	Construct more Bomber Squadrons.
+40630	Long range sensors have detected multiple enemy signals converging on Tanis.
+40631	All ships initiate docking procedures and stand by for Hyperspace.
+40632	The Vaygr have arrived.
+40633	Emergency Hyperspace procedures initiated.
+40634	The Mothership must survive.
+40635	*** AXED *** Enemy Hyperspace Gate destroyed.
+40640	
+40641	
+40650	Chimera Station is offline.
+40666	The Vaygr have breached the Tanis perimeter.
+40667	The Mothership is under attack.
+40657	We cannot stay here any longer. Emergency launch underway.
+40658	Release crews stand by for emergency launch.
+40659	Roger that, Tanis.
+40660	Primary couplings released.
+40661	She's looking good…
+40662	Greenline confirmed.
+40663	The Mothership has cleared Tanis.
+40664	We are away.
+40665	Damage control teams stand by.
+40651	We are receiving a coded transmission from Hiigara:
+40652	Tanis control, this is Angel Moon Station Jericho.
+40653	A massive Vaygr invasion fleet is approaching the Homeworld system. Heavy casualties are expected.
+40654	The crew of the Mothership has begun evacuation and a rally point has been established.
+40655	We have initiated defense procedures and are standing by for contact.
+40656	The Homeworld is under attack.
+40670	The Vaygr know we are here... the Mothership must be protected.
+40680	Negative.
+40681	The Mothership must move clear of Tanis before it can safely enter hyperspace.
+40690	Estimated time before contact, 1 minute.
+40691	Estimated time before contact: 2 minutes.
+40692	Estimated time before contact, 3 minutes.
+40694	Estimated time before contact, 4 minutes.
+40695	Estimated time before contact, 5 minutes.
+40696	Estimated time before contact, 6 minutes.
+40697	Estimated time before contact, 7 minutes.
+40698	Estimated time before contact, 8 minutes.
+40699	Estimated time before contact, 9 minutes.
+40700	Estimated time before contact, 10 minutes.
+40710	The Critters are under attack.
+40720	New build options available.
+40790	
+40791	Tanis Defense Force
+40792	Vaygr Assault Force
+40793	Hiigaran Navy
+40800	Resource Operation.
+40801	Target Drones
+40802	Vaygr Bombers
+40803	Vaygr Frigate Strike Force
+40804	Vaygr Hyperspace Gate
+40900	To Harvest, select a RESOURCE COLLECTOR and RIGHT-CLICK on the Resource Containers.
+40905	Use the INTERCEPTORS to destroy the Target Drones
+40906	To attack, select the ships you want to attack with, then RIGHT-CLICK on the target.
+40907	To attack multiple targets, use BAND-BOX attack.
+40910	Destroy the Vaygr Bombers using  Interceptors.
+40915	These Vaygr are formed in a Strike Group.
+40916	The Vaygr Interceptors will eliminate your Bombers easily
+40917	Form the Interceptors and Bombers into a Strike Group to ensure your Interceptors protect the Bombers
+40950	To collect Resources, select your Resource Collectors and then RIGHT-CLICK on Resource Containers.
+40955	
+40960	The FIGHTER FACILITY is a SUBSYSTEM.  You can find it in the Build Manager under the Fighters section.
+40965	Interceptors can be found in the Build Manager under the Fighter section.
+40966	You can queue up multiple units by clicking on their icon multiple times.
+40970	
+40975	Bombers can be found in the Build Menu under the Fighter section.
+40980	Destroy the Vaygr Bombers by selecting the Interceptors, then issuing an Attack Order.
+40981	To issue an Attack Order RIGHT-CLICK on the target you wish to attack.
+40985	Attack and Destroy the Target drones with the Interceptors.
+40986	To attack, select the Interceptors, then RIGHT-CLICK on the enemy ships you wish to attack.
+40987	To attack multiple targets, use BAND-BOX attack.
+40990	
+40995	Use Bombers to destroy the Hyperspace Gates.
+40998	Protect the Mothership.  It must NOT be destroyed.
+
+rangeend

@@ -1,0 +1,87 @@
+--===========================================================================
+--  Purpose : Lua definition file for Homeworld Ship.
+--            Contains loading information and flight dynamics information (among other things?)
+--
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--===========================================================================
+NewShipType = StartMissileConfig()
+NewShipType.displayedName="$1650"
+NewShipType.sobDescription="$1651"
+NewShipType.TOIcon="InvertedY"
+NewShipType.TOScale=1
+NewShipType.TODistanceFade0=50
+NewShipType.TODistanceDisappear0=100
+NewShipType.TODistanceFade1=50
+NewShipType.TODistanceDisappear1=100
+NewShipType.TODistanceFade2=25000
+NewShipType.TODistanceDisappear2=26000
+NewShipType.TOGroupScale=1
+NewShipType.TOGroupMergeSize=0
+NewShipType.mouseOverMinFadeSize=0.045
+NewShipType.mouseOverMaxFadeSize=0.1
+NewShipType.maxhealth=40
+NewShipType.regentime=0
+NewShipType.sideArmourDamage=1
+NewShipType.rearArmourDamage=1
+NewShipType.maxShield=0
+NewShipType.shieldRechargeTime=0
+NewShipType.nlips=0.0004
+NewShipType.nlipsRange=75000
+NewShipType.nlipsFar=0.0005
+NewShipType.nlipsFarRange=100000
+NewShipType.SMRepresentation="Invisible"
+NewShipType.meshRenderLimit=4000
+NewShipType.dotRenderLimit=4000
+NewShipType.minLOD=0.2
+NewShipType.minimumZoomFactor=0.9
+NewShipType.selectionPriority=30
+NewShipType.weaponName="vgr_clustermissilelauncher"
+NewShipType.lifeTime=9
+NewShipType.launchTime= 1
+NewShipType.detectionDistance=4000
+NewShipType.proximityDetonationDist=250
+NewShipType.clusterDistance= 1750
+NewShipType.numberSubMunitions=3
+NewShipType.subMunitionName="kpr_singlebomb"
+NewShipType.clusterAngle=28
+NewShipType.sobDieTime=0.5
+NewShipType.density=1
+NewShipType.thrusterMaxSpeed=715
+NewShipType.mainEngineMaxSpeed=715
+NewShipType.rotationMaxSpeed=600
+NewShipType.thrusterAccelTime=1
+NewShipType.thrusterBrakeTime=1
+NewShipType.mainEngineAccelTime=1
+NewShipType.mainEngineBrakeTime=1
+NewShipType.rotationAccelTime=0.2
+NewShipType.rotationBrakeTime=0.2
+NewShipType.thrusterUsage=0.5
+NewShipType.accelerationAngle=60
+NewShipType.mirrorAngle=30
+NewShipType.maxBankingAmount=145
+NewShipType.descendPitch=0
+NewShipType.goalReachEpsilon=5
+NewShipType.controllerType="Missile"
+NewShipType.slowdownFactor=0.3
+NewShipType.tumbleStaticX=5
+NewShipType.tumbleStaticY=10
+NewShipType.tumbleStaticZ=5
+NewShipType.tumbleDynamicX=2
+NewShipType.tumbleDynamicY=5
+NewShipType.tumbleDynamicZ=3
+NewShipType.tumbleSpeed=0
+NewShipType.targetAngle=0
+NewShipType.spiralsPerSecondMin=1
+NewShipType.spiralsPerSecondMax=2
+NewShipType.BuildFamily="NotBuildable"
+NewShipType.AttackFamily="UnAttackable"
+NewShipType.DockFamily="CantDock"
+NewShipType.AvoidanceFamily="DontAvoid"
+NewShipType.DisplayFamily="Munition"
+NewShipType.AutoFormationFamily="Fighter"
+NewShipType.ArmourFamily="Unarmoured"
+LoadHODFile(NewShipType,1);
+-- setEngineTrail(NewShipType,0,4,"trail_ribbon.tga",0.2,0.5,0.025,8);
+setEngineBurn(NewShipType,15,0.5,1,15,0,0.7,0.1,25);
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/vaygr/NonMilitary/Engines/"
+                             ,0,"VMissleEng");

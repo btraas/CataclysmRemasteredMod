@@ -1,0 +1,13 @@
+StartWeaponConfig(NewWeaponType,"Gimble","Missile","stw_drone","Normal",150,4500,0,0,0,2,1,0,0,17,0,0,1,1,0,0,0.1,"Normal",0,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",20.5,24.5,"")
+setPenetration(NewWeaponType,5,1,{
+  PlanetKillerArmour = 0,
+})
+setAccuracy(NewWeaponType,0,{
+  Fighter = 1,
+},{
+  Corvette = 1,
+},{
+  munition = 0,
+})
+setAngles(NewWeaponType,179,0,0,0,0)

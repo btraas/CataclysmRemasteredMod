@@ -1,0 +1,12 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 12-03-2007 Time: 05:33:00
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+StartWeaponConfig(NewWeaponType, "Fixed", "Missile", "Ksh_LongRangeTorpedo", "Special Attack", 120, 8000, 0, 0, 0, 0, 1, 0, 1, 1, 10, 120, 1, 0, 0, 0, 0.1, "Normal", 0, 0, 0);
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 1500, 1500, "");
+setPenetration(NewWeaponType, 5, .75, {ResArmour=0.6}, {PlanetKillerArmour=0});
+setAccuracy(NewWeaponType, 1, {Fighter=0}, {Corvette=0}, {munition=0});
+setAngles(NewWeaponType, 179, 0, 0, 0, 0);
+setMiscValues(NewWeaponType, 0, 4);
+

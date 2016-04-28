@@ -1,0 +1,8 @@
+
+
+deathtype = "deathCannon"
+hit_nlips = 0.0005
+hit_clamp = {
+  1,
+  1,
+}

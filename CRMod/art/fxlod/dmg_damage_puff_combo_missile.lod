@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_damage_puff_combo_missile",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_damage_puff_combo_missile",
+		distance = 100000,
+	},	
+}

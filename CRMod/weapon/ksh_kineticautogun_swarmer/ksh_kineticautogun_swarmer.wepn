@@ -1,0 +1,23 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 12-05-2007 Time: 03:44:29
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "Kinetic_Rapid", "Normal", 2200, 1600, 0, 0, 0, 0, 1, 1, 0, 0.6, 1.3, 0.8, 0, 0, 99, 99, 1, "Normal", 0, 0, 0);
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 280, 280, "");
+setPenetration(NewWeaponType,5,0,
+{Unarmoured=1},
+{LightArmour=0.5},
+{MediumArmour=2},
+{HeavyArmour=2},
+{SubSystemArmour=5},
+{TurretArmour=5},
+{PlanetKillerArmour=0},
+{ResArmour=0.8});
+setAccuracy(NewWeaponType, 1, {Fighter=0.13}, {Corvette=0.3}, {munition=0.2}, {Frigate=0.6,
+damage=1}, {SmallCapitalShip=0.6,
+damage=1}, {BigCapitalShip=0.6,
+damage=1}, {ResourceLarge=0.6,
+damage=1});
+setAngles(NewWeaponType, 25, 0, 0, 0, 0);
+

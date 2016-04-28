@@ -1,0 +1,16 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 08-07-2012 Time: 11:17:44
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+hitfx="ion_dmg_red_combo";
+bulletfx="beam_generic_red";
+nopenetratefx="ion_dmg_red_combo";
+blowthroughfx="ion_dmg_red_combo";
+deathtype="deathBeam";
+scartype="iontrail1";
+hit_sfx="WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_ION_CANNON_BEAM_HIT";
+nopentrate_sfx="WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_ION_CANNON_BEAM_HIT";
+hit_clamp={0.5,
+	1.25};
+

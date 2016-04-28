@@ -1,0 +1,12 @@
+hitfx = "dmg_missle_explode_combo"
+bulletfx = "beam_blue"
+nopenetratefx = "dmg_missle_explode_combo"
+blowthroughfx = "blowthrough_generic"
+deathtype = "deathBeam"
+scartype = "iontrail"
+hit_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_TORPEDO_HIT"
+nopentrate_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_ION_CANNON_BEAM_HIT"
+hit_clamp = {
+  0.5,
+  1.25,
+}

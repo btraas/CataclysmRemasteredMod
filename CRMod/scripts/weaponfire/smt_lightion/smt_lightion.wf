@@ -1,0 +1,15 @@
+hitfx = "ion_dmg_ring_spray"
+bulletfx = "smt_lightion_combo"
+nopenetratefx = "ion_dmg_ring_spray"
+blowthroughfx = "blowthrough_generic"
+deathtype = "deathBeam"
+scartype = "iontrail"
+hit_sfx = "WEAPON/FIGHTER/FIRE/VWEAPON_LANCE_KINETIC_AUTOGUN_SHELL"
+nopenetrate_sfx = "WEAPON/FIGHTER/FIRE/VWEAPON_LANCE_KINETIC_AUTOGUN_SHELL"
+
+hit_clamp = 
+{
+	1,
+	1,
+}
+

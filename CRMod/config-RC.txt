@@ -1,0 +1,35 @@
+
+
+// title of the MOD that appears on the Steam Workshop (limited to 128 characters)
+Title: Cataclysm Remastered Pre-release 1.3.4
+// 
+
+// tags must be individual words separated by spaces.
+Tags: homeworld ship space cataclysm somtaaw kuun-lan kuun lan kiith somtaaw HWC HomeworldRM HWRM
+
+// gametype is the type of game this MOD is designed for and can be any of: "HW1Classic", "HW2Classic", or "HomeworldRM" (without the double quotes) separated by spaces
+GameType: HomeworldRM
+
+// modtype is the type of mod for the game and can be any one of: "MOD", "Locale", "Badges", or "Cursors"
+ModType: MOD
+
+// bigfilename is the file name you want to use for your .big file (this should be a single word with no spaces).
+BigFilename: cataclysmSP.big
+
+// WorkshopID is the Steam Workshop item number assigned to this item when you first create it.
+// This should be 0 by default before you create your Workshop item and the Workshop Tool will
+// set it to the Workshop Item number.  DO NOT modify this number once you have created a Workshop
+// item.  It will be used to update the workshop item when you make changes to your MOD later on.  
+WorkshopID: 620978348
+
+//477426048 // TEST ?
+
+// 416844570 // Main mod ?
+
+// description that will appear on the Steam Workshop for this item
+Description:
+Welcome to Cataclysm Remastered Pre-releases. 
+
+If you can read this, you probably know what you're doing. 
+
+1.3.4: Major balancing for Somtaaw & Beast ship stats

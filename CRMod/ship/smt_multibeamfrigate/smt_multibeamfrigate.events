@@ -1,0 +1,599 @@
+-- Pretty-Printed using HW2 Pretty-Printer 1.21 by Mikail.
+-- LuaDC version 0.9.19
+-- 5/23/2004 7:23:54 PM
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+
+effects = 
+{
+	animations = 
+	{
+		animation1 = 
+		{
+			name = "Death",
+			length = 2,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation2 = 
+		{
+			name = "Weapon_pulsar",
+			length = 4,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation3 = 
+		{
+			name = "Weapon_pulsar2",
+			length = 4,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation4 = 
+		{
+			name = "Damage",
+			length = 1,
+			loop = 1,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation5 = 
+		{
+			name = "dmg01",
+			length = 1,
+			loop = 1,
+			parent = "Damage",
+			minimum = 0.25,
+			maximum = 1,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation6 = 
+		{
+			name = "dmg02",
+			length = 1,
+			loop = 1,
+			parent = "Damage",
+			minimum = 0.5,
+			maximum = 1,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation7 = 
+		{
+			name = "dmg03",
+			length = 1,
+			loop = 1,
+			parent = "Damage",
+			minimum = 0.75,
+			maximum = 1,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation8 = 
+		{
+			name = "Weapon_pulsar3",
+			length = 4,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation9 = 
+		{
+			name = "Weapon_pulsar4",
+			length = 4,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+		animation10 = 
+		{
+			name = "Weapon_pulsar5",
+			length = 4,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = 
+			{
+				"",
+			},
+		},
+	},
+	events = 
+	{
+		event1 = 
+		{
+			{
+				"anim",
+				"death2",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"root",
+			},
+			{
+				"fx",
+				"death_generic",
+			},
+			{
+				"sound",
+				"EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY",
+			},
+			{
+				"fx_scale",
+				"entity",
+			},
+		},
+		event2 = 
+		{
+			{
+				"anim",
+				"Weapon_pulsar",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"Weapon_Top_Muzzle",
+			},
+			{
+				"fx",
+				"lance_charged_particle",
+			},
+			{
+				"sound",
+				"weapon/somtaaw/fire/multibeam",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event3 = 
+		{
+			{
+				"anim",
+				"Weapon_pulsar2",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"Weapon_Top2_Muzzle",
+			},
+			{
+				"fx",
+				"lance_charged_particle",
+			},
+			{
+				"sound",
+				"weapon/somtaaw/fire/multibeam",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event4 = 
+		{
+			{
+				"anim",
+				"Weapon_pulsar3",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"Weapon_Bottom_Muzzle",
+			},
+			{
+				"fx",
+				"lance_charged_particle",
+			},
+			{
+				"sound",
+				"weapon/somtaaw/fire/multibeam",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event5 = 
+		{
+			{
+				"anim",
+				"Weapon_pulsar4",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"Weapon_Right_Muzzle",
+			},
+			{
+				"fx",
+				"lance_charged_particle",
+			},
+			{
+				"sound",
+				"weapon/somtaaw/fire/multibeam",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event6 =
+		{
+			{
+				"anim",
+				"Weapon_pulsar5",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"Weapon_Left_Muzzle",
+			},
+			{
+				"fx",
+				"lance_charged_particle",
+			},
+			{
+				"sound",
+				"weapon/somtaaw/fire/multibeam",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event7 = 
+		{
+			{
+				"anim",
+				"death",
+			},
+			{
+				"animtime",
+				"0",
+			},
+			{
+				"marker",
+				"marker1",
+			},
+			{
+				"fx",
+				"dmg_cloud_explosion_large",
+			},
+			{
+				"sound",
+				"Explosion/Small/ETG_Explode_Small_Plasma",
+			},
+			{
+				"fx_scale",
+				"1.5",
+			},
+		},
+		event8 = 
+		{
+			{
+				"anim",
+				"death",
+			},
+			{
+				"animtime",
+				"0.1",
+			},
+			{
+				"marker",
+				"marker2",
+			},
+			{
+				"fx",
+				"dmg_cloud_explosion_large",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+		},
+		event9 =
+		{
+			{
+				"anim",
+				"death",
+			},
+			{
+				"animtime",
+				"0.2",
+			},
+			{
+				"marker",
+				"marker6",
+			},
+			{
+				"fx",
+				"dmg_cloud_explosion_large",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+		},
+		event10 = 
+		{
+			{
+				"anim",
+				"death",
+			},
+			{
+				"animtime",
+				"0.35",
+			},
+			{
+				"marker",
+				"marker4",
+			},
+			{
+				"fx",
+				"dmg_cloud_explosion_large",
+			},
+			{
+				"sound",
+				"Explosion/Small/ETG_Explode_Small_Firey",
+			},
+			{
+				"fx_scale",
+				"3",
+			},
+		},
+		event11 = 
+		{
+			{
+				"anim",
+				"death",
+			},
+			{
+				"animtime",
+				"0.4",
+			},
+			{
+				"marker",
+				"marker5",
+			},
+			{
+				"fx",
+				"dmg_cloud_explosion_large",
+			},
+			{
+				"fx_scale",
+				"4",
+			},
+		},
+		event12 = 
+		{
+			{
+				"anim",
+				"Death",
+			},
+			{
+				"animtime",
+				"0.4",
+			},
+			{
+				"marker",
+				"Root",
+			},
+			{
+				"fx",
+				"dmg_cloud_main_explosion_combo",
+			},
+			{
+				"sound",
+				"EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY",
+			},
+			{
+				"fx_scale",
+				"15",
+			},
+		},
+		event13 = 
+		{
+			{
+				"anim",
+				"dmg01",
+			},
+			{
+				"animtime",
+				"-1",
+			},
+			{
+				"marker",
+				"marker1,maker2",
+			},
+			{
+				"fx",
+				"dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray",
+			},
+			{
+				"sound",
+				"DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY",
+			},
+			{
+				"fx_scale",
+				"5",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event14 = 
+		{
+			{
+				"anim",
+				"dmg02",
+			},
+			{
+				"animtime",
+				"-1",
+			},
+			{
+				"marker",
+				"marker3,maker4",
+			},
+			{
+				"fx",
+				"dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray",
+			},
+			{
+				"sound",
+				"DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY",
+			},
+			{
+				"fx_scale",
+				"7.5",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event15 = 
+		{
+			{
+				"anim",
+				"dmg03",
+			},
+			{
+				"animtime",
+				"-1",
+			},
+			{
+				"marker",
+				"marker5",
+			},
+			{
+				"fx",
+				"dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray",
+			},
+			{
+				"sound",
+				"DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY",
+			},
+			{
+				"fx_scale",
+				"10",
+			},
+			{
+				"fx_nlips",
+				"on",
+			},
+		},
+		event16 = 
+		{
+			{
+				"anim",
+				"death",
+			},
+			{
+				"animtime",
+				"0.15",
+			},
+			{
+				"marker",
+				"marker3",
+			},
+			{
+				"fx",
+				"dmg_cloud_explosion_large",
+			},
+			{
+				"sound",
+				"EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY",
+			},
+			{
+				"fx_scale",
+				"2",
+			},
+		},
+	},
+}
+

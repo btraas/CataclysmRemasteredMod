@@ -1,0 +1,7 @@
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "InstantHit", "kus_ionbeam", "Normal", 0, 1500, 0, 0.4, 0, 0, 1, 1, 1, 4, 0, 0, 1, 1, 300, 300, 0.1, "Normal", 1, 0, 300);
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 338, 338, "");
+setPenetration(NewWeaponType, 30, 1, {Unarmoured=0.5}, {LightArmour=0.75}, {MoverArmour=0.5}, {MediumArmour = 0.5}, {SubSystemArmour=0.5}, {PlanetKillerArmour=0});
+setAccuracy(NewWeaponType, 1, {Fighter=0.3}, {Corvette=0.3}, {munition=0.05});
+setAngles(NewWeaponType, 0, -87, 87, -87, 87);
+setMiscValues(NewWeaponType, 0, 0);
+
