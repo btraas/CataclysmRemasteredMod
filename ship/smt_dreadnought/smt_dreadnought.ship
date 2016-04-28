@@ -62,7 +62,7 @@ NewShipType.nebulaDamageTime = 800
 NewShipType.MinimalFamilyToFindPathAround = "MotherShip"
 NewShipType.BuildFamily = "Battlecruiser_Smt"
 NewShipType.AttackFamily = "BigCapitalShip"
-NewShipType.DockFamily = "BattleCruiser"
+NewShipType.DockFamily = "SuperCap" -- so we can build without hyperspacing in
 NewShipType.AvoidanceFamily = "Battlecruiser"
 NewShipType.DisplayFamily = "Capital"
 NewShipType.AutoFormationFamily = "CapShip"
@@ -163,7 +163,7 @@ StartShipWeaponConfig(NewShipType,"ksh_dreadnoughtkineticburstcannon1","Weapon_F
 StartShipWeaponConfig(NewShipType,"ksh_dreadnoughtkineticburstcannon1","Weapon_BotLeftTurret","Weapon_BotLeftTurret1")
 StartShipWeaponConfig(NewShipType,"ksh_dreadnoughtkineticburstcannon1","Weapon_BotRightTurret","Weapon_BotRightTurret1")
 StartShipWeaponConfig(NewShipType,"Smt_CruiserIon","Hardpoint_IonBeam1","Weapon_Gun6")
-StartShipWeaponConfig(NewShipType,"Smt_CruiserIon","Hardpoint_IonBeam2","Weapon_Gun7")
+StartShipWeaponConfig(NewShipType,"Smt_CruiserIon_360","Hardpoint_IonBeam2","Weapon_Gun7")
 addShield(NewShipType,"EMP",10000,20)
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","ksh_sec_dreadnoughtengine","","","","","","","","")
 StartShipHardPointConfig(NewShipType, "Generic 1", "Hardpoint_Generic1", "System", "Generic", "Destroyable", "", "Hgn_C_Module_Hyperspace", "Hgn_C_Module_CloakGenerator", "Hgn_C_Module_HyperspaceInhibitor", "Hgn_C_Module_FireControl", "", "", "", "");

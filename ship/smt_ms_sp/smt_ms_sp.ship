@@ -174,7 +174,7 @@ addShield(NewShipType, "EMP", 10000, 20);
 --StartShipHardPointConfig(NewShipType, "Production 2", "HardpointProduction2", "System", "Production", "Destroyable", "Ksh_Sec_ms_Production_Fighter", "Ksh_Sec_ms_Production_Fighter", "", "", "", "", "", "", "");
 --StartShipHardPointConfig(NewShipType, "Production 3", "HardpointProduction3", "System", "Production", "Destroyable", "Ksh_Sec_ms_Production_Corvette", "Ksh_Sec_ms_Production_Corvette", "", "", "", "", "", "", "");
 --StartShipHardPointConfig(NewShipType, "Production 4", "HardpointProduction4", "System", "Production", "Destroyable", "Ksh_Sec_ms_Production_Frigate", "Ksh_Sec_ms_Production_Frigate", "", "", "", "", "", "", "");
-StartShipHardPointConfig(NewShipType, "Production 6", "HardpointProduction6", "System", "Production", "Destroyable", "", "Smt_ms_Production_Capship", "", "", "", "", "", "", "");
+--StartShipHardPointConfig(NewShipType, "Production 6", "HardpointProduction6", "System", "Production", "Destroyable", "", "Smt_ms_Production_Capship", "", "", "", "", "", "", "");
 StartShipHardPointConfig(NewShipType, "Generic 1", "Hardpoint_Generic1", "System", "Generic", "Destroyable", "", "Ksh_Sec_Ms_Module_Research", "", "", "", "", "", "", "");
 StartShipHardPointConfig(NewShipType, "Generic 2", "Hardpoint_Generic2", "System", "Generic", "Destroyable", "", "Ksh_Sec_Ms_Module_Research", "Ksh_Sec_Ms_Module_AdvancedResearch", "Ksh_Sec_Ms_Module_ArmorResearch", "Ksh_Sec_Ms_Module_WeaponsResearch", "", "", "", "");
 StartShipHardPointConfig(NewShipType, "Generic 3", "Hardpoint_Generic3", "System", "Generic", "Destroyable", "", "Ksh_Sec_Ms_Module_Research", "Ksh_Sec_Ms_Module_AdvancedResearch", "Ksh_Sec_Ms_Module_ArmorResearch", "Ksh_Sec_Ms_Module_WeaponsResearch", "", "", "", "");

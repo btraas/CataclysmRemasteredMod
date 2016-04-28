@@ -21,7 +21,7 @@ PersistantData = {
       size = 1,
     },
     {
-      type = "smt_worker",
+      type = "smt_dreadnought",
       subsystems = {
       },
       shiphold = {

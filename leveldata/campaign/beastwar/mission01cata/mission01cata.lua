@@ -241,7 +241,7 @@ end
 -- }}} 
 
 function Rule_HasBuiltAcolytes()
-	if ( SobGroup_Count( Player_GetShipsByType(0, "smt_AcolyteE" ) ) >= 1 ) then
+	if ( SobGroup_Count( Player_GetShipsByType(0, "smt_acolyte" ) ) >= 1 ) then
 		Rule_Remove("Rule_HasBuiltAcolytes")
 
 

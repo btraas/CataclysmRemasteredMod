@@ -189,7 +189,7 @@ build =
 	{
 		Type = Ship,
 		ThingToBuild = "smt_dreadnought",
-		RequiredResearch = "SMTSuperCapitalShipDrive & SMTIonCannons & SMTGuidedMissiles",
+		RequiredResearch = "SmtAdvDestroyerDrive & SMTIonCannons & SMTGuidedMissiles",
 		RequiredShipSubSystems = "",
 		DisplayPriority = 123,
 		DisplayedName = "Dreadnought",
