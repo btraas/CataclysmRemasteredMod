@@ -30,7 +30,7 @@ NewSubSystemType["collateralDamage"]=100;
 NewSubSystemType["inactiveTimeAfterDamage"]=10;
 NewSubSystemType["activateHealthPercentage"]=0.1;
 NewSubSystemType["costToBuild"]=1500;
-NewSubSystemType["timeToBuild"]=150;
+NewSubSystemType["timeToBuild"]=37.5;
 NewSubSystemType["isResearch"]=1;
 NewSubSystemType["visible"]=1;
 LoadHODFile(NewSubSystemType, 1);

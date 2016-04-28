@@ -1,7 +1,7 @@
 aitrace("LOADING SOMTAAW SUBSYSTEM INFO")
  
 function DoSubSystemDemand_Somtaaw()
-	CpuBuildSS_DoSubSystemProductionDemand( FIGHTERPRODUCTION, eFighter, kUnitCapId_Fighter )
+	--CpuBuildSS_DoSubSystemProductionDemand( FIGHTERPRODUCTION, eFighter, kUnitCapId_Fighter )
 	local researchcount = NumSubSystems(RESEARCH) + NumSubSystemsQ(RESEARCH)
 	local highestCorvetteDemand = ShipDemandMaxByClass( eCorvette )
 	local highestFrigateDemand = ShipDemandMaxByClass( eFrigate )
@@ -15,8 +15,8 @@ function DoSubSystemDemand_Somtaaw()
 	if (researchcount==0) then
 		SubSystemDemandSet(RESEARCH, researchdemand+0.5 )
 	else
-		CpuBuildSS_DoSubSystemProductionDemand( CORVETTEPRODUCTION, eCorvette, kUnitCapId_Corvette )
-		CpuBuildSS_DoSubSystemProductionDemand( FRIGATEPRODUCTION, eFrigate, kUnitCapId_Frigate )
+		--CpuBuildSS_DoSubSystemProductionDemand( CORVETTEPRODUCTION, eCorvette, kUnitCapId_Corvette )
+		--CpuBuildSS_DoSubSystemProductionDemand( FRIGATEPRODUCTION, eFrigate, kUnitCapId_Frigate )
 		local advresearchcount = NumSubSystems(ADVANCEDRESEARCH) + NumSubSystemsQ(ADVANCEDRESEARCH)
 		local doAdvResearch = 0
 		local advResDemand = researchdemand

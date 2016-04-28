@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Archangel Dreadnought"
 NewShipType.sobDescription = "$1539"
-NewShipType.maxhealth = 200000
+NewShipType.maxhealth = 250000
 NewShipType.regentime = 2000
 NewShipType.minRegenTime = 2000
 NewShipType.sideArmourDamage = 1.2

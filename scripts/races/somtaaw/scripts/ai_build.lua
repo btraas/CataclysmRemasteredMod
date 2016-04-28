@@ -4,11 +4,11 @@ aitrace("LOADING Somtaaw BUILD INFO")
 		kRefinery  = SMT_PROCESSOR
 		kScout = SMT_SCOUT
 		kInterceptor = SMT_ACOLYTE
-		kShipYard = SMT_MS
 		kBomber = SMT_SUPERACOLYTE
 		kCarrier = SMT_CARRIER		
 		kDestroyer = SMT_DESTROYER
 		kBattleCruiser = SMT_DREADNOUGHT
+		kShipYard = SMT_MS
 		
 		
 
@@ -73,7 +73,7 @@ function DetermineSpecialDemand_Somtaaw()
 	end	
  	if ( (GetNumCollecting() > 9 or GetRU() > 1500) and s_militaryPop > 8 and UnderAttackThreat() < -75) then
 		ShipDemandAdd( kDestroyer, 0.25 )	
-		if (IsResearchDone( SMTENERGYCANNONTECHNOLOGY ) == 1) then
+		if (IsResearchDone( SMTADVDESTROYERDRIVE ) == 1 and IsResearchDone( SMTGUIDEDMISSILES ) == 1) then
 				ShipDemandAdd( kBattleCruiser, 0.6 )
 		end			
 	end		
@@ -87,16 +87,10 @@ function DetermineSpecialDemand_Somtaaw()
 			end
 		end		
 		ShipDemandAddByClass( eSubSystemAttackers, ssKillaDemand )		
-		end
-		ShipDemandSet( SMT_CLEE_SAN, 10)	
-		end
-	local numShipyards = NumSquadrons( kShipYard ) + NumSquadronsQ( kShipYard )
-	if (numShipyards == 0 and UnderAttackThreat() < -75) then
-		local bcDemand = ShipDemandGet( kBattleCruiser )
-		if (bcDemand >= 0.5) then
-			ShipDemandAdd( kShipYard, bcDemand-0.5 )
-		end
 	end
+	--ShipDemandSet( SMT_CLEE_SAN, 10)	
+	--SubSystemDemandSet(RESEARCH, 10)
+end
 
 function DetermineBuilderClassDemand_Somtaaw()
 	local numBuilders = numQueueOfClass( eBuilder )

@@ -19,12 +19,10 @@ rt_carrier = {
 rt_fighter = {
 	interceptor = {
 		FIGHTERHEALTHUPGRADE1,
-		FIGHTERHEALTHUPGRADE2,
 	},
 	bomber = {
 		health = {
 			FIGHTERHEALTHUPGRADE1,
-			FIGHTERHEALTHUPGRADE2,
 		},
 		speed = {
 			SMTADVFIGHTERDRIVE,
@@ -62,6 +60,7 @@ rt_frigate = {
 rt_battlecruiser = {
 	health = {
 		SMTARMORLEVEL3,
+		SMTARMORLEVEL3b,
 	},
 	speed = {
 		SMTADVDESTROYERDRIVE,
@@ -69,22 +68,24 @@ rt_battlecruiser = {
 }
 rt_destroyer = {
 	SMTARMORLEVEL3,
+	SMTARMORLEVEL3b,
 }
-rt_shipyard = {
-	health = {
-		SMTARMORLEVEL3,
-	},
-	speed = {
-		SMTADVDESTROYERDRIVE,
-	},
-}
+--rt_shipyard = {
+--	health = {
+--		SMTARMORLEVEL3,
+--		SMTARMORLEVEL3b,
+--	},
+--	speed = {
+--		SMTADVDESTROYERDRIVE,
+--	},
+--}
 rt_collector = {
-	SMTRESOURCECOLLECTORHEALTHUPGRADE1,
-	SMTRESOURCECOLLECTORHEALTHUPGRADE2,
+	UTILITYHEALTHUPGRADE1,
+	UTILITYHEALTHUPGRADE2,
 }
 rt_refinery = {
-	SMTRESOURCECONTROLLERHEALTHUPGRADE1,
-	SMTRESOURCECONTROLLERHEALTHUPGRADE2,
+	UTILITYHEALTHUPGRADE1,
+	UTILITYHEALTHUPGRADE2,
 }
 
 function DoUpgradeDemand_Somtaaw()	
@@ -106,12 +107,6 @@ function DoUpgradeDemand_Somtaaw()
 			inc_upgrade_demand( rt_carrier, numCarrier*1 )
 			ResearchDemandAdd( SMTCARRIERBUILDSPEEDUPGRADE1, numCarrier*1.25 )
 			ResearchDemandAdd( SMTCARRIERBUILDSPEEDUPGRADE2, numCarrier*1.25 )
-		end
-		local numShipYards = NumSquadrons( kShipYard )
-		if (numShipYards > 0) then
-			inc_upgrade_demand( rt_shipyard, numShipYards*1.5  )
-			ResearchDemandAdd( SMTSHIPYARDBUILDSPEEDUPGRADE1, numShipYards*1.75 )
-			ResearchDemandAdd( SMTSHIPYARDBUILDSPEEDUPGRADE2, numShipYards*1.75 )
 		end
 	end
 	local numFighter = numActiveOfClass( s_playerIndex, eFighter )
@@ -160,7 +155,6 @@ function DoResearchTechDemand_Somtaaw()
 	ResearchDemandSet( SMTFIGHTERDRIVE, 10 )
 	ResearchDemandSet( SMTCORVETTEDRIVE, 9 )
 	ResearchDemandSet( FIGHTERHEALTHUPGRADE1, 10 )
-	ResearchDemandSet( FIGHTERHEALTHUPGRADE2, 9 )
 	ResearchDemandSet( SMTADVFIGHTERDRIVE, 10 )
 	ResearchDemandSet( SMTARMORLEVEL1, 9 )
 	ResearchDemandSet( SMTADVCORVETTEDRIVE, 8 )
@@ -193,17 +187,11 @@ function DoResearchTechDemand_Somtaaw()
 			ResearchDemandSet( SMTSUPERCAPITALSHIPDRIVE, demand )
 		end
 	end
-	local numShipyards = NumSquadrons(kShipYard) + NumSquadronsQ(kShipYard)
-	if (numShipyards > 0 and Util_CheckResearch(SMTENERGYCANNONTECHNOLOGY)) then
+	if (Util_CheckResearch(SMTGUIDEDMISSILES) or Util_CheckResearch(SMTADVDESTROYERDRIVE)) then
 		local battleCruiserDemand = ShipDemandGet( SMT_DREADNOUGHT )
 		if (battleCruiserDemand > 0) then
-			ResearchDemandSet( SMTENERGYCANNONTECHNOLOGY, battleCruiserDemand )
-		end
-	end
-	if (Util_CheckResearch(SMTHYPERSPACETECH)) then
-			local demand = ShipDemandGet(SMT_MS)
-			if (demand > 0) then
-				ResearchDemandSet( SMTHYPERSPACETECH, demand+0.5 )
+			ResearchDemandSet( SMTGUIDEDMISSILES, battleCruiserDemand )
+			ResearchDemandSet( SMTADVDESTROYERDRIVE, battleCruiserDemand )
 		end
 	end
 	if (Util_CheckResearch(SMTATTACKBOMBERIMPROVEDBOMBS) ) then

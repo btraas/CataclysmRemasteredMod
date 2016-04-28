@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="Shaman Carrier"
 NewShipType.sobDescription="$10041"
-NewShipType.maxhealth=70000
+NewShipType.maxhealth=75000
 NewShipType.regentime=3000
 NewShipType.minRegenTime=600
 NewShipType.sideArmourDamage=1.1
@@ -150,7 +150,8 @@ addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1.1,400,1100,0,4);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Corvette, Frigate,  SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
-addAbility(NewShipType,"CanBuildShips",1,"Fighter_Smt, Corvette_Smt, Frigate_Smt, Resource_Smt, SubSystem_Smt, Shipyard_Smt, Probe_smt","Fighter, Corvette, Frigate, SubSystemModule, Capital, Utility");
+addAbility(NewShipType,"CanBuildShips",1,"Fighter_Smt, Corvette_Smt, Frigate_Smt, Resource_Smt, Research_Smt, SubSystem_Smt, Shipyard_Smt, Probe_smt","Fighter, Corvette, Frigate, SubSystemModule, Capital, Utility");
+addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
@@ -166,13 +167,13 @@ StartShipWeaponConfig(NewShipType, "smt_c_kineticburstcannonE", "Weapon_TopRight
 StartShipWeaponConfig(NewShipType, "smt_c_kineticburstcannonE", "Weapon_BotLeft", "Weapon_TurretRearRightTopE");
 StartShipWeaponConfig(NewShipType, "smt_c_kineticburstcannonE", "Weapon_BotRight", "Weapon_TurretRearLeftBotE");
 addShield(NewShipType,"EMP",10000,20);
---StartShipHardPointConfig(NewShipType,"Production 1","HardpointProduction1","System","Production","Destroyable","","Ksh_Sec_C_Production_Fighter","","","","","","","")
---StartShipHardPointConfig(NewShipType,"Production 2","HardpointProduction2","System","Production","Destroyable","","Ksh_Sec_C_Production_Corvette","","","","","","","")
---StartShipHardPointConfig(NewShipType,"Production 3","Hardpoint_Production3","System","Production","Destroyable","","Ksh_Sec_C_Production_Frigate","","","","","","","")
-StartShipHardPointConfig(NewShipType, "Generic 1", "Hardpoint_Generic1", "System", "Generic", "Destroyable", "", "", "ksh_sec_c_module_gravgenerator", "", "", "", "", "", "");
-StartShipHardPointConfig(NewShipType, "Generic 2", "Hardpoint_Generic2", "System", "Generic", "Destroyable", "", "", "", "ksh_sec_c_module_gravgenerator", "", "", "", "", "");
-StartShipHardPointConfig(NewShipType, "Generic 1", "Hardpoint_Generic1", "System", "Generic", "Destroyable", "", "", "Ksh_Sec_C_Module_CloakGenerator", "Ksh_Sec_C_Module_PlatformControl", "Ksh_Sec_C_Module_FireControl", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "ksh_sec_c_module_gravgenerator", "");
-StartShipHardPointConfig(NewShipType, "Generic 2", "Hardpoint_Generic2", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_CloakGenerator", "", "Ksh_Sec_C_Module_PlatformControl", "Ksh_Sec_C_Module_FireControl", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "ksh_sec_c_module_gravgenerator", "");
+StartShipHardPointConfig(NewShipType, "Generic 1", "Hardpoint_Generic1", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "Ksh_Sec_C_Module_ArmorResearch", "Ksh_Sec_C_Module_WeaponsResearch", "Ksh_Sec_C_Module_CloakGenerator", "Ksh_Sec_C_Module_FireControl", "ksh_sec_c_module_gravgenerator", "");
+StartShipHardPointConfig(NewShipType, "Generic 2", "Hardpoint_Generic2", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "Ksh_Sec_C_Module_ArmorResearch", "Ksh_Sec_C_Module_WeaponsResearch", "Ksh_Sec_C_Module_CloakGenerator", "Ksh_Sec_C_Module_FireControl", "ksh_sec_c_module_gravgenerator", "");
+StartShipHardPointConfig(NewShipType, "Generic 3", "Hardpoint_Generic3", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "Ksh_Sec_C_Module_ArmorResearch", "Ksh_Sec_C_Module_WeaponsResearch", "Ksh_Sec_C_Module_CloakGenerator", "Ksh_Sec_C_Module_FireControl", "ksh_sec_c_module_gravgenerator", "");
+StartShipHardPointConfig(NewShipType, "Generic 4", "Hardpoint_Generic4", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "Ksh_Sec_C_Module_ArmorResearch", "Ksh_Sec_C_Module_WeaponsResearch", "Ksh_Sec_C_Module_CloakGenerator", "Ksh_Sec_C_Module_FireControl", "ksh_sec_c_module_gravgenerator", "");
+StartShipHardPointConfig(NewShipType, "Generic 5", "Hardpoint_Generic5", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "Ksh_Sec_C_Module_ArmorResearch", "Ksh_Sec_C_Module_WeaponsResearch", "Ksh_Sec_C_Module_CloakGenerator", "Ksh_Sec_C_Module_FireControl", "ksh_sec_c_module_gravgenerator", "");
+StartShipHardPointConfig(NewShipType, "Generic 6", "Hardpoint_Generic6", "System", "Generic", "Destroyable", "", "Ksh_Sec_C_Module_Research", "Ksh_Sec_C_Module_AdvancedResearch", "Ksh_Sec_C_Module_ArmorResearch", "Ksh_Sec_C_Module_WeaponsResearch", "Ksh_Sec_C_Module_CloakGenerator", "Ksh_Sec_C_Module_FireControl", "ksh_sec_c_module_gravgenerator", "");
+
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.19,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.13,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);

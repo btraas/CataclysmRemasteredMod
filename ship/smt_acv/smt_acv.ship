@@ -144,6 +144,7 @@ StartShipWeaponConfig(NewShipType, "Smt_ACVAutoGun1", "Weapon_Gun", "Fire1");
 StartShipWeaponConfig(NewShipType, "Smt_ACVAutoGun1", "Weapon_Gun1", "Fire1");
 StartShipWeaponConfig(NewShipType, "Smt_ACVAutoGun1", "Weapon_Gun2", "Fire1");
 StartShipWeaponConfig(NewShipType, "Smt_ACVAutoGun1", "Weapon_Gun3", "Fire1");
+StartShipWeaponConfig(NewShipType, "Hgn_SmallEMP", "Weapon_Gun", "Fire");
 addShield(NewShipType, "EMP", 75, 20);
 NewShipType["sobDieTime"]=1;
 NewShipType["sobSpecialDieTime"]=1;

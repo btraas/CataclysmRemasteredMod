@@ -274,7 +274,7 @@ function CpuBuildSS_OtherMiscSubSystemDemand()
 	if (capdemand > demand) then
 		demand = capdemand
 	end
-	if (demand > 0.5) then
+	if (demand > 0.5 and CAPSHIPPRODUCTION ~= nil) then
 		SubSystemDemandSet(CAPSHIPPRODUCTION, demand-0.5 )
 	end
 	if (s_militaryStrength < -50 or g_LOD < 1 or GetRU() > 4000) then
