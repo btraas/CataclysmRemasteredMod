@@ -1,6 +1,0 @@
-StartWeaponConfig(NewWeaponType, "Gimble", "InstantHit", "photoncannon", "Special Attack", 0, 8000, 0, 6, 2, 0, 20, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0.1, "Bypass", 1, 1, 5000)
-AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 60000, 60000, "")
-setPenetration(NewWeaponType, 50, 1)
-setAccuracy(NewWeaponType, 1, {Fighter = 0,}, {Corvette = 0,}, 
-{munition = 0,})
-setAngles(NewWeaponType, 15, 0, 0, 0, 0)

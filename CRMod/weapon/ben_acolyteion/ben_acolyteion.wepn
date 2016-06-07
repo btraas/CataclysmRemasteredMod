@@ -1,9 +1,0 @@
-StartWeaponConfig(NewWeaponType, "Gimble", "InstantHit", "ben_acolyteion", "Normal", 0, 1800, 0, 1.4, 0, 0, 20, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 100);
-AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 307, 307, "");
-setPenetration(NewWeaponType, 50, 1, {PlanetKillerArmour=0}, {SubSystemArmour=0.3}, {Unarmoured=0.15}, {LightArmour=0.4});
-setAccuracy(NewWeaponType, 1, {Fighter=0.25}, {Corvette=0.4}, {munition=0.2}, {Frigate=0.6,
-damage=1}, {SmallCapitalShip=0.6,
-damage=1}, {BigCapitalShip=0.6,
-damage=1}, {ResourceLarge=0.6,
-damage=1});
-setAngles(NewWeaponType, 15, 0, 0, 0, 0);
