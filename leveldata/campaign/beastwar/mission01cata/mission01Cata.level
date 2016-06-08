@@ -53,9 +53,6 @@ function DetermChunk()
 	addSquadron("tai_int5", "tai_interceptor", {9300, 500.000, -28213.438},  3, {10.000, -80.000, 0.000},0,0)
 	addSquadron("tai_int6", "tai_interceptor", {9300, 500.000, -27413.438},  3, {-10.000, -80.000, 0.000},0,0)
 	
-	
-	
-	
 	addSquadron("ion1", "Kus_ioncannonfrigate_tank", {20000, -1000.000, -11913.438},  2, {0.000, -90.000, 0.000},0,0)
 	addSquadron("ion2", "Kus_ioncannonfrigate_tank", {21000, 2000.000, -11013.438},  2, {0.000, 90.000, 0.000},0,0)
 	addSquadron("ion3", "Kus_ioncannonfrigate_tank", {20500, -400.000, -12413.438},  2, {0.000, 170.000, 0.000},0,0)
@@ -108,6 +105,38 @@ function DetermChunk()
 	addToSOBGroup("tai_incoming4", "incoming_fighters")
 	addToSOBGroup("tai_incoming5", "incoming_fighters")
 	
+	
+	-- Taiidan Resource Op
+	
+	addSquadron("tai_resource_carrier", "Tai_Carrier", {-15500, -0.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	
+	addSquadron("tai_resource1", "Tai_ResourceCollector", {-8000, -0.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	addSquadron("tai_resource2", "Tai_ResourceCollector", {-8050, -0.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	addSquadron("tai_resource3", "Tai_ResourceCollector", {-8100, -0.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	addSquadron("tai_resource4", "Tai_ResourceCollector", {-8150, -0.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	addSquadron("tai_resource5", "Tai_ResourceCollector", {-8200, -0.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	addSquadron("tai_resource_def1", "Tai_Defender", {-8100, 20.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	addSquadron("tai_resource_def2", "Tai_Defender", {-8150, 20.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	addSquadron("tai_resource_def3", "Tai_Defender", {-8200, 20.000, -26413.438},  3, {0.000, 100.000, 0.000},0,0)
+	
+	createSOBGroup("tai_resource")
+	addToSOBGroup("tai_resource1", "tai_resource")
+	addToSOBGroup("tai_resource2", "tai_resource")
+	addToSOBGroup("tai_resource3", "tai_resource")
+	addToSOBGroup("tai_resource4", "tai_resource")
+	addToSOBGroup("tai_resource5", "tai_resource")
+	
+	createSOBGroup("tai_resource_def")
+	addToSOBGroup("tai_resource_def1", "tai_resource_def")
+	addToSOBGroup("tai_resource_def2", "tai_resource_def")
+	addToSOBGroup("tai_resource_def3", "tai_resource_def")
+	
+	addAsteroid("Asteroid_5", {-8294.983, -0.000, -26413.438}, 7, 0, 234.238, 0, 0) 
+	addAsteroid("Asteroid_4", {-8094.983, -200.000, -26413.438}, 8, 0, 234.238, 0, 0) 	
+	addAsteroid("Asteroid_3", {-8495.983, 100.000, -24413.438}, 10, 0, 234.238, 0, 0) 	
+	
+	
+	-- Behind Somtaaw fleet
 	
 	addSquadron("int1", "Kus_interceptor", {-30000, 2000, 21048},  2, {0.000, 90.000, 0.000},0,0)
 	addSquadron("int2", "Kus_interceptor", {-30000, 2000, 21248},  2, {0.000, 90.000, 0.000},0,0)

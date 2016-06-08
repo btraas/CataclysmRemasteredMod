@@ -2,6 +2,6 @@
 
 version = 4
 
-volume = 0.850000
+volume = 0.650000
 randSampContainer = 0
 

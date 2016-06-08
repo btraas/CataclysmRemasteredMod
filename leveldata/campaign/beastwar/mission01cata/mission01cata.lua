@@ -32,22 +32,18 @@ tai_ion_tmp = null
 
 -- MISSION RULES
 
--- displays "SAVING GAME..." subtitle in top middle of screen
-function Rule_PlaySaveGameLocationCard()
+function Rule_PlaySaveGameLocationCard() -- {{{
 	Subtitle_Message( "$3651", 3 )						-- SAVING GAME...
 	Rule_Remove ("Rule_PlaySaveGameLocationCard")
-end
-
--- this function must be here - this is the mission start point
-function OnInit()
+end -- }}}
+function OnInit() -- {{{
 	--SPRestrict()
 	print("oninit issued" )	
 	Rule_Add("Rule_Init")
-end
+end -- }}}
 
 
-
-function Rule_Init()
+function Rule_Init() -- {{{
 	Rule_Remove( "Rule_Init" )
 	--Rule_PlayerLose()
 	-- set the sound directory
@@ -85,10 +81,6 @@ function Rule_Init()
 	CPU_Enable( 2, 0 )
 	CPU_Enable( 3, 0 )
 
-	--startAnim(Player_GetShipsByType(2, "kus_proximitysensor"), "open")
-	SobGroup_SetAsDeployed(Player_GetShipsByType(2, "kus_proximitysensor"))
-	
-	--startAnim(Player_GetShipsByType(0, "smt_ms_sp"), "open")
 	
 	SobGroup_Attack(3, "firelanceAttackers", "firelanceIons")
 	
@@ -114,21 +106,6 @@ function Rule_Init()
 --	Player_GrantResearchOption(0, "SMTFighterDrive") 
 	
 	
-	--DisableMothership()
-	
-	-- this prevents the taskbar from using the taskbar state from the players profile.
-	--  eg. prevents the taskbar from being hidden when it is set to hidden by the profile
-	--FE_TaskbarIgnoreProfilePhase(1)
-			
-	--SobGroup_AbilityActivate( "Tanis_Whole", AB_AcceptDocking, 0 )
-	--Rule_Add( "SparkiesOnMothership" )
-	
-	-- begin the opening intelevent
-	--NISLoad( "nis/NIS01A" )
-	--g_NISState = NISPlay( "nis/NIS01A" )
-	-- for seamless transition between animatic and nis, the animatic starts the NIS
-	--g_NISState = NISGetPlayingHandle("nis/NIS01A")
-	--NISDisableInterface(1) -- this disables the interface when the NIS is done playing, it needs to be re-enabled by scar
 	
 --	print("hw1 Fleet command: "..HW1_FleetCommand)
 	playEvent()
@@ -149,98 +126,90 @@ function Rule_Init()
 	Rule_Add( "Rule_HasBuiltAcolytes" )
 	Rule_Add( "Rule_BombersDestroyed" )
 
-end
+end -- }}}
 
-function playEvent()
-	Event_Start( "intelevent_mothershipjumps" )
+function playEvent() -- {{{
+	Event_Start( "intelevent_mothershipjumpsin" )
 	--Event_Start( "intelevent_intro" )
 	--Event_Start( "start" )
-end
+end -- }}}
 
 -- {{{ Rules to keep Hiigaran / Taiidan main battle going
 
-function Rule_ReplaceNblInt()
+function Rule_ReplaceNblInt() -- {{{
 	if( SobGroup_Count(Player_GetShipsByType (1, "Kus_interceptor")) < nbl_int_buffer ) then
 		Rule_Remove("Rule_ReplaceNblInt")
 		nbl_int_tmp = SobGroup_CreateShip(Player_GetShipsByType (1, "Kus_carrier"), "Kus_interceptor") 
 		Rule_Add("Rule_checkbuilt_NblInt")
 	end
-end
-function Rule_checkbuilt_NblInt()
+end -- }}}
+function Rule_checkbuilt_NblInt() -- {{{
 	if( nbl_int_tmp == nil) or (SobGroup_IsDocked(nbl_int_tmp) == 0 ) then
 		Rule_Remove("Rule_checkbuilt_NblInt")
 		nbl_int_tmp = null
 		Rule_Add("Rule_ReplaceNblInt")
 	end
-end
-
-function Rule_ReplaceNblMg()
+end -- }}}
+function Rule_ReplaceNblMg() -- {{{
 	if( SobGroup_Count(Player_GetShipsByType (1, "Kus_multiguncorvette")) < nbl_mg_buffer ) then
 		Rule_Remove("Rule_ReplaceNblMg")
 		nbl_mg_int = SobGroup_CreateShip(Player_GetShipsByType (1, "Kus_carrier"), "Kus_multiguncorvette") 
 		Rule_Add("Rule_checkbuilt_NblMg")
 	end
-end
-function Rule_checkbuilt_NblMg()
+end -- }}}
+function Rule_checkbuilt_NblMg() -- {{{
 	if( nbl_mg_tmp == nil) or (SobGroup_IsDocked(nbl_mg_tmp) == 0 ) then
 		Rule_Remove("Rule_checkbuilt_NblMg")
 		nbl_mg_tmp = null
 		Rule_Add("Rule_ReplaceNblMg")
 	end
-end
-
-
-function Rule_ReplaceNblIon()
+end -- }}}
+function Rule_ReplaceNblIon() -- {{{
 	if( SobGroup_Count(Player_GetShipsByType (1, "Kus_ioncannonfrigate_tank")) < nbl_ion_buffer ) then
 		Rule_Remove("Rule_ReplaceNblIon")
 		nbl_ion_tmp = SobGroup_CreateShip(Player_GetShipsByType (1, "Kus_carrier"), "Kus_ioncannonfrigate_tank") 
 		Rule_Add("Rule_checkbuilt_NblIon")
 	end
-end
-function Rule_checkbuilt_NblIon()
+end -- }}}
+function Rule_checkbuilt_NblIon() -- {{{
 	if( nbl_ion_tmp == nil) or (SobGroup_IsDocked(nbl_ion_tmp) == 0 ) then
 		Rule_Remove("Rule_checkbuilt_NblIon")
 		nbl_ion_tmp = null
 		Rule_Add("Rule_ReplaceNblIon")
 	end
-end
-
-
-function Rule_ReplaceTaiInt()
+end -- }}}
+function Rule_ReplaceTaiInt() -- {{{
 	if( SobGroup_Count(Player_GetShipsByType (3, "Tai_interceptor")) < tai_int_buffer ) then
 		Rule_Remove("Rule_ReplaceTaiInt")
 		tai_int_tmp = SobGroup_CreateShip(Player_GetShipsByType (3, "Tai_carrier"), "Tai_interceptor") 
 		Rule_Add("Rule_checkbuilt_TaiInt")
 	end
-end
-function Rule_checkbuilt_TaiInt()
+end -- }}}
+function Rule_checkbuilt_TaiInt() -- {{{
 	if( tai_int_tmp == nil) or (SobGroup_IsDocked(tai_int_tmp) == 0 ) then
 		Rule_Remove("Rule_checkbuilt_TaiInt")
 		tai_int_tmp = null
 		Rule_Add("Rule_ReplaceTaiInt")
 	end
-end
-
-function Rule_ReplaceTaiIon()
-	--print('counting tai ion...')
+end -- }}}
+function Rule_ReplaceTaiIon() -- {{{
 	if( SobGroup_Count(Player_GetShipsByType (3, "tai_ioncannonfrigate_tank")) < tai_ion_buffer ) then
-		print('tai ion lost!')
 		Rule_Remove("Rule_ReplaceTaiIon")
 		tai_ion_tmp = SobGroup_CreateShip(Player_GetShipsByType (3, "Tai_carrier"), "Tai_ioncannonfrigate_tank") 
 		Rule_Add("Rule_checkbuilt_TaiIon")
 	end
-end
-function Rule_checkbuilt_TaiIon()
+end -- }}}
+function Rule_checkbuilt_TaiIon() -- {{{
 	if( tai_ion_tmp == nil) or (SobGroup_IsDocked(tai_ion_tmp) == 0 ) then
 		Rule_Remove("Rule_checkbuilt_TaiIon")
 		tai_ion_tmp = null
 		Rule_Add("Rule_ReplaceTaiIon")
 	end
-end
+end -- }}}
 
--- }}} 
+-- }}} END rules to keep battle going
 
-function Rule_HasBuiltAcolytes()
+function Rule_HasBuiltAcolytes() -- {{{
 	if ( SobGroup_Count( Player_GetShipsByType(0, "smt_acolyte" ) ) >= 1 ) then
 		Rule_Remove("Rule_HasBuiltAcolytes")
 
@@ -249,18 +218,27 @@ function Rule_HasBuiltAcolytes()
 
 		Event_Start( "incoming_fighters" )
 	end
-end
-
-function Rule_BombersDestroyed()
+end -- }}}
+function Rule_BombersDestroyed() -- {{{
 	if ( SobGroup_Empty( "firelanceAttackers" ) == 1) then
 		Rule_Remove("Rule_BombersDestroyed")
 		
-		Event_Start( "bombers_destroyed" )
-	end
-end
+		SobGroup_GuardSobGroup("tai_resource_def", "tai_resource")
+		SobGroup_Resource(0, "tai_resource")
 
--- if all objectives are complete.
-function Rule_PlayerWins()
+		Event_Start( "bombers_destroyed" )
+		
+		Rule_Add("Rule_EnemyResourcersFound")
+	end
+end -- }}}
+function Rule_EnemyResourcersFound() -- {{{
+	if( SobGroup_PlayerIsInSensorRange("tai_resource", 0) == 1 ) then
+		Rule_Remove("Rule_EnemyResourcersFound")
+	end
+end -- }}}
+
+
+function Rule_PlayerWins() -- {{{
 	--if ( Objective_GetState( obj_prim_beginharvesting_id ) == OS_Complete ) and
 	--( Objective_GetState( obj_prim_buildfightersubsystem_id ) == OS_Complete ) and
 	--( Objective_GetState( obj_prim_buildtwointerceptors_id ) == OS_Complete ) and
@@ -269,23 +247,11 @@ function Rule_PlayerWins()
 	--( Objective_GetState( obj_prim_destroyvaygrgates_id ) == OS_Complete ) and
 	if ( 0 == 1 ) then
 	
-		-- turn off invulnerable subsystem
-		SobGroup_SetInvulnerabilityOfHardPoint( "Mothership", "HardpointProduction1", 0 )
-		
-	
 		--Sound_MusicPlay( "data:sound/music/ambient/AMB_01" )
-		Event_Start( "intelevent_mothershipjumps" )
-		Rule_Add( "Rule_VaygrEnterHyperspace" )
 		Rule_Remove( "Rule_PlayerWins" )
 	end
-end
-
-
--- END GAME: HYPERSPACE OUT
-
--- BEGIN GAME: LOSE CONDITIONS
--- Lose condition
-function Rule_PlayerLose()
+end -- }}}
+function Rule_PlayerLose() -- {{{
 	
 	if ( SobGroup_Empty( "Mothership" ) == 1 ) then
 		
@@ -295,15 +261,13 @@ function Rule_PlayerLose()
 		
 	end
 	
-end
--- END GAME: LOSE CONDITIONS
+end -- }}}
+
 
 
 -- EVENTS
 -- create the events table
 Events = {} -- the name of this table must always be Events - this is what the game looks for
-
--- this is the intro intelevent
 
 Events.start = -- {{{
 {
@@ -315,12 +279,11 @@ Events.start = -- {{{
 		{ "Sound_ExitIntelEvent()","" },
 	}
 } -- }}}
-
-Events.intelevent_mothershipjumps  = -- {{{
+Events.intelevent_mothershipjumpsin  = -- {{{
 {
 	{
-		HW2_SubTitleEvent( Actor_KuunLan, "$1", 1),
-		HW2_SubTitleEvent( Actor_KuunLan, "Auto-launch set", 1),
+		--HW2_SubTitleEvent( Actor_KuunLan, "$1", 1),
+		--HW2_SubTitleEvent( Actor_KuunLan, "Auto-launch set", 1),
 	},
 	{
 		{ "Sound_EnterIntelEvent()","" },
@@ -403,7 +366,6 @@ Events.intelevent_mothershipjumps  = -- {{{
 	--	{ "setMissionComplete( 1 )","" },		
 	},
 } -- }}}
-
 Events.incoming_fighters =  -- {{{
 {
 	{
@@ -442,7 +404,6 @@ Events.incoming_fighters =  -- {{{
 		{"Camera_FocusRestore()", ""},
 	},
 } -- }}}
-
 Events.bombers_destroyed = -- {{{
 {
 	{
@@ -462,7 +423,7 @@ Events.bombers_destroyed = -- {{{
 	},
 	{								-- add sobgroup ping later
 		{"Sensors_Toggle( 1 )",""},
---        HW2_SubTitleEvent( Actor_Kiith_Nabaal, "$10", 8 ), -- Attention Kuun Lan
+        HW2_SubTitleEvent( Actor_Kiith_Nabaal, "$10", 8 ), -- Attention Kuun Lan
         HW2_SubTitleEvent( Actor_Kiith_Nabaal, "Attention Kuun-Lan. The first Imperialist attack wiped out our sensor grid.", 4 ),
 		HW2_Wait( 4 ),
     },
@@ -483,8 +444,7 @@ Events.bombers_destroyed = -- {{{
 
 
 } -- }}}
-
-Events.vaygrexithyperspace =
+Events.vaygrexithyperspace = -- {{{
 {
 	{
 		{ "SobGroup_ExitHyperSpace('Vgr_HyperspaceIn_6', 'vol_Vgr_HyperspaceExit_6' )", "" },
@@ -509,10 +469,8 @@ Events.vaygrexithyperspace =
 	{
 		{ "SobGroup_ExitHyperSpace('Vgr_HyperspaceIn_4', 'vol_Vgr_HyperspaceExit_4' )", "" },
 	},
-}
-
--- this is an event to say the player has lost
-Events.speechevent_playerloses =
+} -- }}}
+Events.speechevent_playerloses = -- {{{
 {
 	{
 		{ "Sound_EnableAllSpeech(0)","" },
@@ -530,4 +488,4 @@ Events.speechevent_playerloses =
 		{ "Sound_EnableAllSpeech(1)","" },
 		{ "setMissionComplete( 0 )","" },
 	},
-}
+} -- }}}

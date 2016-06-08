@@ -3,6 +3,6 @@
 version = 4
 
 compression = 0
-volume = 0.500000
+volume = 0.900000
 randSampContainer = 0
 
