@@ -179,6 +179,8 @@ COLOR_CONTEXTMENUITEM_HOVER = COLOR_LISTITEM_HOVER
 COLOR_CONTEXTMENUITEM_PRESSED = {195, 246, 235, 255}
 COLOR_CONTEXTMENU_TEXT_DEFAULT = COLOR_BUTTON_TEXT_DEFAULT
 
+------------------- Menu Strip Defines ------------------
+COLOR_MENUSTRIP_BGRD = {20, 20, 20, 176}
 ------------- GRAPHICS -------------
 BORDERIMAGE = "Data:UI\\NewUI\\Styles\\HWRM_Style\\Panel_BordersAndExtras.tga"
 IMG_BORDERS_W = 256
@@ -249,6 +251,16 @@ BORDER_GRAPHIC_BUILDFRAME = {
 	patch_ResScale = RES_SCALE,							
 }
 
+BORDER_GRAPHIC_BUILDFRAME_PAD = {
+	type = "Graphic",
+	texture = BORDERIMAGE,
+	uvRect = { 4/256, 190/512, 40/256, 210/512 },
+	patch_X = { 16/4, -4/4, 16/4, 0 },
+	patch_Y = { 8/4, -4/4, 8/4, 0 },
+	patch_PadX = { 3, -3 },
+	patch_PadY = { 1, -1 },
+	patch_ResScale = RES_SCALE,							
+}
 BORDER_GRAPHIC_BUILDFRAME_THIN = {
 	type = "Graphic",
 	texture = BORDERIMAGE,
@@ -798,7 +810,11 @@ T_Text_TitleBar = {
 		ContentAreaName = "Content",
 		TitleTextName = "TitleText",
 		DragItemName = "DragTitle",
-
+		CloseButtonName = "CloseButton",
+		MinimizeButtonName = "MinimizeButton",
+		MenuStripContainerName = "RMMenuStripContainer",
+		
+		MinimizedElement = "btnBalanceScreen",
 		arrangetype = "vert",
 		;			
 		----------Title Area-----------
@@ -859,7 +875,88 @@ T_Text_TitleBar = {
 				},
 				;
 			},
+			-------------------
+			{
+				type = "Frame",
+				name = "TitleBarButtonsFrame",						
 
+				arrangetype="horiz",
+				Layout = {
+					size_WH = { w = 1, h = 1, wr = "px", hr = "par" },
+					pivot_XY = { 1.0, 0.0 },
+					pos_XY = {	x=1, xr="par",},	
+					
+				},
+				autosize=1,
+				arrangeSep = {	x=4, y=0, xr="px", yr="scr",},	
+				;
+				-- Minimize
+				{
+					type = "Button",
+					name = "MinimizeButton",
+					visible = 0,
+					ignored = 1,
+
+					Layout = {		
+						size_WH = {	w = 10000.0, h = .8, wr = "px", hr = "par" },	
+						pos_XY = {	y = .5, yr = "par" },
+						pivot_XY = { 0.0, 0.5 },						
+						lockAspect=1,		
+					},	
+
+					BackgroundGraphic = {
+						size = { 8, 8},
+						texture = "DATA:\\UI\\NewUI\\Elements\\titlebar_minimize.tga",
+						uvRect = { 0, 1, 1, 0 },	
+					},
+					overColor = COLOR_CONTEXTMENUITEM_HOVER,
+					pressedColor = COLOR_CONTEXTMENUITEM_PRESSED,
+				},
+
+				-- Close
+				{
+					type = "Button",
+					name = "CloseButton",
+					visible = 0,
+					ignored = 1,
+
+					Layout = {		
+						size_WH = {	w = 10000.0, h = .8, wr = "px", hr = "par" },	
+						pos_XY = {	y = .5, yr = "par" },
+						pivot_XY = { 0.0, 0.5 },						
+						lockAspect=1,		
+					},	
+					--backgroundColor = {0,255,0,128},	
+
+					BackgroundGraphic = {
+						size = { 8, 8},
+						texture = "DATA:\\UI\\NewUI\\Elements\\titlebar_close.tga",
+						uvRect = { 0, 1, 1, 0 },	
+					},
+					overColor = COLOR_CONTEXTMENUITEM_HOVER,
+					pressedColor = COLOR_CONTEXTMENUITEM_PRESSED,
+				},
+
+
+
+			},
+
+
+
+
+		},
+
+		----------MenuStrip Container-----------
+		{	
+			type = "Frame",
+			name = "RMMenuStripContainer",
+			Layout = {	
+				size_WH = {w = 1.0,	h = 24.0,wr = "par",	hr = "px"	},		
+			},	
+			visible=0,
+			ignored=1,
+			--backgroundColor = {0,0,255,255},
+		;
 		},
 		----------Content Area-----------
 		{	
@@ -872,6 +969,7 @@ T_Text_TitleBar = {
 				pad_RB = { r = 12, b = 12, rr = "px", br = "px" },		
 			},	
 			arrangeweight = 1,
+			UINavSelectable = 1, 
 			--backgroundColor = {128,0,0,255},
 		;
 		}
@@ -1300,39 +1398,88 @@ PREFAB_DRAGICON = {
 	}
 
 
+	TEMPLATE_MENUSTRIP = 
+	{
+		type = "MenuStrip",		
+		arrangetype = "horiz",
 
+		Layout = {			
+			size_WH = {	w = 1.0, h = 1, wr = "par", hr = "par" },	
+		},
+
+		backgroundColor = COLOR_MENUSTRIP_BGRD,
+		--BackgroundGraphic = BORDER_GRAPHIC_FRAME_THICKTB_THINLR,
+
+		;
+	}
 	
 	
 	TEMPLATE_CONTEXTMENU = 
 	{
 		type = "ContextMenu",		
-		arrangetype = "vert",
 
-		Layout = {		
-			pad_LT = {	l = 4.0, t = 4.0, lr = "px", tr = "px" },		
-			pad_RB = {	r = 4.0, b = 4.0, rr = "px", br = "px" },	
-		},	
-
-		backgroundColor = COLOR_CONTEXTMENU_BGRD,
-		BackgroundGraphic = BORDER_GRAPHIC_FRAME_THICKTB_THINLR,
-
+		Layout = { size_WH = {	w = 1.0, h = 1.0, wr = "scr", hr = "scr" },	},	
+		eventOpaque = 0,
+		forceSubItemFill = 1,
 		;
-	}
+		{
+			type = "Frame",
+			name = "contextItemFrame",
+			
+			arrangetype = "vert",
+			autosize=1,
+			Layout = {		
+				pos_XY = { x = 0.0, y = 0.0, xr = "abs_px", yr = "abs_px" },
+				pad_LT = {	l = 4.0, t = 4.0, lr = "px", tr = "px" },		
+				pad_RB = {	r = 4.0, b = 4.0, rr = "px", br = "px" },	
+			},	
 
+			backgroundColor = COLOR_CONTEXTMENU_BGRD,
+			BackgroundGraphic = BORDER_GRAPHIC_FRAME_THICKTB_THINLR,
+
+
+
+		},
+
+		
+		
+		
+		
+		
+		
+	}	
+		
 	TEMPLATE_CONTEXTMENU_TRANSLUCENT = 
 	{
 		type = "ContextMenu",		
-		arrangetype = "vert",
-
-		Layout = {		
-			pad_LT = {	l = 4.0, t = 4.0, lr = "px", tr = "px" },		
-			pad_RB = {	r = 4.0, b = 4.0, rr = "px", br = "px" },	
-		},	
-
-		backgroundColor = COLOR_CONTEXTMENU_BGRD_TRANSLUCENT,
-		BackgroundGraphic = BORDER_GRAPHIC_FRAME_THICKTB_THINLR,
-
+		Layout = { size_WH = {	w = 1.0, h = 1.0, wr = "scr", hr = "scr" },	},	
+		eventOpaque = 0,
+		forceSubItemFill = 1,
+		backgroundColor = {0,0,0,0},
 		;
+		{
+			type = "Frame",
+			name = "contextItemFrame",
+			
+			arrangetype = "vert",
+			autosize=1,
+			Layout = {		
+				pad_LT = {	l = 4.0, t = 4.0, lr = "px", tr = "px" },		
+				pad_RB = {	r = 4.0, b = 4.0, rr = "px", br = "px" },	
+			},	
+
+			backgroundColor = COLOR_CONTEXTMENU_BGRD,
+			BackgroundGraphic = BORDER_GRAPHIC_FRAME_THICKTB_THINLR,
+
+
+
+
+
+
+
+
+		},
+
 	}
 
 
@@ -1342,10 +1489,41 @@ PREFAB_DRAGICON = {
 		type = "ContextMenuItem",		
 		
 		autosize=1,
+
+		CheckedIconGraphic = {
+			size = { 8, 8},
+			texture = "DATA:\\UI\\NewUI\\Elements\\checkbox_pressed.tga",
+			uvRect = { 0, 1, 1, 0 },	
+		},
+		
+		--backgroundColor = {255,0,0,255},
 		;
 		-- underlying button
 		{
 			type = "Button",
+			name = "contextMenuBaseButton2",
+			Layout = {		
+				size_WH = {	w = 1.0, h = CONTEXTMENUITEM_HEIGHT, wr = "par", hr = "scr" },		
+				Flags = {
+					hasVolume = 0,
+					
+				},
+			
+			},	
+			--backgroundColor = {255,0,0,255},
+			arrangeSep = {	x=8, y=0, xr="px", yr="px",},	
+
+			overColor = COLOR_CONTEXTMENUITEM_HOVER,
+			pressedColor = COLOR_CONTEXTMENUITEM_PRESSED,
+			--autosize = 1,
+			arrangetype = "horiz",
+			clickThrough = 1,
+			giveParentMouseInput = 1,
+			--eventOpaque = 0,
+			;
+		},
+		{
+			type = "Frame",
 			name = "contextMenuBaseButton",
 			Layout = {		
 				size_WH = {	w = 1.0, h = CONTEXTMENUITEM_HEIGHT, wr = "px", hr = "scr" },		
@@ -1353,13 +1531,13 @@ PREFAB_DRAGICON = {
 
 			arrangeSep = {	x=8, y=0, xr="px", yr="px",},	
 
-			overColor = COLOR_CONTEXTMENUITEM_HOVER,
-			pressedColor = COLOR_CONTEXTMENUITEM_PRESSED,
+			--overColor = COLOR_CONTEXTMENUITEM_HOVER,
+			--pressedColor = COLOR_CONTEXTMENUITEM_PRESSED,
 			autosize = 1,
 			arrangetype = "horiz",
 			clickThrough = 1,
 			giveParentMouseInput = 1,
-			--eventOpaque = 0,
+			eventOpaque = 0,
 			;
 			-- Icon
 			{
@@ -1392,17 +1570,77 @@ PREFAB_DRAGICON = {
 				},	
 				eventOpaque = 0,
 				clickThrough = 1,
+				disabledTextColor			= {255,0,0,255},
+
 			},
-			-- KeyBinding Text
 		},
+		-- KeyBinding Text
+		-- SubMenu Icon
+		{
+			type = "Button",
+			name = "contextMenuSubMenuIcon",
+			Layout = {		
+				size_WH = {	w = 10000.0, h = .8, wr = "px", hr = "par" },	
+				pos_XY = {	x=1, y = .5, xr="par", yr = "par" },
+				pivot_XY = { 1.0, 0.5 },						
+				lockAspect=1,		
+			},	
+
+			BackgroundGraphic = {
+				size = { 8, 8},
+				texture = "DATA:\\UI\\NewUI\\Elements\\checkbox_pressed.tga",
+				uvRect = { 0, 1, 1, 0 },	
+			},
+				
+			eventOpaque = 0,
+			visible=0,
+			clickThrough = 1,
+
+		},
+
+
+	
 	}
 
+------------------------------------------
 
+	TEMPLATE_COMMAND_COOLDOWNFRAME = 
+	{
+		type = "CooldownFrame",				
+		cooldownLabel = "cooldownText",
+		swipeColor = {0,0,0,128},
+		eventOpaque = 0,
+		clickThrough = 1,
+		hideWhenNotRunning = 1,
+		;
+		-- underlying button
+			-- Text
+			{
+				type = "TextLabel",
+				name = "cooldownText",
+				autosize=1,
+							
+				Layout = {							
+					pos_XY = {	x=1, y = 1, xr="par", yr = "par" },
+					size_WH = { w = 1, h = .35, wr = "px", hr = "par" },
+					pivot_XY = { 1.0, 1.0 },		
+				},	
 
-
-
-
-
+				Text = {
+					color = { 255, 255, 255, 255},
+					minShrink = .1,
+					type = "Text",
+					font = "ButtonFont",
+					color = "IGColorButtonText",
+					dropShadow = 1,
+					style  = 1,
+					hAlign = "Center",
+				},	
+				eventOpaque = 0,
+				clickThrough = 1,
+			},
+	
+	}
 ---------------------------------------------------------
 
 
@@ -1417,6 +1655,14 @@ if(GetTacticGroupButton == nil) then
 			},
 			toggleButton = 1,
 			buttonStyle = "RM_FEButtonStyleFlat",
+
+		textColor					= {255, 255, 255, 32},
+		--textColor					= COLOR_BUTTON_TEXT_DEFAULT,
+		overTextColor				= COLOR_BUTTON_TEXT_HOVER,
+		pressedTextColor			= COLOR_BUTTON_TEXT_DEFAULT,
+		disabledTextColor			= {255, 255, 255, 32},
+		stateIconCells = { 1, 1, 2, 3, 4, 5, 6, 7 },
+
 			Text = {
 				font = "Blender",
 				color = "RM_FETextBlueBright",
@@ -1490,7 +1736,7 @@ if(GetFacilityButton == nil) then
 						textureUV = {24,50,48,75},
 					},
 
-					TintGraphics=1,
+					--TintGraphics=1,
 
 					stateBaseOfs = { 0.0, 0.0 },
 					stateBaseCells = { 0, 1, 2, 3, 4, 5, 6, 7 },

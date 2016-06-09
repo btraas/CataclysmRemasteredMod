@@ -81,7 +81,7 @@ GameSetup = {
 		WindowTemplate = SCREENHEADER_WINDOWSTYLE,
 		TitleText = "$3300", -- PLAYER PROFILES
 		SubTitleText = "$3301", -- MANAGE PLAYER PROFILES
-		Extra1Text = "$2622", -- BETA
+		--Extra1Text = "$2622", -- BETA
 
 		Layout = {	
 			size_WH = {	w = 1.0, h = 1, wr = "par", hr = "par" },							
@@ -178,7 +178,7 @@ GameSetup = {
 					
 					{
 						type = "Frame",
-						name = "UserListFrame",							
+						name = "UserListFrame",
 					
 						Layout = {					
 							size_WH = {	w = 1, h = 1000, wr = "par", hr = "px"},	
@@ -198,7 +198,8 @@ GameSetup = {
 						{
 							type = "Frame",
 							name = "frmPlayerSlots",
-							--Text = {text = "User ListBox",pixels  = 20},		
+
+		
 							borderWidth = 2,
 							borderColor = "FEColorOutline",
 
@@ -235,6 +236,12 @@ GameSetup = {
 					arrangeweight=1,
 					--backgroundColor = { 128, 0, 0, 100 }
 					arrangetype = "vert",
+					Anchor_Spawns = {
+						{
+							anchorName = "Anchor_MPChat",
+							relativePos = { 0.0, 0.0 },
+						},		
+					},
 					;
 					-------------Chat Panel --------------
 					{
@@ -242,7 +249,7 @@ GameSetup = {
 						WindowTemplate = PANEL_WINDOWSTYLE,
 						--name = "frmRootChatBox",
 						TitleText = "$3295", -- GAME PLAYERS
-						visible = 1,
+						visible = 0,
 		
 						Layout = {					
 							size_WH = {	w = 1, h = 1, wr = "par", hr = "par"},			
@@ -330,7 +337,7 @@ GameSetup = {
 
 								helpTipTextLabel = "txtLblHELPTEXT",
 								helpTip = "$3335",--TYPE YOUR CHAT MESSAGE
-								maxTextLength = 50,
+								maxTextLength = 128,
 							
 								Text = {
 									font = "ChatFont",
@@ -433,6 +440,9 @@ GameSetup = {
 		
 						Layout = {					
 							size_WH = {	w = 1, h = 50000, wr = "par", hr = "px"},
+							max_WH = {	w = 1, h = .3, wr = "par", hr = "scr_min"},
+							pos_XY = { x = .5, xr = "par" },				
+							pivot_XY = { .5, 0 },	
 							lockAspect = 2,			
 						},
 
@@ -527,7 +537,7 @@ GameSetup = {
 			WindowTemplate = PANEL_NAVIGATIONFRAME,
 			;		
 				-- BUTTONS
-				NewMenuButton("txtBtnBACK",				"$3362",	"$3336",	0,	BTN_FOOTER_STD_LAYOUT,	"FEButtonStyleCataMedBlack",	nil),	
+				NewMenuButton("m_btnBack",				"$3362",	"$3336",	0,	BTN_FOOTER_STD_LAYOUT,	"FEButtonStyleCataMedBlack",	nil),	
 				NewMenuButton("txtBtnLOADGAME",			"$3338",	"$3339",	0,	BTN_FOOTER_STD_LAYOUT,	"FEButtonStyleCataMedBlack",	nil),	
 				NewMenuButton("txtBtnLOADRECORDEDGAME",	"$3366",	"$3367",	0,	BTN_FOOTER_STD_LAYOUT,	"FEButtonStyleCataMedBlack",	nil),	
 				

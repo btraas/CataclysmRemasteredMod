@@ -95,7 +95,8 @@ PlayerSetup = {
 						size = { 100, 13},
 						marginWidth = 6,
 						Text = {
-							text = "Color Presets",  -- 
+							text = "$2803",  -- 
+	
 							textStyle = "FEHeading4",
 						},
 					},
@@ -111,7 +112,6 @@ PlayerSetup = {
 						},		
 						arrangeSep = {	x=PANEL_SPACING_HORIZ/2, y=0, xr="scr", yr="scr",},	
 						;
-						
 						{
 							type = "ButtonHD",
 							ignored = 1,				
@@ -1013,7 +1013,8 @@ PlayerSetup = {
 			-- cancel/accept buttons
 			{
 				type = "TextButton",
-				name = "cancelbutton",
+				name = "m_btnCancel",
+
 				buttonStyle = "FEButtonStyleCataMed",
 
 				Layout = {
@@ -1055,6 +1056,7 @@ PlayerSetup = {
 				name = "acceptbutton",
 				buttonStyle = "FEButtonStyleCataSmall",
 			
+
 				Layout = {
 					pivot_XY = { 1.0, 0.5 },					
 					pos_XY = {	x=1.0, y=0.5, xr="par", yr="par",},	

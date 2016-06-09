@@ -1,54 +1,139 @@
-UC_Family("Fighter", 60);
-UC_Family("Fighter_hw1", 300);
-UC_ShipType("Fighter_hw1sqd", 14);
+supplyLimit("Fighter", 125);
+
+supplyLimit("Scout", 30);
+supplyLimit("Interceptor", 125);
+supplyLimit("Bomber", 125);
+supplyLimit("LanceFighter", 125);
+supplyLimit("Defenders", 30);
+supplyLimit("Defensefighters", 20);
+supplyLimit("CloakedFighters", 30);
 --
-UC_Family("Corvette", 50);
-UC_Family("Corvette_hw1", 150);
-UC_ShipType("MinelayerCorvette",16);
-UC_ShipType("SalvageCorvette",28);
-UC_ShipType("Corvette_hw1sqd", 28);
+-- Vaygr FamilyOverride Fighter 205
+-- Vaygr ShipOverride Interceptor 175
+-- Vaygr ShipOverride Bomber 175
 --
-UC_Family("Frigate", 48);
-UC_ShipType("DefenseFieldFrigate",4);
-UC_ShipType("CaptureFrigate",12);		
+supplyLimit("Corvette", 75);
+
+supplyLimit("MinelayerCorvette",8);
+supplyLimit("CommandCorvette",4);
+supplyLimit("SalvageCorvette",22);
 --
-UC_Family("Capital", 26);
-UC_ShipType("Destroyer", 12);
-UC_ShipType("Carrier", 6);
-UC_ShipType("Battlecruiser",6);
-UC_ShipType("HeavyCruiser",6);
-UC_ShipType("Shipyard", 2);
-UC_ShipType("Dreadnaught", 3);
-UC_ShipType("Sajuuk", 1);
+-- Vaygr FamilyOverride Corvette 100
 --
-UC_Family("Utility", 84);
-UC_ShipType("ResourceCollector", 40);
-UC_ShipType("ResourceController", 8);
-UC_ShipType("Probe", 12);
-UC_ShipType("ECMProbe", 12);
-UC_ShipType("ProximitySensor", 12);
+supplyLimit("Frigate", 35);
+
+supplyLimit("DefenseFieldFrigate",4);
+supplyLimit("CaptureFrigate",10);
 --
-UC_Family("Resource", 48);
-UC_ShipType("ResourceCollector_hw1", 40);
-UC_ShipType("ResourceController_hw1", 8);
+supplyLimit("Capital", 27);
+
+supplyLimit("Destroyer", 11);
+supplyLimit("MissileDestroyer", 6);	
+supplyLimit("Carrier", 5);
+supplyLimit("Battlecruiser",6);
+supplyLimit("HeavyCruiser",6);
+supplyLimit("Shipyard", 1);
 --
-UC_Family("NonCombat", 60);
-UC_ShipType("Probe_hw1", 12);
-UC_ShipType("ProximitySensor_hw1", 12);
-UC_ShipType("Research", 1);
-UC_ShipType("Researchship", 6);
-UC_ShipType("Research1", 1);
-UC_ShipType("Research2", 1);
-UC_ShipType("Research3", 1);
-UC_ShipType("Research4", 1);
-UC_ShipType("Research5", 1);
-UC_ShipType("CloakGenerator", 8);
-UC_ShipType("GravWellGenerator", 8);
-UC_ShipType("SensorArray", 8);
+supplyLimit("Utility", 71);
+
+supplyLimit("Probe", 12);
+supplyLimit("ECMProbe", 12);
+supplyLimit("ProximitySensor", 12);
 --
-UC_Family("Platform", 42);
-UC_ShipType("HyperspacePlatform", 12);
+supplyLimit("Resource", 35);
+
+supplyLimit("ResourceCollector", 30);
+supplyLimit("ResourceController", 5);
 --
-UC_Family("Mothership", 3);
+supplyLimit("NonCombat", 60);
+
+supplyLimit("Probe_hw1", 12);
+supplyLimit("ProximitySensor_hw1", 12);
+supplyLimit("Research", 1);
+supplyLimit("Research1", 1);
+supplyLimit("Research2", 1);
+supplyLimit("Research3", 1);
+supplyLimit("Research4", 1);
+supplyLimit("Research5", 1);
+supplyLimit("CloakGenerator", 10);
+supplyLimit("GravWellGenerator", 10);
+supplyLimit("SensorArray", 10);
 --
-UC_Family("SinglePlayerMisc", 100);
+supplyLimit("Platform", 35);
+
+supplyLimit("HyperspacePlatform", 10);
+--
+supplyLimit("Mothership", 1);
+--
+supplyLimit("SinglePlayerMisc", 100);
+
+
+
+-- Generic Indents
+supplyIndent("Scout", 1);
+supplyIndent("Interceptor", 1);
+supplyIndent("Bomber", 1);
+
+supplyIndent("MinelayerCorvette", 1);
+
+supplyIndent("Destroyer", 1);
+supplyIndent("Carrier", 1);
+
+
+-- Race Specific Indents
+supplyIndent("LanceFighter", 1);
+supplyIndent("Defenders", 1);
+supplyIndent("Defensefighters", 1);
+supplyIndent("CloakedFighters", 1);
+
+supplyIndent("CommandCorvette", 1);
+supplyIndent("SalvageCorvette", 1);
+
+supplyIndent("DefenseFieldFrigate", 1);
+supplyIndent("CaptureFrigate", 1);
+
+supplyIndent("MissileDestroyer", 1);
+supplyIndent("Battlecruiser", 1);
+supplyIndent("HeavyCruiser", 1);
+supplyIndent("Shipyard", 1);
+
+supplyIndent("ResourceCollector", 1);
+supplyIndent("ResourceController", 1);
+
+supplyIndent("Probe", 1);
+supplyIndent("Probe_hw1", 1);
+
+supplyIndent("ProximitySensor", 1);
+supplyIndent("ProximitySensor_hw1", 1);
+
+supplyIndent("CloakGenerator", 1);
+supplyIndent("GravWellGenerator", 1);
+supplyIndent("ECMProbe", 1);
+supplyIndent("SensorArray", 1);
+
+supplyIndent("HyperspacePlatform", 1);
+
+
+-- Display Rules
+supplyShow("Fighter", "Always");
+supplyShow("Corvette", "Always");
+supplyShow("Frigate", "Always");
+supplyShow("Capital", "Always");
+
+supplyShow("Utility", "NotEmpty");
+supplyShow("Resource", "NotEmpty");
+supplyShow("Platform", "NotEmpty");
+
+supplyShow("Mothership", "Never");
+supplyShow("SinglePlayerMisc", "Never");
+
+supplyShow("NonCombat", "NotEmpty");
+
+supplyShow("Research", "Never");
+supplyShow("Research1", "Never");
+supplyShow("Research2", "Never");
+supplyShow("Research3", "Never");
+supplyShow("Research4", "Never");
+supplyShow("Research5", "Never");
+
+

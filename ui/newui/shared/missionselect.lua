@@ -25,6 +25,8 @@ MissionSelect = {
 
 	completeColor = COLOR_LISTITEM_TITLEBAR_COMPLETED, --{238,188,5,255},		-- Blue
 	incompleteColor = COLOR_LISTITEM_TITLEBAR, --{112,157,180,255},	-- Yella
+	UINavDefaultSelectedElementName = "listTutorials",
+	UINavReloadSelectedOnFocus = 1,
 	;
 
 {
@@ -200,7 +202,7 @@ MissionSelect = {
 		--DEFINITION FOR: (txtBtn) BACK
 		{
 			type = "TextButton",
-			name = "txtBtnBACK",
+			name = "m_btnBack",
 
 			buttonStyle = "FEButtonStyleCataMed",	
 
@@ -216,7 +218,7 @@ MissionSelect = {
 			Text = {
 				text = "$2610", -- BACK
 			},
-			onMouseClicked = "UI_ShowScreen(\"NewMainMenu\", eTransition)",
+			--onMouseClicked = "UI_ShowScreen(\"NewMainMenu\", eTransition)",
 			;
 		},
 
@@ -269,6 +271,7 @@ MissionSelect = {
 			type = "TextButton",
 			buttonStyle = "FEButtonStyleCataMed",
 			
+			
 			Layout = {
 				pivot_XY = { 1.0, 0.5 },					
 				pos_XY = {	x=1.0, y=0.5, xr="par", yr="par",},	
@@ -313,6 +316,7 @@ MissionSelect = {
 				
 				hugBottom=1,
 				allowDoubleClicks = 1,
+				UINavClickOnSelect = 1,
 				
 				soundOnClicked = "SFX_MissionSelectClick",
 				BackgroundGraphic = BORDER_GRAPHIC_BOTTOM,

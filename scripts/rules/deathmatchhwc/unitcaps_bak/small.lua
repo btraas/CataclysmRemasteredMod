@@ -12,12 +12,14 @@ UC_Family("Frigate", 12);
 UC_ShipType("DefenseFieldFrigate",2);
 UC_ShipType("CaptureFrigate",4);
 --
-UC_Family("Capital", 10);
+UC_Family("Capital", 14);
 UC_ShipType("Destroyer", 5);
 UC_ShipType("Carrier", 3);
 UC_ShipType("Battlecruiser",2);
-UC_ShipType("HeavyCruiser",4);
-UC_ShipType("Shipyard", 1);
+UC_ShipType("HeavyCruiser",2);
+UC_ShipType("Shipyard", 2);
+UC_ShipType("Dreadnaught", 2);
+UC_ShipType("Sajuuk", 0);
 --
 UC_Family("Utility", 30);
 UC_ShipType("ResourceCollector", 18);
@@ -34,6 +36,7 @@ UC_Family("NonCombat", 20);
 UC_ShipType("Probe_hw1", 4);
 UC_ShipType("ProximitySensor_hw1", 4);
 UC_ShipType("Research", 1);
+UC_ShipType("Researchship", 6);
 UC_ShipType("Research1", 1);
 UC_ShipType("Research2", 1);
 UC_ShipType("Research3", 1);

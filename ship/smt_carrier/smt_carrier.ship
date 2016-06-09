@@ -6,15 +6,20 @@ NewShipType.regentime=3000
 NewShipType.minRegenTime=600
 NewShipType.sideArmourDamage=1.1
 NewShipType.rearArmourDamage=1.1
+setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
+setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "FIRERATE", 0.98, 1.02, 1.0)
 NewShipType.isTransferable=0
-NewShipType.useEngagementRanges=1
-NewShipType.unitCapsNumber=1
+
 NewShipType.addedUnitCaps=101
 NewShipType.paradeData="smt_mothership_parade"
-NewShipType.SquadronSize=1
-NewShipType.passiveFormation="Spear"
-NewShipType.defensiveFormation="x"
-NewShipType.aggressiveFormation="Claw"
+NewShipType.defaultROE="Defensive"
+
+NewShipType.defaultStance="Neutral"
+
+
 NewShipType.mass=1000
 NewShipType.collisionMultiplier=1
 NewShipType.thrusterMaxSpeed=70
@@ -51,13 +56,16 @@ NewShipType.swayOffsetRandomY=10
 NewShipType.swayOffsetRandomZ=10
 NewShipType.swayBobbingFactor=0
 NewShipType.swayRotateFactor=0
-NewShipType.useTargetRandom=1
-NewShipType.targetRandomPointXMin=-0.4
-NewShipType.targetRandomPointXMax=0.4
-NewShipType.targetRandomPointYMin=-0.3
-NewShipType.targetRandomPointYMax=0.3
-NewShipType.targetRandomPointZMin=-0.6
-NewShipType.targetRandomPointZMax=0.6
+setTargetBox(NewShipType, 0, -0.7,-0.24,-0.8, 0.7,0.5,0.45)
+
+
+NewShipType.useLayoutBounds=1
+NewShipType.layoutBoundX=180
+NewShipType.layoutBoundY=160
+NewShipType.layoutBoundZ=370
+NewShipType.layoutCenterX=0
+NewShipType.layoutCenterY=0
+NewShipType.layoutCenterZ=0
 NewShipType.dustCloudDamageTime=200
 NewShipType.nebulaDamageTime=300
 NewShipType.MinimalFamilyToFindPathAround="MotherShip"
@@ -69,8 +77,11 @@ NewShipType.DisplayFamily="Capital"
 NewShipType.AutoFormationFamily="CapShip"
 NewShipType.CollisionFamily="Big"
 NewShipType.ArmourFamily="HeavyArmour"
-NewShipType.UnitCapsFamily="Capital"
-NewShipType.UnitCapsShipType="Carrier"
+setSupplyValue(NewShipType, "Capital", 1.0)
+setSupplyValue(NewShipType, "Carrier", 1.0)
+NewShipType.AttackPriorityMultiplier=0.96
+
+
 NewShipType.fighterValue=0
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=10
@@ -136,6 +147,7 @@ NewShipType.launchTimeBetweenTwoFormations=1
 NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
+NewShipType.strikeGroupRadius=350
 addAbility(NewShipType, "ShipHold", 1, 90, 10, "rallypoint", "Fighter, Corvette, Frigate, Utility,", 300, 
 { 
     Fighter = "150", 
@@ -156,6 +168,7 @@ addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
+NewShipType.noCombatGrouping=1
 --addCustomCode(NewShipType,"data:Ship/Kus_Carrier/Kus_Carrier.lua","Load_Kus_Carrier","Create_Kus_Carrier","Update_Kus_Carrier","","Kus_Carrier",10)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType, "smt_c_kineticburstcannon", "Weapon_TopLeft", "Weapon_TurretTopCenter");
@@ -197,10 +210,16 @@ loadShipPatchList(NewShipType,"data:sound/sfx/ship/"
                              ,0,"Hiigaran/Carrier/Engines/HDestroyerEng",""
                              ,1,"Hiigaran/Carrier/Ambience/HAssaultCarrierAmb",""
                              ,3,"Megaliths/RandomEmit/HANGAR_EMITTERS","NavLight_BigBay");
+
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","SalvagePoint3","SalvagePoint4","SalvagePoint5","SalvagePoint6");	
 loadLatchPointList(NewShipType,"CapCap","CapturePoint1","CapturePoint2","CapturePoint3");
 loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4","RepairPoint5","RepairPoint6");												 
 setConcurrentBuildLimit(NewShipType,0,2);
 NewShipType.minFalloffDamageDist=0
 NewShipType.maxFalloffDamageDist=950
-NewShipType.maxFalloffDamage=950
+NewShipType.maxFalloffScuttleDamageDist=400*3
+NewShipType.explosiveScuttleDamageOnDeath=1969
+NewShipType.maxFalloffForce=500*10
+NewShipType.explosiveDamageOnDeath=394														 
+NewShipType.hideNormalAttackUICooldown=1
+NewShipType.canSurround=1
