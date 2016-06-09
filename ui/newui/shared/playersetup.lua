@@ -1,5 +1,5 @@
 dofilepath("data:ui/newui/Styles/HWRM_Style/HWRMDefines.lua")
-
+dofilepath("data:ui/newui/styles/hwrm_style/controlconstructors.lua")
 PlayerSetup = {
 
 	Layout = {						
@@ -989,25 +989,10 @@ PlayerSetup = {
 		------------------------------------------------------------------------------------
 		-- Button frame
 		{
-			type = "Frame",
-			--size = {486, 18},
-			--size = {SAVELOAD_WIDTH-8, 18},
+			type = "RmWindow",
+            name = "frmRootbottombigfrm",
 
-			Layout = {
-				--pos_XY = {	x = 0.10, y = 0.20, xr = "par",	yr = "par"	},	
-				margin_LT = { l = 0, t = PANEL_SPACING_VERT, lr = "scr", tr = "scr" },
-				pad_LT = { l = PANEL_PAD_HORIZ, t = PANEL_PAD_VERT, lr = "scr", tr = "scr" },
-				pad_RB = { r = PANEL_PAD_HORIZ, b = PANEL_PAD_VERT, rr = "scr", br = "scr" },				
-				size_WH = {	w = 1.0, h = 1.0, wr = "par", hr = "px" },							
-			},		
-
-			autosize=1,
-			
-			BackgroundGraphic = BORDER_GRAPHIC_FRAME,
-			backgroundColor = COLOR_BACKGROUND_PANEL,
-				
-			arrangetype = "horiz",
-
+            WindowTemplate = PANEL_NAVIGATIONFRAME,
 			;
 
 			-- cancel/accept buttons
@@ -1031,7 +1016,8 @@ PlayerSetup = {
 				helpTip = "$2798",
 			},
 
-			-- restore defaults button
+			-- restore defaults button 
+			--[[
 			{
 				type = "TextButton",
 				name = "restoreDefaults",
@@ -1050,7 +1036,8 @@ PlayerSetup = {
 				helpTipTextLabel = "helpTip",
 				helpTip = "$2806",
 			},		
-
+			--]]
+			--NewMenuButton("restoreDefaults",    "$2805",    "$2806",    0,  BTN_FOOTER_STD_LAYOUT,  "FEButtonStyleCataMed",    nil),
 			{
 				type = "TextButton",
 				name = "acceptbutton",

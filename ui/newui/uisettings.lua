@@ -132,9 +132,10 @@ FrontEndScreens = {
 	},
 	{
 		name = "BetaPopupScreen",
-		filename = "DATA:\\UI\\NewUI\\Multiplayer\\BetaPopupScreen.lua",
+		--filename = "DATA:\\UI\\NewUI\\Multiplayer\\BetaPopupScreen.lua",
+		filename = "DATA:\\UI\\NewUI\\Multiplayer\\ConnectionType.lua", --bypass betapopup
 		activated = 0,
-		type = "BetaPopupScreen",
+		type = "ConnectionType",
 	},
 	--{
 	--	name = "StyleSheetTestScreen",
@@ -247,76 +248,6 @@ GameScreens = {
 	--	activated = 0,
 	--},	
 	{
-		name = "balancingmenu",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "cyclehgn",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "cyclevgr",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "cyclekus",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "cycletai",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "cycleother",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "spawn1",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "spawn2",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "fight",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "destroy",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "damage",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "focus",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "special1",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
-		name = "special2",
-		filename = "DATA:\\UI\\NewUI\\balancingmenu.lua",
-		activated = 0,
-	},	
-	{
 		name = "PlayerDestroyedScreen",
 		filename = "DATA:\\UI\\NewUI\\PlayerDestroyedScreen.lua",
 		activated = 0,		
@@ -333,123 +264,7 @@ GameScreens = {
 		filename = "DATA:\\UI\\NewUI\\Units.lua",
 		activated = 0,
 	},
-
-	{ 
-        name = "ShipSelectorPlayer1", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorPlayer2", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
-	{ 
-        name = "ShipSelectorPlayer3", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorPlayer4", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
-	{ 
-        name = "ShipSelectorPlayer5", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorPlayer6", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-     	{ 
-        name = "ShipSelectorPlayer7", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
-
-    	{ 
-        name = "ShipSelectorPlayer8", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
 	
-    	{ 
-        name = "ShipSelectorPlayer9", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
-    	{ 
-        name = "ShipSelectorCPU1", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorCPU2", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorCPU3", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorCPU4", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorCPU5", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorCPU6", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorCPU7", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "ShipSelectorCPU8", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, }, 
- 
-    	{ 
-        name = "ShipSelectorCPU9", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, }, 
- 
-    	{ 
-        name = "PlayerSquadron2", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-	{ 
-        name = "PlayerSquadron1", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "PlayerSquadron3", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "CPUSquadron2", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-	{ 
-        name = "CPUSquadron1", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
- 
-    	{ 
-        name = "CPUSquadron3", 
-        filename = "DATA:\\UI\\NewUI\\ShipSelector.lua", 
-        activated = 0, },
 	{
 		name = "ObjectivesList",
 		filename = "DATA:\\UI\\NewUI\\ObjectivesList.lua",
@@ -505,14 +320,10 @@ GameScreens = {
 		activated = 0,		
 	},
 	{
-		name = "SelectAll",
-		filename = "DATA:\\UI\\NewUI\\NewTaskbar.lua",
-		activated = 0,		
-	},
-	{
 		name = "ResourceMenu",
 		filename = "DATA:\\UI\\NewUI\\Resource.lua",
 		activated = 0,
+		type = "ResourceMenu",
 	},	
 	{
 		name = "EventsScreen",
@@ -527,7 +338,12 @@ GameScreens = {
 		activated = 0,
 		type = "RightClickMenu",
 	},
-
+	{
+		name = "RightClickRadialMenu",
+		filename = "DATA:\\UI\\NewUI\\RightClickRadialMenu.lua",
+		activated = 0,
+		type = "RightClickRadialMenu",
+	},
 	{
 		name = "DiplomacyScreen",
 		filename = "DATA:\\UI\\NewUI\\DiplomacyScreen.lua",
@@ -627,7 +443,12 @@ GameScreens = {
 		activated = 0,
 		type = "GameOverScreen",
 	},	
-	
+	{
+		name = "bentusidialog",
+		filename = "DATA:\\UI\\NewUI\\BentusiDialog.lua",
+		activated = 0,
+	},	
+
 	{
 		name = "PlaybackMenu",
 		filename = "DATA:\\UI\\NewUI\\Playback\\PlaybackMenu.lua",
@@ -690,5 +511,19 @@ GameScreens = {
 		filename = "DATA:\\UI\\NewUI\\Developer\\GameBalanceScreen.lua",
 		activated =0, -- Activate on front end startup (default is zero)
 		type = "GameBalanceScreen",  -- Type of menu (default is UIScreen)
+	},
+	{
+		-- This is the LuaScript that has the code for the screen
+		name = "DeveloperScreen",
+		filename = "DATA:\\UI\\NewUI\\Developer\\DeveloperScreen.lua",
+		activated =0, -- Activate on front end startup (default is zero)
+		type = "DeveloperScreen",  -- Type of menu (default is UIScreen)
+	},
+	{
+		-- This is the LuaScript that has the code for the screen
+		name = "InGameModScreen",
+		filename = "DATA:\\UI\\NewUI\\Modder\\InGameModScreen.lua",
+		activated =0, -- Activate on front end startup (default is zero)
+		type = "InGameModScreen",  -- Type of menu (default is UIScreen)
 	},
 }

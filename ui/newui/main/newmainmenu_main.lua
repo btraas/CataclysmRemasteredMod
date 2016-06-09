@@ -59,6 +59,16 @@ NewMainMenu = {
 				size_WH = LAYOUT_FILLSCREEN,
 			},	
 
+		BackgroundGraphic = {
+            type = "Graphic",
+            --size = {2048, 1024},
+            --textureUV = { 0, 0, 2048, 1024},
+            uvRect = { 0, 1, 1, 0 },
+            texture = "Data:UI\\NewUI\\Background\\main_bg.tga", -- multires texture
+
+        },
+
+
 --		BackgroundGraphic = {
 --			size = { 800, 400 },
 --			texture = "DATA:UI/NewUI/Background/load_background.mres",

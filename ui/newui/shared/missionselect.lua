@@ -164,38 +164,13 @@ MissionSelect = {
 	-- BOTTOM NAVIGATION FRAME
 	------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type = "RmWindow",
 		name = "frmRootbottombigfrm",
 
-		Layout = {
-			--pos_XY = {	x = 0.10, y = 0.20, xr = "par",	yr = "par"	},	
-			margin_LT = { l = 0, t = PANEL_SPACING_VERT, lr = "scr", tr = "scr" },
-			pad_LT = { l = PANEL_PAD_HORIZ, t = PANEL_PAD_VERT, lr = "scr", tr = "scr" },
-			pad_RB = { r = PANEL_PAD_HORIZ, b = PANEL_PAD_VERT, rr = "scr", br = "scr" },				
-			size_WH = {	w = 1.0, h = 1.0, wr = "par", hr = "px" },							
-		},		
-
-		autosize=1,
-			
-		BackgroundGraphic = BORDER_GRAPHIC_FRAME,
-		backgroundColor = COLOR_BACKGROUND_PANEL,
-
-		arrangetype = "horiz",
+		WindowTemplate = PANEL_NAVIGATIONFRAME,
 
 		;
 
-			
-		-- HELP TEXT
-		--{
-		--	type = "TextLabel",
-		--	position = {4,4},
-		--	size = {764,13},
-		--	name = "txtLblHELPTEXT",
-		--	Text = {					
-		--		textStyle = "FEHelpTipTextStyle",
-		--	},
-		--	;
-		--},
 			
 		-- BUTTONS
 			

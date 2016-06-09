@@ -804,8 +804,9 @@ T_Text_TitleBar = {
 			min_WH = { w = 64, 	h = 64,	wr = "abs_px",	hr = "abs_px" },					
 		},
 
-		backgroundColor = COLOR_BACKGROUND_SCREEN,
-		BackgroundGraphic = BORDER_GRAPHIC_FRAME,	
+		backgroundColor = {0,0,0,230},
+		--backgroundColor = COLOR_BACKGROUND_SCREEN,
+		--BackgroundGraphic = BORDER_GRAPHIC_FRAME,	
 
 		ContentAreaName = "Content",
 		TitleTextName = "TitleText",
@@ -982,14 +983,15 @@ PANEL_NAVIGATIONFRAME = {
 	name = "RM_Panel_NavigationStyle",		
 		
 	Layout = {
-		margin_LT = { l = 0, t = PANEL_SPACING_VERT, lr = "scr", tr = "scr" },
-		pad_LT = { l = PANEL_PAD_HORIZ, t = PANEL_PAD_VERT, lr = "scr", tr = "scr" },
+		margin_LT = { l = 0, t = 0-PANEL_SPACING_VERT, lr = "scr", tr = "scr" },
+		pad_LT = { l = PANEL_PAD_HORIZ, t = PANEL_PAD_VERT+PANEL_SPACING_VERT, lr = "scr", tr = "scr" },
 		pad_RB = { r = PANEL_PAD_HORIZ, b = PANEL_PAD_VERT, rr = "scr", br = "scr" },						
 		size_WH = {	w = 1.0, h = 1.0, wr = "par", hr = "px" },	
 	},
 
-	backgroundColor = COLOR_BACKGROUND_SCREEN,
-	BackgroundGraphic = BORDER_GRAPHIC_FRAME,	
+	backgroundColor = {0,0,0,255},
+	BackgroundGraphic = BORDER_GRAPHIC_BUILDFRAME_HORIZ,
+	--BackgroundGraphic = BORDER_GRAPHIC_FRAME,	
 	autosize=1,
 	ContentAreaName = "Content",
 	TitleTextName = "",   --This frame doesn't have a title		

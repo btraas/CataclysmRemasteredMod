@@ -39,7 +39,8 @@ NewMainMenu = {
 		backgroundColor = {0,0,0,0}, -- black background for letterbox effect -- GBX:pdeupree - Changed alpha to 0 so setting in "Background.lua" shows up.
 	},
 	Layout = {
-		pos_XY = {	x = 0, y = 0, xr = "scr",	yr = "scr"	},	
+		sector = 1,
+	--	pos_XY = {	x = 0, y = 0, xr = "scr",	yr = "scr"	},	
 		size_WH = {	w = 1.0, h = 1.0, wr = "scr", hr = "scr" },							
 	},		
 
@@ -55,9 +56,31 @@ NewMainMenu = {
 		name = "Root_Frame",
 		
 		Layout = {	
-				pos_XY = LAYOUT_TOPLEFTSCREEN,		
-				size_WH = LAYOUT_FILLSCREEN,
+				--pos_XY = LAYOUT_TOPLEFTSCREEN,		
+				--size_WH = LAYOUT_FILLSCREEN,
+
+				sector = 1,
+            --pos_XY = { x = 0.5, y = 0.5, xr = "par", yr = "par" },
+            size_WH = { w = 1, h = 1, wr = "scr", hr = "scr" },
+            pivot_XY = { 0.5, 0.5 },
+            pos_XY = { x = .5, y = .5, xr = "scr", yr = "scr" },
+            --size_WH = { w = 1, h = 1, wr = "scr", hr = "scr" },
+
+            lockAspect=-2,
+
+
+
 			},	
+
+		BackgroundGraphic = {
+            type = "Graphic",
+            --size = {2048, 1024},
+            --textureUV = { 0, 0, 2048, 1024},
+            uvRect = { 0, 1, 1, 0 },
+            texture = "Data:UI\\NewUI\\Background\\main_bg.tga", -- multires texture
+
+        },
+		
 
 --		BackgroundGraphic = {
 --			size = { 800, 400 },
