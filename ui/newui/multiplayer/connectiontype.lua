@@ -58,8 +58,8 @@ ConnectionType = {
 	{
 		type = "RmWindow",
 		WindowTemplate = SCREENHEADER_WINDOWSTYLE,
-		TitleText = "$2614", -- MULTIPLAYER
-		SubTitleText = "$3530", -- MANAGE PLAYER PROFILES
+		TitleText = "MULTIPLAYER", -- MULTIPLAYER
+		SubTitleText = "LOCAL | NETWORK | STEAM", -- MANAGE PLAYER PROFILES
 		--Extra1Text = "$2622", -- BETA
 		Layout = {	
 			size_WH = {	w = 1.0, h = 180.0/540, wr = "par", hr = "scr" },							
@@ -90,7 +90,7 @@ ConnectionType = {
 			type = "RmWindow",
 			WindowTemplate = PANEL_WINDOWSTYLE,
 
-			TitleText = "$3530",
+			TitleText = "GAME MODES",
 			-- SubtitleText = "$3531",
 
 			autosize=1,
@@ -114,9 +114,10 @@ ConnectionType = {
 
 				;
 				-- Buttons:
+				NewMenuButton("btnPlayerVsCPU",      "SKIRMISH VS CPU (Local)",    "Play vs CPU",    0,  LAYOUT_MENU_CONNECTION_BUTTONS, "FEButtonStyleCataLargeBlack",  "UI_ShowScreen('GameSetup', eTransition)"),
 				NewMenuButton("m_itemLAN",		"$3533",	"$3532",	0,	LAYOUT_MENU_CONNECTION_BUTTONS,	"FEButtonStyleCataLargeBlack",	nil),
-				NewMenuButton("m_itemSteam",	"$3537",	"$3536",	0,	LAYOUT_MENU_CONNECTION_BUTTONS,	"FEButtonStyleCataLargeBlack",	nil),
-				NewMenuButton("m_itemTCP",		"$3535",	"$3534",	0,	LAYOUT_MENU_CONNECTION_BUTTONS,	"FEButtonStyleCataLargeBlack",	"UI_ShowScreen('DirectConnection', eTransition)"),
+				NewMenuButton("m_itemTCP",      "$3535",    "$3534",    0,  LAYOUT_MENU_CONNECTION_BUTTONS, "FEButtonStyleCataLargeBlack",  "UI_ShowScreen('DirectConnection', eTransition)"),
+				NewMenuButton("m_itemSteam",	"ONLINE (Steam)",	"$3536",	0,	LAYOUT_MENU_CONNECTION_BUTTONS,	"FEButtonStyleCataLargeBlack",	nil),
 				
 			},
 		},

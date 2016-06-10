@@ -1,6 +1,5 @@
 dofilepath("data:ui/newui/DebugDefines.lua")
 
-
 ------------------------- HWRM Defines -------------------------
 
 ---------- GENERIC HELPER DEFINES -----------

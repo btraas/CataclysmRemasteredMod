@@ -238,6 +238,7 @@ FEGameOptions = {
 			-- BUTTONS			
 			NewMenuButton("m_btnBack",					"$2613",	"$5274",	0,	BTN_FOOTER_STD_LAYOUT,	"FEButtonStyleCataMedBlack",	"UI_PreviousScreen(eTransition)"),
 			NewMenuButton("m_btnRestoreDefaultOptions",	"$5142",	"$5275",	0,	BTN_FOOTER_STD_LAYOUT,	"FEButtonStyleCataLargeBlack",	nil),
+			NewMenuButton("btnProfile", "PROFILE",    "Chane user profile",    0,  BTN_FOOTER_STD_LAYOUT,  "FEButtonStyleCataMedBlack",  [[UI_SetNextScreen("UserProfile", "FEGameOptions");UI_SetPreviousScreen("UserProfile", "FEGameOptions");UI_ShowScreen("UserProfile", eTransition);]]),
 			NewMenuButton("m_btnAccept",				"$5143",	"$5276",	0,	BTN_FOOTER_YES_LAYOUT,	"FEButtonStyleCataMedBlack",	nil),
 			
 		},		
