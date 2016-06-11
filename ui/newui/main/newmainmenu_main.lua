@@ -4,6 +4,8 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 dofilepath("data:ui/newui/Background/logo.lua")
 dofilepath("data:ui/newui/Main/ExButtons.lua")
 
+dofilepath("data:ui/newui/Main/version.lua")
+
 LAYOUT_MENU_BUTTONS = 
 {
 	--min_WH = {	w = 1, wr = "par"},	
@@ -39,7 +41,8 @@ NewMainMenu = {
 		backgroundColor = {0,0,0,0}, -- black background for letterbox effect -- GBX:pdeupree - Changed alpha to 0 so setting in "Background.lua" shows up.
 	},
 	Layout = {
-		pos_XY = {	x = 0, y = 0, xr = "scr",	yr = "scr"	},	
+		sector = 1,
+	--	pos_XY = {	x = 0, y = 0, xr = "scr",	yr = "scr"	},	
 		size_WH = {	w = 1.0, h = 1.0, wr = "scr", hr = "scr" },							
 	},		
 
@@ -55,8 +58,20 @@ NewMainMenu = {
 		name = "Root_Frame",
 		
 		Layout = {	
-				pos_XY = LAYOUT_TOPLEFTSCREEN,		
-				size_WH = LAYOUT_FILLSCREEN,
+				--pos_XY = LAYOUT_TOPLEFTSCREEN,		
+				--size_WH = LAYOUT_FILLSCREEN,
+
+				sector = 1,
+            --pos_XY = { x = 0.5, y = 0.5, xr = "par", yr = "par" },
+            size_WH = { w = 1, h = 1, wr = "scr", hr = "scr" },
+            pivot_XY = { 0.5, 0.5 },
+            pos_XY = { x = .5, y = .5, xr = "scr", yr = "scr" },
+            --size_WH = { w = 1, h = 1, wr = "scr", hr = "scr" },
+
+            lockAspect=-2,
+
+
+
 			},	
 
 		BackgroundGraphic = {
@@ -67,7 +82,7 @@ NewMainMenu = {
             texture = "Data:UI\\NewUI\\Background\\main_bg.tga", -- multires texture
 
         },
-
+		
 
 --		BackgroundGraphic = {
 --			size = { 800, 400 },
@@ -88,7 +103,7 @@ NewMainMenu = {
 	--EXAMPLE_UITOOLBUTTONS,		-- Buttons
 	
 	-------- LOGO -------
-	BACKGROUND_LOGO,
+	--BACKGROUND_LOGO,
 	
 	----------------------------------- MAIN MENU  -----------------------------------
 	-- Panel frame
@@ -153,33 +168,33 @@ NewMainMenu = {
 					type = "Frame",
 					size = {200, 4},
 				},	
---				NewMenuButton("btnExtra",			"SINGLE PLAYER (INCOMPLETE)",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
---				{
---					type = "Frame",
---					size = {200, 4},
---				},
-				NewMenuButton("btnPlayerVsCPU",		"SKIRMISH VS CPU",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
+				--NewMenuButton("btnExtra",			"SINGLE PLAYER",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
+				--{
+				--	type = "Frame",
+				--	size = {200, 4},
+				--},
+				NewMenuButton("btnDummy",		"SINGLE PLAYER",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	nil),
 				{
 					type = "Frame",
 					size = {200, 4},
 				},	
-				NewMenuButton("btnMultiplayer",		"MULTIPLAYER",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	"UI_ShowScreen('BetaPopupScreen', eTransition);"),
+				NewMenuButton("btnPlayerVsCPU",		"MULTIPLAYER",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	"UI_ShowScreen('ConnectionType', eTransition);"),
 				{
 					type = "Frame",
 					size = {200, 4},
 				},
-				NewMenuButton("btnProfile",		"PROFILE",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	[[UI_SetNextScreen("UserProfile", "NewMainMenu");UI_SetPreviousScreen("UserProfile", "NewMainMenu");UI_ShowScreen("UserProfile", eTransition);]]),
-				{
-					type = "Frame",
-					size = {200, 4},
-				},	
+			--	NewMenuButton("btnProfile",		"PROFILE",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	[[UI_SetNextScreen("UserProfile", "NewMainMenu");UI_SetPreviousScreen("UserProfile", "NewMainMenu");UI_ShowScreen("UserProfile", eTransition);]]),
+			--	{
+			--		type = "Frame",
+			--		size = {200, 4},
+			--	},	
 				NewMenuButton("btnOptions",		"OPTIONS",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	"UI_ShowScreen(\"FEGameOptions\", eTransition)"),
 				{
 					type = "Frame",
 					size = {200, 4},
 				},	
---				NewMenuButton("btnMovies",		"CREDITS",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	"UI_ShowScreen(\"PlayMoviesScreen\", eTransition)"),
---				
+				NewMenuButton("btnMovies",		"CREDITS",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyleCataMain",	"UI_ShowScreen(\"PlayMoviesScreen\", eTransition)"),
+				
 			
 				-- Spacer (This keeps the width as well)
 				{
@@ -230,8 +245,8 @@ NewMainMenu = {
 			type = "Frame",
 			
 			Layout = {
-				pos_XY = { x = 0.95, y = 0.95, xr = "scr", yr = "scr" },
-				size_WH = { w = 0.0, h = 0.0, wr = "px", hr = "px" },
+				pos_XY = { x = 0.2, y = 0.05, xr = "scr", yr = "scr" },
+				size_WH = { w = 0, h = 0, wr = "px", hr = "px" },
 				pivot_XY = { 1.0, 1.0 },
 			},
 			
@@ -239,16 +254,16 @@ NewMainMenu = {
 			autosize = 1,
 			sizetype = "contain",
 			arrangetype = "horiz",
-			
-			BackgroundGraphic = {
-				texture = "DATA:UI\\NewUI\\Elements\\ui_textshadow.tga",
-				uvRect = { 4/32, 4/32, 28/32, 28/32 },
-				patch_X = { 9, -6, 9, 0 },
-				patch_Y = { 9, -6, 9, 0 },
-				patch_PadX = { 8, -8 },
-				patch_PadY = { 4, -4 },
-				patch_Scale = 1,
-			};
+			;
+			--BackgroundGraphic = {
+			--	texture = "DATA:UI\\NewUI\\Elements\\ui_textshadow.tga",
+			--	uvRect = { 4/32, 4/32, 28/32, 28/32 },
+			--	patch_X = { 9, -6, 9, 0 },
+			--	patch_Y = { 9, -6, 9, 0 },
+			--	patch_PadX = { 8, -8 },
+			--	patch_PadY = { 4, -4 },
+			--	patch_Scale = 1,
+			--};
 			
 			-- Build Number
 			{
@@ -265,7 +280,7 @@ NewMainMenu = {
 				sizetype = "contain",
 				ignored = 1,
 				--Uncomment to hide...
-				--visible = 0,
+				visible = 0,
 				
 				Text = {				
 					font = "ListBoxItemFont",
@@ -288,12 +303,12 @@ NewMainMenu = {
 				sizetype = "contain",
 				
 				Text = {	
-					text = "$1221",
+					text = "CATACLYSM REMASTERED v" .. CRMOD_VERSION,
 					font = "ButtonFont",
-					hAlign = "Right",
+					hAlign = "Left",
 					vAlign = "Top",
-					color = {119,166,191,255},
-					offset = {-2, 0},
+					color = {79,77,125,255},
+					--offset = {-2, 0},
 				},
 			},
 		},

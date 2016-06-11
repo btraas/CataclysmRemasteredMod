@@ -895,7 +895,7 @@ NewBuildMenu = {
 		name = "showAllItemToClone",
 		visible = 0,
 		enabled = 0,
-		selectable = 0,
+		selectable = 1,
 		
 		Layout = {			
 			size_WH = {	w = 1, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						

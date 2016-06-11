@@ -342,8 +342,6 @@ HW2StyleSheet.FEButtonStyleCataMedBlack =
 		},
 	};	
 
-HW2StyleSheet.defaultButtonStyle = HW2StyleSheet.FEButtonCataMedBlack;
-	
 HW2StyleSheet.FEButtonStyle1 = HW2StyleSheet.FEButtonCataMedBlack; 
 HW2StyleSheet.FEButtonStyle1_Chipped = HW2StyleSheet.FEButtonCataMedBlack; 
 HW2StyleSheet.FEButtonStyle1_Alert_Chipped =  HW2StyleSheet.FEButtonCataMedBlack; 

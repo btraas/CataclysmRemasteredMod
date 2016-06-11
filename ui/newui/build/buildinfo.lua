@@ -5,18 +5,22 @@ BUILDINFO_OUTLINECOLOR = {244,213,0,255}
 
 BuildInfo = {
 	Layout = {
-		pos_XY = { x=500, y = 20, xr = "par", yr = "par" },
+		--pos_XY = { x=0.5, y = 0.6, xr = "scr", yr = "scr" },
+		pos_XY = LAYOUT_CENTERSCREEN,		
+		--size_WH = {	w = 0.5, h = 0.5, wr = "scr", hr = "scr" },		
+		
+
 	},
 	size = {0, 0, BUILDINFO_WIDTH, 66},
-	resolution = {800, 600},
-	stylesheet = "HW2StyleSheet",
+	--resolution = {800, 600},
+	--stylesheet = "HW2StyleSheet",
 	
 	RootElementSettings = {
 		autosize = 1,
 	},
 	
 	-- Flags
-	pixelUVCoords = 1, -- Enter pixel coords for texture coords
+	pixelUVCoords = 0, -- Enter pixel coords for texture coords
 	;
 	
 	{
