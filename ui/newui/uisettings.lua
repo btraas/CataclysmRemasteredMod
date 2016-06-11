@@ -272,6 +272,14 @@ GameScreens = {
 		type = "ObjectivesList",
 	},
 	
+	{
+        name = "rank",
+        filename = "DATA:\\UI\\NewUI\\rank.lua",
+        activated = 0,
+	},
+
+
+
 	-- Build menu must be loaded before the research menu
 	{
 		name = "NewBuildMenu",

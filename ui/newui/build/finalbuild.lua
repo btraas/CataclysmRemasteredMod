@@ -11,9 +11,9 @@ UNITCAPSREACHEDCOLOR1 = {180,0,0,255} -- outline color
 UNITCAPSREACHEDCOLOR2 = {255,0,0, 30} -- background color
 
 dofilepath("data:ui/newui/build/collapsablequeue.lua")
+dofilepath("data:ship/icons/shipicons.lua")
 
-
-
+ship = "Smt_rammingfrigate"
 
 NewBuildMenu = {
 
@@ -625,7 +625,7 @@ NewBuildMenu = {
 				name = "ShipsThatBuildFrame",		
 
 				Layout = {	
-					max_WH = {	w= 1.0, h = .5,  wr="par", hr = "par_min" },	
+					max_WH = {	w= 1.0, h = 1,  wr="par", hr = "par_min" },	
 					min_WH = {	w = 1.0, h = .1, wr = "par", hr = "par" },
 				},
 
@@ -653,7 +653,7 @@ NewBuildMenu = {
 						buttonStyle = "IGPrevButton",
 						toggleButton = 0,
 						Layout = {								
-							size_WH = {	w = 16/800, h = 1, wr = "scr_min", hr = "par" },
+							size_WH = {	w = 16/75, h = 1, wr = "scr_min", hr = "par" },
 						--	Flags = {hasVolume = 0 },
 						},
 						helpTip = "$5203", -- PREVIOUS BUILD SHIP
@@ -760,7 +760,7 @@ NewBuildMenu = {
 						toggleButton = 0,
 						buttonStyle = "IGNextButton",					
 						Layout = {								
-							size_WH = {	w = 16/800, h = 1, wr = "scr_min", hr = "par" },
+							size_WH = {	w = 16/75, h = 1, wr = "scr_min", hr = "par" },
 						--	Flags = {hasVolume = 0 },
 						},
 						helpTip = "$5202", -- NEXT BUILD SHIP
@@ -770,8 +770,99 @@ NewBuildMenu = {
 
 				},
 			},
-			---------------------- END Ship Selection Area ----------------------
-	}, -- end RIGHT column
+			{
+				type = "Frame",
+				name = "ShipToBuildFrame",		
+				arrangetype = 'vert',
+				Layout = {	
+					max_WH = {	w= 1.0, h = 1,  wr="par", hr = "par_min" },	
+					min_WH = {	w = 1.0, h = 0.55, wr = "par", hr = "par" },
+				},
+
+		
+				--BackgroundGraphic = DECO_GRID,
+				--backgroundColor = COLOR_BACKGROUND_SUBPANEL,
+				backgroundColor = COLOR_BLUE_SOLID,
+				--backgroundColor          = COLOR_LISTITEM,
+				
+				--borderWidth = 1,
+				--borderColor = { 255, 255, 255, 255},
+				--backgroundColor = COLOR_RED_SOLID,	
+				-- Ship graphic
+				;
+						{	
+							type = "Frame",
+							name = "preview",
+					
+							Layout = {		
+								max_WH = {	w = 0.9, h = 0.7, wr = "par", hr = "par" },	
+								size_WH = {	w = 500, h = 1.0, wr = "px", hr = "par" },								
+								pos_XY = { x = 0.5, xr = "par" },		
+								pivot_XY = { .5,  0 },		
+								lockAspect=2,
+								Flags = {hasVolume = 0 },		
+							},			
+
+							backgroundGraphicHAlign = "Center",
+							backgroundGraphicVAlign = "Center",
+					
+							position = {4, 22},
+							size = {256,512},
+							--BackgroundGraphic = Smt_Acolyte.LargeIcon,
+							BackgroundGraphic = {
+								texture = "data:ship\\previews\\"..ship..".dds",
+								--textureUV = {0,0,128,128},
+								color = OUTLINECOLOR,
+								stretchOnDraw = 0,
+							},
+							
+						},
+						
+			},
+			{
+								type = "TextLabel",
+								backgroundColor = COLOR_RED_SOLID,
+								position = { 0, 0, },
+								size = { 100, 15, },
+								Text = 
+								{
+									textStyle = "FEHeading2",
+									vAlign = "Top",
+									text = "FIREPOWER: 360",
+								}
+							},
+							{
+								type = "TextLabel",
+								backgroundColor = COLOR_RED_SOLID,
+								position = { 0, 15, },
+								size = {100,15},
+								Text = 
+								{
+									textStyle = "FEHeading2",
+									vAlign = "Top",
+									text = "SPEED: 360",
+								}	
+							},
+							{
+								type = "TextLabel",
+								backgroundColor = COLOR_RED_SOLID,
+								position = { 0, 30, },
+								size = {100,15},
+								Text = 
+								{
+									textStyle = "FEHeading2",
+									vAlign = "Top",
+									text = "ARMOR: 360",
+								}	
+							},
+			---------------------- END Ship Preview Area ----------------------
+			---------------------- Ship Stats Area ----------------------------
+			{
+							
+			},			
+			
+			---------------------- END Ship stats Area ----------------------
+		}, -- end RIGHT column
 	}, -- end column wrapper
 
 	
