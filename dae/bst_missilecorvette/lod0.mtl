@@ -1,0 +1,27 @@
+﻿newmtl Tur_MissileCorvette
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Tur_MissileCorvette_DIFF2.dds
+
+newmtl Tur_MissileCorvette_Engine
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd missilecorvetteeng2.dds
+
+newmtl Tur_MissileCorvetteLauncher
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Tur_MissileCorvetteRockets_DIFF2.dds
+

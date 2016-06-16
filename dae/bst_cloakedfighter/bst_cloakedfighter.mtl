@@ -1,0 +1,27 @@
+﻿newmtl Kus_CloakedFighter
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd diff.dds
+
+newmtl Kus_CloakedFighterEngine
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Kus_CloakedFighterEngine_DIFX.dds
+
+newmtl Kus_CloakedFighterBadge
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd diff.dds
+

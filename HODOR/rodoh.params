@@ -1,0 +1,13 @@
+	## Yelow13 RODOH script
+= -$SHIPS_BASE=..\ship
+= -$DAE_BASE=..\dae
+= -$SHADER_MAP=.\SHADERS.MAP
+= -setmask=*.hod
+= -dump
+= -log
+= -$CONVERT_IN=$[SHIPS_BASE]\$[SHIP_NAME]\$[SHIP_NAME].hod
+= -$CONVERT_OUT=$[DAE_BASE]\$[SHIP_NAME]\$[SHIP_NAME].dae
+= -do=convert
+= -action=null
+##= -wait
+

@@ -1,0 +1,96 @@
++DET
+
+OBJATTR setObjectAttributes(#FLAGS#, 0)
+	!GLOBAL_SET
+
+SQUADRON addSquadron($SQUAD$, $TYPE$, !POS!, !PLAYER!, !ROT!, #SIZE#, #HYPER#)
+	!MESH $[HW2_ART]\Data\Ship\$[TYPE]\$[TYPE].HOD
+	!SOB_AS SQUAD
+	!NIS ship
+	
+MISSILE addMissile($TYPE$, !POS!, !PLAYER!, !ROT!)
+	!MESH $[HW2_ART]\Data\Missile\$[TYPE]\$[TYPE].HOD
+	!NIS missile
+
+ROCKY addAsteroid($TYPE$, !POS!, #RU#, !ROTL!, #REACT#)
+	!MESH $[HW2_ART]\Data\Resource\Asteroid\$[TYPE]\$[TYPE].HOD
+	!GLOBAL_USE FLAGS
+	!NIS asteroid
+	
+SALVA addSalvage($TYPE$, !POS!, #RU#, !ROTL!, #REACT#)
+	!MESH $[HW2_ART]\Data\Resource\Salvage\$[TYPE]\$[TYPE].HOD
+	!GLOBAL_USE FLAGS
+	!NIS salvage
+
+CAMOBJ addCamera($NAME$, !TARG!, !POS!)
+	!NIS camera
+
+POINT addPoint($NAME$, !POS!, !ROT!)
+PATH addPath($GROUP$, !...!)
+	!GATHER POINT NAME
+	
+DUST addDustCloud($GROUP$, $TYPE$, !POS!, !RGBA!, ^SPIN^, ^RADIUS^)
+	!GLOBAL_USE FLAGS
+	
+DUSTRES addDustCloudWithResources($GROUP$, $TYPE$, !POS!, #RU#, !RGBA!, ^SPIN^, ^RADIUS^, #REFILL#)
+	!GLOBAL_USE FLAGS
+	
+NEBU addNebula($GROUP$, $TYPE$, !POS!, !RGBA!, ^SPIN^, ^RADIUS^)
+	!GLOBAL_USE FLAGS
+	
+NEBURES addNebulaWithResources($GROUP$, $TYPE$, !POS!, #RU#, !RGBA!, ^SPIN^, ^RADIUS^, #REFILL#)
+	!GLOBAL_USE FLAGS
+	
+TENNODE addTendrilNode(!POS!)
+	!NO_SCRIPT
+	
+TENDRILS addTendrils(!...!)
+	!GATHER TENNODE POS
+
+SPHERE addSphere($NAME$, !POS!, ^RADIUS^)
+AABOX addAxisAlignBox($NAME$, !POS!, ^SIZE^)
+
+-DEADTENDRILS startNebulaTendril($GROUP$, #INDEX#)
+-DEADTENDRILA addToNebulaTendril($GROUP$, #INDEX#)
+-DEADTENDRILE endNebulaTendril($GROUP$, #INDEX#)
+
+GROUP createSOBGroup($NAME$)
+MEMBER addToSOBGroup($SOB$, @$NAME$@)
+	!NEST GROUP
+	!SOB_LINK SOB
+
+-RESPATCH addResourcePatch($TYPE$, !POS!, #RU#, !ROTL!)
+
++NON
+PEB addPebble($TYPE$, !POS!, !ROTL!)
+	!MESH $[HW2_ART]\Data\Pebble\$[TYPE]\$[TYPE].HOD
+	!NIS pebble
+
+REACTFL addReactiveFleetSlot($GROUP$, !PLAYER!, #HYPER#, !POS!, !ROTL!, $TYPES$)
+	
+CLOUD addCloud($GROUP$, $TYPE$, !POS!, !RGBA!, ^SPIN^, ^RADIUS^)
+
+REACTRES addReactiveFleetResourceSlot($TYPE$, !POS!, !ROTL!)
+REACTDUST addReactiveFleetResourceSlotDustCloud($GROUP$, $TYPE$, !POS!, #RU#, ^ROTZ^, ^RADIUS^)
+REACTSALV addReactiveFleetResourceSlotSalvage($TYPE$, !POS!, !ROTL!)
+	
+SOUND addAmbientSound($PATCH$, !POS!)
+FOGSET fogSetActive(#ACTIVE#)
+FOGNEAR fogSetStart(#NEAR#)
+FOGFAR fogSetEnd(#FAR#)
+FOGRGBA fogSetColour(^R^, ^G^, ^B^, ^A^)
+FOGTYPE fogSetType($TYPE$)
+FOGDENS fogSetDensity(^DENSITY^)
+BTG loadBackground($BTG$)
+SENSECAM setSensorsManagerCameraDistances(#NEAR#, #FAR#)
+SENSETRIG setSensorsThreshold(^START^, ^END^, ^DIM^)
+WORLDIN setWorldBoundsInner(!POS!, !OFS!)
+WORLDOUT setWorldBoundsOuter(!POS!, !OFS!)
+MUSIC setDefaultMusic($TRACK$)
+FXWIND setFXWind(!OFS!)
+
+DUSTAMB setDustCloudAmbient(!RGBA!)
+NEBUAMB setNebulaAmbient(!RGBA!)
+
+-GLARE setGlareIntensity(^GLARE^)
+-SHADOW setLevelShadowColour(^R^, ^G^, ^B^, ^A^)
