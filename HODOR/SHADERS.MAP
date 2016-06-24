@@ -205,7 +205,7 @@
 	$normal[DXT1] = 5 5 1 1
 		NORM[B] = R G B 1
 		
-+bg_moon
++bg_moon,bg_planetoid
 	$terrain[DXT1] = 1 1 1 1
 		DIFF = R G B 1
 	$night[DXT1] = 0 0 0 1
@@ -231,6 +231,16 @@
 		MASK = R G B A
 	$warp[DXT1] = 5 5 0 1
 		WARP = R G B 1
+		
++bg_cosmic_an
+	$matter[DXT5] = 1 1 1 1
+		DIFF = R G B A
+	$mask[DXT5] = 1 1 1 1
+		MASK = R G B A
+	$warp[DXT1] = 5 5 0 1
+		WARP = R G B 1
+	$normal[DXT1] = 5 5 1 1
+		NORM[B] = R G B 1
 		
 # Basic FX shader...
 +fx,fxSolid,fxSolidAlphaTest,fx_a,fx_s,fx_harvest
@@ -259,7 +269,11 @@
 	$diffuse[DXT1] = 0 0 0 1
 		DIFF = R G B 1
 	
-# Conversions for old Nebula	
+# Conversions for old Nebula
++dustCloudFlash
+	$diffuse[8888] = 1 1 1 1
+		DIFF = R G B A
+		
 +dustCloudNebula
 	$diffuse[8888] = 1 1 1 1
 		DIFF = R G B A

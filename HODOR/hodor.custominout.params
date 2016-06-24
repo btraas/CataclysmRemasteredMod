@@ -1,0 +1,12 @@
+= -$CRMOD_BASE=C:\MOD\CRMod
+#= -$SHIP_NAME=bst_attackbomber
+#= -$INPUT_BASE=DAE
+#= -$OUTPUT_BASE=SHIP
+= -$SHADER_MAP=$[CRMOD_BASE]\HODOR\SHADERS.MAP
+= -$SHADE_OPT_LOADDAE=Force8888
+= -$HOD_SAVE_OPTS=ForceScars FilterScars=thruster,bay
+= -$CONVERT_IN=$[CRMOD_BASE]\$[INPUT_BASE]\$[SHIP_NAME]\$[SHIP_NAME].DAE
+= -$CONVERT_OUT=$[CRMOD_BASE]\$[OUTPUT_BASE]\$[SHIP_NAME]\$[SHIP_NAME].HOD
+= -do=convert
+= -action=null
+#= -wait

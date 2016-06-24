@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <author>RODOH</author>
+            <authoring_tool>RODOH Apr 16 2015 17:44:57</authoring_tool>
+        </contributor>
+        <unit meter="0.010000" name="centimeter" />
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images />
+    <library_materials>
+        <material id="MAT[hw2Shader]_SHD[innateSS]" name="MAT[hw2Shader]_SHD[innateSS]">
+            <instance_effect url="#MAT[hw2Shader]_SHD[innateSS]-fx" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="MAT[hw2Shader]_SHD[innateSS]-fx" name="MAT[hw2Shader]_SHD[innateSS]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <color sid="diffuse">0.500000 0.500000 0.500000 1.000000</color>
+                        </diffuse>
+                        <specular>
+                            <color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="MULT[Root_mesh]_LOD[0]-lib" name="MULT[Root_mesh]_LOD[0]Mesh">
+            <mesh>
+                <source id="MULT[Root_mesh]_LOD[0]-POSITION">
+                    <float_array id="MULT[Root_mesh]_LOD[0]-POSITION-array" count="18"> -48.787601 6.233020 -16.000000 -48.787601 105.896004 0.079895 46.779598 6.232990 -16.000000 -32.768101 -105.896004 16.000000 32.767899 -105.896004 16.000000 48.787601 105.896004 0.079895</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Root_mesh]_LOD[0]-POSITION-array" count="6" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[Root_mesh]_LOD[0]-Normal0">
+                    <float_array id="MULT[Root_mesh]_LOD[0]-Normal0-array" count="18"> -0.000000 -0.132670 -0.991160 0.000000 0.159283 -0.987233 0.000000 0.015031 -0.999887 0.000000 -0.274428 -0.961608 -0.000000 -0.274428 -0.961608 0.000000 0.159283 -0.987233</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Root_mesh]_LOD[0]-Normal0-array" count="6" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[Root_mesh]_LOD[0]-UV0">
+                    <float_array id="MULT[Root_mesh]_LOD[0]-UV0-array" count="12"> 0.004950 0.529138 0.004950 0.995050 0.974673 0.529138 0.167502 0.004951 0.832498 0.004951 0.995049 0.995050</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Root_mesh]_LOD[0]-UV0-array" count="6" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="MULT[Root_mesh]_LOD[0]-VERTEX">
+                    <input semantic="POSITION" source="#MULT[Root_mesh]_LOD[0]-POSITION" />
+                </vertices>
+                <triangles count="4" material="MAT[hw2Shader]_SHD[innateSS]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[Root_mesh]_LOD[0]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[Root_mesh]_LOD[0]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[Root_mesh]_LOD[0]-UV0" />
+                    <p>0 0 0 1 1 1 2 2 2 3 3 3 0 0 0 4 4 4 2 2 2 4 4 4 0 0 0 1 1 1 5 5 5 2 2 2 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+        <geometry id="COL[Root]-lib" name="COL[Root]Mesh">
+            <mesh>
+                <source id="COL[Root]-POSITION">
+                    <float_array id="COL[Root]-POSITION-array" count="36"> -48.787601 6.233020 -16.000000 -48.787601 105.896004 0.079895 46.779598 6.232990 -16.000000 -32.768101 -105.896004 16.000000 -48.787601 6.233020 -16.000000 32.767899 -105.896004 16.000000 46.779598 6.232990 -16.000000 32.767899 -105.896004 16.000000 -48.787601 6.233020 -16.000000 -48.787601 105.896004 0.079895 48.787601 105.896004 0.079895 46.779598 6.232990 -16.000000</float_array>
+                    <technique_common>
+                        <accessor source="#COL[Root]-POSITION-array" count="12" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="COL[Root]-VERTEX">
+                    <input semantic="POSITION" source="#COL[Root]-POSITION" />
+                </vertices>
+                <triangles count="4">
+                    <input semantic="VERTEX" offset="0" source="#COL[Root]-VERTEX" />
+                    <p>0 1 2 3 4 5 6 7 8 9 10 11 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_animations />
+    <library_visual_scenes>
+        <visual_scene id="ksh_sec_ms_innate_resource" name="ksh_sec_ms_innate_resource">
+            <node name="ROOT_COL" id="ROOT_COL" sid="ROOT_COL">
+                <translate sid="translate">-243.938019 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="COL[Root]" id="COL[Root]" sid="COL[Root]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 -0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <instance_geometry url="#COL[Root]-lib" />
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_INFO" id="ROOT_INFO" sid="ROOT_INFO">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="UVSets[1]" id="UVSets[1]" sid="UVSets[1]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+                <node name="Class[MultiMesh]_Version[512]" id="Class[MultiMesh]_Version[512]" sid="Class[MultiMesh]_Version[512]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_LOD[0]" id="ROOT_LOD[0]" sid="ROOT_LOD[0]">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="MULT[Root_mesh]_LOD[0]" id="MULT[Root_mesh]_LOD[0]" sid="MULT[Root_mesh]_LOD[0]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <instance_geometry url="#MULT[Root_mesh]_LOD[0]-lib">
+                        <bind_material>
+                            <technique_common>
+                                <instance_material symbol="MAT[hw2Shader]_SHD[innateSS]" target="#MAT[hw2Shader]_SHD[innateSS]" />
+                            </technique_common>
+                        </bind_material>
+                    </instance_geometry>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <extra>
+                <technique profile="MAX3D">
+                    <frame_rate>30.000000</frame_rate>
+                </technique>
+                <technique profile="FCOLLADA">
+                    <start_time>0.000000</start_time>
+                    <end_time>0.0333333</end_time>
+                </technique>
+            </extra>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#ksh_sec_ms_innate_resource" />
+    </scene>
+</COLLADA>

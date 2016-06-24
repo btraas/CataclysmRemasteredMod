@@ -1,0 +1,27 @@
+﻿newmtl Tai_MultiGunCorvette
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Tai_MultiGunCorvette_DIFF2.dds
+
+newmtl Tai_MultiGunCorvette_Engine
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd tai_attackbomber_Engine_difx.dds
+
+newmtl Tai_MultiGunCorvette_badge
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Tai_MultiGunCorvette_DIFF2.dds
+

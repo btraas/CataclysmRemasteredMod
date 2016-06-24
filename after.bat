@@ -1,7 +1,7 @@
 @echo off
 Pushd "%~dp0"
 
-move ..\.git .\
+move ..\CRMOD_TMP\* .\
 
 del config.txt
 

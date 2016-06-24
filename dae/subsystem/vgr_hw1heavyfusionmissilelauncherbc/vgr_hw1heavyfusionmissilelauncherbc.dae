@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <author>RODOH</author>
+            <authoring_tool>RODOH Apr 16 2015 17:44:57</authoring_tool>
+        </contributor>
+        <unit meter="0.010000" name="centimeter" />
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images />
+    <library_materials>
+        <material id="MAT[hw2Shader]_SHD[innateSS]" name="MAT[hw2Shader]_SHD[innateSS]">
+            <instance_effect url="#MAT[hw2Shader]_SHD[innateSS]-fx" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="MAT[hw2Shader]_SHD[innateSS]-fx" name="MAT[hw2Shader]_SHD[innateSS]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <color sid="diffuse">0.500000 0.500000 0.500000 1.000000</color>
+                        </diffuse>
+                        <specular>
+                            <color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="MULT[Root_mesh]_LOD[0]-lib" name="MULT[Root_mesh]_LOD[0]Mesh">
+            <mesh>
+                <source id="MULT[Root_mesh]_LOD[0]-POSITION">
+                    <float_array id="MULT[Root_mesh]_LOD[0]-POSITION-array" count="24"> -8.888637 14.816454 -103.885521 -8.888637 3.081836 105.246437 8.880733 3.081828 105.246437 8.880734 14.816454 -103.885529 15.150867 2.367058 -105.246437 14.141832 -9.199804 105.138664 -15.165384 2.367066 -105.246422 -14.141832 -9.199797 105.138664</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Root_mesh]_LOD[0]-POSITION-array" count="8" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[Root_mesh]_LOD[0]-Normal0">
+                    <float_array id="MULT[Root_mesh]_LOD[0]-Normal0-array" count="18"> 0.000000 0.998429 0.056023 0.906607 0.421201 0.025576 -0.906625 0.421160 0.025605 0.000000 -0.008775 0.999961 -0.000000 0.108668 -0.994078 -0.000000 -0.998492 -0.054897</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Root_mesh]_LOD[0]-Normal0-array" count="6" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[Root_mesh]_LOD[0]-UV0">
+                    <float_array id="MULT[Root_mesh]_LOD[0]-UV0-array" count="24"> 0.000000 0.000000 0.000000 0.000000 0.513926 0.000000 0.783043 0.628255 0.428355 1.000000 0.546181 0.000000 0.744941 0.720102 0.276017 1.000000 0.001005 0.000000 1.000000 0.000000 0.998848 0.134090 0.000000 0.116987</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Root_mesh]_LOD[0]-UV0-array" count="12" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="MULT[Root_mesh]_LOD[0]-VERTEX">
+                    <input semantic="POSITION" source="#MULT[Root_mesh]_LOD[0]-POSITION" />
+                </vertices>
+                <triangles count="12" material="MAT[hw2Shader]_SHD[innateSS]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[Root_mesh]_LOD[0]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[Root_mesh]_LOD[0]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[Root_mesh]_LOD[0]-UV0" />
+                    <p>0 0 0 1 0 0 2 0 0 0 0 0 2 0 0 3 0 0 4 1 0 3 1 0 2 1 0 4 1 0 2 1 0 5 1 0 6 2 0 7 2 0 1 2 0 6 2 0 1 2 0 0 2 0 5 3 1 2 3 2 1 3 3 5 3 1 1 3 3 7 3 4 6 4 0 0 4 5 3 4 6 6 4 0 3 4 6 4 4 7 4 5 8 5 5 9 7 5 10 4 5 8 7 5 10 6 5 11 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+        <geometry id="COL[Root]-lib" name="COL[Root]Mesh">
+            <mesh>
+                <source id="COL[Root]-POSITION">
+                    <float_array id="COL[Root]-POSITION-array" count="24"> -8.888637 14.816454 -103.885521 -8.888637 3.081836 105.246437 8.880733 3.081828 105.246437 8.880734 14.816454 -103.885529 18.044765 -3.834403 -105.246437 16.843090 -15.401266 105.138664 -18.059280 -3.834395 -105.246422 -16.840319 -15.401258 105.138664</float_array>
+                    <technique_common>
+                        <accessor source="#COL[Root]-POSITION-array" count="8" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="COL[Root]-VERTEX">
+                    <input semantic="POSITION" source="#COL[Root]-POSITION" />
+                </vertices>
+                <triangles count="12">
+                    <input semantic="VERTEX" offset="0" source="#COL[Root]-VERTEX" />
+                    <p>5 2 1 3 6 0 5 1 7 3 4 6 0 1 2 0 2 3 6 7 1 4 2 5 4 3 2 6 1 0 4 5 7 4 7 6 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_animations />
+    <library_visual_scenes>
+        <visual_scene id="vgr_hw1heavyfusionmissilelauncherbc" name="vgr_hw1heavyfusionmissilelauncherbc">
+            <node name="ROOT_COL" id="ROOT_COL" sid="ROOT_COL">
+                <translate sid="translate">-90.260117 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="COL[Root]" id="COL[Root]" sid="COL[Root]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 -0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <instance_geometry url="#COL[Root]-lib" />
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_INFO" id="ROOT_INFO" sid="ROOT_INFO">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="UVSets[1]" id="UVSets[1]" sid="UVSets[1]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+                <node name="Class[MultiMesh]_Version[512]" id="Class[MultiMesh]_Version[512]" sid="Class[MultiMesh]_Version[512]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_LOD[0]" id="ROOT_LOD[0]" sid="ROOT_LOD[0]">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="JNT[Weapon_BCMissile_Position]" id="JNT[Weapon_BCMissile_Position]" sid="JNT[Weapon_BCMissile_Position]">
+                    <translate sid="translate">-0.003763 12.460656 -79.383896</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissile_Direction]" id="JNT[Weapon_BCMissile_Direction]" sid="JNT[Weapon_BCMissile_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissile_Latitude]" id="JNT[Weapon_BCMissile_Latitude]" sid="JNT[Weapon_BCMissile_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissile_Muzzle]" id="JNT[Weapon_BCMissile_Muzzle]" sid="JNT[Weapon_BCMissile_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissile_Rest]" id="JNT[Weapon_BCMissile_Rest]" sid="JNT[Weapon_BCMissile_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_BCMissileSlave1_Position]" id="JNT[Weapon_BCMissileSlave1_Position]" sid="JNT[Weapon_BCMissileSlave1_Position]">
+                    <translate sid="translate">-0.003763 10.511593 -38.170345</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissileSlave1_Direction]" id="JNT[Weapon_BCMissileSlave1_Direction]" sid="JNT[Weapon_BCMissileSlave1_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave1_Latitude]" id="JNT[Weapon_BCMissileSlave1_Latitude]" sid="JNT[Weapon_BCMissileSlave1_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissileSlave1_Muzzle]" id="JNT[Weapon_BCMissileSlave1_Muzzle]" sid="JNT[Weapon_BCMissileSlave1_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave1_Rest]" id="JNT[Weapon_BCMissileSlave1_Rest]" sid="JNT[Weapon_BCMissileSlave1_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_BCMissileSlave2_Position]" id="JNT[Weapon_BCMissileSlave2_Position]" sid="JNT[Weapon_BCMissileSlave2_Position]">
+                    <translate sid="translate">-0.003763 9.046700 -17.559267</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissileSlave2_Direction]" id="JNT[Weapon_BCMissileSlave2_Direction]" sid="JNT[Weapon_BCMissileSlave2_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave2_Latitude]" id="JNT[Weapon_BCMissileSlave2_Latitude]" sid="JNT[Weapon_BCMissileSlave2_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissileSlave2_Muzzle]" id="JNT[Weapon_BCMissileSlave2_Muzzle]" sid="JNT[Weapon_BCMissileSlave2_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave2_Rest]" id="JNT[Weapon_BCMissileSlave2_Rest]" sid="JNT[Weapon_BCMissileSlave2_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_BCMissileSlave3_Position]" id="JNT[Weapon_BCMissileSlave3_Position]" sid="JNT[Weapon_BCMissileSlave3_Position]">
+                    <translate sid="translate">-0.003763 7.359718 19.747339</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissileSlave3_Direction]" id="JNT[Weapon_BCMissileSlave3_Direction]" sid="JNT[Weapon_BCMissileSlave3_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave3_Latitude]" id="JNT[Weapon_BCMissileSlave3_Latitude]" sid="JNT[Weapon_BCMissileSlave3_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissileSlave3_Muzzle]" id="JNT[Weapon_BCMissileSlave3_Muzzle]" sid="JNT[Weapon_BCMissileSlave3_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave3_Rest]" id="JNT[Weapon_BCMissileSlave3_Rest]" sid="JNT[Weapon_BCMissileSlave3_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_BCMissileSlave4_Position]" id="JNT[Weapon_BCMissileSlave4_Position]" sid="JNT[Weapon_BCMissileSlave4_Position]">
+                    <translate sid="translate">-0.003763 6.045067 40.478210</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissileSlave4_Direction]" id="JNT[Weapon_BCMissileSlave4_Direction]" sid="JNT[Weapon_BCMissileSlave4_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave4_Latitude]" id="JNT[Weapon_BCMissileSlave4_Latitude]" sid="JNT[Weapon_BCMissileSlave4_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissileSlave4_Muzzle]" id="JNT[Weapon_BCMissileSlave4_Muzzle]" sid="JNT[Weapon_BCMissileSlave4_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave4_Rest]" id="JNT[Weapon_BCMissileSlave4_Rest]" sid="JNT[Weapon_BCMissileSlave4_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_BCMissileSlave5_Position]" id="JNT[Weapon_BCMissileSlave5_Position]" sid="JNT[Weapon_BCMissileSlave5_Position]">
+                    <translate sid="translate">-0.003763 4.850935 60.948383</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissileSlave5_Direction]" id="JNT[Weapon_BCMissileSlave5_Direction]" sid="JNT[Weapon_BCMissileSlave5_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave5_Latitude]" id="JNT[Weapon_BCMissileSlave5_Latitude]" sid="JNT[Weapon_BCMissileSlave5_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissileSlave5_Muzzle]" id="JNT[Weapon_BCMissileSlave5_Muzzle]" sid="JNT[Weapon_BCMissileSlave5_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave5_Rest]" id="JNT[Weapon_BCMissileSlave5_Rest]" sid="JNT[Weapon_BCMissileSlave5_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_BCMissileSlave6_Position]" id="JNT[Weapon_BCMissileSlave6_Position]" sid="JNT[Weapon_BCMissileSlave6_Position]">
+                    <translate sid="translate">-0.003763 3.785515 81.675117</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissileSlave6_Direction]" id="JNT[Weapon_BCMissileSlave6_Direction]" sid="JNT[Weapon_BCMissileSlave6_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave6_Latitude]" id="JNT[Weapon_BCMissileSlave6_Latitude]" sid="JNT[Weapon_BCMissileSlave6_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissileSlave6_Muzzle]" id="JNT[Weapon_BCMissileSlave6_Muzzle]" sid="JNT[Weapon_BCMissileSlave6_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave6_Rest]" id="JNT[Weapon_BCMissileSlave6_Rest]" sid="JNT[Weapon_BCMissileSlave6_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_BCMissileSlave_Position]" id="JNT[Weapon_BCMissileSlave_Position]" sid="JNT[Weapon_BCMissileSlave_Position]">
+                    <translate sid="translate">-0.003763 11.564764 -59.018524</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 -86.954536</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_BCMissileSlave_Direction]" id="JNT[Weapon_BCMissileSlave_Direction]" sid="JNT[Weapon_BCMissileSlave_Direction]">
+                        <translate sid="translate">0.000000 12.069919 -0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave_Latitude]" id="JNT[Weapon_BCMissileSlave_Latitude]" sid="JNT[Weapon_BCMissileSlave_Latitude]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_BCMissileSlave_Muzzle]" id="JNT[Weapon_BCMissileSlave_Muzzle]" sid="JNT[Weapon_BCMissileSlave_Muzzle]">
+                            <translate sid="translate">0.000000 0.000000 1.810047</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_BCMissileSlave_Rest]" id="JNT[Weapon_BCMissileSlave_Rest]" sid="JNT[Weapon_BCMissileSlave_Rest]">
+                        <translate sid="translate">0.000000 0.000000 10.053039</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="MULT[Root_mesh]_LOD[0]" id="MULT[Root_mesh]_LOD[0]" sid="MULT[Root_mesh]_LOD[0]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <instance_geometry url="#MULT[Root_mesh]_LOD[0]-lib">
+                        <bind_material>
+                            <technique_common>
+                                <instance_material symbol="MAT[hw2Shader]_SHD[innateSS]" target="#MAT[hw2Shader]_SHD[innateSS]" />
+                            </technique_common>
+                        </bind_material>
+                    </instance_geometry>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <extra>
+                <technique profile="MAX3D">
+                    <frame_rate>30.000000</frame_rate>
+                </technique>
+                <technique profile="FCOLLADA">
+                    <start_time>0.000000</start_time>
+                    <end_time>0.0333333</end_time>
+                </technique>
+            </extra>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#vgr_hw1heavyfusionmissilelauncherbc" />
+    </scene>
+</COLLADA>

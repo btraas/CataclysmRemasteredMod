@@ -10,16 +10,51 @@
 	$WARNING = "\033[33mWARNING\033[0m";
 
 	$prog = strtolower(@$argv[1]);
-	$src_dir = "../dae";
-	$build_dir = "../ship";
-	
+	$def_src_dir = "../dae";
+	$def_build_dir = "../ship";
 
-	if($prog=='rodoh') 		$inputFiles = "$build_dir/*/*.hod";
-	elseif($prog=='hodor') 	$inputFiles = "$src_dir/*.dae";
+	$input_dir = "";
+	$output_dir = "";	
+
+	$rodohrm=false;
+	$here=false;		// used for oddballs like fx
+
+	if($prog=='rodohrm') 
+	{
+		$prog='rodoh';
+		$rodohrm=true;
+	}
+
+	if($prog=='rodoh') 		
+	{
+		$input_dir  = empty(@$argv[2]) ? $def_build_dir : "../".$argv[2];
+		$output_dir = empty(@$argv[3]) ? $def_src_dir	: "../".$argv[3];
+
+		$ext = "hod";
+	}
+	elseif($prog=='hodor' || $prog=='hodor1')
+	{
+		$input_dir	= empty(@$argv[2]) ? $def_src_dir 	: "../".$argv[2];
+		$output_dir = empty(@$argv[3]) ? $def_build_dir : "../".$argv[3];	
+	
+		$ext = "dae";
+	}
 	else exit(1);
 
+
+	if(@$argv[3] == 'here') 
+	{
+		$output_dir = $input_dir;
+		$here = true;
+	}
+
+	$input_folder  = str_replace("../", "", $input_dir);
+	$output_folder = str_replace("../", "", $output_dir);
+
+	$inputFiles = $here ? "$input_dir/*.$ext" : "$input_dir/*/*.$ext";
+
 	echo "CRMod Convert v$VERSION - Brayden Traas".PHP_EOL.PHP_EOL;
-	echo "Using $prog...".PHP_EOL;
+	echo "Using $prog".($rodohrm ? " RM":"")."...".PHP_EOL;
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".PHP_EOL.PHP_EOL;
 
 
@@ -29,12 +64,21 @@
 
 	echo PHP_EOL.PHP_EOL;
 
+	`date > $prog.log`;
+	if($rodohrm) `date > rodohrm.log`;
+
 	foreach($ships AS $ship)
 	{
 		$ship = trim(substr($ship, strrpos($ship, '/') + 1));
 		$ship = strstr($ship, ".", true);
-		$cmd = "./$prog -"."\\$"."SHIP_NAME=$ship -script=$prog.params";
+
+		if($rodohrm) exec("php ./rodohrm.php $ship $input_folder >> rodohrm.log"); // convert to rm format
+
+
+		$script = $here ? "$prog.here.params" : "$prog.custominout.params";
+
+		$cmd = "./$prog -"."\\$"."SHIP_NAME=$ship -"."\\$"."INPUT_BASE=$input_folder -"."\\$"."OUTPUT_BASE=$output_folder -script=$script >> $prog.log";
 		echo "Converting $ship with cmd:$cmd".PHP_EOL.PHP_EOL;
 		exec($cmd);
 	}	
-
+?>

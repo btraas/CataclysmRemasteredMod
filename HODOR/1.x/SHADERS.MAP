@@ -1,0 +1,285 @@
+# Shader Channel <-> Source Image mapper
+# 4 values (RGBA) - lower-case means 'inverse of'
+# R - Red, G - Green, B - Blue, A - Alpha
+# 0/Z - Zero, 1/z - One, * - premul with final Alpha
+
+# Common ship shader, matte, etc
++ship,matte,matte2s,monolith,megalith,fxMatte
+	$diffuse[DXT1] = 1 1 1 1		# diffuse param
+		DIFF = R G B 1
+	$glow[DXT1]= 0 0 0 1
+		GLOW = G G G G
+		SPEC = B B B B
+		REFL = R R R R
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
++mattealpha,mattealpha2s,mattescissor,mattescissor2s,fxMatte_a,fxMatte_s
+	$diffuse[DXT5] = 1 1 1 1		# diffuse param
+		DIFF = R G B A
+	$glow[DXT1]= 0 0 0 1
+		GLOW = G G G G
+		SPEC = B B B B
+		REFL = R R R R
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
++fx_burn,salvage_burn
+	$diffuse[DXT5] = 1 1 1 1		# diffuse param
+		DIFF = R G B A
+	$glow[DXT1]= 0 0 0 1
+		GLOW = R G B 1
+	$spec[DXT1]=0 0 0 1
+		PAIN = G G G G
+		SPEC = B B B B
+		REFL = R R R R
+	$progress[DXT1]=1 1 1 1
+		PROG = R G B 1
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
++shipglow		# Ship, but with a discrete glow map
+	$diffuse[DXT1] = 1 1 1 1		# diffuse param
+		DIFF = R G B 1
+	$spec[DXT1]= 0 0 0 1
+		SPEC = B B B B
+		REFL = R R R R
+	$glow[DXT1]=0 0 0 1
+		GLOW = R G B 1
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
++shipglow_ns		# Ship, but with a discrete glow map (and no scars)
+!NoScars
+	$diffuse[DXT1] = 1 1 1 1		# diffuse param
+		DIFF = R G B 1
+	$spec[DXT1]= 0 0 0 1
+		SPEC = B B B B
+		REFL = R R R R
+	$glow[DXT1]=0 0 0 1
+		GLOW = R G B 1
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
++bay
+!NoScars
+	$diffuse[DXT1] = 1 1 1 1		# diffuse param
+		DIFF = R G B 1
+	$glow[DXT1]= 0 0 0 1
+		GLOW = G G G G
+		SPEC = B B B B
+		REFL = R R R R
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
+# Engine Thrusters
++thruster
+!NoScars
+	$diffuseOn[DXT1] = 1 1 1 1
+		DIFF = R G B 1
+	$diffuseOff[DXT1] = 1 1 1 1
+		DIFX = R G B 1
+	$glowOn[DXT1] = 0 0 0 1
+		GLOW = G G G G
+		SPEC = B B B B
+		REFL = R R R R
+	$glowOff[DXT1] = 0 0 0 1
+		GLOX = G G G G
+		SPEX = B B B B
+		REFX = R R R R
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+
+# Badge shader - clone of ship
++badge
+	$diffuse[DXT1] = 1 1 1 1
+		DIFF= R G B 1
+	$glow[DXT1]= 0 0 0 1
+		GLOW = G G G G
+		SPEC = B B B B
+		REFL = R R R R
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
+# Badge Glow shader - clone of shipglow
++badgeglow
+	$diffuse[DXT1] = 1 1 1 1
+		DIFF= R G B 1
+	$spec[DXT1]= 0 0 0 1
+		SPEC = B B B B
+		REFL = R R R R
+	$glow[DXT1]=0 0 0 1
+		GLOW = R G B 1
+	$team[DXT1] = 1 1 0 1
+		TEAM = 1 1 1 r	#invert into a...
+		STRP = 1 1 1 g
+		PAIN = 1 1 1 b
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
+# Resources
+# Ore (ship + progress map xfade)
++ore
+	$diffuse[DXT1] = 1 1 1 1
+		DIFF = R G B 1
+	$glow[DXT1]= 0 0 0 1
+		GLOW = R G B 1
+	$spec[DXT1]=0 0 0 1
+		PAIN = G G G G
+		SPEC = B B B B
+		REFL = R R R R
+	$progress[DXT1]=1 1 1 1
+		PROG = R G B 1
+	$normal[DXT1]= 5 5 1 1
+		NORM[B] = R G B 1
+		
+# Basic backgrounds...
++background
+	$diffuse[8888] = 0 0 0 1
+		DIFF = R G B 1
+		
+# Background Objects
++bg_planet
+	$terrain[DXT1] = 1 1 1 1
+		DIFF = R G B 1
+	$night[DXT1] = 0 0 0 1
+		GLOW = R G B 1
+	$enviro[DXT1] = 0 0 0 1
+		SPEC = B B B B
+		REFL = R R R R
+	$clouds[DXT1] = 0 0 0 1
+		CLD1 = R R R R
+		CLD2 = G G G G
+		CLD3 = B B B B
+	$warp[DXT1] = 5 5 0 1
+		WARP = R G B 1
+	$normal[DXT1] = 5 5 1 1
+		NORM[B] = R G B 1
+		
++bg_planetmelt
+	$terrain[DXT1] = 1 1 1 1
+		DIFF = R G B 1
+	$scorched[DXT1] = 1 1 1 1
+		DIFX = R G B 1
+	$night[DXT1] = 0 0 0 1
+		GLOW = R G B 1
+	$burn[DXT1] = 0 0 0 1
+		GLOX = R G B 1
+	$enviro[DXT1] = 0 0 0 1
+		SPEC = B B B B
+		REFL = R R R R
+	$clouds[DXT1] = 0 0 0 1
+		CLD1 = R R R R
+		CLD2 = G G G G
+		CLD3 = B B B B
+	$warp[DXT1] = 5 5 0 1
+		WARP = R G B 1
+	$normal[DXT1] = 5 5 1 1
+		NORM[B] = R G B 1
+		
++bg_moon
+	$terrain[DXT1] = 1 1 1 1
+		DIFF = R G B 1
+	$night[DXT1] = 0 0 0 1
+		GLOW = R G B 1
+	$enviro[DXT1] = 0 0 0 1
+		SPEC = B B B B
+		REFL = R R R R
+	$normal[DXT1] = 5 5 1 1
+		NORM[B] = R G B 1
+		
++bg_cosmic
+	$matter[DXT1] = 1 1 1 1
+		DIFF = R G B 1
+	$mask[DXT1] = 1 1 1 1
+		MASK = R G B 1
+	$warp[DXT1] = 5 5 0 1
+		WARP = R G B 1
+		
++bg_cosmic_a
+	$matter[DXT5] = 1 1 1 1
+		DIFF = R G B A
+	$mask[DXT5] = 1 1 1 1
+		MASK = R G B A
+	$warp[DXT1] = 5 5 0 1
+		WARP = R G B 1
+		
+# Basic FX shader...
++fx,fxSolid,fxSolidAlphaTest,fx_a,fx_s,fx_harvest
+	$diffuse[8888] = 1 1 1 1
+		DIFF = R G B A
+
++res_tendril
+	$diffuse[8888] = 1 1 1 1
+		DIFF = R G B A
+		
++res_dustvein
+	$diffuse[8888] = 1 1 1 1
+		DIFF = R G B A
+	$noise[8888] = 1 1 1 1
+		NOIZ = R G B A
+
+		
+# Bentusi Galaxy map shaders...
++nis_galaxy_disc
+	$disc[DXT1] = 0 0 0 1
+		DIFF = R G B 1
+	$masks[DXT1] = 0 0 0 1
+		MASK = R G B 1
+		
++nis_galaxy_vectors
+	$diffuse[DXT1] = 0 0 0 1
+		DIFF = R G B 1
+	
+# Conversions for old Nebula	
++dustCloudNebula
+	$diffuse[8888] = 1 1 1 1
+		DIFF = R G B A
+
++dustCloud
+	$diffuse[8888] = 1 1 1 1
+		DIFF = R G B A
+
+# Generic fall-through will parse anything with 'diffuse'
++*
+	$diffuse[DXT1]= 1 1 1 1
+		DIFF=R G B A
+
+# Generic fall-through will parse anything with 'diffuseOn'
++*
+	$diffuseOn[DXT1]=1 1 1 1
+		DIFF=R G B A
+		
+# Ultra Generic fall-through
++*
+!NoScars
+
+# Enjoy!

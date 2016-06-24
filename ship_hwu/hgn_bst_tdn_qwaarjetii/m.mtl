@@ -1,0 +1,9 @@
+﻿newmtl hw2Shader_page0
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd page0_EXPORT[1].dds
+

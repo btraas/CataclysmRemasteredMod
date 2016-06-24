@@ -1,0 +1,14 @@
+	## Yelow13 HODOR script
+#= -$INPUT_BASE=..\dae
+= -$OUTPUT_BASE=..\ship
+= -$SHADER_MAP=.\SHADERS.MAP
+#= -$SHIP_NAME=bst_attackbomber
+= -setmask=*.dae
+= -dump
+= -log
+= -$CONVERT_OUT=$[INPUT_BASE]\$[SHIP_NAME]\$[SHIP_NAME].dae
+= -$CONVERT_IN=$[OUTPUT_BASE]\$[SHIP_NAME]\$[SHIP_NAME].hod
+= -do=convert
+= -action=null
+##= -wait
+

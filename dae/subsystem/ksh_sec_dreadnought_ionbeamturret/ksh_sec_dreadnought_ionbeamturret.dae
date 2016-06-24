@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <author>RODOH</author>
+            <authoring_tool>RODOH Apr 16 2015 17:44:57</authoring_tool>
+        </contributor>
+        <unit meter="0.010000" name="centimeter" />
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="IMG[gun_front_EXPORT[1]_DIFF]-image" name="IMG[gun_front_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gun_front_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gun_front_EXPORT[1]_TEAM]-image" name="IMG[gun_front_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gun_front_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gun_front_EXPORT[1]_GLOW]-image" name="IMG[gun_front_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gun_front_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gun_front_EXPORT[1]_SPEC]-image" name="IMG[gun_front_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gun_front_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gun_front_EXPORT[1]_STRP]-image" name="IMG[gun_front_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gun_front_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+        <image id="IMG[gun_sides_EXPORT[1]_DIFF]-image" name="IMG[gun_sides_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gun_sides_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gun_sides_EXPORT[1]_TEAM]-image" name="IMG[gun_sides_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gun_sides_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gun_sides_EXPORT[1]_GLOW]-image" name="IMG[gun_sides_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gun_sides_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gun_sides_EXPORT[1]_SPEC]-image" name="IMG[gun_sides_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gun_sides_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gun_sides_EXPORT[1]_STRP]-image" name="IMG[gun_sides_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gun_sides_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_DIFF]-image" name="IMG[gun_back_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_TEAM]-image" name="IMG[gun_back_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_GLOW]-image" name="IMG[gun_back_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_SPEC]-image" name="IMG[gun_back_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_STRP]-image" name="IMG[gun_back_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+        <image id="IMG[gunion_top_EXPORT[1]_DIFF]-image" name="IMG[gunion_top_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gunion_top_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gunion_top_EXPORT[1]_TEAM]-image" name="IMG[gunion_top_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gunion_top_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gunion_top_EXPORT[1]_GLOW]-image" name="IMG[gunion_top_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gunion_top_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gunion_top_EXPORT[1]_SPEC]-image" name="IMG[gunion_top_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gunion_top_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gunion_top_EXPORT[1]_STRP]-image" name="IMG[gunion_top_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gunion_top_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+        <image id="IMG[Tai_HeavyCruiserGun_DIFF]-image" name="IMG[Tai_HeavyCruiserGun_DIFF]_FMT[DXT1]">
+            <init_from>Tai_HeavyCruiserGun_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[Tai_HeavyCruiserGun_TEAM]-image" name="IMG[Tai_HeavyCruiserGun_TEAM]_FMT[DXT1]">
+            <init_from>Tai_HeavyCruiserGun_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[Tai_HeavyCruiserGun_GLOW]-image" name="IMG[Tai_HeavyCruiserGun_GLOW]_FMT[DXT1]">
+            <init_from>Tai_HeavyCruiserGun_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[Tai_HeavyCruiserGun_SPEC]-image" name="IMG[Tai_HeavyCruiserGun_SPEC]_FMT[DXT1]">
+            <init_from>Tai_HeavyCruiserGun_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[Tai_HeavyCruiserGun_STRP]-image" name="IMG[Tai_HeavyCruiserGun_STRP]_FMT[DXT1]">
+            <init_from>Tai_HeavyCruiserGun_STRP.TGA</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="MAT[gun_front]_SHD[ship]" name="MAT[gun_front]_SHD[ship]">
+            <instance_effect url="#MAT[gun_front]_SHD[ship]-fx" />
+        </material>
+        <material id="MAT[gun_sides]_SHD[ship]" name="MAT[gun_sides]_SHD[ship]">
+            <instance_effect url="#MAT[gun_sides]_SHD[ship]-fx" />
+        </material>
+        <material id="MAT[gun_back]_SHD[ship]" name="MAT[gun_back]_SHD[ship]">
+            <instance_effect url="#MAT[gun_back]_SHD[ship]-fx" />
+        </material>
+        <material id="MAT[gunion_top]_SHD[ship]" name="MAT[gunion_top]_SHD[ship]">
+            <instance_effect url="#MAT[gunion_top]_SHD[ship]-fx" />
+        </material>
+        <material id="MAT[gun_rm]_SHD[ship]" name="MAT[gun_rm]_SHD[ship]">
+            <instance_effect url="#MAT[gun_rm]_SHD[ship]-fx" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="MAT[gun_front]_SHD[ship]-fx" name="MAT[gun_front]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gun_front_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gun_front_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gun_front_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+        <effect id="MAT[gun_sides]_SHD[ship]-fx" name="MAT[gun_sides]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gun_sides_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gun_sides_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gun_sides_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+        <effect id="MAT[gun_back]_SHD[ship]-fx" name="MAT[gun_back]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gun_back_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gun_back_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gun_back_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+        <effect id="MAT[gunion_top]_SHD[ship]-fx" name="MAT[gunion_top]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gunion_top_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gunion_top_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gunion_top_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+        <effect id="MAT[gun_rm]_SHD[ship]-fx" name="MAT[gun_rm]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[Tai_HeavyCruiserGun_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[Tai_HeavyCruiserGun_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[Tai_HeavyCruiserGun_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-lib" name="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]Mesh">
+            <mesh>
+                <source id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-POSITION">
+                    <float_array id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-POSITION-array" count="615"> -9.997830 8.684660 -10.911100 -5.250160 8.684660 -13.187000 -6.205310 7.429840 -14.947100 -11.009200 7.429850 -12.489100 0.171738 8.684660 -6.751410 0.171738 8.684660 -13.534200 0.171738 7.429840 -15.556400 10.341300 8.684660 -10.911100 14.049600 8.684660 -7.633860 5.593630 8.684660 -13.187000 11.277500 8.684660 11.028500 0.171738 8.684660 11.028500 -1.594600 3.140470 18.570000 -2.517210 3.538190 19.307899 -2.430510 -3.741970 21.770800 -1.594600 -4.019980 21.009701 -12.444100 5.602170 12.692700 -9.661600 2.033590 19.766800 -7.417720 3.646150 19.265499 -10.286800 7.610960 12.494800 -9.415710 -3.962840 21.648199 -10.463400 -2.474240 21.150499 -16.290899 -8.850410 17.668100 -15.029400 -10.537500 18.190001 -2.430510 -10.537500 17.997000 0.171738 7.610960 12.634400 -10.934100 8.684660 11.028500 -14.211700 7.429840 -10.000800 -13.706100 8.684660 -7.633860 -16.411200 6.617230 -7.690900 10.005100 2.033590 19.766800 7.761190 3.646150 19.265499 2.860680 3.538190 19.307899 2.773990 -3.741970 21.770800 9.759190 -3.962840 21.648199 10.806900 -2.474240 21.150499 10.630300 7.610960 12.494800 -18.254801 0.534163 -0.593759 -16.871099 0.958733 1.098310 -18.210501 0.958734 -10.263000 -19.375200 0.555366 -11.190300 -16.658501 0.563892 -13.255000 -17.797400 -4.243730 -15.575800 -20.917601 -4.279330 -13.222300 -16.799500 -5.102550 -15.896300 -20.113100 -5.102550 -12.983100 -1.594600 -11.109300 17.239599 -1.699880 -11.871800 17.511499 0.171738 -11.871800 17.511499 0.171738 -11.109300 17.441099 -1.074250 1.977360 17.886600 -1.078580 -3.799690 19.855400 -0.852056 -8.740610 16.902100 0.171738 -8.791650 16.990700 0.171738 -3.859250 19.848101 0.171738 1.996950 17.862301 -12.750900 -9.613030 -18.870100 -13.706100 -8.669990 -19.771999 -7.357110 -8.669990 -22.078199 -6.851440 -9.613030 -20.727301 0.171738 -8.669990 -22.403500 0.171738 -9.613030 -21.280800 -6.851440 -11.871800 -20.880199 -12.750900 -11.871800 -18.974501 0.171738 -11.871800 -21.389999 -2.388460 6.494750 14.190500 -15.455800 0.958735 -12.978300 -17.166401 -9.613030 -16.535999 -17.543501 -8.669990 -17.505800 -20.287800 -9.615560 -14.410600 -21.275000 -8.669990 -14.644800 -17.166401 -11.871800 -16.707100 -18.545000 -5.102550 1.098310 -19.670900 -4.263320 -0.588907 -18.580000 -8.669990 9.232060 -17.871500 -9.625590 8.893410 -13.803200 6.525510 11.783500 -18.930599 -9.534910 9.232060 -18.302999 -9.534910 15.350900 -16.577801 -11.112000 16.948299 -17.015400 -11.874300 16.910700 -2.873050 -11.871800 16.944599 -2.873050 -11.112000 16.672701 -17.034000 -11.112000 16.812300 -18.283199 -10.247500 17.645000 -18.492599 -10.247500 15.350900 -0.966861 4.116810 14.689400 0.171738 4.161510 14.696700 0.171738 6.494750 14.226900 -7.201500 -6.313470 -21.114500 -13.328500 -6.313470 -18.752399 -12.927100 3.671490 -13.428600 -11.642900 3.671490 -14.200600 -14.275300 2.322890 -13.375200 -15.936200 -6.313470 -17.156200 -6.588840 2.068840 -17.321301 -7.784720 3.671490 -16.157301 -7.781900 -5.607310 -21.518700 -7.212640 2.260330 -17.978001 -13.557200 -5.606280 -19.291300 -15.875200 -5.609270 -17.874800 -14.309700 2.534660 -14.312300 -13.198500 3.644070 -14.353500 -12.044000 3.645340 -15.046600 -8.255160 3.658010 -16.992399 -18.642599 -0.414063 -1.630340 -19.498100 -3.405300 -1.630340 -19.257401 -0.414063 -7.314630 -20.112301 -3.405300 -7.314630 -20.411501 -2.806760 -6.758710 -19.904100 -2.806760 -2.063670 -19.308100 -0.722611 -2.063670 -19.815800 -0.722611 -6.758710 -17.865499 -10.174800 8.893410 -20.287800 -11.874300 -14.652100 -17.228001 -11.112000 14.940600 -17.238400 -10.167400 14.941800 -17.882601 -11.874300 8.546250 2.731940 6.494750 14.190500 0.171738 -11.872300 -13.763600 -11.923500 -11.873100 -10.732700 -11.105500 -11.873900 7.448970 0.171738 -11.872300 10.388800 11.352600 7.429850 -12.489100 6.548790 7.429840 -14.947100 1.938070 3.140470 18.570000 1.938070 -4.019980 21.009701 12.787600 5.602170 12.692700 15.372800 -10.537500 18.190001 16.634399 -8.850410 17.668100 2.773990 -10.537500 17.997000 14.555200 7.429840 -10.000800 16.754700 6.617230 -7.690900 18.553900 0.958734 -10.263000 17.214600 0.958733 1.098310 18.598301 0.534163 -0.593759 19.718700 0.555366 -11.190300 17.002001 0.563892 -13.255000 21.261101 -4.279330 -13.222300 18.140900 -4.243730 -15.575800 20.456600 -5.102550 -12.983100 17.143000 -5.102550 -15.896300 2.043350 -11.871800 17.511499 1.938070 -11.109300 17.239599 1.417730 1.977360 17.886600 1.422060 -3.799690 19.855400 1.195530 -8.740610 16.902100 13.094400 -9.613030 -18.870100 7.194920 -9.613030 -20.727301 7.700590 -8.669990 -22.078199 14.049600 -8.669990 -19.771999 13.094400 -11.871800 -18.974501 7.194920 -11.871800 -20.880199 15.799300 0.958735 -12.978300 17.509899 -9.613030 -16.535999 17.886999 -8.669990 -17.505800 21.618500 -8.669990 -14.644800 20.631201 -9.615560 -14.410600 17.509899 -11.871800 -16.707100 20.014400 -4.263320 -0.588907 18.888500 -5.102550 1.098310 18.923500 -8.669990 9.232060 18.215000 -9.625590 8.893410 14.146600 6.525510 11.783500 18.646500 -9.534910 15.350900 19.274099 -9.534910 9.232060 3.216530 -11.871800 16.944599 17.358900 -11.874300 16.910700 16.921301 -11.112000 16.948299 3.216530 -11.112000 16.672701 17.377501 -11.112000 16.812300 18.626600 -10.247500 17.645000 18.836100 -10.247500 15.350900 1.310340 4.116810 14.689400 7.544980 -6.313470 -21.114500 13.672000 -6.313470 -18.752399 13.270600 3.671490 -13.428600 11.986400 3.671490 -14.200600 14.618800 2.322890 -13.375200 16.279699 -6.313470 -17.156200 6.932320 2.068840 -17.321301 8.128190 3.671490 -16.157301 8.125370 -5.607310 -21.518700 7.556110 2.260330 -17.978001 13.900700 -5.606280 -19.291300 16.218599 -5.609270 -17.874800 14.653200 2.534660 -14.312300 13.542000 3.644070 -14.353500 12.387500 3.645340 -15.046600 8.598630 3.658010 -16.992399 18.986099 -0.414063 -1.630340 19.841600 -3.405300 -1.630340 19.600901 -0.414063 -7.314630 20.455799 -3.405300 -7.314630 20.754900 -2.806760 -6.758710 20.247601 -2.806760 -2.063670 19.651600 -0.722611 -2.063670 20.159300 -0.722611 -6.758710 18.209000 -10.174800 8.893410 20.631201 -11.874300 -14.652100 17.571501 -11.112000 14.940600 17.581900 -10.167400 14.941800 18.226000 -11.874300 8.546250 12.267000 -11.873100 -10.732700 11.448900 -11.873900 7.448970</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-POSITION-array" count="205" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-Normal0">
+                    <float_array id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-Normal0-array" count="1314"> -0.295475 0.838763 -0.457352 -0.129607 0.842326 -0.523153 -0.157129 0.839767 -0.519713 -0.298757 0.830958 -0.469311 0.000000 1.000000 0.000000 0.000001 1.000000 -0.000001 0.000000 0.849706 -0.527257 0.000000 0.844282 -0.535899 -0.000001 1.000000 -0.000001 0.769837 0.463378 0.438897 0.694914 0.465252 0.548302 0.667873 -0.018174 0.744054 0.767720 -0.104510 0.632205 -0.411324 0.738460 0.534312 -0.523448 0.619752 0.584730 -0.477602 -0.042769 0.877534 -0.461268 -0.071329 0.884389 -0.029606 0.298127 0.954067 -0.026743 0.320051 0.947023 -0.001757 0.299298 0.954158 -0.001687 0.298995 0.954253 0.013483 -0.474464 0.880172 0.000005 -0.485490 0.874242 -0.830014 0.293264 0.474418 -0.746152 0.385475 0.542831 -0.746152 0.385475 0.542832 -0.007418 0.831281 0.555802 0.000000 0.806820 0.590797 -0.339784 0.851831 -0.398661 -0.338679 0.859328 -0.383214 -0.578831 0.765143 -0.281976 0.001687 0.298995 0.954253 0.026743 0.320051 0.947023 0.001757 0.299298 0.954158 0.029606 0.298127 0.954067 0.007418 0.831281 0.555802 -0.337211 0.940589 0.039753 -0.354854 0.934092 0.039387 -0.536010 0.466602 -0.703545 -0.536086 0.466670 -0.703442 -0.593635 -0.437785 -0.675234 -0.461995 -0.632158 -0.622042 -0.461995 -0.632159 -0.622042 -0.213150 0.314924 0.924873 -0.214888 0.354207 0.910143 0.000000 0.159383 0.987217 0.000000 0.091957 0.995763 0.263427 -0.612088 0.745624 0.323347 -0.685949 0.651860 0.610412 0.452390 0.650185 0.752313 0.098253 0.651438 0.887004 -0.215726 0.408273 -0.111593 0.174360 0.978338 -0.075235 0.190193 0.978860 0.000000 0.321130 0.947035 0.000000 0.612113 0.790770 -0.088637 -0.500974 0.860911 0.000000 -0.501262 0.865295 0.000000 -0.512341 0.858782 -0.019462 -0.513608 0.857804 -0.237265 -0.792233 -0.562203 -0.261371 -0.785145 -0.561455 -0.105477 -0.828839 -0.549454 -0.090470 -0.828679 -0.552364 0.000000 -0.774975 -0.631992 0.000000 -0.765736 -0.643155 -0.191648 0.062110 -0.979496 -0.189888 0.066321 -0.979563 -0.379418 0.045010 -0.924130 -0.381871 0.046245 -0.923058 0.000000 0.052122 -0.998641 0.000000 0.048305 -0.998833 0.000870 0.837378 0.546624 0.010384 0.856763 0.515606 0.014799 0.865593 0.500529 0.014730 0.865624 0.500478 -0.164463 0.963239 -0.212419 -0.248875 0.935048 -0.252482 -0.358937 -0.740966 -0.567568 -0.369939 -0.726552 -0.579023 -0.454799 -0.655081 -0.603347 -0.467751 -0.639538 -0.610082 -0.505853 0.061580 -0.860419 -0.511360 0.069450 -0.856556 -0.664928 -0.743228 0.074048 -0.723753 -0.686262 0.072289 -0.699233 -0.710524 0.078923 -0.786639 -0.612038 0.081297 -0.781705 0.215875 0.585094 -0.755681 0.223681 0.615559 -0.954032 0.272695 0.124339 -0.952734 0.280007 0.117871 -0.958143 0.260914 0.117837 -0.960561 0.253966 0.113238 -0.959285 0.260225 0.109792 -0.958978 0.262595 0.106794 -0.959274 0.261379 0.107120 -0.946375 0.307091 0.100344 -0.922599 0.373975 0.094628 -0.955069 0.281940 0.091393 -0.097778 0.014443 0.995103 -0.102702 0.009843 0.994663 -0.200992 0.332433 0.921461 -0.178597 0.331487 0.926402 -0.283649 0.115825 0.951907 -0.573326 -0.181553 0.798959 0.214289 -0.320807 0.922585 0.008271 -0.911437 0.411356 0.006070 -0.918122 0.396251 -0.171147 -0.800514 0.574357 -0.962650 0.256085 0.087894 -0.955051 0.280651 0.095459 -0.278276 0.382255 0.881160 -0.319313 0.383343 0.866653 -0.382354 0.576961 0.721749 -0.186664 0.535949 0.823356 -0.279190 0.558477 0.781125 -0.487869 0.587536 0.645589 -0.195277 -0.874236 0.444498 0.500778 0.728619 0.467263 0.000000 0.825477 0.564436 0.778787 0.534470 0.328378 -0.013941 0.197304 0.980243 -0.014031 0.197345 0.980234 0.000000 0.818885 0.573958 0.000000 0.818728 0.574182 -0.132227 0.399361 -0.907208 -0.178620 0.382536 -0.906511 -0.395904 0.415718 -0.818803 -0.404500 0.416982 -0.813945 -0.502772 0.458975 -0.732504 -0.630060 0.454037 -0.629980 -0.474389 0.443263 -0.760574 -0.435202 0.432883 -0.789438 -0.673776 0.424551 -0.604800 -0.660156 0.432806 -0.613900 -0.717250 0.464266 -0.519624 -0.635150 0.433903 -0.638994 0.070312 0.419998 -0.904797 0.070894 0.419969 -0.904765 -0.526786 0.442157 -0.725943 -0.505758 0.434948 -0.745003 -0.562629 0.466393 -0.682588 -0.574890 0.491834 -0.653912 -0.478350 0.431438 -0.764881 -0.106270 0.401959 -0.909470 0.000000 0.399906 -0.916556 0.000000 0.399391 -0.916781 -0.246003 0.423219 -0.871991 -0.349739 0.417848 -0.838502 0.738137 0.231734 -0.633604 0.731997 0.235757 -0.639217 -0.276832 -0.638539 -0.718075 -0.277341 -0.637475 -0.718824 -0.402820 -0.633610 -0.660510 -0.402820 -0.633610 -0.660511 -0.402692 -0.636419 -0.657883 -0.984833 0.158150 0.071359 -0.984841 0.157890 0.071821 -0.691131 0.699086 0.183348 -0.691743 0.698769 0.182245 -0.015144 0.999568 -0.025191 -0.015296 0.999603 -0.023647 -0.006367 0.999901 -0.012554 -0.015450 0.999603 -0.023574 0.611333 0.706883 -0.355792 0.600867 0.712107 -0.363129 -0.462091 0.429732 -0.775759 -0.463636 0.435702 -0.771496 -0.421984 0.414041 -0.806536 -0.396180 0.435630 -0.808250 -0.469778 0.430073 -0.770938 -0.439981 0.274715 -0.854955 -0.400500 0.373674 -0.836641 -0.343926 0.426666 -0.836464 -0.955023 0.279322 0.099547 -0.951744 0.294885 0.085008 -0.953599 0.288111 0.087410 -0.954410 0.280888 0.101008 -0.957632 0.272127 0.094273 -0.953987 0.282733 0.099857 -0.959859 0.265098 0.091614 -0.961570 0.257704 0.094719 -0.853790 -0.512378 0.092257 -0.853809 -0.512345 0.092264 -0.591740 0.169223 0.788167 -0.591705 0.169225 0.788193 -0.445826 0.893820 0.048218 -0.445890 0.893788 0.048216 -0.745970 0.213209 -0.630928 -0.745961 0.213201 -0.630942 -0.956338 0.273377 0.103362 -0.956350 0.273338 0.103345 -0.956316 0.273441 0.103391 -0.956303 0.273479 0.103408 -0.304817 -0.003366 -0.952405 -0.293155 0.118830 -0.948652 -0.293155 0.118830 -0.948651 -0.994608 -0.011027 0.103117 -0.994607 -0.011044 0.103124 -0.994608 -0.010984 0.103118 -0.556702 0.079566 -0.826893 -0.560696 0.088050 -0.823327 -0.545698 -0.836500 0.049824 -0.550723 -0.832735 0.057067 -0.994613 -0.011045 0.103064 -0.994609 -0.011001 0.103114 -0.994612 -0.011012 0.103077 -0.495626 -0.867047 0.050835 -0.501798 -0.863355 0.053073 -0.309957 -0.002200 -0.950748 -0.313816 0.083482 -0.945807 -0.994606 -0.011138 0.103123 -0.994607 -0.011065 0.103125 -0.994608 -0.011030 0.103117 -0.606170 0.790791 0.084903 -0.584353 0.806845 0.086797 -0.014799 0.865593 0.500529 -0.010384 0.856763 0.515606 -0.000870 0.837378 0.546624 -0.014730 0.865624 0.500478 0.000000 -1.000000 -0.000060 0.000000 -1.000000 -0.000091 -0.000013 -1.000000 -0.000052 -0.000024 -1.000000 -0.000127 0.000093 -1.000000 -0.000131 0.000194 -1.000000 -0.000383 0.000273 -1.000000 -0.000289 0.000060 -1.000000 -0.000021 0.000091 -1.000000 0.000018 0.000123 -1.000000 0.000041 0.000064 -1.000000 0.000081 0.000000 -1.000000 0.000108 -0.000014 -1.000000 0.000061 0.000000 -1.000000 0.000065 0.295475 0.838763 -0.457352 0.298757 0.830958 -0.469311 0.157129 0.839767 -0.519713 0.129607 0.842326 -0.523153 -0.667873 -0.018174 0.744054 -0.694914 0.465252 0.548302 -0.769837 0.463378 0.438897 -0.767720 -0.104510 0.632205 0.411324 0.738460 0.534312 0.523448 0.619752 0.584730 0.461268 -0.071329 0.884389 0.477602 -0.042769 0.877534 -0.000005 -0.485490 0.874242 -0.013483 -0.474464 0.880172 0.770139 0.361497 0.525553 0.746152 0.385475 0.542832 0.475894 0.507187 0.718531 0.830014 0.293264 0.474418 0.338679 0.859328 -0.383214 0.339784 0.851831 -0.398661 0.578831 0.765143 -0.281976 0.337211 0.940589 0.039753 0.354854 0.934092 0.039387 0.536086 0.466670 -0.703442 0.536010 0.466602 -0.703545 0.593635 -0.437785 -0.675234 0.461995 -0.632159 -0.622042 0.461995 -0.632158 -0.622042 0.214888 0.354207 0.910143 0.213150 0.314924 0.924873 -0.323347 -0.685949 0.651860 -0.263427 -0.612088 0.745624 -0.610412 0.452390 0.650185 -0.752313 0.098253 0.651438 -0.887004 -0.215726 0.408273 0.111593 0.174360 0.978338 0.075235 0.190193 0.978860 0.088637 -0.500974 0.860911 0.019462 -0.513608 0.857804 0.237265 -0.792233 -0.562203 0.090470 -0.828679 -0.552364 0.105477 -0.828839 -0.549454 0.261371 -0.785145 -0.561455 0.379418 0.045010 -0.924130 0.189888 0.066321 -0.979563 0.191648 0.062110 -0.979496 0.381871 0.046245 -0.923058 0.248875 0.935048 -0.252482 0.164463 0.963239 -0.212419 0.358937 -0.740966 -0.567568 0.369939 -0.726552 -0.579023 0.467751 -0.639538 -0.610082 0.454799 -0.655081 -0.603347 0.511360 0.069450 -0.856556 0.505853 0.061580 -0.860419 0.664928 -0.743228 0.074048 0.723753 -0.686262 0.072289 0.699233 -0.710524 0.078923 0.786639 -0.612038 0.081297 0.781705 0.215875 0.585094 0.755681 0.223681 0.615559 0.954032 0.272695 0.124339 0.960561 0.253966 0.113238 0.958143 0.260914 0.117837 0.952734 0.280007 0.117871 0.959285 0.260225 0.109792 0.946375 0.307091 0.100344 0.959274 0.261379 0.107120 0.958978 0.262595 0.106794 0.955069 0.281940 0.091393 0.922599 0.373975 0.094628 0.200992 0.332433 0.921461 0.102702 0.009843 0.994663 0.097778 0.014443 0.995103 0.178597 0.331487 0.926402 0.283649 0.115825 0.951907 -0.214289 -0.320807 0.922585 0.573326 -0.181553 0.798959 -0.006070 -0.918122 0.396251 -0.008271 -0.911437 0.411356 0.171147 -0.800514 0.574357 0.962650 0.256085 0.087894 0.955051 0.280651 0.095459 0.278276 0.382255 0.881160 0.319313 0.383343 0.866653 0.186664 0.535949 0.823356 0.382354 0.576961 0.721749 0.487869 0.587536 0.645589 0.195277 -0.874236 0.444498 -0.500778 0.728619 0.467263 -0.778787 0.534470 0.328378 0.013941 0.197304 0.980243 0.014031 0.197345 0.980234 0.132227 0.399361 -0.907208 0.404500 0.416982 -0.813945 0.395904 0.415718 -0.818803 0.178620 0.382536 -0.906511 0.474389 0.443263 -0.760574 0.630060 0.454037 -0.629980 0.502772 0.458975 -0.732504 0.435202 0.432883 -0.789438 0.660156 0.432806 -0.613900 0.673776 0.424551 -0.604800 0.717250 0.464266 -0.519624 0.635150 0.433903 -0.638994 -0.070894 0.419969 -0.904765 -0.070312 0.419998 -0.904797 0.526786 0.442157 -0.725943 0.574890 0.491834 -0.653912 0.562629 0.466393 -0.682588 0.505758 0.434948 -0.745003 0.478350 0.431438 -0.764881 0.106270 0.401959 -0.909470 0.246003 0.423219 -0.871991 0.349739 0.417848 -0.838502 -0.731997 0.235758 -0.639217 -0.731997 0.235758 -0.639218 -0.738137 0.231734 -0.633604 0.277341 -0.637475 -0.718824 0.276832 -0.638539 -0.718075 0.276832 -0.638540 -0.718075 0.402692 -0.636419 -0.657883 0.402820 -0.633610 -0.660511 0.402820 -0.633610 -0.660510 0.984841 0.157890 0.071821 0.984833 0.158150 0.071359 0.691743 0.698769 0.182245 0.691131 0.699086 0.183348 0.015144 0.999568 -0.025191 0.015296 0.999603 -0.023647 0.006367 0.999901 -0.012554 0.015450 0.999603 -0.023574 -0.600867 0.712107 -0.363129 -0.611333 0.706883 -0.355792 0.421984 0.414041 -0.806536 0.463636 0.435702 -0.771496 0.462091 0.429732 -0.775759 0.469778 0.430073 -0.770939 0.396180 0.435630 -0.808250 0.400500 0.373674 -0.836641 0.439981 0.274715 -0.854955 0.343926 0.426666 -0.836464 0.955023 0.279322 0.099547 0.954410 0.280888 0.101008 0.953599 0.288111 0.087410 0.951744 0.294885 0.085008 0.953987 0.282733 0.099857 0.957632 0.272127 0.094273 0.961570 0.257704 0.094719 0.959859 0.265098 0.091614 0.853791 -0.512376 0.092258 0.853809 -0.512345 0.092264 0.853807 -0.512349 0.092263 0.853790 -0.512378 0.092257 0.591709 0.169224 0.788190 0.591705 0.169225 0.788193 0.591730 0.169223 0.788174 0.591740 0.169223 0.788167 0.445830 0.893818 0.048218 0.445890 0.893788 0.048216 0.445881 0.893793 0.048216 0.445826 0.893820 0.048218 0.745962 0.213202 -0.630940 0.745961 0.213201 -0.630942 0.745968 0.213207 -0.630932 0.745970 0.213209 -0.630928 0.956316 0.273441 0.103391 0.956350 0.273338 0.103345 0.956338 0.273377 0.103362 0.956303 0.273479 0.103408 0.293155 0.118830 -0.948651 0.293155 0.118830 -0.948652 0.304817 -0.003366 -0.952405 0.994608 -0.011027 0.103117 0.994608 -0.010984 0.103118 0.994607 -0.011044 0.103124 0.560696 0.088050 -0.823327 0.556702 0.079566 -0.826893 0.545698 -0.836500 0.049824 0.550723 -0.832735 0.057067 0.994613 -0.011045 0.103064 0.994612 -0.011012 0.103077 0.994609 -0.011001 0.103114 0.495626 -0.867047 0.050835 0.501798 -0.863355 0.053073 0.309957 -0.002200 -0.950748 0.313816 0.083482 -0.945807 0.994606 -0.011138 0.103123 0.994607 -0.011065 0.103125 0.994608 -0.011030 0.103117 0.584353 0.806845 0.086797 0.606170 0.790790 0.084903 0.606170 0.790791 0.084903 0.000013 -1.000000 -0.000052 0.000024 -1.000000 -0.000127 -0.000093 -1.000000 -0.000131 -0.000194 -1.000000 -0.000383 -0.000273 -1.000000 -0.000289 -0.000060 -1.000000 -0.000021 -0.000091 -1.000000 0.000018 -0.000123 -1.000000 0.000041 -0.000064 -1.000000 0.000081 0.000014 -1.000000 0.000061</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-Normal0-array" count="438" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-UV0">
+                    <float_array id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-UV0-array" count="338"> 0.581107 0.914758 0.661779 0.950461 0.644129 0.983761 0.561128 0.944306 0.753908 0.849504 0.753908 0.955907 0.753547 0.993903 0.926708 0.914758 0.989718 0.863347 0.846036 0.950461 0.942616 0.570609 0.753908 0.570587 0.728679 0.415200 0.708189 0.417935 0.709938 0.290846 0.729123 0.290115 0.492027 0.487070 0.586835 0.391284 0.623250 0.420234 0.528740 0.518330 0.589419 0.286223 0.573351 0.313171 0.441304 0.230793 0.458291 0.198802 0.495376 0.166345 0.709506 0.163904 0.574628 0.541615 0.753911 0.540322 0.565199 0.570587 0.507009 0.904534 0.518097 0.863347 0.462090 0.867874 0.921021 0.391322 0.882937 0.419453 0.799661 0.417945 0.797940 0.290856 0.916669 0.287342 0.934522 0.313213 0.931625 0.542094 0.367417 0.749757 0.384558 0.716431 0.359547 0.897258 0.346526 0.918114 0.335387 0.291248 0.337660 0.201439 0.402219 0.206183 0.391698 0.295809 0.318063 0.190374 0.390358 0.197632 0.724052 0.149224 0.728603 0.136726 0.756840 0.151229 0.751146 0.162408 0.793689 0.189648 0.814569 0.189076 0.710249 0.286714 0.747207 0.400099 0.747537 0.299182 0.813061 0.230751 0.055212 0.555946 0.041090 0.505663 0.077760 0.506898 0.076432 0.555711 0.052452 0.681082 0.078240 0.679668 0.080312 0.815152 0.054589 0.814790 0.235122 0.097554 0.244537 0.122322 0.130890 0.127523 0.129057 0.101869 0.004476 0.146855 0.005105 0.121481 0.126841 0.062491 0.231424 0.061160 0.007360 0.082079 0.710407 0.510250 0.380000 0.310497 0.317060 0.302927 0.318590 0.099844 0.318870 0.124301 0.381287 0.099262 0.396541 0.119982 0.314465 0.060612 0.250661 0.928799 0.278912 0.704538 0.283981 0.741817 0.258863 0.942294 0.235957 0.569862 0.183311 0.950482 0.161424 0.941674 0.214908 0.570996 0.505466 0.556614 0.219806 0.567515 0.233602 0.470095 0.465832 0.142316 0.461752 0.125311 0.707983 0.129566 0.701968 0.141271 0.455427 0.136211 0.463645 0.183441 0.436038 0.153428 0.208394 0.441425 0.202168 0.436142 0.226685 0.432764 0.221444 0.469397 0.466472 0.505135 0.407739 0.207192 0.524922 0.530120 0.781778 0.451086 0.057174 0.900990 0.080693 0.901162 0.768061 0.496128 0.709273 0.422378 0.082092 0.948961 0.029269 0.950634 0.753914 0.509810 0.135260 0.169692 0.245463 0.165152 0.273526 0.348437 0.316778 0.421712 0.249953 0.416204 0.248551 0.347580 0.370465 0.417465 0.294700 0.324035 0.396483 0.130202 0.296517 0.166532 0.149629 0.319930 0.052004 0.430105 0.159688 0.415670 0.175881 0.347365 0.141982 0.172197 0.155574 0.307795 0.245580 0.169977 0.290550 0.171458 0.288941 0.314125 0.271352 0.333697 0.248997 0.332683 0.177920 0.332041 0.349206 0.764844 0.296893 0.760181 0.338110 0.855751 0.285801 0.851084 0.294316 0.847492 0.303525 0.772251 0.339675 0.775693 0.330463 0.850934 0.205761 0.569672 0.376551 0.060558 0.204085 0.471190 0.195927 0.438001 0.219815 0.473467 0.176667 0.571046 0.123259 0.940031 0.797421 0.510260 0.836239 0.284141 0.834460 0.229769 0.890054 0.278652 0.934914 0.263501 0.926638 0.204964 0.968295 0.246169 0.991786 0.230696 0.967903 0.065935 0.916115 0.075557 0.959293 0.006531 0.850679 0.010027 0.828826 0.057576 0.841537 0.006295 0.827164 0.006790</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-UV0-array" count="169" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-VERTEX">
+                    <input semantic="POSITION" source="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-POSITION" />
+                </vertices>
+                <triangles count="402" material="MAT[gun_rm]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-UV0" />
+                    <p>0 0 0 1 1 1 2 2 2 2 2 2 3 3 3 0 0 0 0 4 0 4 4 4 1 4 1 1 5 1 4 5 4 5 5 5 1 1 1 5 6 5 6 7 6 6 7 6 2 2 2 1 1 1 7 4 7 4 4 4 8 4 8 7 4 7 9 4 9 4 4 4 9 8 9 5 8 5 4 8 4 10 4 10 8 4 8 11 4 11 4 4 4 11 4 11 8 4 8 12 9 12 13 10 13 14 11 14 14 11 14 15 12 15 12 9 12 16 13 16 17 13 17 18 13 18 18 14 18 19 14 19 16 14 16 20 15 20 21 15 21 22 15 22 22 16 22 23 16 23 20 16 20 17 17 17 21 17 21 20 17 20 20 18 20 14 18 14 13 18 13 17 19 17 20 19 20 13 19 13 17 20 17 13 20 13 18 20 18 20 21 20 23 21 24 24 21 25 24 22 25 14 22 14 20 22 20 21 23 21 17 23 17 16 23 16 16 24 16 22 25 22 21 25 21 19 26 26 25 26 27 11 26 11 11 27 11 26 27 28 19 27 26 27 28 29 28 29 30 0 0 0 0 0 0 3 3 3 27 28 29 0 4 0 28 4 30 4 4 4 28 30 30 27 30 29 29 30 31 26 4 28 11 4 11 28 4 30 4 4 4 28 4 30 11 4 11 30 31 32 31 31 33 32 31 34 32 32 34 33 32 35 34 32 36 30 33 32 32 33 34 34 33 36 30 34 32 34 34 36 35 34 37 36 27 38 10 27 10 11 27 11 11 35 11 25 35 27 36 35 38 37 36 39 38 36 40 39 36 41 39 37 41 40 37 42 37 37 39 41 38 43 42 38 44 43 38 45 43 39 45 40 39 46 41 39 43 42 40 44 44 40 47 45 40 48 45 41 48 43 42 45 42 42 44 46 43 49 47 44 50 48 45 51 48 45 51 49 46 52 46 43 49 24 47 53 46 48 54 15 12 15 15 12 15 14 11 55 24 47 53 50 49 56 12 9 12 15 12 15 15 12 15 51 50 57 50 49 56 15 12 15 46 48 54 52 51 58 52 51 58 51 50 57 15 12 15 52 52 59 46 52 60 49 52 61 49 53 61 53 53 62 52 53 59 51 50 63 54 54 64 55 55 65 55 55 65 50 49 66 51 50 63 52 56 59 53 57 62 54 58 64 54 58 64 51 59 63 52 56 59 56 60 67 57 61 68 58 62 69 58 62 69 59 63 70 56 60 67 59 63 70 58 62 69 60 64 71 60 64 71 61 65 72 59 63 70 59 66 70 62 67 73 63 68 74 63 68 74 56 69 67 59 66 70 64 70 75 62 67 73 59 66 70 59 66 70 61 71 72 64 70 75 65 72 76 19 73 26 18 74 18 18 74 18 13 75 13 65 72 76 41 76 43 40 76 46 39 76 77 39 77 77 66 77 78 41 77 43 57 61 68 56 60 67 67 78 79 67 78 79 68 79 80 57 61 68 69 80 81 70 81 82 68 79 80 68 79 80 67 78 79 69 80 81 56 69 67 63 68 74 71 82 83 71 82 83 67 83 79 56 69 67 45 84 84 72 84 85 73 84 86 73 85 86 43 85 87 45 85 84 74 86 88 70 86 89 69 86 90 69 87 90 75 87 91 74 87 88 72 88 85 38 88 40 37 88 39 37 89 39 73 89 86 72 89 85 38 90 40 76 91 92 29 92 31 29 92 31 39 93 41 38 90 40 72 94 85 45 95 84 70 96 89 70 96 89 74 97 88 72 94 85 74 97 88 77 98 93 78 99 94 78 99 94 76 91 92 74 97 88 74 97 88 76 91 92 38 90 40 38 90 40 72 94 85 74 97 88 79 100 95 80 101 96 81 102 97 81 102 97 82 103 98 79 100 95 80 101 96 79 100 95 83 104 99 79 105 95 23 105 24 22 105 100 22 106 100 84 106 101 79 106 95 23 107 24 79 107 95 82 107 98 82 108 98 24 108 25 23 108 24 83 109 102 79 109 103 84 109 104 85 110 105 84 111 104 78 99 94 84 111 104 76 91 92 78 99 94 76 112 106 84 112 107 22 112 22 22 113 22 16 113 16 76 113 106 26 114 28 76 115 92 16 116 108 16 116 108 19 117 26 26 114 28 81 102 97 47 44 50 46 43 49 46 43 49 82 103 98 81 102 97 46 48 49 24 47 25 82 118 98 50 49 56 86 119 109 12 9 12 86 119 110 50 49 66 55 55 65 55 55 65 87 120 111 86 119 110 86 119 109 65 121 112 13 10 113 13 10 113 12 9 12 86 119 109 88 122 114 65 122 115 86 122 110 86 123 110 87 123 111 88 123 114 65 72 76 88 124 116 25 125 27 25 125 27 19 73 26 65 72 76 89 126 117 58 127 69 57 128 68 57 128 68 90 129 118 89 126 117 91 130 119 27 131 120 3 132 121 3 132 121 92 133 122 91 130 119 27 131 120 66 134 78 39 135 77 39 135 77 29 136 123 27 131 120 93 137 124 66 134 78 27 131 120 91 130 119 93 137 124 27 131 120 41 138 43 66 138 78 44 138 47 44 139 47 42 139 44 41 139 43 44 140 47 68 141 80 70 142 125 70 142 125 45 143 48 44 140 47 57 128 68 68 141 80 94 144 126 94 144 126 90 129 118 57 128 68 93 137 124 94 144 126 44 140 47 44 140 47 66 134 78 93 137 124 68 141 80 44 140 47 94 144 126 95 145 127 6 146 128 60 147 71 60 147 71 89 126 117 95 145 127 58 127 69 89 126 117 60 147 71 6 146 128 95 145 127 2 148 129 3 132 121 2 148 129 96 149 130 96 149 130 92 133 122 3 132 121 95 145 127 96 149 130 2 148 129 97 150 131 98 150 132 95 150 127 95 151 127 89 151 117 97 151 131 97 152 131 89 152 117 90 152 118 90 153 118 99 153 133 97 153 131 100 154 134 99 155 133 90 155 118 90 156 118 94 156 126 100 156 134 100 157 134 94 157 126 93 157 124 93 158 124 101 158 135 100 158 134 102 159 136 101 159 135 93 159 124 93 160 124 91 160 119 102 160 136 102 161 136 91 161 119 92 161 122 92 162 122 103 162 137 102 162 136 92 163 122 96 163 130 104 163 138 104 164 138 103 164 137 92 164 122 98 165 132 104 165 138 96 165 130 96 166 130 95 166 127 98 166 132 101 167 135 102 168 136 103 169 137 103 169 137 99 170 133 100 171 134 101 167 135 103 169 137 100 171 134 103 169 137 104 172 138 98 173 132 103 169 137 98 173 132 97 174 131 103 169 137 97 174 131 99 170 133 105 175 139 106 176 140 73 177 86 73 177 86 37 178 39 105 175 139 37 178 39 40 179 42 107 180 141 107 180 141 105 175 139 37 178 39 40 179 42 43 181 87 108 182 142 108 182 142 107 180 141 40 179 42 108 182 142 43 181 87 73 177 86 73 177 86 106 176 140 108 182 142 109 183 143 108 183 142 106 183 140 106 184 140 110 184 144 109 184 143 111 185 145 110 185 144 106 185 140 106 186 140 105 186 139 111 186 145 111 187 145 105 187 139 107 187 141 107 188 141 112 188 146 111 188 145 109 189 143 112 189 146 107 189 141 107 190 141 108 190 142 109 190 143 112 191 146 109 192 143 110 193 144 110 193 144 111 194 145 112 191 146 75 195 91 113 195 147 77 195 93 77 196 93 74 197 88 75 197 91 69 198 90 113 199 147 75 200 91 114 201 148 69 202 81 67 83 79 67 83 79 71 82 83 114 201 148 83 203 102 84 203 104 85 203 105 85 204 105 115 204 149 83 204 102 83 205 102 115 206 149 80 207 150 116 208 151 78 208 94 77 208 93 77 209 93 113 209 147 116 209 151 116 210 151 115 210 149 85 210 105 85 211 105 78 211 94 116 211 151 113 199 147 115 206 149 116 212 151 80 207 150 115 206 149 117 213 152 69 198 90 114 214 153 113 199 147 115 206 149 113 199 147 117 213 152 114 214 153 117 213 152 113 199 147 28 215 30 29 215 31 76 215 92 76 216 92 26 216 28 28 216 30 31 217 33 36 218 38 118 219 154 118 219 154 32 220 34 31 217 33 118 219 154 36 218 38 25 125 27 25 125 27 88 124 116 118 219 154 64 221 155 119 222 156 62 223 157 62 223 157 119 222 156 63 224 158 120 225 159 71 226 160 63 224 158 63 224 158 119 222 156 120 225 159 71 226 160 120 225 159 114 227 161 117 228 162 114 227 161 120 225 159 120 225 159 121 229 163 117 228 162 117 228 162 121 229 163 80 230 164 81 231 165 80 230 164 121 229 163 121 229 163 122 232 166 81 231 165 81 231 165 122 232 166 47 233 167 47 233 167 122 232 166 48 234 168 7 235 0 123 236 3 124 237 2 124 237 2 9 238 1 7 235 0 9 238 1 124 237 2 6 7 6 6 7 6 5 6 5 9 238 1 33 239 14 32 240 13 125 241 12 125 241 12 126 242 15 33 239 14 31 243 18 30 243 17 127 243 16 127 244 16 36 244 19 31 244 18 34 245 20 128 245 23 129 245 22 129 246 22 35 246 21 34 246 20 34 247 20 33 247 14 130 247 25 130 248 25 128 248 24 34 248 20 35 249 21 129 250 22 127 251 16 127 251 16 30 252 17 35 249 21 7 235 0 8 253 30 131 254 29 131 254 29 123 236 3 7 235 0 8 255 30 132 255 31 131 255 29 133 256 41 134 256 40 135 256 39 135 257 39 136 257 42 133 257 41 137 258 43 136 258 46 138 258 45 138 259 45 139 259 44 137 259 43 140 260 48 141 260 47 139 260 44 139 261 44 138 261 45 140 262 48 48 45 51 142 263 50 143 264 49 143 264 49 49 46 52 48 45 51 126 242 15 143 265 54 130 266 53 130 266 53 33 239 55 126 242 15 144 267 56 145 268 57 126 242 15 126 242 15 125 241 12 144 267 56 146 269 58 143 265 54 126 242 15 126 242 15 145 268 57 146 269 58 49 270 61 143 270 60 146 270 59 146 271 59 53 271 62 49 271 61 55 55 65 54 54 64 145 268 63 145 268 63 144 267 66 55 55 65 146 272 59 145 273 63 54 58 64 54 58 64 53 57 62 146 272 59 147 274 67 148 275 70 149 276 69 149 276 69 150 277 68 147 274 67 60 64 71 149 276 69 148 275 70 148 275 70 61 65 72 60 64 71 151 278 74 152 279 73 148 280 70 148 280 70 147 281 67 151 278 74 148 280 70 152 279 73 64 70 75 64 70 75 61 71 72 148 280 70 137 282 43 153 282 78 133 282 77 133 283 77 136 283 46 137 283 43 154 284 79 147 274 67 150 277 68 150 277 68 155 285 80 154 284 79 155 285 80 156 286 82 157 287 81 157 287 81 154 284 79 155 285 80 147 281 67 154 288 79 158 289 83 158 289 83 151 278 74 147 281 67 159 290 86 160 290 85 140 290 84 140 291 84 138 291 87 159 291 86 157 292 90 156 292 89 161 292 88 161 293 88 162 293 91 157 293 90 135 294 39 134 294 40 160 294 85 160 295 85 159 295 86 135 295 39 134 296 40 133 297 41 132 298 31 132 298 31 163 299 92 134 296 40 160 300 85 161 301 88 156 302 89 156 302 89 140 303 84 160 300 85 161 301 88 163 299 92 164 304 94 164 304 94 165 305 93 161 301 88 134 296 40 163 299 92 161 301 88 161 301 88 160 300 85 134 296 40 166 306 97 167 307 96 168 308 95 168 308 95 169 309 98 166 306 97 167 307 96 170 310 99 168 308 95 168 311 95 171 311 101 129 311 100 129 312 100 128 312 24 168 312 95 128 313 24 130 313 25 169 313 98 169 314 98 168 314 95 128 314 24 170 315 102 171 315 104 168 315 103 172 316 105 164 304 94 171 317 104 171 317 104 164 304 94 163 299 92 129 318 22 171 318 107 163 318 106 163 319 106 127 319 16 129 319 22 127 251 108 163 320 92 10 321 28 10 321 28 36 322 26 127 251 108 166 306 97 169 309 98 143 264 49 143 264 49 142 263 50 166 306 97 143 265 49 169 323 98 130 266 25 144 267 56 125 241 12 173 324 109 55 55 65 144 267 66 173 324 110 173 324 110 87 120 111 55 55 65 32 240 113 118 325 112 173 324 109 173 324 109 125 241 12 32 240 113 173 326 110 118 326 115 88 326 114 88 327 114 87 327 111 173 327 110 174 328 117 175 329 118 150 330 68 150 330 68 149 331 69 174 328 117 123 332 121 131 333 120 176 334 119 176 334 119 177 335 122 123 332 121 133 336 77 153 337 78 131 333 120 131 333 120 132 338 123 133 336 77 178 339 124 131 333 120 153 337 78 176 334 119 131 333 120 178 339 124 137 340 43 139 340 44 141 340 47 141 341 47 153 341 78 137 341 43 141 342 47 140 343 48 156 344 125 156 344 125 155 345 80 141 342 47 179 346 126 155 345 80 150 330 68 150 330 68 175 329 118 179 346 126 141 342 47 179 346 126 178 339 124 178 339 124 153 337 78 141 342 47 155 345 80 179 346 126 141 342 47 180 347 127 174 328 117 60 147 71 60 147 71 6 146 128 180 347 127 149 331 69 60 147 71 174 328 117 6 146 128 124 348 129 180 347 127 181 349 130 124 348 129 123 332 121 123 332 121 177 335 122 181 349 130 180 347 127 124 348 129 181 349 130 182 350 131 174 350 117 180 351 127 180 352 127 183 352 132 182 352 131 182 353 131 184 353 133 175 353 118 175 354 118 174 354 117 182 355 131 185 356 134 179 356 126 175 356 118 175 357 118 184 357 133 185 358 134 185 359 134 186 359 135 178 359 124 178 360 124 179 360 126 185 360 134 187 361 136 176 361 119 178 361 124 178 362 124 186 362 135 187 362 136 177 363 122 176 363 119 187 363 136 187 364 136 188 364 137 177 364 122 189 365 138 181 365 130 177 365 122 177 366 122 188 366 137 189 366 138 183 367 132 180 367 127 181 367 130 181 368 130 189 368 138 183 368 132 188 369 137 187 370 136 186 371 135 188 369 137 186 371 135 185 372 134 188 369 137 185 372 134 184 373 133 183 374 132 189 375 138 188 369 137 188 369 137 184 373 133 182 376 131 183 374 132 188 369 137 182 376 131 190 377 139 135 378 39 159 379 86 159 379 86 191 380 140 190 377 139 192 381 141 136 382 42 135 378 39 135 378 39 190 377 139 192 381 141 193 383 142 138 384 87 136 382 42 136 382 42 192 381 141 193 383 142 159 379 86 138 384 87 193 383 142 193 383 142 191 380 140 159 379 86 194 385 143 195 386 144 191 387 140 191 387 140 193 388 142 194 385 143 196 389 145 190 390 139 191 391 140 191 391 140 195 392 144 196 389 145 196 393 145 197 394 146 192 395 141 192 395 141 190 396 139 196 393 145 194 397 143 193 398 142 192 399 141 192 399 141 197 400 146 194 397 143 195 401 144 194 402 143 197 403 146 197 403 146 196 404 145 195 401 144 162 405 91 161 405 88 165 406 93 165 407 93 198 407 147 162 407 91 157 408 90 162 409 91 198 410 147 154 288 79 157 411 81 199 412 148 199 412 148 158 289 83 154 288 79 172 413 105 171 413 104 170 413 102 170 414 102 200 414 149 172 414 105 170 415 102 167 416 150 200 417 149 165 418 93 164 418 94 201 418 151 201 419 151 198 419 147 165 419 93 172 420 105 200 420 149 201 420 151 201 421 151 164 421 94 172 421 105 198 410 147 201 422 151 200 417 149 167 416 150 202 423 152 200 417 149 157 408 90 198 410 147 199 424 153 200 417 149 202 423 152 198 410 147 199 424 153 198 410 147 202 423 152 8 425 30 10 425 28 163 425 92 163 426 92 132 427 31 8 427 30 64 221 155 152 428 157 119 222 156 152 428 157 151 429 158 119 222 156 203 430 159 119 222 156 151 429 158 151 429 158 158 431 160 203 430 159 158 431 160 199 432 161 203 430 159 203 430 159 199 432 161 202 433 162 202 433 162 204 434 163 203 430 159 202 433 162 167 435 164 204 434 163 204 434 163 167 435 164 166 436 165 166 436 165 122 232 166 204 434 163 166 436 165 142 437 167 122 232 166 142 437 167 48 234 168 122 232 166 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_animations />
+    <library_visual_scenes>
+        <visual_scene id="ksh_sec_dreadnought_ionbeamturret" name="ksh_sec_dreadnought_ionbeamturret">
+            <node name="ROOT_INFO" id="ROOT_INFO" sid="ROOT_INFO">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="UVSets[1]" id="UVSets[1]" sid="UVSets[1]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+                <node name="Class[MultiMesh]_Version[512]" id="Class[MultiMesh]_Version[512]" sid="Class[MultiMesh]_Version[512]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_LOD[0]" id="ROOT_LOD[0]" sid="ROOT_LOD[0]">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="JNT[Weapon_IonCan1_Position]" id="JNT[Weapon_IonCan1_Position]" sid="JNT[Weapon_IonCan1_Position]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[vent1]" id="JNT[vent1]" sid="JNT[vent1]">
+                        <translate sid="translate">0.316611 9.895156 -16.802502</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 180.724075</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_IonCan1_Direction]" id="JNT[Weapon_IonCan1_Direction]" sid="JNT[Weapon_IonCan1_Direction]">
+                        <translate sid="translate">0.045045 18.758690 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_IonCan1_Latitude]" id="JNT[Weapon_IonCan1_Latitude]" sid="JNT[Weapon_IonCan1_Latitude]">
+                        <translate sid="translate">2.831272 5.000000 18.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_IonCan1_Muzzle]" id="JNT[Weapon_IonCan1_Muzzle]" sid="JNT[Weapon_IonCan1_Muzzle]">
+                            <translate sid="translate">0.014955 -0.000053 -0.009004</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_IonCan1_Rest]" id="JNT[Weapon_IonCan1_Rest]" sid="JNT[Weapon_IonCan1_Rest]">
+                        <translate sid="translate">0.045045 0.000000 27.439880</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]" id="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]" sid="MULT[Weapon_IonCan1_Position_mesh]_LOD[0]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <instance_geometry url="#MULT[Weapon_IonCan1_Position_mesh]_LOD[0]-lib">
+                            <bind_material>
+                                <technique_common>
+                                    <instance_material symbol="MAT[gun_rm]_SHD[ship]" target="#MAT[gun_rm]_SHD[ship]" />
+                                </technique_common>
+                            </bind_material>
+                        </instance_geometry>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+                <node name="JNT[Weapon_IonCan1Slave_Position]" id="JNT[Weapon_IonCan1Slave_Position]" sid="JNT[Weapon_IonCan1Slave_Position]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_IonCan1Slave_Direction]" id="JNT[Weapon_IonCan1Slave_Direction]" sid="JNT[Weapon_IonCan1Slave_Direction]">
+                        <translate sid="translate">0.000000 18.758694 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_IonCan1Slave_Latitude]" id="JNT[Weapon_IonCan1Slave_Latitude]" sid="JNT[Weapon_IonCan1Slave_Latitude]">
+                        <translate sid="translate">-2.827873 5.000000 18.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_IonCan1Slave_Muzzle]" id="JNT[Weapon_IonCan1Slave_Muzzle]" sid="JNT[Weapon_IonCan1Slave_Muzzle]">
+                            <translate sid="translate">0.009557 0.018090 -0.003752</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_IonCan1Slave_Rest]" id="JNT[Weapon_IonCan1Slave_Rest]" sid="JNT[Weapon_IonCan1Slave_Rest]">
+                        <translate sid="translate">0.000000 0.000000 27.439878</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+            </node>
+            <extra>
+                <technique profile="MAX3D">
+                    <frame_rate>30.000000</frame_rate>
+                </technique>
+                <technique profile="FCOLLADA">
+                    <start_time>0.000000</start_time>
+                    <end_time>0.0333333</end_time>
+                </technique>
+            </extra>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#ksh_sec_dreadnought_ionbeamturret" />
+    </scene>
+</COLLADA>

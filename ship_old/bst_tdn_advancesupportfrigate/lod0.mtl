@@ -1,0 +1,36 @@
+﻿newmtl Tai_SupportFrigate
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd diff.dds
+
+newmtl Tai_SupportFrigateEngine
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Tai_DFGFrigate_Engine_DIFX.dds
+
+newmtl Tai_SupportFrigate_badge
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd diff.dds
+
+newmtl Tai_SupportFrigateBay
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd diff.dds
+

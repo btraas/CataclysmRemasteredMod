@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <author>RODOH</author>
+            <authoring_tool>RODOH Apr 16 2015 17:44:57</authoring_tool>
+        </contributor>
+        <unit meter="0.010000" name="centimeter" />
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="IMG[gun_undersides_EXPORT[1]_DIFF]-image" name="IMG[gun_undersides_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gun_undersides_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gun_undersides_EXPORT[1]_TEAM]-image" name="IMG[gun_undersides_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gun_undersides_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gun_undersides_EXPORT[1]_GLOW]-image" name="IMG[gun_undersides_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gun_undersides_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gun_undersides_EXPORT[1]_SPEC]-image" name="IMG[gun_undersides_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gun_undersides_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gun_undersides_EXPORT[1]_STRP]-image" name="IMG[gun_undersides_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gun_undersides_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+        <image id="IMG[gun_side_EXPORT[1]_DIFF]-image" name="IMG[gun_side_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gun_side_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gun_side_EXPORT[1]_TEAM]-image" name="IMG[gun_side_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gun_side_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gun_side_EXPORT[1]_GLOW]-image" name="IMG[gun_side_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gun_side_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gun_side_EXPORT[1]_SPEC]-image" name="IMG[gun_side_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gun_side_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gun_side_EXPORT[1]_STRP]-image" name="IMG[gun_side_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gun_side_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_DIFF]-image" name="IMG[gun_back_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_TEAM]-image" name="IMG[gun_back_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_GLOW]-image" name="IMG[gun_back_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_SPEC]-image" name="IMG[gun_back_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gun_back_EXPORT[1]_STRP]-image" name="IMG[gun_back_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gun_back_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+        <image id="IMG[gun_top_EXPORT[1]_DIFF]-image" name="IMG[gun_top_EXPORT[1]_DIFF]_FMT[DXT5]">
+            <init_from>gun_top_EXPORT[1]_DIFF.TGA</init_from>
+        </image>
+        <image id="IMG[gun_top_EXPORT[1]_TEAM]-image" name="IMG[gun_top_EXPORT[1]_TEAM]_FMT[DXT5]">
+            <init_from>gun_top_EXPORT[1]_TEAM.TGA</init_from>
+        </image>
+        <image id="IMG[gun_top_EXPORT[1]_GLOW]-image" name="IMG[gun_top_EXPORT[1]_GLOW]_FMT[DXT5]">
+            <init_from>gun_top_EXPORT[1]_GLOW.TGA</init_from>
+        </image>
+        <image id="IMG[gun_top_EXPORT[1]_SPEC]-image" name="IMG[gun_top_EXPORT[1]_SPEC]_FMT[DXT5]">
+            <init_from>gun_top_EXPORT[1]_SPEC.TGA</init_from>
+        </image>
+        <image id="IMG[gun_top_EXPORT[1]_STRP]-image" name="IMG[gun_top_EXPORT[1]_STRP]_FMT[DXT5]">
+            <init_from>gun_top_EXPORT[1]_STRP.TGA</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="MAT[gun_undersides]_SHD[ship]" name="MAT[gun_undersides]_SHD[ship]">
+            <instance_effect url="#MAT[gun_undersides]_SHD[ship]-fx" />
+        </material>
+        <material id="MAT[gun_side]_SHD[ship]" name="MAT[gun_side]_SHD[ship]">
+            <instance_effect url="#MAT[gun_side]_SHD[ship]-fx" />
+        </material>
+        <material id="MAT[gun_back]_SHD[ship]" name="MAT[gun_back]_SHD[ship]">
+            <instance_effect url="#MAT[gun_back]_SHD[ship]-fx" />
+        </material>
+        <material id="MAT[gun_top]_SHD[ship]" name="MAT[gun_top]_SHD[ship]">
+            <instance_effect url="#MAT[gun_top]_SHD[ship]-fx" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="MAT[gun_undersides]_SHD[ship]-fx" name="MAT[gun_undersides]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gun_undersides_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gun_undersides_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gun_undersides_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+        <effect id="MAT[gun_side]_SHD[ship]-fx" name="MAT[gun_side]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gun_side_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gun_side_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gun_side_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+        <effect id="MAT[gun_back]_SHD[ship]-fx" name="MAT[gun_back]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gun_back_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gun_back_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gun_back_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+        <effect id="MAT[gun_top]_SHD[ship]-fx" name="MAT[gun_top]_SHD[ship]">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <emission>
+                            <texture texture="IMG[gun_top_EXPORT[1]_GLOW]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </emission>
+                        <ambient>
+                            <color sid="ambient">1.000000 1.000000 1.000000 1.000000</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="IMG[gun_top_EXPORT[1]_DIFF]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                        <specular>
+                            <texture texture="IMG[gun_top_EXPORT[1]_SPEC]-image">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </specular>
+                        <shininess>
+                            <float sid="shininess">1.071773</float>
+                        </shininess>
+                        <reflective>
+                            <color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+                        </reflective>
+                        <reflectivity>
+                            <float sid="reflectivity">1.000000</float>
+                        </reflectivity>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent">1.000000 1.000000 1.000000 1.000000</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency">0.000000</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="MULT[turret]_LOD[0]-lib" name="MULT[turret]_LOD[0]Mesh">
+            <mesh>
+                <source id="MULT[turret]_LOD[0]-POSITION">
+                    <float_array id="MULT[turret]_LOD[0]-POSITION-array" count="42"> -7.393239 -4.202083 7.878080 4.956161 -1.947862 10.663120 -5.031919 -1.947866 10.663120 7.325481 -4.202078 7.878080 3.682747 3.026165 9.738120 -3.777325 3.026163 9.738120 -5.273481 4.202078 4.621960 5.173879 4.202082 4.621960 8.761122 -4.202077 -7.575360 6.199719 4.202082 -3.340188 -8.761119 -4.202083 -7.575360 -6.237601 4.202078 -3.340188 0.101278 4.202080 -6.428000 0.101280 -4.202080 -10.663120</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[0]-POSITION-array" count="14" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[turret]_LOD[0]-Normal0">
+                    <float_array id="MULT[turret]_LOD[0]-Normal0-array" count="93"> 0.000000 -0.777294 0.629137 0.000000 -0.777294 0.629137 0.000000 -0.777294 0.629137 -0.000000 0.182836 0.983143 -0.000000 0.182836 0.983143 -0.000000 0.182836 0.983143 -0.925664 0.294217 0.237872 -0.868799 0.329210 0.369878 -0.899263 0.288038 0.329182 0.924163 0.296858 0.240412 0.898413 0.291149 0.328766 0.867905 0.332119 0.369375 -0.911075 0.327038 0.250976 0.909307 0.330671 0.252619 0.960931 0.255427 0.106619 0.964877 0.231427 0.124315 -0.962225 0.252864 0.100908 -0.965877 0.231090 0.116955 0.004738 0.498736 -0.866741 0.347337 0.468783 -0.812157 0.003311 0.450021 -0.893012 0.389519 0.506399 -0.769308 -0.338346 0.468234 -0.816259 -0.378073 0.504649 -0.776138 -0.000000 0.993627 0.112720 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 0.974588 0.224004 -0.000000 0.974588 0.224004 -0.000000 0.997177 0.075093 -0.000000 1.000000 -0.000000</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[0]-Normal0-array" count="31" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[turret]_LOD[0]-UV0">
+                    <float_array id="MULT[turret]_LOD[0]-UV0-array" count="56"> 1.087900 0.951455 0.097043 0.820237 0.898442 0.820237 1.097040 0.820237 2.087900 0.951455 0.906943 0.951455 0.900170 0.995050 0.197448 0.004950 0.801407 0.004950 0.099830 0.995050 0.332902 0.004950 0.004951 0.729480 0.055167 0.143486 0.156141 0.995049 0.995049 0.995049 0.765139 0.004950 0.505723 0.004950 0.505723 0.995049 0.845798 0.004950 0.004950 0.995049 0.156580 0.004950 0.913384 0.684515 0.995049 0.202478 0.502040 0.004950 0.200805 0.995049 0.794681 0.995049 0.081701 0.684515 0.004950 0.202478</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[0]-UV0-array" count="28" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="MULT[turret]_LOD[0]-VERTEX">
+                    <input semantic="POSITION" source="#MULT[turret]_LOD[0]-POSITION" />
+                </vertices>
+                <triangles count="4" material="MAT[gun_undersides]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[0]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[0]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[0]-UV0" />
+                    <p>0 0 0 1 0 1 2 1 2 1 0 3 0 0 4 3 2 5 2 3 6 4 3 7 5 4 8 2 3 6 1 5 9 4 3 7 </p>
+                </triangles>
+                <triangles count="8" material="MAT[gun_side]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[0]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[0]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[0]-UV0" />
+                    <p>6 6 10 2 7 11 5 8 12 7 9 10 4 10 12 1 11 11 2 7 11 6 6 10 0 12 13 7 9 10 1 11 11 3 13 13 8 14 14 9 15 15 7 9 10 10 16 14 6 6 10 11 17 15 6 6 10 10 16 14 0 12 13 8 14 14 7 9 10 3 13 13 </p>
+                </triangles>
+                <triangles count="4" material="MAT[gun_back]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[0]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[0]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[0]-UV0" />
+                    <p>12 18 16 8 19 14 13 20 17 8 19 14 12 18 16 9 21 18 10 22 19 12 18 16 13 20 17 10 22 19 11 23 20 12 18 16 </p>
+                </triangles>
+                <triangles count="5" material="MAT[gun_top]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[0]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[0]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[0]-UV0" />
+                    <p>7 24 21 9 25 22 12 26 23 7 24 21 5 27 24 4 28 25 6 29 26 7 24 21 12 26 23 6 29 26 12 26 23 11 30 27 5 27 24 7 24 21 6 29 26 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+        <geometry id="MULT[turret]_LOD[1]-lib" name="MULT[turret]_LOD[1]Mesh">
+            <mesh>
+                <source id="MULT[turret]_LOD[1]-POSITION">
+                    <float_array id="MULT[turret]_LOD[1]-POSITION-array" count="42"> -7.393239 -4.202083 7.878080 4.956161 -1.947862 10.663120 -5.031919 -1.947866 10.663120 7.325481 -4.202078 7.878080 3.682747 3.026165 9.738120 -3.777325 3.026163 9.738120 -5.273481 4.202078 4.621960 5.173879 4.202082 4.621960 8.761122 -4.202077 -7.575360 6.199719 4.202082 -3.340188 -8.761119 -4.202083 -7.575360 -6.237601 4.202078 -3.340188 0.101278 4.202080 -6.428000 0.101280 -4.202080 -10.663120</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[1]-POSITION-array" count="14" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[turret]_LOD[1]-Normal0">
+                    <float_array id="MULT[turret]_LOD[1]-Normal0-array" count="93"> 0.000000 -0.777294 0.629137 0.000000 -0.777294 0.629137 0.000000 -0.777294 0.629137 -0.000000 0.182836 0.983143 -0.000000 0.182836 0.983143 -0.000000 0.182836 0.983143 -0.925664 0.294217 0.237872 -0.868799 0.329210 0.369878 -0.899263 0.288038 0.329182 0.924163 0.296858 0.240412 0.898413 0.291149 0.328766 0.867905 0.332119 0.369375 -0.911075 0.327038 0.250976 0.909307 0.330671 0.252619 0.960931 0.255427 0.106619 0.964877 0.231427 0.124315 -0.962225 0.252864 0.100908 -0.965877 0.231090 0.116955 0.004738 0.498736 -0.866741 0.347337 0.468783 -0.812157 0.003311 0.450021 -0.893012 0.389519 0.506399 -0.769308 -0.338346 0.468234 -0.816259 -0.378073 0.504649 -0.776138 -0.000000 0.993627 0.112720 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 0.974588 0.224004 -0.000000 0.974588 0.224004 -0.000000 0.997177 0.075093 -0.000000 1.000000 -0.000000</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[1]-Normal0-array" count="31" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[turret]_LOD[1]-UV0">
+                    <float_array id="MULT[turret]_LOD[1]-UV0-array" count="56"> 1.087900 0.951455 0.097043 0.820237 0.898442 0.820237 1.097040 0.820237 2.087900 0.951455 0.906943 0.951455 0.900170 0.995050 0.197448 0.004950 0.801407 0.004950 0.099830 0.995050 0.332902 0.004950 0.004951 0.729480 0.055167 0.143486 0.156141 0.995049 0.995049 0.995049 0.765139 0.004950 0.505723 0.004950 0.505723 0.995049 0.845798 0.004950 0.004950 0.995049 0.156580 0.004950 0.913384 0.684515 0.995049 0.202478 0.502040 0.004950 0.200805 0.995049 0.794681 0.995049 0.081701 0.684515 0.004950 0.202478</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[1]-UV0-array" count="28" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="MULT[turret]_LOD[1]-VERTEX">
+                    <input semantic="POSITION" source="#MULT[turret]_LOD[1]-POSITION" />
+                </vertices>
+                <triangles count="4" material="MAT[gun_undersides]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[1]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[1]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[1]-UV0" />
+                    <p>0 0 0 1 0 1 2 1 2 1 0 3 0 0 4 3 2 5 2 3 6 4 3 7 5 4 8 2 3 6 1 5 9 4 3 7 </p>
+                </triangles>
+                <triangles count="8" material="MAT[gun_side]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[1]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[1]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[1]-UV0" />
+                    <p>6 6 10 2 7 11 5 8 12 7 9 10 4 10 12 1 11 11 2 7 11 6 6 10 0 12 13 7 9 10 1 11 11 3 13 13 8 14 14 9 15 15 7 9 10 10 16 14 6 6 10 11 17 15 6 6 10 10 16 14 0 12 13 8 14 14 7 9 10 3 13 13 </p>
+                </triangles>
+                <triangles count="4" material="MAT[gun_back]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[1]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[1]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[1]-UV0" />
+                    <p>12 18 16 8 19 14 13 20 17 8 19 14 12 18 16 9 21 18 10 22 19 12 18 16 13 20 17 10 22 19 11 23 20 12 18 16 </p>
+                </triangles>
+                <triangles count="5" material="MAT[gun_top]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[1]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[1]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[1]-UV0" />
+                    <p>7 24 21 9 25 22 12 26 23 7 24 21 5 27 24 4 28 25 6 29 26 7 24 21 12 26 23 6 29 26 12 26 23 11 30 27 5 27 24 7 24 21 6 29 26 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+        <geometry id="MULT[turret]_LOD[2]-lib" name="MULT[turret]_LOD[2]Mesh">
+            <mesh>
+                <source id="MULT[turret]_LOD[2]-POSITION">
+                    <float_array id="MULT[turret]_LOD[2]-POSITION-array" count="42"> -7.393239 -4.202083 7.878080 4.956161 -1.947862 10.663120 -5.031919 -1.947866 10.663120 7.325481 -4.202078 7.878080 3.682747 3.026165 9.738120 -3.777325 3.026163 9.738120 -5.273481 4.202078 4.621960 5.173879 4.202082 4.621960 8.761122 -4.202077 -7.575360 6.199719 4.202082 -3.340188 -8.761119 -4.202083 -7.575360 -6.237601 4.202078 -3.340188 0.101278 4.202080 -6.428000 0.101280 -4.202080 -10.663120</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[2]-POSITION-array" count="14" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[turret]_LOD[2]-Normal0">
+                    <float_array id="MULT[turret]_LOD[2]-Normal0-array" count="93"> 0.000000 -0.777294 0.629137 0.000000 -0.777294 0.629137 0.000000 -0.777294 0.629137 -0.000000 0.182836 0.983143 -0.000000 0.182836 0.983143 -0.000000 0.182836 0.983143 -0.925664 0.294217 0.237872 -0.868799 0.329210 0.369878 -0.899263 0.288038 0.329182 0.924163 0.296858 0.240412 0.898413 0.291149 0.328766 0.867905 0.332119 0.369375 -0.911075 0.327038 0.250976 0.909307 0.330671 0.252619 0.960931 0.255427 0.106619 0.964877 0.231427 0.124315 -0.962225 0.252864 0.100908 -0.965877 0.231090 0.116955 0.004738 0.498736 -0.866741 0.347337 0.468783 -0.812157 0.003311 0.450021 -0.893012 0.389519 0.506399 -0.769308 -0.338346 0.468234 -0.816259 -0.378073 0.504649 -0.776138 -0.000000 0.993627 0.112720 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 0.974588 0.224004 -0.000000 0.974588 0.224004 -0.000000 0.997177 0.075093 -0.000000 1.000000 -0.000000</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[2]-Normal0-array" count="31" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="MULT[turret]_LOD[2]-UV0">
+                    <float_array id="MULT[turret]_LOD[2]-UV0-array" count="56"> 1.087900 0.951455 0.097043 0.820237 0.898442 0.820237 1.097040 0.820237 2.087900 0.951455 0.906943 0.951455 0.900170 0.995050 0.197448 0.004950 0.801407 0.004950 0.099830 0.995050 0.332902 0.004950 0.004951 0.729480 0.055167 0.143486 0.156141 0.995049 0.995049 0.995049 0.765139 0.004950 0.505723 0.004950 0.505723 0.995049 0.845798 0.004950 0.004950 0.995049 0.156580 0.004950 0.913384 0.684515 0.995049 0.202478 0.502040 0.004950 0.200805 0.995049 0.794681 0.995049 0.081701 0.684515 0.004950 0.202478</float_array>
+                    <technique_common>
+                        <accessor source="#MULT[turret]_LOD[2]-UV0-array" count="28" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="MULT[turret]_LOD[2]-VERTEX">
+                    <input semantic="POSITION" source="#MULT[turret]_LOD[2]-POSITION" />
+                </vertices>
+                <triangles count="4" material="MAT[gun_undersides]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[2]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[2]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[2]-UV0" />
+                    <p>0 0 0 1 0 1 2 1 2 1 0 3 0 0 4 3 2 5 2 3 6 4 3 7 5 4 8 2 3 6 1 5 9 4 3 7 </p>
+                </triangles>
+                <triangles count="8" material="MAT[gun_side]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[2]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[2]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[2]-UV0" />
+                    <p>6 6 10 2 7 11 5 8 12 7 9 10 4 10 12 1 11 11 2 7 11 6 6 10 0 12 13 7 9 10 1 11 11 3 13 13 8 14 14 9 15 15 7 9 10 10 16 14 6 6 10 11 17 15 6 6 10 10 16 14 0 12 13 8 14 14 7 9 10 3 13 13 </p>
+                </triangles>
+                <triangles count="4" material="MAT[gun_back]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[2]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[2]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[2]-UV0" />
+                    <p>12 18 16 8 19 14 13 20 17 8 19 14 12 18 16 9 21 18 10 22 19 12 18 16 13 20 17 10 22 19 11 23 20 12 18 16 </p>
+                </triangles>
+                <triangles count="5" material="MAT[gun_top]_SHD[ship]">
+                    <input semantic="VERTEX" offset="0" source="#MULT[turret]_LOD[2]-VERTEX" />
+                    <input semantic="NORMAL" offset="1" source="#MULT[turret]_LOD[2]-Normal0" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#MULT[turret]_LOD[2]-UV0" />
+                    <p>7 24 21 9 25 22 12 26 23 7 24 21 5 27 24 4 28 25 6 29 26 7 24 21 12 26 23 6 29 26 12 26 23 11 30 27 5 27 24 7 24 21 6 29 26 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+        <geometry id="COL[Root]-lib" name="COL[Root]Mesh">
+            <mesh>
+                <source id="COL[Root]-POSITION">
+                    <float_array id="COL[Root]-POSITION-array" count="189"> -7.393239 -4.202083 7.878080 4.956161 -1.947862 10.663120 -5.031919 -1.947866 10.663120 4.956161 -1.947862 10.663120 -7.393239 -4.202083 7.878080 7.325481 -4.202078 7.878080 -5.031919 -1.947866 10.663120 3.682747 3.026165 9.738120 -3.777325 3.026163 9.738120 -5.031919 -1.947866 10.663120 4.956161 -1.947862 10.663120 3.682747 3.026165 9.738120 -5.273481 4.202078 4.621960 -5.031919 -1.947866 10.663120 -3.777325 3.026163 9.738120 5.173879 4.202082 4.621960 3.682747 3.026165 9.738120 4.956161 -1.947862 10.663120 -5.031919 -1.947866 10.663120 -5.273481 4.202078 4.621960 -7.393239 -4.202083 7.878080 5.173879 4.202082 4.621960 4.956161 -1.947862 10.663120 7.325481 -4.202078 7.878080 8.761122 -4.202077 -7.575360 6.199719 4.202082 -3.340188 5.173879 4.202082 4.621960 -8.761119 -4.202083 -7.575360 -5.273481 4.202078 4.621960 -6.237601 4.202078 -3.340188 -5.273481 4.202078 4.621960 -8.761119 -4.202083 -7.575360 -7.393239 -4.202083 7.878080 8.761122 -4.202077 -7.575360 5.173879 4.202082 4.621960 7.325481 -4.202078 7.878080 0.101278 4.202080 -6.428000 8.761122 -4.202077 -7.575360 0.101280 -4.202080 -10.663120 8.761122 -4.202077 -7.575360 0.101278 4.202080 -6.428000 6.199719 4.202082 -3.340188 -8.761119 -4.202083 -7.575360 0.101278 4.202080 -6.428000 0.101280 -4.202080 -10.663120 -8.761119 -4.202083 -7.575360 -6.237601 4.202078 -3.340188 0.101278 4.202080 -6.428000 5.173879 4.202082 4.621960 6.199719 4.202082 -3.340188 0.101278 4.202080 -6.428000 5.173879 4.202082 4.621960 -3.777325 3.026163 9.738120 3.682747 3.026165 9.738120 -5.273481 4.202078 4.621960 5.173879 4.202082 4.621960 0.101278 4.202080 -6.428000 -5.273481 4.202078 4.621960 0.101278 4.202080 -6.428000 -6.237601 4.202078 -3.340188 -3.777325 3.026163 9.738120 5.173879 4.202082 4.621960 -5.273481 4.202078 4.621960</float_array>
+                    <technique_common>
+                        <accessor source="#COL[Root]-POSITION-array" count="63" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="COL[Root]-VERTEX">
+                    <input semantic="POSITION" source="#COL[Root]-POSITION" />
+                </vertices>
+                <triangles count="21">
+                    <input semantic="VERTEX" offset="0" source="#COL[Root]-VERTEX" />
+                    <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_animations />
+    <library_visual_scenes>
+        <visual_scene id="ksh_sec_destroyerturret" name="ksh_sec_destroyerturret">
+            <node name="ROOT_COL" id="ROOT_COL" sid="ROOT_COL">
+                <translate sid="translate">-43.805599 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="COL[Root]" id="COL[Root]" sid="COL[Root]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 -0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <instance_geometry url="#COL[Root]-lib" />
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_INFO" id="ROOT_INFO" sid="ROOT_INFO">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="UVSets[1]" id="UVSets[1]" sid="UVSets[1]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+                <node name="Class[MultiMesh]_Version[512]" id="Class[MultiMesh]_Version[512]" sid="Class[MultiMesh]_Version[512]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_LOD[0]" id="ROOT_LOD[0]" sid="ROOT_LOD[0]">
+                <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="JNT[Weapon_TurretTop_Position]" id="JNT[Weapon_TurretTop_Position]" sid="JNT[Weapon_TurretTop_Position]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                    <node name="JNT[Weapon_TurretTop_Direction]" id="JNT[Weapon_TurretTop_Direction]" sid="JNT[Weapon_TurretTop_Direction]">
+                        <translate sid="translate">0.000000 1.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="JNT[Weapon_TurretTop_Latitude]" id="JNT[Weapon_TurretTop_Latitude]" sid="JNT[Weapon_TurretTop_Latitude]">
+                        <translate sid="translate">0.000000 1.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                        <node name="JNT[Weapon_TurretTop_Muzzle]" id="JNT[Weapon_TurretTop_Muzzle]" sid="JNT[Weapon_TurretTop_Muzzle]">
+                            <translate sid="translate">0.000000 1.000000 5.000000</translate>
+                            <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                            <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                            <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                            <extra>
+                                <technique profile="FCOLLADA">
+                                    <visibility>1.000000</visibility>
+                                </technique>
+                            </extra>
+                        </node>
+                    </node>
+                    <node name="JNT[Weapon_TurretTop_Rest]" id="JNT[Weapon_TurretTop_Rest]" sid="JNT[Weapon_TurretTop_Rest]">
+                        <translate sid="translate">0.000000 0.000000 1.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                    <node name="MULT[turret]_LOD[0]" id="MULT[turret]_LOD[0]" sid="MULT[turret]_LOD[0]">
+                        <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                        <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                        <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                        <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                        <instance_geometry url="#MULT[turret]_LOD[0]-lib">
+                            <bind_material>
+                                <technique_common>
+                                    <instance_material symbol="MAT[gun_undersides]_SHD[ship]" target="#MAT[gun_undersides]_SHD[ship]" />
+                                    <instance_material symbol="MAT[gun_side]_SHD[ship]" target="#MAT[gun_side]_SHD[ship]" />
+                                    <instance_material symbol="MAT[gun_back]_SHD[ship]" target="#MAT[gun_back]_SHD[ship]" />
+                                    <instance_material symbol="MAT[gun_top]_SHD[ship]" target="#MAT[gun_top]_SHD[ship]" />
+                                </technique_common>
+                            </bind_material>
+                        </instance_geometry>
+                        <extra>
+                            <technique profile="FCOLLADA">
+                                <visibility>1.000000</visibility>
+                            </technique>
+                        </extra>
+                    </node>
+                </node>
+            </node>
+            <node name="ROOT_LOD[1]" id="ROOT_LOD[1]" sid="ROOT_LOD[1]">
+                <translate sid="translate">26.283360 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="MULT[turret]_LOD[1]" id="MULT[turret]_LOD[1]" sid="MULT[turret]_LOD[1]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 -0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <instance_geometry url="#MULT[turret]_LOD[1]-lib">
+                        <bind_material>
+                            <technique_common>
+                                <instance_material symbol="MAT[gun_undersides]_SHD[ship]" target="#MAT[gun_undersides]_SHD[ship]" />
+                                <instance_material symbol="MAT[gun_side]_SHD[ship]" target="#MAT[gun_side]_SHD[ship]" />
+                                <instance_material symbol="MAT[gun_back]_SHD[ship]" target="#MAT[gun_back]_SHD[ship]" />
+                                <instance_material symbol="MAT[gun_top]_SHD[ship]" target="#MAT[gun_top]_SHD[ship]" />
+                            </technique_common>
+                        </bind_material>
+                    </instance_geometry>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <node name="ROOT_LOD[2]" id="ROOT_LOD[2]" sid="ROOT_LOD[2]">
+                <translate sid="translate">52.566719 0.000000 0.000000</translate>
+                <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                <rotate sid="rotateY">0 1 0 0.000000</rotate>
+                <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+                <node name="MULT[turret]_LOD[2]" id="MULT[turret]_LOD[2]" sid="MULT[turret]_LOD[2]">
+                    <translate sid="translate">0.000000 0.000000 0.000000</translate>
+                    <rotate sid="rotateZ">0 0 1 0.000000</rotate>
+                    <rotate sid="rotateY">0 1 0 -0.000000</rotate>
+                    <rotate sid="rotateX">1 0 0 0.000000</rotate>
+                    <instance_geometry url="#MULT[turret]_LOD[2]-lib">
+                        <bind_material>
+                            <technique_common>
+                                <instance_material symbol="MAT[gun_undersides]_SHD[ship]" target="#MAT[gun_undersides]_SHD[ship]" />
+                                <instance_material symbol="MAT[gun_side]_SHD[ship]" target="#MAT[gun_side]_SHD[ship]" />
+                                <instance_material symbol="MAT[gun_back]_SHD[ship]" target="#MAT[gun_back]_SHD[ship]" />
+                                <instance_material symbol="MAT[gun_top]_SHD[ship]" target="#MAT[gun_top]_SHD[ship]" />
+                            </technique_common>
+                        </bind_material>
+                    </instance_geometry>
+                    <extra>
+                        <technique profile="FCOLLADA">
+                            <visibility>1.000000</visibility>
+                        </technique>
+                    </extra>
+                </node>
+            </node>
+            <extra>
+                <technique profile="MAX3D">
+                    <frame_rate>30.000000</frame_rate>
+                </technique>
+                <technique profile="FCOLLADA">
+                    <start_time>0.000000</start_time>
+                    <end_time>0.0333333</end_time>
+                </technique>
+            </extra>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#ksh_sec_destroyerturret" />
+    </scene>
+</COLLADA>
