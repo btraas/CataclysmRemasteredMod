@@ -1,0 +1,14 @@
+--=============================================================================
+--    Name    : Hgn_ResourceCollector.madStates
+--    Purpose : Animation state data.
+--
+--Created 250403 by cgladstone
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+
+-- TRY TO HAVE THIS RUN ALL THE TIME ---------------------------------------------------------
+
+SMT_MS_Normal_OnSet = function(ship)
+    startAnim(ship, "rotate")
+    setLoopCount(ship, "rotate", 100000)   --infinite looping
+end

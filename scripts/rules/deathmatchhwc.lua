@@ -37,8 +37,9 @@ GameSetupOptions =
             "$3215", "Small",
             "$3216", "Normal",
             "$3217", "Large",
-						"$4801", "Huge",
-        },
+			"$4801", "Huge",
+--			"Unlimited", "Unlimited",
+		},
     },
     {
         name = "resstart",

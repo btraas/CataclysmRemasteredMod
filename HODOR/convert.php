@@ -30,16 +30,20 @@
 		$input_dir  = empty(@$argv[2]) ? $def_build_dir : "../".$argv[2];
 		$output_dir = empty(@$argv[3]) ? $def_src_dir	: "../".$argv[3];
 
-		$ext = "hod";
+		$ext = "{hod,HOD}";
 	}
 	elseif($prog=='hodor' || $prog=='hodor1')
 	{
 		$input_dir	= empty(@$argv[2]) ? $def_src_dir 	: "../".$argv[2];
 		$output_dir = empty(@$argv[3]) ? $def_build_dir : "../".$argv[3];	
 	
-		$ext = "dae";
+		$ext = "{dae,DAE}";
 	}
-	else exit(1);
+	else 
+	{
+		printUsage();
+		exit(1);
+	}
 
 
 	if(@$argv[3] == 'here') 
@@ -58,7 +62,7 @@
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".PHP_EOL.PHP_EOL;
 
 
-	$ships = glob($inputFiles);
+	$ships = glob($inputFiles, GLOB_BRACE);
 	print_r($ships);
 
 
@@ -77,8 +81,13 @@
 
 		$script = $here ? "$prog.here.params" : "$prog.custominout.params";
 
-		$cmd = "./$prog -"."\\$"."SHIP_NAME=$ship -"."\\$"."INPUT_BASE=$input_folder -"."\\$"."OUTPUT_BASE=$output_folder -script=$script >> $prog.log";
+		$cmd = "echo a | ./$prog -"."\\$"."SHIP_NAME=$ship -"."\\$"."INPUT_BASE=$input_folder -"."\\$"."OUTPUT_BASE=$output_folder -script=$script >> $prog.log";
 		echo "Converting $ship with cmd:$cmd".PHP_EOL.PHP_EOL;
 		exec($cmd);
 	}	
+
+	function printUsage()
+	{
+		echo "Usage: $argv[0] hodor|hodor1|rodoh|rodohrm [input dir] [output dir]".PHP_EOL;
+	}
 ?>

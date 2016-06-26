@@ -1,0 +1,297 @@
+﻿newmtl Osca12
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca12_EXPORT[1]_DIFF.dds
+
+newmtl Osca30
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca30_EXPORT[1]_DIFF.dds
+
+newmtl Osca10xx
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca10xx_EXPORT[1]_DIFF.dds
+
+newmtl Osca32
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca32_EXPORT[1]_DIFF.dds
+
+newmtl Osca20
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca20_EXPORT[1]_DIFF.dds
+
+newmtl Osca23
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca23_EXPORT[1]_DIFF.dds
+
+newmtl Oscatopsides
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0scatopsides_EXPORT[1]_DIFF.dds
+
+newmtl Osca18
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca18_EXPORT[1]_DIFF.dds
+
+newmtl Oscabackin
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0scabackin_EXPORT[1]_DIFF.dds
+
+newmtl Osca16
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca16_EXPORT[1]_DIFF.dds
+
+newmtl Osca16_6
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca16_6_EXPORT[1]_DIFF.dds
+
+newmtl Osca15
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca15_EXPORT[1]_DIFF.dds
+
+newmtl Osca15x
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca15x_EXPORT[1]_DIFF.dds
+
+newmtl Osca27
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca27_EXPORT[1]_DIFF.dds
+
+newmtl Osca9
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca9_EXPORT[1]_DIFF.dds
+
+newmtl Osca17
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca17_EXPORT[1]_DIFF.dds
+
+newmtl Osca22
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca22_EXPORT[1]_DIFF.dds
+
+newmtl Osca43
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca43_EXPORT[1]_DIFF.dds
+
+newmtl Osca11
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca11_EXPORT[1]_DIFF.dds
+
+newmtl Osca31
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca31_EXPORT[1]_DIFF.dds
+
+newmtl 1sca25
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca25_EXPORT[1]_DIFF.dds
+
+newmtl 1sca21
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 1sca21_EXPORT[1]_DIFF.dds
+
+newmtl 0scacity
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0scacity_EXPORT[1]_DIFF.dds
+
+newmtl 0sca13
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca13_EXPORT[1]_DIFF.dds
+
+newmtl 0scatopback
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0scatopback_EXPORT[1]_DIFF.dds
+
+newmtl 0scatopmidback
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0scatopmidback_EXPORT[1]_DIFF.dds
+
+newmtl 0sca33
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca33_EXPORT[1]_DIFF.dds
+
+newmtl 0sca42
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca42_EXPORT[1]_DIFX.dds
+
+newmtl 0sca26dock
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca26dock_EXPORT[1]_DIFF.dds
+
+newmtl 0sca29dock
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca29dock_EXPORT[1]_DIFF.dds
+
+newmtl 0sca10dock
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 0sca10dock_EXPORT[1]_DIFF.dds
+
+newmtl SMO_eng_face_upr
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd 1.dds
+
+newmtl page0
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd page0_EXPORT[1]_DIFF.dds
+
