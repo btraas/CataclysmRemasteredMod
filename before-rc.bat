@@ -10,8 +10,6 @@ IF [%1] == [] (
 move .git 	..\CRMOD_TMP\
 move dae  	..\CRMOD_TMP\
 move HODOR 	..\CRMOD_TMP\
-move ship_hwu	..\CRMOD_TMP\
-move ship_old	..\CRMOD_TMP\
 
 copy config-RC.txt config.txt
 
