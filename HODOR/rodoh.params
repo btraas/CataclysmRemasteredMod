@@ -1,8 +1,8 @@
 	## Yelow13 RODOH script
-= -$SHIPS_BASE=..\ship
-= -$DAE_BASE=..\dae
+= -$SHIPS_BASE=..\ship_old
+= -$DAE_BASE=..\dae\ship
 = -$SHADER_MAP=.\SHADERS.MAP
-#= -$SHIP_NAME=bst_attackbomber
+= -$SHIP_NAME=bst_fighter
 = -setmask=*.hod
 = -dump
 = -log

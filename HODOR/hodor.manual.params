@@ -1,5 +1,5 @@
-= -$CRMOD_BASE=C:\MOD\CRMod
-= -$SHIP_NAME=bst_attackbomber
+= -$CRMOD_BASE=D:\MOD\CRMod
+= -$SHIP_NAME=bst_fighter
 = -$SHADER_MAP=$[CRMOD_BASE]\HODOR\SHADERS.MAP
 = -$SHADE_OPT_LOADDAE=Force8888
 = -$HOD_SAVE_OPTS=ForceScars FilterScars=thruster,bay

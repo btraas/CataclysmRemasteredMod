@@ -89,15 +89,15 @@ build =
 		DisplayedName="$7004",
 		Description="$7005"
 	},
-	{
-		Type=SubSystem,
-		ThingToBuild="Bst_CS_Production_CapShip",
-		RequiredResearch="",
-		RequiredFleetSubSystems="",
-		DisplayPriority=0,
-		DisplayedName="$7006",
-		Description="$7007"
-	},
+--	{
+--		Type=SubSystem,
+--		ThingToBuild="Bst_CS_Production_CapShip",
+--		RequiredResearch="",
+--		RequiredFleetSubSystems="",
+--		DisplayPriority=0,
+--		DisplayedName="$7006",
+--		Description="$7007"
+--	},
 	{
 		Type = Ship,
 		ThingToBuild = "Bst_Worker",
@@ -231,15 +231,6 @@ build =
 		DisplayPriority = 51,
 		DisplayedName = "Cruise Missile",
 		Description = "<b>Description:</b> Missile capable of subverting parts. \n\n<b>Strong Vs:</b>Frigates and Capitals \n\n<b>Prerequisites:</b> Corvette Drive",
-	},
-	{
-		Type = Ship,
-		ThingToBuild = "Bst_ionarrayfrigate",
-		RequiredResearch = "BSTIonCannons",
-		RequiredShipSubSystems = "",
-		DisplayPriority = 53,
-		DisplayedName = "Ion Array Frigate",
-		Description = "<b>Description:</b> Subverted derelict ship of the Turanic arsenal featuring a Ion Array Cannon as it's only weapon. \n\n<b>Strong Vs:</b> Undecided \n\n<b>Prerequisites:</b> Capital Ship Chassis & Ion Cannon technology",
 	},
 	{
 		Type = Ship,
