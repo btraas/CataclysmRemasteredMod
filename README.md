@@ -1,5 +1,5 @@
 # Cataclysm Remastered 
-## a mod for Homeworld Remastered
+### a mod to bring Homeworld: Cataclysm to the Homeworld Remastered Collection
 
 1. Dump these files in your HomeworldRM/Data/ folder 
 2. Launch HomeworldRM.exe (in HomeworldRM/bin/release/) with the cmd switch -overridebigfile to use these files.
