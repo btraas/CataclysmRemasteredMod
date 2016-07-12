@@ -10,7 +10,7 @@
 	$WARNING = "\033[33mWARNING\033[0m";
 
 
-	$file = "ui/newui/main/version.lua";
+	$file = "ui/newui/main/crmod/version.lua";
 	$ver = @$argv[1];
 
 

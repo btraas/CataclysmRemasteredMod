@@ -1,7 +1,3 @@
-dofilepath("data:ui/newui/Taskbar/TaskbarDefines.lua")
-dofilepath("data:ui/newui/Styles/HWRM_Style/HWRMDefines.lua")
-dofilepath("data:ui/newui/styles/vanillastyles.lua")
-
 HW2StyleSheet.FEButtonStyleCataMain = 
 	{
 		type 				= "Button",

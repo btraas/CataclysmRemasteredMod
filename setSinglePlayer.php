@@ -9,8 +9,8 @@
 	$ERROR = "\033[31mERROR\033[0m";
 	$WARNING = "\033[33mWARNING\033[0m";
 
-	$FILE_SP = './ui/newui/main/newmainmenu_sp.lua';
-	$FILE_MAIN = './ui/newui/main/newmainmenu_main.lua';
+	$FILE_SP = './ui/newui/main/crmod/newmainmenu_sp.lua';
+	$FILE_MAIN = './ui/newui/main/crmod/newmainmenu_main.lua';
 	$FILE_MASTER = './ui/newui/main/newmainmenu.lua';
 	
 

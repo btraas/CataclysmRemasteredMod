@@ -32,16 +32,16 @@ Smt_Dreadnought={
 	},
 };
 
-Smt_seraph = 
-{ 
-    LargeIcon = 
-    { 
-        texture = "DATA:\\Ship\\Icons\\seraph.tga", 
-        textureUV_TL = 
-            { 0, 0, }, 
-        textureUV_WH = 
-            { 304, 94, }, 
-        stretchOnDraw = 1, }, }
+--Smt_seraph = 
+--{ 
+--    LargeIcon = 
+--    { 
+--        texture = "DATA:\\Ship\\Icons\\seraph.tga", 
+--        textureUV_TL = 
+--            { 0, 0, }, 
+--        textureUV_WH = 
+--            { 304, 94, }, 
+--        stretchOnDraw = 1, }, }
 		
 Smt_Acolyte={
 	LargeIcon = {
@@ -2167,12 +2167,12 @@ Bst_missiledestroyer=kus_missiledestroyer;
 
 Bst_HeavyCruiser=tai_heavycruiser;
 
-Bst_Naggarok={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnaggarok.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
+--Bst_Naggarok={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnaggarok.tga",
+--textureUV_TL={0,
+--	0},
+--textureUV_WH={192,
+--	95},
+--stretchOnDraw=1}};
 
 Bst_Processor=Smt_Processor;
 
@@ -2188,12 +2188,12 @@ Bst_Carrier=tai_carrier;
 
 Bst_Smt_Destroyer=Smt_Destroyer;
 
-Bst_NomadMoon={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnomadmoon.tga",
-textureUV_TL={0,
-	0},
-textureUV_WH={192,
-	95},
-stretchOnDraw=1}};
+--Bst_NomadMoon={LargeIcon={texture="DATA:\\Ship\\Icons\\beastnomadmoon.tga",
+--textureUV_TL={0,
+--	0},
+--textureUV_WH={192,
+--	95},
+--stretchOnDraw=1}};
 
 
 

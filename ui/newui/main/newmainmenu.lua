@@ -4,7 +4,7 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 dofilepath("data:ui/newui/Background/logo.lua")
 dofilepath("data:ui/newui/Main/ExButtons.lua")
 
-dofilepath("data:ui/newui/Main/version.lua")
+dofilepath("data:ui/newui/Main/crmod/version.lua")
 
 LAYOUT_MENU_BUTTONS = 
 {
